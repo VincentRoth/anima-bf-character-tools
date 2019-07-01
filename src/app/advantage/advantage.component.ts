@@ -18,6 +18,7 @@ export class AdvantageComponent implements OnInit {
       next: data => {
         this.advantages = data;
         this.filteredAvantages = data;
+        this.filteredAvantages.sort(this.advantageService.sort);
       }
     });
   }
@@ -27,5 +28,6 @@ export class AdvantageComponent implements OnInit {
     this.filteredAvantages = this.advantages.filter(advantage => {
       return this.advantageService.filter(advantage, tokens);
     });
+    this.filteredAvantages.sort(this.advantageService.sort);
   }
 }

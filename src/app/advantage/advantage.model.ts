@@ -4,7 +4,8 @@ export class Advantage {
   effect: string;
   condition: string;
   special: string;
-  cost: number;
+  cost: string;
+  benefit: string;
   note: string;
   source: string;
   types: string[];

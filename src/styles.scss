@@ -27,7 +27,7 @@ app-root {
 }
 
 .flex {
-  flex: 1;
+  flex: 1 1;
 }
 
 .flex-row {
@@ -39,6 +39,7 @@ app-root {
 .flex-column {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .flex-center {

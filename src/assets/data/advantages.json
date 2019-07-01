@@ -3,11 +3,77 @@
     "name": "Refaire un jet de caractéristique",
     "description": "Le hasard permet à votre personnage de modifier une de ses caractéristiques principales.",
     "effect": "Une fois que vous avez généré toutes les caractéristiques de votre personnage, vous pouvez lancer un dé supplémentaire et utiliser le résultat obtenu à la place d'un des précédents. Si le dé supplémentaire est inférieur à la plus basse des valeurs déjà généré, relancez-le.",
-    "condition": "Cet avantage n'est pas compatible avec la quatrième méthode de génération des caractéristiques",
+    "condition": "Cet avantage n'est pas compatible avec la quatrième méthode de génération des caractéristiques.",
     "special": "On peut prendre cet avantage plusieurs fois.",
-    "cost": 1,
+    "cost": "1",
     "note": null,
     "source": "LdB p.17",
-    "types": ["Général", "Caractéristique", "Cumulable"]
+    "types": ["Avantage Général", "Caractéristique", "Cumulable"]
+  },
+  {
+    "name": "Rajouter un point à une caractéristique",
+    "description": "Une des caractéristiques du personnage est supérieure à sa valeur originelle.",
+    "effect": "Augmentez d'un point la valeur d'une caractéristique principale de votre personnage.",
+    "condition": "Les caractéristiques physiques ne peuvent dépasser 11 avec cet avantage.",
+    "special": "On peut prendre cet avantage plusieurs fois.",
+    "cost": "1",
+    "note": null,
+    "source": "LdB p.17",
+    "types": ["Avantage Général", "Caractéristique", "Cumulable"]
+  },
+  {
+    "name": "Monter une caractéristique à neuf",
+    "description": "Change la valeur d'une caractéristique du personnage pour 9.",
+    "effect": "La valeur de la caractéristique choisie passe à 9, quelle que soit sa valeur originelle.",
+    "special": "On peut prendre cet avantage plusieurs fois.",
+    "cost": "2",
+    "note": null,
+    "source": "LdB p.17",
+    "types": ["Avantage Général", "Caractéristique", "Cumulable"]
+  },
+  {
+    "name": "Résistance physique exceptionnelle",
+    "description": "La résitance physique du personnage est très élevée. Les dégâts, poisons ou maladies n'ont pas autant d'effet sur lui que chez d'autres personnes normales.",
+    "effect": "Ajoute un bonus spécial de +25 à la Résistance physique (RPhy), la Résistance aux maladies (RMal) et la Résistance aux poisons (RPoi). Investir un deuxième Point de Création augmente ce bonus à +50.",
+    "cost": "1,2",
+    "note": null,
+    "source": "LdB p.18",
+    "types": ["Avantage Général", "Résistance", "Physique"]
+  },
+  {
+    "name": "Accès à toutes les disciplines psychiques",
+    "description": "Le personnage a la possibilité d'accéder à n'importe quel nombre de disciplines psychiques. Il lui faut cependant réaliser ce potentiel en dépensant des PPP.",
+    "effect": "Cet avantage autorise à dépenser un PPP pour acquérir une affinité avec n'importe quelle discipline psychique.",
+    "cost": "1,2",
+    "note": null,
+    "source": "LdB p.18",
+    "types": ["Avantage Général", "Psychique"]
+  },
+  {
+    "name": "Résistance psychique exceptionnelle",
+    "description": "L'esprit du personnage possède des barrières très solides, qui en rendent l'accès très difficile.",
+    "effect": "Ajoute un bonus spécial de +25 à la Résistance psychique (RPsy). Investir un deuxième Point de Création augmente ce bonus à +50.",
+    "cost": "1,2",
+    "note": null,
+    "source": "LdB p.18",
+    "types": ["Avantage Général", "Résistance", "Psychique"]
+  },
+  {
+    "name": "Accès à une discipline psychique",
+    "description": "Le personnage a en lui l'étincelle permettant d'utiliser les pouvoirs d'un discipline psychique. Il lui faut encore réaliser ce potentiel en dépensant des PPP. Cependant, quels que soient ses efforts, il n'aura jamais accès à d'autres disciplines psychiques.",
+    "effect": "Cet avantage autorise à dépenser un PPP pour acquérir une affinité avec la discipline psychique choisie, et elle seule.",
+    "cost": "1,2",
+    "note": null,
+    "source": "LdB p.18",
+    "types": ["Avantage Général", "Psychique"]
+  },
+  {
+    "name": "Résistance mystique exceptionnelle",
+    "description": "Le personnage résiste particulièrement bien aux effets de nature mystique.",
+    "effect": "Ajoute un bonus spécial de +25 à la Résistance mystique (RMys). Investir un deuxième Point de Création augmente ce bonus à +50.",
+    "cost": "1,2",
+    "note": null,
+    "source": "LdB p.18",
+    "types": ["Avantage Général", "Résistance", "Mystique"]
   }
 ]

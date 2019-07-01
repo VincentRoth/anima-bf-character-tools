@@ -34,7 +34,14 @@ export class AdvantageService {
             advantage.special
               .toLocaleLowerCase()
               .includes(token.toLocaleLowerCase())) ||
-          advantage.cost.toString().includes(token.toLocaleLowerCase()) ||
+          (advantage.cost &&
+            advantage.cost
+              .toLocaleLowerCase()
+              .includes(token.toLocaleLowerCase())) ||
+          (advantage.benefit &&
+            advantage.benefit
+              .toLocaleLowerCase()
+              .includes(token.toLocaleLowerCase())) ||
           (advantage.note &&
             advantage.note
               .toLocaleLowerCase()
@@ -47,5 +54,9 @@ export class AdvantageService {
           ).length > 0),
       true
     );
+  }
+
+  sort(a1: Advantage, a2: Advantage) {
+    return a1.name.localeCompare(a2.name);
   }
 }

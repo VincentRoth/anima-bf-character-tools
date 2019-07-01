@@ -1,4 +1,4 @@
-<div class="app-advantage">
+<div class="app-advantage flex flex-column">
   <mat-form-field>
     <input
       matInput
@@ -7,28 +7,30 @@
     />
   </mat-form-field>
 
-  <ng-container *ngFor="let advantage of filteredAvantages">
-    <mat-card class="menu-card">
-      <mat-card-header>
-        <mat-card-title>{{ advantage.name }}</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>{{ advantage.description }}</p>
-        <p><span class="bold">Effets : </span>{{ advantage.effect }}</p>
-        <p *ngIf="advantage.condition">
-          <span class="bold">Condition : </span>{{ advantage.condition }}
-        </p>
-        <p *ngIf="advantage.special">
-          <span class="bold">Spécial : </span>{{ advantage.special }}
-        </p>
-        <p *ngIf="advantage.note">
-          <span class="bold">Note : </span>{{ advantage.note }}
-        </p>
-        <p>
-          <span class="bold">Coût : </span>{{ advantage.cost }}
-          <span class="italic right">{{ advantage.source }}</span>
-        </p>
-      </mat-card-content>
-    </mat-card>
-  </ng-container>
+  <div class="flex-row">
+    <ng-container *ngFor="let advantage of filteredAvantages">
+      <mat-card class="menu-card">
+        <mat-card-header>
+          <mat-card-title>{{ advantage.name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ advantage.description }}</p>
+          <p><span class="bold">Effets : </span>{{ advantage.effect }}</p>
+          <p *ngIf="advantage.condition">
+            <span class="bold">Condition : </span>{{ advantage.condition }}
+          </p>
+          <p *ngIf="advantage.special">
+            <span class="bold">Spécial : </span>{{ advantage.special }}
+          </p>
+          <p *ngIf="advantage.note">
+            <span class="bold">Note : </span>{{ advantage.note }}
+          </p>
+          <p>
+            <span class="bold">Coût : </span>{{ advantage.cost }}
+            <span class="italic right">{{ advantage.source }}</span>
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </ng-container>
+  </div>
 </div>
