@@ -1,1 +1,34 @@
-<p>advantage works!</p>
+<div class="app-advantage">
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Filtrer"
+      (keyup)="filterAdvantages($event.target.value)"
+    />
+  </mat-form-field>
+
+  <ng-container *ngFor="let advantage of filteredAvantages">
+    <mat-card class="menu-card">
+      <mat-card-header>
+        <mat-card-title>{{ advantage.name }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ advantage.description }}</p>
+        <p><span class="bold">Effets : </span>{{ advantage.effect }}</p>
+        <p *ngIf="advantage.condition">
+          <span class="bold">Condition : </span>{{ advantage.condition }}
+        </p>
+        <p *ngIf="advantage.special">
+          <span class="bold">Spécial : </span>{{ advantage.special }}
+        </p>
+        <p *ngIf="advantage.note">
+          <span class="bold">Note : </span>{{ advantage.note }}
+        </p>
+        <p>
+          <span class="bold">Coût : </span>{{ advantage.cost }}
+          <span class="italic right">{{ advantage.source }}</span>
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+</div>

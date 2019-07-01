@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Refaire un jet de caractéristique",
+    "description": "Le hasard permet à votre personnage de modifier une de ses caractéristiques principales.",
+    "effect": "Une fois que vous avez généré toutes les caractéristiques de votre personnage, vous pouvez lancer un dé supplémentaire et utiliser le résultat obtenu à la place d'un des précédents. Si le dé supplémentaire est inférieur à la plus basse des valeurs déjà généré, relancez-le.",
+    "condition": "Cet avantage n'est pas compatible avec la quatrième méthode de génération des caractéristiques",
+    "special": "On peut prendre cet avantage plusieurs fois.",
+    "cost": 1,
+    "note": null,
+    "source": "LdB p.17",
+    "types": ["Général", "Caractéristique", "Cumulable"]
+  }
+]
