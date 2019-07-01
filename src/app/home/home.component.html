@@ -1,1 +1,11 @@
-<p>home works!</p>
+<div class="app-home flex flex-center">
+  <ng-container *ngFor="let item of items">
+    <a routerLink="{{ item.link }}">
+      <mat-card class="menu-card" [ngStyle]="getStyle(item)">
+        <mat-card-header class="card-header">
+          <mat-card-title class="card-title">{{ item.title }}</mat-card-title>
+        </mat-card-header>
+      </mat-card>
+    </a>
+  </ng-container>
+</div>

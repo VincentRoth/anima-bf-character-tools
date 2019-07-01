@@ -1,0 +1,20 @@
+$card-dimension: 10rem;
+
+.app-home {
+  flex: 1 1;
+  margin: 1rem;
+}
+
+.menu-card {
+  width: $card-dimension;
+  height: $card-dimension;
+  background-size: 100%;
+  mix-blend-mode: difference;
+  .card-header,
+  .card-title {
+    background: inherit;
+    background-clip: text;
+    color: transparent;
+    filter: invert(1);
+  }
+}
