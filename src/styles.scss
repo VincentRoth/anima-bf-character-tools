@@ -1,0 +1,44 @@
+@import '~@angular/material/theming';
+@import './styles/footer.theme';
+
+@include mat-core();
+
+$primary: mat-palette($mat-green);
+$accent:  mat-palette($mat-deep-purple, A200, A100, A400);
+
+$theme: mat-light-theme($primary, $accent);
+@include angular-material-theme($theme);
+@include footer-theme($theme);
+
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.flex {
+    flex: 1;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    align-content: center;
+    justify-content: center;
+}
