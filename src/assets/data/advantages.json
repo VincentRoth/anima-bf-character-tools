@@ -6,7 +6,6 @@
     "condition": "Cet avantage n'est pas compatible avec la quatrième méthode de génération des caractéristiques.",
     "special": "On peut prendre cet avantage plusieurs fois.",
     "cost": "1",
-    "note": null,
     "source": "LdB p.17",
     "types": ["Avantage Général", "Caractéristique", "Cumulable"]
   },
@@ -17,7 +16,6 @@
     "condition": "Les caractéristiques physiques ne peuvent dépasser 11 avec cet avantage.",
     "special": "On peut prendre cet avantage plusieurs fois.",
     "cost": "1",
-    "note": null,
     "source": "LdB p.17",
     "types": ["Avantage Général", "Caractéristique", "Cumulable"]
   },
@@ -27,7 +25,6 @@
     "effect": "La valeur de la caractéristique choisie passe à 9, quelle que soit sa valeur originelle.",
     "special": "On peut prendre cet avantage plusieurs fois.",
     "cost": "2",
-    "note": null,
     "source": "LdB p.17",
     "types": ["Avantage Général", "Caractéristique", "Cumulable"]
   },
@@ -36,7 +33,6 @@
     "description": "La résitance physique du personnage est très élevée. Les dégâts, poisons ou maladies n'ont pas autant d'effet sur lui que chez d'autres personnes normales.",
     "effect": "Ajoute un bonus spécial de +25 à la Résistance physique (RPhy), la Résistance aux maladies (RMal) et la Résistance aux poisons (RPoi). Investir un deuxième Point de Création augmente ce bonus à +50.",
     "cost": "1,2",
-    "note": null,
     "source": "LdB p.18",
     "types": ["Avantage Général", "Résistance", "Physique"]
   },
@@ -45,7 +41,6 @@
     "description": "Le personnage a la possibilité d'accéder à n'importe quel nombre de disciplines psychiques. Il lui faut cependant réaliser ce potentiel en dépensant des PPP.",
     "effect": "Cet avantage autorise à dépenser un PPP pour acquérir une affinité avec n'importe quelle discipline psychique.",
     "cost": "1,2",
-    "note": null,
     "source": "LdB p.18",
     "types": ["Avantage Général", "Psychique"]
   },
@@ -54,7 +49,6 @@
     "description": "L'esprit du personnage possède des barrières très solides, qui en rendent l'accès très difficile.",
     "effect": "Ajoute un bonus spécial de +25 à la Résistance psychique (RPsy). Investir un deuxième Point de Création augmente ce bonus à +50.",
     "cost": "1,2",
-    "note": null,
     "source": "LdB p.18",
     "types": ["Avantage Général", "Résistance", "Psychique"]
   },
@@ -63,7 +57,6 @@
     "description": "Le personnage a en lui l'étincelle permettant d'utiliser les pouvoirs d'un discipline psychique. Il lui faut encore réaliser ce potentiel en dépensant des PPP. Cependant, quels que soient ses efforts, il n'aura jamais accès à d'autres disciplines psychiques.",
     "effect": "Cet avantage autorise à dépenser un PPP pour acquérir une affinité avec la discipline psychique choisie, et elle seule.",
     "cost": "1,2",
-    "note": null,
     "source": "LdB p.18",
     "types": ["Avantage Général", "Psychique"]
   },
@@ -72,8 +65,40 @@
     "description": "Le personnage résiste particulièrement bien aux effets de nature mystique.",
     "effect": "Ajoute un bonus spécial de +25 à la Résistance mystique (RMys). Investir un deuxième Point de Création augmente ce bonus à +50.",
     "cost": "1,2",
-    "note": null,
     "source": "LdB p.18",
     "types": ["Avantage Général", "Résistance", "Mystique"]
+  },
+  {
+    "name": "Biens de départ",
+    "description": "Le personnage possède une grande fortune matérielle ou sous forme d'équipement.",
+    "effect": "Cet avantage accorde une somme d'argent ou d'équipement initial égale à 2000 écus d'or (PO). Les Points de Création supplémentaires augmentent cette somme à 5000 et 10000 écus d'or respectivement.",
+    "condition": "Le Meneur de Jeu préfèrera peut-être donner une somme d'argent différente que celle que nous recommandons, pour mieux correspondre aux objectifs de ses parties. Dans ce cas, joueur et Meuneur de Jeu doivent se mettre d'accord sur la quantité accordée.",
+    "cost": "1,2,3",
+    "source": "LdB p.18",
+    "types": ["Avantage de passé", "Richesse"]
+  },
+  {
+    "name": "Affinité avec les animaux",
+    "description": "Tout personnage possédant cet avantage bénéficie d'un lien spécial avec les animaux, qui lui permet d'obtenir une réaction positive de leur part. Etonnament, il a aussi la capacité de communiquer de façon limitée avec les animaux, comprenant en gros quelles sont leurs intentions ou faisant comprendre les siennes.",
+    "effect": "Les effets exacts de cet avantage soivent être interprétés par le Meneur de Jeu. Quoi qu'il en soit, un animal entraîné à l'attaque s'en prendra au personnage malgré cet avantage, mais seulement après un avertissement et en lui laissant la possibilité de fuir. Si un animal attaque un groupe comprenant le personnage, celui-ci sera toujours la dernière personne que l'animal attaquera.",
+    "cost": "1",
+    "source": "LdB p.18",
+    "types": ["Avantage Général", "Interprétation"]
+  },
+  {
+    "name": "Régénération basique avancée et majeure",
+    "description": "Les blessures subies par le spersonnage guérissent très facilement. Son corps possède un facteur de guérison très élevé.",
+    "effect": "Augmente de deux niveaux la Régénération du personnage. Les Points de Création supplémentaires augmentent la Régénération de quatre et six niveaux, respectivement.",
+    "cost": "1,2,3",
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Physique"]
+  },
+  {
+    "name": "Sens aiguisé",
+    "description": "Les sens du personnage sont aussi développés que ceux d'un animal",
+    "effect": "Ajoute un point à la Perception du personnage pour les tests de caractéristique, ainsi qu'un bonus spécial de +50 à ses compétences secondaires de Vigilance et d'Observation.",
+    "cost": "1",
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Physique", "Perception", "Compétence"]
   }
 ]
