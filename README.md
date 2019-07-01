@@ -1,27 +1,11 @@
 # AnimaBeyondFantasyCharacterTools
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.6.
+A suit tools for building and playing character at Anima Beyond Fantasy tabletop RPG.
 
-## Development server
+Stable application version is deployed at https://anima-beyond-fantasy.herokuapp.com/.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# License
 
-## Code scaffolding
+This project is provided under [Creative Common Licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+It is a derivated work of Anima Beyond Fantasy by Anima Project Studio.
