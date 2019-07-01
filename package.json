@@ -2,6 +2,14 @@
   "name": "anima-beyond-fantasy-character-tools",
   "version": "0.0.0",
   "license": "cc-by-nc-sa-4.0",
+  "description": "Angular character tools for table RPG Anima Beyond Fantasy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VincentRoth/anima-bf-character-tools"
+  },
+  "engines": {
+    "node": ">=10.x"
+  },
   "scripts": {
     "ng": "ng",
     "serve": "ng serve -o",
@@ -9,7 +17,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "npm run build",
     "start": "node server.js"
   },
   "private": true,
