@@ -1,16 +1,16 @@
 <div class="flex-row flex-center">
-    <button mat-raised-button color="primary" (click)="roll10Dice()">
-        d10
-    </button>
-    <button mat-raised-button color="primary" (click)="roll100Dice()">
-        d100
-    </button>
+  <button mat-raised-button color="primary" (click)="roll10Dice()">
+    d10
+  </button>
+  <button mat-raised-button color="primary" (click)="roll100Dice()">
+    d100
+  </button>
 </div>
 
 <p id="dice-value">
-    {{getFormatedDiceValue()}}
+  {{ getFormatedDiceValue() }}
 </p>
 
 <p id="roll-history" class="flex-column flex-center">
-    <span *ngFor="let roll of rollHistory.reverse()">{{roll}}</span>
+  <span *ngFor="let roll of rollHistory">{{ roll }}</span>
 </p>

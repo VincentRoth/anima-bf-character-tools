@@ -31,9 +31,9 @@ export class DiceRollComponent implements OnInit {
   }
 
   addRollToHistory() {
-    this.rollHistory.push(this.getFormatedDiceValue());
+    this.rollHistory.unshift(this.getFormatedDiceValue());
     if (this.rollHistory.length > 10) {
-      this.rollHistory.shift();
+      this.rollHistory.pop();
     }
   }
 
