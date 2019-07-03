@@ -2,10 +2,16 @@
   flex: 1 1;
   margin: 0.5rem;
 
-  .menu-card {
+  .advantage-card {
     margin: 0.5rem;
-    max-width: 20rem;
+    max-width: 16rem;
+    .advantage-title {
+      font-size: 1rem;
+      margin: 0;
+    }
     p {
+      font-size: 0.75rem;
+      text-align: justify;
       margin: 0.4rem 0;
     }
   }

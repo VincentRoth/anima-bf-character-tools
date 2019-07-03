@@ -9,9 +9,11 @@
 
   <div class="flex-row flex-center">
     <ng-container *ngFor="let advantage of filteredAvantages">
-      <mat-card class="menu-card">
+      <mat-card class="advantage-card">
         <mat-card-header>
-          <mat-card-title>{{ advantage.name }}</mat-card-title>
+          <mat-card-title class="advantage-title">{{
+            advantage.name
+          }}</mat-card-title>
         </mat-card-header>
         <mat-card-content>
           <p>{{ advantage.description }}</p>
@@ -26,7 +28,13 @@
             <span class="bold">Note : </span>{{ advantage.note }}
           </p>
           <p>
-            <span class="bold">Coût : </span>{{ advantage.cost }}
+            <ng-container *ngIf="advantage.costs">
+              <span class="bold">Coût : </span>{{ advantage.costs.join(',') }}
+            </ng-container>
+            <ng-container *ngIf="advantage.benefits">
+              <span class="bold">Bénéfice : </span>
+              {{ advantage.benefits.join(',') }}
+            </ng-container>
             <span class="italic right">{{ advantage.source }}</span>
           </p>
         </mat-card-content>

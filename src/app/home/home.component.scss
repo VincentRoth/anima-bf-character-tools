@@ -14,7 +14,7 @@ $card-dimension: 10rem;
   .card-title {
     background: inherit;
     background-clip: text;
-    color: transparent;
-    filter: invert(1);
+    color: white;
+    mix-blend-mode: exclusion;
   }
 }

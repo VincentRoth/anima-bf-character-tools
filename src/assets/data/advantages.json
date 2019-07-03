@@ -5,7 +5,7 @@
     "effect": "Une fois que vous avez généré toutes les caractéristiques de votre personnage, vous pouvez lancer un dé supplémentaire et utiliser le résultat obtenu à la place d'un des précédents. Si le dé supplémentaire est inférieur à la plus basse des valeurs déjà généré, relancez-le.",
     "condition": "Cet avantage n'est pas compatible avec la quatrième méthode de génération des caractéristiques.",
     "special": "On peut prendre cet avantage plusieurs fois.",
-    "cost": "1",
+    "costs": [1],
     "source": "LdB p.17",
     "types": ["Avantage Général", "Caractéristique", "Cumulable"]
   },
@@ -15,7 +15,7 @@
     "effect": "Augmentez d'un point la valeur d'une caractéristique principale de votre personnage.",
     "condition": "Les caractéristiques physiques ne peuvent dépasser 11 avec cet avantage.",
     "special": "On peut prendre cet avantage plusieurs fois.",
-    "cost": "1",
+    "costs": [1],
     "source": "LdB p.17",
     "types": ["Avantage Général", "Caractéristique", "Cumulable"]
   },
@@ -24,7 +24,7 @@
     "description": "Change la valeur d'une caractéristique du personnage pour 9.",
     "effect": "La valeur de la caractéristique choisie passe à 9, quelle que soit sa valeur originelle.",
     "special": "On peut prendre cet avantage plusieurs fois.",
-    "cost": "2",
+    "costs": [2],
     "source": "LdB p.17",
     "types": ["Avantage Général", "Caractéristique", "Cumulable"]
   },
@@ -32,7 +32,7 @@
     "name": "Résistance physique exceptionnelle",
     "description": "La résitance physique du personnage est très élevée. Les dégâts, poisons ou maladies n'ont pas autant d'effet sur lui que chez d'autres personnes normales.",
     "effect": "Ajoute un bonus spécial de +25 à la Résistance physique (RPhy), la Résistance aux maladies (RMal) et la Résistance aux poisons (RPoi). Investir un deuxième Point de Création augmente ce bonus à +50.",
-    "cost": "1,2",
+    "costs": [1, 2],
     "source": "LdB p.18",
     "types": ["Avantage Général", "Résistance", "Physique"]
   },
@@ -40,7 +40,7 @@
     "name": "Accès à toutes les disciplines psychiques",
     "description": "Le personnage a la possibilité d'accéder à n'importe quel nombre de disciplines psychiques. Il lui faut cependant réaliser ce potentiel en dépensant des PPP.",
     "effect": "Cet avantage autorise à dépenser un PPP pour acquérir une affinité avec n'importe quelle discipline psychique.",
-    "cost": "1,2",
+    "costs": [2],
     "source": "LdB p.18",
     "types": ["Avantage Général", "Psychique"]
   },
@@ -48,7 +48,7 @@
     "name": "Résistance psychique exceptionnelle",
     "description": "L'esprit du personnage possède des barrières très solides, qui en rendent l'accès très difficile.",
     "effect": "Ajoute un bonus spécial de +25 à la Résistance psychique (RPsy). Investir un deuxième Point de Création augmente ce bonus à +50.",
-    "cost": "1,2",
+    "costs": [1, 2],
     "source": "LdB p.18",
     "types": ["Avantage Général", "Résistance", "Psychique"]
   },
@@ -56,7 +56,7 @@
     "name": "Accès à une discipline psychique",
     "description": "Le personnage a en lui l'étincelle permettant d'utiliser les pouvoirs d'un discipline psychique. Il lui faut encore réaliser ce potentiel en dépensant des PPP. Cependant, quels que soient ses efforts, il n'aura jamais accès à d'autres disciplines psychiques.",
     "effect": "Cet avantage autorise à dépenser un PPP pour acquérir une affinité avec la discipline psychique choisie, et elle seule.",
-    "cost": "1,2",
+    "costs": [1],
     "source": "LdB p.18",
     "types": ["Avantage Général", "Psychique"]
   },
@@ -64,7 +64,7 @@
     "name": "Résistance mystique exceptionnelle",
     "description": "Le personnage résiste particulièrement bien aux effets de nature mystique.",
     "effect": "Ajoute un bonus spécial de +25 à la Résistance mystique (RMys). Investir un deuxième Point de Création augmente ce bonus à +50.",
-    "cost": "1,2",
+    "costs": [1, 2],
     "source": "LdB p.18",
     "types": ["Avantage Général", "Résistance", "Mystique"]
   },
@@ -73,7 +73,7 @@
     "description": "Le personnage possède une grande fortune matérielle ou sous forme d'équipement.",
     "effect": "Cet avantage accorde une somme d'argent ou d'équipement initial égale à 2000 écus d'or (PO). Les Points de Création supplémentaires augmentent cette somme à 5000 et 10000 écus d'or respectivement.",
     "condition": "Le Meneur de Jeu préfèrera peut-être donner une somme d'argent différente que celle que nous recommandons, pour mieux correspondre aux objectifs de ses parties. Dans ce cas, joueur et Meuneur de Jeu doivent se mettre d'accord sur la quantité accordée.",
-    "cost": "1,2,3",
+    "costs": [1, 2, 3],
     "source": "LdB p.18",
     "types": ["Avantage de passé", "Richesse"]
   },
@@ -81,7 +81,7 @@
     "name": "Affinité avec les animaux",
     "description": "Tout personnage possédant cet avantage bénéficie d'un lien spécial avec les animaux, qui lui permet d'obtenir une réaction positive de leur part. Etonnament, il a aussi la capacité de communiquer de façon limitée avec les animaux, comprenant en gros quelles sont leurs intentions ou faisant comprendre les siennes.",
     "effect": "Les effets exacts de cet avantage soivent être interprétés par le Meneur de Jeu. Quoi qu'il en soit, un animal entraîné à l'attaque s'en prendra au personnage malgré cet avantage, mais seulement après un avertissement et en lui laissant la possibilité de fuir. Si un animal attaque un groupe comprenant le personnage, celui-ci sera toujours la dernière personne que l'animal attaquera.",
-    "cost": "1",
+    "costs": [1],
     "source": "LdB p.18",
     "types": ["Avantage Général", "Interprétation"]
   },
@@ -89,16 +89,419 @@
     "name": "Régénération basique avancée et majeure",
     "description": "Les blessures subies par le spersonnage guérissent très facilement. Son corps possède un facteur de guérison très élevé.",
     "effect": "Augmente de deux niveaux la Régénération du personnage. Les Points de Création supplémentaires augmentent la Régénération de quatre et six niveaux, respectivement.",
-    "cost": "1,2,3",
+    "costs": [1, 2, 3],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Physique"]
+    "types": ["Avantage Général", "Physique", "Régénération"]
   },
   {
     "name": "Sens aiguisé",
-    "description": "Les sens du personnage sont aussi développés que ceux d'un animal",
+    "description": "Les sens du personnage sont aussi développés que ceux d'un animal.",
     "effect": "Ajoute un point à la Perception du personnage pour les tests de caractéristique, ainsi qu'un bonus spécial de +50 à ses compétences secondaires de Vigilance et d'Observation.",
-    "cost": "1",
+    "costs": [1],
     "source": "LdB p.19",
     "types": ["Avantage Général", "Physique", "Perception", "Compétence"]
+  },
+  {
+    "name": "Ambidextrie",
+    "description": "Une presonne ambidextre maîtrise parfaitement ses deux mains et peut les utiliser avec la même habilité.",
+    "effect": "Un pesonnage ambidextre peut effectuer des manoeuvres avec n'importe quelle main de façon équivalente. Au combat, cela permet de réduire à -10 les malus des attaques efectuées evec une arme supplémentaire. En cas de combat avec des armes de jet, cet avantage ne permet pas d'en lancer une de plus (on considère que le personnage utilise déjà ses deux mains pour accoître sa cadence de lancer).",
+    "costs": [1],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Combat"]
+  },
+  {
+    "name": "Don mystique",
+    "description": "Le personnage peut sentir et manipuler les énergies surnaturelles du flux d'âmes. La magie traverse sson esprit et, avec les connaissances appropriées, il pourra lancer des sorts.",
+    "effect": "Le personnage a la capacité de voir et d'utiliser la magie. Il ajoute aussi un bonus spécial de +10 à sa RMys, car sa conscience surnaturelle lui permet de mieux résister aux effets mystiques.",
+    "costs": [2],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Mystique", "Résistance"]
+  },
+  {
+    "name": "Vision nocturne",
+    "description": "Cet avantage permet au personnage de voir dans l'obscurité et de s'adapter très rapidement à tout changement d'intensité lumineuse.",
+    "effect": "Permet d'ignorer tous malus provoqué par l'obscurité, tant qu'il ne s'agit pas d'un lieu plongé dans une obscurité magique ou totalement dépourvu de lumière. Dans ce dernier cas, les malus sont réduits de moitié.",
+    "costs": [1],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Perception"]
+  },
+  {
+    "name": "Inquiétant",
+    "description": "Le personnage a le don de rendre nerveux les gens autour de lui, quand il le désire. Même un individu petit et malingre peut inquitéer les autres s'il possède cet avantage. De cette façon, il pourra désamorcer des situations explosives qui le menacent ou forcer des personnes intimidables à agir selon ses désirs.",
+    "effect": "Le personnage peut se montrer inquiétant s'il le désire. Les effets excats de cet avantage doivent être interprés par le Menuer de Jeu.",
+    "costs": [1],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Interprétation"]
+  },
+  {
+    "name": "Apte dans une compétence",
+    "description": "Le personnage bénéficie d'une capacité d'apprentissage hors du commun dans une compétence secondaire. Cela lui permet de la développer avec peu d'efforts par rapport aux autres membres de sa classe.",
+    "effect": "Cet avantage réduit d'un point le coût de formation d'une compétence secondaire pour chaque Point de cration investi.",
+    "special": "Les coûts de formation ne peuvent être réduits en dessous de 1. Cet avantage ne fonctionne que pour les coûts des compétences secondaires.",
+    "costs": [1, 2, 3],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Compétence"]
+  },
+  {
+    "name": "Chance",
+    "description": "Le personnage a beaucoup de chance au moment d'agir et il commet rarement de graves erreurs.",
+    "effect": "Le personnage est moins sujet aux Maladresses. Il ne provoque une Maladresse que sur un 1 ou un 2. Pour une compétence dont il est maître, seul un 1 provoquera une Maladresse.",
+    "costs": [1],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Maladresse"]
+  },
+  {
+    "name": "Bonne fortune ",
+    "description": "Un personnage avec bonne fortune a véritablement beaucoup de chance. Il pourra se sortir de nombreuses situations difficiles en comptant uniquement sur sa bonne étoile.",
+    "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de jeu. En tout cas, le personnage ne subit jamais les effets négatifs d'un piège ou d'une attaque réussie par hasard.",
+    "costs": [1],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Interprétation"]
+  },
+  {
+    "name": "Apte dans un champ de compétence",
+    "description": "Comme précédemment, si ce n'est que le personnage a cette fois une grande capacité d'apprentissage vis-à-vis des coûts de tout un champ de compétence.",
+    "effect": "Le coût de formation de toutes les compétences d'un champ secondaire est réduit d'un point. Si la classe du personnage possède une compétence secondaire dans ce champs dont le coût est inférieur au reste, cette valeur diminue aussi.",
+    "special": "Les coûts de formation ne peuvent être réduits en dessous de 1. Cet avantage ne fonctionne que pour les coûts des compétences secondaires.",
+    "costs": [2],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Compétence"]
+  },
+  {
+    "name": "Apprentisage inné",
+    "description": "Le personnage a un don pour s'améliorer dans une compétence secondaire. Sans se forcer ni même s'entraîner, il se perfectionne peu à peu.",
+    "effect": "Accorde l'équivalent d'un bonus de classe de +10 par niveau dans une compétence secondaire. Ce bonus s'ajoute à tout autre bonus automatique dont peut disposer le personnage grâce à sa classe. L'investissement d'un point supplémentaire augmente ce bonus à +20.",
+    "costs": [1, 2],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Compétence"]
+  },
+  {
+    "name": "Apprentisage inné dans un champ de compétence",
+    "description": "Idem que précédemment, sauf que dans ce cas le personnage améliore toute les compétences d'un champ secondaire.",
+    "effect": "Accorde l'équivalent d'un bonus de classe de +5 par niveau à totues les compétences d'un champ secondaire. Ces bonus s'ajoutent à tous les bonus automatiques dont peut disposer le personnage grâce à sa classe. L'investissement d'un point supplémentaire augmente ce bonus à +10.",
+    "costs": [2, 3],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Compétence"]
+  },
+  {
+    "name": "Sommeil léger",
+    "description": "Le personnage reste partiellmeent conscient pendant qu'ildort et se réveille au moindre bruit ou mouvement.",
+    "effect": "Le personnage n'applique que -20 de malus à sa compétence Vigilance quand il dort.",
+    "costs": [1],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Compétence", "Perception"]
+  },
+  {
+    "name": "Charme",
+    "description": "Le personnage dégage un tel magnétisme que tout le monde le trouve sympathique. Il provoque une réaction positive chez les gens qu'il ne connait pas et peut obtenir de certains individus qu'ils soient plus compréhensifs à son égards",
+    "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de jeu.",
+    "costs": [1],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Interprétation"]
+  },
+  {
+    "name": "Réflexes rapides",
+    "description": "Le personnage a des réflexes exceptionnels qui lui permettent de réagir à toute vitesse face à n'importe quelle situation.",
+    "effect": "Accorde un bonus spécial de +25 à l'Initiative. Les Points de Création supplémentaires augmentent respectivement ce bonus à +45 et +60.",
+    "costs": [1, 2, 3],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Combat"]
+  },
+  {
+    "name": "Homme à tout faire",
+    "description": "Le personnage possède l'exceptionnel don de s'adapter à toutes les situations qu'il rencontre et qui développe des connaissances dans tous les domaines. Quel que soient la rareté ou l'usage inhabituel d'un compétence secondaire qu'il doit utiliser, il dispose d'une base de connaissance ou de talent qui s'avère utile dans cette situation.",
+    "effect": "Le personnage a une Base de 0 plutôt que de -30 dans les compétences secondaires pour lesquelles il n'a pas investi de PF. Il bénéfice aussi d'un bonus naturel de +10 dans toutes les compétences secondaires, lequel s'ajoute directement au bonus octroyé par sa caractéristique et compte donc dans la limite de +100.",
+    "costs": [2],
+    "source": "LdB p.19",
+    "types": ["Avantage Général", "Compétence"]
+  },
+  {
+    "name": "Taille inhabituelle",
+    "description": "Le personnage a une taille ne correspondant pas à sa Froce et sa Constitution, ce qui permet à une personne dont les caractéristiques feraient un véritable colosse musculeux d'avoir un gabarit normal, ou inversement.",
+    "effect": "Le personnage peut augmenter ou diminuer de cinqu points maximum sa Taille à la création de personnage.",
+    "costs": [1],
+    "source": "LdB p.20",
+    "types": ["Avantage Général", "Taille"]
+  },
+  {
+    "name": "Sens du danger",
+    "description": "Accorde au personnage un sixième sens, qui lui permet de ressentir quand quelque chose de dangeureux s'approche ou le menace. Il ne sera pas capable de détecter l'origine ou la nature de ce danger jusqu'au moment où celui-ci sera sur lui, mais ressentira sa présence à l'avance.",
+    "effect": "Le personnage ne peut pas être pris par surprise, sauf en cas d'une différence d'Initiative de 150 en faveur de son adversaire.",
+    "costs": [2],
+    "source": "LdB p.20",
+    "types": ["Avantage Général", "Combat"]
+  },
+  {
+    "name": "Armure naturelle",
+    "description": "La peau du personnage est extrêmement résistante et ses muscles extrêmement durs, suffisamment pour qu'il s'avère difficile de les transpercer.",
+    "effect": "Accorde un Indice de Protection de 2 contre tous les Modes sauf Energie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
+    "costs": [1],
+    "source": "LdB p.20",
+    "types": ["Avantage Général", "Combat"]
+  },
+  {
+    "name": "Armure mystique",
+    "description": "L'aura du personnage forme un manteau d'énergie mystique autour de lui, qui le protège contre les attaques surnaturelles.",
+    "effect": "Accorde un Indice de Protection de 4 contre le Modes Energie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
+    "costs": [1],
+    "source": "LdB p.20",
+    "types": ["Avantage Général", "Combat"]
+  },
+  {
+    "name": "Accès à un pouvoir psychique naturel",
+    "description": "Le personnage possède un unique pouvoir psychique dont il sait se servir inconsciemment. En fait, il ne connait pas l'origine de son pouvoir ni ne le contrôle complètement, mais il est capable de l'utiliser dès qu'il le souhaite.",
+    "effect": "Le personnage peut utiliser de manière innée un unique pouvoir mental de son choix. En fait, le personnage n'est pas vraiment un psy et il ne peut pas utiliser de PPP pour acquérir de nouveaux pouvoirs ou pour améliorer son pouvoir. Son Talent psychique ne dépend pas de sa Volonté. Il ne requiert de lancer les dés pour le calculer : il atteint un niveau de Difficile. Le pouvoir choisi peut être d'un niveau quelconque mais sa difficulté minimale ne doit dépasser Difficile. Le personnage peut l'utiliser une fois par minute sans problème. Par contre, chaque utilisation supplémentaire au cours de cette période de repos provoque la perte d'un point de Fatigue. Les Points de Création supplémentaires augmentent le Talent psychique naturel à Très Difficile et à Absurde, respectivement.",
+    "costs": [1, 2, 3],
+    "source": "LdB p.20",
+    "types": ["Avantage Général", "Psychique"]
+  },
+  {
+    "name": "Immunité à la douleur et à la fatigue",
+    "description": "Le personnage se révèle particulièrement résistant aux effets de la douleur et de la fatigue.",
+    "effect": "Les malus que provoquent la douleur et la Fatigue sont réduits de moitié.",
+    "costs": [1],
+    "source": "LdB p.20",
+    "types": ["Avantage Général", "Physique"]
+  },
+  {
+    "name": "Voir le surnaturel",
+    "description": "Les yeux du personnage peuvent discerner le tissage du flux des a^mes et percevoir l'énergie des matrices.",
+    "effect": "Le personnage voit le surnaturel, autant la magie et les matrices psychiques que les créatures Animiques. Il n'applique pas le malus de cécité dans aucune de ces situation.",
+    "costs": [1],
+    "source": "LdB p.20",
+    "types": ["Avantage Général", "Mystique", "Psychique"]
+  },
+  {
+    "name": "Maître martial",
+    "description": "Les connaissances martiales du personnage sont bien supérieures à celles de quelqu'un du même niveau. En général, il a suivi un entraînement spécial qui lui a permis d'explorer ses compétences de Ki, mais il est possible qu'il soit tout simplement né avec d'énormes capacités naturelles.",
+    "effect": "Ajoute 40 points au Développement intérieur. Les Points de Création supplémentaires augmentent le bonus à 80 et 120 points, respectivement.",
+    "costs": [1, 2, 3],
+    "source": "LdB p.20",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
+    "name": "Infatiguable",
+    "description": "La résitance du personnage à la fatigue est bien supérieure à ce que sa Constitution permettrait normalement.",
+    "effect": "Augmente de 3 points la Fatigue du personnage. Les Points de Créations supplémentaires",
+    "costs": [1, 2, 3],
+    "source": "LdB p.20",
+    "types": ["Avantage Général", "Combat"]
+  },
+  {
+    "name": "Chevronné",
+    "description": "Le personnage a déjà connu de nombreuses expériences dans le monde réel, dont il a tiré de grandes leçons",
+    "effect": "Le personnage commence avec 50 points d'Expérience. Les Points de Création augmentent les Points d'Expérience initiaux à 100 et 150 respectivement. Cette augmentation permet de monter de niveau de façon habituelle si le personnage atteint la quantité de point d'expérience nécessaire",
+    "costs": [1, 2, 3],
+    "source": "LdB p.20",
+    "types": ["Avantage de passé", "Expérience"]
+  },
+  {
+    "name": "Artefact",
+    "description": "Le personnage possède un artefact de grand pouvoir",
+    "effect": "Le joueur et le Meneur de Jeu doivent se mettre d'accord sur les capacités de l'artefact. Les points supplémentaires doivent augmenter les pouvoirs de l'objet.",
+    "note": "Voir Prometheum Exxet p.6 pour un détail de la puissance de l'artefact selon le nombre de PC dépensé.",
+    "costs": [1, 2, 3],
+    "source": "LdB p.20",
+    "types": ["Avantage de passé", "Interprétation"]
+  },
+  {
+    "name": "Récupération du Ki",
+    "description": "Le personnage récupère son énergie spirituelle à une vitesse supérieure à la normale.",
+    "effect": "Le personnage récupère un point de Ki de chaque caractéristique toutes les dix minutes, au lieu d'un point par heure. Les Points de Créations supplémentaires diminuent ce délai à cinq et une minute, respectivement.",
+    "costs": [1, 2, 3],
+    "source": "LdB p.20",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
+    "name": "Elan",
+    "description": "De façon inconsciente, le personnage a réussi à attirer l'attention d'un Shajad ou d'une Béryl. Cela signigie souvent que les ancêtres du personnage étaient liés à cette puissance et qu'elle conserve une sorte de lien avec tous les membres de cette famille. Il est aussi possible que cette attention soit due à certaines actions que le personnage a réalisées. Quoi qu'il en soit, le personnage profite de ses faveurs. Par contre, à partir du moement où le joueur prend le contrôle de son personnage, la relation dépendra de la façon dont celui-ci se comporte.",
+    "effect": "Le personnage a un Elan de 20 vis-à-vis de l'entité de son choix. Les Points de Création supplémentaires augmentent ce niveau à 40 et 50 respectivement.",
+    "costs": [1, 2, 3],
+    "source": "LdB p.20",
+    "types": ["Avantage de passé"]
+  },
+  {
+    "name": "Apprentissage",
+    "description": "Le personnage a une énorme capacité d'apprentissage, qui lui permet de développer son potentiel et de toujours tirer le meilleur profit de ce qu'il a vu ou fait.",
+    "effect": "A la fin de chaque session de jeu, le personnage obtient 3 points d'expérience en plus de ceux accordés par le Meneur de Jeu. Les Points de Création supplémentaires augmentent ce bénéfice à 6 et 9 points, respectivement.",
+    "costs": [1, 2, 3],
+    "source": "LdB p.20",
+    "types": ["Avantage Général", "Expérience"]
+  },
+  {
+    "name": "Récupération de magie rapide",
+    "description": "L'essence du personnage agit comme un phare pour la magie. Il peut régénérer son pouvoir à un rythme bien supérieur de celui des autres individus dotés de capacités mystiques.",
+    "effect": "Le personnage récupère ses points de Zéon au double de sa vitesse de régénération Zéonique. Les Points de Création supplémentaires augmentent respectivmenet ce rythme au triple et au quadruple.",
+    "costs": [1, 2, 3],
+    "source": "LdB p.20",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Grand potentiel magique",
+    "description": "Le personnage peut atteindre avec ses sorts des niveaux de pouvoir bien supérieur à ce qui ne lui permettrait son Intelligence",
+    "effect": "Le personnage ajoute 3 points à son Intelligence pour calculer la quantité maximale de points de magie qu'il peut investir dans chacun de ses sorts. Ce bonus ne s'applique à aucune autre compétence, ni pour calculer son niveau de magie.",
+    "costs": [1],
+    "source": "LdB p.21",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Connaissance inée d'une voie",
+    "description": "Le personnage est né avec la capacité de réaliser certains sorts de façon naturelle, sans avoir eu besoin de les étudier. Il peut instinctivement tisser la puissance du flux des âmes d'une voie, comme si elle était capable de répondre à ses désirs. Le personnage sait utiliser ces sorts à la perfection, mais il ne comprend pas la théorie qui les sous-tend ni ne pourrait les expliques.",
+    "effect": "Cet avantage accord une connaissance innée d'une voie au niveau 40, sans investir aucun point de niveau de magie. Comme il s'agit d'une connaissance innée, le personnage peux continuer à la développer à partir du niveai 40 en dépensant de nouveaux niveaux de magie.",
+    "special": "On peut prendre cet avantage plusieurs fois, pour une voie de magie différente.",
+    "costs": [1],
+    "source": "LdB p.21",
+    "types": ["Avantage Mystique", "Cumulable"]
+  },
+  {
+    "name": "Magie innée améliorée",
+    "description": "Le personnage doté de cette capacité peut exécuter ses sorts innées avec une valeur supérieure à la normale.",
+    "effect": "Les sorts innés du personnage bénéficient d'un bonus de +10 en valeur, s'ajoutant à ce qu'indique son AMR. Les Points de Création supplémentaires augmentent respectivement la valeur des sorts innés à +20 et +30.",
+    "costs": [1, 2, 3],
+    "source": "LdB p.21",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Prédilection séphirotique",
+    "description": "Idem que précédemment, à l'exception que le personnage ressent une affinité naturelle avec la moitié de l'arbre mystique.",
+    "effect": "Le personnage bénéficie d'un bonus spécial de +20 à son AMR et de +20 à sa RMys pour les cinq voies magiques d'un coté de l'arbre. Il applique pour les autres un malus de -20 à son AMR et de -20 à sa RMys.",
+    "costs": [2],
+    "source": "LdB p.21",
+    "types": ["Avantage Mystique", "Résistance"]
+  },
+  {
+    "name": "Sorts renforcés",
+    "description": "Les pouvoirs mystiques du personnage sont particulièrement virulents face à une autre compétence surnaturelle.",
+    "effect": "Le personnage applique un bonus de +50 à ses jets pour calculer le résultat des chocs de sorts.",
+    "costs": [1],
+    "source": "LdB p.21",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Dispence de geste",
+    "description": "Le personnage n'a pas besoin de gestes pour canalyser son énergie magique.",
+    "effect": "Il peut donc réaliser tout type d'action physique sans que se réduise sa capacité à contrôler ses pouvoirs. Le personnage ne réduit pas son AMR quand il ne peut faire de gestes.",
+    "costs": [1],
+    "source": "LdB p.21",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Dispense de paroles",
+    "description": "Le personnage n'a pas besoin de parler pour contrôler la puissance du flux d'âmes.",
+    "effect": "Le personnage peut lancer des sorts en silence sans que ça réduise son AMR.",
+    "costs": [1],
+    "source": "LdB p.21",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Prédilection élémentaire",
+    "description": "Le personnage possède une affinité naturelle avec une voie magique, tout en étant plus faible dans une autre. Son essence est fortement liée à cet élément et, par conséquent, l'énergie magique lui vient bien plus vite quand il utilise ces sorts.",
+    "effect": "Le personnage bénéficie d'un bonus spécial de +20 à son AMR et de +20 à sa RMys dans la voie magique de son choix. Par contre, quand il utilise des sorts de la voie opposée, il applique un malus de -20 à son AMR et de -20 à sa RMys. Si la voie choisie est la nécromancie, le malue s'applique à toutes les autres voies.",
+    "costs": [1],
+    "source": "LdB p.21",
+    "types": ["Avantage Mystique", "Résistance"]
+  },
+  {
+    "name": "Viseur mental",
+    "description": "Les attaques mentales du personnage sont particulièrement précises lorsqu'il consacre son potentiel psychique.",
+    "effect": "Chaque PPP libre dépensé pour amélioré la Projection psychique donne un bonus de +20 au lieu de +10.",
+    "costs": [1],
+    "source": "LdB p.21",
+    "types": ["Avantage Psychique"]
+  },
+  {
+    "name": "Concentration intense",
+    "description": "La concentration du personnage est si profonde qu'il en tire un plus grand avantage que la normale.",
+    "effect": "Le psy double le bonus au Talent psychique que lui rapporte la concentration. Par exemple, s'il se concentre un round, le personnage obtient un bonus de +20 plutôt que +10.",
+    "costs": [2],
+    "source": "LdB p.21",
+    "types": ["Avantage Psychique"]
+  },
+  {
+    "name": "Attache psychique renforcée",
+    "description": "Le personnage peut maintenir des pouvoirs plus puissants que ce que permet son Talent pyschique.",
+    "effect": "Le personnage peut maintenir ses pouvoirs attachés à un niveau de difficulté au-dessus de ce qu'indique son Talent psychique.",
+    "costs": [2],
+    "source": "LdB p.22",
+    "types": ["Avantage Psychique"]
+  },
+  {
+    "name": "Résistance à la fatigue psychique",
+    "description": "L'utilisation des compétences psychiques ne fatigue presque jamais le personnage.",
+    "effect": "Si le psy obtient un échec quand il utilise un de ses pouvoirs, il ne perd pas de fatigue même s'il ne lui rest pas de PPP à dépenser. Cet avantage n'a pas d'effet sur les pouvoirs de niveau 3.",
+    "costs": [2],
+    "source": "LdB p.22",
+    "types": ["Avantage Psychique"]
+  },
+  {
+    "name": "Récupération rapide des PPP",
+    "description": "Le psy a la capacité de récupérer avec facilité de la tension que provoque l'utilisation potentielle de ses compétences.",
+    "effect": "La vitesse de récupération des PPP libres est d'un toutes les dix minutes. Les Points de Création suplémentaires réduisent respectivement ce délai à cinq et une minute.",
+    "costs": [1, 2, 3],
+    "source": "LdB p.22",
+    "types": ["Avantage Psychique"]
+  },
+  {
+    "name": "Préférence psychique",
+    "description": "L'une des disciplines psychiques du personnage est potentiellement bien plus haute que les autres.",
+    "effect": "Quand il utilise les pouvoirs de la discipline choisie, le personnage atteint le niveau de diffculté au-dessus de celui qu'il a obtenu grâce à son Talent psychique.",
+    "costs": [2],
+    "source": "LdB p.22",
+    "types": ["Avantage Psychique"]
+  },
+  {
+    "name": "Concentration passive",
+    "description": "Le personnage peut se concentrer quelle que soit la situation, sans se préoccuper des menaces ou des distractions.",
+    "effect": "Le psy peut se concentrer pour renforcer un pouvoir, alors même qu'il réalise des actions actives.",
+    "costs": [2],
+    "source": "LdB p.22",
+    "types": ["Avantage Psychique"]
+  },
+  {
+    "name": "Réduire une caractéristique de deux points",
+    "description": "Une des caractéristique du personnage a été moins développée que son potentiel légitime.",
+    "effect": "Réduit de deux points une caractéristiques principale.",
+    "condition": "Il n'est pas permis de diminuer une caractéristique en dessous de trois.",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général", "Caractéristique"]
+  },
+  {
+    "name": "Myopie",
+    "description": "La vision du personnage est affecté d'un problème qui l'empêche de bien voir. De nombreuses choses lui paraissent floues et il a du mal à lire, ce qui l'obliqe à user de lunettes ou d'un autre instrument pour compenser son défaut.",
+    "effect": "Le personnage subit un malus de -50 aux compétences Vigilance et Observation quand il utilise le sens de la vision, et d'un malus de -3 aux jets de Perception basés sur la vision. Ce malus s'applique aussi au tir. Si le personnage porte des lunettes, le malus est réduit à la discrétion du Menueur de Jeu.",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": [
+      "Désavantage Général",
+      "Physique",
+      "Perception",
+      "Compétence",
+      "Combat"
+    ]
+  },
+  {
+    "name": "Faiblesse physique",
+    "description": "le personnage résiste extrêmement mal aux dégâts physiques. Chaque fois qu'il subit un Critique, il a de fortes chances d'en mourir ou de subir des dégâts irréversibles.",
+    "effect": "La RPhy du personnage est réduite de moitié.",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général", "Physique", "Résistance"]
+  },
+  {
+    "name": "Mauvaise santé",
+    "description": "La santé du personnage est terriblement faible et il tombe facilement malade.",
+    "effect": "Le Total RMal du personnage est réduite de moitié.",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général", "Physique", "Résistance"]
+  },
+  {
+    "name": "TODO",
+    "description": "",
+    "effect": "",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général"]
   }
 ]
