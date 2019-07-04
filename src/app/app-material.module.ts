@@ -5,6 +5,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatSelectModule } from '@angular/material/select';
 import { NgModule } from '@angular/core';
 
 @NgModule({
@@ -15,7 +17,9 @@ import { NgModule } from '@angular/core';
     MatButtonModule,
     MatCardModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatBadgeModule,
+    MatSelectModule
   ]
 })
 export class AppMaterialModule {}

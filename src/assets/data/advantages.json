@@ -91,7 +91,7 @@
     "effect": "Augmente de deux niveaux la Régénération du personnage. Les Points de Création supplémentaires augmentent la Régénération de quatre et six niveaux, respectivement.",
     "costs": [1, 2, 3],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Physique", "Régénération"]
+    "types": ["Avantage Général", "Physique"]
   },
   {
     "name": "Sens aiguisé",
@@ -131,7 +131,7 @@
     "effect": "Le personnage peut se montrer inquiétant s'il le désire. Les effets excats de cet avantage doivent être interprés par le Menuer de Jeu.",
     "costs": [1],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Interprétation"]
+    "types": ["Avantage Général", "Interprétation", "Social"]
   },
   {
     "name": "Apte dans une compétence",
@@ -197,7 +197,7 @@
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de jeu.",
     "costs": [1],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Interprétation"]
+    "types": ["Avantage Général", "Interprétation", "Social"]
   },
   {
     "name": "Réflexes rapides",
@@ -221,7 +221,7 @@
     "effect": "Le personnage peut augmenter ou diminuer de cinqu points maximum sa Taille à la création de personnage.",
     "costs": [1],
     "source": "LdB p.20",
-    "types": ["Avantage Général", "Taille"]
+    "types": ["Avantage Général", "Physique"]
   },
   {
     "name": "Sens du danger",
@@ -303,7 +303,7 @@
     "note": "Voir Prometheum Exxet p.6 pour un détail de la puissance de l'artefact selon le nombre de PC dépensé.",
     "costs": [1, 2, 3],
     "source": "LdB p.20",
-    "types": ["Avantage de passé", "Interprétation"]
+    "types": ["Avantage de passé", "Interprétation", "Richesse"]
   },
   {
     "name": "Récupération du Ki",
@@ -507,7 +507,7 @@
     "types": ["Désavantage Général", "Physique", "Résistance"]
   },
   {
-    "name": "Possession fécilité",
+    "name": "Possession facilité",
     "description": "Bien que sa volonté soit forte, le personnage subit très facilement la domination des entités qui ont la capacité d'affecter son esprit ou d'altérer sa personnalité.",
     "effect": "Le personnage subit un malus de -50 aux tests de RPsy ou RMys qu'il effectue contre les tentatives de possession, de domination ou de modification du comportement.",
     "benefits": [1],
