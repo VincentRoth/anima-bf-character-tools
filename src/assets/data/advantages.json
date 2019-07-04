@@ -347,7 +347,7 @@
   {
     "name": "Connaissance innée d'une voie",
     "description": "Le personnage est né avec la capacité de réaliser certains sorts de façon naturelle, sans avoir eu besoin de les étudier. Il peut instinctivement tisser la puissance du flux des âmes d'une voie, comme si elle était capable de répondre à ses désirs. Le personnage sait utiliser ces sorts à la perfection, mais il ne comprend pas la théorie qui les sous-tend ni ne pourrait les expliques.",
-    "effect": "Cet avantage accord une connaissance innée d'une voie au niveau 40, sans investir aucun point de niveau de magie. Comme il s'agit d'une connaissance innée, le personnage peux continuer à la développer à partir du niveai 40 en dépensant de nouveaux niveaux de magie.",
+    "effect": "Cet avantage accord une connaissance innée d'une voie au niveau 40, sans investir aucun point de niveau de magie. Comme il s'agit d'une connaissance innée, le personnage peux continuer à la développer à partir du niveau 40 en dépensant de nouveaux niveaux de magie.",
     "special": "On peut prendre cet avantage plusieurs fois, pour une voie de magie différente.",
     "costs": [1],
     "source": "LdB p.21",
@@ -355,7 +355,7 @@
   },
   {
     "name": "Magie innée améliorée",
-    "description": "Le personnage doté de cette capacité peut exécuter ses sorts innées avec une valeur supérieure à la normale.",
+    "description": "Le personnage doté de cette capacité peut exécuter ses sorts innés avec une valeur supérieure à la normale.",
     "effect": "Les sorts innés du personnage bénéficient d'un bonus de +10 en valeur, s'ajoutant à ce qu'indique son AMR. Les Points de Création supplémentaires augmentent respectivement la valeur des sorts innés à +20 et +30.",
     "costs": [1, 2, 3],
     "source": "LdB p.21",
