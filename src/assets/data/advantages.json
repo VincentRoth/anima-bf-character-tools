@@ -80,7 +80,7 @@
   {
     "name": "Affinité avec les animaux",
     "description": "Tout personnage possédant cet avantage bénéficie d'un lien spécial avec les animaux, qui lui permet d'obtenir une réaction positive de leur part. Etonnament, il a aussi la capacité de communiquer de façon limitée avec les animaux, comprenant en gros quelles sont leurs intentions ou faisant comprendre les siennes.",
-    "effect": "Les effets exacts de cet avantage soivent être interprétés par le Meneur de Jeu. Quoi qu'il en soit, un animal entraîné à l'attaque s'en prendra au personnage malgré cet avantage, mais seulement après un avertissement et en lui laissant la possibilité de fuir. Si un animal attaque un groupe comprenant le personnage, celui-ci sera toujours la dernière personne que l'animal attaquera.",
+    "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu. Quoi qu'il en soit, un animal entraîné à l'attaque s'en prendra au personnage malgré cet avantage, mais seulement après un avertissement et en lui laissant la possibilité de fuir. Si un animal attaque un groupe comprenant le personnage, celui-ci sera toujours la dernière personne que l'animal attaquera.",
     "costs": [1],
     "source": "LdB p.18",
     "types": ["Avantage Général", "Interprétation"]
@@ -99,7 +99,7 @@
     "effect": "Ajoute un point à la Perception du personnage pour les tests de caractéristique, ainsi qu'un bonus spécial de +50 à ses compétences secondaires de Vigilance et d'Observation.",
     "costs": [1],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Physique", "Perception", "Compétence"]
+    "types": ["Avantage Général", "Physique", "Perception", "Compétences"]
   },
   {
     "name": "Ambidextrie",
@@ -140,7 +140,7 @@
     "special": "Les coûts de formation ne peuvent être réduits en dessous de 1. Cet avantage ne fonctionne que pour les coûts des compétences secondaires.",
     "costs": [1, 2, 3],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Compétence"]
+    "types": ["Avantage Général", "Compétences"]
   },
   {
     "name": "Chance",
@@ -148,7 +148,7 @@
     "effect": "Le personnage est moins sujet aux Maladresses. Il ne provoque une Maladresse que sur un 1 ou un 2. Pour une compétence dont il est maître, seul un 1 provoquera une Maladresse.",
     "costs": [1],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Maladresse"]
+    "types": ["Avantage Général", "Chance"]
   },
   {
     "name": "Bonne fortune ",
@@ -156,7 +156,7 @@
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de jeu. En tout cas, le personnage ne subit jamais les effets négatifs d'un piège ou d'une attaque réussie par hasard.",
     "costs": [1],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Interprétation"]
+    "types": ["Avantage Général", "Interprétation", "Chance"]
   },
   {
     "name": "Apte dans un champ de compétence",
@@ -165,7 +165,7 @@
     "special": "Les coûts de formation ne peuvent être réduits en dessous de 1. Cet avantage ne fonctionne que pour les coûts des compétences secondaires.",
     "costs": [2],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Compétence"]
+    "types": ["Avantage Général", "Compétences"]
   },
   {
     "name": "Apprentisage inné",
@@ -173,7 +173,7 @@
     "effect": "Accorde l'équivalent d'un bonus de classe de +10 par niveau dans une compétence secondaire. Ce bonus s'ajoute à tout autre bonus automatique dont peut disposer le personnage grâce à sa classe. L'investissement d'un point supplémentaire augmente ce bonus à +20.",
     "costs": [1, 2],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Compétence"]
+    "types": ["Avantage Général", "Compétences"]
   },
   {
     "name": "Apprentisage inné dans un champ de compétence",
@@ -181,7 +181,7 @@
     "effect": "Accorde l'équivalent d'un bonus de classe de +5 par niveau à totues les compétences d'un champ secondaire. Ces bonus s'ajoutent à tous les bonus automatiques dont peut disposer le personnage grâce à sa classe. L'investissement d'un point supplémentaire augmente ce bonus à +10.",
     "costs": [2, 3],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Compétence"]
+    "types": ["Avantage Général", "Compétences"]
   },
   {
     "name": "Sommeil léger",
@@ -189,7 +189,7 @@
     "effect": "Le personnage n'applique que -20 de malus à sa compétence Vigilance quand il dort.",
     "costs": [1],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Compétence", "Perception"]
+    "types": ["Avantage Général", "Compétences", "Perception"]
   },
   {
     "name": "Charme",
@@ -213,7 +213,7 @@
     "effect": "Le personnage a une Base de 0 plutôt que de -30 dans les compétences secondaires pour lesquelles il n'a pas investi de PF. Il bénéfice aussi d'un bonus naturel de +10 dans toutes les compétences secondaires, lequel s'ajoute directement au bonus octroyé par sa caractéristique et compte donc dans la limite de +100.",
     "costs": [2],
     "source": "LdB p.19",
-    "types": ["Avantage Général", "Compétence"]
+    "types": ["Avantage Général", "Compétences"]
   },
   {
     "name": "Taille inhabituelle",
@@ -270,7 +270,7 @@
     "effect": "Le personnage voit le surnaturel, autant la magie et les matrices psychiques que les créatures Animiques. Il n'applique pas le malus de cécité dans aucune de ces situation.",
     "costs": [1],
     "source": "LdB p.20",
-    "types": ["Avantage Général", "Mystique", "Psychique"]
+    "types": ["Avantage Général", "Perception", "Mystique", "Psychique"]
   },
   {
     "name": "Maître martial",
@@ -477,7 +477,7 @@
       "Désavantage Général",
       "Physique",
       "Perception",
-      "Compétence",
+      "Compétences",
       "Combat"
     ]
   },
@@ -593,7 +593,7 @@
     "effect": "Le résultat provoquant une Maladresse augmente de 2. Avec les compétences normales, le personnage échoue sur un 5 ou moins, un 4 s'il est maître.",
     "benefits": [1],
     "source": "LdB p.23",
-    "types": ["Désavantage Général", "Maladresse"]
+    "types": ["Désavantage Général", "Chance"]
   },
   {
     "name": "Infortuné",
@@ -601,7 +601,7 @@
     "effect": "Les effets exacts de ce désavantages doivent être interprétés par le Meneur de Jeu. Dans un groupe, un personnage infortuné est toujours celui qui déclenche un piège et le premier que l'on attaque quand le hasard détermine la cible d'attaque.",
     "benefits": [1],
     "source": "LdB p.23",
-    "types": ["Désavantage Général", "Interprétation"]
+    "types": ["Désavantage Général", "Interprétation", "Chance"]
   },
   {
     "name": "Muet",
@@ -617,7 +617,7 @@
     "effect": "Le personnage ne peut utiliser aucune compétence qui nécessite d'y voir. Il subit à tout moment le malus de cécité.",
     "benefits": [2],
     "source": "LdB p.23",
-    "types": ["Désavantage Général", "Physique"]
+    "types": ["Désavantage Général", "Physique", "Perception"]
   },
   {
     "name": "Sourd",
@@ -625,7 +625,7 @@
     "effect": "Le personnage ne peut utiliser aucune compétence qui requiert le sens de l'ouïe.",
     "benefits": [1],
     "source": "LdB p.23",
-    "types": ["Désavantage Général", "Physique"]
+    "types": ["Désavantage Général", "Physique", "Perception"]
   },
   {
     "name": "Arme exclusive",
@@ -775,11 +775,250 @@
     "types": ["Désavantage Psychique"]
   },
   {
+    "name": "Adroit",
+    "description": "Représente le fait que le personnage a toujours été doué d'une certaine adresse manuelle, très supérieure à ce que sa Dextérité naturelle lui permet.",
+    "effect": "Le personnage ajoute un bonus spécial de +30 à son Habilité manuelle et peut appliquer un bonus de +3 aux tests opposés de Dextérité.",
+    "costs": [1],
+    "source": "KitMJ p.3",
+    "types": ["Avantage Général", "Compétences"]
+  },
+  {
+    "name": "Bonus naturel accru",
+    "description": "L'amélioration naturelle du personnage en fonction de ses caractéristiques est bien supérieure à celle de la majorité des individus.",
+    "effect": "Le personnage obtient une seconde fois son bonus naturel, c'est pourquoi à chaque fois qu'il gagne un niveau, il peut ajouter une fois de plus le modificateur de l'une de ses caractéristiques physiques et celui de l'une de ses caractéristiques spirituelles à n'importe lesquelles de ses compétences secondaires qui en dépendent. Chaque modificateur obtenu grâce à cet avantage peut s'appliquer à une compétence différente.",
+    "costs": [2],
+    "source": "KitMJ p.3",
+    "types": ["Avantage Général", "Compétences"]
+  },
+  {
+    "name": "Energie du désespoir",
+    "description": "Quand il est au bord de la mort, le personnage sombre dans un état de désespoir qui le pousse à donner le meilleur de lui-même et à se dépasser, ce qui lui permet de réaliser des actions qui dépassent de loin son potentiel habituel.",
+    "effect": "Quand les Points de Vie du personnage descendent au-dessous du quart de leur total, il reçoit un bonus de +20 à toutes ses actions. Ce modificateur s'applique seulement dans les situations où le personnage met sa vie, ou celle des autres, en danger.",
+    "costs": [1],
+    "source": "KitMJ p.3",
+    "types": ["Avantage Général", "Interprétation"]
+  },
+  {
+    "name": "Grande vitalité",
+    "description": "Quelle que soit sa valeur de Constitution, le personnage possède une vitalité bien supérieure qui le rend particulièrement résistant aux coups reçus.",
+    "effect": "Donne un bonus automatique de +10 Points de Vie par niveau qui s'ajoute à celui que le personnage gagne naturellement de par sa classe. De cette manière un guerrier qui choisirait cet avantage obtiendrait 25 PV par niveau (15 pour sa classe plus les 10 de Grande vitalité). Investir des points supplémentaires augmente le bonus de +20 ou +30 Points de Vie. Au cas où vous appliqueriez les règles optionnelles d'\"Entre la vie et la mort\" de ce supplément, cet avantage offre également au personnage un bonus spécial de +10 lorsqu'il effectue ses tests de Résistance (+20 et +30 si on utilise des points supplémentaires).",
+    "costs": [1, 2, 3],
+    "source": "KitMJ p.3",
+    "types": ["Avantage Général", "Physique"]
+  },
+  {
+    "name": "Immunité psychique",
+    "description": "Un individu ayant cet avantage est exceptionnellement résistant aux effest émotionnels, c'est pourquoi il n'est généralement pas influencé par les peurs et les désirs normaux.",
+    "effect": "Le personnage obtient un bonus de +60 à tout test d'Impassibilité réalisé dans le but de calmer ses états émotionnels.",
+    "condition": "Cet avantage n'est pas compatible avec les désavantages Phobie sévère, Couard et Addiction ou vice grave.",
+    "costs": [1],
+    "source": "KitMJ p.3",
+    "types": ["Avantage Général", "Compétences"]
+  },
+  {
+    "name": "Immunité surnaturelle",
+    "description": "L'essence du personnage est par nature anathème pour la magie ; il ignore donc de nombreux sortilèges et effets surnaturels. D'une certaine façon, c'est comme si tout ce qui était mystique l'évitait totalement. En fonction du niveau de cet avantage, il est capable d'ignorer des pouvoirs de plus en plus forts.",
+    "effect": "Un personnage ayant cet avantage ignore, de façon automatique, tout sortilège de valeur zéonique inférieure ou égale à 60 lancé contre lui. De la même manière, il résiste directement à tout effet mystique qui provoquerait un test contre une RMys ne dépassant 80. Tenez compte du fait que cela lui permet seulement d'éviter les effets directs de la magie et non ceux qui en dérivent. Par exemple, si une Décharge de Lumière fait s'écrouler le toit sur lui, il sera toujours enseveli normalement. Les points supplémentaires invetis augmentent l'immunité à 90 et à 120 en ce qui concerne la valeur zéonique des sortilèges, et à 100 et 120 pour la difficulté des tests de RMys auxquels il résiste.",
+    "condition": "A cause de sa nature antimagique, un personnage possédant cet avantage ne peut accéder au Don mystique ni à l'avantage Voir le surnaturel. De la même manière, les Néphilims sylvains, duk'zarists ou daimahs n'ont pas accès à l'Immunité surnaturelle.",
+    "costs": [1, 2, 3],
+    "source": "KitMJ p.3",
+    "types": ["Avantage Général", "Mystique", "Résistance"]
+  },
+  {
+    "name": "Libre arbitre",
+    "description": "Le personnage possède une volonté inébranlable lorsqu'il s'agit d'effets liés à la possession et à la domination. Quelle que soit la difficulté de la situation, il tend à se rebeller contre les influences externes et se laisse porter uniquement par ses propres ordres.",
+    "effect": "Donne un bonus spécial de +60 à tout test de Résistance en rapport avec la possession ou la domination.",
+    "costs": [1],
+    "source": "KitMJ p.3",
+    "types": ["Avantage Général", "Psychique", "Mystique", "Résistance"]
+  },
+  {
+    "name": "Utilisation d'armure",
+    "description": "Le personnage possède une très grande facilité naturelle pour apprendre à porter des armures, indépendamment de sa classe.",
+    "effect": "Donne un bonus automatique de +5 par niveau à la compétence principale martiale Port d'armure, qui s'ajoute à tout autre que le personnage pourrait avoir de par sa classe. Les points supplémentaires investis augmentent ce bonus à +10 et +15, respectivement.",
+    "costs": [1, 2, 3],
+    "source": "KitMJ p.3",
+    "types": ["Avantage Général", "Combat"]
+  },
+  {
+    "name": "Polyvalent",
+    "description": "Le personnage possède une incroyable faculté d'adaptation aux chagements et sait facilement orienter son existence d'une manière différente. Grâce à cela, il a moins de problèmes pour effectuer un changement de classe.",
+    "effect": "Le personnage réduit de moitié le coût en PF pour changer de classe et il n'a pas besoin d'attendre deux niveaux pour le faire, du moment que le passage du temps et la justification de l'apprentissage soient suffisants selon le Meneur. Par conséquent, il ne doit investir que 10 PF pour passer à une classe proche, 20 PF pour une classe mixte et 30 PF pour une classe appartenant à un archétype différent.",
+    "costs": [1],
+    "source": "KitMJ p.3",
+    "types": ["Avantage Général"]
+  },
+  {
+    "name": "Sans limite de familier",
+    "description": "L'essence du personnage est partagé avec toutes les créatures qu'il appelle à son service, ce qui lui permet d'établir un lien de familier avec n'importe laquelle d'entre elles au lieu de se limiter à une seule entité. D'une certaine manière, il fait un avec tous les êtres qui l'accompagnent, transformant ces derniers en une partie indispensable de son être.",
+    "effect": "Le personnage cesse d'être limité à la possession d'un seul familier, pouvant ainsi créer un lien d'union avec autant de créatures qu'il le souhaite.",
+    "costs": [2],
+    "source": "KitMJ p.3",
+    "types": ["Avantage Général", "Mystique", "Convocateur"]
+  },
+  {
+    "name": "Survivant",
+    "description": "Quelle que soit la gravité de son état, quiconque ayant cet avantage possède une capacité spéciale pour survivre quand il se trouve à la limite de la mort.",
+    "effect": "Le personnage supporte dix fois sa valeur de Constitution en Points de Vie négatifs, au lieu de cinq fois seulement. De plus, il applique un bonus de +40 à ses tests de RPhy pour réussir à se stabiliser. Une fois sorti de la limite ténu entre la vie et la mort, le malus appliqué est de seulement -30 à toute action au lieu de -60. Si vous utilisez les règles optionnelles d'\"Entre la vie et la mort\" de ce supplément, appliquez le +40 aux tests de RPhy pour résister.",
+    "costs": [1],
+    "source": "KitMJ p.4",
+    "types": ["Avantage Général", "Physique", "Résistance"]
+  },
+  {
+    "name": "Sens du combat",
+    "description": "Quelle que soit la classe à laquelle il appartient, le personnage est doté d'une capacité spécialle pour la lutte, ce qui augmente l'une de ses compétences de combat physique.",
+    "effect": "Le personnage  obtient un bonus automatique de +5 par niveau à l'une de ses trois compétences martiales primordiale : Attaque, Parade ou Esquive. Ce bonus s'ajoute à n'importe quel autre qu'il pourrait posséder grâce à sa classe.",
+    "special": "Le modificateur obtenu avec cet avantage est considéré à tout point de vue comme un bonus automatique de classe. Il ne peut donc pas conférer un bonus total supérieur de +50, même en le combinant à d'autres bonus automatiques ou à ceux obtenus grâce aux arts martiaux.",
+    "costs": [3],
+    "source": "KitMJ p.4",
+    "types": ["Avantage Général"]
+  },
+  {
+    "name": "Touché par le destin",
+    "description": "Il y a quelque chose de spécial dans le personnage qui lui donne une certaine capacité à influencer sur certaines de ses actions, un soupçon de chance ou de génie qui lui permet de profiter de la chance dans les moments les plus importants.",
+    "effect": "Une fois par partie, le joueur a le droit de recommencer un de ses jets et de choisir le nouveau résultat au lieu du précédent. Cette capacité s'applique à toute sorte de jet, des test de compétences à ceux de Résistances.",
+    "special": "Cet avantage peut être acquis autant de fois qu'on le souhaire.",
+    "costs": [1],
+    "source": "KitMJ p.4",
+    "types": ["Avantage Général", "Cumulable", "Chance"]
+  },
+  {
+    "name": "Séducteur",
+    "description": "Quelqu'un possédant cet avantage dégage un magnétisme particulier envers les membres du sexes opposé, qui éprouvent habituellement une certaine attirance envers lui lorsqu'il parle ou s'exprime en leur présence.",
+    "effect": "Le personnage est doté d'une facilité pour traiter avec des individus du sexe opposé. On applique un bonus de +60 à ses tests de Persuasion dans tous les domains liés à la séduction.",
+    "note": "Remplacer individus du sexe opposés par individus pouvant être attirés par le personnage de par son orientation sexuelle, indépendamment de celle du personnage car il s'agit uniquement de séduire.",
+    "costs": [1],
+    "source": "KitMJ p.4",
+    "types": ["Avantage Général", "Compétences", "Social"]
+  },
+  {
+    "name": "Diction magique",
+    "description": "Le sorcier a un don spécial pour interpréter et lancer des sortilèges à partir de livres et de grimoire, en sentant les mots à travers ses mains et en les utilisant de manière instinctive.",
+    "effect": "Le personnage ne réduit pas son AMR lorsqu'il lance des sorts inscrits dans des grimoires, des parchemins ou des livres, et utilise donc toujours son potentiel au maximum même s'il n'est alors pas capable de faire des gestes.",
+    "costs": [1],
+    "source": "KitMJ p.4",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Magie opposée",
+    "description": "Contrairement à d'autres sorciers, la nature mystique du personnage s'appuie sur des pouvoirs opposés et antagonistes. Il peut donc lancer des sorts de voies opposées le plus naturellement du monde.",
+    "effect": "Le personnage ne double pas le coût en niveaux de magie des voies opposés à celles qu'il connaît déjà. Par exemple, il pourrait parfaitement apprendre les voies de Lumière et d'Obscurité sans qu'aucune d'entre elles ne double les points à investir.",
+    "costs": [1],
+    "source": "KitMJ p.4",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Nature magique",
+    "description": "L'essence du sorcier regorge d'une quantité de magie pure hors du commun, ce qui augmente de manière surnaturelle ses réserves innées d'énergie.",
+    "effect": "Le personnage obtient un bonus automatique de +50 points de Zéon par niveau, qui s'ajoute à tout bonus qu'il possèderait déjà grâce à sa classe. Inverstir des points supplémentaires augmente la valeur du bonus à +100 et +150 points de Zéon par niveau.",
+    "costs": [1, 2, 3],
+    "source": "KitMJ p.4",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Pouvoir naturel",
+    "description": "Le sorcier lance ses sorts en employant son pouvoir spirituel, en les renfoçant avec son essence et non ses connaissances.",
+    "effect": "Pour calculer le potentiel maximal des sortilèges, le personnage utilise sa caractéristique Pouvoir au lieu de son Intelligence. Cet avantage ne joue absolument pas sur les niveaux de magie à sa disposition, qui continueront d'utilisre l'Intelligence de façon normale.",
+    "costs": [1],
+    "source": "KitMJ p.5",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Ambivalence psychique",
+    "description": "Les capacités psychiques du personnage sont particulièrement renforcées au moment d'utiliser plus d'un pouvoir à la fois. Il obtient des bénéfices plus grands que d'autres individus possédant des capacités mentales.",
+    "effect": "Quand le personnage divise sont Talent pyschique pour utiliser plus d'un pouvoir par round, il obtient un bonus spécial cumulatif de +5 pour chaque pouvoir ainsi déclaré.",
+    "costs": [1],
+    "source": "KitMJ p.5",
+    "types": ["Avantage Psychique"]
+  },
+  {
+    "name": "Modificateur psychique accru",
+    "description": "Le personnage est particulièrement doué pour profiter des éventuelles conditions environnementales qui jouent sur ses pouvoirs.",
+    "effect": "Le psy double tout modificateur naturel que possède la discipline psychique qu'il utilise. Par exemple, un télépathe appliquerait un bonus de +40 s'il est contact avec le personnage sur lequel il utilise son pouvoir (au lieu de seulement +20) et un pyrokynésiste +60 s'il se trouve dans un volcan (au li du +30 habituel). Les modificateurs négatifs, s'ils existent, sont également doublés.",
+    "costs": [1],
+    "source": "KitMJ p.5",
+    "types": ["Avantage Psychique"]
+  },
+  {
+    "name": "Insupportable",
+    "description": "Le personnage possède une certaine capacité naturelle à être antipathique. Peu importent ses efforts, il provoque toujours une réaction négative de la part des gens qui ne le connaissent pas, et même sa simple présence provoque ou peut provoquer une légère irritation chez certains individus.",
+    "effect": "Les effets exacts de ce désavantages doivent être interprétés par le Meneur de Jeu.",
+    "benefits": [1],
+    "source": "KitMJ p.5",
+    "types": ["Désavantage Général", "Interprétation", "Social"]
+  },
+  {
+    "name": "Couard",
+    "description": "Le personnage est peureux par nature, jusqu'à un point qu'il a du mal à contrôler. A chaque fois qu'il se trouve dans une situation qui présente un certain danger, même s'il ne risque pas sa vie, il essayera de l'éviter de toutes les manières possibles.",
+    "effect": "Dans Anima, il est préférable de laisser chaque joueur interpréter des aspects tel que la couardise d'un personnage. Cependant, ce désavantage signifie que le personnage n'est pas capable de contrôler sa peur du dangerqui court dans ses veines. Donc, à chaque foisque celui-ci sera confronté à un risque réel, il succombera à l'état de peur. S'il réussit un test d'Impassibilité à un niveau Très Difficile, il peut réduire le malus à seulement -20.",
+    "benefits": [1],
+    "source": "KitMJ p.5",
+    "types": ["Désavantage Général", "Interprétation"]
+  },
+  {
+    "name": "Bleu",
+    "description": "Contrairemetn à ses compagnons, le personnage a une expérience sur le terrain très limitée. En conséquence, ses compétences seront dès le départ inférieures à celles des autres.",
+    "effect": "Le personnage commence avec 100 points d'expérience de moins que le reste des personnages de son groupe. Dans le cas où il seraient tous de niveau 1, celui qui aura ce désavantage sera de niveau 0, et un minimum de trois séances de jeu sera requis pour atteindre le premier niveau.",
+    "special": "Ce désavantage est lié aux autres personnage du groupe. Seul un joueur (ou deux, dans le cas où il y aurait cinq participants ou plus) peut le choisir.",
+    "benefits": [1],
+    "source": "KitMJ p.5",
+    "types": ["Désavantage de passé", "Expérience"]
+  },
+  {
+    "name": "Destin funeste",
+    "description": "La fatalité plane au-dessus du personnage ; malgré toutes ses tentatives, ses actions ne se verront jamais récompensées par une chance exceptionnelle ou un moment brillant. Ce n'est pas une question de chance ou de malchance, simplement il semble que le destion lui-même lui ait tourné le dos",
+    "effect": "Le personnage ne peut obtenir de Jet Ouvert, quel que soit son résultat aux dés.",
+    "benefits": [2],
+    "source": "KitMJ p.5",
+    "types": ["Désavantage Général", "Chance"]
+  },
+  {
+    "name": "Faible",
+    "description": "Quand le personnage est mal en point, il subit une diminution drastique de ses capacités qui l'empêche d'utiliser tout son potentiel, et ce même s'il ne souffre d'aucune vraie blessure physique.",
+    "effect": "Quand les Points de Vie du personnage tombent en-dessous du tiers de leur total, il subit un malus de -30 à toutes ses actions jusqu'à ce qu'il réussisse à récupérer.",
+    "benefits": [1],
+    "source": "KitMJ p.5",
+    "types": ["Désavantage Général", "Physique"]
+  },
+  {
+    "name": "Maladroit",
+    "description": "Même si la Dextérité du personnage est élevée, ce dernier tend vers un certain degré de maladresse, à cause de sa distraction et du manque de coordination.",
+    "effect": "Ce désavantage donne un malus de -30 à tout test d'Habilité manuelle demandant de la coordination, et de -3 à tous les tests opposés de Dextérité.",
+    "benefits": [1],
+    "source": "KitMJ p.5",
+    "types": ["Désavantage Général", "Compétences"]
+  },
+  {
+    "name": "Maudit",
+    "description": "Une force obscure pèse sur le personnage, une certaine anomalie de caractère surnaturell qui se mêle à son destin et l'entraîne vers le malheur et le chagrin. L'intensité de la malédiction est échelonnée sur deux niveaux, en fonction des points de bénéfices qu'elle donne. Celle à un point représente le fait qu'un personnage subit continuellement un certain effet négatif qui lui nuit ; ce pourrait être le cas d'un guerrir qui égare tout le temps ses armes lorsqu'il les perd de vue, ou d'une personne incapable de garder de l'argent quoi qu'elle tente.\nCelle à deux points est une malédiction de caractère supérieure qui entraîne de terribles évènements pour celui qui la subit. Ce pourrait être le cas de quelqu'un qui est condamné à perdre tout ce qu'il possède, dont le corps se couvre de douloureuses blessures sanglantes chaque fois qu'il lutte avec quelqu'un ou qui mourra inévitablement le jour ou il ôtera une vie.",
+    "effect": "Les effets exacts de ce désavantage doivent être interprétés par le Meneur de Jeu, en fonction de son degré.",
+    "benefits": [1, 2],
+    "source": "KitMJ p.5",
+    "types": ["Désavantage Général", "Interprétation"]
+  },
+  {
+    "name": "Sans bonus naturel",
+    "description": "Le personnage n'a pas de talent pour profiter particulièrement de ses caractéristiques, se basant plus sur ce qu'il apprend que sur ses capacités naturelles.",
+    "effect": "Ce désavantage fait que le personnage n'applique pas ses bonus naturels par niveau, son amélioration naturelle étant donc limités aux +10 des compétences naturelles.",
+    "benefits": [1],
+    "source": "KitMJ p.6",
+    "types": ["Désavantage Général"]
+  },
+  {
+    "name": "Sang ancien",
+    "description": "Bien qu'il l'ignore sans doute, le personnage possède du Sang Ancien de Salomon. Il possède une affinité naturelle avec la technologie des loges Perdues, ainsi qu'il est expliqué dans le cahpite correspondant.",
+    "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de jeu.",
+    "note": "Permet l'accès à l'arbre de techniques de Ki de l'Héritage de Salomon (Dominus Exxet p.128).",
+    "costs": [2],
+    "source": "Gaïa p.284",
+    "types": ["Avantage général", "Interprétation"]
+  },
+  {
     "name": "TODO",
     "description": "",
     "effect": "",
-    "benefits": [1],
-    "source": "LdB p.24",
-    "types": ["Avantage Général"]
+    "costs": [1],
+    "source": "Gaïa p.288",
+    "types": ["Avantage de passé"]
   }
 ]
