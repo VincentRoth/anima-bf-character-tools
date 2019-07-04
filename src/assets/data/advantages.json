@@ -251,6 +251,7 @@
     "name": "Accès à un pouvoir psychique naturel",
     "description": "Le personnage possède un unique pouvoir psychique dont il sait se servir inconsciemment. En fait, il ne connait pas l'origine de son pouvoir ni ne le contrôle complètement, mais il est capable de l'utiliser dès qu'il le souhaite.",
     "effect": "Le personnage peut utiliser de manière innée un unique pouvoir mental de son choix. En fait, le personnage n'est pas vraiment un psy et il ne peut pas utiliser de PPP pour acquérir de nouveaux pouvoirs ou pour améliorer son pouvoir. Son Talent psychique ne dépend pas de sa Volonté. Il ne requiert de lancer les dés pour le calculer : il atteint un niveau de Difficile. Le pouvoir choisi peut être d'un niveau quelconque mais sa difficulté minimale ne doit dépasser Difficile. Le personnage peut l'utiliser une fois par minute sans problème. Par contre, chaque utilisation supplémentaire au cours de cette période de repos provoque la perte d'un point de Fatigue. Les Points de Création supplémentaires augmentent le Talent psychique naturel à Très Difficile et à Absurde, respectivement.",
+    "note": "Le pouvoir ne peut pas être attaché.",
     "costs": [1, 2, 3],
     "source": "LdB p.20",
     "types": ["Avantage Général", "Psychique"]
@@ -484,6 +485,7 @@
     "name": "Faiblesse physique",
     "description": "le personnage résiste extrêmement mal aux dégâts physiques. Chaque fois qu'il subit un Critique, il a de fortes chances d'en mourir ou de subir des dégâts irréversibles.",
     "effect": "La RPhy du personnage est réduite de moitié.",
+    "note": "Seul la base RPhy est réduite.",
     "benefits": [1],
     "source": "LdB p.22",
     "types": ["Désavantage Général", "Physique", "Résistance"]
@@ -497,11 +499,287 @@
     "types": ["Désavantage Général", "Physique", "Résistance"]
   },
   {
+    "name": "Vulnérabilité aux poisons",
+    "description": "Le coprs du personnage n'est pas capable de supporter les poisons, ses défenses biologiques ne sont pas préparées à combattre aucune substance nocive.",
+    "effect": "Le Total RPoi du personnage est réduit de moitié.",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général", "Physique", "Résistance"]
+  },
+  {
+    "name": "Possession fécilité",
+    "description": "Bien que sa volonté soit forte, le personnage subit très facilement la domination des entités qui ont la capacité d'affecter son esprit ou d'altérer sa personnalité.",
+    "effect": "Le personnage subit un malus de -50 aux tests de RPsy ou RMys qu'il effectue contre les tentatives de possession, de domination ou de modification du comportement.",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général", "Psychique", "Mystique", "Résistance"]
+  },
+  {
+    "name": "Vulnérabilité à la magie",
+    "description": "Ce désavantage indique que le personnage est très facilement affecté par les énergies magiques.",
+    "effect": "Le Total RMys du personnage est réduit de moitié.",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général", "Mystique", "Résistance"]
+  },
+  {
+    "name": "Vulnérabilité au froid ou à la chaleur",
+    "description": "La chaleur ou le froid, au choix du joueur, affectent fortement le personnage et provoquent chez lui de graves problèmes physiques. Son corps est très sérieusement handicapé chaque fois qu'il entre en contact avec quelque chose de très chaud ou de très froid, ainsi que s'il visite des lieux aux températures extrêmes, comme des volcans ou des zones arctiques.",
+    "effect": "Le personnage subit un malus de -80 à toutes ses Résistances contre ces éléments et -30 à toutes ses actions dans les climats extrêmes.",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général", "Physique", "Résistance"]
+  },
+  {
+    "name": "Membre atrophié",
+    "description": "Le personnage a de sérieuses difficultés à contrôler un de ses membres. Ce membre tremble fortement à tout bout de champ ou cesse de répondre au moment où il en à le plus besoin.",
+    "effect": "Le personnage subit un malus de -80 à toutes les actions physiques requérant l'utilisation du membre atrophié. Peux causer une réduction d'AMR chez un magicien si le handicap l'empêche de faire les gestes nécessaires.",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général", "Physique"]
+  },
+  {
+    "name": "Apparence désagréable",
+    "description": "Le personnage est terriblement difforme, ce qui rend son apparence extrêment désagréable.",
+    "effect": "L'apparence du personnage est de 2.",
+    "condition": "Le personnage doit avoir une apparence minimale de 7. Cette caractéristique doit avoir été générée à l'aide d'un jet de dé, et non pas librement choisie par le joueur.",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général", "Social"]
+  },
+  {
+    "name": "Guérison lente",
+    "description": "Quelle qu'en soit la raison, la capacité de régénération du personnage est terriblement réduite. Il récupère les blessures dont il souffre avec beaucoup de difficulté, même avec des moyens surnaturels.",
+    "effect": "Le personnage ne récupère que la moitié des Points de Vie qu'il devrait récupérer normalement, que ce soit par sa régénération normale ou par des moyens surnaturels.",
+    "benefits": [1],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général", "Physique"]
+  },
+  {
+    "name": "Grave maladie",
+    "description": "Le personnage souffre d'une grave maladie dégénérative qui finira par le tuer. En géénral, il lui reste à peine plus d'un an à vivre au moment de commencer la partie, mais cette période de temps peut être plus ou moins longue si le Menueur de Jeu le désire, en fonction des limites temporelles de sa campagne. Contrairement à ce que l'on pourrait en penser, un personnage avec ce désavantage est parfaitement jouable, mais il peut aussi avoir comme objectif de trouver un remède à sa maladie.",
+    "effect": "Le personnage applique un bonus cumulatif de -10 à toutes ses actions pour chaque mois qui passe. Le Meneur de Jeu détermine en secret une date à laquelle le personnage mourra.",
+    "benefits": [2],
+    "source": "LdB p.22",
+    "types": ["Désavantage Général", "Physique", "Interprétation"]
+  },
+  {
+    "name": "Grave allergie",
+    "description": "Le personnage a une allergie quelconque, si grave que par simple contact ou inhalation il subit une terrible réaction allergique qui dure plusieurs heures. Il peut être allergique au métal, au pollen, ou même à la lumière solaire, par exemple.",
+    "effect": "Les malus à chaque action en cas de contact avec la substance allergique varient entre -40 et -80, suivant la gravité de l'allergie ou du temps passé au contact de la substance.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Physique"]
+  },
+  {
+    "name": "Sommeil profond",
+    "description": "Ce désavantage est terrifiant pour une personne dont la vie peut être menacée même quand elle dort. Le personnage à un sommeil très profond et il lui est difficile de se réveiller. Il supporte sans se réveiller un contact physique léger ; quand il finit par se réveiller, il reste étourdi pendant plusieurs minutes",
+    "effect": "Le personnage subit un malus de -200 à tout jeu de Perception quand il dort. Durant les dix rounds suivant son réveil, il subit un malus de -40 à totues ses actions.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Physique", "Perception"]
+  },
+  {
+    "name": "Phobie sévère",
+    "description": "Le personnage ressent une peur terrible envers quelque chose, qui l'oblige à se comporter de manière irrationelle en sa présence. Voici qulques bons exemples de phobie : l'hydrophobie (la peur de l'eau), l'hémophobie (la peur du sang), la claustrophobie (la peur des espaces clos). Naturellement, le Meneur de Jeu ne devrait pas accepter la peur d'un élément trop précis ; il décide de son impact exact.",
+    "effect": "Le personnage subit les malus de l'état de peur chaque fois qu'il se retrouve en présence de l'objet de sa phobie.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Interprétation"]
+  },
+  {
+    "name": "Malchance",
+    "description": "Le personnage fait preuve de malchance au moment de réaliser des actions et il échoue habituellement de manière catastrophique, bien plus souvent qu'il ne le voudrait.",
+    "effect": "Le résultat provoquant une Maladresse augmente de 2. Avec les compétences normales, le personnage échoue sur un 5 ou moins, un 4 s'il est maître.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Maladresse"]
+  },
+  {
+    "name": "Infortuné",
+    "description": "Le malheur accompagne partout le personnage. Où qu'il soit, il se passe toujours des choses terribles, quels que soient ses efforts pour l'éviter.",
+    "effect": "Les effets exacts de ce désavantages doivent être interprétés par le Meneur de Jeu. Dans un groupe, un personnage infortuné est toujours celui qui déclenche un piège et le premier que l'on attaque quand le hasard détermine la cible d'attaque.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Interprétation"]
+  },
+  {
+    "name": "Muet",
+    "description": "Quelle qu'en soit la raison, le personnage est privé de la capacité physique de parler.",
+    "effect": "Le personnage ne peut pas parler.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Physique"]
+  },
+  {
+    "name": "Aveugle",
+    "description": "Quelle qu'en soit la raison, le personnage est privé du sens de la vision ou est complètement aveugle (ce qui revient au même)",
+    "effect": "Le personnage ne peut utiliser aucune compétence qui nécessite d'y voir. Il subit à tout moment le malus de cécité.",
+    "benefits": [2],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Physique"]
+  },
+  {
+    "name": "Sourd",
+    "description": "Comme son nom l'indique, le personnage est totalement sourd, c'est-à-dire, dépourvu du sens de l'audition.",
+    "effect": "Le personnage ne peut utiliser aucune compétence qui requiert le sens de l'ouïe.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Physique"]
+  },
+  {
+    "name": "Arme exclusive",
+    "description": "Ce désavantage indique que le personnage a l'habitude de combattre exclusivement avec une arme précise et que sa capacité à utiliser tout autre arme, même d'une catégorie identique, est bien plus faible",
+    "effect": "Le personnage subit un malus de -30 s'il combat avec une arme différente de la sienne.",
+    "condition": "Ce désavantage ne peut être acquis que par les archétypes de Combattant, Furtif, Artiste martial ou Sans classe.",
+    "note": "Ne peut pas se prendre avec Mains Nues. Peut se prendre avec un art martial (mais le malus s'appliquera à tous les autres arts martiaux)",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Combat"]
+  },
+  {
+    "name": "Réaction lente",
+    "description": "Les réflexes du personnage sont peu préparés à répondre avec rapidité aux événements.",
+    "effect": "Le personnage subit un malus spécial de -30 à son Initiative. Le point de désavantge supplémentaire augmente ce malus à -50.",
+    "benefits": [1, 2],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Combat"]
+  },
+  {
+    "name": "Addiction ou vice grave",
+    "description": "Ce désavantage indique que le personnage ressent le besoin impérieux de réaliser un acte précis ou de consommer une substance spéciale de façon quotidienne. Un personnage avec ce désavantage fait tout le nécessaire pour satisfaire son besoin, car dans le cas contraire il commence à se sentir nerveux et à faire une crise.",
+    "effect": "Le personnage subit un malus cumulatif de -10 par jour passé sans satisfaire son vice.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Interprétation"]
+  },
+  {
+    "name": "Apprentissage lent",
+    "description": "La capacité d'apprentissage du personnage est bien plus limité que celle d'un individu normal. Cela ne veut pas dire qu'il est moins intelligent que les autres, mais qu'il apprend pas autant de ses erreurs ni ne tire vraiment profit de ses réussites.",
+    "effect": "Le personnage subit un malus de 4 points d'expérience à la fin de chaque session de jeu. Le point de désavantage supplémentaire augmente ce malus à 8.",
+    "benefits": [1, 2],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Expérience"]
+  },
+  {
+    "name": "Vulnérabilité à la douleur",
+    "description": "Le personnage n'a pas la capacité de résister à la douleur physique, qui le paralyse et le gène fortement.",
+    "effect": "Double tous les malus provoqués par la souffrance, qu'il soient provoqués par des Critiques ou des effets surnaturels",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général", "Physique"]
+  },
+  {
+    "name": "Epuisement",
+    "description": "Le personnage se révèle très vulnérable aux effets de Fatigue. Non seulement il se fatigue plus que les autres, mais il subit aussi plus durement les effets de la fatigue.",
+    "effect": "Double le malus aux actions provoqués par la fatigue et diminue d'un point la Base de Fatigue du personnage.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Général"]
+  },
+  {
+    "name": "Obligations de paroles",
+    "description": "Les paroles mystiques sont un élément fondmental de la magie du personnage. Il ne peut réaliser des sorts que s'il est capacble de prononcer des paroles mystiques.",
+    "effect": "Le personnage doit être capable de parler pour accumuler la magie et lancer des sorts.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Mystique"]
+  },
+  {
+    "name": "Obligation de gestes",
+    "description": "Le personnage ne peut se passer de gestes pour tisser la magie. S'il ne dispose pas d'une liberté totale de mouvement, il s'avère incapable d'user de ses pouvoirs et, par conséquent, ne peut lancer aucun sort.",
+    "effect": "Le personnage doit bouger librement pour accumuler la magie et lancer ses sorts.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Mystique"]
+  },
+  {
+    "name": "Exténuation magique",
+    "description": "La tension de la magie provoque une intense fatigue chez le personnage chaque fois qu'il manipule les énergies mystiques. Les sorciers s'épuisent s'ils réalisent des sorts de puissance élevée, ce qui peut les mener à l'évanouissement s'ils forcent trop sur leurs capacités.",
+    "effect": "Le personnage perd un point de fatigue au moment où il lance un sort de valeur supérieur à 100, deux points si la valeur est supérieure à 200 et trois si elle dépasse 300.",
+    "benefits": [1],
+    "source": "LdB p.23",
+    "types": ["Désavantage Mystique"]
+  },
+  {
+    "name": "Magie soumise à condition",
+    "description": "Le contrôle du personnage sur les pouvoirs du flux d'âmes s'avère capriceux ; il ne répond que quand le personnage réalise une action précise. Si, par exemple, sa magie était liée à la danse, ses sorts ne fonctionneraient que quand il danse ; si elle étaient liée au combat, ses sort ne fonctionnerait que pendant qu'il combat. Il est aussi possible que les pouvoirs magiques fonctionnent unqiuement dans des situations ou conditions déterminées, commen pendant la journée ou quand les pieds sont au sol.",
+    "effect": "Le personnage ne peut user  de magie que s'il réalise l'action ou remplit la condition déterminée pour ce désavantage. Dans le cas d'uneaction liée à une compétence secondaire, le sorcier devra réussir un test Difficile pour pouvoir lancer ses sorts.",
+    "benefits": [1],
+    "source": "LdB p.24",
+    "types": ["Désavantage Mystique"]
+  },
+  {
+    "name": "Récupération lente de la magie",
+    "description": "La magie connaît quelques problèmes à filtrer à travers l'essence du personnage, ce qui lui pose quelques problèmes pour récupérer le pouvoir qu'il a utilisé.",
+    "effect": "La régénération Zéonique du personnage est réduite de moitié.",
+    "benefits": [1],
+    "source": "LdB p.24",
+    "types": ["Désavantage Mystique"]
+  },
+  {
+    "name": "Magie étanche",
+    "description": "La magie ne filtre pas naturellement à travers le corps et l'âme du personnage. Certains blocages l'empêchent de canaliser les pouvoir ambiants et même son âme ne régénère pas la magie. Quand il utilise son pouvoir, le personnage ne le récupère jamais de lui-même. La seule méthode à sa disposition consiste à s'alimenter des énergie msytiques d'autres êtres magiques ou d'objets.",
+    "effect": "Le personnage n'a aucune régénération Zéonique, ce qui l'empêche de récupérer naturellement les points de 2eon qu'il dépense. Il ne pourra récupérer de la magie qu'en la drainant d'objets qui le permetent ou d'êtres vivant possédant le Don mystique.",
+    "condition": "Ce désavantage ne peut être combiné à récupération lente de la magie.",
+    "benefits": [2],
+    "source": "LdB p.24",
+    "types": ["Désavantage Mystique"]
+  },
+  {
+    "name": "Lien existentiel",
+    "description": "Les pouvoirs du sorcier sont liés aux même racines que les voies de magie, et donc sa capacité à développer ou à créer ses propres sorts est pratiquement nulle. Le personnage ne connaît que ses voies, à partir desquelles il ne pourra pas développer ses propres sortilèges.",
+    "effect": "Le sorcier ne peut pas choisir de sort d'Accès libre dans ses voies de magie et il se révèle incapable de choisir librement des sorts.",
+    "benefits": [1],
+    "source": "LdB p.24",
+    "types": ["Désavantage Mystique"]
+  },
+  {
+    "name": "Sorcellerie",
+    "description": "La magie pratiquée par le personnage à une saveur tribale et chamanique, dont lesprincipes constituent la base de son énergie. Ses pouvoirs surnaturels sont fortement liés au monde matériel, et il a donc l'obligation d'utiliser certains composants pour canaliser et effectuer des sorts.",
+    "effect": "Le personnage doit obligatoirement utiliser des composantes matérielles pour lancer ses sorts. Chaque sortilège requiert un composant précis déterminé par le Meneur de Jeu, en fonction de l'origine et des connaissances du personnage.",
+    "benefits": [2],
+    "source": "LdB p.24",
+    "types": ["Désavantage Mystique", "Interprétation"]
+  },
+  {
+    "name": "Sans concentration",
+    "description": "Les pouvoirs du personnage ne dépendent absolument pas de sa capacité de concentration, il s'avèrent bien trop inconstants pour qu'il puisse les préparer afin d'améliorer leur puissance.",
+    "effect": "Un psy avec ce désavantage ne peut appliquer de bonus à son Talent psychique quand il se concentre.",
+    "benefits": [1],
+    "source": "LdB p.24",
+    "types": ["Désavantage Psychique"]
+  },
+  {
+    "name": "Pouvoir unique",
+    "description": "Les aptitudes psychiques du personnage ne lui permettent pas d'utiliser plusieurs pouvoirs en même temps. Quand le personnage en emploie un, il se concentre tellement qu'il perd la capacité d'en projeter d'autres, à l'exception de ceux qu'il maintient de façon innée.",
+    "effect": "Le psy ne peut utiliser qu'un seul pouvoir psychique par round. Cela ne l'empêche pas d'en maintenir d'autres, tant qu'ils ont été lancés au cours de rounds précédents.",
+    "benefits": [1],
+    "source": "LdB p.24",
+    "types": ["Désavantage Psychique"]
+  },
+  {
+    "name": "Exténuation psychqieu",
+    "description": "L'utilisation des pouvoirs psychiques du personnage provoque chez lui de grave répercutions physiques, qui le laissentextrêment fatigué, même quand il n'emploie que des compétences psychiques de bas niveau.",
+    "effect": "Le personnage perd le double des points de Fatigue indiqués par sa fatigue psychique.",
+    "benefits": [1],
+    "source": "LdB p.24",
+    "types": ["Désavantage Psychique"]
+  },
+  {
+    "name": "Consommation psychique",
+    "description": "Quand les pouvoirs psy ne fonctionnent pas, le contrecoup provoque une grave répercussion sur son corps et inflige des dégâts internes.",
+    "effect": "Si un psy subit un échec psychqie, il perd automatiquement autant de Points de Vie que sa marge d'échec par rapport au talent minimum requis.",
+    "benefits": [2],
+    "source": "LdB p.24",
+    "types": ["Désavantage Psychique"]
+  },
+  {
     "name": "TODO",
     "description": "",
     "effect": "",
     "benefits": [1],
-    "source": "LdB p.22",
-    "types": ["Désavantage Général"]
+    "source": "LdB p.24",
+    "types": ["Avantage Général"]
   }
 ]
