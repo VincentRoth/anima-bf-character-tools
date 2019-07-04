@@ -345,7 +345,7 @@
     "types": ["Avantage Mystique"]
   },
   {
-    "name": "Connaissance inée d'une voie",
+    "name": "Connaissance innée d'une voie",
     "description": "Le personnage est né avec la capacité de réaliser certains sorts de façon naturelle, sans avoir eu besoin de les étudier. Il peut instinctivement tisser la puissance du flux des âmes d'une voie, comme si elle était capable de répondre à ses désirs. Le personnage sait utiliser ces sorts à la perfection, mais il ne comprend pas la théorie qui les sous-tend ni ne pourrait les expliques.",
     "effect": "Cet avantage accord une connaissance innée d'une voie au niveau 40, sans investir aucun point de niveau de magie. Comme il s'agit d'une connaissance innée, le personnage peux continuer à la développer à partir du niveai 40 en dépensant de nouveaux niveaux de magie.",
     "special": "On peut prendre cet avantage plusieurs fois, pour une voie de magie différente.",
