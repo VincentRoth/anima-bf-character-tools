@@ -854,7 +854,7 @@
     "effect": "Le personnage cesse d'être limité à la possession d'un seul familier, pouvant ainsi créer un lien d'union avec autant de créatures qu'il le souhaite.",
     "costs": [2],
     "source": "KitMJ p.3",
-    "types": ["Avantage Général", "Mystique", "Convocateur"]
+    "types": ["Avantage Général", "Mystique", "Convocation"]
   },
   {
     "name": "Survivant",
@@ -1076,7 +1076,7 @@
     "effect": "Quel que soit son status social, le personnage ne commence avec aucune autre possession que ce qu'il porte, se voyant obligé à amortir une dette fixée à plus de 10 000 écus do'r. Une autre possibilité est qu'il doive obligatoirmeent payer 500 écus d'or tous les mois",
     "benefits": [1],
     "source": "Gaïa p.289",
-    "types": ["Désavantage de passé"]
+    "types": ["Désavantage de passé", "Richesse"]
   },
   {
     "name": "Ennemi puissant",
@@ -1220,7 +1220,7 @@
   },
   {
     "name": "Essence Sheele",
-    "description": "Le personnage est lié de façon existentielle à l'essecne des Sheeles, et s'il se lie à l'une d'entre elles, l'élémentaire de magie obtient des pouvoirs bien supérieurs à la normale.",
+    "description": "Le personnage est lié de façon existentielle à l'essence des Sheeles, et s'il se lie à l'une d'entre elles, l'élémentaire de magie obtient des pouvoirs bien supérieurs à la normale.",
     "effect": "Si le personnage s'unit à une Sheele, cette dernière peut obtenir deux Améliorations supplémentaires au moment de sceller le Lien.",
     "costs": [1],
     "source": "ArcEx p.11",
