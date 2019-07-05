@@ -957,7 +957,7 @@
   },
   {
     "name": "Bleu",
-    "description": "Contrairemetn à ses compagnons, le personnage a une expérience sur le terrain très limitée. En conséquence, ses compétences seront dès le départ inférieures à celles des autres.",
+    "description": "Contrairement à ses compagnons, le personnage a une expérience sur le terrain très limitée. En conséquence, ses compétences seront dès le départ inférieures à celles des autres.",
     "effect": "Le personnage commence avec 100 points d'expérience de moins que le reste des personnages de son groupe. Dans le cas où il seraient tous de niveau 1, celui qui aura ce désavantage sera de niveau 0, et un minimum de trois séances de jeu sera requis pour atteindre le premier niveau.",
     "special": "Ce désavantage est lié aux autres personnage du groupe. Seul un joueur (ou deux, dans le cas où il y aurait cinq participants ou plus) peut le choisir.",
     "benefits": [1],
