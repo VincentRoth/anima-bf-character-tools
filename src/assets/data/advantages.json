@@ -300,7 +300,7 @@
     "name": "Artefact",
     "description": "Le personnage possède un artefact de grand pouvoir",
     "effect": "Le joueur et le Meneur de Jeu doivent se mettre d'accord sur les capacités de l'artefact. Les points supplémentaires doivent augmenter les pouvoirs de l'objet.",
-    "note": "Voir Prometheum Exxet p.6 pour un détail de la puissance de l'artefact selon le nombre de PC dépensés.",
+    "note": "Voir Prometheum Exxet p.6 pour un détail de la puissance de l'artefact selon le nombre de PC investis.",
     "costs": [1, 2, 3],
     "source": "LdB p.20",
     "types": ["Avantage de passé", "Interprétation", "Richesse"]
@@ -1014,11 +1014,100 @@
     "types": ["Avantage Général", "Interprétation"]
   },
   {
+    "name": "Allié puissant",
+    "description": "Quelqu'un ayant un certain pouvoir ou influence est prêt à aider le personnage à tout moment. Ce peut être un noble important, un grand seigneur du crime ou un puissant sorcier, qui ne s'arrêtera devant rien pour appuyer le personnage lorsque ce dernier en aura besoin.",
+    "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu. Naturellement, plus l'investissement sera grand, plus son allié aura de pouvoir personnel. Comme référence, vous pouvez untiliser le Tableau 33.",
+    "costs": [1, 2, 3],
+    "source": "Gaïa p.288",
+    "types": ["Avantage de passé", "Interprétation", "Social"]
+  },
+  {
+    "name": "Contacts",
+    "description": "Le personnage a des connaissances pouvant lui donner des informations, voire une aide limitée, au moment où il le demandera. En fonction du niveau de cet avantage, il seront plus ou moins utiles ou puissants. S'il le souhaite, le personnage peut également avoir des liens avec une organisation de Gaïa.",
+    "effect": "A chaque fois que ce sera nécessaire, un individu possédant cet avantage pourra utiliser ses contacts afin d'obtenir des informations ou une aide limitée dans leur domaine d'influence. Par exemple, s'il a des accointances dans l'Ordre de Mague, ceux-ci pourront le renseigner sur des sujets surnaturels, mais bien peu en politique ou en rumeurs de la rue. Il y a dans le Tableau 33 une petite liste indiquant les valeurs recommandées afin de disposer de contacts avec différentes forces de Gaïa. Ce sont des chiffres minimums ; un joueur peut investir une plus grande quantité de PC pour les augmenter. Par exemple, si quelqu'un dépense 3 Points de Création pour l'Ordre de Magus, cela voudra dire que ses contacts se trouvent dans les plus hautes sphères de l'organisation, et seront par conséquent capables de lui donner bien plus d'aide et d'informations.",
+    "costs": [1, 2, 3],
+    "source": "Gaïa p.288",
+    "types": ["Avantage de passé", "Social"]
+  },
+  {
+    "name": "Position sociale",
+    "description": "Cela signifie que le personnage appartient à la plus haute classe de la société, un statut supérieur de la noblesse. Il commencera donc en détenant un titre prestigieux et une fortune personnelle considérable. Il est important de signaler qu'il n'est pas nécessairement le chef de sa famille ; il peut être l'un des héritiers.",
+    "effect": "En plus de ses effets sur l'interprétation, cet avantage donne accès au personnage aux classes réservées de chaque principauté sans qu'il ait besoin de faire un quelconque jet de dés. Sa valeur en Poins de Création dépend par conséquent du niveau de ces classes.",
+    "costs": [1, 2],
+    "source": "Gaïa p.288",
+    "types": ["Avantage de passé", "Interprétation", "Social"]
+  },
+  {
+    "name": "Racines cuturelles",
+    "description": "Le personnage est très attaché à la culture de son pays et possède de vastes connaissances sur les traditions et les coutumes de sa terre.",
+    "effect": "Cet avantage offre un bonus spécial à plusieurs compétences secondairesen fonction de la position sociale et du pays d'origine du personnage. Il y a pour chacune des nations de Gaïa une liste des différents modificateurs que donnent les racines culturelles.",
+    "costs": [1],
+    "source": "Gaïa p.288",
+    "types": ["Avantage de passé", "Compétences"]
+  },
+  {
+    "name": "Réputation",
+    "description": "Pour une raison ou pour une autre, le personnage est un individu exceptionnellement connu partout. Il se peut qu'il s'agisse d'un acteur illustre ou que des légendes circulent sur ses compétences martiales (qu'elles soient vrai ou pas), mais c'est en tout les cas une véritable célébrité.",
+    "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu. Le joeur doit établir la raison de la renommée de son personnage au moment de sa création. Au cas où on utiliserait les règles optionnelles de Réputation de ce même chapitre, cet avantage donne 40 ou 65 points de réputation, en fonction des PC investis.",
+    "costs": [1, 2],
+    "source": "Gaïa p.289",
+    "types": ["Avantage de passé", "Interprétation", "Social"]
+  },
+  {
+    "name": "Saint",
+    "description": "Le personnage a reçu la distinction de saint de la part de l'Eglise, ce qui signifie que ses pouvoirs sont officellement un don divin et n'émanent pas du démon. Il est par conséquent libre d'utiliser ses compétences surnaturelles de manière limitées sans crainte d'être poursuivi par l'Inquisition ou de subir d'autres conséquences. Il est important de signaler que, même si l'Eglise tend à être réticente à admettre qu'elle s'est trompée sur une nomination, cela ne donne pas au personnage une liberté d'action totale. Non seulement il est obligé d'utiliser le moins possible ses capacités en public, mais en plus tout agissement que l'Eglise pourrait considérer comme négatif lui ferait perdre immédiatement ce status.",
+    "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu.",
+    "condition": "Le personnage doit être doté d'un type quelconque de compétence surnaturelle pour pouvoir accéder à cet avantage.",
+    "costs": [2],
+    "source": "Gaïa p.289",
+    "types": ["Avantage de passé", "Interprétation", "Social"]
+  },
+  {
+    "name": "Code de conduite",
+    "description": "Là où il a été elevé, le personnage vécut suivant un strict code de conduite qui pèse toujours sur lui. Il ne peut pas y désobéir et se verra obligé de le suivre en toutes circonstances. Il ne sait tout simplement pas vivre autrement.",
+    "effect": "Le personnage doit suivre un strict code de conduite, lié d'une certaine manière à son pays d'origine.",
+    "benefits": [1],
+    "source": "Gaïa p.289",
+    "types": ["Désavantage de passé"]
+  },
+  {
+    "name": "Dettes",
+    "description": "Pour son malheur, le personnage a contracté une dette gigantesque qu'il est incapable de payer. Elle lui a déjà coûté tout ce qu'il possédait, mais il est encore obligé de débourser bien plus. Il revient au Meneur de Jeu de déterminer la nature exact de la dette : oeut-être doit-il la payer tous les mois afin de couvrir les frais d'hôpital de sa mère, ou que sa famille s'est ruinée, la lui léguant.",
+    "effect": "Quel que soit son status social, le personnage ne commence avec aucune autre possession que ce qu'il porte, se voyant obligé à amortir une dette fixée à plus de 10 000 écus do'r. Une autre possibilité est qu'il doive obligatoirmeent payer 500 écus d'or tous les mois",
+    "benefits": [1],
+    "source": "Gaïa p.289",
+    "types": ["Désavantage de passé"]
+  },
+  {
+    "name": "Ennemi puissant",
+    "description": "Au cours de sa vie, le personnage s'est fait un dangereux ennemi qui le poursuit sans relâche afin de le détruire. Il se peut qu'un important seigneur du crime soit à ses trousses, ou que l'Inquisition le considère comme un sorcier et le recherche dans le but de l'éliminer.",
+    "effect": "Les effets exacts de ce désavantgae doivent être interprétés par le Meneur de Jeu. Naturellement, plus le bénéfice est élevé, plus le pouvoir de l'ennemi ou de l'organisation qui le poursuit sera grand. Vous pouvez utiliser le Tableau 33 comme référence.",
+    "benefits": [1, 2],
+    "source": "Gaïa p.289",
+    "types": ["Désavantage de passé", "Interprétation"]
+  },
+  {
+    "name": "Paria",
+    "description": "Pour une raison quelconque, le personnage est totalement rejeté par la société. Ou qu'il aille, les gens le méprisent et fuient toujours sa compagnie. Il se peut qu'il appartienne à une famille connue pour être coupable de haute trahison, qu'on l'ait accusé d'un tas de crims horribles ou toute autre raison pouvant causer le rejet.",
+    "effect": "Le personnage est automatiquement considéré comme un paria dans tous les cercles sociaux.",
+    "benefits": [1],
+    "source": "Gaïa p.289",
+    "types": ["Désavantage de passé", "Social"]
+  },
+  {
+    "name": "Secret inavouable",
+    "description": "Le personnage cache un sombre et terrifiant secret, quelque chose qui pourrait signifier sa ruine et celle de ceux auxquels il tient s'il était révélé au grand jour. Il se peut qu'il soit coupable d'un crime affreux, ou qu'il ait été utilisé étant petit pour mener à bien un terrible rituel ayant causé la mort de milliers de gens, auquel cas les membres de la secte déchaîneraient un enfer sur lui s'ils découvraient qu'il est encore vivant.",
+    "effect": "Le joueur et le Meneur de Jeu doivent décider ensemble de la nature du secret et des conséquences de son éventuelle révélation.",
+    "benefits": [1],
+    "source": "Gaïa p.289",
+    "types": ["Désavantage de passé", "Interprétation"]
+  },
+  {
     "name": "TODO",
     "description": "",
     "effect": "",
     "costs": [1],
-    "source": "Gaïa p.288",
-    "types": ["Avantage de passé"]
+    "source": "DomEx p.16",
+    "types": ["Avantage Général"]
   }
 ]
