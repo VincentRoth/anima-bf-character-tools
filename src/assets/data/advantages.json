@@ -1216,7 +1216,7 @@
     "effect": "Le personnage ne peut voir la magie mais il est capable de lancer des sorts de façon limitée. Chqaue fois qu'il souhaite utiliser un sortilège, il doit réussir un test de Pouvoir contre une difficulté de 10 plus un point pour chaque dix Niveau de Magie du sort. S'il échoue, il perdra du Zéon comme s'il avait lancé le sort, mais celui-ci n'aura pas fonctionné.",
     "costs": [1],
     "source": "ArcEx p.11",
-    "types": ["Avantage Général", "Mystique]
+    "types": ["Avantage Général", "Mystique"]
   },
   {
     "name": "Essence Sheele",
