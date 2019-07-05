@@ -1103,11 +1103,95 @@
     "types": ["Désavantage de passé", "Interprétation"]
   },
   {
+    "name": "Accumulation de Ki accrue",
+    "description": "Lorsqu'il se concentre pour accumuler du Ki, le personnage est capable d'augmenter fortement sa capacité à concentrer son énergie à grande vitesse.",
+    "effect": "Si le personnage n'effecture aucune autre action pendant le round, active ou passive, à part accumuler du Ki, il peut ajouter +1 à la valeur de toutes ses Accumulation de Ki durant ce round. Investir un Point de Création en plus augmente ce bonus à +2.",
+    "condition": "L'effet de cet avantgae ne peut pas être combiné avec celui de l'avantage Pleine accumulation, pour augmenter l'Accumulation tout en effectuant d'autres actions dans le même round.",
+    "costs": [1, 2],
+    "source": "DomEx p.16",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
+    "name": "Apprentissage martial",
+    "description": "Le personnage possède une incroyable facilité à maîtriser les techniques et les pouvoirs du Ki en très peu de temps, même celles qu'il devrait lui être extrêment difficile d'apprendre.",
+    "effect": "Quelqu'un avec cet avantage augmente de deux le rang d'apprentissage que lui donne son DI dans le tableau 6. Ainsi, un personnage ayant 120 points de DI (rang 2) apprendrait des techniques comme s'il était de rang 4",
+    "costs": [1],
+    "source": "DomEx p.16",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
+    "name": "Dispense de gestes (Sceaux)",
+    "description": "Le personnage n'a pas besoin de faire de gestes pour pratiquer des Sceaux d'Invocation, car l'essence de ces derniers est directement liée à son âme.",
+    "effect": "Le personnage ne réduit pas son Accumulation de Ki, même s'il est incapable d'utiliser ses mains.",
+    "costs": [1],
+    "source": "DomEx p.16",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
+    "name": "Ki imperceptible",
+    "description": "L'énergie physique du personnage est extrêmement difficile à détecter car elle disparaît sans laisser de traces.",
+    "effect": "Cet avantage donne un bonus spécial de +10 par niveau en Dissimulation du Ki.",
+    "condition": "Cet avantage ne donne aucun bonus si le personnage ne développe pas le pourvoir Dissimulation du Ki.",
+    "costs": [1],
+    "source": "DomEx p.16",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
+    "name": "Limite double",
+    "description": "Le personnage a un double potentiel qui lui permet de lier son essence à deux Limites",
+    "effect": "Le personnage peut choisir jusqu'à deux Limites au lieux d'une.",
+    "costs": [1],
+    "source": "DomEx p.16",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
+    "name": "Perception du Ki",
+    "description": "Les sens du personnage sont capables de percevoir naturellement le Ki, ce qui lui permet d'accroître énormément ses capacités de détection.",
+    "effect": "Cet avantage donne un bonus spécial de +10 par niveau en Détection du Ki.",
+    "condition": "Cet avantage n'apporte aucun bonus si le personnage ne développe pas le pouvoir Détection du Ki."
+    "costs": [1],
+    "source": "DomEx p.16",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
+    "name": "Pleine accumulation",
+    "description": "Le personnage est doté de la capacité à accumuler son énergie physique de manière innée, sans avoir besoin de se concentrer pour y arriver. Il est par conséquent capable d'utiliser pleinement son Ki en toute liberté, sans que ses pouvoirs ne soient réduits par aucun facteur.",
+    "effect": "Le personnage ne réduit pas ses Accumulations de Ki lorsqu'il réalise des actions actives ou passives. En termes de jeu, il dispose toujours de sa pleine accumulation, quoi qu'il fasse durant le round.",
+    "costs": [2],
+    "source": "DomEx p.17",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
+    "name": "Pouvoir inné",
+    "description": "Toute l'énergie physique du personnage provient de son âme qui alimente ses techniques et pouvoirs du Ki.",
+    "effect": "Lorsqu'il doit calculer ses points de Ki initiaux, au lieu d'utiliser normalement la valeur de base de ses caractéristiques, le personnage n'emploie que celle de Pouvoir et multiplie par six la quantité que lui donne celle-ci. Les points supplémentaires lorsque la caractéristique est supérieure à 10 sont également multipliés.",
+    "condition": "Cet avantage ne peut être choisi que dans le cas où l'on applique les règles optionnelles d'Unification des points de Ki.",
+    "costs": [1],
+    "source": "DomEx p.17",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
+    "name": "Sceaux magistraux",
+    "description": "Les sceaux d'Invocation réalisés par le personnage jouissent d'une puissance inusitée, car son âme renforce énormément leurs effets.",
+    "effect": "Lorsque l'on établit le test de difficulté d'une invocation en utilisant des Sceaux, le personnage est considéré comme ayant deux niveaux de plus. Un personnage de niveau 2 pourrait donc invoquer des créatures comme s'il était de niveau 4.",
+    "costs": [1],
+    "source": "DomEx p.17",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
+    "name": "Techniques déliées",
+    "description": "Les techniques du personnage sont complètement déliées, sans qu'il soit nécessaire de maintenir entre elles une structure de corrélation.",
+    "effect": "Le personnage peut développer ou apprendre des techniques de la puissance intérieure librement, sans avoir besoin de suivre les règles d'arbre, c'est-à-dire qu'il na pas besoin des techniques de niveau inférieur pour en apprendre d'autres de niveau supérieur.",
+    "costs": [1],
+    "source": "DomEx p.17",
+    "types": ["Avantage Général", "Ki"]
+  },
+  {
     "name": "TODO",
     "description": "",
     "effect": "",
     "costs": [1],
-    "source": "DomEx p.16",
-    "types": ["Avantage Général"]
+    "source": "ArcEx p.1",
+    "types": ["Avantage Mystique"]
   }
 ]
