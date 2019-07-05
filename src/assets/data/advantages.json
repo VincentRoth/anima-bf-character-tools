@@ -1148,7 +1148,7 @@
     "name": "Perception du Ki",
     "description": "Les sens du personnage sont capables de percevoir naturellement le Ki, ce qui lui permet d'accroître énormément ses capacités de détection.",
     "effect": "Cet avantage donne un bonus spécial de +10 par niveau en Détection du Ki.",
-    "condition": "Cet avantage n'apporte aucun bonus si le personnage ne développe pas le pouvoir Détection du Ki."
+    "condition": "Cet avantage n'apporte aucun bonus si le personnage ne développe pas le pouvoir Détection du Ki.",
     "costs": [1],
     "source": "DomEx p.16",
     "types": ["Avantage Général", "Ki"]
@@ -1187,11 +1187,59 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
-    "name": "TODO",
-    "description": "",
-    "effect": "",
+    "name": "Versatilité métamagique",
+    "description": "Le personnage a une grande facilité pour développer des avantages métamagiques très différents.",
+    "effect": "Le personnage peut chosir deux points de départ différents dans l'Arcana Shephirah.",
     "costs": [1],
-    "source": "ArcEx p.1",
+    "source": "ArcEx p.11",
     "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Sorcier naturel",
+    "description": "Les formules mystiques et le développement de sorts semblent naturels à ce personnage qui est capable de créer et d'apprendre avec une grande facilité jusqu'aux sorts les plus complexes.",
+    "effect": "Le mage augmente de deux niveaux son Rang d'apprentissage dans le Tableau 1.",
+    "costs": [1],
+    "source": "ArcEx p.11",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Apprentissage magique graduel",
+    "description": "A mesure que le personnage augmente ses capacités et ses pouvoirs, il augmente également son savoir magique de façon innée.",
+    "effect": "Chaque fois qu'il monte de niveau, le personnage obtient un +5 à son Niveau de Magie total.",
+    "costs": [2],
+    "source": "ArcEx p.11",
+    "types": ["Avantage Mystique"]
+  },
+  {
+    "name": "Don incomplet",
+    "description": "Le personnage qui possède cet avantage est né avec de bonnes capacités pour la magie et peut parfois utiliser des sorts mineurs de la même façon qu'une personne ayant vraiment le Don mystique.",
+    "effect": "Le personnage ne peut voir la magie mais il est capable de lancer des sorts de façon limitée. Chqaue fois qu'il souhaite utiliser un sortilège, il doit réussir un test de Pouvoir contre une difficulté de 10 plus un point pour chaque dix Niveau de Magie du sort. S'il échoue, il perdra du Zéon comme s'il avait lancé le sort, mais celui-ci n'aura pas fonctionné.",
+    "costs": [1],
+    "source": "ArcEx p.11",
+    "types": ["Avantage Général", "Mystique]
+  },
+  {
+    "name": "Essence Sheele",
+    "description": "Le personnage est lié de façon existentielle à l'essecne des Sheeles, et s'il se lie à l'une d'entre elles, l'élémentaire de magie obtient des pouvoirs bien supérieurs à la normale.",
+    "effect": "Si le personnage s'unit à une Sheele, cette dernière peut obtenir deux Améliorations supplémentaires au moment de sceller le Lien.",
+    "costs": [1],
+    "source": "ArcEx p.11",
+    "types": ["Avantage Général", "Mystique", "Convocation"]
+  },
+  {
+    "name": "Familier",
+    "description": "A un moment dans sa vie, le personnage a été capable de signer un pacte de familier avec une créature.",
+    "effect": "Le personnage commence la partie avec une créature de son niveau en tant que familier. Un Point de Création supplémentaire permet même au familier en question d'avoir un niveau de plus que celui du personnage.",
+    "costs": [2, 3],
+    "source": "ArcEx p.11",
+    "types": ["Avantage de passé", "Mystique", "Convocation"]
+  },
+  {
+    "name": "Convocateur en masse",
+    "description": "Une personne avec cette compétence à d'énormes facilités pour convoquer un grand nombre de créatures.",
+    "effect": "Le personnage qui réalise une convocation en masse le fait comme s'il avait un niveau de plus. Les points supplémentaire augmentent le niveau théorique du personnage à deux ou trois niveaux de plus.",
+    "costs": [1, 2, 3],
+    "source": "ArcEx p.11",
+    "types": ["Avantage Général", "Mystique", "Convocation"]
   }
 ]
