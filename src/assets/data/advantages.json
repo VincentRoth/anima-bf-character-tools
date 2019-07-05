@@ -300,7 +300,7 @@
     "name": "Artefact",
     "description": "Le personnage possède un artefact de grand pouvoir",
     "effect": "Le joueur et le Meneur de Jeu doivent se mettre d'accord sur les capacités de l'artefact. Les points supplémentaires doivent augmenter les pouvoirs de l'objet.",
-    "note": "Voir Prometheum Exxet p.6 pour un détail de la puissance de l'artefact selon le nombre de PC dépensé.",
+    "note": "Voir Prometheum Exxet p.6 pour un détail de la puissance de l'artefact selon le nombre de PC dépensés.",
     "costs": [1, 2, 3],
     "source": "LdB p.20",
     "types": ["Avantage de passé", "Interprétation", "Richesse"]
@@ -1006,12 +1006,12 @@
   },
   {
     "name": "Sang ancien",
-    "description": "Bien qu'il l'ignore sans doute, le personnage possède du Sang Ancien de Salomon. Il possède une affinité naturelle avec la technologie des loges Perdues, ainsi qu'il est expliqué dans le cahpite correspondant.",
+    "description": "Bien qu'il l'ignore sans doute, le personnage possède du Sang Ancien de Salomon. Il possède une affinité naturelle avec la technologie des Loges Perdues, ainsi qu'il est expliqué dans le cahpite correspondant.",
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de jeu.",
     "note": "Permet l'accès à l'arbre de techniques de Ki de l'Héritage de Salomon (Dominus Exxet p.128).",
     "costs": [2],
     "source": "Gaïa p.284",
-    "types": ["Avantage général", "Interprétation"]
+    "types": ["Avantage Général", "Interprétation"]
   },
   {
     "name": "TODO",
