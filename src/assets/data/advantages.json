@@ -54,7 +54,7 @@
   },
   {
     "name": "Accès à une discipline psychique",
-    "description": "Le personnage a en lui l'étincelle permettant d'utiliser les pouvoirs d'un discipline psychique. Il lui faut encore réaliser ce potentiel en dépensant des PPP. Cependant, quels que soient ses efforts, il n'aura jamais accès à d'autres disciplines psychiques.",
+    "description": "Le personnage a en lui l'étincelle permettant d'utiliser les pouvoirs d'une discipline psychique. Il lui faut encore réaliser ce potentiel en dépensant des PPP. Cependant, quels que soient ses efforts, il n'aura jamais accès à d'autres disciplines psychiques.",
     "effect": "Cet avantage autorise à dépenser un PPP pour acquérir une affinité avec la discipline psychique choisie, et elle seule.",
     "costs": [1],
     "source": "LdB p.18",
