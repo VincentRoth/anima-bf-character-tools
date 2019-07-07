@@ -11,6 +11,9 @@
     <a mat-menu-item routerLink="dice-roll">
       <mat-icon>casino</mat-icon>Lancer de dés
     </a>
+    <button mat-menu-item [matMenuTriggerFor]="characterMenu">
+      <mat-icon>menu</mat-icon>Personnage
+    </button>
     <a
       mat-menu-item
       href="https://github.com/VincentRoth/anima-bf-character-tools/issues"
@@ -20,6 +23,15 @@
     </a>
   </mat-menu>
 </header>
+
+<mat-menu #characterMenu="matMenu">
+  <a mat-menu-item routerLink="creation-help">
+    <mat-icon>help</mat-icon>Aide à la création
+  </a>
+  <a mat-menu-item routerLink="advantages">
+    <mat-icon>merge_type</mat-icon>Avantages
+  </a>
+</mat-menu>
 
 <div class="flex">
   <router-outlet></router-outlet>

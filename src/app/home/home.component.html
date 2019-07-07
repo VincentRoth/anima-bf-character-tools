@@ -5,6 +5,9 @@
         <mat-card-header class="card-header">
           <mat-card-title class="card-title">{{ item.title }}</mat-card-title>
         </mat-card-header>
+        <mat-card-content *ngIf="!item.hasBackground">
+          <img [src]="item.imageUrl" />
+        </mat-card-content>
       </mat-card>
     </a>
   </ng-container>

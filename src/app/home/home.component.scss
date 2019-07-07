@@ -1,4 +1,5 @@
 $card-dimension: 10rem;
+$card-padding: 1rem;
 
 .app-home {
   margin: 1rem;
@@ -8,15 +9,19 @@ a {
   margin: 0.5rem;
 }
 .menu-card {
+  padding: $card-padding;
   width: $card-dimension;
   height: $card-dimension;
   background-size: 100%;
-  mix-blend-mode: difference;
-  .card-header,
+  background-repeat: no-repeat;
+  overflow: hidden;
   .card-title {
-    background: inherit;
-    background-clip: text;
-    color: white;
-    mix-blend-mode: exclusion;
+    text-shadow: white 0 0 0.4rem;
+  }
+  img {
+    position: relative;
+    left: -$card-padding;
+    width: $card-dimension + 2 * $card-padding;
+    height: auto;
   }
 }
