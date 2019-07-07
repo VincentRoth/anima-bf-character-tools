@@ -21,11 +21,11 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        title: 'Lancer de dés',
+        title: 'Lancé de dé',
         link: '/dice-roll',
         hasBackground: false,
         imageUrl:
-          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c7b8ca04-766d-42fc-b77f-e9c0c84dd24d/d3hjxbe-f8268f5c-28d5-421f-a7da-7361c999fd53.jpg/v1/fill/w_1038,h_770,q_70,strp/roleplaying_dice_by_svenart_d3hjxbe-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTUwIiwicGF0aCI6IlwvZlwvYzdiOGNhMDQtNzY2ZC00MmZjLWI3N2YtZTljMGM4NGRkMjRkXC9kM2hqeGJlLWY4MjY4ZjVjLTI4ZDUtNDIxZi1hN2RhLTczNjFjOTk5ZmQ1My5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.nxC7agoqQBIO4W8wvQAHvLqYRMLEw2ihJvcxC_QaFl0'
+          'https://upload.wikimedia.org/wikipedia/commons/b/bb/Ten_sided_dice.png'
       },
       {
         title: 'Aide à la création',
