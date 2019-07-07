@@ -8,19 +8,20 @@ import { AppComponent } from './app.component';
 import { AppMaterialModule } from './app-material.module';
 import { HomeModule } from './home/home.module';
 import { DiceRollModule } from './dice-roll/dice-roll.module';
-import { AdvantageModule } from './advantage/advantage.module';
+import { AdvantagesModule } from './advantages/advantages.module';
+import { CreationHelpModule } from './creation-help/creation-help.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
     AppMaterialModule,
     HomeModule,
     DiceRollModule,
-    AdvantageModule
+    CreationHelpModule,
+    AdvantagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

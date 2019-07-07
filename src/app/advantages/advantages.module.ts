@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AdvantageComponent } from './advantage.component';
+import { AdvantagesComponent } from './advantages.component';
 import { AppMaterialModule } from '../app-material.module';
 
 @NgModule({
-  declarations: [AdvantageComponent],
+  declarations: [AdvantagesComponent],
   imports: [CommonModule, AppMaterialModule]
 })
-export class AdvantageModule {}
+export class AdvantagesModule {}

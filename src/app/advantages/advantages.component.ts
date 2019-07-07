@@ -4,10 +4,10 @@ import { Advantage } from './advantage.model';
 
 @Component({
   selector: 'app-advantage',
-  templateUrl: './advantage.component.html',
-  styleUrls: ['./advantage.component.scss']
+  templateUrl: './advantages.component.html',
+  styleUrls: ['./advantages.component.scss']
 })
-export class AdvantageComponent implements OnInit {
+export class AdvantagesComponent implements OnInit {
   advantages: Advantage[];
   filteredAvantages: Advantage[];
 

@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
 
   constructor() {}
 
+  // tslint:disable: max-line-length
   ngOnInit() {
     this.items = [
       {
