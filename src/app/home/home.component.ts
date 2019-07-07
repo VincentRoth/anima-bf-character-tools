@@ -20,6 +20,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
+        title: 'Aide à la création',
+        link: '/creation-help',
+        backgroundImageUrl:
+          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/415e335e-b1cb-4849-9250-5b886f627634/d5pvbah-32fa8a76-9f3f-48f9-bc0d-156a88ad1939.jpg/v1/fill/w_774,h_1032,q_70,strp/anima__the_battle_continues_by_wen_m_d5pvbah-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTcwNyIsInBhdGgiOiJcL2ZcLzQxNWUzMzVlLWIxY2ItNDg0OS05MjUwLTViODg2ZjYyNzYzNFwvZDVwdmJhaC0zMmZhOGE3Ni05ZjNmLTQ4ZjktYmMwZC0xNTZhODhhZDE5MzkuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.eCdSoUugCBBCb07n40RCOoDMo3lUJHPgUYUal2-EXEs'
+      },
+      {
         title: 'Avantages',
         link: '/advantages',
         backgroundImageUrl:
