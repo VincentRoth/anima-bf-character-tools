@@ -8,7 +8,7 @@ import { CreationHelpService } from './creation-help.service';
   styleUrls: ['./creation-help.component.scss']
 })
 export class CreationHelpComponent implements OnInit {
-  private contentPanels: ContentPanel[];
+  contentPanels: ContentPanel[];
 
   constructor(private creationHelpService: CreationHelpService) {}
 
