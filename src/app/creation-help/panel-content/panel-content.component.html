@@ -1,0 +1,32 @@
+<ng-container [ngSwitch]="content.type">
+  <ng-container *ngSwitchCase="eContentType.PARAGRAPH">
+    <app-content-title
+      *ngIf="content.title"
+      [level]="level"
+      [title]="content.title"
+    ></app-content-title>
+    <p>
+      {{ content.content }}
+    </p>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="eContentType.TABLE">
+    <table *ngIf="table">
+      <caption>
+        {{
+          table.caption
+        }}
+      </caption>
+      <thead>
+        <tr>
+          <th *ngFor="let header of table.headers">{{ header }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of table.rows">
+          <td *ngFor="let cell of row">{{ cell }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </ng-container>
+</ng-container>

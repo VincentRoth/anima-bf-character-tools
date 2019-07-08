@@ -1,4 +1,4 @@
-export class Advantage {
+export interface Advantage {
   name: string;
   description: string;
   effect: string;

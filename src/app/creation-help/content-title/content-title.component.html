@@ -1,0 +1,5 @@
+<ng-container [ngSwitch]="level">
+  <h4 *ngSwitchCase="2">{{ title }}</h4>
+  <h5 *ngSwitchCase="3">{{ title }}</h5>
+  <h3 *ngSwitchDefault>{{ title }}</h3>
+</ng-container>

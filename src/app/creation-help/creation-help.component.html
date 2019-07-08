@@ -1,403 +1,48 @@
 <div class="app-creation-help">
   <h2>Aide à la création de personnage</h2>
+
   <mat-accordion>
-    <!--
-    <mat-expansion-panel>
+    <mat-expansion-panel *ngFor="let panel of contentPanels">
       <mat-expansion-panel-header>
         <mat-panel-title>
-          <h3>Mécanimes du Jeu</h3>
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      TODO
-    </mat-expansion-panel>
-    -->
-
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          <h3>Caractéristiques</h3>
+          <app-content-title
+            [level]="1"
+            [title]="panel.title"
+          ></app-content-title>
         </mat-panel-title>
       </mat-expansion-panel-header>
 
-      <mat-accordion>
-        <mat-expansion-panel>
+      <mat-accordion *ngIf="isParentPanel(panel)">
+        <mat-expansion-panel *ngFor="let subPanel of panel.content">
           <mat-expansion-panel-header>
             <mat-panel-title>
-              <h4>Description des caractéristiques</h4>
+              <app-content-title
+                [level]="2"
+                [title]="subPanel.title"
+              ></app-content-title>
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <h5>Force (FOR)</h5>
-          <p>
-            La Force évalue la capacité d'accomplir des efforts physiques, la
-            musculature et la vigueur du personnage. Cette caractéristique
-            permet de soulever des poids importants, d'infliger plus de dégâts à
-            chaque coup et de briser des objets.
-          </p>
-          <h5>Dextérité (DEX)</h5>
-          <p>
-            La Dextérité détermine l'habilité manuelle du personnage, la
-            rapidité de ses gestes et sa précision. Avec l'Agilité, elle
-            représente sa vitesse de réaction, c'est-à-dire sa capacité à
-            répondre aussi rapidement que possible à une situation dangeureuse,
-            une menace ou un problème.
-          </p>
-          <h5>Agilité (AGI)</h5>
-          <p>
-            L'Agilité détermine l'habilité corporelle du personnage, sa vitesse
-            de déplacement et son sens de l'équilibre. Elle mesure son aptitude
-            acrobatique ou sa facilité à esquiver les attaques. Avec la
-            Dextérité, cette caractéristique influence sa vitesse de réaction.
-          </p>
-          <h5>Constitution (CON)</h5>
-          <p>
-            La Constitution mesure l'endurance et la vitalité du personnage, sa
-            résistance à la fatigue et sa capacité à encaisser les coups. Un
-            personnage avec une Constitution élevée a une grande résistance
-            physique et récupère bien des maladies et des blessures. Cette
-            caractéristique indique la quantité de dégâts que peut subir le
-            personnage avant de mourir.
-          </p>
-          <h5>Intelligence (INT)</h5>
-          <p>
-            L'Intelligenceconcerne les champs du raisonnement, de
-            l'apprentissage et de la mémoire. De cette caractéristique dépendent
-            les connaissances intellectuelles et logiques, ainsi que la capacité
-            du personnage à comprendre et développer des sorts.
-          </p>
-          <h5>Pouvoir (POU)</h5>
-          <p>
-            Cette caractéristique représente la puissance animique ou
-            spirituelle du personnage. Plus elle est élevée, plus il pourra
-            influencer ou résister au surnaturel et se démarquer des autres
-            individus.
-          </p>
-          <h5>Volonté (VOL)</h5>
-          <p>
-            La Volonté mesure la vigueur mentale d'un personnage, son
-            impassibilité et sa tenacité. On l'utilise aussi bien pour résister
-            aux discplines psychiques que pour les employer.
-          </p>
-          <h5>Perception (PER)</h5>
-          <p>
-            Cette caractéristique mesure l'acuité sensorielle du personnage et
-            sa capacité à remarquer ce qui se passe autour de lui. Elle
-            représente ses cinq sens et son instinct.
-          </p>
-        </mat-expansion-panel>
 
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <h4>Génération des caractéristiques</h4>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <p>
-            La méthode traditionnelle et recommandée pour déterminer les
-            caractéristiques consiste à lancer huit fois un D10 et à noter les
-            nombres obtenus. Ignorez tous les résultats inférieurs à 4 et
-            relancez-les, pour que le personnage n'est jamais de
-            caractéristiques trop basses. Une fois les huit valeurs obtenues,
-            changeé la plus faible par un 9 pour s'assurer que, même si le
-            joueur n'a obtenu aucun nombre élevé, son personnage soit
-            exceptionnel au moins dans un domaine. Ensuite, répartissez les
-            valeurs à votre convenance entre les huit caractéristiques. Cette
-            méthode produit des valeurs assez élevées en moyenne, et prend en
-            compte que les personnages sont des êtres exceptionnels.
-          </p>
-          <p>
-            Le Meneur de Jeu peut décider d'une méthode de génération
-            différente. Confirmez avec lui la méthode de génération des
-            caractéristiques qu'il souhaite appliquer. En aucun cas une
-            caractéristique ne peut dépasser 10 à cette étape.
-          </p>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <h4>Modificateurs de caractéristique</h4>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <p>
-            Chaque caractéristique génère un modificateur, un nombre qui modifie
-            toutes les compétences qui en dépendent, en bonus ou en malus.
-          </p>
-          <table>
-            <caption>
-              Tableau 2 : Modificateurs de caractéristique (Core p.11)
-            </caption>
-            <thead>
-              <tr>
-                <th>Caractéristique</th>
-                <th>Modificateur</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>-30</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>-20</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>-10</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>-5</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>6-7</td>
-                <td>+5</td>
-              </tr>
-              <tr>
-                <td>8-9</td>
-                <td>+10</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>+15</td>
-              </tr>
-              <tr>
-                <td>11-12</td>
-                <td>+20</td>
-              </tr>
-              <tr>
-                <td>13-14</td>
-                <td>+25</td>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td>+30</td>
-              </tr>
-              <tr>
-                <td>16-17</td>
-                <td>+35</td>
-              </tr>
-              <tr>
-                <td>18-19</td>
-                <td>+40</td>
-              </tr>
-              <tr>
-                <td>20</td>
-                <td>+45</td>
-              </tr>
-            </tbody>
-          </table>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <h4>Dépasser les limites humaines</h4>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <p>
-            En temps normal, la limite humaine des caractéristiques est de 10.
-            Il existe pourtant des moyens d'augmenter les caractéristiques de
-            son personnage au-delà de cette limite, que ce soit grâce aux Points
-            de création ou en montant de niveau. Maix, même dans ce cas, le
-            personnage n'échappe pas aux limitations humaines naturelles et
-            n'obtient pas certains des avantages qu'implique sa caractéristique.
-          </p>
-          <p>
-            Dans le cas des caractéristiques psychiques et intellectuelles,
-            c'est-à-dire l'Intelligence, le Pouvoir, la Volonté et la
-            Perception, il est difficile de définir ce qui est humain ou
-            surhumain. Autrement dit, comment justifier qu'un sorcier, déjà
-            codté de la capacité inhumaine de manipuler la magie, ne puisse pas
-            augmenter son Pouvoir au delà de 10, et en obtenir les bénéfices
-            possibles ? En conséquence, ces caractéristiques ne sont pas
-            limitées.
-          </p>
-          <p>
-            Pour ce qui est des caractéristiques physiques, les limites du
-            réalisme sont beaucoup plus claires, du moins tant qu'aucune
-            aptitude surnaturelle n'entre en jeu. Cependant, au lieu d'interdire
-            à un personnage d'augmenter ses caractéristiques physiques au-dessus
-            de 10, on limite les avantages supplémentaires qu'elles procurent.
-            Seul le modificateur de caractéristique n'est pas limité. Ainsi, une
-            personne de Force 11 pourrait appliquer un bonus de +20 à ses
-            compétences de Force et ses Dégâts, mais pas soulever les poids que
-            cette valeur autorise. En fait, cette personne a le potentiel
-            d'accomplir des actions surhumaines, mais tant qu'elle n'aura pas
-            transcendé ses limites humaines, sa Force sera de 10 dans la
-            pratique. Pour enfin obtenir les bénéfices des caractéristiques
-            physiques surhumaines, il faut remplir certaines conditions, que ce
-            soit en employant des pouvoirs de Ki ou grâce à des méthodes
-            surnaturelles.
-          </p>
-          <p>
-            Il existe deux paliers aux limites humaines aux caractéristiques
-            physiques : la Surhumanité et le Zen. La Surhumanité permet
-            d'obtenir les bénéfices des caractéristiques physiques jusqu'à une
-            valeur de 13, tandis que le Zen brise complètement les limites, en
-            permettant au personnage de profiter au maximum des avantages de ses
-            caractéristiques.
-          </p>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <h4>Caractéristiques secondaires</h4>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-          <h5>Apparence</h5>
-          <p>
-            L'Apparence reflète la beauté. On la calcule toujours après les
-            caractéristiques principales. Le Meneur de Jeu doit décider si on
-            l'obtient en lançant un D10 comme pour les autres caractéristiques
-            ou s'il permet aux joueurs de la choisir librement. Contrairement
-            aux autres caractéristiques, l'Apparence ne peut dépasser 10,
-            puisque cette valeur représente déjà une telle beauté que le
-            personnage est attirant pour tous, quels que soit les goûts ou les
-            préférences personnelles.
-          </p>
-          <h5>Taille</h5>
-          <p>
-            La Taille indique les mensurations et le poids du personnage,
-            c'est-à-dire s'il est petit, moyen ou grand. Il faut pour les
-            calculer faire la somme de la Force et de la Constitution. Par
-            exemple, quelqu'un avec 8 et 7 dans ces caractéristiques aurait une
-            Taille de 15. Pour décider de la taille et du poids exacts du
-            personnage, il faut consulter le
-            <span class="bold">Tableau 3</span> et choisir des valeurs comprises
-            entre les bornes de la Taille correspondante. Naturellement, ce
-            tableau ne concerne que les êtres humanoïdes. Dans le cas d'une
-            femme, il est possible de retirer 1 à sa Taille.
-          </p>
-          <table>
-            <caption>
-              Tableau 3 : Taille et Poids (Core p.12)
-            </caption>
-            <thead>
-              <tr>
-                <th>Taille</th>
-                <th>Taille (cm)</th>
-                <th>Poids (kg)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>2</td>
-                <td>20 à 60</td>
-                <td>5 à 15</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>40 à 80</td>
-                <td>10 à 20</td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>60 à 100</td>
-                <td>20 à 30</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>80 à 120</td>
-                <td>20 à 50</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>100 à 140</td>
-                <td>30 à 50</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>110 à 150</td>
-                <td>30 à 60</td>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>120 à 160</td>
-                <td>35 à 70</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>130 à 160</td>
-                <td>40 à 80</td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>140 à 170</td>
-                <td>40 à 90</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>140 à 180</td>
-                <td>50 à 100</td>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>150 à 180</td>
-                <td>50 à 120</td>
-              </tr>
-              <tr>
-                <td>13</td>
-                <td>150 à 180</td>
-                <td>50 à 140</td>
-              </tr>
-              <tr>
-                <td>14</td>
-                <td>160 à 190</td>
-                <td>50 à 150</td>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td>160 à 200</td>
-                <td>60 à 180</td>
-              </tr>
-              <tr>
-                <td>16</td>
-                <td>170 à 210</td>
-                <td>70 à 220</td>
-              </tr>
-              <tr>
-                <td>17</td>
-                <td>170 à 210</td>
-                <td>80 à 240</td>
-              </tr>
-              <tr>
-                <td>18</td>
-                <td>180 à 220</td>
-                <td>90 à 260</td>
-              </tr>
-              <tr>
-                <td>19</td>
-                <td>190 à 230</td>
-                <td>100 à 280</td>
-              </tr>
-              <tr>
-                <td>20</td>
-                <td>200 à 240</td>
-                <td>110 à 320</td>
-              </tr>
-              <tr>
-                <td>21</td>
-                <td>210 à 260</td>
-                <td>120 à 450</td>
-              </tr>
-              <tr>
-                <td>22</td>
-                <td>+250</td>
-                <td>+400</td>
-              </tr>
-            </tbody>
-          </table>
+          <app-panel-content
+            *ngFor="let contentUnit of subPanel.content"
+            [content]="contentUnit"
+            [level]="3"
+          ></app-panel-content>
         </mat-expansion-panel>
       </mat-accordion>
-    </mat-expansion-panel>
 
-    <!--
+      <ng-container *ngIf="!isParentPanel(panel)">
+        <app-panel-content
+          *ngFor="let contentUnit of panel.content"
+          [content]="contentUnit"
+          [level]="2"
+        ></app-panel-content>
+      </ng-container>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+  <!--
+  <mat-accordion>
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
@@ -488,6 +133,6 @@
       </mat-expansion-panel-header>
       TODO
     </mat-expansion-panel>
-    -->
   </mat-accordion>
+  -->
 </div>

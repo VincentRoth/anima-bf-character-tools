@@ -1,0 +1,232 @@
+[
+  {
+    "title": "Mécanisme du Jeu",
+    "type": "panel",
+    "content": [
+      {
+        "title": "Matériel nécessaire",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Dés",
+            "content": "Une paire de dés à dix faces sera nécessaire. Ils seront utiliser pour les différents jets permettant de départager le hasard. Dans le cas d'un lancer d'un dé à dix face (D10), on lance un seul dé à dix faces, le 0 étant considéré comme un résultat de 10. Pour obteniir un dé à 100 faces (D100), les deux dés sont lancés ; l'un des deux, désigné à l'avance, servira pour les dizaines. Si les deux dés donnent un résultat de 0, le résultat sera alors de 100."
+          },
+          {
+            "type": "paragraph",
+            "title": "Feuille de personnage",
+            "content": "Un support où noter les caractéristiques, compétences et autres données de votre personnage. Souvent sous la forme d'une feuille de papier imprimée, il en existe aussi au format numérique."
+          },
+          {
+            "type": "paragraph",
+            "title": "Crayon et gomme",
+            "content": "Afin de noter et faire évoluer votre personnage, vous aurez besoin de quoi écrire et effacer."
+          }
+        ]
+      },
+      {
+        "title": "Tests",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Effectuer des tests",
+            "content": "Il existe deux grands types de tests : les tests de compétence et les tests de caractéristique. Les tests de compétence sont les plus fréquents et constituent la base du système. Ils sont effectués en lançant un D100. Le test de caractéristique est quant à lui réalisé avec un seul D10. Le résultat obtenu est ajouter au Total de la compétence ou à la valeur de la caractérisitque testée."
+          },
+          {
+            "type": "paragraph",
+            "title": "Test de Compétence",
+            "content": "Ces tests sont effectués en laçant un D100 auquel on ajoute le Total de la compétence du personnage. Il en existe deux types : les tests de Difficulté, où il faut atteindre un seuil fixé à l'avance par le Meneur de Jeu, et les tests opposés, où il faut dépasser le résultat du test de compétence de son adversaire. Ces tests sont très divers et spécialisés."
+          },
+          {
+            "type": "paragraph",
+            "title": "Test de Résistance",
+            "content": "Les tests de Résistance accordent une chance au personnage d'éviter des effets néfastes. Il existe cinq Résistances distinctes, correspondant chacune à un type d'effet : Physique, Maladie, Poison, Mystique et Psychique. Un test de Résistance est réalisé en ajoutant le résultat d'un D100 au Total de la Résistance correspondant à l'effet. S'il dépasse la difficulté requise, le personnage a réussi à éviter l'effet qui le visait. Quelle que soit la difficulté demandée, un résultat de 100 donne toujours lieu à une réussite. Les tests de Résistance ne donne pas lieu au Jets Ouverts. Si la Résistance d'un personnage dépasse la difficulté requise, pas besoin de jeter les dés : le personnage réussit automatiquement."
+          },
+          {
+            "type": "paragraph",
+            "title": "Test de Caractéristique",
+            "content": "Il s'agit de tests qui font intervenir les caractéristiques. Un seul D10 est lancé et le résultat est ajouté à la valeur de la caractéristique testée. Si le total est supérieur ou égal à la difficulté, le personnage a réussi son test, de plus la marge (différence avec la difficulté) positive ou négative indique le niveau de réussite ou d'échec."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#1"
+          },
+          {
+            "type": "paragraph",
+            "content": "Parfois, si un personnage doit en affronter un autre, on peut avoir à réaliser un test opposé de caractéristique. Dans ce cas, les deux adversaires procèdent au test et celui qui obtient la marge de réussit la plus élevée l'emporte. Le niveau de réussite est déterminé par la différence entre les marges obtenues par les deux personnages. Si les deux obtiennent le même résultat, on considère qu'il y a égalité. Les deux caractéristiques comparées peuvent être différentes."
+          },
+          {
+            "type": "paragraph",
+            "content": "Il s'avère très difficile de compenser par la simple chance une grande différence de niveau entre deux personnage. Si la différence entre les caractéristiques dépasse 4, les points au-delà comptent double, ce qui donne un bonus supplémentaire au personnage déjà favorisé."
+          },
+          {
+            "type": "paragraph",
+            "title": "Règle du 10",
+            "content": "Quand un personnage fait un test de caractéristique en lançant un D10, il suit la règle du 10. S'il obtient un résultat de 10, il peut ajouter un résultat de 12 à sa caractéristique (comme s'il avait obtenu un 12 sur le dé)."
+          }
+        ]
+      },
+      {
+        "title": "Succés et échecs critiques",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Jet Ouvert",
+            "content": "Cette règle n'est utilisée que lors du lancement d'un D100. Lors d'un tel jet, si le résultat du dé est supérieur ou égal à 90, le personnage bénéficie d'un Jet Ouvert. Le Jet Ouvert permet de relancer le D100 et d'ajouter le nouveau résultat au précédent. De même ce nouveau jet peut lui aussi amener à un Jet Ouvert, mais il est plus difficile d'obtenir cet effet. Le deuxième Jet Ouvert nécessite d'obtenir au moins 91, le troisième 92, et ainsi de suite. Un résultat de 100 est toujours ouvert. Seuls les tests de Résistance et les calculs du Niveau de Maladresse ou de Critique ne donnent pas lieu à un Jet Ouvert."
+          },
+          {
+            "type": "paragraph",
+            "title": "Maladresse",
+            "content": "De même que l'on peut obtenir un succés exceptionnel avec un Jet Ouvert, il existe toujours la possibilité de subit un échec automatique à cause d'une Maladresse. Obtenir un résultat de 1, 2 ou 3 sur un jet d'un D100 provoque une Maladresse. L'action échoue automatiquement, le test étant considéré comme raté quel que soit le Total de compétence. Quand un personnage obtient une Maladresse, il doit ensuite calculer le Niveau de Maladresse. Plus il est élevé, plus l'échec et ses conséquences sont retentissants. Il n'y a pas de Jet Ouvert pour le calcul du Niveau de Maladresse."
+          },
+          {
+            "type": "paragraph",
+            "title": "Niveau de Maladresse",
+            "content": "Le Niveau de Maladresse est calculé en lançant un D100, ne donnant pas lieu à un Jet Ouvert. Le résultat du dé correspond au Niveau de Maladresse. Dans le cas d'un test opposé, le résultat final est le Total de la compétence moins le Niveau de Maladresse. Pour une action directe, le Niveau de Maladresse est comparée à l'échelle suivante :"
+          },
+          {
+            "type": "paragraph",
+            "content": "1 à 50 : L'action échoue simplement. Une personne qui essaie de se déplacer silencieusement trébuche, ce qui provoque un grand bruit, ou quelqu'un essaynt d'identifier une plante n'a pas la moindre idée de sa provenance ou de ses effets."
+          },
+          {
+            "type": "paragraph",
+            "content": "51 à 95 : Représente un échec retentissant, préjudiciable au personnage. Il tombe et se blesse contre une pierre en faisant des acrobaties ou il passe du temps à chercher une porte cachée à un endroit vide, persuadé qu'il y en a une."
+          },
+          {
+            "type": "paragraph",
+            "content": "96 à 100 : C'est un échec absolu, tragique. Le personnage confond un poison avec un antidote ou il coule son bateau alors qu'il tentait de sortir du port."
+          },
+          {
+            "type": "paragraph",
+            "title": "Maîtrise",
+            "content": "Quand un personnage atteint un Total de 200 ou plus dans une compétence, il en est devenu un maître. Cela signifie qu'il est un expert inégalé en la matière, une personne qui parvient à réaliser des choses que le reste du monde n'aurait jamais crues possibles. Un maître échoue bien plus rarement qu'une personne normale, et est moins souvent sujet aux Maladresse. Un 3 ne provoque plus de Maladresse, un 2 entraîne un modificateur de -15 au Niveau de Maladresse et un 1 est une Maladresse standard."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Caractéristiques",
+    "type": "panel",
+    "content": [
+      {
+        "title": "Description des caractéristiques",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Force (FOR)",
+            "content": "La Force évalue la capacité d'accomplir des efforts physiques, la musculature et la vigueur du personnage. Cette caractéristique permet de soulever des poids importants, d'infliger plus de dégâts à chaque coup et de briser des objets."
+          },
+          {
+            "type": "paragraph",
+            "title": "Dextérité (DEX)",
+            "content": "La Dextérité détermine l'habilité manuelle du personnage, la rapidité de ses gestes et sa précision. Avec l'Agilité, elle représente sa vitesse de réaction, c'est-à-dire sa capacité à répondre aussi rapidement que possible à une situation dangeureuse, une menace ou un problème."
+          },
+          {
+            "type": "paragraph",
+            "title": "Agilité (AGI)",
+            "content": "L'Agilité détermine l'habilité corporelle du personnage, sa vitesse de déplacement et son sens de l'équilibre. Elle mesure son aptitude acrobatique ou sa facilité à esquiver les attaques. Avec la Dextérité, cette caractéristique influence sa vitesse de réaction."
+          },
+          {
+            "type": "paragraph",
+            "title": "Constitution (CON)",
+            "content": "La Constitution mesure l'endurance et la vitalité du personnage, sa résistance à la fatigue et sa capacité à encaisser les coups. Un personnage avec une Constitution élevée a une grande résistance physique et récupère bien des maladies et des blessures. Cette caractéristique indique la quantité de dégâts que peut subir le personnage avant de mourir."
+          },
+          {
+            "type": "paragraph",
+            "title": "Intelligence (INT)",
+            "content": "L'Intelligenceconcerne les champs du raisonnement, de l'apprentissage et de la mémoire. De cette caractéristique dépendent les connaissances intellectuelles et logiques, ainsi que la capacité du personnage à comprendre et développer des sorts."
+          },
+          {
+            "type": "paragraph",
+            "title": "Pouvoir (POU)",
+            "content": "Cette caractéristique représente la puissance animique ou spirituelle du personnage. Plus elle est élevée, plus il pourra influencer ou résister au surnaturel et se démarquer des autres individus."
+          },
+          {
+            "type": "paragraph",
+            "title": "Volonté (VOL)",
+            "content": "La Volonté mesure la vigueur mentale d'un personnage, son impassibilité et sa tenacité. On l'utilise aussi bien pour résister aux discplines psychiques que pour les employer."
+          },
+          {
+            "type": "paragraph",
+            "title": "Perception (PER)",
+            "content": "Cette caractéristique mesure l'acuité sensorielle du personnage et sa capacité à remarquer ce qui se passe autour de lui. Elle représente ses cinq sens et son instinct."
+          }
+        ]
+      },
+      {
+        "title": "Génération des caractéristiques",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "La méthode traditionnelle et recommandée pour déterminer les caractéristiques consiste à lancer huit fois un D10 et à noter les nombres obtenus. Ignorez tous les résultats inférieurs à 4 et relancez-les, pour que le personnage n'est jamais de caractéristiques trop basses. Une fois les huit valeurs obtenues, changeé la plus faible par un 9 pour s'assurer que, même si le joueur n'a obtenu aucun nombre élevé, son personnage soit exceptionnel au moins dans un domaine. Ensuite, répartissez les valeurs à votre convenance entre les huit caractéristiques. Cette méthode produit des valeurs assez élevées en moyenne, et prend en compte que les personnages sont des êtres exceptionnels."
+          },
+          {
+            "type": "paragraph",
+            "content": "Le Meneur de Jeu peut décider d'une méthode de génération différente. Confirmez avec lui la méthode de génération des caractéristiques qu'il souhaite appliquer. En aucun cas une caractéristique ne peut dépasser 10 à cette étape."
+          }
+        ]
+      },
+      {
+        "title": "Modificateurs de caractéristique",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Chaque caractéristique génère un modificateur, un nombre qui modifie toutes les compétences qui en dépendent, en bonus ou en malus."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#2"
+          }
+        ]
+      },
+      {
+        "title": "Dépasser les limites humaines",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "En temps normal, la limite humaine des caractéristiques est de 10. Il existe pourtant des moyens d'augmenter les caractéristiques de son personnage au-delà de cette limite, que ce soit grâce aux Points de création ou en montant de niveau. Maix, même dans ce cas, le personnage n'échappe pas aux limitations humaines naturelles et n'obtient pas certains des avantages qu'implique sa caractéristique."
+          },
+          {
+            "type": "paragraph",
+            "content": "Dans le cas des caractéristiques psychiques et intellectuelles, c'est-à-dire l'Intelligence, le Pouvoir, la Volonté et la Perception, il est difficile de définir ce qui est humain ou surhumain. Autrement dit, comment justifier qu'un sorcier, déjà doté de la capacité inhumaine de manipuler la magie, ne puisse pas augmenter son Pouvoir au delà de 10, et en obtenir les bénéfices possibles ? En conséquence, ces caractéristiques ne sont pas limitées."
+          },
+          {
+            "type": "paragraph",
+            "content": "Pour ce qui est des caractéristiques physiques, les limites du réalisme sont beaucoup plus claires, du moins tant qu'aucune aptitude surnaturelle n'entre en jeu. Cependant, au lieu d'interdire à un personnage d'augmenter ses caractéristiques physiques au-dessus de 10, on limite les avantages supplémentaires qu'elles procurent. Seul le modificateur de caractéristique n'est pas limité. Ainsi, une personne de Force 11 pourrait appliquer un bonus de +20 à ses compétences de Force et ses Dégâts, mais pas soulever les poids que cette valeur autorise. En fait, cette personne a le potentiel d'accomplir des actions surhumaines, mais tant qu'elle n'aura pas transcendé ses limites humaines, sa Force sera de 10 dans la pratique. Pour enfin obtenir les bénéfices des caractéristiques physiques surhumaines, il faut remplir certaines conditions, que ce  soit en employant des pouvoirs de Ki ou grâce à des méthodes surnaturelles."
+          },
+          {
+            "type": "paragraph",
+            "content": "Il existe deux paliers aux limites humaines aux caractéristiques physiques : la Surhumanité et le Zen. La Surhumanité permet d'obtenir les bénéfices des caractéristiques physiques jusqu'à une valeur de 13, tandis que le Zen brise complètement les limites, en permettant au personnage de profiter au maximum des avantages de ses caractéristiques."
+          }
+        ]
+      },
+      {
+        "title": "Caractéristiques secondaires",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Apparence",
+            "content": "L'Apparence reflète la beauté. On la calcule toujours après les caractéristiques principales. Le Meneur de Jeu doit décider si on l'obtient en lançant un D10 comme pour les autres caractéristiques ou s'il permet aux joueurs de la choisir librement. Contrairement aux autres caractéristiques, l'Apparence ne peut dépasser 10, puisque cette valeur représente déjà une telle beauté que le personnage est attirant pour tous, quels que soit les goûts ou les préférences personnelles."
+          },
+          {
+            "type": "paragraph",
+            "title": "Taille",
+            "content": "La Taille indique les mensurations et le poids du personnage, c'est-à-dire s'il est petit, moyen ou grand. Il faut pour les calculer faire la somme de la Force et de la Constitution. Par exemple, quelqu'un avec 8 et 7 dans ces caractéristiques aurait une Taille de 15. Pour décider de la taille et du poids exacts du personnage, il faut consulter le tableau suivant et choisir des valeurs comprises entre les bornes de la Taille correspondante. Naturellement, ce tableau ne concerne que les êtres humanoïdes. Dans le cas d'une femme, il est possible de retirer 1 à sa Taille."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#3"
+          }
+        ]
+      }
+    ]
+  }
+]
