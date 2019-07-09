@@ -2,7 +2,7 @@
   "core-exxet": [
     {
       "id": 1,
-      "caption": "Tableau 1 : Tests de caractéristique",
+      "title": "Tests de caractéristique",
       "headers": ["Difficulté", "Valeur"],
       "rows": [
         ["Simple", "6+"],
@@ -13,7 +13,7 @@
     },
     {
       "id": 2,
-      "caption": "Tableau 2 : Modificateurs de caractéristique (Core p.11)",
+      "title": "Modificateurs de caractéristique",
       "headers": ["Caractéristique", "Modificateur"],
       "rows": [
         ["1", "-30"],
@@ -34,7 +34,7 @@
     },
     {
       "id": 3,
-      "caption": "Tableau 3 : Taille et Poids (Core p.12)",
+      "title": "Taille et Poids",
       "headers": ["Taille", "Taille (cm)", "Poids (kg)"],
       "rows": [
         [2, "20 à 60", "5 à 15"],
@@ -59,6 +59,298 @@
         [21, "210 à 260", "120 à 450"],
         [22, "+250", "+400"]
       ]
+    },
+    {
+      "id": 4,
+      "title": "Points de Vie",
+      "headers": ["Constitution", "Base de Points de vie"],
+      "rows": [
+        [1, 5],
+        [2, 20],
+        [3, 40],
+        [4, 55],
+        [5, 70],
+        [6, 85],
+        [7, 95],
+        [8, 110],
+        [9, 120],
+        [10, 135],
+        [11, 150],
+        [12, 160],
+        [13, 175],
+        [14, 185],
+        [15, 200],
+        [16, 215],
+        [17, 225],
+        [18, 240],
+        [19, 250],
+        [20, 265]
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Présence",
+      "headers": ["Niveau", "Base de Présence"],
+      "rows": [
+        [1, 30],
+        [2, 35],
+        [3, 40],
+        [4, 45],
+        [5, 50],
+        [6, 55],
+        [7, 60],
+        [8, 65],
+        [9, 70],
+        [10, 75],
+        [11, 80],
+        [12, 85],
+        [13, 90],
+        [14, 95],
+        [15, 100],
+        ["+1 niveau", "+5"]
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Progression par niveau",
+      "headers": [
+        "Niveau",
+        "PF",
+        "+ Caractérisitque par niveau",
+        "Expérience nécessaire",
+        "Présence"
+      ],
+      "rows": [
+        [0, 400, "", "N/A", 20],
+        [1, 600, "", 0, 30],
+        [2, 700, "+1", 100, 35],
+        [3, 800, "", 225, 40],
+        [4, 900, "+1", 375, 45],
+        [5, 1000, "", 550, 50],
+        [6, 1100, "+1", 750, 55],
+        [7, 1200, "", 975, 60],
+        [8, 1300, "+1", 1225, 65],
+        [9, 1400, "", 1500, 70],
+        [10, 1500, "+1", 1800, 75],
+        [11, 1600, "", 2125, 80],
+        [12, 1700, "+1", 2475, 85],
+        [13, 1800, "", 2850, 90],
+        [14, 1900, "+1", 3250, 95],
+        [15, 2000, "", 3675, 100],
+        ["+1", "+100", "+1 (tous les niveaux pairs)", "+450", "+5"]
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Difficultés",
+      "headers": ["Difficulté", "Requis", "Explication"],
+      "rows": [
+        [
+          "Routinière (ROUT)",
+          20,
+          "Ce sont des actions normales, que nous réalisons tous sans y penser ni avoir à les apprendre, comme descendre en sautant quelques marches, ou entendre une explosion. En général, le Meneur de Jeu ne demandera jamais à un joueur d'effectuer des tests de compétence à cette difficulté, sauf en des circonstances très précises."
+        ],
+        [
+          "Facile (FAC)",
+          40,
+          "Les actions faciles sont des choses que nous sommes tous habitués à réaliser, comme ouvrir une serrure rouillée sans problème ou se souvenir d'un air de musique. Même si on ne connaît rien au sujet, on y parvient finalement après une ou deux tentatives ratées. Le problème, c'est si on doit réussir du premier coup, et que l'on doit ouvrir cette serrure rouillée avant que quelqu'un n'arrive..."
+        ],
+        [
+          "Moyenne (MOY)",
+          80,
+          "Il s'agit d'un niveau de difficulté supérieur. La simple chance ne permet pas de réalisé ce genrce de choses. Seule une personne détenant des connaissances en la matière pourra y parvenir sans grande difficulté. Par exemple : forcer un simple verrou ou soigner une petite grippe."
+        ],
+        [
+          "Difficile (DIF)",
+          120,
+          "Ces actions s'avèrent très problématiques pour une personne normale. Elles nécessitent une grande compétence ou une chance insolente pour être réalisées. Il s'agit d'actions complexes par nature, comme escalader une paroi escarpée sans aide ou réaliser des tours de cirque."
+        ],
+        [
+          "Très Difficile (TDIF)",
+          140,
+          "Pour réaliser des actions très difficiles, il faut disposer d'une excellente compétence. C'est la difficulté limite que puissent atteindre les personnes normales. Seuls les meilleurs experts peuvent les effectuer sans problème, ébahissant alors tous les spectateurs. Quelques exemples : marcher sur une corde lâche ou réaliser un saut périlleux mortel sur un trapèze."
+        ],
+        [
+          "Absurde (ABS)",
+          180,
+          "Comme son nom l'indique, ce sont des choses bien au-delà des possibilités d'un être humain normal. Seuls les plus grands champions ou les surdoués peuvent arriver à les réaliser fréquemment, bien qu'avec de réels efforts. Par exemple, effectuer des acrobaties de niveau olympique sur une perche ou des opérations mathématiques complexes sur un boulier."
+        ],
+        [
+          "Quasiment impossible (QUIMP)",
+          240,
+          "Même les meilleurs rencontrent de graves difficultés à effectuer des actions quasiment impossibles et échouent la plupart du temps. Seul un grand champion ou un héro de film parvient à les réussir au moment critique, comme traverser un pont qui s'effondre en sautant sur les pierres en train de tomber et finir par un incroyable saut pour arriver enfin en sécurité."
+        ],
+        [
+          "Impossible (IMP)",
+          280,
+          "Réaliser une action impossible est une chose que personne n'imaginerait pouvoir faire. Ce sont des actes à la limite de ce que nous qualifions de réalité mais qui, pour autant incroyable ou miraculeux qu'ils paraissent, restent physiquement possibles. Un expert connaît alors le moment le plus fabuleux de sa carrière quand il accomplit une action impossible comme le fait de courir le cent mètres en moins de 8 secondes, revêtu d'une cotte de mailles, ou d'esquiver une balle, non par chance mais en la voyant venir et en calculant la trajectoire."
+        ],
+        [
+          "Surhumain (SURH)",
+          320,
+          "Il s'agit simplement de quelque chose que nous ne pouvons pas réaliser dans notre monde, dans la réalité. D'une certaine façon, ces actions contredisent la logique, par exemple soulever un camion à la force des bras, sauter jusqu'au troisième étage d'un seul coup ou courir entre des balles à haute vélocité en les évitant. Obtenir un résultat final atteignant cette difficulté ne suffit pas pour réussir ce genre de prouesse. Un personnage doit posséder le pouvoir Surhumanité pour atteindre cette difficulté."
+        ],
+        [
+          "Zen (ZEN)",
+          440,
+          "Ces actes de par leur nature, brisent totalement les règles de ce que nous appelons réalité, comme le fait de courir plus de mille mètres en moins d'une seconde, ou de sauter en hauteur sur la même distance sans préparation. Comme pour les actions surhumaines, le simple fait d'atteindre ce niveau de difficulté ne suffit pas à accomplir des actions Zen. Pour cela, il faudra que le personnage possède la capacité suranturelle de les accomplir."
+        ]
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Base de Régénération",
+      "headers": ["Constitution", "Régénération"],
+      "rows": [
+        ["1 à 2", "Aucun"],
+        ["3 à 7", 1],
+        ["8 à 9", 2],
+        [10, 3],
+        [11, 4],
+        [12, 5],
+        [13, 6],
+        [14, 7],
+        [15, 8],
+        [16, 9],
+        [17, 10],
+        [18, 11],
+        ["19 à 20", 12]
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Niveaux de Régénération",
+      "headers": [
+        "Régénération",
+        "Au repos",
+        "Sans repos",
+        "Réduction de malus",
+        "Capacité spciales"
+      ],
+      "rows": [
+        [1, "10 par jour", "5 par jour", "-5 par jour", ""],
+        [2, "20 par jour", "10 par jour", "-5 par jour", ""],
+        [3, "30 par jour", "15 par jour", "-5 par jour", ""],
+        [4, "40 par jour", "20 par jour", "-10 par jour", ""],
+        [
+          5,
+          "50 par jour",
+          "25 par jour",
+          "-10 par jour",
+          "Les blessures ne laissent pas de cicatrices."
+        ],
+        [
+          6,
+          "75 par jour",
+          "30 par jour",
+          "-15 par jour",
+          "Le personnage de souffre pas des effets des hémorragies."
+        ],
+        [
+          7,
+          "100 par jour",
+          "50 par jour",
+          "-20 par jour",
+          "Les membres amputés proprement se recollent s'ils sont maintenus contre le moignon pendant une semaine."
+        ],
+        [
+          8,
+          "250 par jour",
+          "100 par jour",
+          "-25 par jour",
+          "Comme précédemment, mais en 5 jours."
+        ],
+        [
+          9,
+          "500 par jour",
+          "200 par jour",
+          "-30 par jour",
+          "Comme précédemment, mais en 3 jours. Le personnage sort automatiquement de l'état entre la vir et la mort."
+        ],
+        [
+          10,
+          "1 par minute",
+          "N/A",
+          "-40 par jour",
+          "Comme précédemment, mais en un jour."
+        ],
+        [
+          11,
+          "2 par minute",
+          "N/A",
+          "-50 par jour",
+          "Tout membre amputé se recolle s'il est maintenu contre le moignon pendant une semaine."
+        ],
+        [
+          12,
+          "5 par minute",
+          "N/A",
+          "-5 par heure",
+          "Comme précédemment, mais en 3 jours."
+        ],
+        [
+          13,
+          "10 par minute",
+          "N/A",
+          "-10 par heure",
+          "Comme précédemment, mais en un jour."
+        ],
+        [
+          14,
+          "1 par round",
+          "N/A",
+          "-15 par heure",
+          "Tout membre amputé se recolle s'il est maintenu contre le moignon pendant quelques heures."
+        ],
+        [
+          15,
+          "5 par round",
+          "N/A",
+          "-20 par heure",
+          "Tout membre amputé se recolle s'il est maintenu contre le moignon pendant un round. A l'exception de la tête, tout membre amputé repousse en une semaine."
+        ],
+        [
+          16,
+          "10 par round",
+          "N/A",
+          "-10 par minute",
+          "A l'exception de la tête, tout membre amputé repousse en un jour."
+        ],
+        [
+          17,
+          "25 par round",
+          "N/A",
+          "-15 par round",
+          "A l'exception de la tête, tout membre amputé repousse en quelques minutes."
+        ],
+        [
+          18,
+          "50 par round",
+          "N/A",
+          "-20 par round",
+          "A l'exception de la tête, tout membre amputé repousse en quelques rounds."
+        ],
+        [
+          "19*",
+          "100 par round",
+          "N/A",
+          "Tous",
+          "Requiert Gnose à 40 minimum. Tout membre coupé repousse et redevient fonctionnel en un round."
+        ],
+        [
+          "20*",
+          "250 par round",
+          "N/A",
+          "Tous",
+          "Requiert Gnose à 45 minimum. Tous les Critiques physiques sont annulés."
+        ]
+      ]
+    },
+    {
+      "id": 0,
+      "title": "",
+      "headers": ["", ""],
+      "rows": []
     }
   ]
 }

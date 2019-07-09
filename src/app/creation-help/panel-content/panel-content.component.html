@@ -11,22 +11,6 @@
   </ng-container>
 
   <ng-container *ngSwitchCase="eContentType.TABLE">
-    <table *ngIf="table" cellspacing="0">
-      <caption>
-        {{
-          table.caption
-        }}
-      </caption>
-      <thead>
-        <tr>
-          <th *ngFor="let header of table.headers">{{ header }}</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let row of table.rows">
-          <td *ngFor="let cell of row">{{ cell }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <app-table *ngIf="table" [table]="table"></app-table>
   </ng-container>
 </ng-container>

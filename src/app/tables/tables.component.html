@@ -1,0 +1,29 @@
+<div class="app-tables flex flex-column">
+  <h2>Tableaux</h2>
+  <div class="flex flex-row">
+    <mat-form-field class="flex">
+      <input
+        matInput
+        placeholder="Filtrer"
+        (keyup)="searchTables($event.target.value)"
+      />
+    </mat-form-field>
+  </div>
+
+  <ng-container *ngIf="refTables">
+    <div class="flex flex-column" *ngFor="let book of books">
+      <h2>{{ book.title }}</h2>
+      <div class="flex flex-row flex-center">
+        <div
+          class="space-around"
+          *ngFor="let table of refTables[book.reference]"
+        >
+          <app-table [table]="table"></app-table>
+        </div>
+      </div>
+      <p *ngIf="!refTables[book.reference].length">
+        Aucun résultat pour ce livre.
+      </p>
+    </div>
+  </ng-container>
+</div>

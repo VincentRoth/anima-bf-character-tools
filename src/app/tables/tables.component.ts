@@ -1,0 +1,58 @@
+import { Component, OnInit } from '@angular/core';
+import { ReferenceTableService } from '../shared/reference-table/reference-table.service';
+import {
+  ReferenceTableContainer,
+  ReferenceTable
+} from '../shared/reference-table/reference-table';
+
+@Component({
+  selector: 'app-tables',
+  templateUrl: './tables.component.html',
+  styleUrls: ['./tables.component.scss']
+})
+export class TablesComponent implements OnInit {
+  refTables: ReferenceTableContainer;
+
+  books = [{ reference: 'core-exxet', title: 'Core Exxet' }];
+
+  constructor(private referenceTableService: ReferenceTableService) {}
+
+  ngOnInit() {
+    this.referenceTableService.referenceTables.subscribe({
+      next: refTables => (this.refTables = refTables)
+    });
+  }
+
+  searchTables(search: string) {
+    const tokens = search.toLocaleLowerCase().split(' ');
+    this.referenceTableService.referenceTables.subscribe({
+      next: refTables => {
+        this.refTables = refTables;
+        this.books.forEach(book => {
+          this.refTables[book.reference] = this.refTables[
+            book.reference
+          ].filter((table: ReferenceTable) =>
+            tokens.reduce((isSelected: boolean, token: string) => {
+              return (
+                isSelected &&
+                (table.title.toLocaleLowerCase().includes(token) ||
+                  table.headers.filter(header =>
+                    header.toLocaleLowerCase().includes(token)
+                  ).length ||
+                  table.rows.filter(
+                    row =>
+                      row.filter(cell =>
+                        cell
+                          .toString()
+                          .toLocaleLowerCase()
+                          .includes(token)
+                      ).length
+                  ).length)
+              );
+            }, true)
+          );
+        });
+      }
+    });
+  }
+}

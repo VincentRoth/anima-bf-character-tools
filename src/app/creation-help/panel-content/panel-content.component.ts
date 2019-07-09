@@ -5,8 +5,8 @@ import {
   ContentTable,
   ContentPanel
 } from '../content.model';
-import { ReferenceTableService } from '../reference-table/reference-table.service';
-import { ReferenceTable } from '../reference-table/reference-table';
+import { ReferenceTableService } from '../../shared/reference-table/reference-table.service';
+import { ReferenceTable } from '../../shared/reference-table/reference-table';
 
 @Component({
   selector: 'app-panel-content',

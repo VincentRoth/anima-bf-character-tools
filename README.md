@@ -4,7 +4,7 @@ A suit tools for building and playing character at Anima Beyond Fantasy tabletop
 
 Stable application version is deployed at https://anima-beyond-fantasy.herokuapp.com/.
 
-# License
+# Licence
 
 This project is provided under [Creative Common Licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 

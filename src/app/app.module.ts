@@ -10,6 +10,7 @@ import { HomeModule } from './home/home.module';
 import { DiceRollModule } from './dice-roll/dice-roll.module';
 import { AdvantagesModule } from './advantages/advantages.module';
 import { CreationHelpModule } from './creation-help/creation-help.module';
+import { TablesModule } from './tables/tables.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,7 +22,8 @@ import { CreationHelpModule } from './creation-help/creation-help.module';
     HomeModule,
     DiceRollModule,
     CreationHelpModule,
-    AdvantagesModule
+    AdvantagesModule,
+    TablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

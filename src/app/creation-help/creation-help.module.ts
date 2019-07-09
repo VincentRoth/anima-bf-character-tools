@@ -4,6 +4,7 @@ import { CreationHelpComponent } from './creation-help.component';
 import { AppMaterialModule } from '../app-material.module';
 import { PanelContentComponent } from './panel-content/panel-content.component';
 import { ContentTitleComponent } from './content-title/content-title.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,6 @@ import { ContentTitleComponent } from './content-title/content-title.component';
     PanelContentComponent,
     ContentTitleComponent
   ],
-  imports: [CommonModule, AppMaterialModule]
+  imports: [CommonModule, SharedModule, AppMaterialModule]
 })
 export class CreationHelpModule {}

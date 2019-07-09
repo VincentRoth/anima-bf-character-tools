@@ -1,0 +1,22 @@
+<table cellspacing="0">
+  <caption>
+    Tableau
+    {{
+      table.id
+    }}
+    :
+    {{
+      table.title
+    }}
+  </caption>
+  <thead>
+    <tr>
+      <th *ngFor="let header of table.headers">{{ header }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of table.rows">
+      <td *ngFor="let cell of row">{{ cell }}</td>
+    </tr>
+  </tbody>
+</table>

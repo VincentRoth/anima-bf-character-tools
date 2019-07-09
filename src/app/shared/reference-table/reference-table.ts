@@ -1,8 +1,8 @@
 export interface ReferenceTable {
   id: number;
-  caption: string;
+  title: string;
   headers: string[];
-  rows: any[];
+  rows: (string | number)[][];
 }
 
 export interface ReferenceTableContainer {
