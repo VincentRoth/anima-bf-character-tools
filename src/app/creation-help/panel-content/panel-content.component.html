@@ -1,4 +1,12 @@
 <ng-container [ngSwitch]="content.type">
+  <ng-container *ngSwitchCase="eContentType.LINK">
+    <p>
+      <a [routerLink]="content.link">
+        {{ content.title }}
+      </a>
+    </p>
+  </ng-container>
+
   <ng-container *ngSwitchCase="eContentType.PARAGRAPH">
     <app-content-title
       *ngIf="content.title"

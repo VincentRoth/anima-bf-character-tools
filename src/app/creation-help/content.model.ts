@@ -3,23 +3,30 @@ export interface ContentUnit {
 }
 
 export enum EContentType {
+  LINK = 'link',
   PANEL = 'panel',
   PARAGRAPH = 'paragraph',
   TABLE = 'table'
 }
 
-export interface ContentParagraph {
+export interface ContentLink extends ContentUnit {
+  title: string;
+  type: 'link';
+  link: string;
+}
+
+export interface ContentParagraph extends ContentUnit {
   title?: string;
   type: 'paragraph';
   content: string;
 }
 
-export interface ContentTable {
+export interface ContentTable extends ContentUnit {
   type: 'table';
   reference: string;
 }
 
-export interface ContentPanel {
+export interface ContentPanel extends ContentUnit {
   title: string;
   type: 'panel';
   content: ContentUnit[];

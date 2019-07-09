@@ -5,6 +5,7 @@ import { AppMaterialModule } from '../app-material.module';
 import { PanelContentComponent } from './panel-content/panel-content.component';
 import { ContentTitleComponent } from './content-title/content-title.component';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,6 @@ import { SharedModule } from '../shared/shared.module';
     PanelContentComponent,
     ContentTitleComponent
   ],
-  imports: [CommonModule, SharedModule, AppMaterialModule]
+  imports: [CommonModule, SharedModule, AppMaterialModule, RouterModule]
 })
 export class CreationHelpModule {}

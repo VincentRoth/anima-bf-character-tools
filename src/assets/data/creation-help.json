@@ -228,5 +228,73 @@
         ]
       }
     ]
+  },
+  {
+    "title": "Races",
+    "type": "panel",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": "Dans le cadre d'Anima, une race correspond à une espèce tel que l'humain ou une espèce surnaturelle aux traits distincts. Cependant la populationde Gaïa, le monde d'Anima, est preque totalement composée d'humains. Malgrè tout, si les joueurs le désirent, il peuvent choisir un Nephilim, voire une race surnaturelle si le Meneur de Jeu l'autorise."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Nephilims des Sylvains, Jayans, D'anjaynis, Ebudans, Daimah et Duz'zarists se trouvent au chapitre 2 du Core Exxet. Les mêmes races, non réincarnées, se trouvent au chapitre 22. Devas, Vetalas et Tuan Dalyr se trouvent dans le livre Ceux qui Marchaient Parmi Nous. Enfin Turaks se trouvent en fin du livre Gaïa 2."
+      },
+      {
+        "type": "paragraph",
+        "title": "Malus d'apprentissage",
+        "content": "Pour les Nephilims, le conflit entre les souvenirs de l'âme du Nephilim et l'apprentissage du personnage provoquent un malus sur les points d'expérience accordé par le Meneur de Jeu à la fin de chaque séance."
+      },
+      {
+        "type": "paragraph",
+        "title": "Modificateur de niveau",
+        "content": "Les capacités surnaturelles que possèdent certaines races leur donne un modificateur de niveau. Ces \"niveaux supplémentaires\" n'offrent pas au personnage les avantages habituels, ils sont uniquement comptabilisés pour savoir la quantité d'expérience nécessaire pour monter de niveau. Bien que leur niveau soit supérieur, il n'augmentent pas leur quantité de Points de Vie, leur Présence, leurs bonus automatiques ou leurs Points de Formation. Un personnage avec un tel modificateur de niveau commence avec l'expérience nécessaire pour atteindre son niveau actuel, incluant le modificateur. Par exemple un personnage de niveau 4 avec un modificateur de niveau de +2, commence avec 750 points d'expérience, au lieu des 375, ne bénéficie que des 4 niveaux effectifs pour les bonus par niveau, et doit atteindre un total de 975 points d'expérience pour atteindre le niveau 5."
+      }
+    ]
+  },
+  {
+    "title": "Avantages et Désavantages",
+    "type": "panel",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": "Les avantages et les désavantages permettent de caractériser votre personnage par des particularités liées à leur essence, à leur nature. On ne les apprend pas, pas plus qu'on ne les développe : on naît avec elles ou on ne les aura jamais. Votre personnage est-il ambidextre ou possède-t-il des aptitudes magiques ? Est-il né avec des dons psychiques ou peut-être guérit-il lentement ?"
+      },
+      {
+        "type": "paragraph",
+        "content": "Tout personnage peut acquérir des avantages à sa création grâce aux Points de Création. Il dispose de 3 Points de Créations. Afin d'en obtenir plus, il est possible de prendre des désavantages, impliquant un effet négatif ou un malus pour le personnage mais donnat de 1 à 2 Points de Création en compensation. Seulement un maximum de 3 désavantages peuvent être choisis. Certains avantages et désavantages ont un coût/bénéfice variable, plus la quantité de Points de Création investis/obtenus est importante plus grands seront les effets. Chaque avantage et désavantage ne peut être acquis qu'une seule fois, à moins que l'inverse ne soit explicietement précisé. Les avantages et les désavantages ne sont pas conditionné par la race ou la classe."
+      },
+      {
+        "type": "link",
+        "title": "Liste des avantages et des désavantages",
+        "link": "/advantages"
+      },
+      {
+        "type": "paragraph",
+        "title": "Avantages mystiques",
+        "content": "Ces avantages ne peuvent être choisi que si le personnage possède déjà l'avantage Don mystique ou Don limité. Il n'est pas nécessaire de faire partie d'une classe incluse dans l'archétype mystique."
+      },
+      {
+        "type": "paragraph",
+        "title": "Avantages psychiques",
+        "content": "Ces avantages ne peuvent être choisi que si le personnage possède déjà l'avantage Accès à une discipline psychique ou Accès à toute les disciplines psychiques. Il n'est pas nécessaire de faire partie d'une classe incluse dans l'archétype psy."
+      },
+      {
+        "type": "paragraph",
+        "title": "Avantages de passé",
+        "content": "Il s'agit d'avantage permettant d'accélerer le développement du personnage en lui fournissant richesse et réputation."
+      },
+      {
+        "type": "paragraph",
+        "title": "Désavantages mystiques",
+        "content": "Ces désavantages ne peuvent être choisis que si le personnage possède déjà l'avantage Don mystique ou Don limité. Les Points de Création obtenus ne peuvent être utilisés que pour acquérir des avantages mystiques."
+      },
+      {
+        "type": "paragraph",
+        "title": "Désavantages psychiques",
+        "content": "Ces désavantages ne peuvent être choisis que si le personnage possède déjà l'avantage Accès à une discipline psychique ou Accès à toute les disciplines psychiques. Les Points de Création obtenus ne peuvent être utilisés que pour acquérir des avantages psychiques."
+      }
+    ]
   }
 ]
