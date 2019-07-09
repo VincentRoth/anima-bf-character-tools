@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        title: 'Lancé de dé',
+        title: 'Lancer de dé',
         link: '/dice-roll',
         hasBackground: false,
         imageUrl:

@@ -16,7 +16,8 @@ a {
   background-repeat: no-repeat;
   overflow: hidden;
   .menu-title {
-    text-shadow: white 0 0 0.4rem;
+    text-shadow: white 0 0 0.75rem, white 0 0 0.75rem, white 0 0 0.75rem,
+      white 0 0 0.5rem, white 0 0 0.5rem;
   }
   img {
     height: $card-dimension - 2rem;
