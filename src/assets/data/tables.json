@@ -198,6 +198,12 @@
       ]
     },
     {
+      "id": 0,
+      "title": "",
+      "headers": ["", ""],
+      "rows": []
+    },
+    {
       "id": 23,
       "title": "Base de Régénération",
       "headers": ["Constitution", "Régénération"],
@@ -344,6 +350,413 @@
           "Tous",
           "Requiert Gnose à 45 minimum. Tous les Critiques physiques sont annulés."
         ]
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Mouvement",
+      "headers": ["Mouvement", "Distance maximale par round", "Condition"],
+      "rows": [
+        [1, "Moins d'un mètre", ""],
+        [2, "4 m", ""],
+        [3, "8 m", ""],
+        [4, "15 m", ""],
+        [5, "20 m", ""],
+        [6, "22 m", ""],
+        [7, "25 m", ""],
+        [8, "28 m", ""],
+        [9, "32 m", ""],
+        [10, "35 m", ""],
+        [11, "40 m", "Surhumain"],
+        [12, "50 m", "Surhumain"],
+        [13, "80 m", "Surhumain"],
+        [14, "150 m", "Zen"],
+        [15, "250 m", "Zen"],
+        [16, "500 m", "Zen"],
+        [17, "1 km", "Zen"],
+        [18, "5 km", "Zen"],
+        [19, "25 km", "Zen"],
+        [20, "Spécial", "Zen"]
+      ]
+    },
+    {
+      "id": 26,
+      "title": "Indice de Poids",
+      "headers": [
+        "Indice de Poids",
+        "Poids naturel",
+        "Charge maximale",
+        "Condition"
+      ],
+      "rows": [
+        [1, "Moins d'un kg", "1 kg", ""],
+        [2, "5 kg", "10 kg", ""],
+        [3, "10 kg", "20 kg", ""],
+        [4, "15 kg", "40 kg", ""],
+        [5, "25 kg", "60 kg", ""],
+        [6, "40 kg", "120 kg", ""],
+        [7, "60 kg", "180 kg", ""],
+        [8, "80 kg", "260 kg", ""],
+        [9, "100 kg", "350 kg", ""],
+        [10, "150 kg", "420 kg", ""],
+        [11, "200 kg", "600 kg", "Surhumain"],
+        [12, "350 kg", "1 t", "Surhumain"],
+        [13, "1 t", "3 t", "Surhumain"],
+        [14, "5 t", "25 t", "Zen"],
+        [15, "15 t", "100 t", "Zen"],
+        [16, "100 t", "500 t", "Zen"],
+        [17, "500 t", "2 500 t", "Zen"],
+        [18, "1 000 t", "10 000 t", "Zen"],
+        [19, "10 000 t", "150 000 t", "Zen"],
+        [20, "Spécial", "Spécial", "Zen"]
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Fatigue",
+      "headers": ["Fatigue", "Malus aux actions"],
+      "rows": [[0, "-120"], [1, "-80"], [2, "-40"], [3, "-20"], [4, "-10"]]
+    },
+    {
+      "id": 28,
+      "title": "Besoins physiques",
+      "headers": ["Situation", "Malus"],
+      "rows": [
+        ["Un jour sans manger", "-10"],
+        ["Un jour sans boire", "-15"],
+        ["Nourriture et boisson minimales", "-5"],
+        ["Un jou sans dormir", "-20"],
+        ["Dormir moins d'une heure", "-10"]
+      ]
+    },
+    {
+      "id": 29,
+      "title": "Modificateurs de la compétence",
+      "headers": ["Cétagorie d'arme", "Malus à la compétence"],
+      "rows": [
+        ["Arme similaire", "-20"],
+        ["Arme mixte", "-40"],
+        ["Arme distincte / mains nues", "-60"],
+        ["Parade et Esquive", "-60"]
+      ]
+    },
+    {
+      "id": 0,
+      "title": "",
+      "headers": ["", ""],
+      "rows": []
+    },
+    {
+      "id": 53,
+      "title": "Accumulation de Ki",
+      "headers": ["Caractéristique", "Base d'Accumulation de Ki"],
+      "rows": [["1 - 9", 1], ["10 - 12", 2], ["13 - 15", 3], ["16+", 4]]
+    },
+    {
+      "id": 54,
+      "title": "Les niveaux des techniques",
+      "headers": ["Niveau", "DI maximal", "DI minimal", "Désavantage"],
+      "rows": [[1, 50, 20, 1], [2, 100, 40, 2], [3, 200, 60, 3]]
+    },
+    {
+      "id": 55,
+      "title": "Base de points de Zéon",
+      "headers": ["Pouvoir", "Base de Zéon"],
+      "rows": [
+        [1, 5],
+        [2, 20],
+        [3, 40],
+        [4, 55],
+        [5, 70],
+        [6, 85],
+        [7, 95],
+        [8, 110],
+        [9, 120],
+        [10, 135],
+        [11, 150],
+        [12, 160],
+        [13, 175],
+        [14, 185],
+        [15, 200],
+        [16, 215],
+        [17, 225],
+        [18, 240],
+        [19, 250],
+        [20, 265]
+      ]
+    },
+    {
+      "id": 56,
+      "title": "Base d'AMR",
+      "headers": ["Pouvoir", "Base d'AMR"],
+      "rows": [
+        ["1 à 4", 0],
+        ["5 à 7", 5],
+        ["8 à 11", 10],
+        ["12 à 14", 15],
+        ["15", 20],
+        ["16 à 17", 25],
+        ["18 à 19", 30],
+        ["20", 35]
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Choc de sorts",
+      "headers": ["Différence", "Effet"],
+      "rows": [
+        ["1 à 50", "Les deux sorts s'annulent."],
+        [
+          "51 à 100",
+          "Le sort vainqueur parvient à passer au travers de l'autre, mais ses Dégâts sont réduits de moitié."
+        ],
+        [
+          "101 et +",
+          "L'attaque vaincue est totalement annulée et le sort vainqueur continue sur sa lancée sans aucun malus à ses Dégâts."
+        ]
+      ]
+    },
+    {
+      "id": 58,
+      "title": "Magie Innée",
+      "headers": ["AMR du sorcier", "Zéon"],
+      "rows": [
+        ["10 à 50", "10 maximum"],
+        ["55 à 70", "20 maximum"],
+        ["75 à 90", "30 maximum"],
+        ["95 à 110", "40 maximum"],
+        ["115 à 130", "50 maximum"],
+        ["135 à 150", "60 maximum"],
+        ["155 à 180", "70 maximum"],
+        ["185 à 200", "80 maximum"],
+        ["200 et +", "90 maximum"]
+      ]
+    },
+    {
+      "id": 59,
+      "title": "Le niveau de magie",
+      "headers": ["Intelligence", "Niveau de magie maximal"],
+      "rows": [
+        ["1 à 5", 0],
+        [6, 10],
+        [7, 20],
+        [8, 30],
+        [9, 40],
+        [10, 50],
+        [11, 75],
+        [12, 100],
+        [13, 150],
+        [14, 200],
+        [15, 300],
+        [16, 400],
+        [17, 500],
+        [18, 600],
+        [19, 700],
+        [20, 800]
+      ]
+    },
+    {
+      "id": 60,
+      "title": "Choix des sorts",
+      "headers": ["Niveau de sort", "Coût en niveau de magie"],
+      "rows": [
+        ["2 à 10", 2],
+        ["12 à 20", 4],
+        ["22 à 30", 6],
+        ["32 à 40", 8],
+        ["42 à 50", 10],
+        ["52 à 60", 12],
+        ["62 à 70", 14],
+        ["72 à 80", 16],
+        ["82 à 90", 18],
+        ["92 à 100", 20]
+      ]
+    },
+    {
+      "id": 61,
+      "title": "Rituels magiques",
+      "headers": ["Préparation", "Bonus à l'INT", "Coût additionnel"],
+      "rows": [
+        ["Une heure", "+1", "+50%"],
+        ["Un jour entier", "+2", "Double"],
+        ["Trois jours", "+3", "Triple"],
+        ["Une semaine", "+4", "Quadruple"],
+        ["Un an", "+5", "Quintuple"]
+      ]
+    },
+    {
+      "id": 62,
+      "title": "Modificateurs à la détection magique",
+      "headers": ["Situation", "Modificateur"],
+      "rows": [
+        ["La source de magie se trouve à plus de 20 mètres", "-20"],
+        ["La source de magie se trouve à plus de 50 mètres", "-40"],
+        ["La source de magie se trouve à plus de 100 mètres", "-80"],
+        ["La source de magie se trouve à plus d'un kilomètre", "-120"],
+        ["Milieu légèrement chargé de magie*", "-40"],
+        ["Milieu fortement chargé de magie*", "-80"]
+      ]
+    },
+    {
+      "id": 63,
+      "title": "Analyse magique",
+      "headers": ["Difficulté", "Niveau du sort"],
+      "rows": [
+        ["Facile", "Reconnaître la nature de la magie"],
+        ["Moyen", "Niveau de magie 20"],
+        ["Difficile", "Niveau de magie 40"],
+        ["Très Difficile", "Niveau de magie 60"],
+        ["Absurde", "Niveau de magie 70"],
+        ["Quasiment Impossible", "Niveau de magie 80"],
+        ["Impossible", "Niveau de magie 90"],
+        ["Surhumaine", "Niveau de magie 100"]
+      ]
+    },
+    {
+      "id": 64,
+      "title": "Difficultés de convocation",
+      "headers": [
+        "Niveau",
+        "Convoquer",
+        "Zéon",
+        "Dominer",
+        "Zéon",
+        "Lier",
+        "Zéon",
+        "Révoquer",
+        "Zéon"
+      ],
+      "rows": [
+        [0, 140, 10, 180, 20, 160, 5, 100, 5],
+        [1, 160, 20, 200, 40, 180, 10, 120, 5],
+        [2, 180, 40, 220, 80, 200, 20, 140, 10],
+        [3, 200, 60, 240, 120, 220, 30, 160, 15],
+        [4, 220, 80, 260, 160, 240, 40, 180, 20],
+        [5, 240, 100, 280, 200, 260, 50, 200, 25],
+        [6, 260, 120, 300, 240, 280, 60, 220, 30],
+        [7, 280, 140, 320, 280, 300, 70, 240, 40],
+        [8, 300, 160, 340, 320, 320, 80, 260, 50],
+        [9, 320, 180, 360, 360, 340, 90, 280, 60],
+        [10, 340, 200, 380, 400, 360, 100, 300, 80],
+        [11, 360, 220, 400, 440, 380, 120, 320, 100],
+        [12, 380, 240, 420, 480, 400, 140, 340, 120],
+        [13, 400, 260, 440, 520, 420, 160, 360, 140],
+        [14, 420, 280, 460, 560, 440, 180, 380, 160],
+        [15, 440, 300, 480, 600, 460, 200, 400, 180]
+      ]
+    },
+    {
+      "id": 65,
+      "title": "Durée des rituels",
+      "headers": ["Temps investi pour la convocation", "Modificateurs"],
+      "rows": [
+        ["Immédiat", "-100"],
+        ["Un round complet", "-50"],
+        ["Trois rounds", "-20"],
+        ["Cinq rounds", "+0"],
+        ["Une minute", "+10"],
+        ["Une heure", "+20"],
+        ["Six heures", "+30"],
+        ["Un jour", "+40"],
+        ["Une semaine", "+50"],
+        ["Un mois", "+60"],
+        ["Six mois", "+70"],
+        ["Un an", "+80"],
+        ["Cinq ans", "+90"],
+        ["Dix ans", "+100"],
+        ["Plus de cinquante ans", "+120"]
+      ]
+    },
+    {
+      "id": 66,
+      "title": "Modificateurs de convocation",
+      "headers": ["Modificateurs de convocation", "Bonus"],
+      "rows": [
+        ["Connaître le nom véritable de l'être", "+20"],
+        ["Avoir un objet important lui appartenant", "+10"],
+        ["Avoir une partie de cet être", "+20"],
+        ["Ne pas connaître me type de créature", "-50 en Convoquer"]
+      ]
+    },
+    {
+      "id": 67,
+      "title": "La Roue de Fortune",
+      "headers": ["Résultat", "Invocation"],
+      "rows": [
+        ["1-5", "Le Mat"],
+        ["6-10", "Le Bateleur"],
+        ["11-15", "La Papesse"],
+        ["16-20", "L'Impératrice"],
+        ["21-25", "L'Empereur"],
+        ["26-30-", "Le Pape"],
+        ["31-35", "L'Amoureux"],
+        ["36-40", "Le Chariot"],
+        ["41-45", "La Force"],
+        ["46-50", "L'Ermite"],
+        ["51-55", "La Justice"],
+        ["56-60", "Le Pendu"],
+        ["61-65", "La Mort"],
+        ["66-70", "La Tempérance"],
+        ["71-75", "Le Diable"],
+        ["76-80", "La Maison Dieu"],
+        ["81-85", "L'Etoile"],
+        ["86-90", "La Lune"],
+        ["91-95", "Le Soleil"],
+        ["96-99", "Le Jugement"],
+        ["100", "Le Monde"]
+      ]
+    },
+    {
+      "id": 68,
+      "title": "Base de Talent psychique",
+      "headers": ["Volonté", "Talent psychique"],
+      "rows": [
+        ["4 ou -", "+0"],
+        ["5", "+10"],
+        ["6", "+20"],
+        ["7", "+30"],
+        ["8", "+40"],
+        ["9", "+50"],
+        ["10", "+60"],
+        ["11", "+70"],
+        ["12", "+80"],
+        ["13", "+90"],
+        ["14", "+100"],
+        ["15", "+120"],
+        ["16", "+140"],
+        ["17", "+160"],
+        ["18", "+180"],
+        ["19", "+200"],
+        ["20", "+220"]
+      ]
+    },
+    {
+      "id": 69,
+      "title": "Concentration",
+      "headers": ["Concentration", "Bonus"],
+      "rows": [
+        ["Un round", "+10"],
+        ["Trois rounds", "+20"],
+        ["Cinq rounds", "+30"],
+        ["Une minute", "+40"],
+        ["Une heure", "+50"]
+      ]
+    },
+    {
+      "id": 70,
+      "title": "Augmenter le Talent psychique",
+      "headers": ["PPP nécessaire", "Bonus en Talent psychique"],
+      "rows": [
+        ["1 (1)", "+10"],
+        ["2 (3)", "+20"],
+        ["3 (6)", "+30"],
+        ["4 (10)", "+40"],
+        ["5 (15)", "+50"],
+        ["6 (21)", "+60"],
+        ["7 (28)", "+70"],
+        ["8 (36)", "+80"],
+        ["9 (45)", "+90"],
+        ["10 (55)", "+100"]
       ]
     },
     {
