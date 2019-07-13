@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ReferenceTableService } from '../shared/reference-table/reference-table.service';
 import {
   ReferenceTableContainer,
-  ReferenceTable
+  ReferenceTable,
+  referenceBooks
 } from '../shared/reference-table/reference-table';
 
 @Component({
@@ -13,14 +14,16 @@ import {
 export class TablesComponent implements OnInit {
   refTables: ReferenceTableContainer;
 
-  books = [{ reference: 'core-exxet', title: 'Core Exxet' }];
-
   constructor(private referenceTableService: ReferenceTableService) {}
 
   ngOnInit() {
     this.referenceTableService.referenceTables.subscribe({
       next: refTables => (this.refTables = refTables)
     });
+  }
+
+  get books() {
+    return referenceBooks;
   }
 
   searchTables(search: string) {

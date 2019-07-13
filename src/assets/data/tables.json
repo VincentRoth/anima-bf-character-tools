@@ -231,7 +231,7 @@
         "Au repos",
         "Sans repos",
         "Réduction de malus",
-        "Capacité spciales"
+        "Capacité spéciales"
       ],
       "rows": [
         [1, "10 par jour", "5 par jour", "-5 par jour", ""],
@@ -765,5 +765,81 @@
       "headers": ["", ""],
       "rows": []
     }
-  ]
+  ],
+  "kit-mj": [],
+  "dominus-exxet": [
+    {
+      "id": 5,
+      "title": "Perception étendue",
+      "headers": ["Perception", "Avantage"],
+      "rows": [
+        [13, "Immunité à la luminosité ambiante"],
+        [16, "Sens du milieu"],
+        [18, "Perception périphétique"],
+        [20, "Perception absolue"]
+      ]
+    }
+  ],
+  "arcana-exxet": [],
+  "prometheum-exxet": [
+    {
+      "id": 1,
+      "title": "Avantage Artefact",
+      "headers": [
+        "Niveau du Personnage",
+        "1 Point de Création",
+        "2 Point de Créations",
+        "3 Point de Créations"
+      ],
+      "rows": [
+        ["0-3", "1+", "2", "2+"],
+        ["4-6", "2", "2+", "3"],
+        ["7-9", "2+", "3", "3+"],
+        ["10-12", "3", "3+", "4"],
+        ["13+", "3+", "4", "4+"]
+      ]
+    }
+  ],
+  "gaia-1": [
+    {
+      "id": 33,
+      "title": "Contacts",
+      "headers": ["Organisation", "PC"],
+      "rows": [
+        ["Inquisition", 2],
+        ["Eglise", 1],
+        ["Tol Rauko", 2],
+        ["Wissenchaft", 2],
+        ["Séléné", 2],
+        ["Ordre de Magus", 2],
+        ["Ordre de Yehudah", 2],
+        ["Soleil Noir", 2],
+        ["Hautes sphères d'un pays", 2],
+        ["Bas fonds", 1],
+        ["Noblesse locale", 1],
+        ["Grand seigneur du crime0", 1]
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Natura",
+      "headers": ["Race", "Natura"],
+      "rows": [
+        ["Humain / Nephilim", 0],
+        ["Animal naturel", 0],
+        ["Sylvain", 5],
+        ["Duk'zarist", 5],
+        ["Jayan", 0],
+        ["Daimah", 5],
+        ["Ebudan", 10],
+        ["D'Anjayni", 5],
+        ["*Deva", 5],
+        ["*Vetala", 5],
+        ["*Tuan Dalyr", 0],
+        ["*Turak", "*0"]
+      ]
+    }
+  ],
+  "gaia-2": [],
+  "cqmpn": []
 }
