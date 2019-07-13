@@ -5,11 +5,13 @@ import { DiceRollComponent } from './dice-roll/dice-roll.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { CreationHelpComponent } from './creation-help/creation-help.component';
 import { TablesComponent } from './tables/tables.component';
+import { RacesComponent } from './races/races.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'dice-roll', component: DiceRollComponent },
   { path: 'creation-help', component: CreationHelpComponent },
+  { path: 'races', component: RacesComponent },
   { path: 'advantages', component: AdvantagesComponent },
   { path: 'tables', component: TablesComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }

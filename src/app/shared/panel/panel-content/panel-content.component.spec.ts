@@ -4,6 +4,8 @@ import { PanelContentComponent } from './panel-content.component';
 import { ContentTitleComponent } from '../content-title/content-title.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { EContentType } from '../content.model';
+import { RouterTestingModule } from '@angular/router/testing';
+import { TableComponent } from '../../table/table.component';
 
 describe('PanelContentComponent', () => {
   let component: PanelContentComponent;
@@ -11,8 +13,12 @@ describe('PanelContentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [PanelContentComponent, ContentTitleComponent],
-      imports: [HttpClientTestingModule]
+      declarations: [
+        PanelContentComponent,
+        ContentTitleComponent,
+        TableComponent
+      ],
+      imports: [HttpClientTestingModule, RouterTestingModule]
     }).compileComponents();
   }));
 

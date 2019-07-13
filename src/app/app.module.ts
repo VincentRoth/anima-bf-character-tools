@@ -11,6 +11,7 @@ import { DiceRollModule } from './dice-roll/dice-roll.module';
 import { AdvantagesModule } from './advantages/advantages.module';
 import { CreationHelpModule } from './creation-help/creation-help.module';
 import { TablesModule } from './tables/tables.module';
+import { RacesModule } from './races/races.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { TablesModule } from './tables/tables.module';
     HomeModule,
     DiceRollModule,
     CreationHelpModule,
+    RacesModule,
     AdvantagesModule,
     TablesModule
   ],

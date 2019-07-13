@@ -235,11 +235,17 @@
     "content": [
       {
         "type": "paragraph",
-        "content": "Dans le cadre d'Anima, une race correspond à une espèce tel que l'humain ou une espèce surnaturelle aux traits distincts. Cependant la populationde Gaïa, le monde d'Anima, est presque totalement composée d'humains. Malgrè tout, si les joueurs le désirent, il peuvent choisir un Nephilim, voire une race surnaturelle si le Meneur de Jeu l'autorise."
+        "content": "Dans le cadre d'Anima, une race correspond à une espèce telle que l'humain ou une espèce surnaturelle aux traits distincts. Cependant la populationde Gaïa, le monde d'Anima, est presque totalement composée d'humains. Malgrè tout, si les joueurs le désirent, il peuvent choisir un Nephilim, voire une race surnaturelle si le Meneur de Jeu l'autorise."
+      },
+      {
+        "type": "link",
+        "title": "Liste des races",
+        "link": "/races"
       },
       {
         "type": "paragraph",
-        "content": "Les Nephilims des Sylvains, Jayans, D'anjaynis, Ebudans, Daimah et Duz'zarists se trouvent au chapitre 2 du Core Exxet. Les mêmes races, non réincarnées, se trouvent au chapitre 22. Devas, Vetalas et Tuan Dalyr se trouvent dans le livre Ceux qui Marchaient Parmi Nous. Enfin Turaks se trouvent en fin du livre Gaïa 2."
+        "title": "Nephilim",
+        "content": "TODO"
       },
       {
         "type": "paragraph",

@@ -1,10 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ReferenceTableService } from './reference-table.service';
+import { RaceService } from './race.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { AppMaterialModule } from 'src/app/app-material.module';
 
-describe('ReferenceTableService', () => {
+describe('RaceService', () => {
   beforeEach(() =>
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule]
@@ -12,7 +11,7 @@ describe('ReferenceTableService', () => {
   );
 
   it('should be created', () => {
-    const service: ReferenceTableService = TestBed.get(ReferenceTableService);
+    const service: RaceService = TestBed.get(RaceService);
     expect(service).toBeTruthy();
   });
 });

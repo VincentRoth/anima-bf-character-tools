@@ -6,10 +6,10 @@ import { ContentPanel } from '../shared/panel/content.model';
 @Injectable({
   providedIn: 'root'
 })
-export class CreationHelpService {
+export class RaceService {
   constructor(private http: HttpClient) {}
 
   get(): Observable<ContentPanel[]> {
-    return this.http.get<ContentPanel[]>('/assets/data/creation-help.json');
+    return this.http.get<ContentPanel[]>('/assets/data/races.json');
   }
 }
