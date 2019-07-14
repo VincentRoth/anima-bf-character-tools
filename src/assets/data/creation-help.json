@@ -238,6 +238,10 @@
         "content": "Dans le cadre d'Anima, une race correspond à une espèce telle que l'humain ou une espèce surnaturelle aux traits distincts. Cependant la populationde Gaïa, le monde d'Anima, est presque totalement composée d'humains. Malgrè tout, si les joueurs le désirent, il peuvent choisir un Nephilim, voire une race surnaturelle si le Meneur de Jeu l'autorise."
       },
       {
+        "type": "paragraph",
+        "content": "Le système d'Anima suppose que les joueurs interprètent principalement des personnages humains. La véritable essence du monde de Gaia considère le surnaturel comme une chose exceptionnelle. sans perdre à aucun moment l'humanité de vue. Il s'avére bien plus satisfaisant d'affronter l'inconnu en tant qu'humain qu'en tant que membre d'une race mystique. Cependant, il est tout aussi vrai que se voir obligé de toujours interpréter des personnages humains peut finir par être monotone, et jouer de temps en temps quelque chose de différent, de plus mystique s'avère une option très agréable. Si les joueurs le décident, ils peuvent incarner un Nephilim : des humains dotés des caractéristiques surnaturelles d'autres races."
+      },
+      {
         "type": "link",
         "title": "Liste des races",
         "link": "/races"
@@ -245,7 +249,11 @@
       {
         "type": "paragraph",
         "title": "Nephilim",
-        "content": "TODO"
+        "content": "Les Nephilims sont les âmes d'êtres surnaturels réincarnées chez des humains. Ils ne se rappellent rien de leurs existences précédentes bien que leur essence mystique leur accorde, de façon limitée, quelques-uns des pouvoirs et capacités qu'ils possédaient. Même s'ils ne sont pas conscients de l'origine de leurs aptitudes, ils les contrôlent de façon innée. Ils font souvent d'étranges songes ou des rêves éveillés dans lesquels ils voient des fragments de leurs vies antérieures, qui sont restés liés avec force à leur essence."
+      },
+      {
+        "type": "paragraph",
+        "content": "Il existe plusieurs types de Nephilims. Tout comme il y avait plusieurs races surnaturelles dans l'antiquité, il y a plusieurs Nephilims différents, en fonction de l'origine de l'âme réincarnée. Chacun possède ses propres caractéristiques spéciales et ses désavantages particuliers. En général, ces pouvoirs sont simplement spirituels, mais ils influent parfois sur leurs corps, leur accordant quelques caractéristiques physiques exceptionnelles. De même, l'influence exercée par leurs âmes fait qu'on retrouve souvent des traits de caractères similaires parmi les Nephilims d'une même race. Chaque description donnne des indications sur leur comportement habituel. Un joueur peut se baser sur cela pour se faire une idée de l'attitude de chaque race, mais il ne doit en aucun cas se sentir forcé d'agir ainsi s'il ne le souhaite pas."
       },
       {
         "type": "paragraph",
@@ -255,7 +263,7 @@
       {
         "type": "paragraph",
         "title": "Modificateur de niveau",
-        "content": "Les capacités surnaturelles que possèdent certaines races leur donne un modificateur de niveau. Ces \"niveaux supplémentaires\" n'offrent pas au personnage les avantages habituels, ils sont uniquement comptabilisés pour savoir la quantité d'expérience nécessaire pour monter de niveau. Bien que leur niveau soit supérieur, il n'augmentent pas leur quantité de Points de Vie, leur Présence, leurs bonus automatiques ou leurs Points de Formation. Un personnage avec un tel modificateur de niveau commence avec l'expérience nécessaire pour atteindre son niveau actuel, incluant le modificateur. Par exemple un personnage de niveau 4 avec un modificateur de niveau de +2, commence avec 750 points d'expérience, au lieu des 375, ne bénéficie que des 4 niveaux effectifs pour les bonus par niveau, et doit atteindre un total de 975 points d'expérience pour atteindre le niveau 5."
+        "content": "Les capacités surnaturelles que possèdent certaines races leur donne un modificateur de niveau. Ces \"niveaux supplémentaires\" n'offrent pas au personnage les avantages habituels, ils sont uniquement comptabilisés pour savoir la quantité d'expérience nécessaire pour monter de niveau. Bien que leur niveau soit supérieur, ceux provenant du modificateur n'augmentent pas les Points de Vie, la Présence, les bonus automatiques et les Points de Formation. Un personnage avec un tel modificateur de niveau commence avec l'expérience nécessaire pour atteindre son niveau actuel, incluant le modificateur. Par exemple un personnage de niveau 4 avec un modificateur de niveau de +2, commence avec 750 points d'expérience, au lieu des 375, ne bénéficie que des 4 niveaux effectifs pour les bonus par niveau, et doit atteindre un total de 975 points d'expérience pour atteindre le niveau 5."
       }
     ]
   },

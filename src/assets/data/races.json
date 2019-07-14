@@ -1,0 +1,291 @@
+[
+  {
+    "title": "Sylvain",
+    "type": "panel",
+    "content": [
+      {
+        "type": "image",
+        "title": "Sylvain",
+        "url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/415e335e-b1cb-4849-9250-5b886f627634/drzd4h-64f84334-56e2-4da8-92b6-8f907a3d2baa.jpg/v1/fill/w_715,h_1117,q_70,strp/anima__nerelas_and_sylvia_by_wen_m_drzd4h-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMwMSIsInBhdGgiOiJcL2ZcLzQxNWUzMzVlLWIxY2ItNDg0OS05MjUwLTViODg2ZjYyNzYzNFwvZHJ6ZDRoLTY0Zjg0MzM0LTU2ZTItNGRhOC05MmI2LThmOTA3YTNkMmJhYS5qcGciLCJ3aWR0aCI6Ijw9ODMzIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.qhdU-zWNbH4q94_KE0Noq9H_C5fY3glJb13h3htVgy0"
+      },
+      {
+        "type": "paragraph",
+        "content": "Peu d'êtres sont aussi liés à la magie et à la fantasmagorie que les Sylvains. Traditionnellement connus par les autres peuples de Gaia sous le nom d'elfes, il s'agit de la plus importante des races liées à la lumière."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leur apparence physique ressemble à celle des humains, bien qu'ils soient légèrement plus minces et qu'ils aient de grandes oreilles pointues. Comme les Duk'zarists, leur visage est toujous très beau, avec des traits délicats et harmonieux. Leur chevelure est habituellement de couleur blonde, mais elle peut revêtir d'autres couleurs plus inhabituelles comme le bleu. Ni leurs yeux ni leurs cheveux ne sont jamais noirs - seuls les enfants nés sans le Don mystique ont les cheveux noirs ; on les appelle elfes sombres. Ils profitent d'une longévité exceptionnelle, leur cycle de vie étant à peu prés dix fois plus étendu que celui des humains. Par conséquent, un elfe âgé de cinq cents ans n'est seulement qu'un quinquagénaire par rapport au cycle humain."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Sylvains ont une manière unique de faire face aux événements. Ils prennet toujours les choses de façon détendue et tranquille, car leur longue vie les incite à se montrer extrêmement patients. Peu violents par nature, ils n'hésitent pourtnat pas à prendre les mesures qu'ils estiment nécessaires, quelles qu'elles soient. De plus, même s'ils ressentent de la peine s'ils se woient obligés d'agir à l'opposé de leurs croyances, ils n'appréhendent pas le concept du remords. Ce qui est fait est fait et ne peut être changé. Ils apprécient les connaissances, les arts et tout ce qui est beau ; beaucoup se révèlent de grands poètes et penseurs. Quelque chose au plus profond d'eux-mêmes les pousse à la mélancolie ; ils semblent toujours empreints d'une certaine tristesse. Leur plus grande peur est liée au changement et à la mutabilité des choses. Ils voient le monde qui les entoure comme une chose en constante évolution et craignent de se lier aux autres races, par peur que le passage du temps n'emporte ceux qui leur sont chers, zlors qu'eux mêmes paraissent inaltérables. Leur société est structurée de façoòn ordonnée et égalitaire. Peu profitent d'un réel pouvoir sur les autres, mais leurs traditions les conduisent à suivre ceux qui possèdent le pouvoir avec une véritable vénération. En général,les hommes s'occupent des fonctions requérant la plus grande force physique, comme le combat ou le travail, mais les femmes ont autant d'importance qu'eux au moment de prendre des décisions. La magie et le surnaturel ont une influence capitale dans leur civilisation. Tous les elfes ont quelques connaissances magiques au fil de leurs d'années d'existenc, car c'est devenu pour leur race une chose toute aussi naturelle que de respirer. Même les Sylvains dont la profession n'est pas liée à l'utilisation de capacités mysitiques en connaissent toujours les bases. Dans certains cas excessivement rares, un elfe nait sans le Don de la magie et reçoit le titre d'elfe sombre. Bien que la loi indique qu'ils doivent être traités comme égaux, ces individus sont considérés comme des parias, dont on dit que l'âme est incomplète."
+      },
+      {
+        "title": "Capacités",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Caractéristiques exceptionnelles",
+            "content": "Un elfe est doté de capacités et d'un pouvoir animiques supérieurs à celui des humains : il bénéfie d'unbonus de +1 à ses caractéristiques de DEX, AGI, POU et INT. Cependant, son physique se révèle légèrement moins performant que celui des humains, et ils subissent un malus de -1 en FOR et CON."
+          },
+          {
+            "type": "paragraph",
+            "title": "Résistances exceptionnelles",
+            "content": "Les elfes sont pratiquement immunisés à la plupart des effets magiques et psychiques, ce qui leur permet dc bénéfier d'un bonus de +30 à leur Résistance mystique et psychique (RMys et RPsy). Un Sylvain ne peut pas choisir les désavantages de Vulnérabilité à la magie ou Possession facilitée."
+          },
+          {
+            "type": "paragraph",
+            "title": "Immunité aux maladies et aux poisons naturels",
+            "content": "L'essence surnaturelle des Sylvains les immunise à toutes les maladies ou poisons qui ne sont pas d'origine mystique. Ils ne peuvent pas choisir les désavantages de Mauvaise santé, Grave maladie ou Vulnérabilité aux poisons."
+          },
+          {
+            "type": "paragraph",
+            "title": "Actions surhumaines",
+            "content": "De par sa nature, un Sylvain peut atteindre la difficulté Surhumaine dans ses tests."
+          },
+          {
+            "type": "paragraph",
+            "title": "Besoins limités",
+            "content": "Les Syivains ont beaucoup moins besoin de se reposer que les autres races : leurs besoins en sommeil et nourriture sont réduits au cinquième des besoins d'un humain normal."
+          },
+          {
+            "type": "paragraph",
+            "title": "Guérion rapide",
+            "content": "Ils guérissent de leurs blessures à en rythme très elevé, ce qui se traduit par un bonus de trois points en Régénération."
+          },
+          {
+            "type": "paragraph",
+            "title": "Ressentir l'Obscurité et la Lumière",
+            "content": "Les Syivains ressentent la présence de tout autre Sylvain ou Duk'zarist qui se trouve en leur présence, bien qu'ils ne seront pas capables de l'identifier comme tel. Ils perçoivent de façon surnaturelle la présence obscure ou lumineuse émise par leurs âmes. Cette faculté ne leur permet pas de reconnaitre un individu dissimulé par un sort ou grâce à un pouvoir du Ki."
+          },
+          {
+            "type": "paragraph",
+            "title": "Lien envers la lumière",
+            "content": "L'âme elfique est fortement liée à la lumière. Par conséquent, tout être de cet élément ressent une affinité envers les Sylvains et ces derniers ne peuvent pas choisir l'avantage Prédilection élémentaire (Obscurité). Ils bénéficient aussi d'un bonus spécial de +10 à tous les tests de Résistance effectués contre les effets de lumière, et subissent un malus équivalent contre les effets d'obscurité."
+          },
+          {
+            "type": "paragraph",
+            "title": "Obligation magique",
+            "content": "Tous les elfes naissent avec une forte présence surnaturelle, ce qui les oblige à choisir l'avantage Don mystique."
+          },
+          {
+            "type": "paragraph",
+            "title": "Vision du monde",
+            "content": "La nature des elfes les incite à affronter les événements d'une façon légèrement différente des autres races naturelles. Par conséquent, si un joueur incarne un elfe, il subit un malus de -3 points d'expérience à la fin de chaque séance de jeu."
+          },
+          {
+            "type": "paragraph",
+            "title": "Base de Natura",
+            "content": "5"
+          },
+          {
+            "type": "paragraph",
+            "title": "Modificateur de niveau",
+            "content": "+2"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "title": "Nephilim",
+        "content": "Les Nephilims d'origine elfique sont les plus nombreux,puisqu'ils appartenaient jadis à une des deux races dominantes de l'antiquité. Leur essence est directement liée à la lumière et à la magie, bien plus que les autres êtres. Très souvent, pour cette raison, ces Nephilims naissent avec le Don mystique et ont de grandes facilités à créer des sorts."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Nephilms sylvains sont généralement de belles personnes aux traits fins. Leur chevelure et leurs yeux restent souvent dans les tons clairs : blond ou châtain pour les cheveux, bleu ou vert pour les yeux. Leur plus extravagant trait physique se rapporte à leurs oreilles qui, parfois, sont légerement pointues. Pas très grands en moyenne, ils ne souffrent jamais de surpoids même s'ils boivent ou mangent beaucoup. Ils vivent un peu plus longtemps que les humains et dépassent normalement le siècle d'existence, tout en conservant leurs capacités physiques en l'état environ jusqu'à quatre-vingt ans."
+      },
+      {
+        "type": "paragraph",
+        "content": "En de nombreuses occasions, leur essence influe sur leur personnalité humaine, ce qui en fait des individus pensifs et patients. Ils s'intéressent beauxoup aux choses belles, comme les arts et la connaissance. Ils ne considèrent pas facilement quelqu'un comme un ennemi, mais dans ces rares occasions leurs adversaires affrontent des étres qui ne connaissent pas le remords. Ils ressentent dés leur naissance un antagonisme naturel envers l'obscurtté et tout ce qu'elle représente, même si contrairement aux véritables elfes, leur nature humaine leur permet de s'y accoutumer. Tous les Nephilims duk'zarists qu'ils croisent les dégoûtent, mais il leur est déjà arrivé de collaborer."
+      },
+      {
+        "type": "paragraph",
+        "content": "Ils rêvent plus de leur vie antérieure que les autres Nephilims, ce qui les fait se sentir cn décalage. Ils entreprennent pour cette raison de fréquents voyages afin de tenter de découvrir leurs origines ou toute chose qui pourrait remplir le vide qu'ils ressentent à l'intérieur d'eux-mêmes."
+      },
+      {
+        "type": "paragraph",
+        "content": "La nature de leur âme a de fortes répercussions sur leurs compétences et leur accorde des capacités surprenantes, autant physiques que surnaturelles."
+      },
+      {
+        "title": "Capacités des Nephilims",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Résistances exceptionnelles",
+            "content": "Comme reflet de leur ancienne condition, les Nephilims elfiques possèdent des Résistances excepoonnellement élevées contre la magie, les pouvoirs psychiques et les maladies. Ils peuvent donc appliquer un bonus de +10 à leur Résistance mystique (RMys) et psychique (RPsy), de +20 à leur Résistance aux maladies (RMal) et de -5 à leur Résistance physique (RPhy) et aux poisons (RPoi). Un Nephilim ne peut pas choisir les désavantages Mauvaise santé, Grave maladie ou Vulnérabilité à la magie."
+          },
+          {
+            "type": "paragraph",
+            "title": "Penchant vers la Lumière",
+            "content": "Tous les Nephilims elfiques possèdent un déséquilibre naturel vers la lumière. Cette faculté leur procure une Résistance spéciale de +10 contre tous les effets se basant sur cet élément. De plus, cette affinité les empêche de choisir l'avantage Prédilection élémentaire (Obscurité)."
+          },
+          {
+            "type": "paragraph",
+            "title": "Guérion rapide",
+            "content": "Ils bénéficient d'une incroyable capacité à récupérer des blessures physiques subies, et gagnent donc un point en Régenération."
+          },
+          {
+            "type": "paragraph",
+            "title": "Besoins limités",
+            "content": "Bien qu'ils n'atteignent pas les niveaux elfiques purs, les Nephilims sylvains n'ont pas besoin d'autant manger ou dormir que les humains. Leur besoins sont réduits de moitié par rapport à un individu normal. Cela ne veut pas dire qu'ils ne ressentent pas la faim de temps en temps mais que, dans la pratique, ils n'ont pas besoin d'autant d'aliments pour survivre."
+          },
+          {
+            "type": "paragraph",
+            "title": "Ressentir l'Obscurité et la Lumière",
+            "content": "Les Nephilims elfiques ressentent la présence de tout autre Nephilim sylvain ou duk'zarist qui se trouve en leur présence, bien qu'ils ne seront pas capables de l'identifier comme tel. Ils perçoivent de façon surnaturelle la présence obscure ou lumineuse émise par leurs âmes. Cette faculté ne leur permet pas de reconnaitre un individu dissimulé par un sort ou grâce à un pouvoir du Ki."
+          },
+          {
+            "type": "paragraph",
+            "title": "Âme immortelle",
+            "content": "L'âme d'un elfe se trouve en lutte constante entre ce qu'elle apprend et ses anciens souvenirs. Il subissent donc un malus de -4 points à l'expérience donnée par le Meneur de Jeu à chaque fin de séance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Deva",
+    "type": "panel",
+    "content": [
+      {
+        "type": "image",
+        "title": "Deva",
+        "url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/415e335e-b1cb-4849-9250-5b886f627634/d1yny1b-a5968b19-0775-4762-b11a-360bb12c374f.jpg/v1/fill/w_774,h_1032,q_70,strp/anima__covel_by_wen_m_d1yny1b-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM0NCIsInBhdGgiOiJcL2ZcLzQxNWUzMzVlLWIxY2ItNDg0OS05MjUwLTViODg2ZjYyNzYzNFwvZDF5bnkxYi1hNTk2OGIxOS0wNzc1LTQ3NjItYjExYS0zNjBiYjEyYzM3NGYuanBnIiwid2lkdGgiOiI8PTEwMDgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.dGIyAJ5jItE2-AGUaei1DC1J_eFHc5yD6S0U019nXB0"
+      },
+      {
+        "type": "paragraph",
+        "content": "Après les Duk'zarist et les Sylvain, les Devas furent la race la plus importante de l'antiquité. On raconte qu'ils proviennent de la même lignée de sang que les Jayan mais, malgré les nombreuses ressemblances entre les deux, les différences sont plus qu'évidentes. Personne ne sait vraiment s'il y eut un moment où ils ne formaient qu'une seule race qui se sépara ou s'ils s'agissait dès le début de deux groupes différents."
+      },
+      {
+        "type": "paragraph",
+        "content": "L'essence des Devas est liée aux esprits et au monde surnaturel bien plus que celle d'autres races. Physiquement, ils ressemblent assez aux êtres humains, mais il y a des variations considérables. Non seulement leur corps est légèrement plus fragile et stylisé, mais ils possèdent en plus un troisième œil vertical sur le front. Leurs cheveux sont couramment bleutés, verdâtres, violets ou d'autres couleurs de tonalité froide."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Devas vivent extrêmement longtemp, atteignant couramment les deux cents ans. Toutefois, leur aspect ne « vieillit » jamais au-delà de quarante ans. Curieusement, ils mûrissent très tôt : bien qu'ils continuent à posséder des corps d'enfants, à dix ou douze ans seulement ils pensent et raisonnent déjà comme un adulte."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leur personnalité est très inhabituelle, car ils n'éprouvent pratiquement aucune émotion. Cela ne veut pas dire qu'ils n'aient absolument aucun sentiment, mais ils considèrent qu'il est futile de se laisser guider par eux et que cela ne mène qu'au désastre. C'est pour cela qu'ils sont généralement froids et rationnels, faisant que la logique gouverne la majeure partie de leur vie."
+      },
+      {
+        "type": "paragraph",
+        "content": "La société des Devas est véritablement unique. Ils basent presque toute leur culture sur le contrôle des forces surnaturelles et la domination de créatures magiques. Ils profitent d'ailleurs de leur connexion unique avec le monde spirituel pour compenser leur faible capacité physique et obtenir une certaine prédominance sur d'autres races. À ce propos, ils sont extrêmement attachés aux classes : ils croient que leur fonction naturelle est de « montrer » au reste des êtres vivants que ce sont eux qui, pour le bien de tous, devraient diriger le monde. Malgré cela, ils n'ont jamais été particulièrement violents, préférant user de méthodes plus rationnelles que la guerre pour soumettre d'autres peuples au nom du « bien-être commun ». En général, il n'existe pas de classes nobles ni de monarchies dans leur civilisation. Les décisions les plus importantes sont prises par consensus au sénat composé des membres les plus capables de leur race. Pour cette raison, le groupe social primaire est la famille, car les membres d'une même maison ont toujours beaucoup de choses en commun, aussi bien physiquement qu'intellectuellement."
+      },
+      {
+        "type": "paragraph",
+        "content": "Même si au fil des siècles les Devas accumulèrent un pouvoir hors du commun, une division interne faillit provoquer la destruction de leur race lorsqu'une lamentable guerre civile en extermina plus de quatre-vingt-dix pour cent. Ce conflit, qui fit date dans l'histoire en étant le premier où les Aeons furent employés comme armes, marqua le déclino de leur empire et de leur civilisation."
+      },
+      {
+        "title": "Capacités",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Esprit et Âme Supérieurs",
+            "content": "Un Devas possède une intelligence, une volonté et un pouvoir spirituel supérieurs à la normale, c'est pourquoi il applique un bonus de +1 aux caractéristiques d'INT, VOL et POU."
+          },
+          {
+            "type": "paragraph",
+            "title": "Communication Surnaturelle",
+            "content": "Les Devas sont capables de communiquer avec d'autres membres de leur race simplement en se regardant directement à travers leur troisième œil. Cette méthode permet de transmettre non seulement des mots, mais aussi des émotions, des idées et même des souvenirs. Plus leur vision est claire, plus ils peuvent s'exprimer bien et vite."
+          },
+          {
+            "type": "paragraph",
+            "title": "Esprit complexe",
+            "content": "Il est très difficile d'affecter un Devas avec des compétences qui tentent d'explorer ses pensées ou de jouer sur sa personnalité. Ils obtiennent donc un bonus de +15 en RMys et en RPsy lorsque quelqu'un essaye de lire leur esprit ou de provoquer non naturellement un sentiment ou une émotion."
+          },
+          {
+            "type": "paragraph",
+            "title": "L'Œil de l'Âme",
+            "content": "Le troisième œil que les Devas ont sur le front perçoit le monde spirituel en toute clarté. Avec lui, ils peuvent voir des créatures animiques et sentir de façon innée leurs affinités élementaire. De plus, s'ils contemplent un être surnaturel (Entre Mondes ou Âmes uniquement) pendant deux ou trois rounds, ils sont capables de connaître son véritable nom. Ce pouvoir ne permet pas de voir les pouvoirs psychiques et ne fonctionne pas sur des créatures dont la Gnose dépasse 30."
+          },
+          {
+            "type": "paragraph",
+            "title": "Liens Existentiels",
+            "content": "Les Devas possèdent une affinité naturelle envers les liens spirituels employés dans les compétences d'invocation. Ils appliquent donc un bonus de +10 à tous les test de Convoquer, Domnier, Lier ou Révoquer."
+          },
+          {
+            "type": "paragraph",
+            "title": "Fragilité Physique",
+            "content": "Les Devas se sont toujours caractérisés par leur constitution faible et peu résistante. Ils subissent donc malus de -1 en FOR et de -2 en CON. De plus, ils appliquent un malus spécial de -10 en RPhy et en RMal."
+          },
+          {
+            "type": "paragraph",
+            "title": "Taille Non Naturelle",
+            "content": "Bien qu'ayant pas des malus à leurs attributs de Force et de Constitution, les Devas n'ont pas pour autant une taille inférieure à celle des êtres humains. Ils ajoutent donc deux points à leur Taille."
+          },
+          {
+            "type": "paragraph",
+            "title": "Âme Non Naturelle",
+            "content": "Tous les Devas naissent toujours avec un fort lien avec le surnaturel, c'est pourquoi ils sont obligés de choisir l'avantage Don Mystique ou Accès aux Pouvoirs Psychiques."
+          },
+          {
+            "type": "paragraph",
+            "title": "Base de Natura",
+            "content": "5"
+          },
+          {
+            "type": "paragraph",
+            "title": "Modificateur de niveau",
+            "content": "+2"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "title": "Nephilim",
+        "content": "Il existe très peu de Nephilim Devas sur Gaia, car l'extermination de leur race eut lieu bien avant la formation de La Barrière. Il y en a d'ailleurs même moins que de Duk'zarist, ce qui fait d'eux les Âmes perdues les plus rares au monde."
+      },
+      {
+        "type": "paragraph",
+        "content": "Malgré la force marquée de leur esprit, les pouvoirs dont ils héritentent sont presque exclusivement animiques, c'est pourquoi l'influence de l'âme est difficile à percevoir dans leur corps. En fait, mis à part une fragilité physique et le fait que leurs cheveux sont presque toujours très clairs, ils n'ont aucun signe distinctif particulier."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leur personnalité en revanche est généralement profondément affectée par leur âme et il est fréquent qu'ils conservent la plus grande partie des traits caractéristiques de leur tempérament racial particulier. D'habitude, tous les Nephilims devas se comportent de manière assez froide et méthodique. Ils maîtrisent à la perfection leurs sentiments et préfèrent guider leur vie par la logique. Ils aiment les défis intellectuels et s'intéressent tout spécialement toutes les matières qu'ils ignorent. Ça leur est égal d'avoir de la compagnie,mais il ne tendent pas à établir de forts liens affectifs avec quiconque."
+      },
+      {
+        "type": "paragraph",
+        "content": "Ce qui est caractéristique, c'est que les Nephilim devas ne rêvent jamais de leur vie passée mais d'un tas de créatures qu'ils ont connues à ce moment-là. Bien entendu, cela ne les perturbe pas mais éveille encore plus leur curiosité."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leurs âmes leur octroient de considérables compétences mystiques qu'ils apprennent graduellement à contrôler."
+      },
+      {
+        "title": "Capacités des Nephilims",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Esprit Complexe",
+            "content": "Semblable à la compétence du même nom des Devas purs, sauf que le bonus est de +10 en RMys et en RPsy au lieu de +15."
+          },
+          {
+            "type": "paragraph",
+            "title": "L'Œil de l'Âme",
+            "content": "Le troisième œil que les Devas avaient sur le front se manifeste encore spirituellement chez les Nephilims. Lorsqu'ils ferment leurs yeux réels, ils sont inconsciemment capables de « voir » des créatures animiques et de sentir de façon innée leurs affinités élémentaires. De plus, tout comme un vrai Deva, s'ils contemplent un étre surnaturel (Entre Mondes ou Âmes uniquement) pendant deux ou trois rounds, ils peuvent connaître son véritable nom. Ce pouvoir ne leur permet pas de voir les pouvoirs psychiques ni magiques et ne fonctionne pas non plus sur des créatures dont la Gnose dépasse 30."
+          },
+          {
+            "type": "paragraph",
+            "title": "Liens Existentiels",
+            "content": "Cette capacité fonctionne exactement pareil que chez les Devas, sauf que le bonus s'applique uniquement à Convoquer et Révoquer."
+          },
+          {
+            "type": "paragraph",
+            "title": "Fragilité Physique",
+            "content": "Les Nephilims devas subissent un malus spécial de -10 en RPhy et en RMal."
+          },
+          {
+            "type": "paragraph",
+            "title": "Âme immortelle",
+            "content": "Le conflit entre les souvenirs de l'âme Nephilim et son apprentissage fait subir au personnage un malus de -3 points à l'expérience donnée par le Meneur de Jeu à la fin de chaque session."
+          }
+        ]
+      }
+    ]
+  }
+]

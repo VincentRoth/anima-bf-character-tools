@@ -3,10 +3,17 @@ export interface ContentUnit {
 }
 
 export enum EContentType {
+  IMAGE = 'image',
   LINK = 'link',
   PANEL = 'panel',
   PARAGRAPH = 'paragraph',
   TABLE = 'table'
+}
+
+export interface ContentImage extends ContentUnit {
+  title: string;
+  type: 'image';
+  url: string;
 }
 
 export interface ContentLink extends ContentUnit {

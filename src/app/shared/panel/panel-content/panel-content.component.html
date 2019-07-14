@@ -1,10 +1,33 @@
 <ng-container [ngSwitch]="content.type">
+  <ng-container *ngSwitchCase="eContentType.IMAGE">
+    <img [src]="content.url" [alt]="content.title" />
+  </ng-container>
+
   <ng-container *ngSwitchCase="eContentType.LINK">
     <p>
       <a [routerLink]="content.link">
         {{ content.title }}
       </a>
     </p>
+  </ng-container>
+
+  <ng-container *ngSwitchCase="eContentType.PANEL">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <app-content-title
+            [level]="level"
+            [title]="content.title"
+          ></app-content-title>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <app-panel-content
+        *ngFor="let contentUnit of content.content"
+        [content]="contentUnit"
+        [level]="level + 1"
+      ></app-panel-content>
+    </mat-expansion-panel>
   </ng-container>
 
   <ng-container *ngSwitchCase="eContentType.PARAGRAPH">
