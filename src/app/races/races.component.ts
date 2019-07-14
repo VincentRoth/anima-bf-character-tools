@@ -13,6 +13,9 @@ export class RacesComponent implements OnInit {
   constructor(private raceService: RaceService) {}
 
   ngOnInit() {
-    this.raceService.get().subscribe(races => (this.races = races));
+    this.raceService.get().subscribe(races => {
+      this.races = races;
+      this.races.sort((r1, r2) => r1.title.localeCompare(r2.title));
+    });
   }
 }
