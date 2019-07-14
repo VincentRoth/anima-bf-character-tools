@@ -1,19 +1,4 @@
-.app-creation-help {
-  margin: 0.5rem;
-
-  h5 {
-    margin: 1rem 0 0;
-  }
-  p {
-    margin: 0 0 0.5rem;
-    text-align: justify;
-  }
-  table {
-    margin: 0 auto;
-    th,
-    td {
-      text-align: center;
-      padding: 0 0.4rem;
-    }
-  }
+:host {
+  display: flex;
+  flex-flow: column wrap;
 }

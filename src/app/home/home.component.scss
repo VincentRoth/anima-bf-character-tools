@@ -1,8 +1,10 @@
 $card-dimension: 10rem;
 $card-padding: 1rem;
 
-.app-home {
-  margin: 1rem;
+:host {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 a {

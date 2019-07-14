@@ -1,105 +1,103 @@
-<div class="app-advantages flex flex-column">
-  <h2>Avantages et Désavantages</h2>
-  <div class="flex flex-row">
-    <mat-form-field class="flex">
-      <input
-        matInput
-        placeholder="Filtrer"
-        (keyup)="searchAdvantages($event.target.value)"
-      />
-    </mat-form-field>
-    <mat-form-field class="flex">
-      <mat-label>Type</mat-label>
-      <mat-select (selectionChange)="searchType($event.value)">
-        <mat-option></mat-option>
-        <mat-option *ngFor="let type of typesKeys" [value]="type">
-          {{ type }} ({{ types[type] }})
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-  </div>
+<h2>Avantages et Désavantages</h2>
+<div class="flex flex-row">
+  <mat-form-field class="flex">
+    <input
+      matInput
+      placeholder="Filtrer"
+      (keyup)="searchAdvantages($event.target.value)"
+    />
+  </mat-form-field>
+  <mat-form-field class="flex">
+    <mat-label>Type</mat-label>
+    <mat-select (selectionChange)="searchType($event.value)">
+      <mat-option></mat-option>
+      <mat-option *ngFor="let type of typesKeys" [value]="type">
+        {{ type }} ({{ types[type] }})
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
 
-  <div class="flex-row flex-center">
-    <ng-container *ngFor="let advantage of filteredAvantages">
-      <mat-card class="advantage-card">
-        <mat-card-header>
-          <mat-card-title class="advantage-title">
-            <ng-container [ngSwitch]="true">
-              <span
-                *ngSwitchCase="
-                  advantage.types[0] === 'Avantage de passé' ||
-                  advantage.types[0] === 'Désavantage de passé'
-                "
-                matBadge="⌛"
-                matBadgeOverlap="false"
-                matBadgePosition="before"
-              >
-                {{ advantage.name }}
-              </span>
+<div class="flex-row flex-center">
+  <ng-container *ngFor="let advantage of filteredAvantages">
+    <mat-card class="advantage-card">
+      <mat-card-header>
+        <mat-card-title class="advantage-title">
+          <ng-container [ngSwitch]="true">
+            <span
+              *ngSwitchCase="
+                advantage.types[0] === 'Avantage de passé' ||
+                advantage.types[0] === 'Désavantage de passé'
+              "
+              matBadge="⌛"
+              matBadgeOverlap="false"
+              matBadgePosition="before"
+            >
+              {{ advantage.name }}
+            </span>
 
-              <span
-                *ngSwitchCase="
-                  advantage.types[0] === 'Avantage Mystique' ||
-                  advantage.types[0] === 'Désavantage Mystique'
-                "
-                matBadge="M"
-                matBadgeOverlap="false"
-                matBadgePosition="before"
-                matBadgeColor="warn"
-              >
-                {{ advantage.name }}
-              </span>
+            <span
+              *ngSwitchCase="
+                advantage.types[0] === 'Avantage Mystique' ||
+                advantage.types[0] === 'Désavantage Mystique'
+              "
+              matBadge="M"
+              matBadgeOverlap="false"
+              matBadgePosition="before"
+              matBadgeColor="warn"
+            >
+              {{ advantage.name }}
+            </span>
 
-              <span
-                *ngSwitchCase="
-                  advantage.types[0] === 'Avantage Psychique' ||
-                  advantage.types[0] === 'Désavantage Psychique'
-                "
-                matBadge="P"
-                matBadgeOverlap="false"
-                matBadgePosition="before"
-                matBadgeColor="accent"
-              >
-                {{ advantage.name }}
-              </span>
+            <span
+              *ngSwitchCase="
+                advantage.types[0] === 'Avantage Psychique' ||
+                advantage.types[0] === 'Désavantage Psychique'
+              "
+              matBadge="P"
+              matBadgeOverlap="false"
+              matBadgePosition="before"
+              matBadgeColor="accent"
+            >
+              {{ advantage.name }}
+            </span>
 
-              <span
-                *ngSwitchCase="advantage.types.indexOf('Ki') !== -1"
-                matBadge="Ki"
-                matBadgeOverlap="false"
-                matBadgePosition="before"
-              >
-                {{ advantage.name }}
-              </span>
+            <span
+              *ngSwitchCase="advantage.types.indexOf('Ki') !== -1"
+              matBadge="Ki"
+              matBadgeOverlap="false"
+              matBadgePosition="before"
+            >
+              {{ advantage.name }}
+            </span>
 
-              <ng-container *ngSwitchDefault>{{ advantage.name }}</ng-container>
-            </ng-container>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content>
-          <p>{{ advantage.description }}</p>
-          <p><span class="bold">Effets : </span>{{ advantage.effect }}</p>
-          <p *ngIf="advantage.condition">
-            <span class="bold">Condition : </span>{{ advantage.condition }}
-          </p>
-          <p *ngIf="advantage.special">
-            <span class="bold">Spécial : </span>{{ advantage.special }}
-          </p>
-          <p *ngIf="advantage.note">
-            <span class="bold">Note : </span>{{ advantage.note }}
-          </p>
-          <p>
-            <ng-container *ngIf="advantage.costs">
-              <span class="bold">Coût : </span>{{ advantage.costs.join(',') }}
-            </ng-container>
-            <ng-container *ngIf="advantage.benefits">
-              <span class="bold">Bénéfice : </span>
-              {{ advantage.benefits.join(',') }}
-            </ng-container>
-            <span class="italic right">{{ advantage.source }}</span>
-          </p>
-        </mat-card-content>
-      </mat-card>
-    </ng-container>
-  </div>
+            <ng-container *ngSwitchDefault>{{ advantage.name }}</ng-container>
+          </ng-container>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{ advantage.description }}</p>
+        <p><span class="bold">Effets : </span>{{ advantage.effect }}</p>
+        <p *ngIf="advantage.condition">
+          <span class="bold">Condition : </span>{{ advantage.condition }}
+        </p>
+        <p *ngIf="advantage.special">
+          <span class="bold">Spécial : </span>{{ advantage.special }}
+        </p>
+        <p *ngIf="advantage.note">
+          <span class="bold">Note : </span>{{ advantage.note }}
+        </p>
+        <p>
+          <ng-container *ngIf="advantage.costs">
+            <span class="bold">Coût : </span>{{ advantage.costs.join(',') }}
+          </ng-container>
+          <ng-container *ngIf="advantage.benefits">
+            <span class="bold">Bénéfice : </span>
+            {{ advantage.benefits.join(',') }}
+          </ng-container>
+          <span class="italic right">{{ advantage.source }}</span>
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
 </div>

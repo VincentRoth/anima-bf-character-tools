@@ -1,6 +1,4 @@
-.app-tables {
-  margin: 0.5rem;
-  .space-around {
-    margin: 0.5rem;
-  }
+:host {
+  display: flex;
+  flex-flow: column wrap;
 }
