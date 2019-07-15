@@ -655,7 +655,7 @@
     ]
   },
   {
-    "title": "Tuan Dalyr (TODO)",
+    "title": "Tuan Dalyr",
     "type": "panel",
     "content": [
       {
@@ -665,7 +665,27 @@
       },
       {
         "type": "paragraph",
-        "content": "TODO"
+        "content": "Les Tuan Dalyr, mot provenant du langage Ailish et signifiant « ceux qui estèrent en arrière », sont l'une des races mineures de Gaïa, bien plus jeune et moins répandue que n'importe laquelle des ethnies surnaturelles existant depuis l'Ere du Chaos. Leurs origines remontent à un peu moins de neuf cents ans, à l'époque où les habitants de l'Albéria luttaient ouvertement contre les esprits des bêtes. À cette période du conflit, une grande partir des hommes et des femmes du Pays des Pluies Eternelles préférèrent se mettre du côté des seigneurs des forêts, s'unissant corps et âme afin de cesser d'être de simples humains. Ainsi naquirent les Tuan Dalyr, les descendants de ceux qui décidèrenr de tourner le dos aux humains."
+      },
+      {
+        "type": "paragraph",
+        "content": "Physiquement, le corps d'un Tuan Dalyr ne se différencie en rien de celui d'un être humain normal, c'est pourquoi ils peuvent sans problème vivre parmi les gens. Ils ont toutefois hérité des compétences animales de leurs ancêtres et, sous certaines conditions spéciales, leur corps change en adoptant des caractéristiques et la forme d'une bête. Chaque Tuan Dalyr, en fonction de son géniteur, peut avoir une apparence monstrueuse différente, mais en général ils ressemblent tous à de grands prédateurs. L'ampleur de la modification aussi peut varier selon les individus, cependant même ceux qui subissent les transformations les plus radicales gardent toujours une silhouette très « humaine ». D'habitude, en plus d'une certaine augmentation de la masse corporelle, apparaissent des griffes, des crocs, des poils sur le corps ou le visage, des pupilles en amande, voire une queue."
+      },
+      {
+        "type": "paragraph",
+        "content": "Il est difficile de définir la culture Tuan Dalyr comme quelque chose de « propre à leur race », car à la base ils partageaient celle des tribus nomades des forêts de l'Albéria. Néanmoins, il est vrai qu'à l'époque où ils se mélangèrent aux esprits des bêtes, il dégénérèrent assez, devenant même plus sauvages et assoifés de sang, quoique respectant à la fois certaines trasitions Lilium. Bien qu'ils aient été sur le point d'obtenir la suprématie sur le Pays des Pluies Eternelles, la plupart furent exterminés par les soldats du premier empereur Zhorne Giovanni à la bataille de la Forêt des Murmures. Les rares survivants se virent forcés à se disperser, se cachant dans les profondeurs des bois septentrionaux ou fuyant vers l'Est."
+      },
+      {
+        "type": "paragraph",
+        "content": "Ils vécurent désormais dans de petits villages écartés ou comme des  tribus errantes qui occultaient leur véritable nature aux hommes. Avec le temps, certains se mêlèrent aussi à l'humanité, avec laquelle ils ont vécus, parfois même en ignorant leur propre condition surnaturelle. Les Tuan Dalyr n'ont jamais eu aucune relation avec des organisations telles que Samael, car aux yeux des Anges Déchus ils n'ont jamais été guère plus que des « humains »."
+      },
+      {
+        "type": "paragraph",
+        "content": "Le comportement d'un Tuan Daly ne diffère en rien de celui d'un être humain normal, mais il est vrai que leur héritage bestial fait qu'ils sont enclins à perdre facilement leur calme et à agir violemment. Apparemment, les cycles de la Lune peuvent également affecter un peu leur humeur, car elle influence légèrement leur côté animal."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Tuan Dalyr ne produisent pas de Nephilims, car leurs âmes sont pratiquement humaines dans la plupart des aspects."
       },
       {
         "title": "Capacités",
@@ -673,43 +693,38 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Transformation",
+            "content": "Un Tuan Dalyr est capable d'extérioriser volontairement ses pouvoirs en transformant son corps. Cela lui donne un bonus temporaire de +3 qu'il doit distribuer parmi ses Caractéristiques de FOR, DEX, AGI et PER (jusqu'à +2 maximum dans une seule caractéristique). Ce changement est cependant toujours le même, c'est-à-dire que les bonus sont toujours répartis de la même façon. Un Tuan Dalyr obtenant +2 en FOR et +1 en DEX ne pourrait pas ensuite décider d'appliquer ses bonus à des caractéristiques différentes. Les altérations en Force affecte aussi leur taille qui peut augmenter lorsqu'ils sont sous forme animale. Hélas, le changement modifie aussi légèrement le raisonnment du Tuan Dalyr, c'est pourquoi tant qu'il est transformé il subira un malus de -2 en INT et en VOL, ainsi que -10 en RMys et en RPsy."
+          },
+          {
+            "type": "paragraph",
+            "title": "Armes Naturelles",
+            "content": "Les griffes et les crocs qu'obtiennent les Tuans Dalyr avec leur transformation peuvent être utilisés très efficacement au combat. Ils comptent comme des armes naturelles avec une Base de Dégâts de 40 plus le bonus de Force. Ils doivent bien sûr développer leur compétence de combat avec ces armes naturelles pour ne pas appliquer de malus."
+          },
+          {
+            "type": "paragraph",
+            "title": "Sens Animal",
+            "content": "Même quand il garde complètement forme humaine, les sens du Tuan Dalyr sont bien plus aigus que la normale. Il obtient donc +1 en PER et, s'il choisit l'Avantage Sens Aiguisé, il obtient +40 en Vigilance et en Observation au lieu de +30."
+          },
+          {
+            "type": "paragraph",
+            "title": "Enfants de la Lune",
+            "content": "La Lune a une grande influence sur les âmes des Tuan Dalyr, car elle annule ou accroît les compétences naturelles de leur corps. Chacun peut être affecté par différentes périodes du cycle lunaire qui représente l'apogée et le crepuscule de leur pouvoir. Un Tuan Dalyr pourrait par exemple obtenir de plus grandes capacités la seconde nuit du mois avec premier quartier, puis les perdre à chaque nouvelle lune. Au cours de la nuit du maximum, le Tuan Dalyr obtient un +1 supplémentaire à chacune des Caractéristiquew recevant un bonus lors de la transformation, alors que la nuit du minimum, il est complètement incapable de se transformer et perd tous ses avantages raciaux."
+          },
+          {
+            "type": "paragraph",
+            "title": "Traits Animaux",
+            "content": "Bien que son apparence physique à l'état naturel soit complètement humain, lorsqu'il perdent le contrôle à cause d'émotions fortes (comme la rage, la peur, voire la passion) ils ne peuvent éviter que leur pupille prennent un aspect animal."
           },
           {
             "type": "paragraph",
             "title": "Base de Natura",
-            "content": ""
+            "content": "0"
           },
           {
             "type": "paragraph",
             "title": "Modificateur de niveau",
-            "content": ""
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "title": "Nephilim",
-        "content": ""
-      },
-      {
-        "type": "paragraph",
-        "content": ""
-      },
-      {
-        "title": "Capacités des Nephilims",
-        "type": "panel",
-        "content": [
-          {
-            "type": "paragraph",
-            "title": "",
-            "content": ""
-          },
-          {
-            "type": "paragraph",
-            "title": "Âme immortelle",
-            "content": ""
+            "content": "+2"
           }
         ]
       }
@@ -828,7 +843,7 @@
           {
             "type": "paragraph",
             "title": "Base de Natura",
-            "content": ""
+            "content": "0"
           },
           {
             "type": "paragraph",
