@@ -3,6 +3,7 @@ $card-padding: 1rem;
 
 :host {
   display: flex;
+  flex: 1 1 100%;
   flex-flow: row wrap;
   justify-content: center;
 }

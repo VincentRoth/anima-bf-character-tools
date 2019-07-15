@@ -274,7 +274,7 @@
       {
         "type": "image",
         "title": "Jayan",
-        "url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/415e335e-b1cb-4849-9250-5b886f627634/d16bdep-f1991e3a-02a8-4466-8d79-3707ec6afa4d.jpg/v1/fill/w_813,h_983,q_70,strp/anima__maximo_ligori_by_wen_m_d16bdep-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMwNSIsInBhdGgiOiJcL2ZcLzQxNWUzMzVlLWIxY2ItNDg0OS05MjUwLTViODg2ZjYyNzYzNFwvZDE2YmRlcC1mMTk5MWUzYS0wMmE4LTQ0NjYtOGQ3OS0zNzA3ZWM2YWZhNGQuanBnIiwid2lkdGgiOiI8PTEwODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ah9dG_d0O2AQaZgmZ11tY4QrgxizO7CMR_1o8RGK4OI"
+        "url": "/assets/images/races/jayan1.png"
       },
       {
         "type": "paragraph",
@@ -716,17 +716,45 @@
     ]
   },
   {
-    "title": "Turak (TODO)",
+    "title": "Turak",
     "type": "panel",
     "content": [
       {
         "type": "image",
         "title": "Turak",
-        "url": "TODO"
+        "url": "/assets/images/races/turak1.png"
       },
       {
         "type": "paragraph",
-        "content": "TODO"
+        "content": "Les Turaks sont une des races minoritaires de Gaia qui, en dépit de leurs considérables capacités naturelles, n'ont pas été assez nombreux pour atteindre la suprématie raciale qu'ils auraient méritée."
+      },
+      {
+        "type": "paragraph",
+        "content": "Il s'agit de créatures humanoïdes d'aspect reptilien et de taille variable, allant d'un mètre soixante à trois mètres de hauteur. Leur corps est recouvert d'écailles de différentes couleurs, mais le rouge et le vert sont de loin les teintes les plus habituelles. Ils ont de grandes griffes, des crocs aiguisés et leurs têtes sont de taille importante, comparables d'une certaine manière à un stade intermédiaire entre celle d'un humain et celle d'un dragon. Bien que ces attributs soient communs à tous les Turaks, ils sont très différents les uns des autres. Certains développent des queues, d'autres des cornes, des crêtes dorsales et parfois même des ailes, créant une grande variété entre les individus. Un autre détail vraiment remarquable vient du fait qu'en fonction de ces différences physiques, leur intellect est plus ou moins évolué. Ils appellent cela la « proximité avec le Dragon » et affirment que plus ils ressemblent à de « simples lézards » plus ils sont inférieurs, alors que s'ils ressemblent beaucoup à un dragon, leur pureté raciale est plus grande et ils doivent occuper une place plus élevée dans leur société."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Turaks vivent très longtemps et bien qu'ils atteignent en général les trois cents ans, certains vivent jusqu'à plus de huit siècles. II est à noter qu'ils ne cessent jamais de grandir et qu'au cours de leurs vieux jours ils peuvent encore prendre jusqu'à cinquante centimètres."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leur personnalité varie beaucoup en fonction de leur physique. Ceux qui n'ont pas développé beaucoup d'attributs draconiques sont d'habitude - mais pas toujours - moins intelligents et on peut plus facilement les influencer. Cependant, ils ont aussi tendance à faire preuve de plus de violence gratuite. Ceux qui sont plus intelligents, au contraire, sont caractérisés par leur patience et leur incroyable capacité à tramer des plans complexes. Néanmoins, ils ont tous en commun des difficultés à nouer des liens affectifs ou à manifester d'autres émotions que celles nécessaires à leur survie."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leur société était évidemment très hiérarchisée ; ceux qui étaient dotés des attributs considérés comme les plus évolués étaient désignés comme chefs et dirigeaient les autres. Toute la race avait une affinité spéciale avec celle des dragons et se considérait comme apparentée à cette dernière ; leur plus grand souhait était de faire suffisamment évoluer leur espèce pour prendre leur place parmi eux."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Turaks sont toujours carnivores ; leur système digestif n'est pas adapté à une alimentation d'origine végétale."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les femelles sont rares et par conséquent très précieuses à leurs yeux. Leur gestation est longue, entre deux et trois ans, mais quand elles mettent bas, elles pondent en général plusieurs dizaines d'œufs qui, après quelques années, éclosent pour laisser sortir des Turaks déjà formés comme des enfants."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Turaks vivaient majoritairement en Eurakia et sur l'île de Daphné, mais ils se sont aussi implantés en partie sur le monde aujourd'hui connu sous le nom de Lunaris."
       },
       {
         "title": "Capacités",
@@ -734,8 +762,68 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Hommes-dragons",
+            "content": "Les Turaks sont physiquement bien plus forts et résistants que la normale, et obtiennent donc un bonus de +1 à leurs caractéristiques de FOR et CON. Toutefois, leur intellect est souvent légèrement inférieur à la moyenne, aussi subissent-ils un malus de -1 en INT."
+          },
+          {
+            "type": "paragraph",
+            "title": "Armes naturelles",
+            "content": "Les crocs et les griffes des Turaks sont de parfaites armes naturelles. Utilisées dans ce but, elles possèdent des Dégâts de 40 plus le modificateur de Force sur le Mode TRAnchant. Ils doivent bien sûr apprendre à se battre avec ces armes pour ne pas subir de malus."
+          },
+          {
+            "type": "paragraph",
+            "title": "Écailles",
+            "content": "La surface écailleuse de la peau des Turaks agit comme une armure naturelle extrêmement efficace. On considére donc qu'ils ont un Indice de Protection de 2 contre les Modes TRAnchant, CONtondant, PERforant et CHAleur."
+          },
+          {
+            "type": "paragraph",
+            "title": "Régénération de lézard",
+            "content": "Les Turaks guérissent bien plus vite que la normale, ce qui se traduit par un bonus de +1 à leur Régénération. S'ils ont mangé de la viande à satiété et qu'ils se reposent, ce modificateur passe à +2. De plus, indépendamment de leur Niveau de Régénération, leurs extrémités tranchées repoussent lentement, reprenant leur forme première au bout d'environ un an à un an et demi."
+          },
+          {
+            "type": "paragraph",
+            "title": "Proximité avec le Dragon",
+            "content": "Tous les Turaks possèdent des caractéristiques physiques différentes. La grande majorité d'entre eux ne présentent en général qu'une des qualités suivantes, mais certains en ont deux et parfois même trois. S'il en développe trois, un Turak n'applique plus le malus de -1 en INT."
+          },
+          {
+            "type": "paragraph",
+            "title": "• Gigantesque",
+            "content": "Ils obtiennent un bonus spécial de +1 en FOR et en CON, ainsi que de +2 à la Taille, mais subissent en retour un malus de -1 en AGI."
+          },
+          {
+            "type": "paragraph",
+            "title": "• Ailes de dragon",
+            "content": "Le Turak possède des ailes rudimentaires qui, si elles ne lui permettent pas de voler correctement, peuvent le faire planer sans problème avec une Qualité de Vol de 10 s'il se lance depuis un point en altitude."
+          },
+          {
+            "type": "paragraph",
+            "title": "• Vision de chasseur",
+            "content": "Leurs yeux sont parfaitement adaptés pour percevoir le moindre mouvement, leur octroyant donc un bonus spécial de +20 en Vigilance."
+          },
+          {
+            "type": "paragraph",
+            "title": "• Queue",
+            "content": "Les attaques physiques du Turak avec ses armes naturelles sont considérées comme effectuées avec une arme Grande pour déterminer combien d'ennemis il peut affecter, et il applique uniquement un -40 à sa compétence offensive lorsqu'il effectue une manœuvre d'attaque de zone."
+          },
+          {
+            "type": "paragraph",
+            "title": "• Amphibien",
+            "content": "Cet attribut correspond à des membranes et à des ouïes qui permettent à leur possesseur de se déplacer dans l'eau et d'y respirer dans une certaine mesure. Il peut se passer d'air près de 10 minutes."
+          },
+          {
+            "type": "paragraph",
+            "title": "• Écailles de métal",
+            "content": "Ces écailles renforcées accordent un Indice de Protection de 3."
+          },
+          {
+            "type": "paragraph",
+            "title": "Sang froid",
+            "content": "Les Turaks sont des êtres à sang froid, qui souffrent donc particulièrement des baisses de température et ont des difficultés à réagir rapidement. Ils appliquent par conséquent un malus de -20 à toutes leurs Résistances contre les effets basés sur le froid. Pour la même raison, ils subissent un malus spécial de -20 à l'Initiative."
+          },
+          {
+            "type": "paragraph",
+            "title": "Apprentissage lent",
+            "content": "Les Turaks mettent beaucoup de temps à apprendre. Par conséquent, si un joueur incarne un Turak, il subit un malus de -3 points d'expérience à la fin de chaque séance de jeu."
           },
           {
             "type": "paragraph",
@@ -745,18 +833,26 @@
           {
             "type": "paragraph",
             "title": "Modificateur de niveau",
-            "content": ""
+            "content": "+1 (+2 s'il a développé plus d'une qualité de Proximité avec le Dragon)"
           }
         ]
       },
       {
         "type": "paragraph",
         "title": "Nephilim",
-        "content": ""
+        "content": "Bien qu'ils ne soient pas les plus nombreux, il y a un nombre non négligeable de Nephilims turaks sur Gaïa. La majorité d'entre eux résident dans l'île de Daphné et dans les sites où vivaient jadis les dragons."
       },
       {
         "type": "paragraph",
-        "content": ""
+        "content": "Leurs âmes ont parfois des repercussions notables sur leur corps et bien qu'elles ne les dotent pas d'attributs réellement inhumains, elles leur donnent des traits extravagants, comme des yeux un peu trop grans, ou des pommettes et une machoîre très prononcées. Toutefois, leur caractéristique la plus significative est leur « mémoire raciale » qui, en cas de danger, leur donne temporairement la capacité de durcir leur peau et de développer des armes naturelles."
+      },
+      {
+        "type": "paragraph",
+        "content": "En temps normal, les Nephilims turaks passent leur vie dans la confusion, se sentant comme décalés. Nombre d'entre eux rêvent qu'ils étaient des « dragons » dans une autre vie, et ils sont passionnés par tout ce qui a trait au vol. De plus, la majorité d'entre eux a de temps à autre des visions en plein jour, chaque fois qu'ils voient quelque chose qui leur rappelle leurs vies passées. Ils adorent la viande et ont grand appétit, mais ne grossisent jamais quoi qu'ils engloutissent."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les âmes Turaks leur accordent de nombreuse capacités physiques et mentales qu'ils apprennent graduellement à contrôler."
       },
       {
         "title": "Capacités des Nephilims",
@@ -764,13 +860,28 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Armes naturelles",
+            "content": "Aussi étrange que cela puisse paraître, en cas de danger, les Nephilims turaks sont capables de faire très vite pousser des ongles aiguisés extrêmement longs et résistants. Souvent, surtout lorsqu'ils n'ont pas conscience de leurs capacités raciales, cela se produit lorsqu'ils se sentent en danger ou qu'ils sont réellement nerveux. Utilisées en tant qu'armes naturelles, les Dégâts de ces griffes sont de 30 plus le modificateur de Force et attaquent sur le Mede TRAnchant. Leur possesseurs doivent bien sûr apprendre à se battre avec ces griffes pour ne pas subir de malus."
+          },
+          {
+            "type": "paragraph",
+            "title": "Mémoire raciale",
+            "content": "Le Nephilim a une incroyable capacité à se remémorer les langues qu'il connaissait dans sa vie antérieure, et peut donc les comprendre presque immédiatement s'il est face à quelque chose qui les lui rappelle."
+          },
+          {
+            "type": "paragraph",
+            "title": "Peau résistante",
+            "content": "La peau des Nephilims est dotée d'une capacité inhabituelle à durcir lorsqu'elle est sur le point de recevoir un coup particulèrement fort, en se transformant alors en armure naturelle exceptionnellement efficace. Elle octroie un Indice de Protection de 1 contre les Modes TRAnchant, CONtondant, PERforant et CHAleur."
+          },
+          {
+            "type": "paragraph",
+            "title": "Sang foird",
+            "content": "Les Nephilims turaks gardent en partie leur vulnérabilité au froid et leur lenteur de réactions. Par conséquent, ils ont un malus de -10 à toutes leurs Résistances contre les effets basé sur les températures basses et un malus spécial de -10 à leur Initiative."
           },
           {
             "type": "paragraph",
             "title": "Âme immortelle",
-            "content": ""
+            "content": "Le conflit entre les souvenirs de l'âme nephilim et l'apprentissage du personnage provoque un malus de -3 points à l'expérience accordée par le Meneur de Jeu à la fin de chaque séance."
           }
         ]
       }
