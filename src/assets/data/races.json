@@ -594,7 +594,7 @@
     ]
   },
   {
-    "title": "Vetala (TODO)",
+    "title": "Vetala",
     "type": "panel",
     "content": [
       {
@@ -604,7 +604,32 @@
       },
       {
         "type": "paragraph",
-        "content": "TODO"
+        "content": "Il est très probable que la race méconnue appelée Vetala soit l'origine de bon nombre des mythes vampiriques existant encore sur Gaia. Ce sont les « enfants de la nuit » ceux qui vivent dans l'ombre du monde."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leur peau est pâle, presque bleuté, avec des dizaines de veines et de capillaires marqués dessinant d'étranges formes sous leur épiderme. Ils ont parfois des traits vraiment inhumains (voire monstrueux dans le cas des hommes) et leurs yeux, toujours argentés, sont injectés de sang. Ils n'ont pas d'ongles, mais leurs phalanges osseuses se mêlent à la pointe de leurs doigts, donnant l'impression qu'ils ont quelque chose ressemblant à des griffes. Ils se nourrissent de sang, dont ils extraient tous les nutriments nécessaires pour que leur corps continue de fonctionner. C'est le seul aliment dont ils ont besoin, car leur système rejette tout type de repas solide."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Vetala sont virtuellement immortels, tout du moins en ce qui concerne l'âge : certains ont prouvé qu'ils étaient même capables de vivre plusieurs milénalres. Leur corps, en revanche, vieillissent et se flétrissent de plus en plus jusqu'à ce qu'ils ne soient plus qu'une sorte de cadavre ambulant. Ironie du sort, avec le temps leur « immortalité » finit par devenir leur prison, car il arrive un moment où ils se retrouvent tellement secs et faibles qu'ils ne peuvent même plus bouger. À partir de cinq cents ans, ce sont déjà des vieillards et, deux ou trois siècles plus tard, ils entrent dans un état de catalepsie à cause de la dégénération massive de leur corps et de leur esprit. Ce processus peut étre pallié par de grandes quantités de sang, ce qui rend temporairement la santé et la vigueur juvénile à leur corps. Malheureusement, plus ils sont vieux, plus leur en faut et plus la durée du changement est brève."
+      },
+      {
+        "type": "paragraph",
+        "content": "Curieusement, les Vetala peuvent s'accoupler à des membres de leur propre race ou, en de rares cas, d'autres groupes ethniques. Toutefois, leur enfants sont toujours mort-nés ou sont de purs Vetala, n'acquérant jamais de caractéristiques de leur autre géniteur."
+      },
+      {
+        "type": "paragraph",
+        "content": "De manière très semblable aux D'anjayni, les Vetala ont existé isolés de la plupart des évènements de Gaia. Bien qu'ayant récolté un pouvoir considérâble et possédant une riche culture, leur faible nombre ainsi que leur grande faiblesse face à la lumière les ont empêché de devenir l'une des races dominantes, ce pourquoi ils avaient un certain potentiel. Leur société était clairement hiérarchisée, avec quelques maisons nobles dominant leurs cités-états qui étaient perpétuellement recouvertes par des moyens surnaturels de nuages d'orage bloquant la lumière du soleil. Ils faisajent un usage extrême de l'esclavage, obligeant les membres des autres races à leur servir de domestiques ou de source d'alimentation."
+      },
+      {
+        "type": "paragraph",
+        "title": "Les Anciens",
+        "content": "Certains Vetala particulièrement vieux (voire millénaires) étaient conservés par les membres de leur race dans des cercueils spéciaux leur fournissant suffisamment de sang pour vivre. Leurs corps étaient entreposés dans de gigantesques cryptes connues sous le nom de Salons des Anciens et le conseil des nobles qui dirigeait leur ville les consultait pour bénéficier de leurs connaissances."
+      },
+      {
+        "type": "paragraph",
+        "content": "Toutefois, plus étranges encore que ceux-là étaient les Vrykolakas, titre que recevaient les membres les plus puissants de leur race. Leurs corps étaient conservés dans des conteneurs spéciaux qui leur injectaient assez de sang pour vivre dans le coma. Ainsi, lorsque leurs compétences étaient nécessaires, on les baignait dans suffisamment de sang pour qu'ils retrouvent temporairement toutes leurs facultés physiques et mentales. On dit que, en fonction du sang employé pour subsister, les Vrykolakas acquéraient des pouvoirs uniques et pouvaient transformer leur corps."
       },
       {
         "title": "Capacités",
@@ -612,29 +637,75 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Enfants de la Nuit",
+            "content": "De nuit, les Vetala obtiennent un +1 à leurs caractéristiques de Force et de Pouvoir."
+          },
+          {
+            "type": "paragraph",
+            "title": "Endurance aux Dégâts Critiques",
+            "content": "Une des caractéristiques les plus remarquables des Vetala est que leur corps n'a pas vraiment de points vulnérables. Bien qu'ils puissent mourir à cause de dommages massifs comme n'importe quel autre être vivant. Ils sont parfaitement capables de résister si leur tête est percée par un objet aiguisé ou si quelque chose leur transperce le cœur (d'ailleurs cela leur fait presque les mêmes dégâts qu'un impact semblable dans l'estomac ou l'épaule). En réalité, c'est la perte de sang de leurs vaisseaux capillaires qui leur nuit, car lorsqu'ils n'en ont plus leur système s'effondre. Les Vetala ignorent donc complètement les effets des critiques sur le corps ou la tête, sauf ceux qui entrainent la décapitation."
+          },
+          {
+            "type": "paragraph",
+            "title": "Ultrasons",
+            "content": "Les Vetala sont capables de produire d'inaudibles ultrasons grâce auxquels ils influencent subtilement la plupart des animaux naturels possédant des sens surhumainement aiguisés. Des êtres tels que les insectes, les chauves-souris et même, dans certains cas, les loups ou d'autres prédateurs de taille moyenne peuvent se voir affectés par cette capacité. Les ultrasons agissent automatiquement sur toute masse de créatures de niveau O dont l'Intelligence n'est pas supérieure à 3, ou sur des êtres de niveau supérieur mais de même Intelligence et dont la somme des présences ne dépasse pas le double de celle du Vetala. Quand un Vetala emploie cette capacité, il donne l'impression de marmonner quelque chose d'inaudible. Seuls ceux possédant un attribut de Perception de 11 ou plus ou qui sont capables de réussir un test de Vigilance Absurde pourront percevoir les ultrasons qu'ils émettent."
+          },
+          {
+            "type": "paragraph",
+            "title": "Extase Sanguine",
+            "content": "En consommant de grandes quantités de sang d'un coup, les Vetala peuvent augmenter considérablement toutes leurs capacités. Pendant cinq à trente minutes après s'être alimentés (la durée dépend de la quantité et de la qualité du sang), ils obtiennent un bonus de +10 à toutes les actions, +1 à une caractéristique précise (qui peut changer d'un Vetala à l'autre) et réduisent de moitié les malus provoqués par la douleur et la fatigue. Hélas, cette suralimentation cause par la suite de sérieux ennuis à leur corps qui souffre de cet excès. De deux à trois heures plus tard, ils subissent un -30 à toutes les actions pendant une période cinq fois plus longue que celle où ils ont obtenu le bonus."
+          },
+          {
+            "type": "paragraph",
+            "title": "Guérison Rapide",
+            "content": "S'ils consomment assez de sang chaque jour, le corps des Vetala guérit à une vitesse incroyable, c'est pourquoi ils ajoutent quatre points à leur niveau de régénération naturelle."
+          },
+          {
+            "type": "paragraph",
+            "title": "Vulnérable à la Lumière",
+            "content": "La plus grande des vulnérabilités des Vetala est leur intolérance à la lumière. Ben qu'ils puissent la supporter sans trop de problème lorsqu'elle n'est pas excessivement forte, s'ils s'exposent à des sources lumineuses de grand puissance ou pureté, leur peau chauffe et commence à brûler. À chaque fois que cela arrive, le Vetala doit réussir un test de RPhy contre 80 à 160 (en fonction du degré d'exposition, de la puissance et de la pureté de la lumière) sous peine de subir des dégâts équivalant au niveau d'échec. S'il ratait le test de plus de 50 points, le feu qui envelopperait le Vetaia serait si intense qu'il se retrouverait automatiquement dans l'état En flammes."
+          },
+          {
+            "type": "paragraph",
+            "title": "Leur Vision du Monde",
+            "content": "La nature des Vetala leur fait envisager les évènements d'une manière légèrement différente de celle des autres races. Si un joueur en incarne un, il subit donc un malus de -2 aux points d'expérience obtenus à la fin de la séance de jeu."
           },
           {
             "type": "paragraph",
             "title": "Base de Natura",
-            "content": ""
+            "content": "5"
           },
           {
             "type": "paragraph",
             "title": "Modificateur de niveau",
-            "content": ""
+            "content": "+2"
           }
         ]
       },
       {
         "type": "paragraph",
         "title": "Nephilim",
-        "content": ""
+        "content": "Même s'il est vrai que les Vetala ne furent jamais très nombreux, il y a pourtant une quantité considérable de Nephilims sur Gaia, surtout au Moth et dans les terres obscures."
       },
       {
         "type": "paragraph",
-        "content": ""
+        "content": "Leur essence a beaucoup d'influence sur leur corps, ce qui leur octroie de nombreuses caractéristiques inhabituelles. Ce sont généralement des individus à la peau pâle et aux traits fins. Souvent, leurs vaisseaux sanguins sont très sombres et sont facilement visibles sur leur visage et leurs mains. Leurs cheveux et leurs yeux ont d'habitude une teinte rougeâtre ou sombre et les pupilles sont extrêmement claires (parfois même, en de rares occasions, légèrement argentées). Ils ont tendance à vivre un peu plus longtemps que l'humain moyen, surtout s'ils s'alimentent bien, dépassant fréquemment le siècle."
+      },
+      {
+        "type": "paragraph",
+        "content": "L'âme des Vetala entre souvent en conflit avec leur nature humaine récemment acquise. Ils sentent même parfois qu'il y a « quelqu'un d'autre » en eux, un alter ego qui tente de les dominer et les oblige à faire des choses contre leur volonté. Il y a même eu des cas où certains Nephilims ont développé des psychopathies et des troubles de la personnalité, étant une personne très différente le jour et la nuit (souvent incapable de se souvenir au matin de ce qu'ils avaient fait la veille avant de se coucher). D'une manière ou d'une autre, cette influence les fait se comporter habituellement de manière égocentrique, avec une tendance à mépriser ceux qui l'entourent en ne les voyant que comme des serviteurs ou des marionnettes. Ils sont néanmoins très passionnels et surprotègent particulièrement les personnes qu'ils aiment."
+      },
+      {
+        "type": "paragraph",
+        "content": "De par leur nature intrinsèque, ils éprouvent une véritable fixation pour le sang, un fort désir psychologique qui peut finir par devenir une obsession. S'ils y goûtent, ils courent même le risque d'en devenir dépendant."
+      },
+      {
+        "type": "paragraph",
+        "content": "Ils rêvent fréquemment de leur vie passée, mais cela se manifeste bien plus sous forme de sombres cauchemars dont le souvenir les terrifie."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leurs âmes leur offre plusieurs compétences physiques de même que diverse dépendances psychologiques."
       },
       {
         "title": "Capacités des Nephilims",
@@ -642,13 +713,38 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Endurance aux Dégâts Critiques",
+            "content": "Comme chez les purs sangs, le corps des Nephilims est incroyablement résistant aux dommages. S'ils sont frappés sur un point vulnérable, ils peuvent ajouter un bonus de +50 à tout test de RPhy pour contrer les effets du critique."
+          },
+          {
+            "type": "paragraph",
+            "title": "Extase Sanguine",
+            "content": "Comme un authentique Vetala, si le Nephilim ingère de grandes quantités de sang, il entre dans un état surnaturel qui accroît ses capacités. Pendant une à cinq minutes après s'être alimenté (la durée dépend de la quantié et de la qualité du sang), ils obtiennent un bonus de +10 à toutes les actions et de +1 à une caractéristique précise. Cette suralimentation ne cause pas trop d'ennuis profond à leur corps, mais il ne peuvent les obtenir de nouveau avant que deux à trois heures ne se soient écoulées."
+          },
+          {
+            "type": "paragraph",
+            "title": "Guérison Rapide",
+            "content": "Semblable à celle des Vetala purs, sauf qu'ils n'augmentent que d'un point leur niveau de régénération naturelle."
+          },
+          {
+            "type": "paragraph",
+            "title": "Peau Photosensible",
+            "content": "Quoique dans une moindre mesure que chez les authentiques Vetala, la lumière est nuisible pour le Nephilim. S'il met sa peau en contact avec une source lumineuse très puissante, il doit réussir un test de RPhy contre 40 à 140, en fonction du degré d'exposition, de la puissance et de la pureté de la lumière. S'il échoue de moins de 30 points, il subit des brûlures d'une valeur de 10 points de dégâts et un malus à toutes les actions de -20 à cause de la couleur lancinante, alors que si la différence est supérieure, les dégâts sont de 20 points et le malus de -40. Le malus aux actions se maintient jusqu'à trois rounds après qu'il se soit écarté de la lumière."
+          },
+          {
+            "type": "paragraph",
+            "title": "Obsession pour le Sang",
+            "content": "S'ils commencent à s'alimenter de suffisamment de sang pour obtenir Extase Sanguine, ils développent envers lui une dépendance psychologique qui se traduit par le Désavantage Dépendance grave au sang. Si le personnage avait déjà ce Désavantage, les malus applicable s'il ne satisfait pas son vice doubleraient et il devrait réussir un test de Volonté à chaque fois qu'il verrait couler du sang pour éviter de perdre le contrôle et tenter de la boire."
+          },
+          {
+            "type": "paragraph",
+            "title": "Santé Maladive",
+            "content": "La plupart des Nephilim Vetala sont anémiques et appliquent un malus de -20 à leur RMal."
           },
           {
             "type": "paragraph",
             "title": "Âme immortelle",
-            "content": ""
+            "content": "Le conflit entre les souvenirs de l'âme Nephilim et son apprentissage fait subir au personnage un malus de -3 points à l'expérience donnée par le Meneur de Jeu à la fin de chaque session."
           }
         ]
       }
