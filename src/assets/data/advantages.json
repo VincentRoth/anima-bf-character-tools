@@ -1016,7 +1016,7 @@
   {
     "name": "Allié puissant",
     "description": "Quelqu'un ayant un certain pouvoir ou influence est prêt à aider le personnage à tout moment. Ce peut être un noble important, un grand seigneur du crime ou un puissant sorcier, qui ne s'arrêtera devant rien pour appuyer le personnage lorsque ce dernier en aura besoin.",
-    "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu. Naturellement, plus l'investissement sera grand, plus son allié aura de pouvoir personnel. Comme référence, vous pouvez untiliser le Tableau 33.",
+    "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu. Naturellement, plus l'investissement sera grand, plus son allié aura de pouvoir personnel. Comme référence, vous pouvez utiliser le Tableau 33.",
     "costs": [1, 2, 3],
     "source": "Gaïa p.288",
     "types": ["Avantage de passé", "Interprétation", "Social"]

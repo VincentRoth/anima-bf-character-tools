@@ -69,7 +69,6 @@ export class AdvantageService {
     if (!a1.costs && a2.costs) {
       return 1;
     }
-    // TODO sort costs first
     return a1.name.localeCompare(a2.name);
   }
 }

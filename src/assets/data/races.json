@@ -10,7 +10,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Peu d'êtres sont aussi liés à la magie et à la fantasmagorie que les Sylvains. Traditionnellement connus par les autres peuples de Gaia sous le nom d'elfes, il s'agit de la plus importante des races liées à la lumière."
+        "content": "Peu d'êtres sont aussi liés à la magie et à la fantasmagorie que les Sylvains. Traditionnellement connus par les autres peuples de Gaïa sous le nom d'elfes, il s'agit de la plus importante des races liées à la lumière."
       },
       {
         "type": "paragraph",
@@ -57,7 +57,7 @@
           {
             "type": "paragraph",
             "title": "Ressentir l'Obscurité et la Lumière",
-            "content": "Les Syivains ressentent la présence de tout autre Sylvain ou Duk'zarist qui se trouve en leur présence, bien qu'ils ne seront pas capables de l'identifier comme tel. Ils perçoivent de façon surnaturelle la présence obscure ou lumineuse émise par leurs âmes. Cette faculté ne leur permet pas de reconnaitre un individu dissimulé par un sort ou grâce à un pouvoir du Ki."
+            "content": "Les Sylvains ressentent la présence de tout autre Sylvain ou Duk'zarist qui se trouve en leur présence, bien qu'ils ne seront pas capables de l'identifier comme tel. Ils perçoivent de façon surnaturelle la présence obscure ou lumineuse émise par leurs âmes. Cette faculté ne leur permet pas de reconnaitre un individu dissimulé par un sort ou grâce à un pouvoir du Ki."
           },
           {
             "type": "paragraph",
@@ -146,7 +146,7 @@
     ]
   },
   {
-    "title": "D'anjayni (TODO)",
+    "title": "D'anjayni",
     "type": "panel",
     "content": [
       {
@@ -156,7 +156,31 @@
       },
       {
         "type": "paragraph",
-        "content": "TODO"
+        "content": "Les D'anjaynis sont une des races les plus énigmatiques de Gaïa. Ils ont toujours vécu dans les ombres de l'Histoire, en essayant de limiter au minimum leurs relations ouvertes avec les autres cultures."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leur peau est complètement blanche, bien que marquée par des lignes bleues qui suivent leurs veines. La plupart des D'anjaynis sont chauves ; pour ceux qui ont encore des cheveux, leur chevelure est toujours de couleur noire. Ils n'ont pas non plus d'ongles ou d'empreintes digitales. On remarque à l'œil nu peu de différences entre les hommes et les femmes, si ce n'est que ces dernières ont souvent une silhouette plus fine et que leur chevelure est plus épaisse. Leurs visages se ressemblent toujours beaucoup et présentent peu de traits caractéristiques. Pour se reconnaître entre eux, ils se marquent le visage ou les mains de symboles individualisés, indiquant des particularités et détails personnels."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les D'anjaynis vivent de trois à quatre siècles ; ils atteignent la maturité entre quarante et cinquante ans. Une fois adultes, ils ne vieillissent pas en apparence, mais leur corps se consume intérieurement, jusqu'à leur mort."
+      },
+      {
+        "type": "paragraph",
+        "content": "Le moment le plus important de la vie des D'anjaynis se passe probablement peu après leur naissance. Durant la gestation, les mères « ressentent » spirituellement quel est le nom de l'enfant qu'elles portent dans leur ventre. Elles le leur donnent lors d'une cérémonie qui les marquera pour toute leur existence. Pour les D'anjaynis, leur nom véritable possède une importance vitale car celui qui le connaît détient un grand pouvoir sur eux. En général, ils utilisent des surnoms pour s'appeler et ne révèlent leur véritable nom qu'à ceux envers qui ils ont totalement confiance."
+      },
+      {
+        "type": "paragraph",
+        "content": "Le comportement habituel des D'anjaynis est froid. Ils ont l'habitude de ne jamais perdre leur calme et de ne nouer jamais trop de liens sentimentaux avec personne. Très minutieux, ils aiment observer avec détachement les événements du monde. Les autres cultures les attirent, et ils les étudient secrètement sans que leurs membres ne s'aperçoivent de leur présence. Leurs plans sont toujours complexes ; ils conçoivent des méthodes machiavéliques et bien planifiées pour les exécuter, car ils font preuve d'une patience exceptionnelle et qu'ils ne se soucient pas d'attendre ce qui leur manque pour parvenir à leurs fins."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les cités des D'anjaynis sont toujours construites dans le plus grand secret, à l'écart des autres cultures."
+      },
+      {
+        "type": "paragraph",
+        "content": "Traditionnellement, elles sont souterraines ou creusées à l'intèrieur de montagnes. La structure sociale des D'anjaynis est absolument hiérarchisée, avec des positions inamovibles établies dès leur naissance. Très cérémonieux, ils ont recours à des myriades de rites pour tous les événements importants."
       },
       {
         "title": "Capacités",
@@ -164,29 +188,74 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Oubli",
+            "content": "Impossible d'en douter, il s'agit là de leur faculté la plus étrange. Si un D'anjayni le désire, il peut se rendre totalement oubliable, de façon à ce que les personnes qui le voient ne se souviennent pas de lui. Un D'anjayni a même la capacité de tenir une conversation avec une ou plusieurs personnes, puis de faire en sorte que celles-ci ne se souviennent plus de son aspect, pas plus que du sujet de la conversation. En termes de jeu, chaque individu qui voit le personnage ou discute avec lui doit réussir un test de Résistance mystique (RMys) contre une difficulté de 120, sous peine d'oublier l'apparence de son interlocuteur et la nature de leur conversation. Cette faculté est l'équivalent d'un effet mystique automatique dont la condition consiste simplement à se trouver en présence du personnage et que celui-ci s'en aille sans avoir dit son nom. Il est impossible de s'apercevoir du fonctionnement de cette faculté, pas même pour un individu capable de voir la magie. Les personnes affectées ne se rendent pas compte qu'il s'est passé quelque chose de surnaturel, elle pensent simplement qu'elles n'arrivent pas à se rapeler ou qu'elles n'ont pas bien fait attention. Un sorcier devra effectuer un test Impossible d'Evaluation magique pour s'apercevoir de la mise en oeuvre de cette faculté. L'oubli cesse de faire effet dès que le D'anjayni se présente sous son nom véritable au cours de la conversation, ou qu'il rencontre des individus qui connaissent sa nature exacte."
+          },
+          {
+            "type": "paragraph",
+            "title": "Indétectable",
+            "content": "La capacité d'un D'anjayni à ne pas être détecté par des moyens surnaturels lui accorde un bonus de +50 à tout test de Résistance contre un tel effet. De plus, ils possèdent de façon innée le pouvoir Dissimulation du Ki."
+          },
+          {
+            "type": "paragraph",
+            "title": "Le visage de l'araignée",
+            "content": "Le pouvoir le plus surprenant des D'anjaynis leur permet de voler l'identité d'autres personnes, devenant ces personnes sous tout point de vue. Pour ce faire, ils doivent arracher la peau de la personne qu'ils comptent imiter et la placer sur leur propre visage. En quelques minutes, leur physiologie faciale et leur corps s'adaptent à la nouvelle forme. La voix se modifie elle aussi, mais le corps ne peut pas augmenter ou diminuer de plus de dix centimètres ou dix kilogrammes, ni changer de sexe. La transformation dure tant que nécessaire, jusqu'à ce que le D'anjayni décide de l'abandonner ou ne subisse des dégâts au visage. Il doit aussi abandonner sa fausse identité si quelqu'un prononce son nom véritable en sa présence. Avant de prendre une autre personnalité, il devra attendre autant de temps qu'il a conservé la dernière. Quand un D'anjayni emploie le visage de l'araignée, son pouvoir d'Oubli se réduit considérablement, la difficulté du test de Résistance tombant à 80."
+          },
+          {
+            "type": "paragraph",
+            "title": "Passage sans trace",
+            "content": "Tant qu'un D'anjayni marche pieds nus, il ne laisse que peu d'empreintes derrière lui. Leurs traces s'effacent à mesure qu'il avance, ce qui inflige un malus de -60 à la compétence de toute personne tentant de le piste."
+          },
+          {
+            "type": "paragraph",
+            "title": "Murmures silencieux",
+            "content": "Il s'avère très difficile d'écouter les paroles du D'anjayni si elles ne sont pas dirigées vers soi. Tous ceux qui tentent de l'entendre alors qu'il ne sont pas son interlocuteur subissent un malus de -80 à leurs tests de Perception."
+          },
+          {
+            "type": "paragraph",
+            "title": "Nature observatrice",
+            "content": "La capacité d'apprentissage des D'anjaynis est limitée par leur passivité naturelle, par conséquent, si un joueur incarne un D'anjayni, il subit un malus de -3 points d'expérience à la fin de chaque séance de jeu."
           },
           {
             "type": "paragraph",
             "title": "Base de Natura",
-            "content": ""
+            "content": "5"
           },
           {
             "type": "paragraph",
             "title": "Modificateur de niveau",
-            "content": ""
+            "content": "+1"
           }
         ]
       },
       {
         "type": "paragraph",
         "title": "Nephilim",
-        "content": ""
+        "content": "Les D'anjaynis en tant que race se mouvaient dans les ombres de l'histoire, observant les événements du monde afin de les consigner dans des livres. Leurs âmes ont hérité de leur plus grande caractéristique, celle de passer inaperçus. Les rares personnes qui les connaissent les appellent les « hommes gris », du fait de leur capacité à agir sans que personne ne s'aperçoive de leur présence. Le nombre de Nephilims ayant hérité d'esprits d'anjaynis est très faible, presque aussi faible que pour les Duk'zarists. Leurs aptitudes sont uniquement spirituelles zt l'influence dz leur âme sur leur corps se révéle imperceptible."
       },
       {
         "type": "paragraph",
-        "content": ""
+        "content": "Les enfants nés avec des âmes de D'anjaynis sont peut-être les moins chanceux. Ils grandissent mis à l'écart par tous, puisque leurs compagnons les oublient au moment de jouer et que seuls leurs amis intimes se souviennent d'eux."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leur apparence n'est pas vraiment différente de cellec des êtres humains normaux, même si aucun ne se détache par une beauté ou une laideur exceptionnelle. Leur seule caractérisstique remarquable est peut-être leur manque de traits qui puissent attirer l'attention. Ils vivent généralement plus longtemps que les humains normaux, dépassant réguliérement le siècle d'existence. Cependant, leur développement durant l'adolescence est tout à fait commun."
+      },
+      {
+        "type": "paragraph",
+        "content": "Par contre, l'influence de leur âme sur leur personnalité est primordiale. Ils se comportent habituellement de façon tranquille, sereine, et évitent si possible tout comportement violent. Ils se montrent trés observateurs et méticuleux, bien plus enclins à surveiller ce qu'il se passe qu'à participer activement aux événements. Ils se fixent habituellement des objectifs à long terme et, dès ce moment, toutes leurs actions ont pour but de parvenir à la complétion de ces objectifs. Ils mettent le temps qu'il faut pour y parvenir, en préparant peu à peu le terrain. Ils aiment être bien informés avant d'agir, au point que leur minutie est parfois prise pour de la passivité. Cependant, au moment de passer à l'action, ils n'hésitent pas à utiliser tous les moyens à leur disposition, y compris la violence. Ils sont plutôt individualistes et les groupes ne leur plaisent pas, bien qu'ils s'y conforment si les circonstances les y obligent. Ils s'attachent généralement peu aux personnes, à cause du peu d'attention que celles-ci leur retournent. Ils quittent souvent trés tôt leur foyer pour suivre le chemin en solitaires."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Nephilims d'anjaynis font souvent des rêves de leur vie antérieure, mais ils sont en général chaotiques et dépourvus d'émotion. Ils ont le plus souvent la même vision, celle d'un moment très important qui se répète régulièrement."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leur nom possède pour eux une importance fondamentale, étant donné que leurs pouvoirs y sont liés. D'habitude, ils voyagent en se servant de pseudonymes et ne révèlent leur vrai nom qu'aux personnes qui leur sont importantes."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leurs âmes leur accordent des facultés mystiques étranges qu'ils apprennent peu à peu à contrôler."
       },
       {
         "title": "Capacités des Nephilims",
@@ -194,20 +263,40 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Indétectables",
+            "content": "Les Nephilims d'anjaynis ont la faculté mystique de résister à la détection par des moyens surnaturels, qu'il s'agisse de pouvoirs mystiques, psychiques ou du Ki. Tous les Nephilims d'anjaynis appliquent un bonus de +30 à leurs Résistances contre les effets de détection. De plus, ils possèdent de façon innée le pouvoir Dissimulation du Ki, pour lequel ils bénéficient d'un bonus de +30."
+          },
+          {
+            "type": "paragraph",
+            "title": "Oubli",
+            "content": "Impossible d'en douter, il s'agit là de leur faculté la plus étrange. Si un Nephilim d'anjayni le désire, il peut se rendre totalement oubliable, de façon à ce que les personnes qui le voient ne se souviennent pas de lui. Un Nephilim d'anjayni a même la capacité de tenir une conversation avec une ou plusieurs personnes, puis de faire en sorte que celles-ci ne se souviennent plus de son aspect, pas plus que du sujet de la conversation. En termes de jeu, chaque individu qui voit le personnage ou discute avec lui doit réussir un test de Résistance mystique (RMys) contre une difficulté de 100, sous peine d'oublier l'apparence de son interlocuteur et la nature de leur conversation. Cette faculté est l'équivalent d'un effet mystique automatique dont la condition consiste simplement à se trouver en présence du personnage et que celui-ci s'en aille sans avoir dit son nom. Il est impossible de s'apercevoir du fonctionnement de cette faculté, pas même pour un individu capable de voir la magie. Les personnes affectées ne se rendent pas compte qu'il s'est passé quelque chose de surnaturel, elle pensent simplement qu'elles n'arrivent pas à se rapeler ou qu'elles n'ont pas bien fait attention. Un sorcier devra effectuer un test Impossible d'Evaluation magique pour s'apercevoir de la mise en oeuvre de cette faculté. L'oubli cesse de faire effet dès que le Nephilim se présente sous son nom véritable au cours de la conversation, ou qu'il rencontre des individus qui connaissent sa nature exacte."
+          },
+          {
+            "type": "paragraph",
+            "title": "Murmures silencieux",
+            "content": "Il s'avère très difficile d'écouter les paroles du Nephilim si elles ne sont pas dirigées vers soi. Tous ceux qui tentent de l'entendre alors qu'il ne sont pas son interlocuteur subissent un malus de -60 à leurs tests de Perception."
+          },
+          {
+            "type": "paragraph",
+            "title": "Passage sans trace",
+            "content": "Quand une Nephilim d'anjayni se déplace pieds nus, il laisse peu de traces derrière lui. Elles s'effacent au fur et à mesure qu'il avance. Si quelqu'un tente de les suivre, il subit un malus de -40 à sa compétence."
+          },
+          {
+            "type": "paragraph",
+            "title": "Apparence banale",
+            "content": "Bien qu'ils puissent être plus ou moins beaux, les Nephilims d'anjaynis ne sont jamais exceptionnellement magnifiques ou repoussants. Par conséquent, leur apparence ne peut jamais être inférieure à 3 ou supérieure à 7."
           },
           {
             "type": "paragraph",
             "title": "Âme immortelle",
-            "content": ""
+            "content": "Le conflit entre les souvenirs de l'âme Nephilim et son apprentissage du personnage provoquent un malus de -3 points à l'expérience accordée par le Meneur de Jeu à la fin de chaque session."
           }
         ]
       }
     ]
   },
   {
-    "title": "Ebudan (TODO)",
+    "title": "Ebudan",
     "type": "panel",
     "content": [
       {
@@ -217,7 +306,19 @@
       },
       {
         "type": "paragraph",
-        "content": "TODO"
+        "content": "Les Ébudans étaient à l'origine des êtres supérieurs, nés des légendes angéliques. Ils avaient pour tâche de veiller aux graves changements arrivant dans le monde matériel suite aux fluctuations du monde spirituel, et de les résoudre. Or, leur habitude d'intervenir dans les événements surnaturels de transcendance supérieure les mit en travers de la route des Shajads en de nombreuses occasions. Ces derniers, passablement irrités, décidèrent de les expulser des cieux et de les déposséder de leurs pouvoirs. Depuis ce jour, les Ebudans vivent dc façon dispersée et désorganisée, essayant de récupérer une part de leurs pouvoirs perdus."
+      },
+      {
+        "type": "paragraph",
+        "content": "Physiquement, les Ebudans ressemblent beaucoup aux humains, mais ils possèdent deux grandes ailes qui leur permettent de voler. Elles poussent généralement dans leur dos, mais peuvent parfois prendre racine dans des endroits différents, comme la tête, les bras ou les chevilles. Dès leur naissance, leur corps se couvre entièrement de tatouages étranges : le Marduk, une énigme qui leur permet de prévoir les événements importants de l'avenir. En l'étudiant chaque Ebudan découvre qu'il devra accomplir une tâche particulière, qu'elle soit minuscule comme de perdre une récolte, ou aussi monumentale que de provoquer une guerre. Ils appellent ce « destin » le Sue'Aman, et celui-ci devient leur obsession jusqu'au moment où ils parviennent à le réaliser. S'ils y arrivent, ils récupèrent leur pouvoir et peuvent choisir entre rester sur Gaïa ou se transformer en êtres Animiques et retourner au monde spirituel. S'ils choisisent la première solution, le Marduk disparait et leur corps diffuse une lumière légère. En réalité, peu choisissent cette option."
+      },
+      {
+        "type": "paragraph",
+        "content": "Le nombre d'Ebudans est très faible car ces êtres spirituels sont peu liés à leur corps et entretiennent peu de relations entre eux. Cependant, leurs vies terrestres durent très longtemps ; ils peuvent vivre jusqu'à trois cents ans, atteignant la maturité entre vingt-cinq et trente ans. S'ils arrivent à réaliser leur but, ils cessent de vieillir et ne peuvent mourir que de causes violentes."
+      },
+      {
+        "type": "paragraph",
+        "content": "Grâce à leurs pouvoirs magiques, les Ebudans ont jadis créé des cités dans les cieux, mais aucune n'a réellement développé de grande civilisation ou culture. Aujourd'hui encore, le but principal des Ebudans consiste à récupérer leur Sue'Aman, même si nombre d'entre eux ont décidé de l'oublier et de commencer une nouvelle vie. Socialement, ils suivent les membres de leur race qui font preuve de grandes connaissances et capacités de raisonnement. En général, les Ebudans qui ont accompli leur objectif mais restent dans le monde deviennent les mentors des plus jeunes et démontrent une certaine supériorité vis-à-vis des autres."
       },
       {
         "title": "Capacités",
@@ -225,29 +326,51 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Marduk",
+            "content": "Il le protége contre tout ce qui pourrait le détourner de son Sue'Aman. L'Ebudan peut appliquer un bonus de +30 à tout test de Résistance contre un effet de domination, de contrôle émotionnel ou d'oubli qui pourrait l'empêcher de réaliser son Sue'Aman. Si le Sue'Aman est accompli, cette faculté disparaît complètement. Cependant, une fois accompli, les véritables Ebudans peuvent choisir entre transcender vers le flux des âmes et renaître sous forme d'entités Animiques avec une Gnose de 30, ou rester dans le monde pour guider les autres membres de leur race. Dans un cas comme dans l'autre, ils bénéficient d'un bonus de +2 en POU et en VOL."
+          },
+          {
+            "type": "paragraph",
+            "title": "Aile de Séraphin",
+            "content": "Les Ebudans possèdent des ailes qui leur accordent une Qualité de Vol de 12. Ils peuvent augmenter ou diminuer leur taille à volonté, mais ne peuvent pas les faire disparaitre complètement. De plus, ils peuvent les utiliser comme une arme naturelle leur permettant d'attaquer ou de se défendre au combat ; par contre dans ce cas, ils ne peuvent pas s'en servir pour voler. Les caractéristiques des ailes (on ne dissocie pas la paire d'ailes en considération de l'arme) sont les suivantes : Vitesse de +20, Dégâts de 60 plus le modificateur de Force, Mode Tranchant, catégorie : Deux mains, Solidité 20 et Fracassement 5. Du fait de leur complexité, les Ebudans ne peuvent pas les utiliser conjointement à des armes maniées à la main. Elles peuvent aussi bloquer les projectiles comme s'il s'agissait d'un bouclier. S'il accomplit son Sue'Aman, un Ebudan peut altérer l'énergie avec ces ailes. En de rares occasions, les Nephilims peuvent aussi hériter de ces pouvoirs."
+          },
+          {
+            "type": "paragraph",
+            "title": "Essence céleste",
+            "content": "Quand il réussit à accomplir le destin qu'il s'était fixé, l'essence spirituelle de l'Ebudan s'étend dans son corps entier, lui permettant de ne plus souffrir de blessures physiques naturelles. En termes de jeu, l'Ebudan devient invulnérable à toutes les attaques naturelles qui n'affectent pas l'énergie. Ce pouvoir se manifeste uniquement quand un Ebudan est parvenu à accomplir son objectif."
           },
           {
             "type": "paragraph",
             "title": "Base de Natura",
-            "content": ""
+            "content": "10"
           },
           {
             "type": "paragraph",
             "title": "Modificateur de niveau",
-            "content": ""
+            "content": "+1 (+3 s'il a réussit son Sue'Aman)"
           }
         ]
       },
       {
         "type": "paragraph",
         "title": "Nephilim",
-        "content": ""
+        "content": "Ebudan signifie « Fidèle du destin » ; il s'agit du nom qu'ont reçu les membres d'une race d'êtres quasiment célestes, tombés du ciel au moment où ils ont perdu leurs ailes. Les légendes disent qu'ils avaient le pouvoir de percevoir les altérations du flux d'âmes et que leurs corps se couvraient de tatouages mystiques, appelés Marduk, grâce auxquels ils tentaient de percevoir les événements futurs. On dit que chacun d'eux avait dédié sa vie à un but précis, qu'ils nommaient Sue'Aman et qu'ils essayaient d'accomplir avant toute autre chose."
       },
       {
         "type": "paragraph",
-        "content": ""
+        "content": "Les Nephilims ebudans sont les moins nombreux de tous. Ils possèdent quelques capacités surnaturelles très limitées, bien que latentes. Ils cachent au plus profond d'eux-mêmes des pouvoirs bien plus puissants."
+      },
+      {
+        "type": "paragraph",
+        "content": "D'un point de vue physique, ils sont de constitution normale pour un humain, mais ont tendance à être légèrement corpulents. Leurs yeux sont profonds, et leurs cheveux souvent très clairs, parfois même complètement blancs. Dès leur naissance, ils arborent un symbole étrange sur le corps, un reflet du Marduk qu'ils possédaient durant leur vie antérieure, bien qu'on les prenne souvent pour une simple marque de naissance. Vers l'adolescence apparaissent quelques tatouages de plus, bien que rares et normalement situés à des endroits invisibles à première vue."
+      },
+      {
+        "type": "paragraph",
+        "content": "La personnalité des Nephilims ebudans est fortement conditionnée par leur âme. Le but qu'ils se sont fixé dans leur vie antérieure y est encore imprégné. Aucun Ebudan qui avait accompli son Sue'Aman n'est devenu Nephilim, et donc tous les Nephilims doivent encore y parvenir. Leurs rêves, tout simplement liés à leur Sue'Aman, leur montrent avec clarté l'objectif qu'ils se sont fixé. Leur enfance est en général paisible ; par contre, à l'adolescence, au moment où ils font leur premier rêve, celui-ci devient une obsession. Quasiment tous les Nephilims tentent d'accomplir leur Sue'Aman, bien que certains considèrent cette vision comme impossible et préfèrent vivre les pieds sur terre. Malgré leur caractère serein et spirituel, ils n'aiment pas développer de liens affectifs avec les autres."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les pouvoirs des Ebudans dépendent de leur réussite au Sue'Aman. Tant que le Sue'Aman n'est pas accompli, le Nephilim ne possède que quelques capacités spirituelles. Par contre, au moment où il atteint son objectif primordial, son pouvoir se manifeste pleinement et l'Ebudan obtient de nombreux et puissants pouvoirs. Le Meneur de Jeu décide normalement du Sue'Aman d'un personnage, bien qu'il puisse aussi se mettre d'accord avec le joueur pour en déterminer la nature."
       },
       {
         "title": "Capacités des Nephilims",
@@ -255,20 +378,30 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Or'inie",
+            "content": "Le symbole mystique avec lequel nait un Nephilim ebudan se nomme Or'inie. Il le protége contre tout ce qui pourrait le détourner de son Sue'Aman. Le Nephilim peut appliquer un bonus de +30 à tout test de Résistance contre un effet de domination, de contrôle émotionnel ou d'oubli qui pourrait l'empêcher de réaliser son Sue'Aman. Si le Sue'Aman est accompli, cette faculté disparaît complètement."
+          },
+          {
+            "type": "paragraph",
+            "title": "Ailes de Séraphin",
+            "content": "Au moment où un Nephilim atteint son objectif,. il récupére une part de son essence perdue sous la forme de deux ailes lumineuses. Ce ne sont pas des ailes matérielles qui sortent de son corps, mais il peut manifester à volonté une paire d'ailes d'énergie avec lesquelles il peut s'envoler dans les cieux. Le personnage peut les faire apparaître ou disparaître à volonté, mais cela lui prend un round entier. Ces ailes lui permettent de voler ravec une Qualité de Vol de 12. Cette faculté ne se manifeste que quand le personnage a atteint son Sue'Aman."
+          },
+          {
+            "type": "paragraph",
+            "title": "Essence céleste",
+            "content": "Quand il réussit à accomplir le destin qu'il s'était fixé, l'essence spirituelle dU Nephilim s'étend dans son corps entier, lui permettant de ne plus souffrir de blessures physiques naturelles. En termes de jeu, le Nephilim devient invulnérable à toutes les attaques naturelles qui n'affectent pas l'énergie."
           },
           {
             "type": "paragraph",
             "title": "Âme immortelle",
-            "content": ""
+            "content": "Le conflit entre les souvenirs de l'âme Nephilim et l'apprentissage du personnage provoque un malus de -3 points à l'expérience accordée par le Meneur de Jeu à la fin de chaque séance."
           }
         ]
       }
     ]
   },
   {
-    "title": "Jayan (TODO)",
+    "title": "Jayan",
     "type": "panel",
     "content": [
       {
@@ -278,7 +411,23 @@
       },
       {
         "type": "paragraph",
-        "content": "TODO"
+        "content": "Les Jayans forment une des races mineures de Gaïa, que la dispersion et la désagrégation ont empêché d'atteindre tout leur potentiel."
+      },
+      {
+        "type": "paragraph",
+        "content": "Ces créatures humanoïdes de grande taille font généralement entre deux et trois mètres et demie de haut. Leur corps est exceptionnellement bien développé, avec une musculature et une puissance irrésistibles. Leur peau sombre se pare de tons bruns ou ocre. Ils portent deux grandes cornes sur la tête et un troisième œil au milieu du front, toujours de couleur rouge. Leurs cheveux sont foncés (à l'inverse des Nephilims, curieusement) et normalement très bouclés. Ils ont des traits rigides et grossiers, à l'exception des femmes qui arborent des traits bien plus humains. Leurs doigts se terminent par des ongles effilés, leurs canines inférieure et supérieures sont légèrement plus développées. Leur cycle de vie équivaut à celui des humains, mais ils peuvent régulièrement dépasser le siècle d'existence sans problèmes majeur."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Jayans ont un caractère enclin à la violence. Ils se mettent très facilement dans des colères noires. Ils agissent le plus souvent à découvert car ils répugnent à user de subterfuges ou de tromperies pour arriver à leurs fins. Traditionnellement, les Jayans s'organisent en tribus nomades qui ne demeurent jamais longtemps à un même endroit. Ils aiment voyager, mais cela ne signifie pas qu'ils ne peuvent pas rester pendant de longs moments à un endroit si celui-ci présente toutes les conditions nécessaires pour vivre. La guerre et le combat constituent une grande part de leur culture, car ils se considèrent comme une race de guerriers. Les femmes autant que les hommes apprennent à se battre depuis leur plus jeune âge, mais ces dernières, de plus petite taille, doivent s'entraîer à des styles plus sophistiqués pour égaler leurs compagnons."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Jayans s'avèrent très liés aux coutumes et aux rites chamaniques, qui régissent une part importante de leur existence. On voit très fréquemment, à côté de leurs chefs qui sont toujours de grands guerriers, des chamanes ou des sorciers qui donnent leurs conseils. Cette situation est normale, puisque la faculté que leur confère leur troisième œil leur permet de voir les êtres animiques, ce qui a beaucoup influencé leur vie et leurs mœurs. En général, ils se couvrent le corps de peintures et d'amulettes avant de partir au combat, en espérant que les esprits leur soient favorables."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Jayans tiennent beaucoup à leurs cornes, qu'ils décorent avec soin et auquelles ils attribuent leurs prouesses. Il n'y a pas plus grave offense pour un membre de cette race que de perdre une de ses cornes et de ne pas chercher à s'en venger."
       },
       {
         "title": "Capacités",
@@ -286,37 +435,76 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Géants",
+            "content": "Les Jayans rajoutent deux points à leur caractéristique de Taille et ne peuvent pas choisir l'avantage Taille inhabituelle pour la réduire. Cependant, ils ne peuvent pas atteindre la Taille Énorme du Tableau 85, et si ce devrait être le cas, ils n'en obtiendraient pas les bénéfices."
+          },
+          {
+            "type": "paragraph",
+            "title": "Physique exceptionnel",
+            "content": "Les Jayans sont bien plus forts et résistants que nombre d'autres races de Gaïa, ce qui leur vaut un bonus de +2 à leur caractéristique de Force et de +1 à leur Constitution. De plus, ils ne peuvent pas utiliser le désavantage Réduire une caractéristique de deux points pour diminuer leur Force."
+          },
+          {
+            "type": "paragraph",
+            "title": "Résistants à la Fatigue",
+            "content": "Les Jayans font preuve d'une résistance exceptionnelle à l'épuisement, ce qui leur permet d'augmenter de 3 points leur Fatigue."
+          },
+          {
+            "type": "paragraph",
+            "title": "Résistants aux blessures",
+            "content": "Leur capacité à affronter les dégâts physiques leur accorde un bonus de +20 à la RPhy."
+          },
+          {
+            "type": "paragraph",
+            "title": "Troisième œil",
+            "content": "L'œil qu'arborent les Jayans au milieu de leur front ne perçoit pas le monde comme les deux autres. Cette pupille a naturellement la capacité de voir les êtres Animiques, invisibles pour les autres. Cette capacité ne fonctionne pas pour les sorts, les effets mystiques ou les matrices psychiques."
+          },
+          {
+            "type": "paragraph",
+            "title": "Armes naturelles",
+            "content": "Les griffes et les cornes des Jayans peuvent être utilisées comme des armes lors d'un combat, et ce avec efficacité. Même à mains nues, les Dégâts de leurs attaques sont de 40 ou 60 plus le modificateur de Force, en fonction de la Taille du Jayan (voir Tableau 85). Naturellement. ils apprendre à se battre avec ces armes pour les utiliser sans malus."
+          },
+          {
+            "type": "paragraph",
+            "title": "Force inhumaine",
+            "content": "Leur incroyable condition physique permet aux Jayans d'effectuer des actions de difficulté Surhumaine pour tous les tests liés sà la Force."
+          },
+          {
+            "type": "paragraph",
+            "title": "Faiblesse contre la magie",
+            "content": "Malgré leur nature surnaturelle, les Jayans ont tendance à être affectés par les capacités mystiques et les sorts. Ils subissent un malus de -20 à leur RMys. De plus, ils réduisent d'un point leur caractéristique de Pouvoir."
           },
           {
             "type": "paragraph",
             "title": "Base de Natura",
-            "content": ""
+            "content": "0"
           },
           {
             "type": "paragraph",
             "title": "Modificateur de niveau",
-            "content": ""
+            "content": "+1"
           }
         ]
       },
       {
         "type": "paragraph",
         "title": "Nephilim",
-        "content": "Dans la langue antique, Jayan signifiait « géant ». Ils étaient une race d'êtres de grande taille d'apparence humanoïde, qui n'avaient aucun lien avec un élément précis. On dit qu'ils possédaient des cornes et un troisième oeil sur le front, qui leur permettait de voir les esprits. Le nombre de Nephilims nés de ces âmes est assez important, bien que pas autant que celui des Sylvains ou des Daimahs. Ils semblent légèrement plus nombreux dans le Nouveau Continent, mais il n'ya aucune véritable raison à cela. Leurs âmes, simples mais puissantes, influent sur leurs corps principalement au niveau physique. Bien qu'ils aient une origine mystique, les effets surnaturels et les sorts les affectent facilement."
+        "content": "Dans la langue antique, Jayan signifiait « géant ». Ils étaient une race d'êtres de grande taille d'apparence humanoïde, qui n'avaient aucun lien avec un élément précis. On dit qu'ils possédaient des cornes et un troisième œil sur le front, qui leur permettait de voir les esprits. Le nombre de Nephilims nés de ces âmes est assez important, bien que pas autant que celui des Sylvains ou des Daimahs. Ils semblent légèrement plus nombreux dans le Nouveau Continent, mais il n'ya aucune véritable raison à cela. Leurs âmes, simples mais puissantes, influent sur leurs corps principalement au niveau physique. Bien qu'ils aient une origine mystique, les effets surnaturels et les sorts les affectent facilement."
       },
       {
         "type": "paragraph",
-        "content": "Leur trés grande taille constitue la principale caractéristique qu'ils aient héritée de leur ancienne vie : ils atteignent souvent un mètre quatre-vingt pour les femmes et deux mètres pour les hommes. Ils ont en général une forte corpulence et une musculature très développée. Leurs peaux sont plutôt foncées, même dans les endroits où ces Nephilims grandissent sans un soleil fréquent. Les visages des Jayans ont des traits durs et bien définis, arborent une chevelure épaisse et de couleur habituellement châtain. Ils ont la même espérance de vie que les humains, bien que leur corps mûrisse très vite et, arrivés à peine quinze ans, ils peuvent déjà avoir atteint leur taille adulte. Même si cela reste rare et que ces cas ont été exceptionnels, certains Nephilims jayans ont développé de petites déformations crâniennes qui ont formé des cornes sur leur front. Ces protubérances apparaissent vers leurs dix ans et leur croissance, longue, provoque de fortes douleurs."
+        "content": "Leur très grande taille constitue la principale caractéristique qu'ils aient héritée de leur ancienne vie : ils atteignent souvent un mètre quatre-vingt pour les femmes et deux mètres pour les hommes. Ils ont en général une forte corpulence et une musculature très développée. Leurs peaux sont plutôt foncées, même dans les endroits où ces Nephilims grandissent sans un soleil fréquent. Les visages des Jayans ont des traits durs et bien définis, arborent une chevelure épaisse et de couleur habituellement châtain. Ils ont la même espérance de vie que les humains, bien que leur corps mûrisse très vite et, arrivés à peine quinze ans, ils peuvent déjà avoir atteint leur taille adulte. Même si cela reste rare et que ces cas ont été exceptionnels, certains Nephilims jayans ont développé de petites déformations crâniennes qui ont formé des cornes sur leur front. Ces protubérances apparaissent vers leurs dix ans et leur croissance, longue, provoque de fortes douleurs."
       },
       {
         "type": "paragraph",
-        "content": ""
+        "content": "L'écho de leurs âmes dans leur personnalité en fait des personnes décidées et fermes, mais souffrant d'une grande propension à perdre leur sang-froid et agir de façon violente. Ils aiment tout particulièrement utiliser leurs mains et tirer profit de leur force. Il s'avère très dur de les détourner de leur chemin quand ils ont commencé quelque chose et ils vont jusqu'au bout en affrontant toutes les conséquences. Ils apprécient beaucoup leurs compagnons et ne craignent pas de dire franchement ce qu'ils pensent en toute circonstance. Ils préfèrent la vie de groupe et ne refusent jamais l'aide qu'on leur propose s'ils en ont besoin. Ils ne supportent pas de rester inactifs et, s'ils n'ont rien à faire, ils cherchent quelque chose pour passer le temps. Bien qu'ils n'arborent plus le troisième œil qui caractérisait leur race, ils peuvent parfois voir le monde des esprits et ressentir les choses de l'au-delà, ce qui ne va pas sans les inquiéter."
       },
       {
         "type": "paragraph",
-        "content": ""
+        "content": "Les Jayans rêvent donc très rarement de fragments de leur vie passée et, même quand c'est le cas, ils n'agissent que peu souvent en fonction de ces rêve."
+      },
+      {
+        "type": "paragraph",
+        "content": "Comme nous l'avons dit précédemment, l'influence de leurs âmes se manifeste principalement sur leur corps, mais ils conservent une partie du pouvoir surnaturel que leur conférait leur troisième œil."
       },
       {
         "title": "Capacités des Nephilims",
@@ -324,45 +512,45 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Géants",
+            "content": "Les Nephilims jayans sont normalement de grande stature et forte corpulence. Ils rajoutent donc deux points à leur caractéristique de Taille et ne peuvent pas choisir l'avantage Taille inhabituelle pour la réduire."
           },
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Résistants à la Fatigue",
+            "content": "Les Nephilims jayans s'épuisent moins que les hommes à Constitution égale ; ils augmentent d'un point leur Fatigue."
           },
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Résistants aux blessures",
+            "content": "L'âme des Jayans rend leur corps bien plus résistant aux chocs provoqués par des dégâts ; ils appliquent un bonus de +15 à leur Résistance physique (RPhy)."
           },
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Physique exceptionnel",
+            "content": "L'âme jayan influe sur le développement de la musculature du corps dans lequel elle se trouve et augmente d'un point la Force du personnage. De plus, il n'est pas possible de choisir le désavantage Réduire une caractéristique de deux points pour diminuer la Force du Nephilim."
           },
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Vision spirituelle",
+            "content": "L'œil que possédaient les Jayans au milieu du front confère à ces Nephilims la faculté de voir les esprits de façon partielle. Pour ce faire, le personnage doit fermer les yeux et, de façon inconsciente, il parvient à « voir » les créatures Animiques, sans percevoir en même temps le monde matériel. Cette faculté ne permet pas au personnage de voir les sorts, les effets mystiques ou les matrices psychiques, mais seulement les âmes invisibles à l'œil humain."
           },
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Faiblesse contre la magie",
+            "content": "Les sorts et les effets mystiques s'avèrent tout particulièrement puissants contre les Nephilims jayans, qui subissent un malus de -10 à leur Résistance mystique (RMys)."
           },
           {
             "type": "paragraph",
             "title": "Âme immortelle",
-            "content": ""
+            "content": "Le conflit entre les souvenirs de l'âme du Nephilim et l'apprentissage du personnage provoque un malus de -3 points à l'expérience accordée par le Meneur de Jeu à la fin de chaque séance."
           }
         ]
       }
     ]
   },
   {
-    "title": "Daimah (TODO)",
+    "title": "Daimah",
     "type": "panel",
     "content": [
       {
@@ -372,7 +560,19 @@
       },
       {
         "type": "paragraph",
-        "content": "TODO"
+        "content": "Les Daimahs sont une race liée par essence à la nature et à la vie. Ils ont quelques similitudes apparentes avec les Sylvains, mais il existe d'énormes différences entre eux."
+      },
+      {
+        "type": "paragraph",
+        "content": "Au point de vue physique, leur taille et leur corpulence sont inférieures à la moyenne humaine et les traits de leur visage sont aussi plus stylisés. Ils ont les pupilles fendues comme celles des félins, de couleur très variée : rouges, vertes ou même turquoises. Leurs poils poussent très vite et, bien qu'ils soient habituellement de couleur commune, certains d'entre eux le sont aussi de couleur verte. Ils ont une queue féline, comme leurs oreilles pointues surmontées d'une touffe de duvet. Leurs ongles et leurs canines sont légèrement plus développés que ceux des hommes, mais pas suffisamment pour leur permettre de s'en servir efficacement comme armes. Ils ont une longévité double de celles des humains, et leur croissance suit en proportion."
+      },
+      {
+        "type": "paragraph",
+        "content": "Ce sont en général des individus très animés et joyeux. Ils n'ont pas beaucoup de préoccupations et voient tout de façon optimiste et confiante, avec le sourire. Très actifs, ils ne peuvent jamais rester oisifs pendant longtemps, sauf quand ils dorment (ce qu'ils adorent, d'ailleurs). Ils aiment beaucoup les distractions et font preuve d'un grand sens de l'humour. Curieux par nature, ils aiment beaucoup fureter et se mêler de tout ce qui attire leur attention. Ils parlent beaucoup et changent facilement de centre d'intérêt, si leur tâche en cours est très complexe ou qu'elle ne leur apporte pas ce qu'ils attendaient. Ils cherchent avec passion à être le centre d'attention de tous, et tentent de se faire remarquer chaque fois que possible. L'un de leurs passe-temps favoris consiste à voyager et explorer le monde pour découvrir de nouvelles choses, mais ils ressentent un grand amour pour la nature, qui souvent les empêche de quitter leurs forêts chéries. Ils apprécient la vie et s'attachent facilement aux personnes. La violence ne leur plaît pas et ils ne s'y résolvent qu'en derniers recours."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Daimahs vivent en union parfaite avec la nature. Ils construisent leurs villes dans les forêts et les jungles, tirant des arbres et des plantes tout ce dont ils ont besoin sans leur faire de mal. Ils protègent la nature des agressions de ceux qui la détruisent sans raison et patrouillent généralement leurs territoires dans ce but. Leur société est subtilement matriarcale car les femmes tiennent souvent les charges les plus importantes,comme celles de prêtresses ou de princesses. Leurs chefs sont appelés les quatre prêtres des saisons. Tous les Daimahs possèdent de vastes capacités magiques, qu'ils développent en observant la nature sauvage. Au vu de leurs traditions et leur culture, ils possèdent de grandes similitudes avec nos civilisations orientales, en particulier la Lannetienne."
       },
       {
         "title": "Capacités",
@@ -380,29 +580,95 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Corps félin",
+            "content": "Les Daimahs disposent de capacités physiques incroyables, qui leur accordent un bonus de +1 à leurs caractéristiques d'AGI et de DEX. Cependant, leur résistance se révèle bien inférieure : ils réduisent d'un point leur Constitution. Très loquaces, ils subissent aussi un malus de -1 à leur VOL."
+          },
+          {
+            "type": "paragraph",
+            "title": "Sentir la forêt",
+            "content": "Bien qu'il ne puisse pas parler avec les plantes, un Daimah peut percevoir les sentiments de la nature. Ils ont la faculté de ressentir les émotions des animaux et des plantes, de savoir s'ils ont peur, s'ils se sentent en sécurité ou d'il se passe quelque chose d'étrange."
+          },
+          {
+            "type": "paragraph",
+            "title": "Griffes et dents",
+            "content": "Les griffes et les canines des Daimahs peuvent être utilisées comme armes naturelles, avec quelques difficultés néanmoins. Elles font des Dégâts de 30 plus le modificateur de Force. Ils doivent bien sûr apprendre à se battre avec leurs griffes pour ne pas subir de malus."
+          },
+          {
+            "type": "paragraph",
+            "title": "Coordination surhumaine",
+            "content": "La nature des Daimahs leur permet d'atteindre la difficulté Surhumaine pour les tests dépendant de l'Agilité et de la Dextérité."
+          },
+          {
+            "type": "paragraph",
+            "title": "Petite taille",
+            "content": "Les Daimahs sont d'une corpulence légèrement inférieure à celle des êtres humains ; ils reduisent donc leur Taille d'un point."
+          },
+          {
+            "type": "paragraph",
+            "title": "Nature guérisseuse",
+            "content": "Quand le Daimah se trouve à l'intérieur d'une forêt ou d'une jungle, son âme nourrit son corps de la vie qui l'entoure ; il guérit ses blessures à une allure vertigineuse, augmentant de huit points sa Régénération."
+          },
+          {
+            "type": "paragraph",
+            "title": "Résistance aux chutes",
+            "content": "Pour refléter leurs caractéristiques animales, les Daimahs peuvent tomber d'une grande hauteur sans subir de dégâts (on dit curieusement qu'ils retombent toujours sur leurs pattes). Pour refléter cette capacité, ils réduisent de deux niveaux la difficulté requise pour éviter les dégâts, suivant les indications du Tableau 71."
+          },
+          {
+            "type": "paragraph",
+            "title": "Immunité naturelle",
+            "content": "La communion des Daimahs avec la nature les a rendus résistants à tous les effets nuisibles d'origine naturelle. Ils sont donc immunisés à tous les poisons provenant des plantes ou des animaux naturels, ainsi qu'à toutes les maladies d'origine non mystique."
+          },
+          {
+            "type": "paragraph",
+            "title": "Essence mystique",
+            "content": "L'âme des Daimahs est toujours liée à la magie ; tout membre de cette race a l'obligation de choisir l'avantage du Don mystique."
+          },
+          {
+            "type": "paragraph",
+            "title": "Mouvement par les arbres",
+            "content": "Les Daimahs ne subissent pas de malus à leur vitesse de déplacement quand ils se déplacent à l'intérieur de forêts."
+          },
+          {
+            "type": "paragraph",
+            "title": "Voir l'essence",
+            "content": "Les yeux des Daimahs leur permettent de voir l'âme des êtres vivants, ce qui leur permet d'identifier instantanément les liens élémentaires ou animiques de tout être. Cette faculté est considérée comme un pouvoir inné de détection, auquel un individu peut résister naturellement s'il réussit un test de RMys de difficulté 140."
           },
           {
             "type": "paragraph",
             "title": "Base de Natura",
-            "content": ""
+            "content": "5"
           },
           {
             "type": "paragraph",
             "title": "Modificateur de niveau",
-            "content": ""
+            "content": "+1"
           }
         ]
       },
       {
         "type": "paragraph",
         "title": "Nephilim",
-        "content": ""
+        "content": "Les Daimahs sont la dernière race ancienne à avoir donné naissance à des Nephilims et, à la possible exception des Sylvains, ils sont les plus nombreux. Du fait de leur essence liée à la nature, beaucoup les considèrent comme des esprits des forêts."
       },
       {
         "type": "paragraph",
-        "content": ""
+        "content": "Au point de vue physique, ils possèdent quelques petites différences avec les humains normaux, bien qu'aucune ne soit vraiment inhumaine. Tout d'abord, la pupille de leurs yeux est légèrement fendue comme celle d'un animal. Cette altération est normalement très légère mais, chez certains individus, elle apparaît si prononcée qu'elle rappelle l'œil d'un chat ou d'un renard. Leurs cheveux emmêlés poussent très rapidement, tout particulièrement chez les femmes. Les hommes ont les joues très poilues, mais s'ils se rasent une fois, leurs poils ne repoussent plus. Comme les elfes, ils ont les oreilles légèrement en pointe, où poussent quelques poils. Ils ne sont pas de constitution très robuste et n'atteignent jamais une grande taille. Leur espérance de vie est identique à celle des humains normaux."
+      },
+      {
+        "type": "paragraph",
+        "content": "Habituellement, tous les Nephilims daimahs se comportent de façon assez joviale et divertissante. Ils affrontent la vie avec le sourire, sans trop se faire de souci. De même, ils se mettent rarement en colère. Ils ne supportent pas l'inactivité et cherchent toujours quelque chose à faire pour ne pas s'ennuyer. Extrêmement curieux, ils adorent fureter et se mêler de tout ce qui leur paraît intéressant. Malheureusement, ils sont aussi très peu prudents et finissent toujours par s'attirer des problèmes qui ne les concernaient pas, et dont ils ont du mal à se tirer. Éprouvant des difficultés à se concentrer, ils perdent rapidement leur intérêt pour ce qu'ils font quand cela ne les distrait plus. Ils détestent les plans retors et préfèrent affronter les événements sans aucune préparation, confiant en la chance qui les sortira de n'importe quelle impasse. Explorateurs par nature, bien que leurs lieux de prédilection soient les forêts, ils veulent toujours découvrir de nouveaux horizons et expérimenter de nouvelles émotions. Ils adorent la compagnie. Dès qu'ils s'attachent à une personne, ils y restent collés tout le temps, essayant de devenir leur unique centre d'attention."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leur attirance étrange pour tout ce qui leur donne une apparence animale constitue un trait à la fois curieux et amusant ; les femmes en particulier portent des diadèmes ornés d'oreilles de chats, ou laissent pendre derrière leurs vêtements des bandes de tissu rappelant une queue. Ce genre de détail les attire sûrement inconsciemment."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les Nephilims daimahs rêvent rarement de leur vie passée mais leur nature curieuse fait qu'ils s'y intéressent pendant un moment, avant de changer de sujet d'attention quand ils trouvent quelque chose de plus captivant."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leurs pouvoirs se manifestent principalement sur un niveau spirituel,particulièrement dans les forêts et les lieux où est très présente la nature."
       },
       {
         "title": "Capacités des Nephilims",
@@ -410,20 +676,40 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Sentir la forêt",
+            "content": "Bien qu'il ne puisse pas parler avec les plantes, l'âme d'un Nephilim daimah peut percevoir les sentiments de la nature. Ils ont la faculté de ressentir les émotions des animaux et des plantes, de savoir s'ils ont peur, s'ils se sentent en sécurité ou d'il se passe quelque chose d'étrange."
+          },
+          {
+            "type": "paragraph",
+            "title": "Mouvement forestier",
+            "content": "La nature est le foyer du Nephilim, il y est comme chez lui. Quelle que soit l'épaisseur de feuillage ou du sous-bois, un Nephilim daimah ne subit aucun malus quand il se déplace dans ce milieu."
+          },
+          {
+            "type": "paragraph",
+            "title": "Petite taille",
+            "content": "Les Nephilims daimahs ne sont pas grands ou lourds ; ils réduisent d'un point leur caractéristique de Taille."
+          },
+          {
+            "type": "paragraph",
+            "title": "Nature guérisseuse",
+            "content": "Quand il se trouve à l'intérieur d'une forêt, l'âme du Daimah nourrit son corps de l'essence de vie existant tout autour de lui. Tant qu'il se trouve dans une zone boisée, le Nephilim bénéficie d'un bonus de +3 en Régénération."
+          },
+          {
+            "type": "paragraph",
+            "title": "Voir l'essence",
+            "content": "Les yeux des Nephilims daimahs leur permettent de voir l'âme des êtres vivants, ce qui leur permet d'identifier instantanément les liens élémentaires ou animiques de tout être. Cette faculté est considérée comme un pouvoir inné de détection, auquel un individu peut résister naturellement s'il réussit un test de RMys de difficulté 140."
           },
           {
             "type": "paragraph",
             "title": "Âme immortelle",
-            "content": ""
+            "content": "Le conflit entre les souvenirs de l'âme Nephilim et l'apprentissage du personnage provoque un malus de -2 points à l'expérience accordée par le Meneur de Jeu à la fin de chaque séance."
           }
         ]
       }
     ]
   },
   {
-    "title": "Duk'zarist (TODO)",
+    "title": "Duk'zarist",
     "type": "panel",
     "content": [
       {
@@ -433,7 +719,27 @@
       },
       {
         "type": "paragraph",
-        "content": "TODO"
+        "content": "Les Duk'zarists sont les fils des ténèbres, et très probablement la race la plus puissante qui ait marché sur Gaïa. Leur essence est liée à l'obscurité et, à niveau moindre, au feu. Physiquement, ils ressemblent beaucoup aux humains, mais leur peau est blanche comme le marbre, leurs oreilles pointues et leurs yeux aussi rouges que des tisons ardents. Leurs traits sont toujours d'une beauté surprenante selon nos canons, avec des traits fins et élégants. Leurs corps quasiment parfaits ne connaissent aucun problème de surpoids ni de difformité. Plus grands que nous, les hommes mesurent en moyenne deux mètres et les femmes dépassent souvent le mètre soixante-dix. Leur cheveulure ne peut revêtir que deux tons : soit un noir de jais, soit un blanc cendreux."
+      },
+      {
+        "type": "paragraph",
+        "content": "Leur cycle vital est très étrange. Dotés d'une exceptionnelle longévité, ils peuvent vivre de cinq cents à mille ans. Cependant, ils mûrissent à la même vitesse que les humans jusqu'à l'adolescence (entre quinze et dix-huit ans), et là, leur développement stoppe pour des siècles entiers. Par conséquent tous les Duk'zarists adultes semblent avoir entre dix-huit et trente-cinq ans. Quand ils s'approchent de la fin, leur peau commence à se déliter comme de l'argile sèche pour finalement, se désagréger en cendres soufflées par le vent."
+      },
+      {
+        "type": "paragraph",
+        "content": "Le nombre de Duk'zarists est très faible car ils ont un très faible taux de fécondité. En effet, les grossesses durent très longtemps et se révèlent terriblement douloureuses pour les femmes. De plus, malgré leur une résistance, une Duk'zarist sur dix meurt en couches, ce qui explique pourquoi peu de couples désirent se risquer à créer une descendance."
+      },
+      {
+        "type": "paragraph",
+        "content": "La personnalité des Duk'zarist est complexe. Ces individus orgueilleux valorisent la force et la connaissance au plus haut point, mais détestent aussi la violence irraisonnée. Toute compétition les attire fortement ainsi que la possibilité de se mesurer à des rivaux de leur niveau. Ils ne tiennent compte que des personnes qui font preuve de savoir ou depuissance, à l'exception des membres de leur propre race. Leur capacité d'aimer ou de haïr est impressionnante ; ils n'oublient jamais un affront mais mourraient sans regret pour guelqu'un qu'ils ont réellement à cœur. Leur société s'avère extrêmement compliquée, à leur image. Très individualistes, ils ont pourtant un fort sentiment d'appartenance à un groupe, qui trouve ses racines dans leur orgueil racial et leur compétitivité. Ils accordent à la famille et aux liens du sang une grande importance, mais agissent normalement de façon individualiste. Les couplesse se mettent ensemble pour la vie, mais les époux passent souvent de longues périodes séparés, à s'occuper de leurs affaires personnelles. La culture duk'zarist ne fait aucune différence entre les sexes, mais se révèle très élitiste vis-à-vis de tout ce qui concerne la puissance individuelle. Ceux qui se détachent du fait d'une de leurs capacités deviennent généralement nobles et témoignent d'une certaine influence sur les autres. Tous suivent la philosophie de Gaira, bien que plus en tant qu'idéal que comme religion structurée."
+      },
+      {
+        "type": "paragraph",
+        "content": "La race des Duk'zarists dispose de fortes capacités surnaturelles. En règle générale, les hommes possèdent des aptitudes pyrokinétiques et les femmes des dons pour la magie, mais ce n'est pas fixe ; les rôles s'inversent parfois, ou des Duk'zarists naissent dotés des deux pouvoirs. Dès leur plus jeune âge, ils s'entraînent intensément au combat et dans d'autres arts. Traditionnellement, les hommes maîtrisent le combat et la puissance intérieure du Ki, tandis que les femmes suivent des disciplines plus mystiques."
+      },
+      {
+        "type": "paragraph",
+        "content": "Étant donné leur incroyable vulnérabilité au métal, les Duk'zarists basent toute leur civilisation sur le travail du bois, en particulier celui des arbres de Ghestal. Les maîtres artisans l'utilisent pour les armes tandis que les feuilles noires, nommées Ramalen, servent à créer des toiles obscures équivalent à de solides armures. Les cités duk'zarists sont constituées de marbre et de cristal noir, et les plus grandes entourent les immenses arbres de Ghestal."
       },
       {
         "title": "Capacités",
@@ -441,29 +747,91 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Perfection physique et spirituelle",
+            "content": "Les Duk'zarists sont quasiment parfaits, autant physiquement que spirituellement. Ils bénéficient donc d'un bonus surnaturel de +1 à toutes leurs caractéristiques (FOR, DEX, AGI, CON, INT, POU, VOL, PER). Cependant, ils ne peuvent choisir aucun des désavantages suivants pour la même raison : Membre atrophié, Mauvaise santé, Vulnérabilité aux poisons, Myopie, Débilité physique, Grave maladie, Aveugle, Sourd, Muet."
+          },
+          {
+            "type": "paragraph",
+            "title": "Yeux de feu",
+            "content": "Les yeux des Duk'zarists ont la capacité de voir dans l'obscurité, ce qui leur permet de ne subir que la moitié des malus attribuables à cette condition. Ils peuvent aussi détecter les sources de chaleur."
+          },
+          {
+            "type": "paragraph",
+            "title": "Actions surhumaines",
+            "content": "Par nature, un Duk'zarist peut atteindre la difficulté Surhumaine lors des tests."
+          },
+          {
+            "type": "paragraph",
+            "title": "Ressentir l'Obscurité et la Lumière",
+            "content": "Les Duk'zarists ressentent la présence de tout autre Duk'zarist ou sSylvain qui se trouve en leur présence, bien qu'ils ne seront pas capables de l'identifier comme tel. Ils perçoivent de façon surnaturelle la présence obscure ou lumineuse émise par leurs âmes. Cette faculté ne leur permet pas de reconnaitre un individu dissimulé par un sort ou grâce à un pouvoir du Ki."
+          },
+          {
+            "type": "paragraph",
+            "title": "Lien envers l'obscurité et le feu",
+            "content": "Les Duk'zarists ressentent un lien puissant envers les ténèbres et le feu. Bien qu'ils n'arrivent pas au niveau des élémentaires, puisqu'ils ne sont pas affectés par les sorts ou les capacités qui prennent pour cibles ces créatures, ils ont un lien puissant avec ces deux éléments, qui leur accorde un bonus spécial de +10 à leurs tests contre eux. Un Duk'zarist ne peut choisir l'avantage Prédilection élémentaire (Lumière)."
+          },
+          {
+            "type": "paragraph",
+            "title": "Résistances exceptionnelles",
+            "content": "Les Duk'zarists bénéficient de Résistances élevées, légèrement différentes chez les hommes et les femmes. Les premiers rajoutent un bonus de+15 à toutes leurs Résistances (RMys, RPsy, RPoi et RMal) sauf à la Physique qui obtient +20 ; les femmes rajoutent un bonus de +15 à toutes leurs Résistances (RPhy, RPsy, RPoi et RMal) sauf à la RMys où elles obtiennent +20."
+          },
+          {
+            "type": "paragraph",
+            "title": "Résistance extrême à la Mort",
+            "content": "Non seulement les Duk'zarists réussissent automatiquement les tests pour sortir de l'état entre la vie et la mort, mais ils restent conscients même quand leurs Points de Vie sont négatifs, quoiqu'en subissant un malus de -40 à toutes leurs actions."
+          },
+          {
+            "type": "paragraph",
+            "title": "Guérison rapide",
+            "content": "Les corps des Duk'zarists guérissent à une vitesse incroyable. Ils rajoutent 5 points à leur Régénération."
+          },
+          {
+            "type": "paragraph",
+            "title": "Besoins limités",
+            "content": "Les Duk'zarists ont besoin de moins de repos que les autres races ; leurs besoins en sommeil et nourriture sont réduits au septième des besoins d'un humain normal."
+          },
+          {
+            "type": "paragraph",
+            "title": "Obligation surnaturelle",
+            "content": "Un Duk'zarist doit obligatoirement utiliser une part de ses Points de Création pour obtenir l'accès à une discipline psychique ou au Don mystique. Il doit au moins choisir un de ces deux avantages, et rien ne l'empêche de prendre les deux. S'il acquiert des pouvoirs psychiques, sa dévotion au feu le force à choisir la Pyrokinésie comme première discipline."
+          },
+          {
+            "type": "paragraph",
+            "title": "Allergie au métal",
+            "content": "Le fer et tous ses alliages représententun poison mortel pour les Duk'zarists. En cas de contact entre leur peau et un objet contenant du fer, ils doivent réussir un test de Résistance à l'aide de leur seule Présence, contre un difficulté de 40. Si le métal est du fer pur, la difficulté passe à 60. Quand la Présence d'un Duk'zarist est de vingt points supérieure à la difficulté requise, il ne lui est plus nécessaire d'effectuer ce genre de test. Les Duk'zarists qui échouent à ce test disparaissent complètement, ne laissant derrière eux que leurs possessions et leurs vêtements, vides."
           },
           {
             "type": "paragraph",
             "title": "Base de Natura",
-            "content": ""
+            "content": "5"
           },
           {
             "type": "paragraph",
             "title": "Modificateur de niveau",
-            "content": ""
+            "content": "+3"
           }
         ]
       },
       {
         "type": "paragraph",
         "title": "Nephilim",
-        "content": ""
+        "content": "On appelle aussi les Nephilims duk'zarists les âmes des ténèbres, car ils appartenaient à une race par nature liée à cet élément. Bien qu'ils faisaient partie d'une des ethnies dominantes, ils sont aujourd'hui très peu nombreux, car ils étaient déjà rares autrefois. Comme les elfes, leur essence est évidemment surnaturelle et ils ont des liens puissants avec la magie, en particulier les femmes."
       },
       {
         "type": "paragraph",
-        "content": ""
+        "content": "Les Nephilims duk'zarists sont toujours très beaux. Plutôt grands, les hommes mesurent au moins un mètre quatre-vingt et les femmes un mètre soixante dix. Leur peau paraît parfaite et ils ne grossissent jamais. Ils ont la peau pâle et leurs cheveux très sombres ou très clairs (noir ou gris cendre, par exemple). Leurs yeux clairs se teintent légèrement de rouge quand ils reflètent la lumière. Ils ne vivent pas plus longtemps que les humains normaux, mais conservent par contre toutes leurs capacités physiques bien après quatre-vingt dix ans, à partir de quand ils commencent à vieillir très rapidement."
+      },
+      {
+        "type": "paragraph",
+        "content": "L'âme duk'zarist se reflète beaucoup plus dans leur personnalité que dans le cas des autres Nephilims. Inconsciemment, ils continuent à suivre le code de conduite qu'ils suivaient jadis. Ils font preuve d'une compétivité extrême quel que soit le domaine, autant dans les champs intellectuels que physiques, mais avec une préférence pour ces derniers. Très attirés par la force, ils admirent habituellement tout individu qui peut être considéré comme puissant de par ses capacités personnelles. Mais cette admiration les incite seulement à le surpasser. Il leur est très difficile d'admettre qu'ils ne savent pas faire quelque chose et, avant de demander de l'aide, ils doivent se trouver dans une situation desespérée. Bien que la solitude ne leur plaise pas, ils deviennent individualistes au moment d'agir. Il se dévouent à ceux qu'ils apprécient réellement mais ne montrent jamais leurs émotions. Comploteurs et manipulateurs, mais aussi très impatients, ce qui provoque chez eux d'énormes conflits au moment de se décider entre une action immédiate ou l'attente d'un moment plus propice."
+      },
+      {
+        "type": "paragraph",
+        "content": "Comme les Sylvains, les rêves de leur existence antérieure les assaillent régulièrement et, bien qu'ils ne les perturbent pas de la même manière que ces derniers, ils provoquent chez eux quelques inquiétudes."
+      },
+      {
+        "type": "paragraph",
+        "content": "La puissance inhabituelle des âmes des Duk'zarists se manifeste fortement dans leur corps humain, leur conférant des facultés autant physiques que spirituelles."
       },
       {
         "title": "Capacités des Nephilims",
@@ -471,13 +839,58 @@
         "content": [
           {
             "type": "paragraph",
-            "title": "",
-            "content": ""
+            "title": "Résistances exceptionnelles",
+            "content": "L'âme des Duk'zarists influence fortement le développement du corps humain et augmente énormément toutes ses Résistances. Cela agit de façon différente chez les hommes et les femmes. Les âmes masculines appliquent un bonus de +15 à toutes leurs Résistances (RMys, RPsy, RPoi et RMal) sauf en Résistance physique où ils bénéficient d'un +20. Quant aux femmes, elles ajoutent +15 à toutes leurs Résistances (RPhy, RPsy. RPoi et RMal) sauf en Résistance mystique, où elles rajoutent +20."
+          },
+          {
+            "type": "paragraph",
+            "title": "Penchant vers l'Obscurité",
+            "content": "Les âmes des Duk'zarists ont un déséquilibre vers l'Obscurité. Cette faculté leur procure une Résistance spéciale de +10 contre tous les effets basés sur cet élément. Par contre. cette affinité les empêche de choisir l'avantage Prédilection élémentaire (Lumière)."
+          },
+          {
+            "type": "paragraph",
+            "title": "Résistance à la mort",
+            "content": "Quand ils entrent dans l'état entre la vie et la mort, les Nephilims duk'zarists n'ont pas besoin d'effectuer le test de Résistance physique pour survivre, car leur âme est si liée au corps qu'ils réussissent automatiquement ce test."
+          },
+          {
+            "type": "paragraph",
+            "title": "Guérison rapide",
+            "content": "Les Nephilims duk'zarists ont aussi la capacité de récupérer rapidement de toute blessure physique qu'ils ont subie, ce qui leur permet de gagner un point en Régénération."
+          },
+          {
+            "type": "paragraph",
+            "title": "Besoins limités",
+            "content": "Ces Nephilims n'ont pas besoin d'autant de repos que les autres racesn ce qui leur permet de réduire leur temps de sommeil et leurs besoins de nourriture. Leurs besoins s'élèvent seulement au tiers des besoins d'un humain normal, sans qu'ils ne souffrent de manque."
+          },
+          {
+            "type": "paragraph",
+            "title": "Ressentir l'Obscurité et la Lumière",
+            "content": "Les Nephilims duk'zarists ressentent la présence de tout autre Nephilim duk'zarist ou sylvain qui se trouve en leur présence, bien qu'ils ne seront pas capables de l'identifier comme tel. Ils perçoivent de façon surnaturelle la présence obscure ou lumineuse émise par leurs âmes. Cette faculté ne leur permet pas de reconnaitre un individu dissimulé par un sort ou grâce à un pouvoir du Ki."
+          },
+          {
+            "type": "paragraph",
+            "title": "Vision nocturne",
+            "content": "Les yeux des Nephilims duk'zarists sont bien plus habitués à l'obscurité que ceux des êtres humains. En termes de jeu, cette faculté n'est pas aussi developpée que celle acquise en investissant un Point de Création, mais elle permet de réduire de moitié tous les malus que subit le Nephilim à cause d'une obscurité naturelle."
+          },
+          {
+            "type": "paragraph",
+            "title": "Dévotion au feu",
+            "content": "Les pouvoirs psychiques des Duk'zarists sont naturellement liés au feu. S'il développe ses capacités mentales, il a obligation de développer la Pyrokinésie comme première discipline."
+          },
+          {
+            "type": "paragraph",
+            "title": "Corps parfait",
+            "content": "L'essence des Duk'zarists empêche leur corps de développer des malformations naturelles. Le Nephilim ne peut choisir aucun des désavantages suivants : Aveugle, Debilité physique, Grave maladie, Mauvaise santé, Membre atrophié, Muet, Myopie, Sourd ou Vulnérabilite aux poisons."
+          },
+          {
+            "type": "paragraph",
+            "title": "Allergie au métal",
+            "content": "La seule faiblesse des Duk'zarists, de leur vivant, était leur vulnérabilité aux métaux, tout spécialement au fer et aux alliages qui le contiennent. Un Duk'zarist pouvait mourir par simple contact avec le métal ; les épées leur faisaient bien plus de mal par le matériau qui les constituait que par les dégâts qu'elles infligeaient. Les Nephilims ont hérité de façon très limitée de cette allergie, qui les affecte aujourd'hui. Si un métal contenant du fer entre au contact de la peau d'un Nephilim duk'zarist, il doit réussir un test de Résistance avec sa seule Présence contre une difficulté de 60, sous peine de subir une réaction allergique provoquant un malus égal à la marge d'échec du test. Si le métal est du fer pur, la difficulté du test est de 80. Ces malus disparaissent au rythme de 10 points par minute. Un Nephilim duk'zarist peut utiliser des vêtements ou des gants pour éviter ces effets secondaires."
           },
           {
             "type": "paragraph",
             "title": "Âme immortelle",
-            "content": ""
+            "content": "Tout comme l'âme duk'zarist est plus présente dans leur corps que celle des autres Nephilims, la lutte entre ce qu'ils apprennent et leurs souvenirs du passé est très forte en eux. Par conséquent, ils subissent un malus de -5 points à l'expérience accordée par le Meneur de Jeu à la fin de chaque séance."
           }
         ]
       }
@@ -514,7 +927,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Même si au fil des siècles les Devas accumulèrent un pouvoir hors du commun, une division interne faillit provoquer la destruction de leur race lorsqu'une lamentable guerre civile en extermina plus de quatre-vingt-dix pour cent. Ce conflit, qui fit date dans l'histoire en étant le premier où les Aeons furent employés comme armes, marqua le déclino de leur empire et de leur civilisation."
+        "content": "Même si au fil des siècles les Devas accumulèrent un pouvoir hors du commun, une division interne faillit provoquer la destruction de leur race lorsqu'une lamentable guerre civile en extermina plus de quatre-vingt-dix pour cent. Ce conflit, qui fit date dans l'histoire en étant le premier où les Aeons furent employés comme armes, marqua le déclin de leur empire et de leur civilisation."
       },
       {
         "title": "Capacités",
@@ -543,7 +956,7 @@
           {
             "type": "paragraph",
             "title": "Liens Existentiels",
-            "content": "Les Devas possèdent une affinité naturelle envers les liens spirituels employés dans les compétences d'invocation. Ils appliquent donc un bonus de +10 à tous les test de Convoquer, Domnier, Lier ou Révoquer."
+            "content": "Les Devas possèdent une affinité naturelle envers les liens spirituels employés dans les compétences d'invocation. Ils appliquent donc un bonus de +10 à tous les test de Convoquer, Dominer, Lier ou Révoquer."
           },
           {
             "type": "paragraph",
@@ -575,7 +988,7 @@
       {
         "type": "paragraph",
         "title": "Nephilim",
-        "content": "Il existe très peu de Nephilim Devas sur Gaia, car l'extermination de leur race eut lieu bien avant la formation de La Barrière. Il y en a d'ailleurs même moins que de Duk'zarist, ce qui fait d'eux les Âmes perdues les plus rares au monde."
+        "content": "Il existe très peu de Nephilim Devas sur Gaïa, car l'extermination de leur race eut lieu bien avant la formation de La Barrière. Il y en a d'ailleurs même moins que de Duk'zarist, ce qui fait d'eux les Âmes perdues les plus rares au monde."
       },
       {
         "type": "paragraph",
@@ -600,7 +1013,7 @@
           {
             "type": "paragraph",
             "title": "Esprit Complexe",
-            "content": "Semblable à la compétence du même nom des Devas purs, sauf que le bonus est de +10 en RMys et en RPsy au lieu de +15."
+            "content": "Semblable à la compétence du même nom des Devas purs, sauf que le bonus est de +10 en RMys et en RPsy lorsque quelqu'un essaye de lire leur esprit ou de provoquer non naturellement un sentiment ou une émotion."
           },
           {
             "type": "paragraph",
@@ -610,7 +1023,7 @@
           {
             "type": "paragraph",
             "title": "Liens Existentiels",
-            "content": "Cette capacité fonctionne exactement pareil que chez les Devas, sauf que le bonus s'applique uniquement à Convoquer et Révoquer."
+            "content": "Cette capacité fonctionne exactement pareil que chez les Devas, sauf que le bonus de +10 s'applique uniquement à Convoquer et Révoquer."
           },
           {
             "type": "paragraph",
@@ -637,7 +1050,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Il est très probable que la race méconnue appelée Vetala soit l'origine de bon nombre des mythes vampiriques existant encore sur Gaia. Ce sont les « enfants de la nuit » ceux qui vivent dans l'ombre du monde."
+        "content": "Il est très probable que la race méconnue appelée Vetala soit l'origine de bon nombre des mythes vampiriques existant encore sur Gaïa. Ce sont les « enfants de la nuit » ceux qui vivent dans l'ombre du monde."
       },
       {
         "type": "paragraph",
@@ -653,7 +1066,7 @@
       },
       {
         "type": "paragraph",
-        "content": "De manière très semblable aux D'anjayni, les Vetala ont existé isolés de la plupart des évènements de Gaia. Bien qu'ayant récolté un pouvoir considérâble et possédant une riche culture, leur faible nombre ainsi que leur grande faiblesse face à la lumière les ont empêché de devenir l'une des races dominantes, ce pourquoi ils avaient un certain potentiel. Leur société était clairement hiérarchisée, avec quelques maisons nobles dominant leurs cités-états qui étaient perpétuellement recouvertes par des moyens surnaturels de nuages d'orage bloquant la lumière du soleil. Ils faisajent un usage extrême de l'esclavage, obligeant les membres des autres races à leur servir de domestiques ou de source d'alimentation."
+        "content": "De manière très semblable aux D'anjayni, les Vetala ont existé isolés de la plupart des évènements de Gaïa. Bien qu'ayant récolté un pouvoir considérâble et possédant une riche culture, leur faible nombre ainsi que leur grande faiblesse face à la lumière les ont empêché de devenir l'une des races dominantes, ce pourquoi ils avaient un certain potentiel. Leur société était clairement hiérarchisée, avec quelques maisons nobles dominant leurs cités-états qui étaient perpétuellement recouvertes par des moyens surnaturels de nuages d'orage bloquant la lumière du soleil. Ils faisajent un usage extrême de l'esclavage, obligeant les membres des autres races à leur servir de domestiques ou de source d'alimentation."
       },
       {
         "type": "paragraph",
@@ -718,7 +1131,7 @@
       {
         "type": "paragraph",
         "title": "Nephilim",
-        "content": "Même s'il est vrai que les Vetala ne furent jamais très nombreux, il y a pourtant une quantité considérable de Nephilims sur Gaia, surtout au Moth et dans les terres obscures."
+        "content": "Même s'il est vrai que les Vetala ne furent jamais très nombreux, il y a pourtant une quantité considérable de Nephilims sur Gaïa, surtout au Moth et dans les terres obscures."
       },
       {
         "type": "paragraph",
@@ -747,7 +1160,7 @@
           {
             "type": "paragraph",
             "title": "Endurance aux Dégâts Critiques",
-            "content": "Comme chez les purs sangs, le corps des Nephilims est incroyablement résistant aux dommages. S'ils sont frappés sur un point vulnérable, ils peuvent ajouter un bonus de +50 à tout test de RPhy pour contrer les effets du critique."
+            "content": "Comme chez les sangs purs, le corps des Nephilims est incroyablement résistant aux dommages. S'ils sont frappés sur un point vulnérable, ils peuvent ajouter un bonus de +50 à tout test de RPhy pour contrer les effets du critique."
           },
           {
             "type": "paragraph",
@@ -757,7 +1170,7 @@
           {
             "type": "paragraph",
             "title": "Guérison Rapide",
-            "content": "Semblable à celle des Vetala purs, sauf qu'ils n'augmentent que d'un point leur niveau de régénération naturelle."
+            "content": "Semblable à celle des Vetala purs, sauf qu'ils n'augmentent que d'un point leur niveau de régénération naturelle. S'ils consomment assez de sang chaque jour, le corps deu Nephilim guérit à une vitesse incroyable."
           },
           {
             "type": "paragraph",
@@ -870,7 +1283,7 @@
       },
       {
         "type": "paragraph",
-        "content": "Les Turaks sont une des races minoritaires de Gaia qui, en dépit de leurs considérables capacités naturelles, n'ont pas été assez nombreux pour atteindre la suprématie raciale qu'ils auraient méritée."
+        "content": "Les Turaks sont une des races minoritaires de Gaïa qui, en dépit de leurs considérables capacités naturelles, n'ont pas été assez nombreux pour atteindre la suprématie raciale qu'ils auraient méritée."
       },
       {
         "type": "paragraph",
@@ -1025,7 +1438,7 @@
           {
             "type": "paragraph",
             "title": "Âme immortelle",
-            "content": "Le conflit entre les souvenirs de l'âme nephilim et l'apprentissage du personnage provoque un malus de -3 points à l'expérience accordée par le Meneur de Jeu à la fin de chaque séance."
+            "content": "Le conflit entre les souvenirs de l'âme Nephilim et l'apprentissage du personnage provoque un malus de -3 points à l'expérience accordée par le Meneur de Jeu à la fin de chaque séance."
           }
         ]
       }
