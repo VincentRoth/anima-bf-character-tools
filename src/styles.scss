@@ -42,6 +42,11 @@ app-root {
   flex-wrap: wrap;
 }
 
+.flex-center-start {
+  align-content: center;
+  justify-content: flex-start;
+}
+
 .flex-center {
   align-content: center;
   justify-content: center;

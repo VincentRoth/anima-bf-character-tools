@@ -1,3 +1,11 @@
+:host {
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+}
+
 button {
     margin: 12px 6px 0;
     min-width: 103px;
@@ -15,6 +23,10 @@ p {
 }
 
 #dice-value {
-    min-height: 149px;
+    min-height: 154px;
     font-size: 128px;
+}
+
+#roll-history {
+    min-height: 190px;
 }
