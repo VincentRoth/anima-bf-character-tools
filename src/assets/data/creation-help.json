@@ -308,6 +308,11 @@
         "type": "paragraph",
         "title": "Désavantages psychiques",
         "content": "Ces désavantages ne peuvent être choisis que si le personnage possède déjà l'avantage Accès à une discipline psychique ou Accès à toute les disciplines psychiques. Les Points de Création obtenus ne peuvent être utilisés que pour acquérir des avantages psychiques."
+      },
+      {
+        "type": "paragraph",
+        "title": "Désavantages de passé",
+        "content": "Les Points de Créations obtenus via ces désavantages ne peuvent être utilisés que pour acquérir des avantage de passé."
       }
     ]
   }
