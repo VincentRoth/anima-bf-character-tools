@@ -224,6 +224,11 @@
           {
             "type": "table",
             "reference": "core-exxet#3"
+          },
+          {
+            "type": "paragraph",
+            "title": "Taille",
+            "content": "Il est possible que la Taille du personnage soit inférieure à 9 ; la base de Dégât à mains nues reste de 10, mais les Armes naturelles ont une base de Dégâts de 30 ; la base d'Initiative est de 30 mais leur Mouvement souffre d'un malus de -2. De même, pour certaines races, la Taille peut dépasse 22. Dans ce cas la base de Dégâts à mains nues passe de 10 à 20, si la race possède des Armes naturelles, leur base de Dégâts passe de 40 à 60. La base d'Initiative est quant à elle diminuée à 10 au lieu de 20. Il n'est pas possible de bénéficier des autres catégories de Taille. Dans tout les cas, les effets d'une Taille inhabituelle, c'est-à-dire d'une Taille quine soit pas comprise entre 9 et 22 inclus, doivent être interprétés le Meneur de Jeu. Il pourra se servir du Tableau 85 comme référence ou appliquer les effets d'une Taille moyenne."
           }
         ]
       }
@@ -268,7 +273,149 @@
     ]
   },
   {
-    "title": "Avantages et Désavantages",
+    "title": "Capacités physiques",
+    "type": "panel",
+    "content": [
+      {
+        "title": "Indice de Poids",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Cette capacité indique les poids que peut lever un personnage. La Base de l'Indice de Poids est égale à la valeur de Force."
+          },
+          {
+            "type": "paragraph",
+            "content": "La colonne Poids naturel indique la charge que le personnage peut porter ou soulever au dessus de sa tête sans problème. Au dela, il diminue son Mouvement de 2 et perd un point de Fatigue toutes les demi-heures. S'il atteint sa Charge maximale, son Mouvement est réduit de 5 et il perd un point de Fatigue par round."
+          },
+          {
+            "type": "paragraph",
+            "content": "Pour que l'Indice de Poids dépasse 10, il faut avoir la capacité de réaliser des actions Surhumaines ou Zen. Un Indice de Poids de 20 permet de lever n'importe quel poids, à partir du moment où un point d'appui est disponible."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#26"
+          }
+        ]
+      },
+      {
+        "title": "Initiative",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "L'Initiative est utilisée pour déterminer l'ordre du déroulement des actions lors d'une scène, à fortiori de combat ; plus grand est le score d'Initiative, plus tôt agit le personnage. Le score d'Intiative se calcul  avec un D100 plus le Total d'Initiative."
+          },
+          {
+            "type": "paragraph",
+            "content": "La Base d'Initiative d'un personnage de Taille moyenne (9 à 22) est de 20. Les modificateurs de Dextérité et d'Agilité sont appliqués par dessus, ainsi que le malus inhérent à l'armure portée et la Vitesse de l'arme. De plus, pour chaque niveau, la classe du personnage apportera un bonus cumulatif supplémentaire à l'Initiative."
+          },
+          {
+            "type": "paragraph",
+            "content": "La Vitesse de l'arme dépend de ses caractéristiques, mais si aucune arme n'est utilisée, le Vitesse est de +20."
+          }
+        ]
+      },
+      {
+        "title": "Mouvement",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Le Mouvement indique la vitesse à laquelle peut se déplacer un personnage. La Base du Mouvement est égale à la valeur d'Agilité."
+          },
+          {
+            "type": "paragraph",
+            "content": "Dans des conditions peu favorables, comme un terrain abrupt ou montagneux, le Mouvement peut être diminué d'un à trois points, selon ce que décide le Meneur de Jeu. Cette capacité est modifiée par la compétence secondaire d'Athlétisme."
+          },
+          {
+            "type": "paragraph",
+            "content": "Pour que le Mouvement dépasse 10, il faut avoir la capacité de réaliser des actions Surhumaines ou Zen. Les entités qui se déplacent à un Mouvement de 20  possèdent une vitesse incalculable : elles se retrouvent en un seul round à l'endroit où elles veulent être, quelle soit la distance, pour peu qu'il y ait un accès."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#25"
+          },
+          {
+            "type": "paragraph",
+            "title": "Saut",
+            "content": "La capacité de saut d'un individu dépend elle aussi de son Mouvement. Avec l'élan adéquat, un personnage peut parcourir, en saut horizontal, le cinquième de sa vitesse de déplacement, arrondi à l'inférieur. Cette capacité est modifiée par la compétence Saut."
+          }
+        ]
+      },
+      {
+        "title": "Points de Vie (PV)",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Les Points de Vie d'un personnage indiquent sa résistance au coups et la quantité de dégâts qu'il peut subir avant de recevoir un Critique. Quand un personnage n'a plus de Points de Vie, il meurt."
+          },
+          {
+            "type": "paragraph",
+            "content": "La Base des Points de Vie dépend de la Constitution."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#4"
+          },
+          {
+            "type": "paragraph",
+            "content": "Un personnage gagne des PV pour chaque niveau, selon sa classe. Il peut aussi augmenter son nombre de PV en investissant des Points de Formation en achetant des Multiplicateurs de Vie. Pour chaque Multiplicateur ainsi acquis, il ajoute sa valeur de Constitution à son total de PV."
+          },
+          {
+            "type": "paragraph",
+            "content": "Si sa Constitution augmente, ses PV augmente aussi, que ce soit la Base et de par les Mutiplicateurs achetés. Le calcul des PV est alors de nouveau fait."
+          }
+        ]
+      },
+      {
+        "title": "Fatigue",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "La Fatigue est liées aux actions physiques que réalise un personngae. Quand quelqu'un fait des efforts physiques importants, il s'épuise peu à peu. La Base de cette capacité est égale à la Constitution."
+          },
+          {
+            "type": "paragraph",
+            "content": "Un personnage perd des points de Fatigue au rythme d'un par minute d'efforts difficiles, ou par deux heures d'efforts légers."
+          },
+          {
+            "type": "paragraph",
+            "content": "Si un personnage le désire, il peut volontairement dépenser des points de Fatigue pour améliorer ses actions physiques. Chaque point de Fatigue dépensé pour une action accorde un bonus de +15 au test. Un maximum de 2 points de Fatigue peuvent être dépensé par round, pour un bonus de +30 à une même action ou de +15 à deux actions distinctes. La dépense de fatigue doit être déclarée avant de lancer les dés et, pour un test opposé, avant que l'adversaire n'effectue son jet."
+          },
+          {
+            "type": "paragraph",
+            "content": "La dépense de Fatigue ne permet d'améliorer que les tests de compétence secondaire dépendant de la Force ou de l'Agilité, ainsi que les compétences martiales d'Attaque, Parade et Esquive (basé sur la Dextérité et l'Agilité) ; ainsi que les tests de caractéristique de Force, de Dextérité et d'Agilité."
+          },
+          {
+            "type": "paragraph",
+            "content": "La dépense de Fatigue peut aussi être utilisée pour les tests de caractéristique de Force, de Dextérité et d'Agilité. Chaque point dépensé confère un bonus de +1 au test."
+          },
+          {
+            "type": "paragraph",
+            "content": "Enfin, la dépense de Fatigue permet d'augmenter certaines capacités surnaturelles du personnage. Chaque point dépensé augmente l'AMR de +15 ou toutes les Accumulation de Ki de +1 pendant 1 round. L'augmentation d'AMR affecte aussi la magie innée."
+          },
+          {
+            "type": "paragraph",
+            "content": "La Fatigue ne peut pas descendre en dessous de 0. Elle est récupérée au rythme d'un point par trente minutes de repos complet ou par heure sans efforts."
+          },
+          {
+            "type": "paragraph",
+            "title": "Epuisement",
+            "content": "Si la Fatigue d'un personnage est très basse, il commence à souffrir des effets de l'épuisement. A partir de 4 et en dessous, la fatigue physique et mentale inflige un malus à toutes les actions réalisées. Si le Total naturel de Fatigue d'un personnage est inférieur à 5, il ne subit pas ce malus tant qu'il a une valeur actuelle de Fatigue égale à son maximum."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#27"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Avantages, Désavantages et Points de Création (PC)",
     "type": "panel",
     "content": [
       {

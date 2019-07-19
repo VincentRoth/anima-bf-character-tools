@@ -198,8 +198,56 @@
       ]
     },
     {
+      "id": 8,
+      "title": "Athlétisme",
+      "headers": ["Valeur", "Mouvement", "Course", "Mouvement maximum"],
+      "rows": [
+        ["-", "", "1 minute", "1 round"],
+        [40, "", "5 minutes", "2 rounds"],
+        [80, "", "10 minutes", "5 rounds"],
+        [120, "", "20 minutes", "10 rounds"],
+        [140, "", "40 minutes", "15 rounds"],
+        [180, "+1", "1 heure", "1 minute"],
+        [240, "+1", "2 heures", "2 minutes"],
+        [280, "+2", "5 heures", "3 minutes"],
+        [320, "+2", "1 jour", "5 minutes"]
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Natation",
+      "headers": ["Valeur", "Difficulté", "Mouvement"],
+      "rows": [
+        ["-", "", -8],
+        [40, "Facile", -5],
+        [80, "Moyenne", -4],
+        [120, "Difficile", -3],
+        [140, "Très Difficile", -3],
+        [180, "Absurde", -2],
+        [240, "Quasiment Impossible", -2],
+        [280, "Impossible", -1],
+        [320, "Surhumaine", 0]
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Saut",
+      "headers": ["Valeur", "Difficulté", "Mouvement"],
+      "rows": [
+        ["-", "", "-1"],
+        [40, "Facile", "+0"],
+        [80, "Moyenne", "+0"],
+        [120, "Difficile", "+1"],
+        [140, "Très Difficile", "+1"],
+        [180, "Absurde", "+2"],
+        [240, "Quasiment Impossible", "+2"],
+        [280, "Impossible", "+4"],
+        [320, "Surhumaine", "+5"]
+      ]
+    },
+    {
       "id": 0,
-      "title": "",
+      "title": "//TODO",
       "headers": ["", ""],
       "rows": []
     },
@@ -442,7 +490,7 @@
     },
     {
       "id": 0,
-      "title": "",
+      "title": "//TODO",
       "headers": ["", ""],
       "rows": []
     },
@@ -776,7 +824,7 @@
     },
     {
       "id": 0,
-      "title": "",
+      "title": "//TODO",
       "headers": ["", ""],
       "rows": []
     },
@@ -806,7 +854,7 @@
     },
     {
       "id": 0,
-      "title": "",
+      "title": "//TODO",
       "headers": ["", ""],
       "rows": []
     }

@@ -218,7 +218,8 @@
   {
     "name": "Taille inhabituelle",
     "description": "Le personnage a une taille ne correspondant pas à sa Froce et sa Constitution, ce qui permet à une personne dont les caractéristiques feraient un véritable colosse musculeux d'avoir un gabarit normal, ou inversement.",
-    "effect": "Le personnage peut augmenter ou diminuer de cinqu points maximum sa Taille à la création de personnage.",
+    "effect": "Le personnage peut augmenter ou diminuer de cinq points maximum sa Taille à la création de personnage.",
+    "note": "Il n'est pas possible avec cet avantage d'obtenir une Taille inférieure à 9 ou supérieure à 22, c'est-à-dire une Taille autre que moyenne.",
     "costs": [1],
     "source": "Core p.20",
     "types": ["Avantage Général", "Physique"]

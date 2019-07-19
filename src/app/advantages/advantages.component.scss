@@ -1,18 +1,26 @@
 :host {
-  display: flex;
-  flex-flow: column wrap;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 100%;
+}
+
+.filter {
+    display: flex;
+    width: 100%;
 }
 
 .advantage-card {
-  margin: 0.5rem;
-  max-width: 16rem;
-  .advantage-title {
-    font-size: 1rem;
-    margin: 0;
-  }
-  p {
-    font-size: 0.75rem;
-    text-align: justify;
-    margin: 0.4rem 0;
-  }
+    margin: 0.5rem;
+    max-width: 16rem;
+
+    .advantage-title {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    p {
+        font-size: 0.75rem;
+        text-align: justify;
+        margin: 0.4rem 0;
+    }
 }

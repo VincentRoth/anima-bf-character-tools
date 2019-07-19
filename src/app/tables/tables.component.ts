@@ -38,7 +38,11 @@ export class TablesComponent implements OnInit {
             tokens.reduce((isSelected: boolean, token: string) => {
               return (
                 isSelected &&
-                (table.title.toLocaleLowerCase().includes(token) ||
+                (table.id
+                  .toString()
+                  .toLocaleLowerCase()
+                  .includes(token) ||
+                  table.title.toLocaleLowerCase().includes(token) ||
                   table.headers.filter(header =>
                     header.toLocaleLowerCase().includes(token)
                   ).length ||

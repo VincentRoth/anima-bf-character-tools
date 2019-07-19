@@ -1,4 +1,10 @@
 :host {
-  display: flex;
-  flex-flow: column wrap;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 100%;
+}
+
+.filter {
+    display: flex;
+    width: 100%;
 }
