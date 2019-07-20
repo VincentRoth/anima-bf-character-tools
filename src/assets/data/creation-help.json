@@ -31,7 +31,7 @@
           {
             "type": "paragraph",
             "title": "Effectuer des tests",
-            "content": "Il existe deux grands types de tests : les tests de compétence et les tests de caractéristique. Les tests de compétence sont les plus fréquents et constituent la base du système. Ils sont effectués en lançant un D100. Le test de caractéristique est quant à lui réalisé avec un seul D10. Le résultat obtenu est ajouter au Total de la compétence ou à la valeur de la caractérisitque testée."
+            "content": "Il existe deux grands types de tests : les tests de compétence et les tests de caractéristique. Les tests de compétence sont les plus fréquents et constituent la base du système. Ils sont effectués en lançant un D100. Le test de caractéristique est quant à lui réalisé avec un seul D10. Le résultat obtenu est ajouter au Total de la compétence ou à la valeur de la caractéristique testée."
           },
           {
             "type": "paragraph",
@@ -362,6 +362,28 @@
         ]
       },
       {
+        "title": "Régénération",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Chaque individu à un facteur de guérison personnel qui indique son rythme de récupération des dégâts, la Régénération. Sa valeur dépend de la Constitution du personnage. La Surhumanité et le Zen ne conditionne pas le niveau de Régénération."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#23"
+          },
+          {
+            "type": "paragraph",
+            "content": "Pour que le personnage profite d'une journée de repos, il doit se faire soigner et se déplacer le moins possible. La Régénération détermine aussi le rythme de diminution des malus liés aux blessures physiques, comme les os brisé ou les contusions (provenant notamment de Critique). Pour une créature à Encaissement, le nombre de PV récupérés est multiplié par 5. En plus de la guérison, la Réénération offre plusieurs capacités innées."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#24"
+          }
+        ]
+      },
+      {
         "title": "Fatigue",
         "type": "panel",
         "content": [
@@ -401,6 +423,40 @@
           {
             "type": "table",
             "reference": "core-exxet#27"
+          }
+        ]
+      },
+      {
+        "title": "Perception étendue",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "La Perception est une caractéristique mixte dont la nature est à la fois physique et spirituelle. Par conséquent, lorsqu'elle atteint certaines valeurs extrêmement élevées, elle donne à l'individu qui la possède certaines avantages extraordinaires, équivalant aux capacités physiques que quelqu'un pourrait avoir grâce à une Force ou à une Agilité exceptionnelle."
+          },
+          {
+            "type": "table",
+            "reference": "dominus-exxet#5"
+          },
+          {
+            "type": "paragraph",
+            "title": "Immunité à la luminosité ambiante",
+            "content": "Permet au personnage d'ignorer les effets de la lumière et de l'obscurité ambiante. Ainsi, il ne peut pas être ébloui par une lumière intense et n'applique que la moitié des malus lorsqu'il se trouve dans un milieu sans lumière, comme avec l'Avantage Vision Nocturne. S'il le possède déjà, le malus disparaît complètement. Requiert l'accès à la Surhumanité."
+          },
+          {
+            "type": "paragraph",
+            "title": "Sens du milieu",
+            "content": "Le personnage est capable de sentir tout ce qu'il y a autour de lui, même sans pouvoir le voir. Au combat, s'il possède une maîtrise en Vigilance ou en Observation, tous ses adversaires non indétectables ou invisibles sont considérés comme localisés (cf. Détections spéciales au combat) lorsqu'il s'agit de déterminer les malus subis durant l'affrontement. Cette capacité est inefficace contre des adversaires dont les compétences de Clandestines sont supérieures à celles Sensorielles du personnage. Requiert l'accès au Zen."
+          },
+          {
+            "type": "paragraph",
+            "title": "Perception périphérique",
+            "content": "Le personnage réunit tout ses sens lorsqu'il perçoit son entourage, étant capable de « voir » non naturellement sur 360 degrés (il obtient une capacité équivalente au pouvoir Vision périphérique)."
+          },
+          {
+            "type": "paragraph",
+            "title": "Perception absolue",
+            "content": "Une fois ce degré atteint, le personnage ne perçoit plus le monde de manière conventionnelle, mais ressent tout comme de la matière spirituelle et une infinité de millions d'atome en mouvement. Il peut par conséquent voir à travers des corps physiques et sentir des forces surnaturelles invisibles sans malus d'aucune sorte. Étant donné qu'il est même capable de percevoir tout ce qui va se passer autour de lui avant que cela n'arrive, il obtient un bonus de +30 à toutes les actions opposées contre ses adversaires. Seules des entités ayant une Gnose plus élevée que lui ou les protections surnaturelles les plus élevées annulent les bénéfices de cette capacité. Requiert l'accès au Zen."
           }
         ]
       }
