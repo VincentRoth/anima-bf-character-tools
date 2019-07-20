@@ -2,30 +2,34 @@ $card-dimension: 10rem;
 $card-padding: 1rem;
 
 :host {
-  display: flex;
-  flex: 1 1 100%;
-  flex-flow: row wrap;
-  justify-content: center;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 a {
-  margin: 0.5rem;
+    margin: 0.5rem;
+    text-decoration: none;
 }
+
 .menu-card {
-  padding: $card-padding;
-  width: $card-dimension;
-  height: $card-dimension;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  .menu-title {
-    text-shadow: white 0 0 0.75rem, white 0 0 0.75rem, white 0 0 0.75rem,
-      white 0 0 0.5rem, white 0 0 0.5rem;
-  }
-  img {
-    height: $card-dimension - 2rem;
-    width: auto;
-    display: block;
-    margin: 0 auto;
-  }
+    padding: $card-padding;
+    width: $card-dimension;
+    height: $card-dimension;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    .menu-title {
+        text-shadow: white 0 0 0.75rem, white 0 0 0.75rem, white 0 0 0.75rem,
+            white 0 0 0.5rem, white 0 0 0.5rem;
+    }
+
+    img {
+        height: $card-dimension - 2rem;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
 }
