@@ -9,7 +9,7 @@
       table.title
     }}
   </caption>
-  <thead>
+  <thead *ngIf="table.headers">
     <tr>
       <th *ngFor="let header of table.headers">{{ header }}</th>
     </tr>

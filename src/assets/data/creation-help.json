@@ -87,16 +87,8 @@
             "content": "Le Niveau de Maladresse est calculé en lançant un D100, ne donnant pas lieu à un Jet Ouvert. Le résultat du dé correspond au Niveau de Maladresse. Dans le cas d'un test opposé, le résultat final est le Total de la compétence moins le Niveau de Maladresse. Pour une action directe, le Niveau de Maladresse est comparée à l'échelle suivante :"
           },
           {
-            "type": "paragraph",
-            "content": "1 à 50 : L'action échoue simplement. Une personne qui essaie de se déplacer silencieusement trébuche, ce qui provoque un grand bruit, ou quelqu'un essaynt d'identifier une plante n'a pas la moindre idée de sa provenance ou de ses effets."
-          },
-          {
-            "type": "paragraph",
-            "content": "51 à 95 : Représente un échec retentissant, préjudiciable au personnage. Il tombe et se blesse contre une pierre en faisant des acrobaties ou il passe du temps à chercher une porte cachée à un endroit vide, persuadé qu'il y en a une."
-          },
-          {
-            "type": "paragraph",
-            "content": "96 à 100 : C'est un échec absolu, tragique. Le personnage confond un poison avec un antidote ou il coule son bateau alors qu'il tentait de sortir du port."
+            "type": "table",
+            "reference": "core-exxet#p.47"
           },
           {
             "type": "paragraph",
@@ -403,8 +395,8 @@
           },
           {
             "type": "paragraph",
-            "title": "Epuisement",
-            "content": "Si la Fatigue d'un personnage est très basse, il commence à souffrir des effets de l'épuisement. A partir de 4 et en dessous, la fatigue physique et mentale inflige un malus à toutes les actions réalisées. Si le Total naturel de Fatigue d'un personnage est inférieur à 5, il ne subit pas ce malus tant qu'il a une valeur actuelle de Fatigue égale à son maximum."
+            "title": "Épuisement",
+            "content": "Si la Fatigue d'un personnage est très basse, il commence à souffrir des effets de l'épuisement. À partir de 4 et en dessous, la fatigue physique et mentale inflige un malus à toutes les actions réalisées. Si le Total naturel de Fatigue d'un personnage est inférieur à 5, il ne subit pas ce malus tant qu'il a une valeur actuelle de Fatigue égale à son maximum."
           },
           {
             "type": "table",

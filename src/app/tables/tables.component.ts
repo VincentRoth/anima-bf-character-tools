@@ -4,7 +4,7 @@ import {
   ReferenceTableContainer,
   ReferenceTable,
   referenceBooks
-} from '../shared/reference-table/reference-table';
+} from '../shared/reference-table/reference-table.model';
 
 @Component({
   selector: 'app-tables',

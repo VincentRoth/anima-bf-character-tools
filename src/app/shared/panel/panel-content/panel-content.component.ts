@@ -6,7 +6,7 @@ import {
   ContentPanel
 } from '../content.model';
 import { ReferenceTableService } from '../../reference-table/reference-table.service';
-import { ReferenceTable } from '../../reference-table/reference-table';
+import { ReferenceTable } from '../../reference-table/reference-table.model';
 
 @Component({
   selector: 'app-panel-content',

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ReferenceTable } from '../reference-table/reference-table';
+import { ReferenceTable } from '../reference-table/reference-table.model';
 
 @Component({
   selector: 'app-table',

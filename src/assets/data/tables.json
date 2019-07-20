@@ -141,6 +141,25 @@
       ]
     },
     {
+      "id": "p.47",
+      "title": "Maladresse",
+      "headers": ["Niveau de Maladresse", "Effets"],
+      "rows": [
+        [
+          "1 à 50",
+          "L'action échoue simplement. Une personne qui essaie de se déplacer silencieusement trébuche, ce qui provoque un grand bruit, ou quelqu'un essaynt d'identifier une plante n'a pas la moindre idée de sa provenance ou de ses effets."
+        ],
+        [
+          "51 à 95",
+          "Représente un échec retentissant, préjudiciable au personnage. Il tombe et se blesse contre une pierre en faisant des acrobaties ou il passe du temps à chercher une porte cachée à un endroit vide, persuadé qu'il y en a une"
+        ],
+        [
+          "96 à 100",
+          "C'est un échec absolu, tragique. Le personnage confond un poison avec un antidote ou il coule son bateau alors qu'il tentait de sortir du port."
+        ]
+      ]
+    },
+    {
       "id": 7,
       "title": "Difficultés",
       "headers": ["Difficulté", "Requis", "Explication"],
@@ -361,28 +380,28 @@
           "5 par round",
           "N/A",
           "-20 par heure",
-          "Tout membre amputé se recolle s'il est maintenu contre le moignon pendant un round. A l'exception de la tête, tout membre amputé repousse en une semaine."
+          "Tout membre amputé se recolle s'il est maintenu contre le moignon pendant un round. À l'exception de la tête, tout membre amputé repousse en une semaine."
         ],
         [
           16,
           "10 par round",
           "N/A",
           "-10 par minute",
-          "A l'exception de la tête, tout membre amputé repousse en un jour."
+          "À l'exception de la tête, tout membre amputé repousse en un jour."
         ],
         [
           17,
           "25 par round",
           "N/A",
           "-15 par round",
-          "A l'exception de la tête, tout membre amputé repousse en quelques minutes."
+          "À l'exception de la tête, tout membre amputé repousse en quelques minutes."
         ],
         [
           18,
           "50 par round",
           "N/A",
           "-20 par round",
-          "A l'exception de la tête, tout membre amputé repousse en quelques rounds."
+          "À l'exception de la tête, tout membre amputé repousse en quelques rounds."
         ],
         [
           "19*",
@@ -486,6 +505,26 @@
         ["Arme mixte", "-40"],
         ["Arme distincte / mains nues", "-60"],
         ["Parade et Esquive", "-60"]
+      ]
+    },
+    {
+      "id": "p.68.1",
+      "title": "Référence de change",
+      "headers": ["Pièce", "Change en pièce de valeur moindre"],
+      "rows": [
+        ["1 pièce d'or (PO)", "100 Pièces d'argent (PA)"],
+        ["1 pièce d'argent (PA)", "10 Pièces de cuivre (PC)"]
+      ]
+    },
+    {
+      "id": "p.68.2",
+      "title": "Fonds initiaux",
+      "headers": ["Valeur", "Classe sociale", "Fonds initiaux"],
+      "rows": [
+        ["1", "Pauvre", "5 PC"],
+        ["2-5", "Moyenne", "1 PO"],
+        ["6-9", "Haute", "20 PO"],
+        ["10", "Basse Noblesse", "150 PO"]
       ]
     },
     {
@@ -747,7 +786,7 @@
         ["66-70", "La Tempérance"],
         ["71-75", "Le Diable"],
         ["76-80", "La Maison Dieu"],
-        ["81-85", "L'Etoile"],
+        ["81-85", "L'Étoile"],
         ["86-90", "La Lune"],
         ["91-95", "Le Soleil"],
         ["96-99", "Le Jugement"],
@@ -847,7 +886,7 @@
         ["Petite", "4-8", 10, 30, 30, "NA", "-2", 2, 2],
         ["Moyenne", "9-22", 10, 40, 20, "NA", "NA", 5, 3],
         ["Grande", "23-24", 20, 60, 10, "NA", "NA", 5, 4],
-        ["Enorme", "25-28", 30, 100, 0, "1 m", "+1", 10, 6],
+        ["Énorme", "25-28", 30, 100, 0, "1 m", "+1", 10, 6],
         ["Gigantesque", "29-33", 40, 120, -10, "5 m", "+2", 15, 8],
         ["Colossal", "34+", 60, 140, -20, "20 m", "+3", 20, 10]
       ]
@@ -895,12 +934,54 @@
   ],
   "gaia-1": [
     {
+      "id": 1,
+      "title": "Abel",
+      "headers": [
+        "Valeur",
+        "Classe sociale",
+        "Équipement de départ",
+        "Racines culturelles"
+      ],
+      "rows": [
+        [
+          "1-10",
+          "Classe basse",
+          "Les vêtements que vous portez, un peu de nourriture, quelques possessions de peu de valeur ou une arme de piètre qualité. 5 PC.",
+          "Athlétisme +15, Équitation +10, Habilité manuelle +10, Histoire (locale) +10, Natation +10, Persuasion +10, Vigilance +15."
+        ],
+        [
+          "11-60",
+          "Classe moyenne",
+          "Deux tenues de rechange, des rations pour un peu plus d'une semaine, un équipement de voyage assez complet ou bien une arme et armure légère quelconques. 1 PO.",
+          "Athlétisme +15, Équitation +10, Habilité manuelle +10, Histoire (locale) +10, Natation +10, Persuasion +10, Vigilance +15."
+        ],
+        [
+          "61-90",
+          "Bourgeois",
+          "Une monture, plusieurs tenues variées, des rations de qualité pour plus d'une semaine, du matériel de voyage très complet qui peut comprendre des armes et une armure légère. 20 PO.",
+          "Danse +10, Équitation +10, Estimation +15, Histoire (locale) +10, Natation +10, Persuasion +15, Style +10."
+        ],
+        [
+          "91-100",
+          "Noblesse",
+          "Un pur-sang ou monture équivalente, une grande quantité de vêtements variés de qualité, d'excellentes rations pour plus d'une semaine, toutes sortes de matériel de voyage, comprenant une arme et une armure légère ou moyenne. 150 PO.",
+          "Commandement +20, Danse +10, Équitation +10, Histoire (locale) +10, Musique ou Art +10, Persuasion +10, Style +10."
+        ],
+        [
+          "Priv.(2)",
+          "Haute Noblesse",
+          "Vous avez virtuellement accès à presque tout ce qui peut se trouver sur le marché ; plusieurs montures (y compris des pur-sangs ou des chevaux de guerre), toutes sortes de vêtements de qualité, accès à du matériel varié de n'importe quel endroit du monde et à tout type d'arme et d'armure (l'une d'elle peut même être +5). 1000 PO.",
+          "Commandement +20, Danse +10, Équitation +10, Histoire (locale) +10, Musique ou Art +10, Persuasion +10, Style +10."
+        ]
+      ]
+    },
+    {
       "id": 33,
       "title": "Contacts",
       "headers": ["Organisation", "PC"],
       "rows": [
         ["Inquisition", 2],
-        ["Eglise", 1],
+        ["Église", 1],
         ["Tol Rauko", 2],
         ["Wissenchaft", 2],
         ["Séléné", 2],

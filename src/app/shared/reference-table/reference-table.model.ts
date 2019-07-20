@@ -1,5 +1,9 @@
 export interface ReferenceTable {
-  id: number;
+  // For a "real" book table, id is the book table number.
+  // For other, can be a roman number like "XIV"
+  // or the page and an indice like "p.47" or "p.47.1"
+  // in case of multiple non numbered tables on the same page.
+  id: number | string;
   title: string;
   headers: string[];
   rows: (string | number)[][];

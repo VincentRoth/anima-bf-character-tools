@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
-import { ReferenceTableContainer } from './reference-table';
+import { ReferenceTableContainer } from './reference-table.model';
 
 const copy = data => JSON.parse(JSON.stringify(data));
 
@@ -30,9 +30,9 @@ export class ReferenceTableService {
   getByReference(reference: string) {
     const splitRef = reference.split('#');
     const bookProperty = splitRef[0];
-    const tableId = parseInt(splitRef[1], 10);
+    const tableId = splitRef[1];
     const transform = data =>
-      data[bookProperty].filter(table => table.id === tableId)[0];
+      data[bookProperty].filter(table => table.id.toString() === tableId)[0];
     if (!this.refTables) {
       return this.get().pipe(map(transform));
     }

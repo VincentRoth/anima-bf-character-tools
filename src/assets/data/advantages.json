@@ -79,7 +79,7 @@
   },
   {
     "name": "Affinité avec les animaux",
-    "description": "Tout personnage possédant cet avantage bénéficie d'un lien spécial avec les animaux, qui lui permet d'obtenir une réaction positive de leur part. Etonnament, il a aussi la capacité de communiquer de façon limitée avec les animaux, comprenant en gros quelles sont leurs intentions ou faisant comprendre les siennes.",
+    "description": "Tout personnage possédant cet avantage bénéficie d'un lien spécial avec les animaux, qui lui permet d'obtenir une réaction positive de leur part. Étonnament, il a aussi la capacité de communiquer de façon limitée avec les animaux, comprenant en gros quelles sont leurs intentions ou faisant comprendre les siennes.",
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu. Quoi qu'il en soit, un animal entraîné à l'attaque s'en prendra au personnage malgré cet avantage, mais seulement après un avertissement et en lui laissant la possibilité de fuir. Si un animal attaque un groupe comprenant le personnage, celui-ci sera toujours la dernière personne que l'animal attaquera.",
     "costs": [1],
     "source": "Core p.18",
@@ -104,7 +104,7 @@
   {
     "name": "Ambidextrie",
     "description": "Une presonne ambidextre maîtrise parfaitement ses deux mains et peut les utiliser avec la même habilité.",
-    "effect": "Un pesonnage ambidextre peut effectuer des manoeuvres avec n'importe quelle main de façon équivalente. Au combat, cela permet de réduire à -10 les malus des attaques efectuées evec une arme supplémentaire. En cas de combat avec des armes de jet, cet avantage ne permet pas d'en lancer une de plus (on considère que le personnage utilise déjà ses deux mains pour accoître sa cadence de lancer).",
+    "effect": "Un pesonnage ambidextre peut effectuer des manœuvres avec n'importe quelle main de façon équivalente. Au combat, cela permet de réduire à -10 les malus des attaques efectuées evec une arme supplémentaire. En cas de combat avec des armes de jet, cet avantage ne permet pas d'en lancer une de plus (on considère que le personnage utilise déjà ses deux mains pour accoître sa cadence de lancer).",
     "costs": [1],
     "source": "Core p.19",
     "types": ["Avantage Général", "Combat"]
@@ -235,7 +235,7 @@
   {
     "name": "Armure naturelle",
     "description": "La peau du personnage est extrêmement résistante et ses muscles extrêmement durs, suffisamment pour qu'il s'avère difficile de les transpercer.",
-    "effect": "Accorde un Indice de Protection de 2 contre tous les Modes sauf Energie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
+    "effect": "Accorde un Indice de Protection de 2 contre tous les Modes sauf Énergie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
     "costs": [1],
     "source": "Core p.20",
     "types": ["Avantage Général", "Combat"]
@@ -243,7 +243,7 @@
   {
     "name": "Armure mystique",
     "description": "L'aura du personnage forme un manteau d'énergie mystique autour de lui, qui le protège contre les attaques surnaturelles.",
-    "effect": "Accorde un Indice de Protection de 4 contre le Modes Energie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
+    "effect": "Accorde un Indice de Protection de 4 contre le Modes Énergie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
     "costs": [1],
     "source": "Core p.20",
     "types": ["Avantage Général", "Combat"]
@@ -315,9 +315,9 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
-    "name": "Elan",
-    "description": "De façon inconsciente, le personnage a réussi à attirer l'attention d'un Shajad ou d'une Béryl. Cela signigie souvent que les ancêtres du personnage étaient liés à cette puissance et qu'elle conserve une sorte de lien avec tous les membres de cette famille. Il est aussi possible que cette attention soit due à certaines actions que le personnage a réalisées. Quoi qu'il en soit, le personnage profite de ses faveurs. Par contre, à partir du moement où le joueur prend le contrôle de son personnage, la relation dépendra de la façon dont celui-ci se comporte.",
-    "effect": "Le personnage a un Elan de 20 vis-à-vis de l'entité de son choix. Les Points de Création supplémentaires augmentent ce niveau à 40 et 50 respectivement.",
+    "name": "Élan",
+    "description": "De façon inconsciente, le personnage a réussi à attirer l'attention d'un Shajad ou d'une Béryl. Cela signigie souvent que les ancêtres du personnage étaient liés à cette puissance et qu'elle conserve une sorte de lien avec tous les membres de cette famille. Il est aussi possible que cette attention soit due à certaines actions que le personnage a réalisées. Quoi qu'il en soit, le personnage profite de ses faveurs. Par contre, à partir du moment où le joueur prend le contrôle de son personnage, la relation dépendra de la façon dont celui-ci se comporte.",
+    "effect": "Le personnage a un Élan de 20 vis-à-vis de l'entité de son choix. Les Points de Création supplémentaires augmentent ce niveau à 40 et 50 respectivement.",
     "costs": [1, 2, 3],
     "source": "Core p.20",
     "types": ["Avantage de passé"]
@@ -325,7 +325,7 @@
   {
     "name": "Apprentissage",
     "description": "Le personnage a une énorme capacité d'apprentissage, qui lui permet de développer son potentiel et de toujours tirer le meilleur profit de ce qu'il a vu ou fait.",
-    "effect": "A la fin de chaque session de jeu, le personnage obtient 3 points d'expérience en plus de ceux accordés par le Meneur de Jeu. Les Points de Création supplémentaires augmentent ce bénéfice à 6 et 9 points, respectivement.",
+    "effect": "À la fin de chaque session de jeu, le personnage obtient 3 points d'expérience en plus de ceux accordés par le Meneur de Jeu. Les Points de Création supplémentaires augmentent ce bénéfice à 6 et 9 points, respectivement.",
     "costs": [1, 2, 3],
     "source": "Core p.20",
     "types": ["Avantage Général", "Expérience"]
@@ -558,7 +558,7 @@
   },
   {
     "name": "Grave maladie",
-    "description": "Le personnage souffre d'une grave maladie dégénérative qui finira par le tuer. En géénral, il lui reste à peine plus d'un an à vivre au moment de commencer la partie, mais cette période de temps peut être plus ou moins longue si le Menueur de Jeu le désire, en fonction des limites temporelles de sa campagne. Contrairement à ce que l'on pourrait en penser, un personnage avec ce désavantage est parfaitement jouable, mais il peut aussi avoir comme objectif de trouver un remède à sa maladie.",
+    "description": "Le personnage souffre d'une grave maladie dégénérative qui finira par le tuer. En général, il lui reste à peine plus d'un an à vivre au moment de commencer la partie, mais cette période de temps peut être plus ou moins longue si le Menueur de Jeu le désire, en fonction des limites temporelles de sa campagne. Contrairement à ce que l'on pourrait en penser, un personnage avec ce désavantage est parfaitement jouable, mais il peut aussi avoir comme objectif de trouver un remède à sa maladie.",
     "effect": "Le personnage applique un bonus cumulatif de -10 à toutes ses actions pour chaque mois qui passe. Le Meneur de Jeu détermine en secret une date à laquelle le personnage mourra.",
     "benefits": [2],
     "source": "Core p.22",
@@ -671,7 +671,7 @@
     "types": ["Désavantage Général", "Physique"]
   },
   {
-    "name": "Epuisement",
+    "name": "Épuisement",
     "description": "Le personnage se révèle très vulnérable aux effets de Fatigue. Non seulement il se fatigue plus que les autres, mais il subit aussi plus durement les effets de la fatigue.",
     "effect": "Double le malus aux actions provoqués par la fatigue et diminue d'un point la Base de Fatigue du personnage.",
     "benefits": [1],
@@ -760,7 +760,7 @@
     "types": ["Désavantage Psychique"]
   },
   {
-    "name": "Exténuation psychqieu",
+    "name": "Exténuation psychique",
     "description": "L'utilisation des pouvoirs psychiques du personnage provoque chez lui de grave répercutions physiques, qui le laissentextrêment fatigué, même quand il n'emploie que des compétences psychiques de bas niveau.",
     "effect": "Le personnage perd le double des points de Fatigue indiqués par sa fatigue psychique.",
     "benefits": [1],
@@ -792,7 +792,7 @@
     "types": ["Avantage Général", "Compétences"]
   },
   {
-    "name": "Energie du désespoir",
+    "name": "Énergie du désespoir",
     "description": "Quand il est au bord de la mort, le personnage sombre dans un état de désespoir qui le pousse à donner le meilleur de lui-même et à se dépasser, ce qui lui permet de réaliser des actions qui dépassent de loin son potentiel habituel.",
     "effect": "Quand les Points de Vie du personnage descendent au-dessous du quart de leur total, il reçoit un bonus de +20 à toutes ses actions. Ce modificateur s'applique seulement dans les situations où le personnage met sa vie, ou celle des autres, en danger.",
     "costs": [1],
@@ -820,7 +820,7 @@
     "name": "Immunité surnaturelle",
     "description": "L'essence du personnage est par nature anathème pour la magie ; il ignore donc de nombreux sortilèges et effets surnaturels. D'une certaine façon, c'est comme si tout ce qui était mystique l'évitait totalement. En fonction du niveau de cet avantage, il est capable d'ignorer des pouvoirs de plus en plus forts.",
     "effect": "Un personnage ayant cet avantage ignore, de façon automatique, tout sortilège de valeur zéonique inférieure ou égale à 60 lancé contre lui. De la même manière, il résiste directement à tout effet mystique qui provoquerait un test contre une RMys ne dépassant 80. Tenez compte du fait que cela lui permet seulement d'éviter les effets directs de la magie et non ceux qui en dérivent. Par exemple, si une Décharge de Lumière fait s'écrouler le toit sur lui, il sera toujours enseveli normalement. Les points supplémentaires invetis augmentent l'immunité à 90 et à 120 en ce qui concerne la valeur zéonique des sortilèges, et à 100 et 120 pour la difficulté des tests de RMys auxquels il résiste.",
-    "condition": "A cause de sa nature antimagique, un personnage possédant cet avantage ne peut accéder au Don mystique ni à l'avantage Voir le surnaturel. De la même manière, les Néphilims sylvains, duk'zarists ou daimahs n'ont pas accès à l'Immunité surnaturelle.",
+    "condition": "À cause de sa nature antimagique, un personnage possédant cet avantage ne peut accéder au Don mystique ni à l'avantage Voir le surnaturel. De la même manière, les Néphilims sylvains, duk'zarists ou daimahs n'ont pas accès à l'Immunité surnaturelle.",
     "costs": [1, 2, 3],
     "source": "KitMJ p.3",
     "types": ["Avantage Général", "Mystique", "Résistance"]
@@ -950,7 +950,7 @@
   },
   {
     "name": "Couard",
-    "description": "Le personnage est peureux par nature, jusqu'à un point qu'il a du mal à contrôler. A chaque fois qu'il se trouve dans une situation qui présente un certain danger, même s'il ne risque pas sa vie, il essayera de l'éviter de toutes les manières possibles.",
+    "description": "Le personnage est peureux par nature, jusqu'à un point qu'il a du mal à contrôler. À chaque fois qu'il se trouve dans une situation qui présente un certain danger, même s'il ne risque pas sa vie, il essayera de l'éviter de toutes les manières possibles.",
     "effect": "Dans Anima, il est préférable de laisser chaque joueur interpréter des aspects tel que la couardise d'un personnage. Cependant, ce désavantage signifie que le personnage n'est pas capable de contrôler sa peur du dangerqui court dans ses veines. Donc, à chaque foisque celui-ci sera confronté à un risque réel, il succombera à l'état de peur. S'il réussit un test d'Impassibilité à un niveau Très Difficile, il peut réduire le malus à seulement -20.",
     "benefits": [1],
     "source": "KitMJ p.5",
@@ -1025,7 +1025,7 @@
   {
     "name": "Contacts",
     "description": "Le personnage a des connaissances pouvant lui donner des informations, voire une aide limitée, au moment où il le demandera. En fonction du niveau de cet avantage, il seront plus ou moins utiles ou puissants. S'il le souhaite, le personnage peut également avoir des liens avec une organisation de Gaïa.",
-    "effect": "A chaque fois que ce sera nécessaire, un individu possédant cet avantage pourra utiliser ses contacts afin d'obtenir des informations ou une aide limitée dans leur domaine d'influence. Par exemple, s'il a des accointances dans l'Ordre de Mague, ceux-ci pourront le renseigner sur des sujets surnaturels, mais bien peu en politique ou en rumeurs de la rue. Il y a dans le Tableau 33 une petite liste indiquant les valeurs recommandées afin de disposer de contacts avec différentes forces de Gaïa. Ce sont des chiffres minimums ; un joueur peut investir une plus grande quantité de PC pour les augmenter. Par exemple, si quelqu'un dépense 3 Points de Création pour l'Ordre de Magus, cela voudra dire que ses contacts se trouvent dans les plus hautes sphères de l'organisation, et seront par conséquent capables de lui donner bien plus d'aide et d'informations.",
+    "effect": "À chaque fois que ce sera nécessaire, un individu possédant cet avantage pourra utiliser ses contacts afin d'obtenir des informations ou une aide limitée dans leur domaine d'influence. Par exemple, s'il a des accointances dans l'Ordre de Mague, ceux-ci pourront le renseigner sur des sujets surnaturels, mais bien peu en politique ou en rumeurs de la rue. Il y a dans le Tableau 33 une petite liste indiquant les valeurs recommandées afin de disposer de contacts avec différentes forces de Gaïa. Ce sont des chiffres minimums ; un joueur peut investir une plus grande quantité de PC pour les augmenter. Par exemple, si quelqu'un dépense 3 Points de Création pour l'Ordre de Magus, cela voudra dire que ses contacts se trouvent dans les plus hautes sphères de l'organisation, et seront par conséquent capables de lui donner bien plus d'aide et d'informations.",
     "costs": [1, 2, 3],
     "source": "Gaïa p.288",
     "types": ["Avantage de passé", "Social"]
@@ -1049,14 +1049,14 @@
   {
     "name": "Réputation",
     "description": "Pour une raison ou pour une autre, le personnage est un individu exceptionnellement connu partout. Il se peut qu'il s'agisse d'un acteur illustre ou que des légendes circulent sur ses compétences martiales (qu'elles soient vrai ou pas), mais c'est en tout les cas une véritable célébrité.",
-    "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu. Le joeur doit établir la raison de la renommée de son personnage au moment de sa création. Au cas où on utiliserait les règles optionnelles de Réputation de ce même chapitre, cet avantage donne 40 ou 65 points de réputation, en fonction des PC investis.",
+    "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu. Le joueur doit établir la raison de la renommée de son personnage au moment de sa création. Au cas où on utiliserait les règles optionnelles de Réputation de ce même chapitre, cet avantage donne 40 ou 65 points de réputation, en fonction des PC investis.",
     "costs": [1, 2],
     "source": "Gaïa p.289",
     "types": ["Avantage de passé", "Interprétation", "Social"]
   },
   {
     "name": "Saint",
-    "description": "Le personnage a reçu la distinction de saint de la part de l'Eglise, ce qui signifie que ses pouvoirs sont officellement un don divin et n'émanent pas du démon. Il est par conséquent libre d'utiliser ses compétences surnaturelles de manière limitées sans crainte d'être poursuivi par l'Inquisition ou de subir d'autres conséquences. Il est important de signaler que, même si l'Eglise tend à être réticente à admettre qu'elle s'est trompée sur une nomination, cela ne donne pas au personnage une liberté d'action totale. Non seulement il est obligé d'utiliser le moins possible ses capacités en public, mais en plus tout agissement que l'Eglise pourrait considérer comme négatif lui ferait perdre immédiatement ce status.",
+    "description": "Le personnage a reçu la distinction de saint de la part de l'Église, ce qui signifie que ses pouvoirs sont officellement un don divin et n'émanent pas du démon. Il est par conséquent libre d'utiliser ses compétences surnaturelles de manière limitées sans crainte d'être poursuivi par l'Inquisition ou de subir d'autres conséquences. Il est important de signaler que, même si l'Église tend à être réticente à admettre qu'elle s'est trompée sur une nomination, cela ne donne pas au personnage une liberté d'action totale. Non seulement il est obligé d'utiliser le moins possible ses capacités en public, mais en plus tout agissement que l'Eglise pourrait considérer comme négatif lui ferait perdre immédiatement ce status.",
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu.",
     "condition": "Le personnage doit être doté d'un type quelconque de compétence surnaturelle pour pouvoir accéder à cet avantage.",
     "costs": [2],
@@ -1073,7 +1073,7 @@
   },
   {
     "name": "Dettes",
-    "description": "Pour son malheur, le personnage a contracté une dette gigantesque qu'il est incapable de payer. Elle lui a déjà coûté tout ce qu'il possédait, mais il est encore obligé de débourser bien plus. Il revient au Meneur de Jeu de déterminer la nature exact de la dette : oeut-être doit-il la payer tous les mois afin de couvrir les frais d'hôpital de sa mère, ou que sa famille s'est ruinée, la lui léguant.",
+    "description": "Pour son malheur, le personnage a contracté une dette gigantesque qu'il est incapable de payer. Elle lui a déjà coûté tout ce qu'il possédait, mais il est encore obligé de débourser bien plus. Il revient au Meneur de Jeu de déterminer la nature exact de la dette : peut-être doit-il la payer tous les mois afin de couvrir les frais d'hôpital de sa mère, ou que sa famille s'est ruinée, la lui léguant.",
     "effect": "Quel que soit son status social, le personnage ne commence avec aucune autre possession que ce qu'il porte, se voyant obligé à amortir une dette fixée à plus de 10 000 écus do'r. Une autre possibilité est qu'il doive obligatoirmeent payer 500 écus d'or tous les mois",
     "benefits": [1],
     "source": "Gaïa p.289",
@@ -1205,7 +1205,7 @@
   },
   {
     "name": "Apprentissage magique graduel",
-    "description": "A mesure que le personnage augmente ses capacités et ses pouvoirs, il augmente également son savoir magique de façon innée.",
+    "description": "À mesure que le personnage augmente ses capacités et ses pouvoirs, il augmente également son savoir magique de façon innée.",
     "effect": "Chaque fois qu'il monte de niveau, le personnage obtient un +5 à son Niveau de Magie total.",
     "costs": [2],
     "source": "ArcEx p.11",
@@ -1229,7 +1229,7 @@
   },
   {
     "name": "Familier",
-    "description": "A un moment dans sa vie, le personnage a été capable de signer un pacte de familier avec une créature.",
+    "description": "À un moment dans sa vie, le personnage a été capable de signer un pacte de familier avec une créature.",
     "effect": "Le personnage commence la partie avec une créature de son niveau en tant que familier. Un Point de Création supplémentaire permet même au familier en question d'avoir un niveau de plus que celui du personnage.",
     "costs": [2, 3],
     "source": "ArcEx p.11",
