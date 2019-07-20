@@ -61,6 +61,68 @@
       ]
     },
     {
+      "id": "II",
+      "title": "Compétences Secondaires",
+      "headers": ["Nom", "Caractéristique", "Connaissance", "Livre"],
+      "rows": [
+        ["**Athlétiques", "", "", ""],
+        ["Acrobaties", "Agilité", "", "Core"],
+        ["Athlétisme", "Agilité", "", "Core"],
+        ["Équitation", "Agilité", "", "Core"],
+        ["Escalade", "Agilité", "", "Core"],
+        ["Natation", "Agilité", "", "Core"],
+        ["Saut", "Force", "", "Core"],
+        ["**Vitales", "", "", ""],
+        ["Impassibilité", "Volonté", "", "Core"],
+        ["Prouesses de Force", "Force", "", "Core"],
+        ["Résistance à la Douleur", "Volonté", "", "Core"],
+        ["**Sensorielles", "", "", ""],
+        ["Observation", "Perception", "", "Core"],
+        ["Pistage", "Perception", "", "Core"],
+        ["Vigilance", "Perception", "", "Core"],
+        ["**Intellectuelles", "", "", ""],
+        ["Animaux", "Intelligence", "Oui", "Core"],
+        ["Estimation", "Intelligence", "Oui", "Core"],
+        ["Évaluation magique", "Pouvoir", "Oui", "Core"],
+        ["Herboristerie", "Intelligence", "Oui", "Core"],
+        ["Histoire", "Intelligence", "Oui", "Core"],
+        ["Loi", "Intelligence", "Oui", "Gaïa vol.1 p290"],
+        ["Mémorisation", "Intelligence", "", "Core"],
+        ["Navigation", "Intelligence", "Oui", "Core"],
+        ["Occultisme", "Intelligence", "Oui", "Core"],
+        ["Science", "Intelligence", "Oui", "Core"],
+        ["Tactique", "Intelligence", "Oui", "Gaïa vol.1 p290"],
+        ["**Sociales", "", "", ""],
+        ["Commandement", "Pouvoir", "", "Core"],
+        ["Commerce", "Intelligence", "", "Gaïa vol.1 p289"],
+        ["Connaissance de la rue", "Intelligence", "", "Gaïa vol.1 p289"],
+        ["Étiquette", "Intelligence", "", "Gaïa vol.1 p290"],
+        ["Intimidation", "Volonté", "", "Core"],
+        ["Persuasion", "Intelligence", "", "Core"],
+        ["Style", "Pouvoir", "", "Core"],
+        ["**Clandestines", "", "", ""],
+        ["Camouflage", "Perception", "", "Core"],
+        ["Crochetage", "Dextérité", "", "Core"],
+        ["Déguisement", "Dextérité", "", "Core"],
+        ["Discrétion", "Agilité", "", "Core"],
+        ["Larcin", "Dextérité", "", "Core"],
+        ["Pièges", "Dextérité", "", "Core"],
+        ["Poisons", "Intelligence", "Oui", "Core"],
+        ["**Créatives", "", "", ""],
+        ["Alchimie", "Intelligence", "Oui", "Prometheum Exxet p.16"],
+        ["Animisme", "Pouvoir", "Oui", "Prometheum Exxet p.16"],
+        ["Art", "Pouvoir", "", "Core"],
+        ["Calligraphie rituelle", "Dextérité", "Oui", "Arcana Exxet p.13"],
+        ["Confection", "Dextérité", "Oui", "Prometheum Exxet p.12"],
+        ["Danse", "Agilité", "Oui", "Core"],
+        ["Forge", "Dextérité", "Oui", "Core"],
+        ["Habilité manuelle", "Dextérité", "", "Core"],
+        ["Musique", "Pouvoir", "Oui", "Core"],
+        ["Orfèvrerie", "Dextérité", "Oui", "Prometheum Exxet p.12"],
+        ["Runes", "Dextérité", "Oui", "Prometheum Exxet p.16"]
+      ]
+    },
+    {
       "id": 4,
       "title": "Points de Vie",
       "headers": ["Constitution", "Base de Points de vie"],
@@ -116,7 +178,7 @@
       "headers": [
         "Niveau",
         "PF",
-        "+ Caractérisitque par niveau",
+        "+ Caractéristique par niveau",
         "Expérience nécessaire",
         "Présence"
       ],
@@ -265,17 +327,340 @@
       ]
     },
     {
-      "id": 0,
-      "title": "//TODO",
-      "headers": ["", ""],
-      "rows": []
+      "id": 11,
+      "title": "Modificateurs de Vigilance",
+      "headers": ["Situation", "Modificateur"],
+      "rows": [
+        ["**Vue", ""],
+        ["Zone particulièrement obscure", "-30"],
+        ["Obscurité complète", "-60"],
+        ["Pluie", "-20"],
+        ["Cible visible seulement en partie", "-30"],
+        ["Cible camouflée dans le milieu", "-30"],
+        ["Couleur en contraste avec le milieu", "+40"],
+        ["Le personnage est préparé", "+20"],
+        ["Position supérieure ou élevée", "+30"],
+        ["**Ouïe", ""],
+        ["Léger bruit de fond", "-20"],
+        ["Des personnes parlent", "-40"],
+        ["Bruits stridents", "-80"],
+        ["**Odorat", ""],
+        ["Odeur évidente", "+30"],
+        ["Plusieurs odeurs présentes", "-30"],
+        ["**Toucher", ""],
+        ["En portant des gants", "-40"],
+        ["**Goût", ""],
+        ["Saveur connue", "+40"],
+        ["Plais insensible", "-40"]
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Traitement des blessure",
+      "headers": ["Valeur", "Difficulté", "Récupération"],
+      "rows": [
+        [40, "Facile", "Stoppe une hémorragie"],
+        [80, "Moyenne", "Stabilise"],
+        [120, "Difficile", "Soigne +10% de dégâts"],
+        [140, "Très Difficile", "Soigne +20% de dégâts"],
+        [180, "Absurde", "Soigne +30% de dégâts"],
+        [240, "Quasiment Impossible", "Soigne +40% de dégâts"],
+        [280, "Impossible", "Soigne +50% de dégâts"],
+        [320, "Surhumaine", "Soigne +70% de dégâts"]
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Impassibilité",
+      "headers": ["Valeur", "Difficulté", "Bonus"],
+      "rows": [
+        [40, "Facile", "+5"],
+        [80, "Moyenne", "+10"],
+        [120, "Difficile", "+15"],
+        [140, "Très Difficile", "+20"],
+        [180, "Absurde", "+25"],
+        [240, "Quasiment Impossible", "+30"],
+        [280, "Impossible", "+35"],
+        [320, "Surhumaine", "+40"]
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Prouesses de Force",
+      "headers": ["Valeur", "Difficulté", "Modificateur à la Force"],
+      "rows": [
+        [120, "Difficile", "Force +1"],
+        [140, "Très Difficile", "Force +2"],
+        [180, "Absurde", "Force +3"],
+        [240, "Quasiment Impossible", "Force +4"],
+        [280, "Impossible", "Force +5"]
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Résistance à la Douleur",
+      "headers": ["Valeur", "Difficulté", "Malus annulé"],
+      "rows": [
+        [80, "Moyenne", "-10"],
+        [120, "Difficile", "-20"],
+        [140, "Très Difficile", "-30"],
+        [180, "Absurde", "-40"],
+        [240, "Quasiment Impossible", "-50"],
+        [280, "Impossible", "-60"],
+        [320, "Surhumaine", "-70"],
+        [440, "Zen", "-80"]
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Déguisement",
+      "headers": ["Situation", "Modificateur"],
+      "rows": [
+        ["Moins d'une minute de préparation", "-20"],
+        ["Plus d'une heure de préparation", "+20"],
+        ["Plusieurs heures de préparation", "+40"],
+        ["Sans matériel de déguisement", "-40"],
+        ["Matériel improvisé", "-20"],
+        ["Matériel approprié", "+20"],
+        ["Tenues et maquillages préparés", "+40"]
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Camouflage",
+      "headers": ["Situation", "Modificateur"],
+      "rows": [
+        ["Grande taille", "-20"],
+        ["Petite taille", "+20"],
+        ["En étant observé", "-200"],
+        ["Milieu propice pour se cacher", "+40"],
+        ["Zone d'ombre", "+20"],
+        ["Lieu illuminé", "-20"],
+        ["Zone vide", "-80"]
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Pièges",
+      "headers": ["Valeur", "Difficulté", "Niveau du piège"],
+      "rows": [
+        [20, "Routinière", "Niveau 10"],
+        [40, "Facile", "Niveau 20"],
+        [80, "Moyenne", "Niveau 30"],
+        [120, "Difficile", "Niveau 40"],
+        [140, "Très Difficile", "Niveau 50"],
+        [180, "Absurde", "Niveau 60"],
+        [240, "Quasiment Impossible", "Niveau 70"],
+        [280, "Impossible", "Niveau 80"],
+        [320, "Surhumaine", "Niveau 90"],
+        [440, "Zen", "Niveau 100"]
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Préparation de pièges",
+      "headers": ["Situation", "Modificateur"],
+      "rows": [
+        ["Moins d'une minute de préparation", "-60"],
+        ["Quelques heures de préparation", "+0"],
+        ["Quelques jours de préparation", "+40"],
+        ["Des semaines de préparation", "+80"],
+        ["Matériel improvisé", "-40"],
+        ["Matériel approprié", "+40"]
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Poisons",
+      "headers": ["Valeur", "Difficulté", "Niveau du poison"],
+      "rows": [
+        [40, "Facile", "Niveau 10"],
+        [80, "Moyenne", "Niveau 20"],
+        [120, "Difficile", "Niveau 30"],
+        [140, "Très Difficile", "Niveau 40"],
+        [180, "Absurde", "Niveau 50"],
+        [240, "Quasiment Impossible", "Niveau 60"],
+        [280, "Impossible", "Niveau 70"],
+        [320, "Surhumaine", "Niveau 80"],
+        [440, "Zen", "Niveau 90"]
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Préparation pour la forge",
+      "headers": ["Temps passé", "Modificateur"],
+      "rows": [
+        ["Une heure", "-60"],
+        ["Trois ou quatre heures", "-40"],
+        ["Un jour", "-20"],
+        ["Deux ou trois jours", "-10"],
+        ["Une semaine", "0"],
+        ["Deux semaines", "+10"],
+        ["Un mois", "+20"],
+        ["Deux ou trois mois", "+40"],
+        ["Six mois", "+60"],
+        ["Un an", "+80"],
+        ["Trois ou quatre ans", "+100"],
+        ["Une dizaine d'années", "+120"]
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Forge",
+      "headers": [
+        "Difficulté",
+        "Valeur",
+        "Armes",
+        "Armures",
+        "Casques",
+        "Divers"
+      ],
+      "rows": [
+        [
+          "Facile",
+          40,
+          "Flèche basique, flèche légère, gourdin, bâton",
+          "",
+          "Bandeau, capuchon de cuir, masque frontal",
+          "Fer à cheval, boucle, attelage, capsule, couverts, casseroles, poêles"
+        ],
+        [
+          "Moyenne",
+          80,
+          "Harpon, boules de jet, chaîne, poignard, dards de sarbacane, dards de jet, crochet, faux, marteau à deux mains, hachette, fronde, javeline, lance, lasso, fléau à deux mains, marteau de guerre, fléau, masse, maillet, tonfa",
+          "Armure matelassée, cuir complète, cuir, cuir bouilli, peau",
+          "Casque salade",
+          "Bijoux, chandeliers"
+        ],
+        [
+          "Difficile",
+          120,
+          "Éventail de combat, hallebarde, arc court, arc long, bolas, sarbacane, cimeterre, corbeau, main-gauche, bouclier, pavois, glaive, épée bâtarde, épée courte, épée longue, stylet, flèche perce-armure, griffes de tigre, hache à deux mains, hache de bataille, kusari-gama, lance de cavalerie, fouet, nunchaku, filet de gladiateur, rondache, shuriken, trident",
+          "Anneaux, cuir et plaques, manteau renforcé, maills, plastron, plaques partielles",
+          "Camail, barbute",
+          "Bijoux élaborés, bardes"
+        ],
+        [
+          "Très Difficile",
+          140,
+          "Arc long composite, arbalète, arbalète lourde, boomerang, cestus, estoc, fleuret, katana, épée à deux mains, no-dachi, brise-lame, sabre, saï, shuko, tanto",
+          "Écailles, plaques, demi-plaques",
+          "Armet",
+          "Lamps, artisanat fin"
+        ],
+        [
+          "Absurde",
+          180,
+          "Bâton à trois sections, katana à deux lames, chakram, arquebuse, arbalète de poing, arbalète à répétition, pistolet à mèche",
+          "Harnois, gothique, harnois de bataille",
+          "",
+          "Lentilles, horloge, longue-vue, boussole"
+        ]
+      ]
+    },
+    {
+      "id": "IV",
+      "title": "Matériaux",
+      "headers": [
+        "Nom",
+        "Difficulté",
+        "Qualité maximale",
+        "Disponibilité",
+        "Description"
+      ],
+      "rows": [
+        [
+          "Pierre",
+          "-80",
+          "+0",
+          "Commune",
+          "Depuis les origines de l'Histoire, la pierre a été l'un des matériaux les plus utilisés pour la construction, de par sa disponibilité exceptionnelle et sa simplicité d'utilisation."
+        ],
+        [
+          "Os",
+          "-60",
+          "+0",
+          "Commune",
+          "Tout comme la pierre, l'os a été utilisé pour fabriquer tout type d'ustensiles depuis les débuts de la civilisation. En dépit de sa résistance réduite, sa dureté restait considérable. Ce type d'os correspond à ceux d'un animal commun."
+        ],
+        [
+          "Bronze",
+          "-20",
+          "+0",
+          "Commune",
+          "Le bronze a été le premier métal à être utilisé pour la forge d'objet, du fait de sa grande malléabilité, à son faible poids et à la facilité d'obtenir des résultats. Malheureusement, il est très peu résistant."
+        ],
+        [
+          "Fer",
+          "+10",
+          "+0",
+          "Commune",
+          "Le fer représente le matériau par excellence pour la fabrication d'arme et d'armure, du fait de sa grande résistance et de sa disponibilité."
+        ],
+        [
+          "Acier",
+          "-20",
+          "+5",
+          "Commune",
+          "De tous les métaux communs, l'acier est sans doute le meilleur, du fait de sa qualité et de sa résistance."
+        ],
+        [
+          "Acier Noir",
+          "+20",
+          "+5",
+          "Rare",
+          "Cet alliage est excessivement rare. On le nomme ainsi à cause de sa couleur obscure. Sa dureté incroyable constitue sa principale caractéristique."
+        ],
+        [
+          "Illuminati",
+          "+80",
+          "+5",
+          "Non accessible",
+          "Ce métal argenté est de nature mystique. La facilité à le modeler lorsqu'il est chauffé constitue sa caractéristique principale. Cependant, une fois solidifié, il devient un des matériaux les plus résistants au monde."
+        ],
+        [
+          "Acier Blanc de Shivat",
+          "-40",
+          "+10",
+          "Rare",
+          "On ne trouve ce métal blanc que dans les mines de l'île de Shivat. Le forger est une opération très complexe, mais quand un artisan y parvient, il obtient d'excellents résultats. Dans les contrées orientales, la technique du travail de l'acier blanc se transmet traditionnellement de père en fils."
+        ],
+        [
+          "Elektra",
+          "+20",
+          "+10",
+          "Très rare",
+          "L'Elektra est un alliage d'acier noir et blanc, qui ne se crée que lorsque des quantités précises de ces deux aciers sont fondues. Les rares artisans qui connaissent cette formule la gardent comme leur secret le plus précieux. C'est le matériau de qualité supérieure qu'utilisent les organisations les plus puissantes pour construire leurs créations."
+        ],
+        [
+          "Vois de Ghestal",
+          "-40",
+          "+10",
+          "Non accessible",
+          "Le bois de Ghestal provient des arbres de Ramalen des Duk'zarists. Tout porte à croire qu'il n'en reste aujourd'hui plus du tout dans le monde de Gaïa, mais il existe des légendes indiquant que certains spécimens pourraient avoir survécu dans d'anciens temples abandonnés. Seuls les artisans duk'zarists connaissent le secret du travail de ce matériau. Un personnage peut se spécialiser dans son travail et changer sa difficulté à +40 ; par contre, il perd la capacité d'utiliser tout autre matériau."
+        ],
+        [
+          "Maleborgia",
+          "+20",
+          "+15",
+          "Non accessible",
+          "On appelle Maleborgia le métal formé à partir des os des dragons les plus anciens. Bien qu'ils soient excessivement difficiles à forger, les résultats obtenus se révèlent inégalables. On dit qu'une arme en Maleborgia peut couper toute matière solide comme s'il s'agissait de papier."
+        ],
+        [
+          "Métal Stellaire",
+          "+80",
+          "+15",
+          "Non accessible",
+          "Il s'agit d'un alliage rare d'origine inconnue. Ses qualités et son apparence sont aussi étanges que ses pouvoirs. C'est sans doute le métal exceptionnel le plus étrange."
+        ]
+      ]
     },
     {
       "id": 23,
       "title": "Base de Régénération",
       "headers": ["Constitution", "Régénération"],
       "rows": [
-        ["1 à 2", "Aucun"],
+        ["1 à 2", "Aucune"],
         ["3 à 7", 1],
         ["8 à 9", 2],
         [10, 3],
@@ -404,18 +789,18 @@
           "À l'exception de la tête, tout membre amputé repousse en quelques rounds."
         ],
         [
-          "19*",
-          "100 par round",
-          "N/A",
-          "Tous",
-          "Requiert Gnose à 40 minimum. Tout membre coupé repousse et redevient fonctionnel en un round."
+          "*19",
+          "*100 par round",
+          "*N/A",
+          "*Tous",
+          "*Requiert Gnose 40 minimum. Tout membre coupé repousse et redevient fonctionnel en un round."
         ],
         [
-          "20*",
-          "250 par round",
-          "N/A",
-          "Tous",
-          "Requiert Gnose à 45 minimum. Tous les Critiques physiques sont annulés."
+          "*20",
+          "*250 par round",
+          "*N/A",
+          "*Tous",
+          "*Requiert Gnose 45 minimum. Tous les Critiques physiques sont annulés."
         ]
       ]
     },
@@ -680,8 +1065,8 @@
         ["La source de magie se trouve à plus de 50 mètres", "-40"],
         ["La source de magie se trouve à plus de 100 mètres", "-80"],
         ["La source de magie se trouve à plus d'un kilomètre", "-120"],
-        ["Milieu légèrement chargé de magie*", "-40"],
-        ["Milieu fortement chargé de magie*", "-80"]
+        ["*Milieu légèrement chargé de magie*", "-40"],
+        ["*Milieu fortement chargé de magie*", "-80"]
       ]
     },
     {
@@ -901,6 +1286,150 @@
   "kit-mj": [],
   "dominus-exxet": [
     {
+      "id": 1,
+      "title": "Modificateurs de situation",
+      "headers": [
+        "Situation",
+        "Attaque",
+        "Parade",
+        "Esquive",
+        "Initiative",
+        "Action Physique"
+      ],
+      "rows": [
+        ["Flanc + Cécité partielle", -40, -50, -40, "-", -90],
+        ["Flanc + Cécité absolue", -100, -100, -100, "-", -90],
+        ["Dos + Cécité partielle", -40, -90, -80, "-", -90],
+        ["Dos + Cécité absolue", -100, -120, -120, "-", -90],
+        ["Paralysie complète + Flanc", -200, -200, -200, "-100", -200],
+        ["Paralysie complète + Dos", -200, -200, -200, "-100", -200],
+        ["Paralysie complète + Cécité", -200, -200, -200, "-100", -200]
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Impacts",
+      "headers": [
+        "Échec",
+        "For 6-9",
+        "For 10-12",
+        "For 13-14",
+        "For 15-16",
+        "For 17-18",
+        "For 19-20"
+      ],
+      "rows": [
+        [
+          "-1",
+          "1 - 3 m (D1)",
+          "5 - 10 m (D1)",
+          "10 - 15 m (D2)",
+          "15 - 30 m (D2)",
+          "30 - 50 m (D3)",
+          "50 - 100 m (D4)"
+        ],
+        [
+          "-2",
+          "2 - 4 m (D1)",
+          "7 - 15 m (D1)",
+          "15 - 30 m (D2)",
+          "30 - 50 m (D3)",
+          "50 - 150 m (D4)",
+          "100 - 500 m (D4)"
+        ],
+        [
+          "-3 / -4",
+          "3 - 6 m (D1)",
+          "10 - 20 m (D2)",
+          "30 - 50 m (D3)",
+          "50 - 100 m (D3)",
+          "150 - 500 m (D4)",
+          "500 m - 1 km (D4)"
+        ],
+        [
+          "-5 / -6",
+          "5 - 10 m (D1)",
+          "15 - 25 m (D2)",
+          "50 - 80 m (D3)",
+          "100 - 200 m (D4)",
+          "500 m - 1 km (D4)",
+          "1 - 5 km (D5)"
+        ],
+        [
+          "-7 / -8",
+          "7 - 15 m (D1)",
+          "20 - 35 m (D2)",
+          "80 - 120 m (D3)",
+          "200 - 500 m (D4)",
+          "1 - 5 km (D5)",
+          "5 - 25 km (D5)"
+        ],
+        [
+          "-9 ou plus",
+          "10 - 20 m (D2)",
+          "30 - 50 m (D3)",
+          "120 - 150 m (D4)",
+          "500 m - 1 km (D4)",
+          "5 - 25 km (D5)",
+          "25+ km (D5)"
+        ]
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Degrés",
+      "headers": ["Degré", "Dégâts"],
+      "rows": [
+        ["Degré 1 (D1)", "NA"],
+        ["Degré 2 (D2)", "5 à 10 de Dégâts"],
+        ["Degré 3 (D3)", "10 à 50 de Dégâts"],
+        ["Degré 4 (D4)", "50 à 100 de Dégâts"],
+        ["Degré 5 (D5)", "100 à 250 de Dégâts"]
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Tremblement de Terre",
+      "headers": [
+        "Force",
+        "Rayon",
+        "Test d'Agilité",
+        "Durée",
+        "Dégâts aux édifices"
+      ],
+      "rows": [
+        [16, "50 m", "+2", "1 round", "Aucune construction n'est touchée."],
+        [
+          17,
+          "500 m",
+          "+0",
+          "2 rounds",
+          "Les édifices ayant un Seuil d'Invulnérabilité de 40 ou moins sont automatiquement détruits. Le reste ne subit pas de dégâts."
+        ],
+        [
+          18,
+          "1 km",
+          "-1",
+          "3 rounds",
+          "Les édifices ayant un Seuil d'Invulnérabilité de 60 ou moins sont automatiquement détruits. Le reste subit des dégâts équivalent à celui du sort de la Voie de la Terre Tremblement de Terre."
+        ],
+        [
+          19,
+          "5 km",
+          "-2",
+          "5 rounds",
+          "Les édifices ayant un Seuil d'Invulnérabilité de 80 ou moins sont automatiquement détruits. Le reste subit des dégâts équivalent à celui du sort de la Voie de la Terre Tremblement de Terre."
+        ],
+        [
+          20,
+          "25 km",
+          "-4",
+          "10 rounds",
+          "Les édifices ayant un Seuil d'Invulnérabilité de 100 ou moins sont automatiquement détruits. Le reste subit des dégâts équivalent à celui du sort de la Voie de la Terre Tremblement de Terre."
+        ]
+      ]
+    },
+    {
       "id": 5,
       "title": "Perception étendue",
       "headers": ["Perception", "Avantage"],
@@ -910,9 +1439,252 @@
         [18, "Perception périphétique"],
         [20, "Perception absolue"]
       ]
+    },
+    {
+      "id": 6,
+      "title": "Apprentissage de Technique ou de Pouvoir du Ki",
+      "headers": [
+        "Rang d'apprentissage",
+        "Compléxité 1 (Entre 10 et 40 DI)",
+        "Compléxité 2 (Entre 45 et 80 DI)",
+        "Compléxité 3 (Entre 85 et 120 DI)",
+        "Compléxité 4 (Plus de 125 DI)"
+      ],
+      "rows": [
+        ["1 (DI 50-99)", "1 DI par mois", "-", "-", "-"],
+        ["2 (DI 100-199)", "1 DI par semaine", "1 DI par mois", "-", "-"],
+        [
+          "3 (DI 200-299)",
+          "1 DI par jour",
+          "1 DI par semaine",
+          "1 DI par mois",
+          "-"
+        ],
+        [
+          "4 (DI 300-399)",
+          "1 DI par heure",
+          "1 DI par jour",
+          "1 DI par semaine",
+          "1 DI par mois"
+        ],
+        [
+          "5 (DI 400-499)",
+          "1 DI par minute",
+          "1 DI par heure",
+          "1 DI par jour",
+          "1 DI par semaine"
+        ],
+        [
+          "6 (DI 500-599)",
+          "Instantané",
+          "1 DI par minute",
+          "1 DI par heure",
+          "1 DI par jour"
+        ],
+        [
+          "7 (DI 600 et +)",
+          "Instantané",
+          "Instantané",
+          "1 DI par minute",
+          "1 DI par heure"
+        ]
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Apprentissage des Arts Martiaux",
+      "headers": [
+        "Rang d'apprentissage",
+        "Compléxité 1",
+        "Compléxité 2",
+        "Compléxité 3",
+        "Compléxité 4",
+        "Compléxité 5"
+      ],
+      "rows": [
+        ["1 (total 100-199)", "Un an", "Trois ans", "Une décennie", "-", "-"],
+        [
+          "2 (total 200-299)",
+          "Trois mois",
+          "Un an",
+          "Trois ans",
+          "Une décennie",
+          "-"
+        ],
+        [
+          "3 (total 300-399)",
+          "Un mois",
+          "Trois mois",
+          "Un an",
+          "Trois ans",
+          "Une décennie"
+        ],
+        [
+          "4 (total 400-499)",
+          "Une semaine",
+          "Un mois",
+          "Trois mois",
+          "Un an",
+          "Trois ans"
+        ],
+        [
+          "5 (total 500-599)",
+          "Un jour",
+          "Une semaine",
+          "Un mois",
+          "Trois mois",
+          "Un an"
+        ],
+        [
+          "6 (total 600-699)",
+          "Une heure",
+          "Un jour",
+          "Une semaine",
+          "Un mois",
+          "Trois mois"
+        ],
+        [
+          "7 (total 700 et +)",
+          "Une minute",
+          "Une heure",
+          "Un jour",
+          "Une semaine",
+          "Un mois"
+        ]
+      ]
+    },
+    {
+      "id": 0,
+      "title": "//TODO",
+      "headers": ["", ""],
+      "rows": []
     }
   ],
-  "arcana-exxet": [],
+  "arcana-exxet": [
+    {
+      "id": 1,
+      "title": "Apprentissage de Sort",
+      "headers": [
+        "Rang d'apprentissage",
+        "Niveau du sort 2-10",
+        "Niveau du sort 12-20",
+        "Niveau du sort 22-30",
+        "Niveau du sort 32-40",
+        "Niveau du sort 42-50",
+        "Niveau du sort 52-60",
+        "Niveau du sort 62-70",
+        "Niveau du sort 72-80",
+        "Niveau du sort 82-90",
+        "Niveau du sort 92-100"
+      ],
+      "rows": [
+        [
+          "1 (Niveau 2 à 28)",
+          "Quotidien",
+          "Hebdomadaire",
+          "Mensuel",
+          "Trimestriel",
+          "Semestriel",
+          "Annuel",
+          "Décennal",
+          "NA",
+          "NA",
+          "NA"
+        ],
+        [
+          "2 (Niveau 30 à 48)",
+          "Chaque heure",
+          "Quotidien",
+          "Hebdomadaire",
+          "Mensuel",
+          "Trimestriel",
+          "Semestriel",
+          "Annuel",
+          "Décennal",
+          "NA",
+          "NA"
+        ],
+        [
+          "3 (Niveau 50 à 68)",
+          "Chaque minute",
+          "Chaque heure",
+          "Quotidien",
+          "Hebdomadaire",
+          "Mensuel",
+          "Trimestriel",
+          "Semestriel",
+          "Annuel",
+          "Décennal",
+          "NA"
+        ],
+        [
+          "4 (Niveau 70 à 148)",
+          "Automatiquement",
+          "Chaque minute",
+          "Chaque heure",
+          "Quotidien",
+          "Hebdomadaire",
+          "Mensuel",
+          "Trimestriel",
+          "Semestriel",
+          "Annuel",
+          "Décennal"
+        ],
+        [
+          "5 (Niveau 150 à 298)",
+          "Automatiquement",
+          "Automatiquement",
+          "Chaque minute",
+          "Chaque heure",
+          "Quotidien",
+          "Hebdomadaire",
+          "Mensuel",
+          "Trimestriel",
+          "Semestriel",
+          "Annuel"
+        ],
+        [
+          "6 (Niveau 300 et +)",
+          "Automatiquement",
+          "Automatiquement",
+          "Automatiquement",
+          "Chaque minute",
+          "Chaque heure",
+          "Quotidien",
+          "Hebdomadaire",
+          "Mensuel",
+          "Trimestriel",
+          "Semestriel"
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Convocation en masse",
+      "headers": [
+        "Créatures affectées",
+        "Différence de niveau requise",
+        "Augmentation du niveau de difficulté"
+      ],
+      "rows": [
+        [2, 5, "+1 Niveau"],
+        [5, 6, "+2 Niveaux"],
+        [10, 7, "+3 Niveaux"],
+        [25, 8, "+4 Niveaux"],
+        [50, 9, "+5 Niveaux"],
+        [100, 10, "+6 Niveaux"],
+        [250, 11, "+7 Niveaux"],
+        [500, 12, "+8 Niveaux"],
+        [1000, 13, "+9 Niveaux"]
+      ]
+    },
+    {
+      "id": 0,
+      "title": "//TODO",
+      "headers": ["", ""],
+      "rows": []
+    }
+  ],
   "prometheum-exxet": [
     {
       "id": 1,
@@ -930,6 +1702,12 @@
         ["10-12", "3", "3+", "4"],
         ["13+", "3+", "4", "4+"]
       ]
+    },
+    {
+      "id": 0,
+      "title": "//TODO",
+      "headers": ["", ""],
+      "rows": []
     }
   ],
   "gaia-1": [
@@ -976,6 +1754,12 @@
       ]
     },
     {
+      "id": 0,
+      "title": "//TODO",
+      "headers": ["", ""],
+      "rows": []
+    },
+    {
       "id": 33,
       "title": "Contacts",
       "headers": ["Organisation", "PC"],
@@ -995,6 +1779,12 @@
       ]
     },
     {
+      "id": 0,
+      "title": "//TODO",
+      "headers": ["", ""],
+      "rows": []
+    },
+    {
       "id": 42,
       "title": "Natura",
       "headers": ["Race", "Natura"],
@@ -1012,6 +1802,12 @@
         ["*Tuan Dalyr", 0],
         ["*Turak", "*0"]
       ]
+    },
+    {
+      "id": 0,
+      "title": "//TODO",
+      "headers": ["", ""],
+      "rows": []
     }
   ],
   "gaia-2": [],

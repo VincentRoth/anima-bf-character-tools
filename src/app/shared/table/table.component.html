@@ -1,12 +1,7 @@
 <table cellspacing="0">
   <caption>
-    Tableau
     {{
-      table.id
-    }}
-    :
-    {{
-      table.title
+      caption
     }}
   </caption>
   <thead *ngIf="table.headers">
@@ -16,7 +11,9 @@
   </thead>
   <tbody>
     <tr *ngFor="let row of table.rows">
-      <td *ngFor="let cell of row">{{ cell }}</td>
+      <td *ngFor="let cell of row" [class]="getCellStyle(cell)">
+        {{ formatValue(cell) }}
+      </td>
     </tr>
   </tbody>
 </table>
