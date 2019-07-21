@@ -1243,4 +1243,13 @@
     "source": "ArcEx p.11",
     "types": ["Avantage Général", "Mystique", "Convocation"]
   }
+  {
+    "name": "Mutations",
+    "description": "Le personnage possède des pouvoirs innés ç cause d'une mutation.",
+    "effect": "Octroie 50 PF pour acquérir des Pouvoirs de monstre, comme si le personnage avait une Gnose de 20. L'investissement de points supplémentaires augmente la quantié de points reçus à 100 et 150 respectivement",
+    "note": "Cet avantage vise à créer des pouvoirs pour des superhéros, dans un contexte autre que le monde d'Anima, Gaïa. Consulter le Meneur de Jeu.",
+    "costs": [1, 2, 3],
+    "source": "Core p.334",
+    "types": ["Avantage Général"]
+  }
 ]

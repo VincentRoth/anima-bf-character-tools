@@ -28,7 +28,7 @@ export class TableComponent implements OnInit {
   }
 
   getCellStyle(value: any): string {
-    if (typeof value === 'string') {
+    if (typeof value === 'string' && value) {
       if (boldItalicRegExp.test(value)) {
         return 'bold italic';
       }
@@ -42,7 +42,7 @@ export class TableComponent implements OnInit {
   }
 
   formatValue(value: any): string {
-    if (typeof value === 'string' && value.startsWith('*')) {
+    if (typeof value === 'string' && value && value.startsWith('*')) {
       return value.replace(/^\**/, '');
     }
     return value;

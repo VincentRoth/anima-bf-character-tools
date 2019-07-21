@@ -16,20 +16,20 @@
       "title": "Modificateurs de caractéristique",
       "headers": ["Caractéristique", "Modificateur"],
       "rows": [
-        ["1", "-30"],
-        ["2", "-20"],
-        ["3", "-10"],
-        ["4", "-5"],
-        ["5", "0"],
+        [1, -30],
+        [2, -20],
+        [3, -10],
+        [4, -5],
+        [5, 0],
         ["6-7", "+5"],
         ["8-9", "+10"],
-        ["10", "+15"],
+        [10, "+15"],
         ["11-12", "+20"],
         ["13-14", "+25"],
-        ["15", "+30"],
+        [15, "+30"],
         ["16-17", "+35"],
         ["18-19", "+40"],
-        ["20", "+45"]
+        [20, "+45"]
       ]
     },
     {
@@ -315,7 +315,7 @@
       "title": "Saut",
       "headers": ["Valeur", "Difficulté", "Mouvement"],
       "rows": [
-        ["-", "", "-1"],
+        ["-", "", -1],
         [40, "Facile", "+0"],
         [80, "Moyenne", "+0"],
         [120, "Difficile", "+1"],
@@ -332,26 +332,26 @@
       "headers": ["Situation", "Modificateur"],
       "rows": [
         ["**Vue", ""],
-        ["Zone particulièrement obscure", "-30"],
-        ["Obscurité complète", "-60"],
-        ["Pluie", "-20"],
-        ["Cible visible seulement en partie", "-30"],
-        ["Cible camouflée dans le milieu", "-30"],
+        ["Zone particulièrement obscure", -30],
+        ["Obscurité complète", -60],
+        ["Pluie", -20],
+        ["Cible visible seulement en partie", -30],
+        ["Cible camouflée dans le milieu", -30],
         ["Couleur en contraste avec le milieu", "+40"],
         ["Le personnage est préparé", "+20"],
         ["Position supérieure ou élevée", "+30"],
         ["**Ouïe", ""],
-        ["Léger bruit de fond", "-20"],
-        ["Des personnes parlent", "-40"],
-        ["Bruits stridents", "-80"],
+        ["Léger bruit de fond", -20],
+        ["Des personnes parlent", -40],
+        ["Bruits stridents", -80],
         ["**Odorat", ""],
         ["Odeur évidente", "+30"],
-        ["Plusieurs odeurs présentes", "-30"],
+        ["Plusieurs odeurs présentes", -30],
         ["**Toucher", ""],
-        ["En portant des gants", "-40"],
+        ["En portant des gants", -40],
         ["**Goût", ""],
         ["Saveur connue", "+40"],
-        ["Plais insensible", "-40"]
+        ["Plais insensible", -40]
       ]
     },
     {
@@ -401,14 +401,14 @@
       "title": "Résistance à la Douleur",
       "headers": ["Valeur", "Difficulté", "Malus annulé"],
       "rows": [
-        [80, "Moyenne", "-10"],
-        [120, "Difficile", "-20"],
-        [140, "Très Difficile", "-30"],
-        [180, "Absurde", "-40"],
-        [240, "Quasiment Impossible", "-50"],
-        [280, "Impossible", "-60"],
-        [320, "Surhumaine", "-70"],
-        [440, "Zen", "-80"]
+        [80, "Moyenne", -10],
+        [120, "Difficile", -20],
+        [140, "Très Difficile", -30],
+        [180, "Absurde", -40],
+        [240, "Quasiment Impossible", -50],
+        [280, "Impossible", -60],
+        [320, "Surhumaine", -70],
+        [440, "Zen", -80]
       ]
     },
     {
@@ -416,11 +416,11 @@
       "title": "Déguisement",
       "headers": ["Situation", "Modificateur"],
       "rows": [
-        ["Moins d'une minute de préparation", "-20"],
+        ["Moins d'une minute de préparation", -20],
         ["Plus d'une heure de préparation", "+20"],
         ["Plusieurs heures de préparation", "+40"],
-        ["Sans matériel de déguisement", "-40"],
-        ["Matériel improvisé", "-20"],
+        ["Sans matériel de déguisement", -40],
+        ["Matériel improvisé", -20],
         ["Matériel approprié", "+20"],
         ["Tenues et maquillages préparés", "+40"]
       ]
@@ -430,13 +430,13 @@
       "title": "Camouflage",
       "headers": ["Situation", "Modificateur"],
       "rows": [
-        ["Grande taille", "-20"],
+        ["Grande taille", -20],
         ["Petite taille", "+20"],
-        ["En étant observé", "-200"],
+        ["En étant observé", -200],
         ["Milieu propice pour se cacher", "+40"],
         ["Zone d'ombre", "+20"],
-        ["Lieu illuminé", "-20"],
-        ["Zone vide", "-80"]
+        ["Lieu illuminé", -20],
+        ["Zone vide", -80]
       ]
     },
     {
@@ -461,11 +461,11 @@
       "title": "Préparation de pièges",
       "headers": ["Situation", "Modificateur"],
       "rows": [
-        ["Moins d'une minute de préparation", "-60"],
+        ["Moins d'une minute de préparation", -60],
         ["Quelques heures de préparation", "+0"],
         ["Quelques jours de préparation", "+40"],
         ["Des semaines de préparation", "+80"],
-        ["Matériel improvisé", "-40"],
+        ["Matériel improvisé", -40],
         ["Matériel approprié", "+40"]
       ]
     },
@@ -490,11 +490,11 @@
       "title": "Préparation pour la forge",
       "headers": ["Temps passé", "Modificateur"],
       "rows": [
-        ["Une heure", "-60"],
-        ["Trois ou quatre heures", "-40"],
-        ["Un jour", "-20"],
-        ["Deux ou trois jours", "-10"],
-        ["Une semaine", "0"],
+        ["Une heure", -60],
+        ["Trois ou quatre heures", -40],
+        ["Un jour", -20],
+        ["Deux ou trois jours", -10],
+        ["Une semaine", 0],
         ["Deux semaines", "+10"],
         ["Un mois", "+20"],
         ["Deux ou trois mois", "+40"],
@@ -571,21 +571,21 @@
       "rows": [
         [
           "Pierre",
-          "-80",
+          -80,
           "+0",
           "Commune",
           "Depuis les origines de l'Histoire, la pierre a été l'un des matériaux les plus utilisés pour la construction, de par sa disponibilité exceptionnelle et sa simplicité d'utilisation."
         ],
         [
           "Os",
-          "-60",
+          -60,
           "+0",
           "Commune",
           "Tout comme la pierre, l'os a été utilisé pour fabriquer tout type d'ustensiles depuis les débuts de la civilisation. En dépit de sa résistance réduite, sa dureté restait considérable. Ce type d'os correspond à ceux d'un animal commun."
         ],
         [
           "Bronze",
-          "-20",
+          -20,
           "+0",
           "Commune",
           "Le bronze a été le premier métal à être utilisé pour la forge d'objet, du fait de sa grande malléabilité, à son faible poids et à la facilité d'obtenir des résultats. Malheureusement, il est très peu résistant."
@@ -599,7 +599,7 @@
         ],
         [
           "Acier",
-          "-20",
+          -20,
           "+5",
           "Commune",
           "De tous les métaux communs, l'acier est sans doute le meilleur, du fait de sa qualité et de sa résistance."
@@ -620,7 +620,7 @@
         ],
         [
           "Acier Blanc de Shivat",
-          "-40",
+          -40,
           "+10",
           "Rare",
           "On ne trouve ce métal blanc que dans les mines de l'île de Shivat. Le forger est une opération très complexe, mais quand un artisan y parvient, il obtient d'excellents résultats. Dans les contrées orientales, la technique du travail de l'acier blanc se transmet traditionnellement de père en fils."
@@ -634,7 +634,7 @@
         ],
         [
           "Vois de Ghestal",
-          "-40",
+          -40,
           "+10",
           "Non accessible",
           "Le bois de Ghestal provient des arbres de Ramalen des Duk'zarists. Tout porte à croire qu'il n'en reste aujourd'hui plus du tout dans le monde de Gaïa, mais il existe des légendes indiquant que certains spécimens pourraient avoir survécu dans d'anciens temples abandonnés. Seuls les artisans duk'zarists connaissent le secret du travail de ce matériau. Un personnage peut se spécialiser dans son travail et changer sa difficulté à +40 ; par contre, il perd la capacité d'utiliser tout autre matériau."
@@ -867,18 +867,18 @@
       "id": 27,
       "title": "Fatigue",
       "headers": ["Fatigue", "Malus aux actions"],
-      "rows": [[0, "-120"], [1, "-80"], [2, "-40"], [3, "-20"], [4, "-10"]]
+      "rows": [[0, -120], [1, -80], [2, -40], [3, -20], [4, -10]]
     },
     {
       "id": 28,
       "title": "Besoins physiques",
       "headers": ["Situation", "Malus"],
       "rows": [
-        ["Un jour sans manger", "-10"],
-        ["Un jour sans boire", "-15"],
-        ["Nourriture et boisson minimales", "-5"],
-        ["Un jou sans dormir", "-20"],
-        ["Dormir moins d'une heure", "-10"]
+        ["Un jour sans manger", -10],
+        ["Un jour sans boire", -15],
+        ["Nourriture et boisson minimales", -5],
+        ["Un jou sans dormir", -20],
+        ["Dormir moins d'une heure", -10]
       ]
     },
     {
@@ -886,10 +886,10 @@
       "title": "Modificateurs de la compétence",
       "headers": ["Cétagorie d'arme", "Malus à la compétence"],
       "rows": [
-        ["Arme similaire", "-20"],
-        ["Arme mixte", "-40"],
-        ["Arme distincte / mains nues", "-60"],
-        ["Parade et Esquive", "-60"]
+        ["Arme similaire", -20],
+        ["Arme mixte", -40],
+        ["Arme distincte / mains nues", -60],
+        ["Parade et Esquive", -60]
       ]
     },
     {
@@ -906,10 +906,10 @@
       "title": "Fonds initiaux",
       "headers": ["Valeur", "Classe sociale", "Fonds initiaux"],
       "rows": [
-        ["1", "Pauvre", "5 PC"],
+        [1, "Pauvre", "5 PC"],
         ["2-5", "Moyenne", "1 PO"],
         ["6-9", "Haute", "20 PO"],
-        ["10", "Basse Noblesse", "150 PO"]
+        [10, "Basse Noblesse", "150 PO"]
       ]
     },
     {
@@ -966,10 +966,10 @@
         ["5 à 7", 5],
         ["8 à 11", 10],
         ["12 à 14", 15],
-        ["15", 20],
+        [15, 20],
         ["16 à 17", 25],
         ["18 à 19", 30],
-        ["20", 35]
+        [20, 35]
       ]
     },
     {
@@ -1061,12 +1061,12 @@
       "title": "Modificateurs à la détection magique",
       "headers": ["Situation", "Modificateur"],
       "rows": [
-        ["La source de magie se trouve à plus de 20 mètres", "-20"],
-        ["La source de magie se trouve à plus de 50 mètres", "-40"],
-        ["La source de magie se trouve à plus de 100 mètres", "-80"],
-        ["La source de magie se trouve à plus d'un kilomètre", "-120"],
-        ["*Milieu légèrement chargé de magie*", "-40"],
-        ["*Milieu fortement chargé de magie*", "-80"]
+        ["La source de magie se trouve à plus de 20 mètres", -20],
+        ["La source de magie se trouve à plus de 50 mètres", -40],
+        ["La source de magie se trouve à plus de 100 mètres", -80],
+        ["La source de magie se trouve à plus d'un kilomètre", -120],
+        ["*Milieu légèrement chargé de magie*", -40],
+        ["*Milieu fortement chargé de magie*", -80]
       ]
     },
     {
@@ -1122,9 +1122,9 @@
       "title": "Durée des rituels",
       "headers": ["Temps investi pour la convocation", "Modificateurs"],
       "rows": [
-        ["Immédiat", "-100"],
-        ["Un round complet", "-50"],
-        ["Trois rounds", "-20"],
+        ["Immédiat", -100],
+        ["Un round complet", -50],
+        ["Trois rounds", -20],
         ["Cinq rounds", "+0"],
         ["Une minute", "+10"],
         ["Une heure", "+20"],
@@ -1175,7 +1175,7 @@
         ["86-90", "La Lune"],
         ["91-95", "Le Soleil"],
         ["96-99", "Le Jugement"],
-        ["100", "Le Monde"]
+        [100, "Le Monde"]
       ]
     },
     {
@@ -1184,22 +1184,22 @@
       "headers": ["Volonté", "Talent psychique"],
       "rows": [
         ["4 ou -", "+0"],
-        ["5", "+10"],
-        ["6", "+20"],
-        ["7", "+30"],
-        ["8", "+40"],
-        ["9", "+50"],
-        ["10", "+60"],
-        ["11", "+70"],
-        ["12", "+80"],
-        ["13", "+90"],
-        ["14", "+100"],
-        ["15", "+120"],
-        ["16", "+140"],
-        ["17", "+160"],
-        ["18", "+180"],
-        ["19", "+200"],
-        ["20", "+220"]
+        [5, "+10"],
+        [6, "+20"],
+        [7, "+30"],
+        [8, "+40"],
+        [9, "+50"],
+        [10, "+60"],
+        [11, "+70"],
+        [12, "+80"],
+        [13, "+90"],
+        [14, "+100"],
+        [15, "+120"],
+        [16, "+140"],
+        [17, "+160"],
+        [18, "+180"],
+        [19, "+200"],
+        [20, "+220"]
       ]
     },
     {
@@ -1247,10 +1247,439 @@
       ]
     },
     {
-      "id": 0,
-      "title": "//TODO",
-      "headers": ["", ""],
-      "rows": []
+      "id": 72,
+      "title": "Dangerosité des pièges",
+      "headers": ["Niveau", "Difficulté"],
+      "rows": [
+        [10, "Routinière"],
+        [20, "Facile"],
+        [30, "Moyenne"],
+        [40, "Difficile"],
+        [50, "Très Difficile"],
+        [60, "Absurde"],
+        [70, "Quasiment Impossible"],
+        [80, "Impossible"],
+        [90, "Surhumaine"],
+        [100, "Zen"]
+      ]
+    },
+    {
+      "id": 73,
+      "title": "Niveaux des poisons",
+      "headers": ["Niveau", "Résistance"],
+      "rows": [
+        [10, "La RPoi se fait contre 20"],
+        [20, "La RPoi se fait contre 40"],
+        [30, "La RPoi se fait contre 60"],
+        [40, "La RPoi se fait contre 80"],
+        [50, "La RPoi se fait contre 100"],
+        [60, "La RPoi se fait contre 120"],
+        [70, "La RPoi se fait contre 140"],
+        [80, "La RPoi se fait contre 160"],
+        [90, "La RPoi se fait contre 180"],
+        [100, "La RPoi se fait contre 200"]
+      ]
+    },
+    {
+      "id": 74,
+      "title": "Liste de poisons",
+      "headers": [
+        "Nom",
+        "Niveau",
+        "Effets / RPoi",
+        "Activation",
+        "Durée",
+        "Contraction"
+      ],
+      "rows": [
+        [
+          "Acqua toffana",
+          40,
+          "Faiblesse (RPoi 80), Malus à toutes les actions (RPoi 60)",
+          "Retardée",
+          "Longue",
+          "Ingestion"
+        ],
+        [
+          "Al-Baladin",
+          60,
+          "Dégâts (RPoi 100), Malus à toutes les actions (RPoi 80)",
+          "Rapide",
+          "Normale",
+          "Par le sang"
+        ],
+        ["Arsenic", 50, "Mort (RPoi 80)", "Normale", "Normale", "Ingestion"],
+        [
+          "Atropine",
+          50,
+          "Hallucinations (RPoi 80)",
+          "Normale",
+          "Normale",
+          "Au contact"
+        ],
+        [
+          "Belladone",
+          50,
+          "Inconscience (RPoi 80)",
+          "Rapide",
+          "Longue",
+          "Ingestion"
+        ],
+        [
+          "Cantharine",
+          30,
+          "Colère (RPoi 60)",
+          "Normale",
+          "Normale",
+          "Par le sang"
+        ],
+        [
+          "Curare",
+          60,
+          "Paralysie (RPoi 80), Mort (RPoi 60)",
+          "Rapide",
+          "Normale",
+          "Par le sang"
+        ],
+        ["Cyanure", 50, "Mort (RPoi 60)", "Instantané", "Normale", "Ingestion"],
+        [
+          "Muscarine",
+          40,
+          "Hallucinations (RPoi 60)",
+          "Normale",
+          "Normale",
+          "Inhalation"
+        ],
+        [
+          "Sève de Ramalen",
+          80,
+          "Terreur (RPoi 120), Cécité (RPoi 100)",
+          "Rapide",
+          "Normale",
+          "Au contact"
+        ],
+        [
+          "Thallium",
+          20,
+          "Douleur (RPoi 40)",
+          "Normale",
+          "Normale",
+          "Par le sang"
+        ],
+        [
+          "Venin de cobra blanc",
+          70,
+          "Mort (RPoi 100)",
+          "Instantané",
+          "Normale",
+          "Par le sang"
+        ],
+        [
+          "Venin de serpent",
+          40,
+          "Mort (RPoi 60)",
+          "Normale",
+          "Normale",
+          "Par le sang"
+        ],
+        [
+          "Vinaigre de saturne",
+          40,
+          "Douleur (RPoi 60), Cécité (RPoi 40)",
+          "Normale",
+          "Longue",
+          "Ingestion"
+        ]
+      ]
+    },
+    {
+      "id": 75,
+      "title": "Niveaux des maladies",
+      "headers": ["Niveau", "Résistance"],
+      "rows": [
+        [10, "La RMal se fait contre 20"],
+        [20, "La RMal se fait contre 40"],
+        [30, "La RMal se fait contre 60"],
+        [40, "La RMal se fait contre 80"],
+        [50, "La RMal se fait contre 100"],
+        [60, "La RMal se fait contre 120"],
+        [70, "La RMal se fait contre 140"],
+        [80, "La RMal se fait contre 160"],
+        [90, "La RMal se fait contre 180"],
+        [100, "La RMal se fait contre 200"]
+      ]
+    },
+    {
+      "id": 76,
+      "title": "En flammes",
+      "headers": ["Quantité", "État"],
+      "rows": [
+        ["140 à 179", "Allumé"],
+        ["180 à 239", "Ardent"],
+        ["240 à 299", "En flammes"],
+        ["+300", "Calciné"]
+      ]
+    },
+    {
+      "id": 77,
+      "title": "Intensités de feu",
+      "headers": ["Intensités", "Équivalence", "Dégâts"],
+      "rows": [
+        [1, "La flamme d'une bougie", 5],
+        [3, "Le feu d'un torche", 15],
+        [5, "Un petit bûcher", 25],
+        [7, "Un grand bûcher", 35],
+        [20, "L'incendie d'une maison", 100],
+        [30, "Un haut fourneau", 150],
+        [40, "Un château en flammes", 200],
+        [50, "Un volcan", 250]
+      ]
+    },
+    {
+      "id": 78,
+      "title": "Intensités de froid",
+      "headers": ["Intensités", "Équivalence", "Dégâts"],
+      "rows": [
+        [1, "Givre", 5],
+        [5, "Neige", 25],
+        [10, "Gel", 50],
+        [20, "Iceberg", 100],
+        [30, "Un blizzard", 150],
+        [50, "Un zone glaciale", 250]
+      ]
+    },
+    {
+      "id": 79,
+      "title": "Intensités d'électricité",
+      "headers": ["Intensités", "Équivalence", "Dégâts"],
+      "rows": [
+        [1, "Étincelle", 5],
+        [3, "Électricité statique", 15],
+        [5, "Une petite décharge", 25],
+        [7, "La décharge d'une anguille électrique", 35],
+        [20, "Éclair", 100],
+        [40, "Une puissante tempête électrique", 200]
+      ]
+    },
+    {
+      "id": 80,
+      "title": "Présences",
+      "headers": ["Équivalence", "Présence"],
+      "rows": [
+        ["Petits objets simples (cuillières, vases, chaises...)", "10 à 25"],
+        [
+          "Objets naturels complexes (montres, longue-vue, tente de camping...)",
+          "25 à 60"
+        ],
+        [
+          "Gemmes, matériaux inhabituels et œuvre d'art (argent, diamants, grands tableaux...)",
+          "40 à 80"
+        ],
+        [
+          "Choses de grande taille (chariot, grande statues, collines...)",
+          "80 à 120"
+        ],
+        [
+          "Choses colossales (montagnes, lacs, grandes bâtisses...)",
+          "120 à 180"
+        ]
+      ]
+    },
+    {
+      "id": 81,
+      "title": "Invulnérabilité et structure",
+      "headers": [
+        "Matière",
+        "Base de Présence",
+        "Points de structure",
+        "Seuil d'Invulnérabilité"
+      ],
+      "rows": [
+        ["Petite pierre", 10, 40, 60],
+        ["Roche énorme", 30, 300, 100],
+        ["Table", 20, 60, 20],
+        ["Chaise", 15, 50, 20],
+        ["Baril", 20, 70, 30],
+        ["Coffre", 20, 70, 50],
+        ["Coffre renforcé", 25, 150, 80],
+        ["Chariot", 40, 300, 40],
+        ["Diligence", 50, 350, 60],
+        ["", "", "", ""],
+        ["Mur de planches", 40, 300, 60],
+        ["Mur de pierre", 50, 400, 100],
+        ["Mur de pierres massives", 60, 450, 120],
+        ["Pont", 60, 400, 90],
+        ["Grand pont", 80, 800, 120],
+        ["", "", "", ""],
+        ["Porte normale", 20, 100, 40],
+        ["Porte robuste", 30, 200, 80],
+        ["Porte métallique", 40, 300, 120],
+        ["Herse", 60, 500, 120],
+        ["Grille métallique", 40, 200, 120],
+        ["", "", "", ""],
+        ["Petit arbre", 30, 200, 40],
+        ["Grand arbre", 60, 500, 60],
+        ["", "", "", ""],
+        ["Hutte", 50, 400, 50],
+        ["Maison", 70, 600, 80],
+        ["Bâtisse", 100, 2000, 100],
+        ["Manoir", 120, 3000, 100],
+        ["Palais", 140, 4000, 120],
+        ["Château", 160, 5000, 140],
+        ["", "", "", ""],
+        ["Village", 140, "NA", "NA"],
+        ["Ville", 160, "NA", "NA"],
+        ["Métropole", 200, "NA", "NA"],
+        ["", "", "", ""],
+        ["Barque", 40, 200, 40],
+        ["Voilier", 80, 600, 70],
+        ["Croiseur", 100, 1000, 80],
+        ["Navire gigantesque", 120, 2000, 80]
+      ]
+    },
+    {
+      "id": "XV",
+      "title": "Références pour l'Expérience",
+      "headers": ["Situation", "Expérience"],
+      "rows": [
+        ["Interprétation", "5 à 25"],
+        ["Actions difficiles", "1 à 5"],
+        ["Bons plans ou idées", "1 à 5"],
+        ["Une heure de jeu", "1 à 3"],
+        ["Résolution d'un arc", "5 à 30"]
+      ]
+    },
+    {
+      "id": "XVI",
+      "title": "Exemples de combats",
+      "headers": ["Difficulté", "Exemple"],
+      "rows": [
+        [
+          "Routinier",
+          "Un combattant de niveau six contre deux gardes de cité ; un archimage de niveau dix contre une petite armée de quarante ou cinquante soldats professionnels..."
+        ],
+        [
+          "Facile",
+          "Un guerrier de deuxième niveau contre un simple garde ; un groupe de personnage de niveau trois ou quatre contre un seul adversaire de même niveau..."
+        ],
+        [
+          "Moyen",
+          "Un combattant contre un guerrier avec vingt ou trente points de moins en compétences martiales ; un groupe qui possède des capacités surnaturelles contre un autre groupe similaire qui n'en a pas..."
+        ],
+        [
+          "Difficile",
+          "Deux combattants identiques avec le même équipement ; deux groupes aux pouvoirs et compétences similaires ; un guerrier de niveau six contre cinquante soldats professionnels..."
+        ],
+        [
+          "Très Difficile",
+          "Un guerrier de niveau quatre contre une dizaine de soldats professionnels ; un touche-à-tout de niveau cinq ou six contre un guerrier de même niveau, mais mieux équipé..."
+        ],
+        [
+          "Absurde",
+          "Un groupe de personnages de niveau cinq contre un Élémentaire Supérieur d'Obscurité ; un guerrier de premier niveau contre vingt gardes de cité..."
+        ],
+        [
+          "Quasiment Impossible",
+          "Un groupe de personnages de niveau 5 contre un adversaire supérieur de quatre ou cinq niveaux : un guerrier de niveau deux ou trois contre cinq soldats d'élite..."
+        ],
+        [
+          "Impossible",
+          "Un groupe de personnages de niveau six ou sept contre le Filisnogos ; un duel contre un adversaire supérieur de sept ou huit niveaux..."
+        ]
+      ]
+    },
+    {
+      "id": "XVII",
+      "title": "Modificateurs pour le combat",
+      "headers": ["Résultat du combat", "Modificateur"],
+      "rows": [
+        ["Victoire totale", "Tous les points"],
+        ["Victoire parttiele", "Moitiée des points"],
+        ["Échec", "Tiers des points"]
+      ]
+    },
+    {
+      "id": 82,
+      "title": "Expérience de combat",
+      "headers": ["Difficulté", "Expérience", "Explication"],
+      "rows": [
+        [
+          "Routinière",
+          "Aucune",
+          "Combat qui ne présentent aucun défi pour les personnages, qu'ils peuvent gagner sans difficulté malgré des circonstances adverses et en faisant preuve de la pire des malchances."
+        ],
+        [
+          "Facile",
+          1,
+          "Le personnage a toutes les chances de gagner et y parvient normalement avec facilité. Cependant, contrairement au cas précédent, il y a un risque, bien que faible, que la chance soit contre lui."
+        ],
+        [
+          "Moyenne",
+          5,
+          "Le combat est très équilibré pour les deux camps, mais il y a un léger avantage pour les personnages joueurs, que ce soit du fait de leur compétence ou de leur nombre."
+        ],
+        [
+          "Difficile",
+          10,
+          "Il s'agit d'un combat réellement équilibré, dans lequel les deux adversaires ou groupes d'adversaires ont exactement les mêmes chances de gagner."
+        ],
+        [
+          "Très Difficile",
+          15,
+          "[Le combat est à nouveau très équilibré, mais il y a cette fois un léger avantage en faveur du groupe opposé, qui généralement remporte la victoire. En fait, il s'agit d'un combat Moyen, vu depuis la perspective du groupe ennemi."
+        ],
+        [
+          "Absurde",
+          20,
+          "Confrontations où tout est vraiment opposé aux personnages, d'autant plus que leurs adversaires les surpassent en puissance. Cependant, ils ont encore une petite possibilité de gagner, si la chance les accompagne."
+        ],
+        [
+          "Quasiment Impossible",
+          30,
+          "Il s'agit de combats pratiquement perdus d'avance, car le déséquilibre entre les adversaires e révèle quasiment infranchissable. La chance seule ne permet pas de remporter cet affrontement ; ce n'est que dans des circonstances trés particulières et avec une série de jets chanceux qu'il serait possible de gagner ce type de confrontation."
+        ],
+        [
+          "Impossible",
+          60,
+          "Comme leur nom l'indique, ce sont des combats qu'aucun personnage ne peut remporter, à moins d'un véritable miracle. Malgré tout, il n'existe rien de mieux qu'une partie de jeu de rôle pour voir comme les miracles peuvent devenir réalité."
+        ]
+      ]
+    },
+    {
+      "id": 83,
+      "title": "Élan",
+      "headers": ["Élan", "Synchronisé", "Limite"],
+      "rows": [
+        ["Jusqu'à 49", "Illimité", "Élan 50"],
+        ["50-59", 1000, "Élan 50"],
+        ["60-69", 500, "Élan 40"],
+        ["70-79", 100, "Élan 30"],
+        ["80-89", 10, "Élan 20"],
+        ["90-99", 3, "Élan 10"],
+        [100, 1, "Élan 0"]
+      ]
+    },
+    {
+      "id": 84,
+      "title": "Caractéristique des êtres magiques",
+      "headers": ["Caractéristique", "Coût en PF", "Gnose"],
+      "rows": [
+        [1, 1, ""],
+        [2, 2, ""],
+        [3, 3, ""],
+        [4, 4, ""],
+        [5, 5, ""],
+        [6, 6, ""],
+        [7, 7, ""],
+        [8, 8, ""],
+        [9, 10, ""],
+        [10, 15, ""],
+        [11, 20, ""],
+        [12, 30, ""],
+        [13, 40, 5],
+        [14, 50, 15],
+        [15, 60, 25]
+      ]
     },
     {
       "id": 85,
@@ -1267,8 +1696,8 @@
         "Armure"
       ],
       "rows": [
-        ["Minuscule", "1-3", 5, 20, 40, "NA", "-4", 1, 1],
-        ["Petite", "4-8", 10, 30, 30, "NA", "-2", 2, 2],
+        ["Minuscule", "1-3", 5, 20, 40, "NA", -4, 1, 1],
+        ["Petite", "4-8", 10, 30, 30, "NA", -2, 2, 2],
         ["Moyenne", "9-22", 10, 40, 20, "NA", "NA", 5, 3],
         ["Grande", "23-24", 20, 60, 10, "NA", "NA", 5, 4],
         ["Énorme", "25-28", 30, 100, 0, "1 m", "+1", 10, 6],
@@ -1277,10 +1706,132 @@
       ]
     },
     {
-      "id": 0,
-      "title": "//TODO",
-      "headers": ["", ""],
-      "rows": []
+      "id": 86,
+      "title": "Fracassement et Solidité",
+      "headers": ["Taille", "Fracassement", "Solidité"],
+      "rows": [
+        ["Minuscule ", -4, 4],
+        ["Petite ", -2, 8],
+        ["Moyenne ", 0, 12],
+        ["Grande ", 4, 16],
+        ["Énorme ", 8, 20],
+        ["Gigantesque ", 12, 28],
+        ["Colossal ", 16, 34]
+      ]
+    },
+    {
+      "id": 87,
+      "title": "Adapatation de caractéristique",
+      "headers": ["Caractéristique", "3 à 18", "1 à 100"],
+      "rows": [
+        [1, 3, 5],
+        [2, 4, 15],
+        [3, 5, 25],
+        [4, 7, 35],
+        [5, 9, 45],
+        [6, 10, 55],
+        [7, 12, 65],
+        [8, 14, 75],
+        [9, 16, 85],
+        [10, 18, 95],
+        [11, 20, 100],
+        [12, 22, 110],
+        [13, 25, 125],
+        [14, 30, 150],
+        [15, 40, 180]
+      ]
+    },
+    {
+      "id": "p.335",
+      "title": "La Table de Combat",
+      "headers": [
+        "Marge",
+        "IP 0",
+        "IP 1",
+        "IP 2",
+        "IP 3",
+        "IP 4",
+        "IP 5",
+        "IP 6",
+        "IP 7",
+        "IP 8",
+        "IP 9",
+        "IP 10"
+      ],
+      "rows": [
+        [-301,"+150 C","+150 C","+150 C","+150 C","+150 C","+150 C","+150 C","+150 C","+150 C","+150 C","+150 C"],
+["-291 à -300","+145 C","+145 C","+145 C","+145 C","+145 C","+145 C","+145 C","+145 C","+145 C","+145 C","+145 C"],
+["-281 à -290","+140 C","+140 C","+140 C","+140 C","+140 C","+140 C","+140 C","+140 C","+140 C","+140 C","+140 C"],
+["-271 à -280","+135 C","+135 C","+135 C","+135 C","+135 C","+135 C","+135 C","+135 C","+135 C","+135 C","+135 C"],
+["-261 à -270","+130 C","+130 C","+130 C","+130 C","+130 C","+130 C","+130 C","+130 C","+130 C","+130 C","+130 C"],
+["-251 à -260","+125 C","+125 C","+125 C","+125 C","+125 C","+125 C","+125 C","+125 C","+125 C","+125 C","+125 C"],
+["-241 à -250","+120 C","+120 C","+120 C","+120 C","+120 C","+120 C","+120 C","+120 C","+120 C","+120 C","+120 C"],
+["-231 à -240","+115 C","+115 C","+115 C","+115 C","+115 C","+115 C","+115 C","+115 C","+115 C","+115 C","+115 C"],
+["-221 à -230","+110 C","+110 C","+110 C","+110 C","+110 C","+110 C","+110 C","+110 C","+110 C","+110 C","+110 C"],
+["-211 à -220","+105 C","+105 C","+105 C","+105 C","+105 C","+105 C","+105 C","+105 C","+105 C","+105 C","+105 C"],
+["-201 à -210","+100 C","+100 C","+100 C","+100 C","+100 C","+100 C","+100 C","+100 C","+100 C","+100 C","+100 C"],
+["-191 à -200","+95 C","+95 C","+95 C","+95 C","+95 C","+95 C","+95 C","+95 C","+95 C","+95 C","+95 C"],
+["-181 à -190","+90 C","+90 C","+90 C","+90 C","+90 C","+90 C","+90 C","+90 C","+90 C","+90 C","+90 C"],
+["-171 à -180","+85 C","+85 C","+85 C","+85 C","+85 C","+85 C","+85 C","+85 C","+85 C","+85 C","+85 C"],
+["-161 à -170","+80 C","+80 C","+80 C","+80 C","+80 C","+80 C","+80 C","+80 C","+80 C","+80 C","+80 C"],
+["-151 à -160","+75 C","+75 C","+75 C","+75 C","+75 C","+75 C","+75 C","+75 C","+75 C","+75 C","+75 C"],
+["-141 à -150","+70 C","+70 C","+70 C","+70 C","+70 C","+70 C","+70 C","+70 C","+70 C","+70 C","+70 C"],
+["-131 à -140","+65 C","+65 C","+65 C","+65 C","+65 C","+65 C","+65 C","+65 C","+65 C","+65 C","+65 C"],
+["-121 à -130","+60 C","+60 C","+60 C","+60 C","+60 C","+60 C","+60 C","+60 C","+60 C","+60 C","+60 C"],
+["-111 à -120","+55 C","+55 C","+55 C","+55 C","+55 C","+55 C","+55 C","+55 C","+55 C","+55 C","+55 C"],
+["-101 à -110","+50 C","+50 C","+50 C","+50 C","+50 C","+50 C","+50 C","+50 C","+50 C","+50 C","+50 C"],
+["-91 à -100","+45 C","+45 C","+45 C","+45 C","+45 C","+45 C","+45 C","+45 C","+45 C","+45 C","+45 C"],
+["-81 à -90","+40 C","+40 C","+40 C","+40 C","+40 C","+40 C","+40 C","+40 C","+40 C","+40 C","+40 C"],
+["-71 à -80","+35 C","+35 C","+35 C","+35 C","+35 C","+35 C","+35 C","+35 C","+35 C","+35 C","+35 C"],
+["-61 à -70","+30 C","+30 C","+30 C","+30 C","+30 C","+30 C","+30 C","+30 C","+30 C","+30 C","+30 C"],
+["-51 à -60","+25 C","+25 C","+25 C","+25 C","+25 C","+25 C","+25 C","+25 C","+25 C","+25 C","+25 C"],
+["-41 à -50","+20 C","+20 C","+20 C","+20 C","+20 C","+20 C","+20 C","+20 C","+20 C","+20 C","+20 C"],
+["-31 à -40","+15 C","+15 C","+15 C","+15 C","+15 C","+15 C","+15 C","+15 C","+15 C","+15 C","+15 C"],
+["-21 à -30","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C"],
+["-11 à -20","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C"],
+["-1 à -10","C","C","C","C","C","C","C","C","C","C","C"],
+["0 à 9","","","","","","","","","","",""],
+["10 à 19","","","","","","","","","","",""],
+["20 à 29","","","","","","","","","","",""],
+["30 à 39","10%","","","","","","","","","",""],
+["40 à 49","20%","10%","","","","","","","","",""],
+["50 à 59","30%","20%","10%","","","","","","","",""],
+["60 à 69","40%","30%","20%","10%","","","","","","",""],
+["70 à 79","50%","40%","30%","20%","10%","","","","","",""],
+["80 à 89","60%","50%","40%","30%","20%","10%","","","","",""],
+["90 à 99","70%","60%","50%","40%","30%","20%","10%","","","",""],
+["100 à 109","80%","70%","60%","50%","40%","30%","20%","10%","","",""],
+["110 à 119","90%","80%","70%","60%","50%","40%","30%","20%","10%","",""],
+["120 à 129","100%","90%","80%","70%","60%","50%","40%","30%","20%","10%",""],
+["130 à 139","110%","100%","90%","80%","70%","60%","50%","40%","30%","20%","10%"],
+["140 à 149","120%","110%","100%","90%","80%","70%","60%","50%","40%","30%","20%"],
+["150 à 159","130%","120%","110%","100%","90%","80%","70%","60%","50%","40%","30%"],
+["160 à 169","140%","130%","120%","110%","100%","90%","80%","70%","60%","50%","40%"],
+["170 à 179","150%","140%","130%","120%","110%","100%","90%","80%","70%","60%","50%"],
+["180 à 189","160%","150%","140%","130%","120%","110%","100%","90%","80%","70%","60%"],
+["190 à 199","170%","160%","150%","140%","130%","120%","110%","100%","90%","80%","70%"],
+["200 à 209","180%","170%","160%","150%","140%","130%","120%","110%","100%","90%","80%"],
+["210 à 219","190%","180%","170%","160%","150%","140%","130%","120%","110%","100%","90%"],
+["220 à 229","200%","190%","180%","170%","160%","150%","140%","130%","120%","110%","100%"],
+["230 à 239","210%","200%","190%","180%","170%","160%","150%","140%","130%","120%","110%"],
+["240 à 249","220%","210%","200%","190%","180%","170%","160%","150%","140%","130%","120%"],
+["250 à 259","230%","220%","210%","200%","190%","180%","170%","160%","150%","140%","130%"],
+["260 à 269","240%","230%","220%","210%","200%","190%","180%","170%","160%","150%","140%"],
+["270 à 279","250%","240%","230%","220%","210%","200%","190%","180%","170%","160%","150%"],
+["280 à 289","260%","250%","240%","230%","220%","210%","200%","190%","180%","170%","160%"],
+["290 à 299","270%","260%","250%","240%","230%","220%","210%","200%","190%","180%","170%"],
+["300 à 309","280%","270%","260%","250%","240%","230%","220%","210%","200%","190%","180%"],
+["310 à 319","290%","280%","270%","260%","250%","240%","230%","220%","210%","200%","190%"],
+["320 à 329","300%","290%","280%","270%","260%","250%","240%","230%","220%","210%","200%"],
+["330 à 339","310%","300%","290%","280%","270%","260%","250%","240%","230%","220%","210%"],
+["340 à 349","320%","310%","300%","290%","280%","270%","260%","250%","240%","230%","220%"],
+["350 à 359","330%","320%","310%","300%","290%","280%","270%","260%","250%","240%","230%"],
+["360 à 369","340%","330%","320%","310%","300%","290%","280%","270%","260%","250%","240%"],
+["370 à 379","350%","340%","330%","320%","310%","300%","290%","280%","270%","260%","250%"],
+["380 à 389","360%","350%","340%","330%","320%","310%","300%","290%","280%","270%","260%"],
+["390 à 399","370%","360%","350%","340%","330%","320%","310%","300%","290%","280%","270%"],
+["+400","380%","370%","360%","350%","340%","330%","320%","310%","300%","290%","280%"]
+      ]
     }
   ],
   "kit-mj": [],
@@ -1301,9 +1852,9 @@
         ["Flanc + Cécité absolue", -100, -100, -100, "-", -90],
         ["Dos + Cécité partielle", -40, -90, -80, "-", -90],
         ["Dos + Cécité absolue", -100, -120, -120, "-", -90],
-        ["Paralysie complète + Flanc", -200, -200, -200, "-100", -200],
-        ["Paralysie complète + Dos", -200, -200, -200, "-100", -200],
-        ["Paralysie complète + Cécité", -200, -200, -200, "-100", -200]
+        ["Paralysie complète + Flanc", -200, -200, -200, -100, -200],
+        ["Paralysie complète + Dos", -200, -200, -200, -100, -200],
+        ["Paralysie complète + Cécité", -200, -200, -200, -100, -200]
       ]
     },
     {
@@ -1320,7 +1871,7 @@
       ],
       "rows": [
         [
-          "-1",
+          -1,
           "1 - 3 m (D1)",
           "5 - 10 m (D1)",
           "10 - 15 m (D2)",
@@ -1329,7 +1880,7 @@
           "50 - 100 m (D4)"
         ],
         [
-          "-2",
+          -2,
           "2 - 4 m (D1)",
           "7 - 15 m (D1)",
           "15 - 30 m (D2)",
@@ -1409,21 +1960,21 @@
         [
           18,
           "1 km",
-          "-1",
+          -1,
           "3 rounds",
           "Les édifices ayant un Seuil d'Invulnérabilité de 60 ou moins sont automatiquement détruits. Le reste subit des dégâts équivalent à celui du sort de la Voie de la Terre Tremblement de Terre."
         ],
         [
           19,
           "5 km",
-          "-2",
+          -2,
           "5 rounds",
           "Les édifices ayant un Seuil d'Invulnérabilité de 80 ou moins sont automatiquement détruits. Le reste subit des dégâts équivalent à celui du sort de la Voie de la Terre Tremblement de Terre."
         ],
         [
           20,
           "25 km",
-          "-4",
+          -4,
           "10 rounds",
           "Les édifices ayant un Seuil d'Invulnérabilité de 100 ou moins sont automatiquement détruits. Le reste subit des dégâts équivalent à celui du sort de la Voie de la Terre Tremblement de Terre."
         ]
@@ -1696,11 +2247,11 @@
         "3 Point de Créations"
       ],
       "rows": [
-        ["0-3", "1+", "2", "2+"],
-        ["4-6", "2", "2+", "3"],
-        ["7-9", "2+", "3", "3+"],
-        ["10-12", "3", "3+", "4"],
-        ["13+", "3+", "4", "4+"]
+        ["0-3", "1+", 2, "2+"],
+        ["4-6", 2, "2+", 3],
+        ["7-9", "2+", 3, "3+"],
+        ["10-12", 3, "3+", 4],
+        ["13+", "3+", 4, "4+"]
       ]
     },
     {
