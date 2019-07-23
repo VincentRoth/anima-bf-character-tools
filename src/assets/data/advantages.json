@@ -1242,7 +1242,7 @@
     "costs": [1, 2, 3],
     "source": "ArcEx p.11",
     "types": ["Avantage Général", "Mystique", "Convocation"]
-  }
+  },
   {
     "name": "Mutations",
     "description": "Le personnage possède des pouvoirs innés ç cause d'une mutation.",
