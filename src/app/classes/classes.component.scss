@@ -1,0 +1,37 @@
+:host {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 100%;
+}
+
+.class-content {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 100%;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0 0 0.8rem;
+
+    &.description {
+        text-align: justify;
+    }
+}
+
+h4 {
+    margin: 0.8rem 0;
+    text-transform: uppercase;
+    color: mediumblue;
+}
+
+h5 {
+    margin: 0.8rem 0 0;
+    font-size: 0.9rem;
+    color: brown;
+
+    .limit {
+        color: black;
+        font-weight: normal;
+    }
+}

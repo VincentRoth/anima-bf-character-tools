@@ -6,6 +6,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { EContentType } from '../content.model';
 import { RouterTestingModule } from '@angular/router/testing';
 import { TableComponent } from '../../table/table.component';
+import { AppMaterialModule } from 'src/app/app-material.module';
 
 describe('PanelContentComponent', () => {
   let component: PanelContentComponent;
@@ -18,7 +19,7 @@ describe('PanelContentComponent', () => {
         ContentTitleComponent,
         TableComponent
       ],
-      imports: [HttpClientTestingModule, RouterTestingModule]
+      imports: [HttpClientTestingModule, RouterTestingModule, AppMaterialModule]
     }).compileComponents();
   }));
 

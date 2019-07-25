@@ -778,7 +778,7 @@
   {
     "name": "Adroit",
     "description": "Représente le fait que le personnage a toujours été doué d'une certaine adresse manuelle, très supérieure à ce que sa Dextérité naturelle lui permet.",
-    "effect": "Le personnage ajoute un bonus spécial de +30 à son Habilité manuelle et peut appliquer un bonus de +3 aux tests opposés de Dextérité.",
+    "effect": "Le personnage ajoute un bonus spécial de +30 à son Habileté manuelle et peut appliquer un bonus de +3 aux tests opposés de Dextérité.",
     "costs": [1],
     "source": "KitMJ p.3",
     "types": ["Avantage Général", "Compétences"]
@@ -984,7 +984,7 @@
   {
     "name": "Maladroit",
     "description": "Même si la Dextérité du personnage est élevée, ce dernier tend vers un certain degré de maladresse, à cause de sa distraction et du manque de coordination.",
-    "effect": "Ce désavantage donne un malus de -30 à tout test d'Habilité manuelle demandant de la coordination, et de -3 à tous les tests opposés de Dextérité.",
+    "effect": "Ce désavantage donne un malus de -30 à tout test d'Habileté manuelle demandant de la coordination, et de -3 à tous les tests opposés de Dextérité.",
     "benefits": [1],
     "source": "KitMJ p.5",
     "types": ["Désavantage Général", "Compétences"]

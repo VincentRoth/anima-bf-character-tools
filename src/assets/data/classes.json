@@ -1,0 +1,956 @@
+[
+  {
+    "name": "Guerrier",
+    "description": "Le guerrier incarne l'essence de l'archétype du combattant. Cette classe englobe tous les individus qui ont dédié leur vie entière au combat et qui sont capables d'exploiter au maximum leurs capacités guerrières. Cela les conduit à maîtriser non seulement les armes mais aussi, quand le moment est venu, à utiliser leur énergie animique au combat. Ils développent aussi avec facilité de grandes connaissances dans le domaine des tactiques militaires et saven dirigier des armées. Traditionnellement, les guerriers peuvent remplir de nombreux rôle, depuis celui de simple mercenaire à celui de chevalier.",
+    "archetypes": ["Combattant"],
+    "lifePointMult": 15,
+    "lifePointPerLevel": 15,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 25,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.6,
+        "attack": 2,
+        "block": 2,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 2,
+        "kiAccumulation": 20
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 3,
+        "maMultiple": 70,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 3,
+      "vigor": 2,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": [
+        {
+          "ability": "Prouesses de Force",
+          "cost": 1
+        }
+      ]
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Attaque",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Parade",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Port d'armure",
+          "bonus": 5
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Prouesses de Force",
+          "bonus": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Guerrier acrobate",
+    "description": "Les guerriers acrobates sont des combattants spécialisés dans l'optimisation de leur agilité et de leur rapidité. Leur avantage principal consiste à anticiper les mouvements de leurs adversaires et à essayer d'en finir avec eux avant qu'ils ne réagissent. Ils préfèrent aussi esquiver les attaques et rester aussi loin que possible de l'endroit où porte un coup. Ils bénéficient d'une grande agilité, s'avèrent capables de sauter, de tomber ou de courir avec une habilité que peu parviennent à égaler. Ils peuvent jouer toutes sortes de rôles dans le monde, mais assurent généralement des postes liés au combat, comme ceux de duellistes ou de spadassins.",
+    "archetypes": ["Combattant"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 10,
+    "initiativePerLevel": 10,
+    "martialKnowledgePerLevel": 25,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.6,
+        "attack": 2,
+        "block": 3,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 2,
+        "kiAccumulation": 20
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 3,
+        "maMultiple": 70,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 3,
+      "vigor": 2,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": []
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Attaque",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Esquive",
+          "bonus": 5,
+          "limit": 50
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Acrobaties",
+          "bonus": 10
+        },
+        {
+          "ability": "Athlétisme",
+          "bonus": 10
+        },
+        {
+          "ability": "Saut",
+          "bonus": 10
+        },
+        {
+          "ability": "Style",
+          "bonus": 10
+        },
+        {
+          "ability": "Habileté manuelle",
+          "bonus": 10
+        }
+      ]
+    }
+  },
+  {
+    "name": "Paladin",
+    "description": "Les paladins sont des combattants axés sur la défense qui s'appuient en combat sur certaines compétences mystiques. L'une de leurs spécialités consiste à expulser les êtres surnaturels à l'aide de leurs pouvoirs naturels. La plupart suivent des codes de conduite liés à des religions ou à l'honneur, bien qu'ils n'y soient pas obligés. Meneurs nés, ils peuvent utiliser leur charisme et leurs dons pour mobiliser d'énormes troupes de gens, qui iraient jusqu'à donner leur vie pour eux.",
+    "archetypes": ["Combattant"],
+    "lifePointMult": 15,
+    "lifePointPerLevel": 15,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 20,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.6,
+        "attack": 2,
+        "block": 2,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 2,
+        "kiAccumulation": 20
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 2,
+        "maMultiple": 60,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 1
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 1,
+      "perceptive": 2,
+      "intellectual": 2,
+      "vigor": 2,
+      "subterfuge": 3,
+      "creative": 2,
+      "reducedCosts": [
+        {
+          "ability": "Résistance à la douleur",
+          "cost": 1
+        }
+      ]
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Parade",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Port d'armure",
+          "bonus": 10
+        },
+        {
+          "ability": "Révoquer",
+          "bonus": 10
+        },
+        {
+          "ability": "Points de Zéon",
+          "bonus": 20
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Commandement",
+          "bonus": 10
+        },
+        {
+          "ability": "Résistance à la douleur",
+          "bonus": 10
+        },
+        {
+          "ability": "Style",
+          "bonus": 5
+        }
+      ]
+    },
+    "special": "Si le paladin ne souhaite pas développer de facultés mystiques, il peut échanger les bonus automatiques en Révoquer et en Zéon contre un bonus de +10 par niveau en Impassibilité."
+  },
+  {
+    "name": "Paladin noir",
+    "description": "En quelque sorte, cette classe s'avère l'exacte opposée de celle du paladin. Ce combattant spécialisé s'appuie sur certaines capacités mystiques. Ses pouvoirs principaux concernent la domination et le contrôle des êtres surnaturels qu'il utilise à sa guise, une fois soumis à sa volonté. Les paladins noirs font preuve de grande capacité de commandement, mais ils emploient l'intimidation et la peur pour subjuguer les autres selon leurs désirs. Si tout cela ne fonctionne pas, les paladins noirs persuadent leurs interlocuteurs de croire ce qu'ils racontent.",
+    "archetypes": ["Combattant"],
+    "lifePointMult": 15,
+    "lifePointPerLevel": 15,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 20,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.6,
+        "attack": 2,
+        "block": 2,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 2,
+        "kiAccumulation": 20
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 2,
+        "maMultiple": 60,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 1,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 1,
+      "perceptive": 2,
+      "intellectual": 2,
+      "vigor": 2,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": [
+        {
+          "ability": "Impassibilité",
+          "cost": 1
+        }
+      ]
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Attaque",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Port d'armure",
+          "bonus": 5
+        },
+        {
+          "ability": "Dominer",
+          "bonus": 10
+        },
+        {
+          "ability": "Points de Zéon",
+          "bonus": 20
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Intimidation",
+          "bonus": 10
+        },
+        {
+          "ability": "Impassibilité",
+          "bonus": 10
+        },
+        {
+          "ability": "Persuasion",
+          "bonus": 5
+        },
+        {
+          "ability": "Style",
+          "bonus": 5
+        }
+      ]
+    },
+    "special": "Si le paladin noir ne souhaite pas développer de facultés mystiques, il peut échanger les bonus automatiques en Dominer et en Zéon contre un bonus de +10 par niveau en Résistance à la Douleur."
+  },
+  {
+    "name": "Maître d'armes",
+    "description": "Ces combattants se consacrent au perfectionnement de leurs capacités martiales avec tout type d'arme. Ils ont le combat dans le sang et se sont hissés jusqu'aux limites de leurs dons belliqueux au-delà de toute autre classe. Lors d'un conflit, ils ignorent l'utilisation de leur énergie physique et de tout ce qui ne correspond pas à leur propre compétence martiale, mais ils restent les combattants les plus habiles et les meilleurs spécialistes pour tout ce qui concerne les véritables aptitudes martiales. La grande ma jorité des chevaliers et des mercenaires fait partie de cette classe.",
+    "archetypes": ["Combattant"],
+    "lifePointMult": 10,
+    "lifePointPerLevel": 20,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 10,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.6,
+        "attack": 2,
+        "block": 2,
+        "dodge": 2,
+        "wearArmor": 1,
+        "ki": 3,
+        "kiAccumulation": 30
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 3,
+        "maMultiple": 70,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 3,
+      "vigor": 1,
+      "subterfuge": 3,
+      "creative": 2,
+      "reducedCosts": []
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Attaque",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Parade",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Port d'armure",
+          "bonus": 10
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Prouesses de Force",
+          "bonus": 5
+        }
+      ]
+    },
+    "special": "Les modules d'armes généraux, typiques et de style coûtent au maître d'armes la moitié des PF requis."
+  },
+  {
+    "name": "Virtuose martial",
+    "description": "Un virtuose martial est un expert qui utilise ses capacités de Ki. Ces individus ont exploré en profondeur les secrets du corps et de l'âme et ont développé avec aisance des capacité qui restent hors d'atteinte des personnes normales. Parfois, des années peuvent s'écouler avant que n'apparaisse la véritable portée de leur pouvoir ; cependant, dès ce moment, ils deviennent des individus au pouvoir considérable. Bien qu'ils ne possèdent pas de réelles aptitudes innées pour le combat, ils deviennent des combattants terrifiants quand ils utilisent leur contrôle du Ki face à leur adversaire, libérant sans hésiter des techniques surhumaines.",
+    "archetypes": ["Artiste Martial"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 5,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 50,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.6,
+        "attack": 2,
+        "block": 2,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 1,
+        "kiAccumulation": 10
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 3,
+        "maMultiple": 70,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 3,
+      "vigor": 2,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": []
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Attaque",
+          "bonus": 5,
+          "limit": 50
+        }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "name": "Tao",
+    "description": "Ces artistes martiaux se sont spécialisé dans le combat sans arme. Consacrant leur vie à la maîtrise de toutes les connaissances martiales possibles, ils essaient sans cesse de développer de nouveaux arts de combat personnels. Les entraînement leur permet d'apprendre avec facilité tous les styles martiaux qu'ils découvrent, extrayant les éléments qui en feront de meilleurs combattans. Le moment venu, ils tentent de magnifier leur énergie interne et d'en tirer le plus grand bénéfice possible, compensant les désavantages éventuels contre un ennemi mieux équipé. Naturellement, rien ne les empêche de manier des armes.",
+    "archetypes": ["Combattant", "Artiste Martial"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 10,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 30,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.6,
+        "attack": 2,
+        "block": 2,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 2,
+        "kiAccumulation": 15
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 3,
+        "maMultiple": 70,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 3,
+      "vigor": 2,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": []
+    },
+    "bonus": {
+      "primary": [],
+      "secondary": [
+        {
+          "ability": "Style",
+          "bonus": 5
+        }
+      ]
+    },
+    "special": "Les Arts Martiaux coûtent 20 PF (10 pour le premier appris)."
+  },
+  {
+    "name": "Explorateur",
+    "description": "L'explorateur représente le prototype traditionnel de l'aventurier. Il s'agit souvent de personnes qui utilisent au mieux leur capacité à percevoir ce qui les entoure, ainsi qu'à entrer où quiconque d'autre ne réussirait. Un explorateur reste généralement ses sens à l'affût de tout ce qui se passe autour de lui, ce qui lui permet d'être rarement surpris. C'est aussi un pisteur et un survivant d'exception, ce qui explique ses vastes connaissances sur les régions boisées ou inhospitalières. Dans un groupe, les explorateurs ont tendance à travailler comme chasseurs, éclaireurs voire archéologues, mais en règle générale ce sont simplement les habitants de contrées reculées où leurs capacités leur permettent de survivre.",
+    "archetypes": ["Combattant", "Furtif"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 10,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 20,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.6,
+        "attack": 2,
+        "block": 2,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 2,
+        "kiAccumulation": 25
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 3,
+        "maMultiple": 70,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 1,
+      "intellectual": 3,
+      "vigor": 3,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": [
+        {
+          "ability": "Pièges",
+          "cost": 1
+        },
+        {
+          "ability": "Animaux",
+          "cost": 1
+        },
+        {
+          "ability": "Herboristerie",
+          "cost": 2
+        },
+        {
+          "ability": "Médecine",
+          "cost": 2
+        }
+      ]
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Attaque",
+          "bonus": 5,
+          "limit": 50
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Observation",
+          "bonus": 10
+        },
+        {
+          "ability": "Pistage",
+          "bonus": 10
+        },
+        {
+          "ability": "Vigilance",
+          "bonus": 10
+        },
+        {
+          "ability": "Pièges",
+          "bonus": 5
+        },
+        {
+          "ability": "Animaux",
+          "bonus": 5
+        },
+        {
+          "ability": "Herboristerie",
+          "bonus": 5
+        }
+      ]
+    },
+    "special": "+10 par niveau en Détection du Ki (si le personnage développe ce pouvoir)."
+  },
+  {
+    "name": "Ombre",
+    "description": "Les ombres sont des combattants qui se meuvent dans les ténèbres et profitent au maximum de ce qui les entoure. Malgré leurs impressionnantes capacités de combat, ils préfèrent en finir avec leurs ennemis sans leur laisser la possibilité de répliquer à leurs attaques. Ils utilisent la tromperie pour parvenir à ce but et surprendre leurs cibles, ou d'autres tactiques plus complexes. Même si une ombre est découverte, elle peut continuer à combattre sans être pénalisée, bien qu'elle soit souvent moins résitante que ses adversaires. Habituellement agiles et véloces, les ombres préfèrent esquiver les attaques plutôt que de les affronter.",
+    "archetypes": ["Combattant", "Furtif"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 5,
+    "initiativePerLevel": 10,
+    "martialKnowledgePerLevel": 25,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.6,
+        "attack": 2,
+        "block": 3,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 2,
+        "kiAccumulation": 20
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 3,
+        "maMultiple": 70,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 3,
+      "vigor": 2,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": []
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Attaque",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Esquive",
+          "bonus": 5,
+          "limit": 50
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Observation",
+          "bonus": 10
+        },
+        {
+          "ability": "Vigilance",
+          "bonus": 10
+        },
+        {
+          "ability": "Camouflage",
+          "bonus": 10
+        },
+        {
+          "ability": "Discrétion",
+          "bonus": 10
+        }
+      ]
+    },
+    "special": "+5 par niveau en Dissimulation du Ki (si le personnage développe ce pouvoir)."
+  },
+  {
+    "name": "Voleur",
+    "description": "Comme son nom l'indique, le voleur est un personnage spécialisé dans les domaines de la discrétion, du vol et du camouflage. Ces individus évitent les affrontement directs et préfèrent se fier à leur compétences clandestines pour obtenir ce qu'ils désirent. Vu que leur résistance physique n'est généralement pas très élevée, ils font preuve d'un réel talent pour la fuite et l'esquive des coups dès qu'on les découvre. Ils peuvent jouer de nombreux rôles en société, mais ils se consacrent le plus souvent à la profession qui donne son nom à cette classe.",
+    "archetypes": ["Furtif"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 5,
+    "initiativePerLevel": 10,
+    "martialKnowledgePerLevel": 20,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.5,
+        "attack": 2,
+        "block": 3,
+        "dodge": 2,
+        "wearArmor": 3,
+        "ki": 2,
+        "kiAccumulation": 25
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 3,
+        "maMultiple": 70,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 1,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 3,
+      "vigor": 3,
+      "subterfuge": 1,
+      "creative": 2,
+      "reducedCosts": [
+        {
+          "ability": "Estimation",
+          "cost": 1
+        }
+      ]
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Esquive",
+          "bonus": 5,
+          "limit": 50
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Observation",
+          "bonus": 5
+        },
+        {
+          "ability": "Vigilance",
+          "bonus": 5
+        },
+        {
+          "ability": "Camouflage",
+          "bonus": 5
+        },
+        {
+          "ability": "Discrétion",
+          "bonus": 5
+        },
+        {
+          "ability": "Larcin",
+          "bonus": 10
+        },
+        {
+          "ability": "Pièges",
+          "bonus": 5
+        },
+        {
+          "ability": "Habileté manuelle",
+          "bonus": 5
+        }
+      ]
+    },
+    "special": "+5 par niveau en Dissimulation du Ki (si le personnage développe ce pouvoir)."
+  },
+  {
+    "name": "Assassin",
+    "description": "Ces individus se spécialisent dans les domaines de la tromperie et de l'intrigue. Anonymes, ils font en sorte que leurs victimes ne prennent jamais conscience de l'identité de leur bourreau. Ils utilisent des techniques très raffinées, préfèrent éviter d'en arriver au combat, quelle que soit la situation, parce qu'ils se révèlent alors très vulnérables. À cette fin, dès leur tâche accomplie, ils disparaissent à nouveau dans les ombres dont ils venaient de surgir. D'une façon ou d'une autre, les personnages de cette classe ne sont pas forcément obligés d'être des exécuteurs, car ils peuvent exercer leurs talents dans bien d'autres rôles, comme par exemple celui d'espion.",
+    "archetypes": ["Furtif"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 5,
+    "initiativePerLevel": 10,
+    "martialKnowledgePerLevel": 20,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.5,
+        "attack": 2,
+        "block": 3,
+        "dodge": 2,
+        "wearArmor": 3,
+        "ki": 2,
+        "kiAccumulation": 25
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 3,
+        "maMultiple": 70,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 1,
+      "intellectual": 3,
+      "vigor": 3,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": [
+        {
+          "ability": "Discrétion",
+          "cost": 1
+        },
+        {
+          "ability": "Impassibilité",
+          "cost": 2
+        },
+        {
+          "ability": "Mémorisation",
+          "cost": 2
+        }
+      ]
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Attaque",
+          "bonus": 5,
+          "limit": 50
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Observation",
+          "bonus": 10
+        },
+        {
+          "ability": "Vigilance",
+          "bonus": 10
+        },
+        {
+          "ability": "Camouflage",
+          "bonus": 10
+        },
+        {
+          "ability": "Discrétion",
+          "bonus": 10
+        },
+        {
+          "ability": "Pièges",
+          "bonus": 10
+        },
+        {
+          "ability": "Poisons",
+          "bonus": 10
+        },
+        {
+          "ability": "Impassibilité",
+          "bonus": 10
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sorcier",
+    "description": "Les sorciers ne sont pas simplement des personnes qui détiennent l'incroyable capacité de manipuler les énergies mystiques, mais surtout des êtres qui se sont consacrés corps et âme à la compréhension des mystères et à leur domniation. Ils se spécialisent dans l'aspect le plus pur de la magie : l'usage de sorts qui leur permettent d'altérer la réalité à leur avantage, en concentrant et maîtrisant leurs pouvoirs à la perfection. Ils s'intéressent aussi à tous les domaines intellectuels mais, malheureusement, leur sacerdose a pour conséquence un développement physique très inférieur à celui d'autres classes.",
+    "archetypes": ["Mystique"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 5,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 10,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.5,
+        "attack": 3,
+        "block": 3,
+        "dodge": 2,
+        "wearArmor": 3,
+        "ki": 3,
+        "kiAccumulation": 30
+      },
+      "mystic": {
+        "limit": 0.6,
+        "zeon": 1,
+        "maMultiple": 50,
+        "magicProjection": 2,
+        "summon": 2,
+        "control": 2,
+        "bind": 2,
+        "banish": 2
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 2,
+      "vigor": 3,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": [
+        {
+          "ability": "Évaluation magique",
+          "cost": 1
+        }
+      ]
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Points de Zéon",
+          "bonus": 100
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Évaluation magique",
+          "bonus": 10
+        },
+        {
+          "ability": "Occultisme",
+          "bonus": 5
+        }
+      ]
+    }
+  }
+]

@@ -12,54 +12,59 @@ $theme: mat-light-theme($primary, $accent);
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
+
 body {
-  margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
+    margin: 0;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
 app-root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0.4rem;
 }
 
 .flex {
-  flex: 1 1;
+    flex: 1 1;
 }
 
 .flex-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .flex-center-start {
-  align-content: center;
-  justify-content: flex-start;
+    align-content: center;
+    justify-content: flex-start;
 }
 
 .flex-center {
-  align-content: center;
-  justify-content: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .italic {
-  font-style: italic;
+    font-style: italic;
 }
 
 .right {
-  float: right;
+    float: right;
 }

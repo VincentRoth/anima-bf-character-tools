@@ -8,11 +8,12 @@ import { AppMaterialModule } from './app-material.module';
 
 import { HomeModule } from './home/home.module';
 import { DiceRollModule } from './dice-roll/dice-roll.module';
-import { AdvantagesModule } from './advantages/advantages.module';
 import { CreationHelpModule } from './creation-help/creation-help.module';
-import { TablesModule } from './tables/tables.module';
 import { RacesModule } from './races/races.module';
+import { ClassesModule } from './classes/classes.module';
+import { AdvantagesModule } from './advantages/advantages.module';
 import { MapModule } from './map/map.module';
+import { TablesModule } from './tables/tables.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +27,7 @@ import { MapModule } from './map/map.module';
     DiceRollModule,
     CreationHelpModule,
     RacesModule,
+    ClassesModule,
     AdvantagesModule,
     MapModule,
     TablesModule

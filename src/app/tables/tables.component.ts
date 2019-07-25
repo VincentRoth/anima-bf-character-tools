@@ -18,7 +18,7 @@ export class TablesComponent implements OnInit {
 
   ngOnInit() {
     this.referenceTableService.referenceTables.subscribe({
-      next: refTables => (this.refTables = refTables)
+      next: data => (this.refTables = data)
     });
   }
 
@@ -29,8 +29,8 @@ export class TablesComponent implements OnInit {
   searchTables(search: string) {
     const tokens = search.toLocaleLowerCase().split(' ');
     this.referenceTableService.referenceTables.subscribe({
-      next: refTables => {
-        this.refTables = refTables;
+      next: data => {
+        this.refTables = data;
         this.books.forEach(book => {
           this.refTables[book.reference] = this.refTables[
             book.reference

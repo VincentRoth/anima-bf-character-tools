@@ -7,12 +7,14 @@ import { CreationHelpComponent } from './creation-help/creation-help.component';
 import { TablesComponent } from './tables/tables.component';
 import { RacesComponent } from './races/races.component';
 import { MapComponent } from './map/map.component';
+import { ClassesComponent } from './classes/classes.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'dice-roll', component: DiceRollComponent },
   { path: 'creation-help', component: CreationHelpComponent },
   { path: 'races', component: RacesComponent },
+  { path: 'classes', component: ClassesComponent },
   { path: 'advantages', component: AdvantagesComponent },
   { path: 'map', component: MapComponent },
   { path: 'tables', component: TablesComponent },

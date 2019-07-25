@@ -1,0 +1,184 @@
+<h2>Classes</h2>
+
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let clazz of classes">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h3>{{ clazz.name }}</h3>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div class="class-content">
+      <p class="description">{{ clazz.description }}</p>
+      <p>
+        <span class="bold">Archétype : </span>{{ clazz.archetypes.join(',') }}
+        <br />
+        <span class="bold">Multiplicateur de Vie : </span>
+        {{ clazz.lifePointMult }}
+        <br />
+        <span class="bold">PV : </span>
+        +{{ clazz.lifePointPerLevel }} par niveau
+        <br />
+        <span class="bold">Initiative : </span>
+        +{{ clazz.initiativePerLevel }} par niveau
+        <br />
+        <span class="bold">Développement Intérieur : </span>
+        +{{ clazz.martialKnowledgePerLevel }} par niveau
+        <br />
+        <span class="bold">PPP : </span>
+        {{ getPsychicPointPerLevel(clazz) }}
+      </p>
+
+      <div>
+        <h4>Champs principaux</h4>
+
+        <h5>
+          Champ martial :
+          <span class="limit">
+            Limite {{ clazz.primary.martial.limit * 100 }}%
+          </span>
+        </h5>
+        <p>
+          <span class="bold">+1 Attaque : </span>
+          {{ clazz.primary.martial.attack }}
+          <br />
+          <span class="bold">+1 Parade : </span>
+          {{ clazz.primary.martial.block }}
+          <br />
+          <span class="bold">+1 Esquive : </span>
+          {{ clazz.primary.martial.dodge }}
+          <br />
+          <span class="bold">+1 Port d'armure : </span>
+          {{ clazz.primary.martial.wearArmor }}
+          <br />
+          <span class="bold">+1 Ki : </span>
+          {{ clazz.primary.martial.ki }}
+          <br />
+          <span class="bold">Accumulation de Ki : </span>
+          {{ clazz.primary.martial.kiAccumulation }}
+        </p>
+
+        <h5>
+          Champ mystique :
+          <span class="limit">
+            Limite {{ clazz.primary.mystic.limit * 100 }}%
+          </span>
+        </h5>
+        <p>
+          <span class="bold">+5 Zéon : </span>
+          {{ clazz.primary.mystic.zeon }}
+          <br />
+          <span class="bold">Multiplicateur d'AMR : </span>
+          {{ clazz.primary.mystic.maMultiple }}
+          <br />
+          <span class="bold">+1 Projection magique : </span>
+          {{ clazz.primary.mystic.magicProjection }}
+          <br />
+          <span class="bold">+1 Convoquer : </span>
+          {{ clazz.primary.mystic.summon }}
+          <br />
+          <span class="bold">+1 Dominer : </span>
+          {{ clazz.primary.mystic.control }}
+          <br />
+          <span class="bold">+1 Lier : </span>
+          {{ clazz.primary.mystic.bind }}
+          <br />
+          <span class="bold">+1 Révoquer : </span>
+          {{ clazz.primary.mystic.banish }}
+        </p>
+
+        <h5>
+          Champ psychique :
+          <span class="limit">
+            Limite {{ clazz.primary.psychic.limit * 100 }}%
+          </span>
+        </h5>
+        <p>
+          <span class="bold">+1 PPP : </span>
+          {{ clazz.primary.psychic.psychicPoint }}
+          <br />
+          <span class="bold">+1 Projection psychique : </span>
+          {{ clazz.primary.psychic.psychicProjection }}
+        </p>
+      </div>
+
+      <div>
+        <h4>Champs secondaires</h4>
+        <p>
+          <span class="bold">+1 C. Athlétique : </span>
+          {{ clazz.secondary.athletics }}
+          <br />
+          <span class="bold">+1 C. Vitale : </span>
+          {{ clazz.secondary.vigor }}
+          <br />
+          <span class="bold">+1 C. Sensorielle : </span>
+          {{ clazz.secondary.perceptive }}
+          <br />
+          <span class="bold">+1 C. Intellectuelle : </span>
+          {{ clazz.secondary.intellectual }}
+          <br />
+          <span class="bold">+1 C. Sociale : </span>
+          {{ clazz.secondary.social }}
+          <br />
+          <span class="bold">+1 C. Clandestine : </span>
+          {{ clazz.secondary.subterfuge }}
+          <br />
+          <span class="bold">+1 C. Créative : </span>
+          {{ clazz.secondary.creative }}
+        </p>
+
+        <h5>Coûts Réduits</h5>
+        <p>
+          <span *ngIf="!clazz.secondary.reducedCosts.length">Aucun</span>
+          <ng-container
+            *ngFor="
+              let reduceCost of clazz.secondary.reducedCosts;
+              let $last = last
+            "
+          >
+            <span class="bold">+1 {{ reduceCost.ability }} : </span>
+            {{ reduceCost.cost }}
+            <br *ngIf="!$last" />
+          </ng-container>
+        </p>
+      </div>
+
+      <div>
+        <h4>Bonus automatiques</h4>
+
+        <h5>Champs principaux</h5>
+        <p>
+          <span *ngIf="!clazz.bonus.primary.length">Aucun</span>
+          <ng-container
+            *ngFor="let bonus of clazz.bonus.primary; let $last = last"
+          >
+            <span class="bold">
+              +{{ bonus.bonus }} {{ bonus.ability }} par niveau
+            </span>
+            <span class="italic" *ngIf="bonus.limit">
+              (maximum +{{ bonus.limit }})
+            </span>
+            <br *ngIf="!$last" />
+          </ng-container>
+        </p>
+
+        <h5>Champs secondaires</h5>
+        <p>
+          <span *ngIf="!clazz.bonus.secondary.length">Aucun</span>
+          <ng-container
+            *ngFor="let bonus of clazz.bonus.secondary; let $last = last"
+          >
+            <span class="bold">+{{ bonus.bonus }}</span>
+            {{ bonus.ability }} par niveau
+            <br *ngIf="!$last" />
+          </ng-container>
+        </p>
+      </div>
+
+      <div *ngIf="clazz.special">
+        <h4>Special</h4>
+        <p class="description">{{ clazz.special }}</p>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

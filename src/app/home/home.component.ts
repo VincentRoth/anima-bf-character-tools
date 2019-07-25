@@ -43,6 +43,13 @@ export class HomeComponent implements OnInit {
           'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/415e335e-b1cb-4849-9250-5b886f627634/d1w0z1k-2b9ec48b-5b45-42c6-a704-72c4e4905886.jpg/v1/fill/w_856,h_934,q_70,strp/anima__ferris_by_wen_m_d1w0z1k-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM0NCIsInBhdGgiOiJcL2ZcLzQxNWUzMzVlLWIxY2ItNDg0OS05MjUwLTViODg2ZjYyNzYzNFwvZDF3MHoxay0yYjllYzQ4Yi01YjQ1LTQyYzYtYTcwNC03MmM0ZTQ5MDU4ODYuanBnIiwid2lkdGgiOiI8PTEyMzIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.0CA3htSz2kGWAK3FA1FpVTflAOFPRpaN7V7qiyIqPdI'
       },
       {
+        title: 'Classes',
+        link: '/classes',
+        hasBackground: true,
+        imageUrl:
+          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/415e335e-b1cb-4849-9250-5b886f627634/d4y4q9d-4df0c5b2-2717-4737-9c19-93bba3307a0f.jpg/v1/fill/w_836,h_956,q_70,strp/anima__alexias_by_wen_m_d4y4q9d-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE1MiIsInBhdGgiOiJcL2ZcLzQxNWUzMzVlLWIxY2ItNDg0OS05MjUwLTViODg2ZjYyNzYzNFwvZDR5NHE5ZC00ZGYwYzViMi0yNzE3LTQ3MzctOWMxOS05M2JiYTMzMDdhMGYuanBnIiwid2lkdGgiOiI8PTEwMDgifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.yoz5g2utttr43wUR2_TscwgFyUYTgBhYUIbrXLEQ7Xc'
+      },
+      {
         title: 'Avantages',
         link: '/advantages',
         hasBackground: true,
