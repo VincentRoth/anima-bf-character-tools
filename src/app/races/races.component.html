@@ -1,24 +1,19 @@
-<div class="app-creation-help">
-  <h2>Races</h2>
+<h2>Races</h2>
 
-  <mat-accordion>
-    <mat-expansion-panel *ngFor="let race of races">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          <app-content-title
-            [level]="1"
-            [title]="race.title"
-          ></app-content-title>
-        </mat-panel-title>
-      </mat-expansion-panel-header>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let race of races">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <app-content-title [level]="1" [title]="race.title"></app-content-title>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
 
-      <ng-container>
-        <app-panel-content
-          *ngFor="let contentUnit of race.content"
-          [content]="contentUnit"
-          [level]="2"
-        ></app-panel-content>
-      </ng-container>
-    </mat-expansion-panel>
-  </mat-accordion>
-</div>
+    <ng-container>
+      <app-panel-content
+        *ngFor="let contentUnit of race.content"
+        [content]="contentUnit"
+        [level]="2"
+      ></app-panel-content>
+    </ng-container>
+  </mat-expansion-panel>
+</mat-accordion>

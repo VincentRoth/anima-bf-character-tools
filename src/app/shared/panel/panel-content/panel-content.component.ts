@@ -24,7 +24,7 @@ export class PanelContentComponent implements OnInit {
     if (this.content.type === EContentType.TABLE) {
       this.refTablesService
         .getByReference((this.content as ContentTable).reference)
-        .subscribe({ next: table => (this.table = table) });
+        .subscribe({ next: data => (this.table = data) });
     }
     if (!this.level) {
       this.level = 1;

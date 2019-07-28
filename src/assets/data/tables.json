@@ -116,10 +116,23 @@
         ["Confection", "Dextérité", "Oui", "Prometheum Exxet p.12"],
         ["Danse", "Agilité", "Oui", "Core"],
         ["Forge", "Dextérité", "Oui", "Core"],
-        ["Habilité manuelle", "Dextérité", "", "Core"],
+        ["Habileté manuelle", "Dextérité", "", "Core"],
         ["Musique", "Pouvoir", "Oui", "Core"],
         ["Orfèvrerie", "Dextérité", "Oui", "Prometheum Exxet p.12"],
         ["Runes", "Dextérité", "Oui", "Prometheum Exxet p.16"]
+      ]
+    },
+    {
+      "id": "III",
+      "title": "Archétypes et Classes",
+      "headers": ["Archétype", "Classes"],
+      "rows": [
+        ["Combattant", "Explorateur, Guerrier, Guerrier acrobate, Guerrier convocateur, Guerrier mentaliste, Maître d'armes, Mage de bataille, Ombre, Paladin, Paladin noir, Tao"],
+        ["Mystique", "Convocateur, Guerrier convocateu, Mage de bataille, Sorcier, Sorcier mentaliste"],
+        ["Psy", "Guerrier mentaliste, Mentaliste, Sorcier mentaliste"],
+        ["Furtif", "Assassin, Explorateur, Ilusionniste, Ombre, Voleur"],
+        ["Artiste martial", "Tao, Virtuose martial"],
+        ["Sans classe", "Toutche-à-tout"]
       ]
     },
     {
@@ -209,7 +222,7 @@
       "rows": [
         [
           "1 à 50",
-          "L'action échoue simplement. Une personne qui essaie de se déplacer silencieusement trébuche, ce qui provoque un grand bruit, ou quelqu'un essaynt d'identifier une plante n'a pas la moindre idée de sa provenance ou de ses effets."
+          "L'action échoue simplement. Une personne qui essaie de se déplacer silencieusement trébuche, ce qui provoque un grand bruit, ou quelqu'un essayant d'identifier une plante n'a pas la moindre idée de sa provenance ou de ses effets."
         ],
         [
           "51 à 95",
@@ -390,10 +403,9 @@
       "headers": ["Valeur", "Difficulté", "Modificateur à la Force"],
       "rows": [
         [120, "Difficile", "Force +1"],
-        [140, "Très Difficile", "Force +2"],
-        [180, "Absurde", "Force +3"],
-        [240, "Quasiment Impossible", "Force +4"],
-        [280, "Impossible", "Force +5"]
+        [180, "Absurde", "Force +2"],
+        [240, "Quasiment Impossible", "Force +3"],
+        [280, "Impossible", "Force +4"]
       ]
     },
     {
@@ -536,7 +548,7 @@
           "Difficile",
           120,
           "Éventail de combat, hallebarde, arc court, arc long, bolas, sarbacane, cimeterre, corbeau, main-gauche, bouclier, pavois, glaive, épée bâtarde, épée courte, épée longue, stylet, flèche perce-armure, griffes de tigre, hache à deux mains, hache de bataille, kusari-gama, lance de cavalerie, fouet, nunchaku, filet de gladiateur, rondache, shuriken, trident",
-          "Anneaux, cuir et plaques, manteau renforcé, maills, plastron, plaques partielles",
+          "Anneaux, cuir et plaques, manteau renforcé, maills, plastron, plaques partielle",
           "Camail, barbute",
           "Bijoux élaborés, bardes"
         ],
@@ -723,7 +735,7 @@
           "500 par jour",
           "200 par jour",
           "-30 par jour",
-          "Comme précédemment, mais en 3 jours. Le personnage sort automatiquement de l'état entre la vir et la mort."
+          "Comme précédemment, mais en 3 jours. Le personnage sort automatiquement de l'état entre la vie et la mort."
         ],
         [
           10,
@@ -1790,7 +1802,7 @@
 ["-21 à -30","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C","+10 C"],
 ["-11 à -20","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C","+5 C"],
 ["-1 à -10","C","C","C","C","C","C","C","C","C","C","C"],
-["0 à 9","","","","","","","","","","",""],
+["1 à 9","","","","","","","","","","",""],
 ["10 à 19","","","","","","","","","","",""],
 ["20 à 29","","","","","","","","","","",""],
 ["30 à 39","10%","","","","","","","","","",""],
@@ -2276,13 +2288,13 @@
           "1-10",
           "Classe basse",
           "Les vêtements que vous portez, un peu de nourriture, quelques possessions de peu de valeur ou une arme de piètre qualité. 5 PC.",
-          "Athlétisme +15, Équitation +10, Habilité manuelle +10, Histoire (locale) +10, Natation +10, Persuasion +10, Vigilance +15."
+          "Athlétisme +15, Équitation +10, Habileté manuelle +10, Histoire (locale) +10, Natation +10, Persuasion +10, Vigilance +15."
         ],
         [
           "11-60",
           "Classe moyenne",
           "Deux tenues de rechange, des rations pour un peu plus d'une semaine, un équipement de voyage assez complet ou bien une arme et armure légère quelconques. 1 PO.",
-          "Athlétisme +15, Équitation +10, Habilité manuelle +10, Histoire (locale) +10, Natation +10, Persuasion +10, Vigilance +15."
+          "Athlétisme +15, Équitation +10, Habileté manuelle +10, Histoire (locale) +10, Natation +10, Persuasion +10, Vigilance +15."
         ],
         [
           "61-90",

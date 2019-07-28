@@ -1,23 +1,22 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RacesComponent } from './races.component';
-import { SharedModule } from '../shared/shared.module';
+import { ClassesComponent } from './classes.component';
 import { AppMaterialModule } from '../app-material.module';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-describe('RacesComponent', () => {
-  let component: RacesComponent;
-  let fixture: ComponentFixture<RacesComponent>;
+describe('ClassesComponent', () => {
+  let component: ClassesComponent;
+  let fixture: ComponentFixture<ClassesComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [RacesComponent],
-      imports: [HttpClientTestingModule, AppMaterialModule, SharedModule]
+      declarations: [ClassesComponent],
+      imports: [HttpClientTestingModule, AppMaterialModule]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RacesComponent);
+    fixture = TestBed.createComponent(ClassesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

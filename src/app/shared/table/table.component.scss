@@ -1,39 +1,48 @@
 :host {
-  margin: 0.5rem;
+    margin: 0.5rem;
 }
 
 table {
-  margin: 0 auto;
-  caption {
-    font-style: italic;
-  }
-  thead {
-    tr {
-      background: linear-gradient(to right, #bc511c, #861a07);
-      color: white;
+    margin: 0 auto;
+
+    caption {
+        font-style: italic;
     }
-  }
-  tbody {
-    tr:nth-child(odd) {
-      background: linear-gradient(to right, #fde0c7, #e0d2bc);
+
+    thead {
+        tr {
+            background: linear-gradient(to right, #bc511c, #861a07);
+            color: white;
+        }
     }
-    tr:nth-child(even) {
-      background: linear-gradient(to right, #e3d6af, #cac2a1);
+
+    tbody {
+        tr:nth-child(odd) {
+            background: linear-gradient(to right, #fde0c7, #e0d2bc);
+        }
+
+        tr:nth-child(even) {
+            background: linear-gradient(to right, #e3d6af, #cac2a1);
+        }
+
+        td {
+            border-right: 0.125rem solid white;
+            border-bottom: 0.125rem solid white;
+            max-width: 30rem;
+        }
+
+        tr td:last-child {
+            border-right: none;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
     }
+
+    th,
     td {
-      border-right: 0.125rem solid white;
-      border-bottom: 0.125rem solid white;
+        text-align: center;
+        padding: 0 0.4rem;
     }
-    tr td:last-child {
-      border-right: none;
-    }
-    tr:last-child td {
-      border-bottom: none;
-    }
-  }
-  th,
-  td {
-    text-align: center;
-    padding: 0 0.4rem;
-  }
 }
