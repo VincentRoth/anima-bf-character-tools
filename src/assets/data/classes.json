@@ -218,12 +218,12 @@
           "bonus": 10
         },
         {
-          "ability": "Révoquer",
-          "bonus": 10
-        },
-        {
           "ability": "Points de Zéon",
           "bonus": 20
+        },
+        {
+          "ability": "Révoquer",
+          "bonus": 10
         }
       ],
       "secondary": [
@@ -305,21 +305,21 @@
           "bonus": 5
         },
         {
-          "ability": "Dominer",
-          "bonus": 10
-        },
-        {
           "ability": "Points de Zéon",
           "bonus": 20
+        },
+        {
+          "ability": "Dominer",
+          "bonus": 10
         }
       ],
       "secondary": [
         {
-          "ability": "Intimidation",
+          "ability": "Impassibilité",
           "bonus": 10
         },
         {
-          "ability": "Impassibilité",
+          "ability": "Intimidation",
           "bonus": 10
         },
         {
@@ -562,10 +562,6 @@
       "creative": 2,
       "reducedCosts": [
         {
-          "ability": "Pièges",
-          "cost": 1
-        },
-        {
           "ability": "Animaux",
           "cost": 1
         },
@@ -576,6 +572,10 @@
         {
           "ability": "Médecine",
           "cost": 2
+        },
+        {
+          "ability": "Pièges",
+          "cost": 1
         }
       ]
     },
@@ -601,15 +601,15 @@
           "bonus": 10
         },
         {
-          "ability": "Pièges",
-          "bonus": 5
-        },
-        {
           "ability": "Animaux",
           "bonus": 5
         },
         {
           "ability": "Herboristerie",
+          "bonus": 5
+        },
+        {
+          "ability": "Pièges",
           "bonus": 5
         }
       ]
@@ -831,15 +831,15 @@
       "creative": 2,
       "reducedCosts": [
         {
+          "ability": "Mémorisation",
+          "cost": 2
+        },
+        {
           "ability": "Discrétion",
           "cost": 1
         },
         {
           "ability": "Impassibilité",
-          "cost": 2
-        },
-        {
-          "ability": "Mémorisation",
           "cost": 2
         }
       ]
@@ -853,6 +853,10 @@
         }
       ],
       "secondary": [
+        {
+          "ability": "Impassibilité",
+          "bonus": 10
+        },
         {
           "ability": "Observation",
           "bonus": 10
@@ -875,10 +879,6 @@
         },
         {
           "ability": "Poisons",
-          "bonus": 10
-        },
-        {
-          "ability": "Impassibilité",
           "bonus": 10
         }
       ]
@@ -952,5 +952,590 @@
         }
       ]
     }
+  },
+  {
+    "name": "Mage de bataille",
+    "description": "Un mage de bataille est un sorcier et un guerrier. Il développe autant ses compétences martiales que ses compétences mystiques. Comme les sorciers, ils maîtrisent la plus pure des capacités surnaturelles, permettant de réaliser des sorts avec lesquels ils modifient la réalité elle-même. Même s'il peut se concentrer sur une compétence précise, un mage de bataille s'avère capable de devenir un véritable virtuose, maîtrisant les armes et les arts surnaturels sur un pied d'égalité. Cependant, ils risquent alors de laisser de côté d'autres compétences importantes.",
+    "archetypes": ["Combattant", "Mystique"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 10,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 20,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.5,
+        "attack": 2,
+        "block": 2,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 2,
+        "kiAccumulation": 25
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 1,
+        "maMultiple": 50,
+        "magicProjection": 2,
+        "summon": 2,
+        "control": 2,
+        "bind": 2,
+        "banish": 2
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 2,
+      "vigor": 2,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": []
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Attaque",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Parade",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Esquive",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Points de Zéon",
+          "bonus": 20
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Évaluation magique",
+          "bonus": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Illusionniste",
+    "description": "Les illusionnistes combinent leurs grandes aptitudes dans le domaine de la tromperie avec le contrôle de la magie. Un bon illusionniste parvient à faire en sorte que ceux qui l'entourent ne sachent pas si ses actions sont dues à ses pouvoirs surnaturels ou à ses propres compétences. Ces capacités mystiques sont aussi importantes que celles des sorciers mais ils n'ont pas cette facilité à exécuter rapidement les sorts. Contrairement à ce que suggérerait leur appelation, les illusionnistes peuvent dominer de nombreuses formes de magie et pas seulement celle de l'illusion. Ils usent souvent de divers sorts pour obtenir des effets remarquables. Ils se révèlent très vulnérables sur le plan physique et préfèrent donc fuir tout combat et rechercher des stratagèmes plus ingénieux.",
+    "archetypes": ["Mystique", "Furtif"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 5,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 20,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.5,
+        "attack": 3,
+        "block": 3,
+        "dodge": 2,
+        "wearArmor": 3,
+        "ki": 2,
+        "kiAccumulation": 25
+      },
+      "mystic": {
+        "limit": 0.6,
+        "zeon": 1,
+        "maMultiple": 60,
+        "magicProjection": 2,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 2,
+      "vigor": 3,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": [
+        {
+          "ability": "Persuasion",
+          "cost": 1
+        },
+        {
+          "ability": "Habileté manuelle",
+          "cost": 1
+        }
+      ]
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Points de Zéon",
+          "bonus": 75
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Évaluation magique",
+          "bonus": 5
+        },
+        {
+          "ability": "Camouflage",
+          "bonus": 10
+        },
+        {
+          "ability": "Déguisement",
+          "bonus": 5
+        },
+        {
+          "ability": "Discrétion",
+          "bonus": 10
+        },
+        {
+          "ability": "Larcin",
+          "bonus": 5
+        },
+        {
+          "ability": "Persuasion",
+          "bonus": 5
+        },
+        {
+          "ability": "Habileté manuelle",
+          "bonus": 10
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sorcier mentaliste",
+    "description": "Le potentiel des sorciers mentalistes est énorme. Les personnages de cette classe se vouent au contrôle de la combinaison de ces deux capacités exceptionnelles qu'ils possèdent : la magie et les matrices psychiques. Bien que leur résistance et leurs connaissances secondaires restent faibles du fait de leur dévotion à ces deux sciences, leur capacité à lancer des sorts et à s'appuyer sur leurs disciplines psychiques fait que bien peu de choses restent hors de leur portée.",
+    "archetypes": ["Mystique", "Psy"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 5,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 10,
+    "psychicPointPerLevel": 1,
+    "primary": {
+      "martial": {
+        "limit": 0.5,
+        "attack": 3,
+        "block": 3,
+        "dodge": 2,
+        "wearArmor": 3,
+        "ki": 3,
+        "kiAccumulation": 30
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 1,
+        "maMultiple": 50,
+        "magicProjection": 2,
+        "summon": 2,
+        "control": 2,
+        "bind": 2,
+        "banish": 2
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 10,
+        "psychicProjection": 2
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 2,
+      "vigor": 3,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": []
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Points de Zéon",
+          "bonus": 100
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Évaluation magique",
+          "bonus": 10
+        },
+        {
+          "ability": "Occultisme",
+          "bonus": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Convocateur",
+    "description": "Les convocateurs sont des mystiques qui ont le don d'appeler des créatures surnaturelles et de les soumettre à leur volonté. Bien que leurs pouvoirs magiques ou leur aptitudes physiques ne soient pas vraiment remarquables, les êtres qu'il convoquent en ce monde peuvent réaliser pratiquement tout ce que désire leur invocateur. Les convocateurs peuvent aussi réaliser des invocations pour en appeler à des puissances supérieures surnaturelles.",
+    "archetypes": ["Mystique"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 5,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 10,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.5,
+        "attack": 3,
+        "block": 3,
+        "dodge": 2,
+        "wearArmor": 3,
+        "ki": 3,
+        "kiAccumulation": 30
+      },
+      "mystic": {
+        "limit": 0.6,
+        "zeon": 1,
+        "maMultiple": 60,
+        "magicProjection": 3,
+        "summon": 1,
+        "control": 1,
+        "bind": 1,
+        "banish": 1
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 2,
+      "vigor": 3,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": [
+        {
+          "ability": "Occultisme",
+          "cost": 1
+        }
+      ]
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Points de Zéon",
+          "bonus": 50
+        },
+        {
+          "ability": "Convoquer",
+          "bonus": 10
+        },
+        {
+          "ability": "Dominer",
+          "bonus": 10
+        },
+        {
+          "ability": "Lier",
+          "bonus": 10
+        },
+        {
+          "ability": "Révoquer",
+          "bonus": 10
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Évaluation magique",
+          "bonus": 5
+        },
+        {
+          "ability": "Occultisme",
+          "bonus": 10
+        }
+      ]
+    }
+  },
+  {
+    "name": "Guerrier convocateur",
+    "description": "Les guerriers convocateurs réunissent les compétences martiales des combattants et les aptitudes de convocation et de domination des convocateurs. Au combat, ils appellent en ce monde des créatures surnaturelles pour les aider et les placent temporairement sous leur contrôle, ou invoquent parfois les puissances supérieures. Malheureusement, comme pour les autres classes mixtes, en dédiant tant d'effort à la maîtrise de ces deux domaines complets que sont la convocation et les arts guerriers, ils laissent souvent de côté des compétences importantes.",
+    "archetypes": ["Combattant", "Mystique"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 10,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 20,
+    "psychicPointPerLevel": 0.333,
+    "primary": {
+      "martial": {
+        "limit": 0.5,
+        "attack": 2,
+        "block": 2,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 2,
+        "kiAccumulation": 20
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 1,
+        "maMultiple": 60,
+        "magicProjection": 3,
+        "summon": 1,
+        "control": 1,
+        "bind": 1,
+        "banish": 1
+      },
+      "psychic": {
+        "limit": 0.5,
+        "psychicPoint": 20,
+        "psychicProjection": 3
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 2,
+      "vigor": 2,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": []
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Attaque",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Parade",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Esquive",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Points de Zéon",
+          "bonus": 20
+        },
+        {
+          "ability": "Convoquer",
+          "bonus": 5
+        },
+        {
+          "ability": "Dominer",
+          "bonus": 5
+        },
+        {
+          "ability": "Lier",
+          "bonus": 5
+        },
+        {
+          "ability": "Révoquer",
+          "bonus": 5
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "Occultisme",
+          "bonus": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Mentaliste",
+    "description": "Les mentalistes se sont consacrés au développement maximal de leurs pouvoirs psychiques. Ils ne se contentent pas de posséder des disciplines mentales mais tentent aussi de découvrir leur fonctionnement et de maîtriser de nouvelles capacités. À l'image des sorciers, ils possèdent de vastes connaissances dans les domaines intellectuels, mais ces choix impliquent que leur condition physique et leur résistance sont inférieures à celles d'autres classes.",
+    "archetypes": ["Psy"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 5,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 10,
+    "psychicPointPerLevel": 1,
+    "primary": {
+      "martial": {
+        "limit": 0.5,
+        "attack": 3,
+        "block": 3,
+        "dodge": 2,
+        "wearArmor": 3,
+        "ki": 3,
+        "kiAccumulation": 30
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 3,
+        "maMultiple": 70,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.6,
+        "psychicPoint": 10,
+        "psychicProjection": 2
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 2,
+      "vigor": 3,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": []
+    },
+    "bonus": {
+      "primary": [],
+      "secondary": []
+    }
+  },
+  {
+    "name": "Guerrier mentaliste",
+    "description": "Les guerriers mentalistes sont des combattants doués d'aptitudes psychiques, qui ont développé un contrôle total de ces pouvoirs pour en bénéficier au combat. Leurs capacités mentales et martiales peuvent se révéler aussi élevées que celles des mentalistes et des guerriers, bien que parfois leur dévouement à ces deux disciplines les prive du temps nécessaire au développement d'autres compétences. Normalement, un guerrier mentaliste se concentre sur l'une de ces disciplines, devenant ainsi un guerrier qui se fie à ses pouvoirs psychiques pour combattre, ou inversement.",
+    "archetypes": ["Combattant", "Psy"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 10,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 20,
+    "psychicPointPerLevel": 1,
+    "primary": {
+      "martial": {
+        "limit": 0.5,
+        "attack": 2,
+        "block": 2,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 2,
+        "kiAccumulation": 25
+      },
+      "mystic": {
+        "limit": 0.5,
+        "zeon": 3,
+        "maMultiple": 70,
+        "magicProjection": 3,
+        "summon": 3,
+        "control": 3,
+        "bind": 3,
+        "banish": 3
+      },
+      "psychic": {
+        "limit": 0.6,
+        "psychicPoint": 15,
+        "psychicProjection": 2
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 3,
+      "vigor": 2,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": []
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Attaque",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Parade",
+          "bonus": 5,
+          "limit": 50
+        },
+        {
+          "ability": "Esquive",
+          "bonus": 5,
+          "limit": 50
+        }
+      ],
+      "secondary": []
+    }
+  },
+  {
+    "name": "Touche-à-tout",
+    "description": "Les touches-à-tout représentent l'archétype Sans Classe, ou alors tous ceux qui n'entrent dans aucun des archétypes décrits jusqu'à présent. Il peut s'agir de tout individu qui n'a pas vraiment de spécialisation. De paysan à bardes, nobles ou bouffons, les touche-à-tout sont la classe standard d'Anima, à laquelle tous peuvent accéder. Un touche-à-tout possède de bonnes compétences dans tous les domaines, de la magie au combat, mais il ne se spécialise dans aucun d'entre eux. De plus, il s'avère pour lui très facile de changer de classe pour accéder à celle d'un autre archétype. En de nombreuses occasions, quand un joueur n'a pas vraiment choisi que faire comme personnage, il peut commencer avec un touche-à-tout et changer plus tard de classe, quand il trouve enfin sa voie.",
+    "archetypes": ["Sans Classe"],
+    "lifePointMult": 20,
+    "lifePointPerLevel": 5,
+    "initiativePerLevel": 5,
+    "martialKnowledgePerLevel": 20,
+    "psychicPointPerLevel": 0.5,
+    "primary": {
+      "martial": {
+        "limit": 0.6,
+        "attack": 2,
+        "block": 2,
+        "dodge": 2,
+        "wearArmor": 2,
+        "ki": 2,
+        "kiAccumulation": 20
+      },
+      "mystic": {
+        "limit": 0.6,
+        "zeon": 2,
+        "maMultiple": 60,
+        "magicProjection": 2,
+        "summon": 2,
+        "control": 2,
+        "bind": 2,
+        "banish": 2
+      },
+      "psychic": {
+        "limit": 0.6,
+        "psychicPoint": 20,
+        "psychicProjection": 2
+      }
+    },
+    "secondary": {
+      "athletics": 2,
+      "social": 2,
+      "perceptive": 2,
+      "intellectual": 2,
+      "vigor": 2,
+      "subterfuge": 2,
+      "creative": 2,
+      "reducedCosts": []
+    },
+    "bonus": {
+      "primary": [
+        {
+          "ability": "Points de Zéon",
+          "bonus": 10
+        }
+      ],
+      "secondary": [
+        {
+          "ability": "à cinq compétences distinctes",
+          "bonus": 10
+        }
+      ]
+    },
+    "special": "Il ne coûte que 20 PF à un touche-à-tout pour changer de classe, quel que soit l'érchétype, et il ne coûte que 20 PF à toute classe, quel que soit l'érchétype, pour choisir la classe de touche-à-tout."
   }
 ]

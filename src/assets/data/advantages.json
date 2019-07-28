@@ -73,6 +73,7 @@
     "description": "Le personnage possède une grande fortune matérielle ou sous forme d'équipement.",
     "effect": "Cet avantage accorde une somme d'argent ou d'équipement initial égale à 2000 écus d'or (PO). Les Points de Création supplémentaires augmentent cette somme à 5000 et 10000 écus d'or respectivement.",
     "condition": "Le Meneur de Jeu préfèrera peut-être donner une somme d'argent différente que celle que nous recommandons, pour mieux correspondre aux objectifs de ses parties. Dans ce cas, joueur et Meuneur de Jeu doivent se mettre d'accord sur la quantité accordée.",
+    "note": "Considéré comme avantage de passé avec l'apparition de cette catégorier dans Gaïa Volume 1.",
     "costs": [1, 2, 3],
     "source": "Core p.18",
     "types": ["Avantage de passé", "Richesse"]
@@ -178,7 +179,7 @@
   {
     "name": "Apprentisage inné dans un champ de compétence",
     "description": "Idem que précédemment, sauf que dans ce cas le personnage améliore toute les compétences d'un champ secondaire.",
-    "effect": "Accorde l'équivalent d'un bonus de classe de +5 par niveau à totues les compétences d'un champ secondaire. Ces bonus s'ajoutent à tous les bonus automatiques dont peut disposer le personnage grâce à sa classe. L'investissement d'un point supplémentaire augmente ce bonus à +10.",
+    "effect": "Accorde l'équivalent d'un bonus de classe de +5 par niveau à toutes les compétences d'un champ secondaire. Ces bonus s'ajoutent à tous les bonus automatiques dont peut disposer le personnage grâce à sa classe. L'investissement d'un point supplémentaire augmente ce bonus à +10.",
     "costs": [2, 3],
     "source": "Core p.19",
     "types": ["Avantage Général", "Compétences"]
@@ -293,6 +294,7 @@
     "name": "Chevronné",
     "description": "Le personnage a déjà connu de nombreuses expériences dans le monde réel, dont il a tiré de grandes leçons",
     "effect": "Le personnage commence avec 50 points d'Expérience. Les Points de Création augmentent les Points d'Expérience initiaux à 100 et 150 respectivement. Cette augmentation permet de monter de niveau de façon habituelle si le personnage atteint la quantité de point d'expérience nécessaire",
+    "note": "Considéré comme avantage de passé avec l'apparition de cette catégorier dans Gaïa Volume 1.",
     "costs": [1, 2, 3],
     "source": "Core p.20",
     "types": ["Avantage de passé", "Expérience"]
@@ -301,7 +303,7 @@
     "name": "Artefact",
     "description": "Le personnage possède un artefact de grand pouvoir",
     "effect": "Le joueur et le Meneur de Jeu doivent se mettre d'accord sur les capacités de l'artefact. Les points supplémentaires doivent augmenter les pouvoirs de l'objet.",
-    "note": "Voir Prometheum Exxet p.6 pour un détail de la puissance de l'artefact selon le nombre de PC investis.",
+    "note": "Voir Prometheum Exxet p.6 pour un détail de la puissance de l'artefact selon le nombre de PC investis. Considéré comme avantage de passé avec l'apparition de cette catégorier dans Gaïa Volume 1.",
     "costs": [1, 2, 3],
     "source": "Core p.20",
     "types": ["Avantage de passé", "Interprétation", "Richesse"]
@@ -318,6 +320,7 @@
     "name": "Élan",
     "description": "De façon inconsciente, le personnage a réussi à attirer l'attention d'un Shajad ou d'une Béryl. Cela signigie souvent que les ancêtres du personnage étaient liés à cette puissance et qu'elle conserve une sorte de lien avec tous les membres de cette famille. Il est aussi possible que cette attention soit due à certaines actions que le personnage a réalisées. Quoi qu'il en soit, le personnage profite de ses faveurs. Par contre, à partir du moment où le joueur prend le contrôle de son personnage, la relation dépendra de la façon dont celui-ci se comporte.",
     "effect": "Le personnage a un Élan de 20 vis-à-vis de l'entité de son choix. Les Points de Création supplémentaires augmentent ce niveau à 40 et 50 respectivement.",
+    "note": "Comme il s'agit d'un élément lié à l'historique d'un personnage, cet avantage est considéré comme de passé (Règle non officielle).",
     "costs": [1, 2, 3],
     "source": "Core p.20",
     "types": ["Avantage de passé"]
@@ -575,7 +578,7 @@
   {
     "name": "Sommeil profond",
     "description": "Ce désavantage est terrifiant pour une personne dont la vie peut être menacée même quand elle dort. Le personnage à un sommeil très profond et il lui est difficile de se réveiller. Il supporte sans se réveiller un contact physique léger ; quand il finit par se réveiller, il reste étourdi pendant plusieurs minutes",
-    "effect": "Le personnage subit un malus de -200 à tout jeu de Perception quand il dort. Durant les dix rounds suivant son réveil, il subit un malus de -40 à totues ses actions.",
+    "effect": "Le personnage subit un malus de -200 à tout jeu de Perception quand il dort. Durant les dix rounds suivant son réveil, il subit un malus de -40 à toutes ses actions.",
     "benefits": [1],
     "source": "Core p.23",
     "types": ["Désavantage Général", "Physique", "Perception"]
@@ -961,6 +964,7 @@
     "description": "Contrairement à ses compagnons, le personnage a une expérience sur le terrain très limitée. En conséquence, ses compétences seront dès le départ inférieures à celles des autres.",
     "effect": "Le personnage commence avec 100 points d'expérience de moins que le reste des personnages de son groupe. Dans le cas où il seraient tous de niveau 1, celui qui aura ce désavantage sera de niveau 0, et un minimum de trois séances de jeu sera requis pour atteindre le premier niveau.",
     "special": "Ce désavantage est lié aux autres personnage du groupe. Seul un joueur (ou deux, dans le cas où il y aurait cinq participants ou plus) peut le choisir.",
+    "note": "Comme il s'agit du pendant de l'avantage de passé Chevronné, ce désavantage est considéré comme de passé (Règle non officielle).",
     "benefits": [1],
     "source": "KitMJ p.5",
     "types": ["Désavantage de passé", "Expérience"]
@@ -1231,6 +1235,7 @@
     "name": "Familier",
     "description": "À un moment dans sa vie, le personnage a été capable de signer un pacte de familier avec une créature.",
     "effect": "Le personnage commence la partie avec une créature de son niveau en tant que familier. Un Point de Création supplémentaire permet même au familier en question d'avoir un niveau de plus que celui du personnage.",
+    "note": "Comme il s'agit d'un élément lié à l'historique d'un personnage, cet avantage est considéré comme de passé (Règle non officielle).",
     "costs": [2, 3],
     "source": "ArcEx p.11",
     "types": ["Avantage de passé", "Mystique", "Convocation"]
