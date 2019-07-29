@@ -220,7 +220,7 @@
           {
             "type": "paragraph",
             "title": "Taille",
-            "content": "Il est possible que la Taille du personnage soit inférieure à 9 ; la base de Dégât à mains nues reste de 10, mais les Armes naturelles ont une base de Dégâts de 30 ; la base d'Initiative est de 30 mais leur Mouvement souffre d'un malus de -2. De même, pour certaines races, la Taille peut dépasse 22. Dans ce cas la base de Dégâts à mains nues passe de 10 à 20, si la race possède des Armes naturelles, leur base de Dégâts passe de 40 à 60. La base d'Initiative est quant à elle diminuée à 10 au lieu de 20. Il n'est pas possible de bénéficier des autres catégories de Taille. Dans tout les cas, les effets d'une Taille inhabituelle, c'est-à-dire d'une Taille quine soit pas comprise entre 9 et 22 inclus, doivent être interprétés le Meneur de Jeu. Il pourra se servir du Tableau 85 comme référence ou appliquer les effets d'une Taille moyenne."
+            "content": "Il est possible que la Taille du personnage soit inférieure à 9 ; la base de Dégât à mains nues reste de 10, mais les Armes naturelles ont une base de Dégâts de 30 ; la base d'Initiative est de 30 mais leur Mouvement souffre d'un malus de -2. De même, pour certaines races, la Taille peut dépasser 22. Dans ce cas la base de Dégâts à mains nues passe de 10 à 20, si la race possède des Armes naturelles, leur base de Dégâts passe de 40 à 60. La base d'Initiative est quant à elle diminuée à 10 au lieu de 20. Il n'est pas possible de bénéficier des autres catégories de Taille. Dans tout les cas, les effets d'une Taille inhabituelle, c'est-à-dire d'une Taille qui ne soit pas comprise entre 9 et 22 inclus, doivent être interprétés par le Meneur de Jeu. Il pourra se servir du Tableau 85 comme référence ou appliquer les effets d'une Taille moyenne."
           }
         ]
       }
@@ -463,6 +463,364 @@
     ]
   },
   {
+    "title": "Champs principaux et secondaires",
+    "type": "panel",
+    "content": [
+      {
+        "type": "paragraph",
+        "title": "Champs principaux",
+        "content": "Les champs principaux regroupent les compétences et les capacités les plus utiles aux personnages dans l'exercice de leur classe. Il en existe trois : le champ martial, le champ mystique et le champ psychique. On appelle compétence principale une compétence appartenant à un champ principal et compétence martiale, mystique ou psychique une compétence liée à ce champ."
+      },
+      {
+        "type": "paragraph",
+        "title": "Champ martial",
+        "content": "Ce champ comprend toutes les compétences et capacités liées au combat."
+      },
+      {
+        "title": "Compétences et capacités du champ martial",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Attaque",
+            "content": "Compétance mesurant l'habileté du personnage à attaquer son adversaire, à passer sa garde et à lui infliger des dégâts. Dépend de la Dextérité."
+          },
+          {
+            "type": "paragraph",
+            "title": "Parade",
+            "content": "Compétance de défense permettant de bloquer les attaques. Dépend de la Dextérité."
+          },
+          {
+            "type": "paragraph",
+            "title": "Esquive",
+            "content": "Compétance de défense permettant de se mettre hors de la trajectoire d'une attaque. Dépend de l'Agilité."
+          },
+          {
+            "type": "paragraph",
+            "title": "Port d'armure",
+            "content": "Capacité mesurant l'aisance en armure. Permet d'éviter les malus et les restrictions liés aux armures. Se calcule comme une compétence et dépend de la Force."
+          },
+          {
+            "type": "paragraph",
+            "title": "Modules d'armes",
+            "content": "Capacités liées au maniement des armes. Un personnage connaît le maniement d'une arme gratuitement et peut apprendre à combattre avec d'autres armes. Pour le combat à mains nues, cela est considéré comme une arme pour ce qui est de savoir combattre avec, c'est-à-dire le maniement, et doit donc être appris, ou connu par le maniement gratuit."
+          },
+          {
+            "type": "paragraph",
+            "title": "Arts martiaux",
+            "content": "Capacités martiales de combat à mains nues."
+          },
+          {
+            "type": "paragraph",
+            "title": "Développement Intérieur (DI)",
+            "content": "Points dont dispose un personnage pour apprendre des pouvoirs du Ki et des techniques de puissance intérieure."
+          },
+          {
+            "type": "paragraph",
+            "title": "Ki",
+            "content": "Les points de Ki sont utilisés pour réaliser des prouesses physiques exceptionnelles ainsi que des techniques de puissance intérieure. Dépendent de 6 caractéristiques : Agilité, Constitution, Dextérité, Force, Pouvoir et Volonté. Il s'agit d'une réserve de points pour chaque caractéristique ou d'une réserve unique, selon si la règle des points de Ki unifiés est utilisée. Chaque caractéristique donne autant de points de Ki que sa valeur. Les points au-dessus de 10 sont doublés. Une Agilité de 10 donne 10 points de Ki d'Agilité, un Pouvoir de 12 donne 14 points de Ki de Pouvoir. Il se récupère au rythme de 1 point par caractéristique par heure, soit 6 points par heure."
+          },
+          {
+            "type": "paragraph",
+            "title": "Accumulation de Ki",
+            "content": "Capacité qui indique la vitesse à laquelle un personnage peut utiliser ses points de Ki. Cette valeur indique combien de points de Ki s'accumulent à chaque round pour chaque caractéristique. La valeur de base des accumulations dépend de chacune des 6 caractéristique qui influe sur le Ki."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#53"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "title": "Champ mystique",
+        "content": "Le champ mystique regroupe totues les compétences et capacités de nature mystiqque. Elles sont utiles aux personnages des classes douées de pouvoirs surnaturels, comme les sorciers, les convocateurs ou les illusionnistes. L'usage de sort nécessite d'avoir l'Avantage Don mystique ou l'Avantage Don incomplet."
+      },
+      {
+        "title": "Compétences et capacités du champ mystique",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Zéon",
+            "content": "Points de magie. Leur quantité indique combien de sorts peut lancer un sorcier."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#55"
+          },
+          {
+            "type": "paragraph",
+            "title": "Accumulation Magique par Round (AMR)",
+            "content": "Capacité de contrôler et manier le pouvoir magique. Cette valeur indique combien de points de Zéon peuvent être utilisés ou concentrés par round. Les convocations de créatures et les invocations ne nécessite pas d'accumuler la magie. L'AMR total indique aussi la base de récupération journalière de Zéon. Une haute AMR permet aussi de lancer des sorts à bas coût sans dépenser de Zéon."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#56"
+          },
+          {
+            "type": "paragraph",
+            "title": "Projection magique",
+            "content": "Compétence servant à projeter ses sorts sur la cible désirée. Permet donc de viser une cible ou de déterminer la distance de lancement d'un sort. Dépend de la Dextérité."
+          },
+          {
+            "type": "paragraph",
+            "title": "Niveau de magie",
+            "content": "Capacité de compréhension de la magie qui mesure la connaissance magique d'un personnage. Permet d'apprendre des sorts ou des effets métamagiques pour renforcer les sorts et le sorcier."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#59"
+          },
+          {
+            "type": "paragraph",
+            "title": "Convoquer",
+            "content": "Compétence permettant d'attirer les créatures surnaturelles dans le monde. Dépend du Pouvoir."
+          },
+          {
+            "type": "paragraph",
+            "title": "Dominer",
+            "content": "Compétence permettant de contrôler les êtres surnaturel. Dépend de la Volonté."
+          },
+          {
+            "type": "paragraph",
+            "title": "Lier",
+            "content": "Compétence permettant de capturer l'essence des êtres mystiques à l'intérieur d'objets ou de personnes. Dépend du Pouvoir."
+          },
+          {
+            "type": "paragraph",
+            "title": "Convoquer",
+            "content": "Compétence permettant d'expulser les êtres surnaturels de ce plan de la réalité. Dépend du Pouvoir."
+          },
+          {
+            "type": "paragraph",
+            "title": "Modules de Projection magique",
+            "content": "Capacités permettant d'utiliser ses compétences martiales lors de lancement de sorts."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "title": "Champ psychique",
+        "content": "Les compétences et capacités de ce champ ont trait aux pouvoirs psychiques et à leur utilisation. L'accès aux disciplines psychiques, et donc aux pouvoirs psychiques, nécessite d'avoir l'Avantage Accès à une discipline psychique ou l'Avantage Accès à toutes les disciplines psychiques."
+      },
+      {
+        "title": "Compétences et capacités du champ psychique",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Points de Potentiel Psychique (PPP)",
+            "content": "Points permettant aux psy d'améliorer leur capacités mentales et d'acquérir de nouveaux pouvoirs. Peuvent être dépensé de manière permanente ou temporaire. Les PPP libres, pour un usage temporaire, se récupère au rythme de 1 point par heure."
+          },
+          {
+            "type": "paragraph",
+            "title": "Talen psychiqye",
+            "content": "Compétence à utiliser les pouvoirs psychiques et à amplifier leur effets. Dépend de la Volonté selon le tableau suivant. Peut être augmenté avec la dépense permanente de PPP."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#68"
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#70"
+          },
+          {
+            "type": "paragraph",
+            "title": "Projection psychique",
+            "content": "Compétence servant à projeter ses pouvoirs mentaux. Permet de viser une cible ou de déterminer la distance de lancement d'un pouvoir. Dépend de la Dextérité."
+          },
+          {
+            "type": "paragraph",
+            "title": "Discipline psychique",
+            "content": "Accès à un ensemble de pouvoirs psychiques. Chaque discipline doit être accédée séparement par la dépense permanente de PPP. Les pouvoirs d'une discipline peuvent être acquis via la dépense permanente de PPP ou utilisée ponctuellement via une dépense temporaire de PPP."
+          },
+          {
+            "type": "paragraph",
+            "title": "Attache psychique",
+            "content": "Permet le maintient sans effort de pouvoirs pyschiques. S'acquière par la dépense permanente de PPP."
+          },
+          {
+            "type": "paragraph",
+            "title": "Modules de Projection psychique",
+            "content": "Capacités permettant d'utiliser ses compétences martiales lorsque l'on projete ses pouvoirs mentaux."
+          },
+          {
+            "type": "paragraph",
+            "title": "Patron mentaux",
+            "content": "Capacités altérant l'utilisation des pouvoirs mentaux."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "title": "Champs secondaires",
+        "content": "Les possibilités d'un personnage ne se limitent pas à combattre ou à lancer des sorts. Il sait accomplir toutes sortes de choses et possède nombre d'aptitudes et de connaissances autres que celles-là. Comme les compétences principales, les compétences secondaires font partie d'un champ et dépendent d'une caractéristique."
+      },
+      {
+        "title": "Liste des compétences par champs secondaires",
+        "type": "panel",
+        "content": [
+          {
+            "type": "table",
+            "reference": "core-exxet#II"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "title": "Fonctionnement des compétences",
+        "content": "Avant d'utiliser une compétence, il faut calculer son Total. Il est égal à la somme de la Base de la compétence (développée en investissant des Points de Formations (PF)), du modificateur de la caractéristique associée, et de différent bonus ou malus spéciaux dépendant de la classe, d'avantages ou de désavantages, de l'armure... C'est cette valeur totale que le personnage utilisera pour les tests de compétence."
+      },
+      {
+        "type": "paragraph",
+        "content": "Pour les compétences secondaires, si un personnage n'a investit aucun PF, on considère qu'il dispose d'une Base de -30 au lieu de 0. La compétence peut être utilisée normalement, à moins de nécessiter des connaissances, même si le Total est négatif."
+      }
+    ]
+  },
+  {
+    "title": "Classes",
+    "type": "panel",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": "La classe représente ce à quoi le personnage a consacré sa jeunesse, c'est-à-dire l'entraînement ou la philosophie qu'il a suivi pour atteindre une profession déterminée."
+      },
+      {
+        "type": "paragraph",
+        "title": "Archétypes",
+        "content": "Pour aider à choisir une classe, vous pouvez commencer par choisir un archétype. Il en existe six, qui regroupent plusieurs classes. Les classes d'un même archétype partagent les mêmes orientations et possèdent de nombreux points communs. Une même classe peut appartenir à deux archétypes, bénéficiant des spécialisation de chacun ; se sont des classes mixtes."
+      },
+      {
+        "title": "Liste des archétypes de classes",
+        "type": "panel",
+        "content": [
+          {
+            "type": "table",
+            "reference": "core-exxet#III"
+          },
+          {
+            "type": "paragraph",
+            "title": "Combattant",
+            "content": "Ces personnages sont des spécialistes du combat. Les classes de cet archétype se consacrent avant tout au perfectionnement de leurs compétences martiales."
+          },
+          {
+            "type": "paragraph",
+            "title": "Mystique",
+            "content": "Cet archétype regroupe les classes qui s'aventurent dans le monde surnaturel. Ces personnages ont la capacité d'invoquer des créatures mystiques ou de modeler la réalité grâce à leur sorts. Ce sont les experts des compétences mystiques."
+          },
+          {
+            "type": "paragraph",
+            "title": "Psy",
+            "content": "Englobe tous les personnages qui ne sont pas seulement dotés de pouvoirs psychiques, mais qui les ont aussi perfectionnés jusq'au rang d'art. Ils maîtrisent particulièrement le champ des compétences psychiques."
+          },
+          {
+            "type": "paragraph",
+            "title": "Furtif",
+            "content": "Archétype des classes qui utilient le mensonge et la ruse pour atteindre leurs objectifs, en évitant la confrontation directe. Leur spécialité fait partie des compétences secondaires physiques."
+          },
+          {
+            "type": "paragraph",
+            "title": "Artiste martial",
+            "content": "Ces personnages ont consacré leur vie à l'approfondissement de leur énergie spirituelle, et peuvent réaliser des actions surprenantes. Ils possèdent de nombreux pouvoirs du Ki."
+          },
+          {
+            "type": "paragraph",
+            "title": "Sans Classe",
+            "content": "Cet archétype représente tous les personnages qui ne se sont pas spécialisé lors de leur apprentissage et qui, par conséquent, n'ont aucune préférence particulière. Toutes sortes de personnages peuvent entrer dans cette classe, depuis les gens du commun, comme les aubergistes et les paysans, jusqu'à l'apprenti qui essaie de trouver une profession pour plus tard."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "title": "Classes",
+        "content": "Suivre une classe ne signifie pas que le personnage se consacre à une profession précise au sens strict. Un voleur ne doit pas forcément gagner sa vie en volant, pas plus qu'un assassin ne passe uniquement la sienne à tuer des gens. La classe détermine les coûts de formation d'un personnage, ses limites dans la distribution de points et quelques-unes de ses compétences spéciales. Voir le chapitre sur les Points de Formation pour plus de détail."
+      },
+      {
+        "type": "link",
+        "title": "Liste des classes",
+        "link": "/classes"
+      },
+      {
+        "title": "Détail des informations d'une classe",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "title": "Archétype",
+            "content": "Indique l'archétype auquel appartient la classe. Certaines classes sont incluses dans deux archétypes, ce sont des classes mixtes."
+          },
+          {
+            "type": "paragraph",
+            "title": "Multiplicateur de Vie",
+            "content": "Il s'agit du coût d'un multiplicateur de Vie. Pour chaque multiplicateur de Vie, la valeur de la Constition est ajoutée au PV maximal ud personnage."
+          },
+          {
+            "type": "paragraph",
+            "title": "PV",
+            "content": "Bonus de classe ajouté au PV pour chaque niveau du personnage, incluant le niveau 1."
+          },
+          {
+            "type": "paragraph",
+            "title": "Initiative",
+            "content": "Bonus de classe ajouté à l'Initiative pour chaque niveau du personnage, incluant le niveau 1."
+          },
+          {
+            "type": "paragraph",
+            "title": "Développement Intérieur",
+            "content": "Nombre de points de DI acquis à chaque niveau. Au niveau 1, le personnage commence avec ce nombre de points de DI."
+          },
+          {
+            "type": "paragraph",
+            "title": "PPP innés",
+            "content": "Nombre de PPP obtenus chaque niveau, incluant le niveau 1. Si la classe fournit un PPP au boût d'une certain nombre de niveaux, alors au niveau 1 il obtient un PPP et on compte à partir du niveau. Par exemple, si le PPP inné est obtenu tout les 3 niveaux, le personnage en obtient un au niveau 1, puis au niveau 4, puis 7, etc."
+          },
+          {
+            "type": "paragraph",
+            "title": "Champs principaux",
+            "content": "Indique le coût de formation des compétences et capacités des champs principaux."
+          },
+          {
+            "type": "paragraph",
+            "title": "Ki et Accumulation de Ki",
+            "content": "L'achat de point de Ki ou d'accumulation de Ki augmente la réserve de Ki ou l'accumulation de Ki d'une caractéristique. Il est possible de faire l'achat de Ki et d'accumulation pour différente caractéristique."
+          },
+          {
+            "type": "paragraph",
+            "title": "Zéon et AMR",
+            "content": "Le Zéon est acquis par groupe de 5 points. Pour l'AMR, l'achat d'un multiplicateur augmente l'AMR total de la Base d'AMR, selon le Pouvoir du personnage. Tous les personnages possédant l'Avantage du Don mystique ou incomplet commencent avec un multiplicateur d'AMR."
+          },
+          {
+            "type": "paragraph",
+            "title": "Champs secondaires",
+            "content": "Indique le coût de formation des compétences secondaires. Chaque compétence doit être augmentée individuellement."
+          },
+          {
+            "type": "paragraph",
+            "title": "Coût réduits",
+            "content": "Quelques clases disposent pour certaines compétences secondaires d'un coût différent des autres compétences du même champ secondaire. Ce coût est utilisé pour cette compétence en lieu et place du coût défini pour le champ secondaire auquelle elle appartient."
+          },
+          {
+            "type": "paragraph",
+            "title": "Bonus automatiques",
+            "content": "Indique les bonus de classe acquis à chaque niveau, incluant le niveau 1. Voir le chapitre sur les Bonus automatiques pour plus de détail sur les bonus de classe et la limite de certains de ces bonus."
+          },
+          {
+            "type": "paragraph",
+            "title": "Spécial",
+            "content": "Cette section n'apparaît que pour les classes disposant d'un bonus qui ne se reflète ni dans les coûts de formation ni dans les bonus automatiques."
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "title": "Changement de classe",
+        "content": "Il est possible de changer de classe au cours de la vie d'un personnage. Cela requiert du temps, et doit être annoncé 2 niveaux à l'avance et nécessite d'investir un certain nombre de PF. Changer de classe vers une de même archétype coûte 20 PF. Pour une classe mixte, ou une classe ayant au moins archétype en commun, il en coutera 40 PF. Enfin pour changer de classe n'ayant aucun archétype commun, cela coûte 60 PF. Le personnage conserve toute ses anciennes compétences, mais à partir du niveau de changement de classe on applique le barème de coût en PF de la nouvelle classe."
+      }
+    ]
+  },
+  {
     "title": "Avantages, Désavantages et Points de Création (PC)",
     "type": "panel",
     "content": [
@@ -508,6 +866,303 @@
         "type": "paragraph",
         "title": "Désavantages de passé",
         "content": "Les Points de Créations obtenus via ces désavantages ne peuvent être utilisés que pour acquérir des avantage de passé."
+      }
+    ]
+  },
+  {
+    "title": "Points de Formation (PF)",
+    "type": "panel",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": "Les Points de Formation (PF) sont fondamentaux pour la création d'un personnage, puisqu'ils vont être investis pour apprendre et améliorer ses compétences et capacités. Il est possible de se spécialiser en dépensant beaucoup de PF dans une seule compétence mais il restera peu de PF pour en apprendre d'autres, et inversement apprendre de nombreuses compétences limite leur spécialisation."
+      },
+      {
+        "type": "paragraph",
+        "content": "La classe définie le coût en PF de la plupart des compétences et capacités. Elle détermine les compétences et capcités à faible coût en PF qui représente la spécialité de la classe, mais elle n'empêche aucunement d'investir des PF dans des compétences au coût plus élevé. Des avantages peuvent aussi diminuer le coût en PF de certaines compétences ou apporter d'autres capacités."
+      },
+      {
+        "type": "paragraph",
+        "title": "Niveau",
+        "content": "Le nombre de PF dépend du niveau du personnage. Au niveau 1, tous personnages commencent avec 600 PF. À chaque niveau supplémentaire, le total de PF disponible augmente de 100. Le niveau détermine la masse de connaissance accessible au personnage, mais il peut ne dépenser aucun point en compétence martiale et préférer d'autres compétences et capacités."
+      },
+      {
+        "type": "paragraph",
+        "title": "Dépense des Points de Formation",
+        "content": "Une fois que le personnage à une race définie, une classe ainsi que des avantages, et éventuellement des désavantages, les PF peuvent êtres dépensés dans les champs principaux puis dans les champs secondaires."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les compétences ont en général un coût de formation compris entre 1 et 3. Ce coût indique la quantité de PF qu'il faut investir pour augmenter la Base de cette compétence d'un point. Pour apprendre une compétence, il faut avoir une Base minimale de 5 dans cette compétence."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les capacités ont un coût de formation différent. Pour le Zéon, il s'agit du coût de formation pour 5 points de Zéon. Mais l'apprentissage de module d'arme peut aller jusqu'à 100 PF."
+      },
+      {
+        "type": "paragraph",
+        "title": "Maximum de PF par champ",
+        "content": "Il existe une limite à la quantité de PF que l'on peut investir dans les trois champs principaux. La limite est définie par chaque classe pour chacun des champs principaux. Elle peut être de 50% ou 60% des PF totaux ; c'est-à-dire que pour 100 PF, on ne peut dépenser plus de 50 PF, respectivement 60 PF, dans un champ principal donné. Pour un total de 600 PF, au niveau 1, la limite par champ est donc de 300 PF à 50% et 360 PF à 60%. Seul les champs principaux sont limités, mais certaines compétence et capacité connaissent d'autres limites."
+      },
+      {
+        "type": "paragraph",
+        "title": "Maximum de PF en Attaque et en défense",
+        "content": "Les compétences d'Attaque et de défense, Parade et Esquive, sont limités à la moitié des PF totaux, quelque soit la classe."
+      },
+      {
+        "type": "paragraph",
+        "content": "De plus, il est interdit de trop déséquilibrer l'attaque et la défense d'un personnage si les deux compétences sont développée. Entre les Bases d'Attaque et de la compétence de défense, il ne peut y avoir une différence de plus de 50 points de compétence."
+      },
+      {
+        "type": "paragraph",
+        "content": "Il est possible de ne développer que l'Attaque ou une compétence de défense. Dans ce cas, le personnage ne peut dépenser que le quart (25%) des PF totaux au maximum dans cette compétence. Ainsi, il ignore la règle qui force à une différence de 50 points les Bases d'Attaque et de défense."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les compétences d'Attaque et de défense, Parade et Esquive, sont limité à la moitié des PF totaux, quelque soit la classe."
+      },
+      {
+        "type": "paragraph",
+        "title": "Maximum de PF en projection magique ou psychique",
+        "content": "Les compétences de Projection magique et psychique sont limités à la moitié des PF disponible pour le champ principal correspondant. Ainsi un sorcier montant de niveau, et gagnat donc 100 PF, ne pourrait dépenser au maximum que 30 PF en Projection magique car la limite du champ mystique est de 60% donc 60 PF. Un mage de bataille, dont la limite du champ mystique est de 50%, ne pourrait dépenser que 25 PF pour sa Projection magique, pour 100 PF à investir."
+      },
+      {
+        "type": "paragraph",
+        "title": "Achat de Développement Intérieur",
+        "content": "Le Développement Intérieur augmente d'une certaine valeur pour chaque niveau. Il est possible, outre l'Avantage Maître martial, d'augmenter le DI disponible en investissant des PF. Les PF investis compte dans la limite du champ martial mais ne peuvent excéder 10% des PF totaux du personnage. Soit 60 PF maximum au niveau 1."
+      },
+      {
+        "type": "paragraph",
+        "title": "Achat de Niveau de Magie",
+        "content": "Le Niveau de Magie est déterminé par l'Intelligence. Il est possible, outre les Avantages Apprentissage magique graduel, Connaissance innée d'une voie, ainsi que Magie opposé, d'augmenter le Niveau de Magie disponible en investissant des PF. Les PF investis compte dans la limite du champ mystique mais ne peuvent excéder 10% des PF totaux du personnage. Soit 60 PF maximum au niveau 1."
+      }
+    ]
+  },
+  {
+    "title": "Bonus Automatiques",
+    "type": "panel",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": "Les compétences ne sont pas seulement améliorées par l'investissement de PF. Certaines d'entres elles peuvent augmenter sans qu'il ne soit nécessaire de dépenser le moindre point."
+      },
+      {
+        "type": "paragraph",
+        "title": "Amélioration naturelle",
+        "content": "Il s'agit de connaissances innées de compétences secondaires, provenant de la nature du personnage plutôt que de sa classe. L'amélioration naturelle se fait grâce aux compétences naturelles et au bonus naturel. Le modificateur de caractéristique et l'amélioration naturelle sont comptabilisés dans la case MODIFICATEURS, abrégé MOD., dans le tableau des compétences secondaires de la fiche de personnage."
+      },
+      {
+        "type": "sub-paragraph",
+        "title": "Compétences naturelles",
+        "content": "Les compétences naturelles sont une série de modificateurs. À chaque niveau, incluant le niveau 1, le personngae choisit 5 compétences secondaires différentes et ajoute un modificateur de +10 à chacune d'elles. Pour un même niveau, il n'est pas possible de choisir deux fois la même compétence, mais l'amélioration peut être cumulé avec le bonus naturel pour une même compétence."
+      },
+      {
+        "type": "sub-paragraph",
+        "title": "Bonus naturel",
+        "content": "Le bonus naturel permet d'ajouter le modificateur de caractéristique associé à la compétence choisie. Le bonus s'applique pour une compétence physique, dépendant de l'Agilité, la Dextérité ou la Force, et pour une compétence spirituelle, dépendant de l'Intelligence, de la Perception, du Pouvoir ou de la Volonté. Si le modificateur d'une caractéristique augmente, le bonus naturel augmente aussi. En somme le modificateur de la caractéristique d'une compétence secondaire est multiplié par 1 plus le nombre de bonus naturel appliqué. Il est donc intéressant de noté le nombre de bonus naturel appliqué à une compétence pour pouvoir le recalculer si le modificateur de caractéristique augmente."
+      },
+      {
+        "type": "sub-paragraph",
+        "title": "Limite de l'amélioration naturelle",
+        "content": "Le total, comprenant le modificateur de caractéristique, les bonus de compétences naturelles et les bonus naturels, ne peut dépasser 100. C'est-à-dire que la case MOD à un maximum de +100. Donc si à un moment, le modificateur de caractéristique d'une compétence augmente et que le total de la case MOD est déjà de +100, alors ces points supplémentaires ne s'applique pas."
+      },
+      {
+        "type": "paragraph",
+        "title": "Bonus de classe",
+        "content": "Les bonus automatiques obtenus par la classe sont appelés bonus de classe. Sur la fiche de personnage, ils sont indiqués dans la case CLASSE. Ils s'applique à chaque niveau, dès le niveau 1."
+      },
+      {
+        "type": "paragraph",
+        "title": "Limite des bonus de classe",
+        "content": "La plupart des bonus de classe ne sont pas limités. Seul les bonus de classe à l'Attaque, la Parade et l'Esquive ont un maximum de +50. Même en changeant de classe il n'est pas possible de dépasser cette limite. Les bonus des Arts martiaux à l'Attaque ou à la défense compte en tant que bonus de classe, et donc dans la limite des +50."
+      }
+    ]
+  },
+  {
+    "title": "Présence et Résistances",
+    "type": "panel",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": "La Présence correspond à la somme de tous les aspects existentiels de votre personnage., autant physiques que spirituels. Tout personnage dispose d'un potentiel quasi illimité, qu'il concrétise au fur et à mesure qu'il gagne en expérience, en talent et en pouvoir. C'est pourquoi la Présence dépend du niveau du personnage par l'intermédiaire de la quantité totale de PF dont il dispose. La Présence est égale au nombre de PF divisé par 20. Ainsi un personnage de niveau 1 a une Présence de 30."
+      },
+      {
+        "type": "table",
+        "reference": "core-exxet#5"
+      },
+      {
+        "type": "paragraph",
+        "title": "Résistances",
+        "content": "La Base des Résistances est égale à la Présence du personnage. Il existe cinq Résistances différentes et chacune d'entre elles sert à supporter des effets d'origine fiverse. Le Total de chaque Résistance est égal à la Présence plus le modificateur de la caractéristique dont elle dépend, ainsi que ponctuellement de modificateurs supplémentaires."
+      },
+      {
+        "type": "sub-paragraph",
+        "title": "Résistance physique (RPhy)",
+        "content": "Permet de résister à certains chocs, d'éviter de tomber inconscient et de surmonter les effets des Critiques. Dépend de la Constitution."
+      },
+      {
+        "type": "sub-paragraph",
+        "title": "Résistance aux maladies (RMal)",
+        "content": "Permet d'éviter de tomber malade, d'être affecté par un fléau ou de récupérer d'une maladie contagieuse. Dépend de la Constitution."
+      },
+      {
+        "type": "sub-paragraph",
+        "title": "Résistance aux poisons (RPoi)",
+        "content": "Permet d'éviter d'être affecté par un poison, quel qu'en soit le type, ou du moins d'en réduire les effets. Dépend de la Constitution."
+      },
+      {
+        "type": "sub-paragraph",
+        "title": "Résistance mystique (RMys)",
+        "content": "Permet de résister aux effets d'un sort ou d'une compétence d'origine mystique. Dépend du Pouvoir."
+      },
+      {
+        "type": "sub-paragraph",
+        "title": "Résistance psychique (RPsy)",
+        "content": "Permet de résister aux attaques psychiques et à tout ce qui affecte la capacité de raisonnement. Dépend de la Volonté."
+      }
+    ]
+  },
+  {
+    "title": "Résumé de création de personnage",
+    "type": "panel",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": "1. Générez et calculez vos caractéristiques.<br/>2. Choisissez votre race.<br/>3. Choisissez votre classe.<br/>4. Utilisez vos Points de Création pour acquérir avantages et désavantages.<br/>5. Dépensez vos PF dans les champs principaux.<br/>6. Dépensez vos PF dans les champs secondaires.<br/>7. Appliquez l'amélioration naturelle aux compétences secondaires.<br/>8. Ajoutez les bonus de classe..<br/>9. Calculez vos Points de Vie et votre Initiative.<br/>10. Calculez vos Résistances.<br/>11. Finalisez votre personnage en choisissant son équipement, ses pouvoirs de Ki, ses sorts ou ses pouvoirs psychiques, ainsi que tout autre détail manquant dans les 10 premiers points."
+      }
+    ]
+  },
+  {
+    "title": "Niveau du personnage",
+    "type": "panel",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": "Le niveau d'un personnage est défini par les points d'expérience accumulés. Le Niveau détermine les PF et la Présence du personnage, et peut accorder des augmentation de caractéristique."
+      },
+      {
+        "type": "paragraph",
+        "title": "Monter de niveau",
+        "content": "Une fois suffisant d'expérience accumulée, le personnage augmente son niveau. Il obtient 100 PF à dépenser de la même manière qu'à la création du personnage, selon les mêmes limites. Il obtient aussi tout les bonus automatiques de sa classe, ainsi que les bonus en PV, Initiative, DI et PPP ; de même il dispose de l'amélioration naturelle pour ce niveau."
+      },
+      {
+        "type": "paragraph",
+        "content": "Un joueur peut décider de ne pas dépenser tous les PF de son personnage lors d'un passage de niveau, pour en mettre quelques-uns de côté pour plus tard. Les limites de dépense devront être respectées en rapport à l'ensemble de ses PF."
+      },
+      {
+        "type": "table",
+        "reference": "core-exxet#6"
+      },
+      {
+        "type": "sub-paragraph",
+        "title": "Résumé de la montée de niveau",
+        "content": "1. Dépensez 100 PF dans les champs principaux et secondaires.<br/>2. Si vous êtes de niveau pair, augmentez d'un point une de vos caractéristiques.<br/>3. Appliquez les bonus de l'amélioration naturelle.<br/>4. Appliquez les bonus de votre classse à toutes les compétences concernées.<br/>5. Augmentez vos Points de Vie et votre Initiative de vos bonus de classe.<br/>6. Augmentez votre Présence de 5 points et modifiez vos Résistances."
+      },
+      {
+        "type": "sub-paragraph",
+        "title": "Augmentation de caractéristique",
+        "content": "Quand un personnage monte de niveau, vous avez la possibilité d'augmenter ses caractéristiques. À chaque niveau pair, vous pouvez aujouter un point à une de ses caractéristiques principales. Quand une caractéristique augmente, il est tout à fait possible qu'elle modifie certains points de votre fiche de personnage. Si la nouvelle caractéristique entraîne un modificateur différent, changez-le et recalculez tous les Totaux de vos compétences. Si la Constitution s'est améliorée, elle augmente la Base des Points de Vie et la valeur des multiplicateurs de Vie, ce qui vous obligera à recalculer de nouveau votre total de PV. De même pour le Pouvoir et le Zéon et l'AMR, ou la Volonté et le Talent Psychique... La Taille n'est pas recalculée si la Force ou la Constitution augmentent."
+      },
+      {
+        "type": "paragraph",
+        "title": "Changement de classe",
+        "content": "Il est possible en montant de niveau, de changer de classe. Voir le chapitre sur les Classes."
+      },
+      {
+        "type": "paragraph",
+        "title": "Niveau 0",
+        "content": "Ce niveau représente celui qu'ont les personnages durant leur première période d'entraînement et de développement. Ce sont des jeunes sasn grande expérience ou des personnes qui n'ont pas encore eu l'occasion de faire quelque chose d'important dans leur vie. Le Meneur de Jeu peut décider que les personnages commencent au niveau 0."
+      },
+      {
+        "type": "paragraph",
+        "content": "Les personnages de niveau 0 ne possèdent que 400 PF, ne bénéficie pas des bonus de classe mais obtient l'amélioration naturelle (comptant comme étant celle du niveau 1). Passer le niveau 0 ne requiert pas une quantité d'expérience déterminée. Les personnages sont en suspens tant que rien n'arrive dans leur vie qui leur permette d'atteindre le niveau 1. Le Meneur de Jeu est libre de définir l'instant où les personnages atteindront le niveau 1."
+      }
+    ]
+  },
+  {
+    "title": "Classe sociale et richesse",
+    "type": "panel",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": "La richesse du personnage, ainsi que sa classe sociale, sont étroitement liés. À moins que vous n'ayez pris des avantages et désavantages de passé modifiant cela. Le tableau suivant permet de générer la classe sociale avec un D10, et donc les fonds initiaux de votre personnage."
+      },
+      {
+        "type": "paragraph",
+        "content": "Ce tableau est à utiliser pour un cadre général. Dans les volumes de Gaïa, vous pourrez trouver plusieurs tableaux de classe sociale et richesse en fonction de la région d'origine de votre personnage, certaines classes sociales ne sont accessible qu'avec l'avantage Position sociale."
+      },
+      {
+        "type": "table",
+        "reference": "core-exxet#p.68.2"
+      },
+      {
+        "type": "table",
+        "reference": "core-exxet#p.68.1"
+      },
+      {
+        "type": "paragraph",
+        "content": "Les tableaux d'équipement de Core Exxt, p.69 à 72, permettent de connaître les prix de l'équipement, des habitations et autre services courants. Pour des objets plus rares, tel des artefacts, outre l'Avantage Artefact, ou des objets de sciences avancées ou encore des matériaux occultes, vous pouvez soliciter le Meneur de Jeu."
+      }
+    ]
+  },
+  {
+    "title": "Autres détails",
+    "type": "panel",
+    "content": [
+      {
+        "title": "Langues",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "Il n'y a pas de règle spécifique en rapport avec les langues connues. Un personnage connaîtra la langue de son pays d'origine, ou du moins là où il a grandi. De même s'il a beaucoup voyagé, il est possible qu'il connaissance d'autres langues. Enfin, s'il a des connaissance en Histoire et en Occultisme, il pourrait connaître certaines langues mortes ou secrètes. Dans tous les cas, il s'agira de voir avec le Meneur de Jeu pour établir quels sont les langues parlées par un personnage."
+          }
+        ]
+      },
+      {
+        "title": "Élan",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "L'Élan est une mesure de la synchronisation entre le personnage est des entitées divines. Ces entitées offrent certaines capacités aux personnages incarnant le plus sa personnalité et les facettes du monde qu'il représente."
+          },
+          {
+            "type": "table",
+            "reference": "core-exxet#83"
+          },
+          {
+            "type": "paragraph",
+            "content": "En se synchronisant envers une de ces entités, le personnage limite sa synchronisation avec les autres entités. L'Élan est le plus souvent gérée par le Meneur de Jeu, s'il désire donner aux joueurs des capacités en accord avec de telles entités."
+          }
+        ]
+      },
+      {
+        "title": "Gnose et Natura",
+        "type": "panel",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": "La Gnose mesure l'influence qu'un personnage peut avoir sur le monde spirituel et les idées qui s'y représente. D'une certaine façon, elle indique la puissance de sa présence surnaturelle, la capacité innée qu'il possède pour altérer les règles naturelles. Plus la Gnose d'un individu, d'un artefact ou d'une entitée est élevée, et plus ses actions ont de l'importance dans le flux des âmes ; parallèlement, ils sont moins influencés par ses hauts et ses bas."
+          },
+          {
+            "type": "paragraph",
+            "content": "Elle est définie par le Meneur de Jeu et justifie de l'importance des personnage et leur impact sur le monde. Traditionnellement elle est de 10 ou de 15 pour des personnages joueurs. Elle est définitive et ne peut évoluer que dans des situations qui amène un personnage à transcender, c'est-à-dire à devenir une autre version de lui-même, une nouvelle âme basée sur la précédente. Si le Meneur de Jeu décide de changer la Gnose d'un personnage, hors situation transcendante, on considère qu'il en a toujours été ainsi."
+          },
+          {
+            "type": "paragraph",
+            "content": "Entre autre, elle limite l'accès aux sorts de Haute Magie et de Magie Divine, car des êtres de Gnose faible ne peuvent accéder à une telle puissance. Ou encore au niveau 19 et 20 de Régénération. Des entités à la Gnoses élevée peuvent aussi ignorer certains effets altérant la réalité ou leur être."
+          },
+          {
+            "type": "paragraph",
+            "title": "Natura",
+            "content": "La Natura est la Gnose par défaut des êtres d'une race donnée. Les individus ayant un Gnose plus élevée que la Natura de leur espèce ont une plus grande importance et influence sur le monde."
+          },
+          {
+            "type": "table",
+            "reference": "gaia-1#42"
+          }
+        ]
       }
     ]
   }

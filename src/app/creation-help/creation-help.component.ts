@@ -21,7 +21,7 @@ export class CreationHelpComponent implements OnInit {
   isParentPanel(panel: ContentPanel) {
     return (
       panel.content &&
-      panel.content.filter(unit => unit.type === EContentType.PANEL).length
+      panel.content.every(unit => unit.type === EContentType.PANEL)
     );
   }
 }

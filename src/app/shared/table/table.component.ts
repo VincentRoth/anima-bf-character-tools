@@ -21,10 +21,14 @@ export class TableComponent implements OnInit {
     if (typeof this.table.id === 'number') {
       return `Tableau ${this.table.id} : ${this.table.title}`;
     }
-    if (this.table.id.startsWith('p.')) {
-      return `${this.table.id} : ${this.table.title}`;
+    if (
+      this.table.id.startsWith('I') ||
+      this.table.id.startsWith('V') ||
+      this.table.id.startsWith('X')
+    ) {
+      return `Encadré ${this.table.id} : ${this.table.title}`;
     }
-    return `Encadré ${this.table.id} : ${this.table.title}`;
+    return `${this.table.id} : ${this.table.title}`;
   }
 
   getCellStyle(value: any): string {

@@ -7,34 +7,35 @@ export enum EContentType {
   LINK = 'link',
   PANEL = 'panel',
   PARAGRAPH = 'paragraph',
+  SUB_PARAGRAPH = 'sub-paragraph',
   TABLE = 'table'
 }
 
 export interface ContentImage extends ContentUnit {
   title: string;
-  type: 'image';
+  type: EContentType.IMAGE;
   url: string;
 }
 
 export interface ContentLink extends ContentUnit {
   title: string;
-  type: 'link';
+  type: EContentType.LINK;
   link: string;
 }
 
 export interface ContentParagraph extends ContentUnit {
   title?: string;
-  type: 'paragraph';
+  type: EContentType.PARAGRAPH | EContentType.SUB_PARAGRAPH;
   content: string;
 }
 
 export interface ContentTable extends ContentUnit {
-  type: 'table';
+  type: EContentType.TABLE;
   reference: string;
 }
 
 export interface ContentPanel extends ContentUnit {
   title: string;
-  type: 'panel';
+  type: EContentType.PANEL;
   content: ContentUnit[];
 }

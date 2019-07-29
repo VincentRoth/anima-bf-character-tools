@@ -489,7 +489,7 @@
     "name": "Faiblesse physique",
     "description": "le personnage résiste extrêmement mal aux dégâts physiques. Chaque fois qu'il subit un Critique, il a de fortes chances d'en mourir ou de subir des dégâts irréversibles.",
     "effect": "La RPhy du personnage est réduite de moitié.",
-    "note": "Seul la base RPhy est réduite.",
+    "note": "Seule la Base de RPhy est réduite.",
     "benefits": [1],
     "source": "Core p.22",
     "types": ["Désavantage Général", "Physique", "Résistance"]
@@ -1218,7 +1218,7 @@
   {
     "name": "Don incomplet",
     "description": "Le personnage qui possède cet avantage est né avec de bonnes capacités pour la magie et peut parfois utiliser des sorts mineurs de la même façon qu'une personne ayant vraiment le Don mystique.",
-    "effect": "Le personnage ne peut voir la magie mais il est capable de lancer des sorts de façon limitée. Chqaue fois qu'il souhaite utiliser un sortilège, il doit réussir un test de Pouvoir contre une difficulté de 10 plus un point pour chaque dix Niveau de Magie du sort. S'il échoue, il perdra du Zéon comme s'il avait lancé le sort, mais celui-ci n'aura pas fonctionné.",
+    "effect": "Le personnage ne peut voir la magie mais il est capable de lancer des sorts de façon limitée. Chaque fois qu'il souhaite utiliser un sortilège, il doit réussir un test de Pouvoir contre une difficulté de 10 plus un point pour chaque dix Niveau de Magie du sort. S'il échoue, il perdra du Zéon comme s'il avait lancé le sort, mais celui-ci n'aura pas fonctionné.",
     "costs": [1],
     "source": "ArcEx p.11",
     "types": ["Avantage Général", "Mystique"]
