@@ -63,10 +63,10 @@ export class AdvantageService {
   }
 
   sort(a1: UnknownAdvantage, a2: UnknownAdvantage) {
-    if ((a1 as Advantage).costs && !(a1 as Advantage).costs) {
+    if ((a1 as Advantage).costs && (a2 as Disadvantage).benefits) {
       return -1;
     }
-    if (!(a1 as Advantage).costs && (a1 as Advantage).costs) {
+    if ((a1 as Disadvantage).benefits && (a2 as Advantage).costs) {
       return 1;
     }
     return a1.name.localeCompare(a2.name);
