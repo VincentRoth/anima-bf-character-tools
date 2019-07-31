@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CharacterSheetComponent } from './character-sheet.component';
+import { SharedModule } from '../shared/shared.module';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('CharacterSheetComponent', () => {
   let component: CharacterSheetComponent;
@@ -8,9 +10,9 @@ describe('CharacterSheetComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CharacterSheetComponent ]
-    })
-    .compileComponents();
+      declarations: [CharacterSheetComponent],
+      imports: [SharedModule, HttpClientTestingModule]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
