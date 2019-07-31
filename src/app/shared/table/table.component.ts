@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ReferenceTable } from '../reference-table/reference-table.model';
+import { CharacterService } from '../character/character.service';
 
 const boldItalicRegExp = /^\*\*\*/;
 const boldRegExp = /^\*\*/;
@@ -11,11 +12,15 @@ const italicRegExp = /^\*/;
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
+  @Input() reference: string;
   @Input() table: ReferenceTable;
+  private belongsToCharacter: boolean;
 
-  constructor() {}
+  constructor(private characterService: CharacterService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.belongsToCharacter = this.characterHasTable();
+  }
 
   get caption(): string {
     if (typeof this.table.id === 'number') {
@@ -50,5 +55,18 @@ export class TableComponent implements OnInit {
       return value.replace(/^\**/, '');
     }
     return value;
+  }
+
+  private characterHasTable(): boolean {
+    return this.characterService.hasRefTable(this.reference);
+  }
+
+  toggleTable() {
+    if (this.characterHasTable()) {
+      this.characterService.removeRefTable(this.reference);
+    } else {
+      this.characterService.addRefTable(this.reference);
+    }
+    this.belongsToCharacter = this.characterHasTable();
   }
 }

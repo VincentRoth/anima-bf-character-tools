@@ -1,19 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { AdvantageService } from './advantage.service';
-import { Advantage } from './advantage.model';
+import { UnknownAdvantage } from './advantage.model';
+import { CharacterService } from '../shared/character/character.service';
 
 @Component({
-  selector: 'app-advantage',
+  selector: 'app-advantages',
   templateUrl: './advantages.component.html',
   styleUrls: ['./advantages.component.scss']
 })
 export class AdvantagesComponent implements OnInit {
-  advantages: Advantage[];
-  filteredAvantages: Advantage[];
+  private advantages: UnknownAdvantage[];
+  private filteredAvantages: UnknownAdvantage[];
 
-  types: object;
-  search: string;
-  selectedType: string;
+  private types: object;
+  private search: string;
+  private selectedType: string;
+  private timeout;
 
   constructor(private advantageService: AdvantageService) {}
 
@@ -53,13 +55,20 @@ export class AdvantagesComponent implements OnInit {
     this.filteredAvantages = filteredAvantages;
   }
 
+  private handleSearch() {
+    if (this.timeout) {
+      clearTimeout(this.timeout);
+    }
+    this.timeout = setTimeout(() => this.filterAdvantages(), 500);
+  }
+
   searchAdvantages(search: string) {
     this.search = search;
-    this.filterAdvantages();
+    this.handleSearch();
   }
 
   searchType(type: string) {
     this.selectedType = type;
-    this.filterAdvantages();
+    this.handleSearch();
   }
 }

@@ -8,7 +8,7 @@ import { RaceService } from './race.service';
   styleUrls: ['./races.component.scss']
 })
 export class RacesComponent implements OnInit {
-  races: ContentPanel[];
+  private races: ContentPanel[];
 
   constructor(private raceService: RaceService) {}
 

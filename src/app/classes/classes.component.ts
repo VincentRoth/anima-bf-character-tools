@@ -8,7 +8,7 @@ import { ClassModel } from './class.model';
   styleUrls: ['./classes.component.scss']
 })
 export class ClassesComponent implements OnInit {
-  classes: ClassModel[];
+  private classes: ClassModel[];
 
   constructor(private classesService: ClassesService) {}
 

@@ -4,7 +4,7 @@
     <input
       matInput
       placeholder="Filtrer"
-      (keyup)="searchTables($event.target.value)"
+      (keyup)="handleSearch($event.target.value)"
     />
   </mat-form-field>
 </div>
@@ -16,6 +16,7 @@
       <app-table
         *ngFor="let table of refTables[book.reference]"
         [table]="table"
+        [reference]="book.reference + '#' + table.id"
       ></app-table>
     </div>
     <p *ngIf="!refTables[book.reference].length">
