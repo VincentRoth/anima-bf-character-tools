@@ -66,10 +66,10 @@
       <span class="bold">Note : </span>{{ advantage.note }}
     </p>
     <p class="costs">
-      <ng-container *ngIf="advantage.costs">
+      <ng-container *ngIf="costs">
         <span class="bold">Coût : </span>
         <button
-          *ngFor="let cost of advantage.costs"
+          *ngFor="let cost of costs"
           mat-mini-fab
           color="primary"
           (click)="toggleAdvantage(cost)"
@@ -78,10 +78,10 @@
           {{ cost }}
         </button>
       </ng-container>
-      <ng-container *ngIf="advantage.benefits">
+      <ng-container *ngIf="benefits">
         <span class="bold">Bénéfice : </span>
         <button
-          *ngFor="let benefit of advantage.benefits"
+          *ngFor="let benefit of benefits"
           mat-mini-fab
           color="warn"
           (click)="toggleAdvantage(benefit)"

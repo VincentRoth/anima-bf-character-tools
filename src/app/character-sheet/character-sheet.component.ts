@@ -11,9 +11,9 @@ import { constant } from '../shared/constant';
   styleUrls: ['./character-sheet.component.scss']
 })
 export class CharacterSheetComponent implements OnInit {
-  private character: Character;
+  character: Character;
   private tables: object;
-  private nbMaximumDisadvantages: number;
+  nbMaximumDisadvantages: number;
 
   constructor(
     private characterService: CharacterService,

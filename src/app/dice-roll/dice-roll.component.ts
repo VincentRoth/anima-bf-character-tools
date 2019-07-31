@@ -8,7 +8,7 @@ import { RollService } from '../shared/roll/roll.service';
 })
 export class DiceRollComponent implements OnInit {
   private diceValue: number;
-  private rollHistory: string[];
+  rollHistory: string[];
   private is10Dice: boolean;
   private is100Dice: boolean;
 

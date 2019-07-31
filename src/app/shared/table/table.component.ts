@@ -14,7 +14,7 @@ const italicRegExp = /^\*/;
 export class TableComponent implements OnInit {
   @Input() reference: string;
   @Input() table: ReferenceTable;
-  private belongsToCharacter: boolean;
+  belongsToCharacter: boolean;
 
   constructor(private characterService: CharacterService) {}
 

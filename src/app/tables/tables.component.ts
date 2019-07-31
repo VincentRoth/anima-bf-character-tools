@@ -12,7 +12,7 @@ import {
   styleUrls: ['./tables.component.scss']
 })
 export class TablesComponent implements OnInit {
-  private refTables: ReferenceTableContainer;
+  refTables: ReferenceTableContainer;
   private timeout;
 
   constructor(private referenceTableService: ReferenceTableService) {}

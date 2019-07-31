@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { UnknownAdvantage } from 'src/app/advantages/advantage.model';
+import { Advantage, Disadvantage } from 'src/app/advantages/advantage.model';
 import { CharacterService } from '../character/character.service';
 
 @Component({
@@ -8,11 +8,19 @@ import { CharacterService } from '../character/character.service';
   styleUrls: ['./advantage.component.scss']
 })
 export class AdvantageComponent implements OnInit {
-  @Input() advantage: UnknownAdvantage;
+  @Input() advantage: Advantage | Disadvantage;
 
   constructor(private characterService: CharacterService) {}
 
   ngOnInit() {}
+
+  get costs() {
+    return (this.advantage as Advantage).costs;
+  }
+
+  get benefits() {
+    return (this.advantage as Disadvantage).benefits;
+  }
 
   characterHasAdvantage(creationPoints: number): boolean {
     return this.characterService.hasAdvantage(

@@ -10,7 +10,7 @@ import { CharacterService } from '../shared/character/character.service';
 })
 export class AdvantagesComponent implements OnInit {
   private advantages: UnknownAdvantage[];
-  private filteredAvantages: UnknownAdvantage[];
+  filteredAvantages: UnknownAdvantage[];
 
   private types: object;
   private search: string;

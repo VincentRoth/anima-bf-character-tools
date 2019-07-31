@@ -14,7 +14,7 @@ interface IHomeItem {
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  private items: IHomeItem[];
+  items: IHomeItem[];
 
   constructor() {}
 
