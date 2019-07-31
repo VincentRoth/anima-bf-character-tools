@@ -136,6 +136,7 @@ export class CharacterService {
 
   changeLevel(level: number): void {
     this.character.level = level;
+    this.saveCharacter();
   }
 
   addRefTable(tableReference: string): void {

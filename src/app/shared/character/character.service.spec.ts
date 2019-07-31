@@ -4,6 +4,7 @@ import { CharacterService } from './character.service';
 import { constant } from '../constant';
 import { Advantage, Disadvantage } from 'src/app/advantages/advantage.model';
 
+const storageKey = constant.localCharacterKey;
 const startingCreationPoints = constant.startingCreationPoints;
 const startingLevel = constant.startingLevel;
 
@@ -42,7 +43,8 @@ describe('CharacterService', () => {
 
   it('should init a default character', () => {
     const service: CharacterService = TestBed.get(CharacterService);
-    expect(service.get()).toEqual({
+
+    const expectedResult = {
       raceName: null,
       className: null,
       creationPoints: startingCreationPoints,
@@ -50,7 +52,13 @@ describe('CharacterService', () => {
       disadvantages: [],
       level: startingLevel,
       refTables: []
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResult);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResult
+    );
   });
 
   it('should set character race', () => {
@@ -58,7 +66,7 @@ describe('CharacterService', () => {
 
     service.changeRace('Humain');
 
-    expect(service.get()).toEqual({
+    const expectedResult = {
       raceName: 'Humain',
       className: null,
       creationPoints: startingCreationPoints,
@@ -66,7 +74,13 @@ describe('CharacterService', () => {
       disadvantages: [],
       level: startingLevel,
       refTables: []
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResult);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResult
+    );
   });
 
   it('should set character class', () => {
@@ -74,7 +88,7 @@ describe('CharacterService', () => {
 
     service.changeClass('Guerrier');
 
-    expect(service.get()).toEqual({
+    const expectedResult = {
       raceName: null,
       className: 'Guerrier',
       creationPoints: startingCreationPoints,
@@ -82,7 +96,13 @@ describe('CharacterService', () => {
       disadvantages: [],
       level: startingLevel,
       refTables: []
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResult);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResult
+    );
   });
 
   it('should add an advantage to character', () => {
@@ -104,7 +124,7 @@ describe('CharacterService', () => {
       'Original advantage should not be modified.'
     );
 
-    expect(service.get()).toEqual({
+    const expectedResult = {
       raceName: null,
       className: null,
       creationPoints: startingCreationPoints - 2,
@@ -112,7 +132,13 @@ describe('CharacterService', () => {
       disadvantages: [],
       level: startingLevel,
       refTables: []
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResult);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResult
+    );
   });
 
   it('should add a disadvantage to character', () => {
@@ -134,7 +160,7 @@ describe('CharacterService', () => {
       'Original disadvantage should not be modified.'
     );
 
-    expect(service.get()).toEqual({
+    const expectedResult = {
       raceName: null,
       className: null,
       creationPoints: startingCreationPoints + 1,
@@ -142,7 +168,13 @@ describe('CharacterService', () => {
       disadvantages: [{ ...disadvantage, creationPoints: 1 }],
       level: startingLevel,
       refTables: []
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResult);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResult
+    );
   });
 
   it('should remove an advantage from character', () => {
@@ -162,7 +194,7 @@ describe('CharacterService', () => {
 
     service.removeAdvantage(advantage.name);
 
-    expect(service.get()).toEqual({
+    const expectedResult = {
       raceName: null,
       className: null,
       creationPoints: startingCreationPoints,
@@ -170,7 +202,13 @@ describe('CharacterService', () => {
       disadvantages: [],
       level: startingLevel,
       refTables: []
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResult);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResult
+    );
   });
 
   it('should remove a disadvantage from character', () => {
@@ -190,7 +228,7 @@ describe('CharacterService', () => {
 
     service.removeAdvantage(disadvantage.name);
 
-    expect(service.get()).toEqual({
+    const expectedResult = {
       raceName: null,
       className: null,
       creationPoints: startingCreationPoints,
@@ -198,7 +236,13 @@ describe('CharacterService', () => {
       disadvantages: [],
       level: startingLevel,
       refTables: []
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResult);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResult
+    );
   });
 
   it('should take in account only last same advantage', () => {
@@ -267,7 +311,7 @@ describe('CharacterService', () => {
 
     service.changeLevel(9);
 
-    expect(service.get()).toEqual({
+    const expectedResult = {
       raceName: null,
       className: null,
       creationPoints: startingCreationPoints,
@@ -275,7 +319,13 @@ describe('CharacterService', () => {
       disadvantages: [],
       level: 9,
       refTables: []
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResult);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResult
+    );
   });
 
   it('should add a reference table to character', () => {
@@ -283,7 +333,7 @@ describe('CharacterService', () => {
 
     service.addRefTable('test#ref');
 
-    expect(service.get()).toEqual({
+    const expectedResult = {
       raceName: null,
       className: null,
       creationPoints: startingCreationPoints,
@@ -291,7 +341,13 @@ describe('CharacterService', () => {
       disadvantages: [],
       level: startingLevel,
       refTables: ['test#ref']
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResult);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResult
+    );
   });
 
   it('should not add twice a reference table to character', () => {
@@ -328,7 +384,7 @@ describe('CharacterService', () => {
 
     service.removeRefTable('test#ref');
 
-    expect(service.get()).toEqual({
+    const expectedResult = {
       raceName: null,
       className: null,
       creationPoints: startingCreationPoints,
@@ -336,7 +392,13 @@ describe('CharacterService', () => {
       disadvantages: [],
       level: startingLevel,
       refTables: []
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResult);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResult
+    );
   });
 
   it('should clear the character', () => {
@@ -349,7 +411,7 @@ describe('CharacterService', () => {
     service.changeLevel(8);
     service.addRefTable('test#ref2');
 
-    expect(service.get()).toEqual({
+    const expectedResult = {
       raceName: 'Humain',
       className: 'Guerrier',
       creationPoints: startingCreationPoints - 1,
@@ -357,11 +419,17 @@ describe('CharacterService', () => {
       disadvantages: [{ ...disadvantage, creationPoints: 1 }],
       level: 8,
       refTables: ['test#ref2']
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResult);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResult
+    );
 
     service.clearCharacter();
 
-    expect(service.get()).toEqual({
+    const expectedResultAfterClear = {
       raceName: null,
       className: null,
       creationPoints: startingCreationPoints,
@@ -369,6 +437,12 @@ describe('CharacterService', () => {
       disadvantages: [],
       level: startingLevel,
       refTables: []
-    });
+    };
+
+    expect(service.get()).toEqual(expectedResultAfterClear);
+
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
+      expectedResultAfterClear
+    );
   });
 });
