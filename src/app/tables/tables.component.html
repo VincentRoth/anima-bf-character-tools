@@ -16,6 +16,7 @@
       <app-table
         *ngFor="let table of refTables[book.reference]"
         [table]="table"
+        [reference]="book.reference + '#' + table.id"
       ></app-table>
     </div>
     <p *ngIf="!refTables[book.reference].length">

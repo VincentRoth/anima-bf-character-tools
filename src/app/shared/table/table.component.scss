@@ -7,6 +7,17 @@ table {
 
     caption {
         font-style: italic;
+
+        .title {
+            display: flex;
+            align-items: center;
+            margin: auto;
+        }
+
+        button {
+            margin-bottom: 0.2rem;
+            align-self: flex-end;
+        }
     }
 
     thead {

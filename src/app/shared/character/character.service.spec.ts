@@ -401,6 +401,16 @@ describe('CharacterService', () => {
     );
   });
 
+  it('should indicate if referrence table belongs to character', () => {
+    const service: CharacterService = TestBed.get(CharacterService);
+
+    expect(service.hasRefTable('test#ref')).toBeFalsy();
+
+    service.addRefTable('test#ref');
+
+    expect(service.hasRefTable('test#ref')).toBeTruthy();
+  });
+
   it('should clear the character', () => {
     const service: CharacterService = TestBed.get(CharacterService);
 

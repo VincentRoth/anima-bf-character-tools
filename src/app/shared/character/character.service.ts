@@ -153,4 +153,8 @@ export class CharacterService {
     );
     this.saveCharacter();
   }
+
+  hasRefTable(tableReference: string): boolean {
+    return this.character.refTables.indexOf(tableReference) !== -1;
+  }
 }

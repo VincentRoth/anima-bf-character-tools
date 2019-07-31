@@ -49,6 +49,10 @@
   </ng-container>
 
   <ng-container *ngSwitchCase="eContentType.TABLE">
-    <app-table *ngIf="table" [table]="table"></app-table>
+    <app-table
+      *ngIf="table"
+      [table]="table"
+      [reference]="content.reference"
+    ></app-table>
   </ng-container>
 </ng-container>
