@@ -7,10 +7,10 @@ import { RollService } from '../shared/roll/roll.service';
   styleUrls: ['./dice-roll.component.scss']
 })
 export class DiceRollComponent implements OnInit {
-  diceValue: number;
-  rollHistory: string[];
-  is10Dice: boolean;
-  is100Dice: boolean;
+  private diceValue: number;
+  private rollHistory: string[];
+  private is10Dice: boolean;
+  private is100Dice: boolean;
 
   constructor(private rollService: RollService) {}
 

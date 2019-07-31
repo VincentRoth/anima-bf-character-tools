@@ -8,7 +8,7 @@ import { Character } from '../shared/character/character.model';
   styleUrls: ['./character-sheet.component.scss']
 })
 export class CharacterSheetComponent implements OnInit {
-  character: Character;
+  private character: Character;
 
   constructor(private characterService: CharacterService) {}
 

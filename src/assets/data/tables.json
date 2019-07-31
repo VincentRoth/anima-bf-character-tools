@@ -975,7 +975,7 @@
     },
     {
       "id": "p.69.2",
-      "title": "Pris des trajets",
+      "title": "Prix des trajets",
       "headers": ["Nom", "Coût", "Disp."],
       "rows": [
         ["**Maritimes", "", ""],

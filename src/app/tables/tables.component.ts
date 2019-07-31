@@ -12,7 +12,8 @@ import {
   styleUrls: ['./tables.component.scss']
 })
 export class TablesComponent implements OnInit {
-  refTables: ReferenceTableContainer;
+  private refTables: ReferenceTableContainer;
+  private timeout;
 
   constructor(private referenceTableService: ReferenceTableService) {}
 
@@ -26,7 +27,7 @@ export class TablesComponent implements OnInit {
     return referenceBooks;
   }
 
-  searchTables(search: string) {
+  private searchTables(search: string) {
     const tokens = search.toLocaleLowerCase().split(' ');
     this.referenceTableService.referenceTables.subscribe({
       next: data => {
@@ -61,5 +62,12 @@ export class TablesComponent implements OnInit {
         });
       }
     });
+  }
+
+  handleSearch(search: string) {
+    if (this.timeout) {
+      clearTimeout(this.timeout);
+    }
+    this.timeout = setTimeout(() => this.searchTables(search), 500);
   }
 }
