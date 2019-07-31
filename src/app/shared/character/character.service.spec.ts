@@ -230,6 +230,38 @@ describe('CharacterService', () => {
     });
   });
 
+  it('should indicate if advantage belongs to character', () => {
+    const service: CharacterService = TestBed.get(CharacterService);
+
+    expect(service.hasAdvantage(advantage.name)).toBeFalsy();
+    expect(service.hasAdvantage(advantage.name, 1)).toBeFalsy();
+    expect(service.hasAdvantage(advantage.name, 2)).toBeFalsy();
+    expect(service.hasAdvantage(advantage.name, 3)).toBeFalsy();
+
+    service.addAdvantage(advantage, 2);
+
+    expect(service.hasAdvantage(advantage.name)).toBeTruthy();
+    expect(service.hasAdvantage(advantage.name, 1)).toBeFalsy();
+    expect(service.hasAdvantage(advantage.name, 2)).toBeTruthy();
+    expect(service.hasAdvantage(advantage.name, 3)).toBeFalsy();
+  });
+
+  it('should indicate if disadvantage belongs to character', () => {
+    const service: CharacterService = TestBed.get(CharacterService);
+
+    expect(service.hasAdvantage(disadvantage.name)).toBeFalsy();
+    expect(service.hasAdvantage(disadvantage.name, 1)).toBeFalsy();
+    expect(service.hasAdvantage(disadvantage.name, 2)).toBeFalsy();
+    expect(service.hasAdvantage(disadvantage.name, 3)).toBeFalsy();
+
+    service.addAdvantage(disadvantage, 1);
+
+    expect(service.hasAdvantage(disadvantage.name)).toBeTruthy();
+    expect(service.hasAdvantage(disadvantage.name, 1)).toBeTruthy();
+    expect(service.hasAdvantage(disadvantage.name, 2)).toBeFalsy();
+    expect(service.hasAdvantage(disadvantage.name, 3)).toBeFalsy();
+  });
+
   it('should set character level', () => {
     const service: CharacterService = TestBed.get(CharacterService);
 
@@ -249,6 +281,23 @@ describe('CharacterService', () => {
   it('should add a reference table to character', () => {
     const service: CharacterService = TestBed.get(CharacterService);
 
+    service.addRefTable('test#ref');
+
+    expect(service.get()).toEqual({
+      raceName: null,
+      className: null,
+      creationPoints: startingCreationPoints,
+      advantages: [],
+      disadvantages: [],
+      level: startingLevel,
+      refTables: ['test#ref']
+    });
+  });
+
+  it('should not add twice a reference table to character', () => {
+    const service: CharacterService = TestBed.get(CharacterService);
+
+    service.addRefTable('test#ref');
     service.addRefTable('test#ref');
 
     expect(service.get()).toEqual({

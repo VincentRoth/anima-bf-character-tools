@@ -118,13 +118,31 @@ export class CharacterService {
     this.saveCharacter();
   }
 
+  hasAdvantage(advantageName: string, creationPoints?: number): boolean {
+    const advantage = this.character.advantages.find(
+      a => a.name === advantageName
+    );
+    const disadvantage = this.character.disadvantages.find(
+      d => d.name === advantageName
+    );
+
+    return !!(
+      (advantage &&
+        (!creationPoints || advantage.creationPoints === creationPoints)) ||
+      (disadvantage &&
+        (!creationPoints || disadvantage.creationPoints === creationPoints))
+    );
+  }
+
   changeLevel(level: number): void {
     this.character.level = level;
   }
 
   addRefTable(tableReference: string): void {
-    this.character.refTables.push(tableReference);
-    this.saveCharacter();
+    if (this.character.refTables.indexOf(tableReference) === -1) {
+      this.character.refTables.push(tableReference);
+      this.saveCharacter();
+    }
   }
 
   removeRefTable(tableReference: string): void {

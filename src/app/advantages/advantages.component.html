@@ -75,7 +75,7 @@
           </ng-container>
         </mat-card-title>
       </mat-card-header>
-      <mat-card-content>
+      <mat-card-content class="advantage-content">
         <p>{{ advantage.description }}</p>
         <p><span class="bold">Effets : </span>{{ advantage.effect }}</p>
         <p *ngIf="advantage.condition">
@@ -87,15 +87,32 @@
         <p *ngIf="advantage.note">
           <span class="bold">Note : </span>{{ advantage.note }}
         </p>
-        <p>
+        <p class="costs">
           <ng-container *ngIf="advantage.costs">
-            <span class="bold">Coût : </span>{{ advantage.costs.join(',') }}
+            <span class="bold">Coût : </span>
+            <button
+              *ngFor="let cost of advantage.costs"
+              mat-mini-fab
+              color="primary"
+              (click)="toggleAdvantage(advantage, cost)"
+              [class.disabled]="characterHasAdvantage(advantage, cost)"
+            >
+              {{ cost }}
+            </button>
           </ng-container>
           <ng-container *ngIf="advantage.benefits">
             <span class="bold">Bénéfice : </span>
-            {{ advantage.benefits.join(',') }}
+            <button
+              *ngFor="let benefit of advantage.benefits"
+              mat-mini-fab
+              color="warn"
+              (click)="toggleAdvantage(advantage, benefit)"
+              [class.disabled]="characterHasAdvantage(advantage, benefit)"
+            >
+              {{ benefit }}
+            </button>
           </ng-container>
-          <span class="italic right">{{ advantage.source }}</span>
+          <span class="italic right source">{{ advantage.source }}</span>
         </p>
       </mat-card-content>
     </mat-card>

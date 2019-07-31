@@ -504,7 +504,7 @@
   },
   {
     "name": "Vulnérabilité aux poisons",
-    "description": "Le coprs du personnage n'est pas capable de supporter les poisons, ses défenses biologiques ne sont pas préparées à combattre aucune substance nocive.",
+    "description": "Le corps du personnage n'est pas capable de supporter les poisons, ses défenses biologiques ne sont pas préparées à combattre aucune substance nocive.",
     "effect": "Le Total RPoi du personnage est réduit de moitié.",
     "benefits": [1],
     "source": "Core p.22",
