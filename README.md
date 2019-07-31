@@ -38,7 +38,7 @@ Image credits go to:
 - Détails historiques et géographiques des 2 volumes de Gaïa
 - Créatures du Core Exxet et de Ceux Qui Marchaient Parmi Nous
 - Sheele de l'Arcana Exxet
-- Détail des Artefacts de Prometheum Exxet
+- Artefacts de Prometheum Exxet
 
 # Changements majeurs par rapport à l'édition Core Exxet française
 

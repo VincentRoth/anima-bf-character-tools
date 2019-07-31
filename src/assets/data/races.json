@@ -1,5 +1,24 @@
 [
   {
+    "title": "Humain",
+    "type": "panel",
+    "content": [
+      {
+        "type": "image",
+        "title": "Humain",
+        "url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/415e335e-b1cb-4849-9250-5b886f627634/d31rtp4-80372910-5e7b-4f3d-adbc-49e0cc6ead2e.jpg/v1/fill/w_923,h_866,q_70,strp/anima__a_thank_you_image_by_wen_m_d31rtp4-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIwMCIsInBhdGgiOiJcL2ZcLzQxNWUzMzVlLWIxY2ItNDg0OS05MjUwLTViODg2ZjYyNzYzNFwvZDMxcnRwNC04MDM3MjkxMC01ZTdiLTRmM2QtYWRiYy00OWUwY2M2ZWFkMmUuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.c13DO2ur9kdgmZJMmJTDiFxQUEJr8jO_bmg7VOlS3_I"
+      },
+      {
+        "type": "paragraph",
+        "content": "Présents partout sur Gaïa, les humains représentent l'espèce humanoïde la plus répandue mais aussi la plus fermée. Beaucoup d'entre eux pense que le surnaturel n'existe pas, que ce n'est qu'un conte de fée raconté par un ancêtre au coin du feu. Ils ont donner vie et mort à de nombreuses civilisations et cultures."
+      },
+      {
+        "type": "paragraph",
+        "content": "Cette race ne procure aucun bonus ou malus particulier."
+      }
+    ]
+  },
+  {
     "title": "Sylvain",
     "type": "panel",
     "content": [

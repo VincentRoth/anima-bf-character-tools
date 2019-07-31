@@ -8,6 +8,7 @@ import { AppMaterialModule } from './app-material.module';
 
 import { HomeModule } from './home/home.module';
 import { DiceRollModule } from './dice-roll/dice-roll.module';
+import { CharacterSheetModule } from './character-sheet/character-sheet.module';
 import { CreationHelpModule } from './creation-help/creation-help.module';
 import { RacesModule } from './races/races.module';
 import { ClassesModule } from './classes/classes.module';
@@ -25,6 +26,7 @@ import { TablesModule } from './tables/tables.module';
 
     HomeModule,
     DiceRollModule,
+    CharacterSheetModule,
     CreationHelpModule,
     RacesModule,
     ClassesModule,

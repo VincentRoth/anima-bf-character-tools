@@ -29,6 +29,14 @@ export class HomeComponent implements OnInit {
           'https://upload.wikimedia.org/wikipedia/commons/b/bb/Ten_sided_dice.png'
       },
       {
+        title: 'Mon personnage',
+        link: '/character-sheet',
+        hasBackground: true,
+        isBottomFixed: true,
+        imageUrl:
+          'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/415e335e-b1cb-4849-9250-5b886f627634/d2b2ekg-78561cab-6d78-4650-a5a5-d8903a593c7d.jpg/v1/fill/w_1316,h_607,q_70,strp/anima__agents_by_wen_m_d2b2ekg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzM5IiwicGF0aCI6IlwvZlwvNDE1ZTMzNWUtYjFjYi00ODQ5LTkyNTAtNWI4ODZmNjI3NjM0XC9kMmIyZWtnLTc4NTYxY2FiLTZkNzgtNDY1MC1hNWE1LWQ4OTAzYTU5M2M3ZC5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.2647ZtG_wQCbsCVPi9GJTOCv4iT4jSI_qKSj98iTEbA'
+      },
+      {
         title: 'Aide à la création',
         link: '/creation-help',
         hasBackground: true,
