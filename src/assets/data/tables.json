@@ -938,7 +938,7 @@
     },
     {
       "id": "p.69.1",
-      "title": "Habillement",
+      "title": "Prix des habits",
       "headers": ["Nom", "Coût", "Disp."],
       "rows": [
         ["**Habit", "", ""],
@@ -975,7 +975,7 @@
     },
     {
       "id": "p.69.2",
-      "title": "Trajets",
+      "title": "Pris des trajets",
       "headers": ["Nom", "Coût", "Disp."],
       "rows": [
         ["**Maritimes", "", ""],
@@ -998,7 +998,7 @@
     },
     {
       "id": "p.69.3",
-      "title": "Transport",
+      "title": "Prix des transports",
       "headers": ["Nom", "Coût", "Disp."],
       "rows": [
         ["**Animaux", "", ""],
@@ -1029,7 +1029,7 @@
     },
     {
       "id": "p.69.4",
-      "title": "Nourriture et Boisson",
+      "title": "Prix de la nourriture et des boissons",
       "headers": ["Nom", "Coût", "Disp."],
       "rows": [
         ["**Boissons", "", ""],
@@ -1050,7 +1050,7 @@
     },
     {
       "id": "p.69.5",
-      "title": "Rations (par semaine)",
+      "title": "Prix des rations",
       "headers": ["Rations (par semaine)", "Coût", "Poids (kg)", "Disp."],
       "rows": [
         ["Médiocres", "2 PC", 5, ""],
@@ -1061,7 +1061,7 @@
     },
     {
       "id": "p.70.1",
-      "title": "Séjour",
+      "title": "Prix des séjours",
       "headers": ["Séjour", "Coût", "Disp."],
       "rows": [
         ["Auberge médiocre", "5 PC", ""],
@@ -1072,7 +1072,7 @@
     },
     {
       "id": "p.70.2",
-      "title": "Habitations",
+      "title": "Prix des habitations",
       "headers": ["Habitations", "Coût", "Disp."],
       "rows": [
         ["Cahute", "15 PO", ""],
@@ -1091,8 +1091,8 @@
     },
     {
       "id": "p.70.3",
-      "title": "Services et Contrats",
-      "headers": ["Par jounrée de travail", "Coût", "Disp."],
+      "title": "Prix des services et contrats",
+      "headers": ["Par journée de travail", "Coût", "Disp."],
       "rows": [
         ["Artisan", "10 PA", ""],
         ["Assassin", "5 PO", "Rare"],
@@ -1114,7 +1114,7 @@
     },
     {
       "id": "p.70.4",
-      "title": "Décoration",
+      "title": "Prix des décorations",
       "headers": ["Décoration", "Coût", "Disp."],
       "rows": [
         ["Chandeliers", "", ""],
@@ -1132,7 +1132,7 @@
     },
     {
       "id": "p.70.5",
-      "title": "Orfèvrerie",
+      "title": "Prix de l'orfèvrerie",
       "headers": ["Orfèvrerie", "Coût", "Poids (kg)", "Disp."],
       "rows": [
         ["Anneau", "2 PO", 0.5, ""],
@@ -1159,7 +1159,7 @@
     },
     {
       "id": "p.70.6",
-      "title": "Gemmes",
+      "title": "Prix des gemmes",
       "headers": ["Gemmes", "Coût", "Disp."],
       "rows": [
         ["Zircon", "50 PO", "Rare"],
@@ -1175,7 +1175,7 @@
     },
     {
       "id": "p.70.7",
-      "title": "Tableaux",
+      "title": "Prix des tableaux",
       "headers": ["Tableaux", "Coût", "Disp."],
       "rows": [
         ["Normal", "", ""],
@@ -1189,7 +1189,7 @@
     },
     {
       "id": "p.70.8",
-      "title": "Poisons",
+      "title": "Prix des poisons",
       "headers": ["Poisons", "Coût", "Disp."],
       "rows": [
         ["Acqua Toffana ", "25 PO", "Rare"],
@@ -1210,7 +1210,7 @@
     },
     {
       "id": "p.71.1",
-      "title": "Ustensiles divers",
+      "title": "Prix des ustensiles divers",
       "headers": ["Ustensiles", "Coût", "Poids (kg)", "Disp."],
       "rows": [
         ["Bâche (1m²)", "20 PA", 1, ""],
@@ -1283,7 +1283,7 @@
     },
     {
       "id": "p.71.2-p.72.1",
-      "title": "Armes",
+      "title": "Prix des armes",
       "headers": ["Arme", "Coût", "Poids (kg)", "Disp."],
       "rows": [
         ["Bâton", "40 PA", 1, ""],
@@ -1384,7 +1384,7 @@
     },
     {
       "id": "p.72.2",
-      "title": "Armures",
+      "title": "Prix des armures",
       "headers": ["Armure", "Coût", "Poids (kg)", "Disp."],
       "rows": [
         ["Anneaux", "50 PO", 9, ""],
@@ -3569,7 +3569,7 @@
     },
     {
       "id": "28-web3",
-      "title": "Armes",
+      "title": "Prix des nouvelles armes",
       "headers": ["Arme", "Coût", "Poids (kg)", "Disp."],
       "rows": [
         ["Atlatl", "20 PA", 0.5, "Rare"],
@@ -3608,7 +3608,7 @@
     },
     {
       "id": "29-web3",
-      "title": "Armes",
+      "title": "Prix des armes exotiques",
       "headers": ["Arme", "Coût", "Poids (kg)", "Disp."],
       "rows": [
         ["Boku-to", "50 PA", 0.6, ""],
@@ -3632,7 +3632,7 @@
     },
     {
       "id": "30-web3",
-      "title": "Armes",
+      "title": "Prix et cadence des nouvelles armes de tir",
       "headers": [
         "Arme",
         "Coût",
@@ -3652,7 +3652,7 @@
     },
     {
       "id": "31/32-web3",
-      "title": "Armures",
+      "title": "Prix des nouvelles armures",
       "headers": ["Armure", "Coût", "Poids (kg)", "Disp."],
       "rows": [
         ["Bandes", "15 PO", 6, ""],
