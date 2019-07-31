@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AdvantageService } from './advantage.service';
-import { Advantage } from './advantage.model';
+import { UnknownAdvantage } from './advantage.model';
 
 @Component({
   selector: 'app-advantage',
@@ -8,8 +8,8 @@ import { Advantage } from './advantage.model';
   styleUrls: ['./advantages.component.scss']
 })
 export class AdvantagesComponent implements OnInit {
-  advantages: Advantage[];
-  filteredAvantages: Advantage[];
+  advantages: UnknownAdvantage[];
+  filteredAvantages: UnknownAdvantage[];
 
   types: object;
   search: string;

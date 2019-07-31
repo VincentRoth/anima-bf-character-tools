@@ -1,21 +1,19 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Advantage } from './advantage.model';
+import { Advantage, Disadvantage, UnknownAdvantage } from './advantage.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AdvantageService {
-  private types: object;
-
   constructor(private http: HttpClient) {}
 
-  get(): Observable<Advantage[]> {
-    return this.http.get<Advantage[]>('/assets/data/advantages.json');
+  get(): Observable<UnknownAdvantage[]> {
+    return this.http.get<UnknownAdvantage[]>('/assets/data/advantages.json');
   }
 
-  getTypes(advantages: Advantage[]): object {
+  getTypes(advantages: UnknownAdvantage[]): object {
     const types = {};
     advantages.forEach(a => {
       a.types.forEach(type =>
@@ -25,14 +23,14 @@ export class AdvantageService {
     return types;
   }
 
-  filterByType(advantages: Advantage[], typeFilter: string) {
+  filterByType(advantages: UnknownAdvantage[], typeFilter: string) {
     return advantages.filter(
       advantage =>
         advantage.types.filter((type: string) => type === typeFilter).length > 0
     );
   }
 
-  filterByToken(advantages: Advantage[], search: string) {
+  filterByToken(advantages: UnknownAdvantage[], search: string) {
     const tokens = search.toLocaleLowerCase().split(' ');
     return advantages.filter(advantage =>
       tokens.reduce((isSelected: boolean, token: string) => {
@@ -45,12 +43,14 @@ export class AdvantageService {
               advantage.condition.toLocaleLowerCase().includes(token)) ||
             (advantage.special &&
               advantage.special.toLocaleLowerCase().includes(token)) ||
-            (advantage.costs &&
-              advantage.costs.filter(cost => cost.toString() === token)
-                .length) ||
-            (advantage.benefits &&
-              advantage.benefits.filter(benefit => benefit.toString() === token)
-                .length) ||
+            ((advantage as Advantage).costs &&
+              (advantage as Advantage).costs.filter(
+                cost => cost.toString() === token
+              ).length) ||
+            ((advantage as Disadvantage).benefits &&
+              (advantage as Disadvantage).benefits.filter(
+                benefit => benefit.toString() === token
+              ).length) ||
             (advantage.note &&
               advantage.note.toLocaleLowerCase().includes(token)) ||
             advantage.source.toLocaleLowerCase().includes(token) ||
@@ -62,11 +62,11 @@ export class AdvantageService {
     );
   }
 
-  sort(a1: Advantage, a2: Advantage) {
-    if (a1.costs && !a2.costs) {
+  sort(a1: UnknownAdvantage, a2: UnknownAdvantage) {
+    if ((a1 as Advantage).costs && !(a1 as Advantage).costs) {
       return -1;
     }
-    if (!a1.costs && a2.costs) {
+    if (!(a1 as Advantage).costs && (a1 as Advantage).costs) {
       return 1;
     }
     return a1.name.localeCompare(a2.name);
