@@ -21,5 +21,5 @@ export interface Character {
   advantages: CharacterAdvantage[];
   disadvantages: CharacterDisadvantage[];
   level: number;
-  refTables: (string | number)[];
+  refTables: string[];
 }

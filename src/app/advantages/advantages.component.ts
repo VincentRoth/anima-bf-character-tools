@@ -4,7 +4,7 @@ import { UnknownAdvantage } from './advantage.model';
 import { CharacterService } from '../shared/character/character.service';
 
 @Component({
-  selector: 'app-advantage',
+  selector: 'app-advantages',
   templateUrl: './advantages.component.html',
   styleUrls: ['./advantages.component.scss']
 })
@@ -17,10 +17,7 @@ export class AdvantagesComponent implements OnInit {
   private selectedType: string;
   private timeout;
 
-  constructor(
-    private advantageService: AdvantageService,
-    private characterService: CharacterService
-  ) {}
+  constructor(private advantageService: AdvantageService) {}
 
   ngOnInit() {
     this.advantageService.get().subscribe({
@@ -73,20 +70,5 @@ export class AdvantagesComponent implements OnInit {
   searchType(type: string) {
     this.selectedType = type;
     this.handleSearch();
-  }
-
-  characterHasAdvantage(
-    advantage: UnknownAdvantage,
-    creationPoints: number
-  ): boolean {
-    return this.characterService.hasAdvantage(advantage.name, creationPoints);
-  }
-
-  toggleAdvantage(advantage: UnknownAdvantage, creationPoints: number) {
-    if (this.characterHasAdvantage(advantage, creationPoints)) {
-      this.characterService.removeAdvantage(advantage.name);
-    } else {
-      this.characterService.addAdvantage(advantage, creationPoints);
-    }
   }
 }

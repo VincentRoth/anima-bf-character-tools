@@ -1,1 +1,25 @@
-<p>character-sheet works!</p>
+<h2>Avantages</h2>
+<p>
+  Points de Création restants : {{ character.creationPoints }}<br />
+  Nombre de désavantages : {{ character.disadvantages.length }} /
+  {{ nbMaximumDisadvantages }}
+</p>
+<div class="flex flex-row flex-center">
+  <app-advantage
+    *ngFor="let advantage of character.advantages"
+    [advantage]="advantage"
+  ></app-advantage>
+  <app-advantage
+    *ngFor="let advantage of character.disadvantages"
+    [advantage]="advantage"
+  ></app-advantage>
+</div>
+
+<h2>Tableaux</h2>
+<div class="flex flex-row flex-center">
+  <app-table
+    *ngFor="let reference of character.refTables"
+    [table]="tables[reference]"
+    [reference]="reference"
+  ></app-table>
+</div>

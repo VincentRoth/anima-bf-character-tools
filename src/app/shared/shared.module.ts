@@ -5,10 +5,21 @@ import { PanelContentComponent } from './panel/panel-content/panel-content.compo
 import { ContentTitleComponent } from './panel/content-title/content-title.component';
 import { RouterModule } from '@angular/router';
 import { AppMaterialModule } from '../app-material.module';
+import { AdvantageComponent } from './advantage/advantage.component';
 
 @NgModule({
-  declarations: [TableComponent, PanelContentComponent, ContentTitleComponent],
+  declarations: [
+    TableComponent,
+    PanelContentComponent,
+    ContentTitleComponent,
+    AdvantageComponent
+  ],
   imports: [CommonModule, RouterModule, AppMaterialModule],
-  exports: [TableComponent, PanelContentComponent, ContentTitleComponent]
+  exports: [
+    TableComponent,
+    PanelContentComponent,
+    ContentTitleComponent,
+    AdvantageComponent
+  ]
 })
 export class SharedModule {}
