@@ -1,15 +1,13 @@
 import { Injectable } from '@angular/core';
-import {
-  Character,
-  CharacterUnknownAdvantage,
-  CharacterAdvantage,
-  CharacterDisadvantage
-} from './character.model';
-import { constant } from '../constant';
+import { constant } from 'src/app/shared/constant';
 import {
   Advantage,
+  Character,
+  CharacterAdvantage,
+  CharacterDisadvantage,
+  CharacterUnknownAdvantage,
   UnknownAdvantage
-} from 'src/app/shared/advantage/advantage.model';
+} from 'src/app/shared/models';
 
 @Injectable({
   providedIn: 'root'

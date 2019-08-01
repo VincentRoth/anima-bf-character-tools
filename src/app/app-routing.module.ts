@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { DiceRollComponent } from './dice-roll/dice-roll.component';
-import { CharacterSheetComponent } from './character-sheet/character-sheet.component';
-import { CreationHelpComponent } from './creation-help/creation-help.component';
-import { RacesComponent } from './races/races.component';
-import { ClassesComponent } from './classes/classes.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
+import { CharacterSheetComponent } from './character-sheet/character-sheet.component';
+import { ClassesComponent } from './classes/classes.component';
+import { CreationHelpComponent } from './creation-help/creation-help.component';
+import { DiceRollComponent } from './dice-roll/dice-roll.component';
+import { HomeComponent } from './home/home.component';
 import { MapComponent } from './map/map.component';
+import { RacesComponent } from './races/races.component';
 import { TablesComponent } from './tables/tables.component';
 
 const routes: Routes = [

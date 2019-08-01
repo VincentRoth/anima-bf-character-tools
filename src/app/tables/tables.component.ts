@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ReferenceTableService } from '../shared/reference-table/reference-table.service';
 import {
-  ReferenceTableContainer,
+  referenceBooks,
   ReferenceTable,
-  referenceBooks
-} from '../shared/reference-table/reference-table.model';
+  ReferenceTableContainer
+} from 'src/app/shared/models';
+import { ReferenceTableService } from 'src/app/shared/reference-table/reference-table.service';
 
 @Component({
   selector: 'app-tables',

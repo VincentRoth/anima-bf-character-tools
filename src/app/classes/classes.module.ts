@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { ClassesComponent } from './classes.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ClassesComponent } from './classes.component';
 
 @NgModule({
   declarations: [ClassesComponent],

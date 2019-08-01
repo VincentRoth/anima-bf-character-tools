@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContentPanel } from '../shared/panel/content.model';
+import { ContentPanel } from 'src/app/shared/models';
 import { RaceService } from './race.service';
 
 @Component({

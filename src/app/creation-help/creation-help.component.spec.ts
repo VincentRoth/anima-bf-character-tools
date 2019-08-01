@@ -1,9 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CreationHelpComponent } from './creation-help.component';
-import { AppMaterialModule } from '../app-material.module';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { CreationHelpComponent } from './creation-help.component';
 
 describe('CreationHelpComponent', () => {
   let component: CreationHelpComponent;
@@ -12,7 +11,7 @@ describe('CreationHelpComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [CreationHelpComponent],
-      imports: [AppMaterialModule, SharedModule, HttpClientTestingModule]
+      imports: [SharedModule, HttpClientTestingModule]
     }).compileComponents();
   }));
 

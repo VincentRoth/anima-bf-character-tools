@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TableComponent } from './table/table.component';
-import { PanelContentComponent } from './panel/panel-content/panel-content.component';
-import { ContentTitleComponent } from './panel/content-title/content-title.component';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { AppMaterialModule } from '../app-material.module';
+import { AppMaterialModule } from 'src/app/app-material.module';
 import { AdvantageComponent } from './advantage/advantage.component';
+import { ContentTitleComponent } from './panel/content-title/content-title.component';
+import { PanelContentComponent } from './panel/panel-content/panel-content.component';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [

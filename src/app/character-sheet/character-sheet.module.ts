@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { CharacterSheetComponent } from './character-sheet.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { CharacterSheetComponent } from './character-sheet.component';
 
 @NgModule({
   declarations: [CharacterSheetComponent],

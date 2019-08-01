@@ -1,11 +1,8 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable, of, Subject } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
-import {
-  ReferenceTableContainer,
-  ReferenceTable
-} from './reference-table.model';
+import { ReferenceTable, ReferenceTableContainer } from 'src/app/shared/models';
 
 const copy = data => JSON.parse(JSON.stringify(data));
 

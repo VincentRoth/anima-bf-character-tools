@@ -8,8 +8,7 @@ function roll(from: number, to: number): number {
   providedIn: 'root'
 })
 export class RollService {
-
-  constructor() { }
+  constructor() {}
 
   roll10(): number {
     return roll(1, 10);

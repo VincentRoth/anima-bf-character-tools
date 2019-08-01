@@ -1,19 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
+import { AppMaterialModule } from './app-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppMaterialModule } from './app-material.module';
 
-import { HomeModule } from './home/home.module';
-import { DiceRollModule } from './dice-roll/dice-roll.module';
-import { CharacterSheetModule } from './character-sheet/character-sheet.module';
-import { CreationHelpModule } from './creation-help/creation-help.module';
-import { RacesModule } from './races/races.module';
-import { ClassesModule } from './classes/classes.module';
 import { AdvantagesModule } from './advantages/advantages.module';
+import { CharacterSheetModule } from './character-sheet/character-sheet.module';
+import { ClassesModule } from './classes/classes.module';
+import { CreationHelpModule } from './creation-help/creation-help.module';
+import { DiceRollModule } from './dice-roll/dice-roll.module';
+import { HomeModule } from './home/home.module';
 import { MapModule } from './map/map.module';
+import { RacesModule } from './races/races.module';
 import { TablesModule } from './tables/tables.module';
 
 @NgModule({

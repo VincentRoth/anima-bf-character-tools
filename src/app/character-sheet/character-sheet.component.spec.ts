@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CharacterSheetComponent } from './character-sheet.component';
-import { SharedModule } from '../shared/shared.module';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { CharacterSheetComponent } from './character-sheet.component';
 
 describe('CharacterSheetComponent', () => {
   let component: CharacterSheetComponent;

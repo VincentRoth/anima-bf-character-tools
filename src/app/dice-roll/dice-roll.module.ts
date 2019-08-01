@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { DiceRollComponent } from './dice-roll.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { DiceRollComponent } from './dice-roll.component';
 
 @NgModule({
   declarations: [DiceRollComponent],

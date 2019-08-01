@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TableComponent } from './table.component';
 import { AppMaterialModule } from 'src/app/app-material.module';
+import { TableComponent } from './table.component';
 
 describe('TableComponent', () => {
   let component: TableComponent;

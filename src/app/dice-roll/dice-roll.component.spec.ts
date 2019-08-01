@@ -8,9 +8,8 @@ describe('DiceRollComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DiceRollComponent ]
-    })
-    .compileComponents();
+      declarations: [DiceRollComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClassesComponent } from './classes.component';
-import { AppMaterialModule } from '../app-material.module';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { AppMaterialModule } from 'src/app/app-material.module';
+import { ClassesComponent } from './classes.component';
 
 describe('ClassesComponent', () => {
   let component: ClassesComponent;

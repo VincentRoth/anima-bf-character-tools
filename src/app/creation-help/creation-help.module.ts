@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { CreationHelpComponent } from './creation-help.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { CreationHelpComponent } from './creation-help.component';
 
 @NgModule({
   declarations: [CreationHelpComponent],

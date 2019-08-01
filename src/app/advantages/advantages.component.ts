@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UnknownAdvantage } from 'src/app/shared/models';
 import { AdvantageService } from './advantage.service';
-import { UnknownAdvantage } from 'src/app/shared/advantage/advantage.model';
 
 @Component({
   selector: 'app-advantages',

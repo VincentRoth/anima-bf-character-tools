@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
-import { AdvantageService } from './advantage.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { AdvantageService } from './advantage.service';
 
 describe('AdvantageService', () => {
   beforeEach(() =>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { TablesComponent } from './tables.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { TablesComponent } from './tables.component';
 
 @NgModule({
   declarations: [TablesComponent],

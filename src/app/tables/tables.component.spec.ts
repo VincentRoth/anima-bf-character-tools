@@ -1,9 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TablesComponent } from './tables.component';
-import { AppMaterialModule } from '../app-material.module';
-import { SharedModule } from '../shared/shared.module';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { TablesComponent } from './tables.component';
 
 describe('TablesComponent', () => {
   let component: TablesComponent;
@@ -12,7 +11,7 @@ describe('TablesComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [TablesComponent],
-      imports: [AppMaterialModule, SharedModule, HttpClientTestingModule]
+      imports: [SharedModule, HttpClientTestingModule]
     }).compileComponents();
   }));
 

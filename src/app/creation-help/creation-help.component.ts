@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContentPanel, EContentType } from '../shared/panel/content.model';
+import { ContentPanel, EContentType } from 'src/app/shared/models';
 import { CreationHelpService } from './creation-help.service';
 
 @Component({

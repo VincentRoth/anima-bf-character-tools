@@ -30,6 +30,7 @@ Image credits go to:
   - Création de technique ? => Calculateur ?
   - Capacités et pouvoirs de créature ?
 - Fiche de personnage ?
+- Prétirés ?
 - PNJ génériques ?
 
 # Ne sera pas disponible sur l'application

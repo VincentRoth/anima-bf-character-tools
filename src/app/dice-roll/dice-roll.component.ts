@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RollService } from '../shared/roll/roll.service';
+import { RollService } from 'src/app/shared/roll/roll.service';
 
 @Component({
   selector: 'app-dice-roll',

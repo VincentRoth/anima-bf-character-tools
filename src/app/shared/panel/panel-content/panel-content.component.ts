@@ -1,12 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import {
+  ContentPanel,
+  ContentTable,
   ContentUnit,
   EContentType,
-  ContentTable,
-  ContentPanel
-} from '../content.model';
-import { ReferenceTableService } from '../../reference-table/reference-table.service';
-import { ReferenceTable } from '../../reference-table/reference-table.model';
+  ReferenceTable
+} from 'src/app/shared/models';
+import { ReferenceTableService } from 'src/app/shared/reference-table/reference-table.service';
 
 @Component({
   selector: 'app-panel-content',

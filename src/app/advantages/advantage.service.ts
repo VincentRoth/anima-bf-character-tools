@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import {
   Advantage,
   Disadvantage,
   UnknownAdvantage
-} from 'src/app/shared/advantage/advantage.model';
+} from 'src/app/shared/models';
 
 @Injectable({
   providedIn: 'root'

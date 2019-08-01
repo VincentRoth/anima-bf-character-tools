@@ -1,9 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
-import {
-  Advantage,
-  Disadvantage
-} from 'src/app/shared/advantage/advantage.model';
-import { CharacterService } from '../character/character.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { CharacterService } from 'src/app/shared/character/character.service';
+import { Advantage, Disadvantage } from 'src/app/shared/models';
 
 @Component({
   selector: 'app-advantage',

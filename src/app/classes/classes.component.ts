@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ClassModel } from 'src/app/shared/models';
 import { ClassesService } from './classes.service';
-import { ClassModel } from './class.model';
 
 @Component({
   selector: 'app-classes',

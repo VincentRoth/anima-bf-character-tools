@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { AdvantagesComponent } from './advantages.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { AdvantagesComponent } from './advantages.component';
 
 @NgModule({
   declarations: [AdvantagesComponent],

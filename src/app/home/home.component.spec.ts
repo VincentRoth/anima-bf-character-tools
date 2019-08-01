@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeComponent } from './home.component';
-import { AppMaterialModule } from '../app-material.module';
 import { RouterTestingModule } from '@angular/router/testing';
+import { AppMaterialModule } from 'src/app/app-material.module';
+import { HomeComponent } from './home.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;

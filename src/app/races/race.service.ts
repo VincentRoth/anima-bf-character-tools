@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ContentPanel } from '../shared/panel/content.model';
+import { ContentPanel } from 'src/app/shared/models';
 
 @Injectable({
   providedIn: 'root'

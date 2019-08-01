@@ -1,9 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AdvantagesComponent } from './advantages.component';
-import { AppMaterialModule } from '../app-material.module';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { SharedModule } from '../shared/shared.module';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { AdvantagesComponent } from './advantages.component';
 
 describe('AdvantagesComponent', () => {
   let component: AdvantagesComponent;
@@ -12,7 +11,7 @@ describe('AdvantagesComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [AdvantagesComponent],
-      imports: [AppMaterialModule, SharedModule, HttpClientTestingModule]
+      imports: [SharedModule, HttpClientTestingModule]
     }).compileComponents();
   }));
 

@@ -1,8 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 
+import {
+  HttpClientTestingModule,
+  HttpTestingController
+} from '@angular/common/http/testing';
+import { ReferenceTableContainer } from 'src/app/shared/models/';
 import { ReferenceTableService } from './reference-table.service';
-import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { ReferenceTable, ReferenceTableContainer } from './reference-table.model';
 
 describe('ReferenceTableService', () => {
   beforeEach(() =>
@@ -20,9 +23,13 @@ describe('ReferenceTableService', () => {
     const service: ReferenceTableService = TestBed.get(ReferenceTableService);
     const httpMock: HttpTestingController = TestBed.get(HttpTestingController);
 
-    service.getByReference('core-exxet#1').subscribe(table => expect(table.id).toEqual(1));
+    service
+      .getByReference('core-exxet#1')
+      .subscribe(table => expect(table.id).toEqual(1));
 
-    service.getByReference('core-exxet#2').subscribe(table => expect(table.id).toEqual(2));
+    service
+      .getByReference('core-exxet#2')
+      .subscribe(table => expect(table.id).toEqual(2));
 
     const req = httpMock.expectOne('/assets/data/tables.json');
     expect(req.request.method).toEqual('GET');

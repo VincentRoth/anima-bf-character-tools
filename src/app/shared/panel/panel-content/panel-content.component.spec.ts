@@ -1,12 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PanelContentComponent } from './panel-content.component';
-import { ContentTitleComponent } from '../content-title/content-title.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { EContentType } from '../content.model';
 import { RouterTestingModule } from '@angular/router/testing';
-import { TableComponent } from '../../table/table.component';
 import { AppMaterialModule } from 'src/app/app-material.module';
+import { EContentType } from 'src/app/shared/models';
+import { ContentTitleComponent } from 'src/app/shared/panel/content-title/content-title.component';
+import { TableComponent } from 'src/app/shared/table/table.component';
+import { PanelContentComponent } from './panel-content.component';
 
 describe('PanelContentComponent', () => {
   let component: PanelContentComponent;
