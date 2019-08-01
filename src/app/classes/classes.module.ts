@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ClassesComponent } from './classes.component';
-import { AppMaterialModule } from '../app-material.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [ClassesComponent],
-  imports: [CommonModule, AppMaterialModule]
+  imports: [SharedModule]
 })
 export class ClassesModule {}

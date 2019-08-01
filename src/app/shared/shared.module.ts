@@ -16,6 +16,9 @@ import { AdvantageComponent } from './advantage/advantage.component';
   ],
   imports: [CommonModule, RouterModule, AppMaterialModule],
   exports: [
+    CommonModule,
+    RouterModule,
+    AppMaterialModule,
     TableComponent,
     PanelContentComponent,
     ContentTitleComponent,
