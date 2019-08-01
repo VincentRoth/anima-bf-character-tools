@@ -1,0 +1,48 @@
+[
+  {
+    "path": "Lumière",
+    "oppositePaths": ["Obscurité", "Nécromancie"],
+    "status": "Majeure",
+    "description": "Cette voie permet aux sorciers de contrôler un des deux éléments supérieurs, la lumière pure. Elle contrôle les émotions positives de l’homme, comme l’amour, la tranquillité ou le plaisir. Elle offre également la maîtrise de la connaissance et de la détection. Ses pouvoirs offensifs et défensifs se révèlent très équilibrés.",
+    "spells": [
+      {
+        "name": "Créer Lumière",
+        "level": 2,
+        "action": "Active",
+        "type": ["Effet"],
+        "effect": "Crée une source de lumière dans un lieu ou un obket déterminé par le sorcier.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 20,
+            "requiredIntelligence": 5,
+            "effect": "Zone éclairée de 5 m de rayon.",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 50,
+            "requiredIntelligence": 8,
+            "effect": "Zone éclairée de 25 m de rayon.",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "Zone éclairée de 100 m de rayon.",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Zone éclairée de 500 m de rayon.",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      }
+    ]
+  }
+]
