@@ -1,8 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 
 import { ReferenceTableService } from './reference-table.service';
-import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { AppMaterialModule } from 'src/app/app-material.module';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { ReferenceTable, ReferenceTableContainer } from './reference-table.model';
 
 describe('ReferenceTableService', () => {
   beforeEach(() =>
@@ -14,5 +14,41 @@ describe('ReferenceTableService', () => {
   it('should be created', () => {
     const service: ReferenceTableService = TestBed.get(ReferenceTableService);
     expect(service).toBeTruthy();
+  });
+
+  it('should request only once the tables data', () => {
+    const service: ReferenceTableService = TestBed.get(ReferenceTableService);
+    const httpMock: HttpTestingController = TestBed.get(HttpTestingController);
+
+    service.getByReference('core-exxet#1').subscribe(table => expect(table.id).toEqual(1));
+
+    service.getByReference('core-exxet#2').subscribe(table => expect(table.id).toEqual(2));
+
+    const req = httpMock.expectOne('/assets/data/tables.json');
+    expect(req.request.method).toEqual('GET');
+    req.flush({
+      'core-exxet': [
+        {
+          id: 1,
+          title: 'tab1',
+          headers: [],
+          rows: []
+        },
+        {
+          id: 2,
+          title: 'tab1',
+          headers: [],
+          rows: []
+        }
+      ],
+      'kit-mj': [],
+      'dominus-exxet': [],
+      'arcana-exxet': [],
+      'prometheum-exxet': [],
+      'gaia-1': [],
+      'gaia-2': [],
+      cqmpn: []
+    } as ReferenceTableContainer);
+    httpMock.verify();
   });
 });
