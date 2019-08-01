@@ -9,7 +9,7 @@ import { constant } from '../constant';
 import {
   Advantage,
   UnknownAdvantage
-} from 'src/app/advantages/advantage.model';
+} from 'src/app/shared/advantage/advantage.model';
 
 @Injectable({
   providedIn: 'root'

@@ -1,8 +1,4 @@
-import {
-  Advantage,
-  Disadvantage,
-  UnknownAdvantage
-} from 'src/app/advantages/advantage.model';
+import { UnknownAdvantage } from 'src/app/shared/advantage/advantage.model';
 
 export interface CharacterUnknownAdvantage extends UnknownAdvantage {
   creationPoints: number;

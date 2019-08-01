@@ -1,5 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Advantage, Disadvantage } from 'src/app/advantages/advantage.model';
+import {
+  Advantage,
+  Disadvantage
+} from 'src/app/shared/advantage/advantage.model';
 import { CharacterService } from '../character/character.service';
 
 @Component({

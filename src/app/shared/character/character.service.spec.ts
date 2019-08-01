@@ -2,7 +2,10 @@ import { TestBed } from '@angular/core/testing';
 
 import { CharacterService } from './character.service';
 import { constant } from '../constant';
-import { Advantage, Disadvantage } from 'src/app/advantages/advantage.model';
+import {
+  Advantage,
+  Disadvantage
+} from 'src/app/shared/advantage/advantage.model';
 
 const storageKey = constant.localCharacterKey;
 const startingCreationPoints = constant.startingCreationPoints;
