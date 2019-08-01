@@ -25,6 +25,7 @@ export class ReferenceTableService {
         next: data => {
           this.refTables = data;
           this.request.next(data);
+          this.request.complete();
         }
       });
   }

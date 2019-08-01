@@ -23,6 +23,9 @@ export class TableComponent implements OnInit {
   }
 
   get caption(): string {
+    if (!this.table) {
+      return;
+    }
     if (typeof this.table.id === 'number') {
       return `Tableau ${this.table.id} : ${this.table.title}`;
     }
