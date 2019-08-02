@@ -10,8 +10,8 @@
 </div>
 
 <ng-container *ngIf="refTables">
-  <div class="flex flex-column" *ngFor="let book of books">
-    <h2>{{ book.title }}</h2>
+  <ng-container *ngFor="let book of books">
+    <h3>{{ book.title }}</h3>
     <div class="flex flex-row flex-center">
       <app-table
         *ngFor="let table of refTables[book.reference]"
@@ -22,5 +22,5 @@
     <p *ngIf="!refTables[book.reference].length">
       Aucun résultat pour ce livre.
     </p>
-  </div>
+  </ng-container>
 </ng-container>
