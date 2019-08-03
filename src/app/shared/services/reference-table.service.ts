@@ -8,7 +8,7 @@ import {
   ReferenceTable,
   ReferenceTableContainer
 } from 'src/app/shared/models';
-import { copy } from 'src/app/shared/utils';
+import { copyJson } from 'src/app/shared/utils';
 
 @Injectable({
   providedIn: 'root'
@@ -41,9 +41,9 @@ export class ReferenceTableService {
 
   get referenceTables(): Observable<ReferenceTableContainer> {
     if (!this.refTables) {
-      return this.get().pipe(map(copy));
+      return this.get().pipe(map(copyJson));
     }
-    return of(copy(this.refTables));
+    return of(copyJson(this.refTables));
   }
 
   getByReference(reference: string): Observable<ReferenceTable> {

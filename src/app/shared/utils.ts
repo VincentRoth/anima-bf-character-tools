@@ -1,1 +1,1 @@
-export const copy = data => JSON.parse(JSON.stringify(data));
+export const copyJson = data => JSON.parse(JSON.stringify(data));

@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { MagicPath, SpellCastingLevel } from 'src/app/shared/models';
-import { copy } from 'src/app/shared/utils';
+import { copyJson } from 'src/app/shared/utils';
 
 @Injectable({
   providedIn: 'root'
@@ -16,15 +16,15 @@ export class SpellService {
   get(): Observable<MagicPath[]> {
     return this.http
       .get<MagicPath[]>('/assets/data/spells.json')
-      .pipe(map(data => (this.magicPaths = copy(data))));
+      .pipe(map(data => (this.magicPaths = copyJson(data))));
   }
 
   filterByToken(filter: string): MagicPath[] {
     if (!filter) {
-      return copy(this.magicPaths);
+      return copyJson(this.magicPaths);
     }
     const tokens = filter.toLocaleLowerCase().split(' ');
-    return copy(this.magicPaths).filter((magicPath: MagicPath) => {
+    return copyJson(this.magicPaths).filter((magicPath: MagicPath) => {
       magicPath.spells = magicPath.spells.filter(
         spell =>
           !spell.isFreeAccess &&
