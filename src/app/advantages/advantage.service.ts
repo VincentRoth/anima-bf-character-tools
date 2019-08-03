@@ -48,19 +48,19 @@ export class AdvantageService {
             (advantage.special &&
               advantage.special.toLocaleLowerCase().includes(token)) ||
             ((advantage as Advantage).costs &&
-              (advantage as Advantage).costs.filter(
+              (advantage as Advantage).costs.some(
                 cost => cost.toString() === token
-              ).length) ||
+              )) ||
             ((advantage as Disadvantage).benefits &&
-              (advantage as Disadvantage).benefits.filter(
+              (advantage as Disadvantage).benefits.some(
                 benefit => benefit.toString() === token
-              ).length) ||
+              )) ||
             (advantage.note &&
               advantage.note.toLocaleLowerCase().includes(token)) ||
             advantage.source.toLocaleLowerCase().includes(token) ||
-            advantage.types.filter((type: string) =>
+            advantage.types.some((type: string) =>
               type.toLocaleLowerCase().includes(token)
-            ).length > 0)
+            ))
         );
       }, true)
     );

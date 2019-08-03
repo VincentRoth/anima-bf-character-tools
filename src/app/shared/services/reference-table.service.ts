@@ -1,10 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of, Subject } from 'rxjs';
-import { map, tap } from 'rxjs/operators';
-import { ReferenceTable, ReferenceTableContainer } from 'src/app/shared/models';
-
-const copy = data => JSON.parse(JSON.stringify(data));
+import { map } from 'rxjs/operators';
+import {
+  ReferenceBook,
+  referenceBooks,
+  ReferenceTable,
+  ReferenceTableContainer
+} from 'src/app/shared/models';
+import { copy } from 'src/app/shared/utils';
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +35,11 @@ export class ReferenceTableService {
     return this.request.asObservable();
   }
 
-  get referenceTables() {
+  get books(): ReferenceBook[] {
+    return referenceBooks;
+  }
+
+  get referenceTables(): Observable<ReferenceTableContainer> {
     if (!this.refTables) {
       return this.get().pipe(map(copy));
     }
@@ -50,5 +58,40 @@ export class ReferenceTableService {
       return this.get().pipe(map(transform));
     }
     return of(transform(this.refTables));
+  }
+
+  filterByToken(filter: string): Observable<ReferenceTableContainer> {
+    const tokens = filter.toLocaleLowerCase().split(' ');
+    return this.referenceTables.pipe(
+      map(data => {
+        this.books.forEach(book => {
+          data[book.reference] = data[book.reference].filter(
+            (table: ReferenceTable) =>
+              tokens.reduce((isSelected: boolean, token: string) => {
+                return (
+                  isSelected &&
+                  (table.id
+                    .toString()
+                    .toLocaleLowerCase()
+                    .includes(token) ||
+                    table.title.toLocaleLowerCase().includes(token) ||
+                    table.headers.some(header =>
+                      header.toLocaleLowerCase().includes(token)
+                    ) ||
+                    table.rows.some(row =>
+                      row.some(cell =>
+                        cell
+                          .toString()
+                          .toLocaleLowerCase()
+                          .includes(token)
+                      )
+                    ))
+                );
+              }, true)
+          );
+        });
+        return data;
+      })
+    );
   }
 }

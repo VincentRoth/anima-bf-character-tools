@@ -32,7 +32,7 @@ export interface MainSpell {
   // For free access spell, level is a ten
   level: number;
   action: ActionType;
-  type: SpellType[];
+  types: SpellType[];
   effect: string;
   castingLevels: SpellCastingLevel[];
   isDailyMaintenance?: boolean;

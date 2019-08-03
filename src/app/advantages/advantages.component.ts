@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AbstractSearchComponent } from 'src/app/shared/abstract-search.component';
 import { UnknownAdvantage } from 'src/app/shared/models';
 import { AdvantageService } from './advantage.service';
 
@@ -7,16 +8,18 @@ import { AdvantageService } from './advantage.service';
   templateUrl: './advantages.component.html',
   styleUrls: ['./advantages.component.scss']
 })
-export class AdvantagesComponent implements OnInit {
+export class AdvantagesComponent extends AbstractSearchComponent
+  implements OnInit {
   private advantages: UnknownAdvantage[];
   filteredAvantages: UnknownAdvantage[];
 
   private types: object;
-  private search: string;
+  private filter: string;
   private selectedType: string;
-  private timeout;
 
-  constructor(private advantageService: AdvantageService) {}
+  constructor(private advantageService: AdvantageService) {
+    super();
+  }
 
   ngOnInit() {
     this.advantageService.get().subscribe({
@@ -33,7 +36,7 @@ export class AdvantagesComponent implements OnInit {
     return this.types ? Object.keys(this.types).sort() : [];
   }
 
-  private filterAdvantages() {
+  protected search() {
     let filteredAvantages = this.advantages;
 
     if (this.selectedType) {
@@ -46,7 +49,7 @@ export class AdvantagesComponent implements OnInit {
     if (this.search) {
       filteredAvantages = this.advantageService.filterByToken(
         filteredAvantages,
-        this.search
+        this.filter
       );
     }
 
@@ -54,15 +57,8 @@ export class AdvantagesComponent implements OnInit {
     this.filteredAvantages = filteredAvantages;
   }
 
-  private handleSearch() {
-    if (this.timeout) {
-      clearTimeout(this.timeout);
-    }
-    this.timeout = setTimeout(() => this.filterAdvantages(), 500);
-  }
-
-  searchAdvantages(search: string) {
-    this.search = search;
+  searchAdvantages(filter: string) {
+    this.filter = filter;
     this.handleSearch();
   }
 

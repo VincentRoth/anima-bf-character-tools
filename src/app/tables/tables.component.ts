@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AbstractSearchComponent } from 'src/app/shared/abstract-search.component';
 import {
   referenceBooks,
   ReferenceTable,
@@ -11,11 +12,12 @@ import { ReferenceTableService } from 'src/app/shared/services';
   templateUrl: './tables.component.html',
   styleUrls: ['./tables.component.scss']
 })
-export class TablesComponent implements OnInit {
+export class TablesComponent extends AbstractSearchComponent implements OnInit {
   refTables: ReferenceTableContainer;
-  private timeout;
 
-  constructor(private referenceTableService: ReferenceTableService) {}
+  constructor(private referenceTableService: ReferenceTableService) {
+    super();
+  }
 
   ngOnInit() {
     this.referenceTableService.referenceTables.subscribe({
@@ -27,47 +29,9 @@ export class TablesComponent implements OnInit {
     return referenceBooks;
   }
 
-  private searchTables(search: string) {
-    const tokens = search.toLocaleLowerCase().split(' ');
-    this.referenceTableService.referenceTables.subscribe({
-      next: data => {
-        this.refTables = data;
-        this.books.forEach(book => {
-          this.refTables[book.reference] = this.refTables[
-            book.reference
-          ].filter((table: ReferenceTable) =>
-            tokens.reduce((isSelected: boolean, token: string) => {
-              return (
-                isSelected &&
-                (table.id
-                  .toString()
-                  .toLocaleLowerCase()
-                  .includes(token) ||
-                  table.title.toLocaleLowerCase().includes(token) ||
-                  table.headers.filter(header =>
-                    header.toLocaleLowerCase().includes(token)
-                  ).length ||
-                  table.rows.filter(
-                    row =>
-                      row.filter(cell =>
-                        cell
-                          .toString()
-                          .toLocaleLowerCase()
-                          .includes(token)
-                      ).length
-                  ).length)
-              );
-            }, true)
-          );
-        });
-      }
+  protected search(filter: string) {
+    this.referenceTableService.filterByToken(filter).subscribe({
+      next: data => (this.refTables = data)
     });
-  }
-
-  handleSearch(search: string) {
-    if (this.timeout) {
-      clearTimeout(this.timeout);
-    }
-    this.timeout = setTimeout(() => this.searchTables(search), 500);
   }
 }

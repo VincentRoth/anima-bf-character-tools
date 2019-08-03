@@ -1,5 +1,15 @@
 <h2>Sorts</h2>
 
+<div class="filter flex-row">
+  <mat-form-field class="flex">
+    <input
+      matInput
+      placeholder="Filtrer"
+      (keyup)="handleFilter($event.target.value)"
+    />
+  </mat-form-field>
+</div>
+
 <ng-container *ngFor="let magicPath of magicPaths">
   <app-magic-path [magicPath]="magicPath"></app-magic-path>
 </ng-container>

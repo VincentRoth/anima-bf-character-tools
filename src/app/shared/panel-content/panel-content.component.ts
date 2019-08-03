@@ -38,9 +38,9 @@ export class PanelContentComponent implements OnInit {
   get isParentPanel() {
     return (
       (this.content as ContentPanel).content &&
-      (this.content as ContentPanel).content.filter(
+      (this.content as ContentPanel).content.some(
         unit => unit.type === EContentType.PANEL
-      ).length
+      )
     );
   }
 }

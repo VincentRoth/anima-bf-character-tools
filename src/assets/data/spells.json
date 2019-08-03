@@ -1,6 +1,6 @@
 [
   {
-    "path": "Lumière",
+    "name": "Lumière",
     "oppositePaths": ["Obscurité", "Nécromancie"],
     "status": "Majeure",
     "description": "Cette voie permet aux sorciers de contrôler un des deux éléments supérieurs, la lumière pure. Elle contrôle les émotions positives de l’homme, comme l’amour, la tranquillité ou le plaisir. Elle offre également la maîtrise de la connaissance et de la détection. Ses pouvoirs offensifs et défensifs se révèlent très équilibrés.",
@@ -9,7 +9,7 @@
         "name": "Créer Lumière",
         "level": 2,
         "action": "Active",
-        "type": ["Effet"],
+        "types": ["Effet"],
         "effect": "Crée une source de lumière dans un lieu ou un obket déterminé par le sorcier.",
         "castingLevels": [
           {
@@ -50,70 +50,70 @@
     ]
   },
   {
-    "path": "Obscurité",
+    "name": "Obscurité",
     "oppositePaths": ["Lumière", "Nécromancie"],
     "status": "Majeure",
     "description": "",
     "spells": []
   },
   {
-    "path": "Création",
+    "name": "Création",
     "oppositePaths": ["Destruction", "Nécromancie"],
     "status": "Majeure",
     "description": "",
     "spells": []
   },
   {
-    "path": "Destruction",
+    "name": "Destruction",
     "oppositePaths": ["Création", "Nécromancie"],
     "status": "Majeure",
     "description": "",
     "spells": []
   },
   {
-    "path": "Air",
+    "name": "Air",
     "oppositePaths": ["Terre", "Nécromancie"],
     "status": "Mineure",
     "description": "",
     "spells": []
   },
   {
-    "path": "Eau",
+    "name": "Eau",
     "oppositePaths": ["Feu", "Nécromancie"],
     "status": "Mineure",
     "description": "",
     "spells": []
   },
   {
-    "path": "Feu",
+    "name": "Feu",
     "oppositePaths": ["Eau", "Nécromancie"],
     "status": "Mineure",
     "description": "",
     "spells": []
   },
   {
-    "path": "Terre",
+    "name": "Terre",
     "oppositePaths": ["Air", "Nécromancie"],
     "status": "Mineure",
     "description": "",
     "spells": []
   },
   {
-    "path": "Essence",
+    "name": "Essence",
     "oppositePaths": ["Illusion", "Nécromancie"],
     "status": "Mineure",
     "description": "",
     "spells": []
   },
   {
-    "path": "Illusion",
+    "name": "Illusion",
     "oppositePaths": ["Essence", "Nécromancie"],
     "status": "Mineure",
     "description": "",
     "spells": []
   },
   {
-    "path": "Nécromancie",
+    "name": "Nécromancie",
     "oppositePaths": [
       "Lumière",
       "Obscurité",
@@ -129,7 +129,7 @@
     "spells": []
   },
   {
-    "path": "Chaos",
+    "name": "Chaos",
     "forbiddenPaths": [
       "Eau",
       "Feu",
@@ -145,7 +145,7 @@
         "name": "Sentir le Chaos",
         "level": 4,
         "action": "Active",
-        "type": ["Effet", "Détection"],
+        "types": ["Effet", "Détection"],
         "effect": "Le sorcier est capable de remarquer les fluctuations provoquées par le chaos dans l'environnement, lui permettant de sentir tout ce qui arrive à l'Intérieur de la zone du sort et qui n'est pas naturel. Sans en déterminer la localisation exacte, il est conscient du niveau d'influence qu'exerce le chaos l'existence.",
         "castingLevels": [
           {
@@ -183,7 +183,7 @@
         "name": "Aura de Chaos",
         "level": 14,
         "action": "Active",
-        "type": ["Effet"],
+        "types": ["Effet"],
         "effect": "Le sorcier provoque une vague d'énergie qui modifie les probabilités, induisant des résultats chaotiques et imprévisibles. Tant que ce sortilège est actif, toutes les personnes se comportent comme si elles avaient une Gnose de 10 points supérieure à leur Natura (bien que par rapport à leur importance dans la réalité, elles conservent leurs valeurs d'origine) et tout type de réussite inhabituelle et impossible survient constamment. Autrement dit, c'est comme si la chance était devenue folle et que tout pouvait arriver. Au moment de lancer ce sort, le sorcier doit décider s'il sera fixé sur une zone déterminée, ou si l'aura se déplacera avec lui.",
         "castingLevels": [
           {
@@ -220,7 +220,7 @@
         "name": "Altération des Probabilités",
         "level": 24,
         "action": "Active",
-        "type": ["Effet"],
+        "types": ["Effet"],
         "effect": "Le sorcier ou le personnage subit une altération temporaire de sa nature. Il est alors capable de réaliser avec beaucoup plus de facilité des actions extrêmes, qu'elles soient bonnes ou mauvaises. Par conséquent, il augmente ses chances de Maladresse et de Jet Ouvert, aux valeurs indiquées par le Degré du sort. Par exemple, quelqu'un sans maîtrise qui est affecté par ce sort en Degré Initial subit une Maladresse avec un jet de 5 ou moins et obtient un Jet Ouvert avec un jet de 85 ou plus. ",
         "castingLevels": [
           {
@@ -257,7 +257,7 @@
         "name": "Créer Lumière",
         "level": 34,
         "action": "Active",
-        "type": ["Animique"],
+        "types": ["Animique"],
         "effect": "La cible de ce sort voit les résultats du hasard et de la chance augmenter suivant le désir du sorcier, de façon à ce que n'importe quelle situation déterminée par le hasard ait toujours des résultats démesurés, en bien ou en mal. Un joueur de cartes, par exemple, obtiendra continuellement des mains incroyablement chanceuses ou désastreuses. Les personnages avec l'avantage Bonne Fortune et le désavantage Mauvaise Fortune voient leurs effets augmenter de façon exponentielle. Il est possible d'éviter ces effets en réussissant une RMys contre la valeur déterminée par le Degré du sort.",
         "castingLevels": [
           {
@@ -294,7 +294,7 @@
         "name": "Chemins du Chaos",
         "level": 44,
         "action": "Active",
-        "type": ["Effet"],
+        "types": ["Effet"],
         "effect": "Le sorcier peut refaire un certain nombre de jets par round, uniquement lorsqu'aucun d'entre eux n'est une Maladresse. Il n'est pas possible de refaire deux fois le même jet.",
         "castingLevels": [
           {
@@ -331,7 +331,7 @@
         "name": "Aberration Chaotique ",
         "level": 54,
         "action": "Active",
-        "type": ["Effet"],
+        "types": ["Effet"],
         "effect": "Crée un avorton en solidifiant le chaos environnant. Le lanceur n'a aucun pouvoir sur lui, et ce dernier se comportera de façon complètement imprévisible (mais en règle générale, toujours violemment). L'entité doit être créée comme une créature d'Entre Mondes en utilisant les règles décrites au Chapitre 26 du Livre de base et de Gnose 20, mais le lanceur peut choisir de dépenser volontairement seulement la moitié des PF de la créature, alors que l'autre moitié sera déterminée au hasard par le Meneur de Jeu. Quel que soit le Degré  auquel a été lancé le sort, ce sortilège ne permet pas de créer des créatures d'un niveau supérieur à celui du sorcier, car celles-ci sont basées sur sa présence spirituelle Les avortons du chaos ne peuvent pas recevoir une âme, il est donc impossible de leur donner une vie indépendante grâce au sort Offrir une Âme, ni d'y faire transmigrer un esprit avec le sort Transférer l'Âme ou tout autre moyen.",
         "castingLevels": [
           {
@@ -368,7 +368,7 @@
         "name": "Manipulation du Chaos",
         "level": 64,
         "action": "Passive",
-        "type": ["Automatique"],
+        "types": ["Automatique"],
         "effect": "En altérant l'essence du chaos, ce sort permet de changer le dénouement d'un événement, provoquant une modification dans l'action d'une personne. Le sort doit être lancé immédiatement après que l'action ait été faite. Le personnage qui a agi devra relancer les dés immédiatement. Par exemple, un personnage qui tente de sauter au-dessus du vide et échoue à son jet de Saut peut le refaire, annulant le résultat antérieur pour en créer un autre. Ce sort est automatique, et pour être obligé de réussir la RMys il suffit d'être face au sorcier et d'avoir réalisé une action au moment du lancement. Les êtres avec une Gnose de 35 ou très supérieure à leur Natura sont conscients du changement, alors que les autres ne s'en rendent pas compte.",
         "castingLevels": [
           {
@@ -405,7 +405,7 @@
         "name": "Mutation Chaotique",
         "level": 74,
         "action": "Active",
-        "type": ["Effet"],
+        "types": ["Effet"],
         "effect": "La cible de ce sort subit une série de mutations physiologiques, altérant tant son apparence que ses capacités. En utilisant Mutation Chaotique, le sorcier ou l'individu que celui-ci sélectionne obtient des PF supplémentaires pour obtenir des pouvoirs de créature décrits dans le Chapitre 26 du Livre de base comme s'il était une créature d'Entre Mondes avec une Gnose de 25. Toutefois il ne pourra choisir comment dépenser que la moitié des PF, l'autre moitié étant déterminée au hasard par le Meneur de Jeu. En règle générale, les pouvoirs que déclenche ce sort laissent toujours des modifications physiques visibles. Une personne peut essayer de résister à ses effets, si elle réussit une RMys contre une valeur déterminée par le Degré du sort. Les PF obtenus augmentent le niveau du personnage. Ce sort ne peut être lancé qu'une fois contre un même individu, ne permet pas d'acquérir de désavantages de monstres, et est lié au corps de la cible de la même façon que pour le sort Chimère.",
         "castingLevels": [
           {
@@ -442,7 +442,7 @@
         "name": "Contrôle du Chaos ",
         "level": 84,
         "action": "Active",
-        "type": ["Effet", "Animique"],
+        "types": ["Effet", "Animique"],
         "effect": "Le sorcier a la capacité de plier la nature du chaos à volonté et de l'utiliser afin d'obtenir les résultats qu'il souhaite. De cette manière, il peut faire des choses très simples comme faire se briser une chaise ou aller jusqu'à plier l'espace pour créer des portails. Il est important de préciser que ce sort ne permet pas à un personnage de contrôler le chaos s'il n'existe pas en tant que tel dans la zone. Ainsi plus l'environnement est chaotique, plus ses pouvoirs sont grands. Par exemple, contrôler un endroit dans lequel l'environnement chaotique est très bas ne lui permettra pas de faire quoi que ce soit, alors qu'en le maîtrisant dans une zone affectée par un chaos important, il pourra faire presque n'importe quoi. Dans le jeu, le sorcier obtient les pouvoirs de Gnose Influer sur la réalité et Auspice, avec une Gnose maximum qui dépend du Degré du sort et du niveau de chaos ambiant. Pour un être basé sur le chaos qui se trouve en présence du sorcier, celui-ci peut le dominer si la créature rate un test de RMys dont la valeur est indiquée par le Degré du sortilège.",
         "castingLevels": [
           {
@@ -479,7 +479,7 @@
         "name": "Chaos Primaire",
         "level": 94,
         "action": "Active",
-        "type": ["Automatique"],
+        "types": ["Automatique"],
         "effect": "En altérant complètement les lois de la réalité, le sorcier crée un chaos à l'état le plus pur, une zone dont tout le contenu cesse de répondre aux règles de la raison. L'espace est distordu de manière que le haut peut devenir le bas, les kilomètres sont parcourus en quelques secondes et les mètres en plusieurs heures. Une personne peut être à la fois jeune et vieille, un orage peut éclater et la journée rester ensoleillée... rien ne fait sens, car le concept même de logique a cessé d'exister. Quelqu'un de normal peut devenir fou en quelques minutes, alors que tout pouvoir surnaturel peut échapper à tout contrôle. La zone d'effet de ce sort est déterminée par son Degré et ne bouge pas de l'endroit où elle a été lancée.",
         "castingLevels": [
           {
@@ -516,7 +516,7 @@
     ]
   },
   {
-    "path": "Guerre",
+    "name": "Guerre",
     "forbiddenPaths": [
       "Lumière",
       "Création",
@@ -530,7 +530,7 @@
     "spells": []
   },
   {
-    "path": "Literae",
+    "name": "Literae",
     "forbiddenPaths": [
       "Destruction",
       "Air",
@@ -544,7 +544,7 @@
     "spells": []
   },
   {
-    "path": "Mort",
+    "name": "Mort",
     "forbiddenPaths": [
       "Lumière",
       "Création",
@@ -559,21 +559,21 @@
     "spells": []
   },
   {
-    "path": "Musique",
+    "name": "Musique",
     "forbiddenPaths": ["Destruction", "Feu", "Terre", "Nécromancie"],
     "status": "Secondaire",
     "description": "",
     "spells": []
   },
   {
-    "path": "Noblesse",
+    "name": "Noblesse",
     "forbiddenPaths": ["Création", "Destruction", "Feu", "Nécromancie"],
     "status": "Secondaire",
     "description": "",
     "spells": []
   },
   {
-    "path": "Paix",
+    "name": "Paix",
     "forbiddenPaths": [
       "Obscurité",
       "Destruction",
@@ -586,21 +586,21 @@
     "spells": []
   },
   {
-    "path": "Péché",
+    "name": "Péché",
     "forbiddenPaths": ["Lumière", "Eau", "Terre", "Essence", "Illusion"],
     "status": "Secondaire",
     "description": "",
     "spells": []
   },
   {
-    "path": "Connaissance",
+    "name": "Connaissance",
     "forbiddenPaths": ["Destruction", "Feu", "Terre", "Illusion"],
     "status": "Secondaire",
     "description": "",
     "spells": []
   },
   {
-    "path": "Sang",
+    "name": "Sang",
     "forbiddenPaths": ["Lumière", "Air", "Feu", "Terre", "Illusion"],
     "status": "Secondaire",
     "description": "",
@@ -608,14 +608,14 @@
     "spells": []
   },
   {
-    "path": "Songes",
+    "name": "Songes",
     "forbiddenPaths": ["Création", "Destruction", "Eau", "Feu", "Terre"],
     "status": "Secondaire",
     "description": "",
     "spells": []
   },
   {
-    "path": "Temps",
+    "name": "Temps",
     "forbiddenPaths": [
       "Air",
       "Eau",
@@ -631,14 +631,14 @@
     "spells": []
   },
   {
-    "path": "Seuil",
+    "name": "Seuil",
     "forbiddenPaths": ["Lumière", "Création", "Destruction", "Eau", "Essence"],
     "status": "Secondaire",
     "description": "",
     "spells": []
   },
   {
-    "path": "Vide",
+    "name": "Vide",
     "forbiddenPaths": [
       "Lumière",
       "Création",
@@ -652,7 +652,7 @@
     "spells": []
   },
   {
-    "path": "Sorts d'Accès Libre",
+    "name": "Sorts d'Accès Libre",
     "status": "Accès Libre",
     "description": "",
     "spells": []
