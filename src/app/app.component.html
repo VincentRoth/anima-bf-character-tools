@@ -11,8 +11,14 @@
     <a mat-menu-item routerLink="dice-roll">
       <mat-icon>casino</mat-icon>Lancer de dé
     </a>
+    <a mat-menu-item routerLink="character-sheet">
+      <mat-icon>portrait</mat-icon>Mon personnage
+    </a>
     <button mat-menu-item [matMenuTriggerFor]="characterMenu">
-      <mat-icon>menu</mat-icon>Personnage
+      <mat-icon>list</mat-icon>Création de personnage
+    </button>
+    <button mat-menu-item [matMenuTriggerFor]="powerMenu">
+      <mat-icon>list</mat-icon>Puissance surnaturelle
     </button>
     <a mat-menu-item routerLink="map">
       <mat-icon>explore</mat-icon>Carte de Gaïa
@@ -31,9 +37,6 @@
 </header>
 
 <mat-menu #characterMenu="matMenu">
-  <a mat-menu-item routerLink="character-sheet">
-    <mat-icon>portrait</mat-icon>Mon personnage
-  </a>
   <a mat-menu-item routerLink="creation-help">
     <mat-icon>help</mat-icon>Aide à la création
   </a>
@@ -42,6 +45,10 @@
   <a mat-menu-item routerLink="advantages">
     <mat-icon>person_add</mat-icon>Avantages
   </a>
+</mat-menu>
+
+<mat-menu #powerMenu="matMenu">
+  <a mat-menu-item routerLink="spells"><mat-icon>book</mat-icon>Sorts</a>
 </mat-menu>
 
 <div class="root">

@@ -14,6 +14,7 @@ import { DiceRollModule } from './dice-roll/dice-roll.module';
 import { HomeModule } from './home/home.module';
 import { MapModule } from './map/map.module';
 import { RacesModule } from './races/races.module';
+import { SpellsModule } from './spells/spells.module';
 import { TablesModule } from './tables/tables.module';
 
 @NgModule({
@@ -31,6 +32,7 @@ import { TablesModule } from './tables/tables.module';
     RacesModule,
     ClassesModule,
     AdvantagesModule,
+    SpellsModule,
     MapModule,
     TablesModule
   ],

@@ -49,8 +49,8 @@ export declare type Spell = MainSpell | FreeAccessSpell;
 export enum MagicPathStatus {
   MAJOR = 'Majeure',
   MINOR = 'Mineure',
-  SECONDARY = 'Secaondaire',
-  FREE = 'Libre'
+  SECONDARY = 'Secondaire',
+  FREE = 'Accès Libre'
 }
 
 interface AbstractMagicPath {
@@ -67,11 +67,12 @@ interface MagicPrimaryPath extends AbstractMagicPath {
 
 interface MagicSecondaryPath extends AbstractMagicPath {
   forbiddenPaths: string[];
+  limits?: string;
   status: MagicPathStatus.SECONDARY;
   spells: MainSpell[];
 }
 
-interface FreeAccessPath extends AbstractMagicPath {
+interface FreeAccessSpells extends AbstractMagicPath {
   status: MagicPathStatus.FREE;
   spells: MainSpell[];
 }
@@ -79,4 +80,4 @@ interface FreeAccessPath extends AbstractMagicPath {
 export declare type MagicPath =
   | MagicPrimaryPath
   | MagicSecondaryPath
-  | FreeAccessPath;
+  | FreeAccessSpells;

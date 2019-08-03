@@ -42,7 +42,246 @@
           }
         ],
         "isDailyMaintenance": true
+      },
+      {
+        "level": 10,
+        "isFreeAccess": true
       }
     ]
+  },
+  {
+    "path": "Obscurité",
+    "oppositePaths": ["Lumière", "Nécromancie"],
+    "status": "Majeure",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Création",
+    "oppositePaths": ["Destruction", "Nécromancie"],
+    "status": "Majeure",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Destruction",
+    "oppositePaths": ["Création", "Nécromancie"],
+    "status": "Majeure",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Air",
+    "oppositePaths": ["Terre", "Nécromancie"],
+    "status": "Mineure",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Eau",
+    "oppositePaths": ["Feu", "Nécromancie"],
+    "status": "Mineure",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Feu",
+    "oppositePaths": ["Eau", "Nécromancie"],
+    "status": "Mineure",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Terre",
+    "oppositePaths": ["Air", "Nécromancie"],
+    "status": "Mineure",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Essence",
+    "oppositePaths": ["Illusion", "Nécromancie"],
+    "status": "Mineure",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Illusion",
+    "oppositePaths": ["Essence", "Nécromancie"],
+    "status": "Mineure",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Nécromancie",
+    "oppositePaths": [
+      "Lumière",
+      "Obscurité",
+      "Air",
+      "Eau",
+      "Feu",
+      "Terre",
+      "Essence",
+      "Illusion"
+    ],
+    "status": "Majeure",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Chaos",
+    "forbiddenPaths": [
+      "Eau",
+      "Feu",
+      "Terre",
+      "Essence",
+      "Illusion",
+      "Nécromancie"
+    ],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Guerre",
+    "forbiddenPaths": [
+      "Lumière",
+      "Création",
+      "Air",
+      "Eau",
+      "Essence",
+      "Illusion"
+    ],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Literae",
+    "forbiddenPaths": [
+      "Destruction",
+      "Air",
+      "Feu",
+      "Terre",
+      "Essence",
+      "Nécromancie"
+    ],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Mort",
+    "forbiddenPaths": [
+      "Lumière",
+      "Création",
+      "Air",
+      "Eau",
+      "Terre",
+      "Essence",
+      "Illusion"
+    ],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Musique",
+    "forbiddenPaths": ["Destruction", "Feu", "Terre", "Nécromancie"],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Noblesse",
+    "forbiddenPaths": ["Création", "Destruction", "Feu", "Nécromancie"],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Paix",
+    "forbiddenPaths": [
+      "Obscurité",
+      "Destruction",
+      "Feu",
+      "Illusion",
+      "Nécromancie"
+    ],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Péché",
+    "forbiddenPaths": ["Lumière", "Eau", "Terre", "Essence", "Illusion"],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Connaissance",
+    "forbiddenPaths": ["Destruction", "Feu", "Terre", "Illusion"],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Sang",
+    "forbiddenPaths": ["Lumière", "Air", "Feu", "Terre", "Illusion"],
+    "status": "Secondaire",
+    "description": "",
+    "limits": "",
+    "spells": []
+  },
+  {
+    "path": "Songes",
+    "forbiddenPaths": ["Création", "Destruction", "Eau", "Feu", "Terre"],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Temps",
+    "forbiddenPaths": [
+      "Air",
+      "Eau",
+      "Feu",
+      "Terre",
+      "Essence",
+      "Illusion",
+      "Nécromancie"
+    ],
+    "status": "Secondaire",
+    "description": "",
+    "limits": "",
+    "spells": []
+  },
+  {
+    "path": "Seuil",
+    "forbiddenPaths": ["Lumière", "Création", "Destruction", "Eau", "Essence"],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Vide",
+    "forbiddenPaths": [
+      "Lumière",
+      "Création",
+      "Feu",
+      "Terre",
+      "Essence",
+      "Illusion"
+    ],
+    "status": "Secondaire",
+    "description": "",
+    "spells": []
+  },
+  {
+    "path": "Sorts d'Accès Libre",
+    "status": "Accès Libre",
+    "description": "",
+    "spells": []
   }
 ]

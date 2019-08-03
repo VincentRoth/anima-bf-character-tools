@@ -9,6 +9,7 @@ import { DiceRollComponent } from './dice-roll/dice-roll.component';
 import { HomeComponent } from './home/home.component';
 import { MapComponent } from './map/map.component';
 import { RacesComponent } from './races/races.component';
+import { SpellsComponent } from './spells/spells.component';
 import { TablesComponent } from './tables/tables.component';
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'races', component: RacesComponent },
   { path: 'classes', component: ClassesComponent },
   { path: 'advantages', component: AdvantagesComponent },
+  { path: 'spells', component: SpellsComponent },
   { path: 'map', component: MapComponent },
   { path: 'tables', component: TablesComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
