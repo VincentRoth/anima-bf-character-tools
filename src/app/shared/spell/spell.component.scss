@@ -1,0 +1,41 @@
+:host {
+    display: flex;
+    // 5 spells per row
+    flex: 0 0 17%;
+}
+
+.spell-card {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    margin: 0.5rem;
+    max-width: 16rem;
+
+    .spell-title {
+        font-size: 1rem;
+        margin: 0 0 0.5rem;
+    }
+
+    .spell-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 100%;
+    }
+
+    p {
+        font-size: 0.75rem;
+        text-align: justify;
+        margin: 0.1rem 0;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.75rem;
+        text-align: center;
+        table-layout: auto;
+
+        .bold {
+            text-align: left;
+        }
+    }
+}

@@ -6,7 +6,7 @@ import {
   EContentType,
   ReferenceTable
 } from 'src/app/shared/models';
-import { ReferenceTableService } from 'src/app/shared/reference-table/reference-table.service';
+import { ReferenceTableService } from 'src/app/shared/services';
 
 @Component({
   selector: 'app-panel-content',
@@ -16,7 +16,7 @@ import { ReferenceTableService } from 'src/app/shared/reference-table/reference-
 export class PanelContentComponent implements OnInit {
   @Input() content: ContentUnit;
   @Input() level: number;
-  private table: ReferenceTable;
+  table: ReferenceTable;
 
   constructor(private refTablesService: ReferenceTableService) {}
 

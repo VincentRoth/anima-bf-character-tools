@@ -1,0 +1,26 @@
+<h3>{{ magicPath.path }}</h3>
+<p>
+  {{ magicPath.description }}
+  <br />
+  <span class="bold">Type : </span>
+  {{ magicPath.status }}
+  <br />
+  <span *ngIf="magicPath.oppositePaths && magicPath.oppositePaths.length">
+    <span class="bold">Voies opposées : </span>
+    {{ magicPath.oppositePaths.join(', ') }}
+    <br />
+  </span>
+  <span *ngIf="magicPath.forbiddenPaths && magicPath.forbiddenPaths.length">
+    <span class="bold">Liens fermés : </span>
+    {{ magicPath.forbiddenPaths.join(', ') }}
+    <br />
+  </span>
+  <span *ngIf="magicPath.limits">
+    <span class="bold">Limites : </span>
+    {{ magicPath.limits }}
+    <br />
+  </span>
+</p>
+<div class="flex flex-row flex-center">
+  <app-spell *ngFor="let spell of magicPath.spells" [spell]="spell"></app-spell>
+</div>

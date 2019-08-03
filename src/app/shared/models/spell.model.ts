@@ -27,7 +27,7 @@ export interface SpellCastingLevel {
   maintenance: number;
 }
 
-interface MainSpell {
+export interface MainSpell {
   name: string;
   // For free access spell, level is a ten
   level: number;
@@ -39,7 +39,7 @@ interface MainSpell {
   forbiddenPaths?: string[];
 }
 
-interface FreeAccessSpell {
+export interface FreeAccessSpell {
   level: 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100;
   isFreeAccess: true;
 }
@@ -60,19 +60,19 @@ interface AbstractMagicPath {
   spells: Spell[];
 }
 
-interface MagicPrimaryPath extends AbstractMagicPath {
+export interface MagicPrimaryPath extends AbstractMagicPath {
   oppositePaths: string[];
   status: MagicPathStatus.MAJOR | MagicPathStatus.MINOR;
 }
 
-interface MagicSecondaryPath extends AbstractMagicPath {
+export interface MagicSecondaryPath extends AbstractMagicPath {
   forbiddenPaths: string[];
   limits?: string;
   status: MagicPathStatus.SECONDARY;
   spells: MainSpell[];
 }
 
-interface FreeAccessSpells extends AbstractMagicPath {
+export interface FreeAccessSpells extends AbstractMagicPath {
   status: MagicPathStatus.FREE;
   spells: MainSpell[];
 }
