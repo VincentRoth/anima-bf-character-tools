@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractSearchComponent } from 'src/app/shared/abstract-search.component';
 import { UnknownAdvantage } from 'src/app/shared/models';
-import { AdvantageService } from './advantage.service';
+import { AdvantageService } from 'src/app/shared/services';
 
 @Component({
   selector: 'app-advantages',
