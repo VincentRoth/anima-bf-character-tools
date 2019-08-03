@@ -27,7 +27,7 @@ export interface SpellCastingLevel {
   maintenance: number;
 }
 
-export interface MainSpell {
+export interface Spell {
   name: string;
   // For free access spell, level is a ten
   level: number;
@@ -37,14 +37,21 @@ export interface MainSpell {
   castingLevels: SpellCastingLevel[];
   isDailyMaintenance?: boolean;
   forbiddenPaths?: string[];
+  isFreeAccess?: boolean;
 }
 
-export interface FreeAccessSpell {
-  level: 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100;
-  isFreeAccess: true;
+export interface Spell {
+  name: string;
+  // For free access spell, level is a ten
+  level: number;
+  action: ActionType;
+  types: SpellType[];
+  effect: string;
+  castingLevels: SpellCastingLevel[];
+  isDailyMaintenance?: boolean;
+  forbiddenPaths?: string[];
+  isFreeAccess?: boolean;
 }
-
-export declare type Spell = MainSpell | FreeAccessSpell;
 
 export enum MagicPathStatus {
   MAJOR = 'Majeure',
@@ -57,6 +64,9 @@ interface AbstractMagicPath {
   name: string;
   status: MagicPathStatus;
   description: string;
+  oppositePaths?: string[];
+  forbiddenPaths?: string[];
+  limits?: string;
   spells: Spell[];
 }
 
@@ -69,12 +79,10 @@ export interface MagicSecondaryPath extends AbstractMagicPath {
   forbiddenPaths: string[];
   limits?: string;
   status: MagicPathStatus.SECONDARY;
-  spells: MainSpell[];
 }
 
 export interface FreeAccessSpells extends AbstractMagicPath {
   status: MagicPathStatus.FREE;
-  spells: MainSpell[];
 }
 
 export declare type MagicPath =

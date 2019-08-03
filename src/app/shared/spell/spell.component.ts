@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FreeAccessSpell, MainSpell, Spell } from '../models';
+import { Spell } from 'src/app/shared/models';
 
 @Component({
   selector: 'app-spell',
@@ -14,16 +14,17 @@ export class SpellComponent implements OnInit {
   ngOnInit() {}
 
   get name() {
-    return (this.spell as MainSpell).name || 'Sort d\'Accès Libre';
+    return this.spell.name || 'Sort d\'Accès Libre';
   }
 
   get maintenance() {
-    const spell = this.spell as MainSpell;
     if (
-      spell.castingLevels &&
-      spell.castingLevels.some(castingLevel => castingLevel.maintenance > 0)
+      this.spell.castingLevels &&
+      this.spell.castingLevels.some(
+        castingLevel => castingLevel.maintenance > 0
+      )
     ) {
-      return spell.castingLevels
+      return this.spell.castingLevels
         .reduce((maintenances, castingLevel) => {
           maintenances.push(castingLevel.maintenance);
           return maintenances;

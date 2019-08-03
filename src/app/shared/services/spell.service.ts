@@ -2,13 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import {
-  FreeAccessSpell,
-  MagicPath,
-  MainSpell,
-  Spell,
-  SpellCastingLevel
-} from 'src/app/shared/models';
+import { MagicPath, SpellCastingLevel } from 'src/app/shared/models';
 import { copy } from 'src/app/shared/utils';
 
 @Injectable({
@@ -33,19 +27,18 @@ export class SpellService {
     return copy(this.magicPaths).filter((magicPath: MagicPath) => {
       magicPath.spells = magicPath.spells.filter(
         spell =>
-          !(spell as FreeAccessSpell).isFreeAccess &&
+          !spell.isFreeAccess &&
           tokens.reduce((isSelected: boolean, token: string) => {
-            const mainSpell = spell as MainSpell;
             return (
               isSelected &&
-              (mainSpell.name.toLocaleLowerCase().includes(token) ||
-                mainSpell.level.toString().includes(token) ||
-                mainSpell.action.toLocaleLowerCase().includes(token) ||
-                mainSpell.types.some(type =>
+              (spell.name.toLocaleLowerCase().includes(token) ||
+                spell.level.toString().includes(token) ||
+                spell.action.toLocaleLowerCase().includes(token) ||
+                spell.types.some(type =>
                   type.toLocaleLowerCase().includes(token)
                 ) ||
-                mainSpell.effect.toLocaleLowerCase().includes(token) ||
-                mainSpell.castingLevels.some(
+                spell.effect.toLocaleLowerCase().includes(token) ||
+                spell.castingLevels.some(
                   (castingLevel: SpellCastingLevel) =>
                     castingLevel.effect.toLocaleLowerCase().includes(token) ||
                     castingLevel.maintenance.toString().includes(token) ||
