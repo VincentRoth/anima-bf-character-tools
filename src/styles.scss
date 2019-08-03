@@ -1,12 +1,7 @@
-@import '~@angular/material/theming';
+@import './styles/theme';
 @import './styles/footer.theme';
 
-@include mat-core();
-
-$primary: mat-palette($mat-green, 700, A700, 900);
-$accent: mat-palette($mat-deep-purple, A200, A100, A400);
-
-$theme: mat-light-theme($primary, $accent);
+$theme: mat-light-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);
 @include footer-theme($theme);
 
