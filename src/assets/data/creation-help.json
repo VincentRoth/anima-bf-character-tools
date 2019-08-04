@@ -1028,7 +1028,7 @@
     "content": [
       {
         "type": "paragraph",
-        "content": "1. Générez et calculez vos caractéristiques.<br/>2. Choisissez votre race.<br/>3. Choisissez votre classe.<br/>4. Utilisez vos Points de Création pour acquérir avantages et désavantages.<br/>5. Dépensez vos PF dans les champs principaux.<br/>6. Dépensez vos PF dans les champs secondaires.<br/>7. Appliquez l'amélioration naturelle aux compétences secondaires.<br/>8. Ajoutez les bonus de classe.<br/>9. Calculez vos Points de Vie et votre Initiative.<br/>10. Calculez vos Résistances.<br/>11. Finalisez votre personnage en choisissant son équipement, ses pouvoirs de Ki, ses sorts ou ses pouvoirs psychiques, ainsi que tout autre détail manquant dans les 10 premiers points."
+        "content": "1. Générez et calculez vos caractéristiques.\n2. Choisissez votre race.\n3. Choisissez votre classe.\n4. Utilisez vos Points de Création pour acquérir avantages et désavantages.\n5. Dépensez vos PF dans les champs principaux.\n6. Dépensez vos PF dans les champs secondaires.\n7. Appliquez l'amélioration naturelle aux compétences secondaires.\n8. Ajoutez les bonus de classe.\n9. Calculez vos Points de Vie et votre Initiative.\n10. Calculez vos Résistances.\n11. Finalisez votre personnage en choisissant son équipement, ses pouvoirs de Ki, ses sorts ou ses pouvoirs psychiques, ainsi que tout autre détail manquant dans les 10 premiers points."
       }
     ]
   },
@@ -1056,7 +1056,7 @@
       {
         "type": "sub-paragraph",
         "title": "Résumé de la montée de niveau",
-        "content": "1. Dépensez 100 PF dans les champs principaux et secondaires.<br/>2. Si vous êtes de niveau pair, augmentez d'un point une de vos caractéristiques.<br/>3. Appliquez les bonus de l'amélioration naturelle.<br/>4. Appliquez les bonus de votre classse à toutes les compétences concernées.<br/>5. Augmentez vos Points de Vie et votre Initiative de vos bonus de classe.<br/>6. Augmentez votre Présence de 5 points et modifiez vos Résistances."
+        "content": "1. Dépensez 100 PF dans les champs principaux et secondaires.\n2. Si vous êtes de niveau pair, augmentez d'un point une de vos caractéristiques.\n3. Appliquez les bonus de l'amélioration naturelle.\n4. Appliquez les bonus de votre classse à toutes les compétences concernées.\n5. Augmentez vos Points de Vie et votre Initiative de vos bonus de classe.\n6. Augmentez votre Présence de 5 points et modifiez vos Résistances."
       },
       {
         "type": "sub-paragraph",
@@ -1151,7 +1151,7 @@
           },
           {
             "type": "paragraph",
-            "content": "Entre autre, elle limite l'accès aux sorts de Haute Magie et de Magie Divine, car des êtres de Gnose faible ne peuvent accéder à une telle puissance. Ou encore au niveau 19 et 20 de Régénération. Des entités à la Gnoses élevée peuvent aussi ignorer certains effets altérant la réalité ou leur être."
+            "content": "Entre autre, elle limite l'accès aux sorts de Haute Magie (Niveau 82 à 90) et de Magie Divine (Niveau 92 à 100), car des êtres de Gnose faible ne peuvent accéder à une telle puissance. Ou encore au niveau 19 et 20 de Régénération. Des entités à la Gnoses élevée peuvent être insensibles à certains effets affectant la réalité ou leur être."
           },
           {
             "type": "paragraph",
