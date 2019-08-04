@@ -11,7 +11,7 @@
 
 <ng-container *ngIf="refTables">
   <ng-container *ngFor="let book of books">
-    <details class="flex-column" *ngIf="refTables[book.reference].length">
+    <details *ngIf="refTables[book.reference].length">
       <summary>
         <h3>{{ book.title }}</h3>
         <span class="right">

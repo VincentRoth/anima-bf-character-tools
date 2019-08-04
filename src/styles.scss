@@ -27,6 +27,8 @@ h2 {
 }
 
 details {
+    margin-bottom: 0.5rem;
+
     summary {
         cursor: pointer;
         border-bottom: 1px solid $light-grey;
