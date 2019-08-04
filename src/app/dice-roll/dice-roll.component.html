@@ -12,5 +12,7 @@
 </p>
 
 <p id="roll-history" class="flex-column flex-center-start">
-  <span *ngFor="let roll of rollHistory">{{ roll }}</span>
+  <ng-container *ngFor="let roll of rollHistory">
+    {{ roll }}
+  </ng-container>
 </p>

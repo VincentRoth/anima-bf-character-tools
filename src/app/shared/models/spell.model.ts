@@ -51,6 +51,7 @@ export interface Spell {
   isDailyMaintenance?: boolean;
   forbiddenPaths?: string[];
   isFreeAccess?: boolean;
+  maxFreeAccessLevel?: 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100;
 }
 
 export enum MagicPathStatus {
@@ -65,6 +66,7 @@ interface AbstractMagicPath {
   status: MagicPathStatus;
   description: string;
   oppositePaths?: string[];
+  permittedPaths?: string[];
   forbiddenPaths?: string[];
   limits?: string;
   spells: Spell[];

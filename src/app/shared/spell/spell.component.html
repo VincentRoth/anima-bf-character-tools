@@ -46,12 +46,21 @@
       </p>
       <p>
         <span class="bold">Maintien : </span>{{ maintenance }}
-        <span *ngIf="spell.isDailyMaintenance" class="bold">Quotidien</span>
+        <ng-container *ngIf="spell.isDailyMaintenance" class="bold">
+          Quotidien
+        </ng-container>
       </p>
     </div>
 
     <div *ngIf="spell.isFreeAccess">
-      <p><span class="bold">Niveau : </span>1-{{ spell.level }}</p>
+      <p><span class="bold">Niveau : </span>{{ spell.level }}</p>
+      <p>
+        <span class="bold">Niveau d'accès libre : </span>
+        1-{{ spell.maxFreeAccessLevel }}
+        <ng-container *ngIf="isSecondaryPathLevel()">
+          ou Voie secondaire
+        </ng-container>
+      </p>
     </div>
   </mat-card-content>
 </mat-card>

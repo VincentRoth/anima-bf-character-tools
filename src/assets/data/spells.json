@@ -44,8 +44,54 @@
         "isDailyMaintenance": true
       },
       {
-        "level": 10,
-        "isFreeAccess": true
+        "level": 4,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 14,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 24,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 34,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 44,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 54,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 64,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 74,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 94,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
       }
     ]
   },
@@ -54,63 +100,822 @@
     "oppositePaths": ["Lumière", "Nécromancie"],
     "status": "Majeure",
     "description": "",
-    "spells": []
+    "spells": [
+      {
+        "level": 4,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 14,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 24,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 34,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 44,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 54,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 64,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 74,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 94,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      }
+    ]
   },
   {
     "name": "Création",
     "oppositePaths": ["Destruction", "Nécromancie"],
     "status": "Majeure",
     "description": "",
-    "spells": []
+    "spells": [
+      {
+        "level": 4,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 14,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 24,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 34,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 44,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 54,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 64,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 74,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 94,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      }
+    ]
   },
   {
     "name": "Destruction",
     "oppositePaths": ["Création", "Nécromancie"],
     "status": "Majeure",
     "description": "",
-    "spells": []
+    "spells": [
+      {
+        "level": 4,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 14,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 24,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 34,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 44,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 54,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 64,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 74,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 94,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      }
+    ]
   },
   {
     "name": "Air",
     "oppositePaths": ["Terre", "Nécromancie"],
     "status": "Mineure",
     "description": "",
-    "spells": []
+    "spells": [
+      {
+        "level": 4,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 8,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 14,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 18,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 24,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 28,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 34,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 38,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 44,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 48,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 54,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 58,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 64,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 68,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 74,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 78,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 88,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 94,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 98,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      }
+    ]
   },
   {
     "name": "Eau",
     "oppositePaths": ["Feu", "Nécromancie"],
     "status": "Mineure",
     "description": "",
-    "spells": []
+    "spells": [
+      {
+        "level": 4,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 8,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 14,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 18,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 24,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 28,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 34,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 38,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 44,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 48,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 54,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 58,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 64,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 68,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 74,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 78,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 88,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 94,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 98,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      }
+    ]
   },
   {
     "name": "Feu",
     "oppositePaths": ["Eau", "Nécromancie"],
     "status": "Mineure",
     "description": "",
-    "spells": []
+    "spells": [
+      {
+        "level": 4,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 8,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 14,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 18,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 24,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 28,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 34,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 38,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 44,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 48,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 54,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 58,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 64,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 68,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 74,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 78,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 88,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 94,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 98,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      }
+    ]
   },
   {
     "name": "Terre",
     "oppositePaths": ["Air", "Nécromancie"],
     "status": "Mineure",
     "description": "",
-    "spells": []
+    "spells": [
+      {
+        "level": 4,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 8,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 14,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 18,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 24,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 28,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 34,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 38,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 44,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 48,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 54,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 58,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 64,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 68,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 74,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 78,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 88,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 94,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 98,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      }
+    ]
   },
   {
     "name": "Essence",
     "oppositePaths": ["Illusion", "Nécromancie"],
     "status": "Mineure",
     "description": "",
-    "spells": []
+    "spells": [
+      {
+        "level": 4,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 8,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 14,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 18,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 24,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 28,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 34,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 38,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 44,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 48,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 54,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 58,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 64,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 68,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 74,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 78,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 88,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 94,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 98,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      }
+    ]
   },
   {
     "name": "Illusion",
     "oppositePaths": ["Essence", "Nécromancie"],
     "status": "Mineure",
     "description": "",
-    "spells": []
+    "spells": [
+      {
+        "level": 4,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 8,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 14,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 18,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 24,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 28,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 34,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 38,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 44,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 48,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 54,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 58,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 64,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 68,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 74,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 78,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 88,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 94,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 98,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      }
+    ]
   },
   {
     "name": "Nécromancie",
@@ -126,7 +931,58 @@
     ],
     "status": "Majeure",
     "description": "",
-    "spells": []
+    "spells": [
+      {
+        "level": 4,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 14,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 24,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 34,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 44,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 54,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 64,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 74,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      },
+      {
+        "level": 94,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 10
+      }
+    ]
   },
   {
     "name": "Chaos",

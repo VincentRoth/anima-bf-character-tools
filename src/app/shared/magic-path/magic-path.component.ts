@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MagicPath } from 'src/app/shared/models';
+import { MagicPath, MagicPathStatus } from 'src/app/shared/models';
 
 @Component({
   selector: 'app-magic-path',
@@ -12,4 +12,8 @@ export class MagicPathComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  get eMagicPathStatus() {
+    return MagicPathStatus;
+  }
 }

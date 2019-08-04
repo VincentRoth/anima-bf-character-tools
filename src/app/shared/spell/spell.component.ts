@@ -25,12 +25,17 @@ export class SpellComponent implements OnInit {
       )
     ) {
       return this.spell.castingLevels
-        .reduce((maintenances, castingLevel) => {
-          maintenances.push(castingLevel.maintenance);
-          return maintenances;
-        }, [])
+        .reduce(
+          (maintenances, castingLevel) =>
+            maintenances.concat(castingLevel.maintenance),
+          []
+        )
         .join(' / ');
     }
     return 'Aucun';
+  }
+
+  isSecondaryPathLevel(): boolean {
+    return this.spell.level % 10 === 4;
   }
 }

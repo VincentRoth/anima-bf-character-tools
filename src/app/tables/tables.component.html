@@ -10,17 +10,21 @@
 </div>
 
 <ng-container *ngIf="refTables">
-  <div class="flex flex-column" *ngFor="let book of books">
-    <h2>{{ book.title }}</h2>
-    <div class="flex flex-row flex-center">
-      <app-table
-        *ngFor="let table of refTables[book.reference]"
-        [table]="table"
-        [reference]="book.reference + '#' + table.id"
-      ></app-table>
-    </div>
-    <p *ngIf="!refTables[book.reference].length">
-      Aucun résultat pour ce livre.
-    </p>
-  </div>
+  <ng-container *ngFor="let book of books">
+    <details class="flex-column" *ngIf="refTables[book.reference].length">
+      <summary>
+        <h3>{{ book.title }}</h3>
+        <span class="right">
+          {{ refTables[book.reference].length }} Tableaux
+        </span>
+      </summary>
+      <div class="flex flex-row flex-center">
+        <app-table
+          *ngFor="let table of refTables[book.reference]"
+          [table]="table"
+          [reference]="book.reference + '#' + table.id"
+        ></app-table>
+      </div>
+    </details>
+  </ng-container>
 </ng-container>

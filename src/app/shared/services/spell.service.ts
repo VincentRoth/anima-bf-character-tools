@@ -1,8 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
-import { MagicPath, SpellCastingLevel } from 'src/app/shared/models';
+import { map, tap } from 'rxjs/operators';
+import {
+  MagicPath,
+  MagicPathStatus,
+  SpellCastingLevel
+} from 'src/app/shared/models';
 import { copyJson } from 'src/app/shared/utils';
 
 @Injectable({
@@ -14,9 +18,31 @@ export class SpellService {
   constructor(private http: HttpClient) {}
 
   get(): Observable<MagicPath[]> {
-    return this.http
-      .get<MagicPath[]>('/assets/data/spells.json')
-      .pipe(map(data => (this.magicPaths = copyJson(data))));
+    return this.http.get<MagicPath[]>('/assets/data/spells.json').pipe(
+      map(data =>
+        data.map(magicPath => {
+          if (
+            magicPath.status === MagicPathStatus.MAJOR ||
+            magicPath.status === MagicPathStatus.MINOR
+          ) {
+            // link non forbidden secondary paths to primary paths
+            magicPath.permittedPaths = data
+              .filter(
+                secondaryPath =>
+                  secondaryPath.status === MagicPathStatus.SECONDARY &&
+                  secondaryPath.forbiddenPaths.indexOf(magicPath.name) === -1
+              )
+              .reduce(
+                (paths, secondaryPath) => paths.concat(secondaryPath.name),
+                []
+              );
+            magicPath.permittedPaths.sort();
+          }
+          return magicPath;
+        })
+      ),
+      tap(data => (this.magicPaths = copyJson(data)))
+    );
   }
 
   filterByToken(filter: string): MagicPath[] {

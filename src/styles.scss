@@ -5,6 +5,7 @@
 
 $primary: mat-palette($mat-green, 700, A700, 900);
 $accent: mat-palette($mat-deep-purple, A200, A100, A400);
+$light-grey: map_get($mat-grey, 300);
 
 $theme: mat-light-theme($primary, $accent);
 @include angular-material-theme($theme);
@@ -29,6 +30,17 @@ app-root {
 
 h2 {
     margin-top: 0.4rem;
+}
+
+details {
+    summary {
+        cursor: pointer;
+        border-bottom: 1px solid $light-grey;
+
+        h3 {
+            display: inline;
+        }
+    }
 }
 
 .flex {
