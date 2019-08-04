@@ -36,7 +36,7 @@
       [level]="level"
       [title]="content.title"
     ></app-content-title>
-    <p [innerHTML]="content.content"></p>
+    <p>{{ content.content }}</p>
   </ng-container>
 
   <ng-container *ngSwitchCase="eContentType.SUB_PARAGRAPH">
@@ -45,7 +45,7 @@
       [level]="level + 1"
       [title]="content.title"
     ></app-content-title>
-    <p [innerHTML]="content.content"></p>
+    <p>{{ content.content }}</p>
   </ng-container>
 
   <ng-container *ngSwitchCase="eContentType.TABLE">
