@@ -1,3 +1,5 @@
+@import 'src/styles/theme';
+
 :host {
     margin: 0.5rem;
 }
@@ -7,16 +9,66 @@ table {
 
     caption {
         font-style: italic;
+        cursor: pointer;
 
-        .title {
-            display: flex;
-            align-items: center;
-            margin: auto;
-        }
+        .icon {
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: bold;
+            text-align: center;
+            font-family: monospace;
 
-        button {
-            margin-bottom: 0.2rem;
-            align-self: flex-end;
+            &::after {
+                transition: color 0.75s ease 0.25s;
+            }
+
+            &.plus::after {
+                content: "+";
+                color: map_get($primary, 700);
+            }
+
+            &.animated-plus::after {
+                animation: 1s 1 content-to-plus;
+            }
+
+            &.minus::after {
+                content: "-";
+                color: map_get($warn, 700);
+            }
+
+            &.animated-minus::after {
+                animation: 1s 1 content-to-minus;
+            }
+
+            @keyframes content-appear {
+                0% {
+                    color: white;
+                }
+
+                50% {
+                    color: white;
+                }
+            }
+
+            @keyframes content-to-minus {
+                0% {
+                    content: "+";
+                }
+
+                50% {
+                    color: white;
+                }
+            }
+
+            @keyframes content-to-plus {
+                0% {
+                    content: "-";
+                }
+
+                50% {
+                    color: white;
+                }
+            }
         }
     }
 

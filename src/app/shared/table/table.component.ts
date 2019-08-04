@@ -15,11 +15,13 @@ export class TableComponent implements OnInit {
   @Input() reference: string;
   @Input() table: ReferenceTable;
   belongsToCharacter: boolean;
+  hasBeenToggled: boolean;
 
   constructor(private characterService: CharacterService) {}
 
   ngOnInit() {
     this.belongsToCharacter = this.characterHasTable();
+    this.hasBeenToggled = false;
   }
 
   get caption(): string {
@@ -65,6 +67,7 @@ export class TableComponent implements OnInit {
   }
 
   toggleTable() {
+    this.hasBeenToggled = true;
     if (this.characterHasTable()) {
       this.characterService.removeRefTable(this.reference);
     } else {

@@ -1,12 +1,17 @@
 <table cellspacing="0">
-  <caption>
-    <div class="flex-row flex-center">
-      <div class="title">{{ caption }}</div>
-      <button mat-icon-button [color]="belongsToCharacter ? 'warn' : 'primary'" (click)="toggleTable()">
-        <mat-icon *ngIf="!belongsToCharacter">add</mat-icon>
-        <mat-icon *ngIf="belongsToCharacter">remove</mat-icon>
-      </button>
-    </div>
+  <caption (click)="toggleTable()">
+    {{
+      caption
+    }}
+    <span
+      class="icon"
+      [ngClass]="{
+        plus: !belongsToCharacter,
+        'animated-plus': hasBeenToggled && !belongsToCharacter,
+        minus: belongsToCharacter,
+        'animated-minus': hasBeenToggled && belongsToCharacter
+      }"
+    ></span>
   </caption>
   <thead *ngIf="table?.headers">
     <tr>
