@@ -49,49 +49,793 @@
         "maxFreeAccessLevel": 10
       },
       {
+        "name": "Apaiser",
+        "level": 6,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Apaise les individus perturbés par un sentiment de peur ou de haine, qui se trouvent autour du sorcier et qui échouent au test de Résistance. Ce sort fait disparaître tous les états de Peur, Terreur ou Colère que subissent ces individus, même si ces effets ont une origine surnaturelle. Par contre, il n'empêche pas les actions violentes si celles-ci sont effectuées de sang-froid ou de façon préméditée.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 5,
+            "effect": "80 RMys ou RPsy / 10 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "100 RMys ou RPsy / 25 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "120 RMys ou RPsy / 50 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 160,
+            "requiredIntelligence": 14,
+            "effect": "150 RMys ou RPsy / 100 m de rayon.",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Flash Aveuglant",
+        "level": 8,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Provoque un flash soudain de lumière dans un cercle autour du sorcire, qui aveugle toute personne le voyant pendant un round par tranche de 10 points de marge d'échec au test de Résistance. Il n'est pas possible de désigner des cibles spécifiques dans la zone du flash, qui affecte automatiquement toutes les personnes à l'exception du sorcier. Si une personne se couvre les yeux ou se prémunit d'une quelconque manière contre l'éblouissement, lelle peut appliquer un +40 sur sa RPhy.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "140 RPhy / 10 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "140 RPhy / 25 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 150,
+            "requiredIntelligence": 11,
+            "effect": "140 RPhy / 50 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 14,
+            "effect": "160 RPhy / 100 m de rayon.",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Bouclier de Lumière",
+        "level": 10,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Forme une barrière d'énergie qui protège contre toute source d'attaque. Le bouclier ne peut être endommagé que par des attaques surnaturelles. Les attaques basées sur l'obscurité lui infligent le double de dégâts.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "Le bouclier possède 300 Points de Vie.",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 8,
+            "effect": "Le bouclier possède 1000 Points de Vie.",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "Le bouclier possède 1800 Points de Vie.",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 14,
+            "effect": "Le bouclier possède 3000 Points de Vie.",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Percevoir",
+        "level": 12,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort augmente les perceptions du sorcier en rehaussant ses compétences secondaires de Vigilance et d'Observation, ainsi que son Évaluation magique alorsqu'il souhaite mesurer ou détecter le potentiel magique de quelque chose ou quelqu'un, ou encore pour analyser la nature des autres sorts. Jamais pour dissimuler ses propres capacités mystiques.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "+50 en Vigilance, Observation et Évaluation magique.",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "+150 en Vigilance, Observation et Évaluation magique.",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "+200 en Vigilance, Observation et Évaluation magique.",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 14,
+            "effect": "+250 en Vigilance, Observation et Évaluation magique.",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
         "level": 14,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
+      },
+      {
+        "name": "Armure de Lumière",
+        "level": 16,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Forme une carapace mystique acordant un IP à son utilisateur contre tout type d'attaque, et plus particulièrement celles sur le Mode Énergie. Bien que cette protection compte comme une armure, on n'applique aucun malus à l'Initiative pour les couches de protection supplémentaires.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "IP 2 contre l’Énergie et IP 1 contre le reste.",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "IP 5 contre l’Énergie et IP 2 contre le reste.",
+            "maintenance": 10
+          },
+
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "IP 8 contre l’Énergie et IP 4 contre le reste.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 15,
+            "requiredIntelligence": 15,
+            "effect": "IP 12 contre l’Énergie et IP 6 contre le reste.",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Destruction d'Ombres",
+        "level": 18,
+        "action": "Active",
+        "types": ["Effet", "Animique"],
+        "effect": "Détruit les ombres existant autour du sorcier. Si ce sort est lancé sur des êtres naturellement basés sur l'obscurité, ils doivent réussir un test de RMys sous peine de perdre une quantité de Points de Vie égale au double de leur marge d'échec (dix fois la marge d'échec dans le cas de créatures à Encaissement). Tant que le sort est maintenu, les entités affectées doivent effectuer un nouveau test de RMys à chaque round.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "140 RMys / 10 m de rayon.",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "180 RMys / 100 m de rayon.",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "220 RMys / 250 m de rayon.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 15,
+            "effect": "280 RMys / 500 m de rayon.",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Détecter le Négatif",
+        "level": 20,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Détecte, autour du sorcier, tous les sentiments négatifs comme la haine, la peur ou la colère pour qui n'aura pas réussi le test de RMys déterminé par le sort. Le mage perçoit également les créatures basées sur ces émotions.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "80 RMys pour y résister / 25 m de rayon.",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "140 RMys pour y résister / 150 m de rayon.",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 160,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys pour y résister / 500 m de rayon.",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys pour y résister / 1 km de rayon.",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Décharge de Lumière",
+        "level": 22,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Projette une décharge d'énergie magique basée sur la Lumière. L'attaque se fait sur le Mode Énergie. ",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "Dégâts 60",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts 90",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 150",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 24,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
+      },
+      {
+        "name": "Hologramme",
+        "level": 26,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée une forme lumineuse immatérielle à laquelle le sorcier peut donner l'apparence et le mouvement qu'il désire, ce qui n'aide pas à différencier d'un être ou d'un objet réel. S'il 'crée un être, il peut effectuer toutes les actions surhumaines que souhaite celui qui le contrôle, mais en imitant les compétences physiques du sorcier. Si, par exemple, il utilise l'hologramme pour faire croire à une attaque, ce dernier se servira de l'Attaque du jeteur de sort. La forme ne peut toucher ni être touché mais, si elle reçoit des dégâts basés sur l'énergie, elle disparaît. Pour s'apercevoir qu'il ne s'agit que d'une image, il faut réussir un test Quasiment Impossible de Vigilance, ou un test Très Difficile d'Observation.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 6,
+            "effect": "L'image a une taille maximale d’un mètre cube.",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "L'image a une taille maximale de 15 mètres cube.",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "L'image a une taille maximale de 50 mètres cube.",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "L'image a une taille maximale de 100 mètres cube, et la difficulté des tests de Vigilance et d’Observation passe respectivement à Impossible et Absurde.",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Liens de Lumière",
+        "level": 28,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Forme quelques liens de lumière qui tentent de ligoter la cible désignée. Le sorcier réalise cette attaque en utilisant les règles d'Immobilisation mais ne subit aucun malus à sa compétence pour cela. Les liens ne peuvent être rompus par la cible elle-même mais un tiers peut tenter de les briser. On les considère alors comme une arme d'énergie de Solidité 25.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Disposent d'une Force de 8 pour les tests.",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "Disposent d'une Force de 12 pour les tests.",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 12,
+            "effect": "Disposent d'une Force de 15 pour les tests et d'une Solidité de 30.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 180,
+            "requiredIntelligence": 15,
+            "effect": "Disposent d'une Force de 18 pour les tests et d'une Solidité de 35.",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Maîtrise Lumineuse",
+        "level": 30,
+        "action": "Active",
+        "types": ["Effet", "Animique"],
+        "effect": "Modifie et contrôle la forme, la couleur et l'intensité de la lumière d'un environnement. Si ce sort est lancé contre des êtres naturellement basés sur cet élément, ils doivent réussir un test de RMys déterminé par le Degré du sort sous peine d'être contrôlés par le sorcier. Une créature ne peut refaire ce test que si elle reçoit un ordre contraire à sa nature.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 3,
+            "effect": "80 RMys / 20 m de rayon.",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "140 RMys / 150 m de rayon.",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "180 RMys / 300 m de rayon.",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 16,
+            "effect": "220 RMys / 500 m de rayon.",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Détecter la Vie",
+        "level": 32,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Détecte toute forme de vie. Le sort ne donne pas d'autres informations que le nombre d'êtres présents et le lieu exact où ils se trouvent par rapport au sorcier. Si un individu désire résister, il doit réussir un test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "140 RMys / 25 m de rayon.",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "180 RMys / 50 m de rayon.",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "220 RMys / 150 m de rayon.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "280 RMys / 500 m de rayon.",
+            "maintenance": 30
+          }
+        ]
       },
       {
         "level": 34,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
+      },
+      {
+        "name": "Espion de Lumière",
+        "level": 36,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée un petit éclat d'énergie lumineuse qui se déplace selon les désirs du sorcier, avec une Qualité de Vol de 14. Le sorcier peut voir et entendre au travers de celui-ci comme s'il se trouvait à sa place mais, ce faisant, il supprime ses sens naturels et ne peut percevoir le monde qu'à travers l'espion. Le personnage doit choisir à chaque round s’il va regarder à travers l'espion ou non. L'espion utilise des compétences de Vigilance et d'Observation indépendantes de celles du sorcier, et ce sont celles-ci qu'il utilisera lorsqu'il écoutera et observera grâce au sortilège. L'espion peut esquiver les attaques en se servant de la Projection magique du sorcier. Il n'est possible de le toucher qu'avec des attaques surnaturelles, mais il est détruit dès qu'il reçoit des dégâts. La distance maximale entre le sorcier et l'espion est déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 6,
+            "effect": "100 en Vigilance et en Observation / Distance maximale de 1 km.",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 9,
+            "effect": "150 en Vigilance et en Observation / Distance maximale de 10 km.",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "200 en Vigilance et en Observation / Distance maximale de 50 km.",
+            "maintenance": 60
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 15,
+            "effect": "250 en Vigilance et en Observation / Distance maximale de 500 km.",
+            "maintenance": 80
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Extase",
+        "level": 38,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort envahit d'un sentiment d'extase absolue tous ceux qui se trouvent autour du sorcier et qui échouent au test de Résistance. La sensation de plaisir est si intense que leurs sens sont totalement brouillés, et qu'ils subissent un malus de -20 toutes leurs actions pendant toute la durée de l'effet. Par contre, les cibles du sort oublient complètement tout sentiment de douleur ou de tristesse et ignorent tous les malus de douleur, sauf ceux que provoquent des incapacités physiques.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "80 RMys / 10 m de rayon.",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "100 RMys / 50 m de rayon.",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "120 RMys / 100 m de rayon.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "160 RMys / 250 m de rayon.",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Détruire les Sentiments Négatifs ",
+        "level": 40,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Détruit temporairement tous les sentiments négatifs comme la haine, la peur ou la colère, de tous les individus autour du sorcier qui échouent au test de Résistance du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "100 RMys ou Rpsy / 100 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "150 RMys ou Rpsy / 500 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "180 RMys ou Rpsy / 1 km de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "220 RMys ou Rpsy / 5 km de rayon.",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Lumière Soignante",
+        "level": 42,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet de redonner des Points de Vie au bénéficiaire du sort. Ce sort ne permet pas de reconstruire les membres coupés ou amputés, pas plus que d'annuler les malus infligés par les Critiques.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 70,
+            "requiredIntelligence": 7,
+            "effect": "40 Points de Vie.",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "80 Points de Vie.",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "120 Points de Vie.",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 15,
+            "effect": "250 Points de Vie.",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 44,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
+      },
+      {
+        "name": "Sphère Chercheuse",
+        "level": 46,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Libère une sphère d'énergie lumineuse qui attaque sur le Mode Énergie. Le sort peut être contrôlé avec la Projection Magique du sorcier jusqu'au moment de l'impact. Si une cible esquive l'attaque d'une Sphère Chercheuse, celle-ci pourra continuer à attaquer au round suivant car elle n'aura pas été détruite. Elle ne disparaîtra qu'après avoir infligé des dégâts ou avoir été bloquée. Si le sorcier abandonne son contrôle sur la sphère, elle agit indépendamment et attaque à chaque round la dernière cible fixée avec sa propre Projection magique, qui est indépendante de celle du sorcier.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "Dégâts 100 / 150 à la Projection magique.",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts 120 / 180 à la Projection magique.",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 160 / 210 à la Projection magique.",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 200 / 240 à la Projection magique.",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Zone de Détection",
+        "level": 48,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Quand il lance ce sort sur un lieu précis, le sorcier perçoit tous les êtres se trouvant dans la zone qui ne réussissent pas un test de RMys. La Zone de Détection ne donnant pas d'autres informations que le nombre d'individus présents à cet endroit et leur localisation exacte, le mage ne pourra pas voir de quoi ils ont l'air ou les écouter. Il ressentira aussi les autres sorts de Détection qui pénétrent dans la zone, à condition que le sorcier qui les lance rate son test de RMys (quel que soit l'endroit où il se trouve). Ce sort reste à l'endroit où il a été lancé.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 7,
+            "effect": "180 RMys / 20 m de rayon.",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "240 RMys / 80 m de rayon.",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 12,
+            "effect": "280 RMys / 150 m de rayon.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 360,
+            "requiredIntelligence": 15,
+            "effect": "340 RMys / 250 m de rayon.",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "S'introduire dans les Rêves ",
+        "level": 50,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Permet au sorcier de s'introduire physiquement dans les rêves d'un dormeur. Il n'a aucun contrôle sur le monde onirique du rêveur et toute chose qui s'y déroule sera réelle pour lui. Le rêveur doit avoir des songes paisibles pour que ce sort puisse l'affecter et, dès que le songe devient cauchemar, qu'il se réveille ou qu'il meurt, le mage abandonne le monde onirique et revient à la réalité. Tous les sorts d'Essence réalisés sur le dormeur affectent aussi le sorcier. Le dormeur a droit à un test de Résistance. Une fois dans les rêves, le sorcier peut sauter vers le subconscient d'un autre rêveur si ce dernier se trouve physiquement proche du dormeur originel (la distance dépend du rang du sort). Naturellement, cette personne aura droit à son test de Résistance. Si la conscience du rêveur se trouve dans le monde de la Veille, le sorcier y reste coincé, même après la fin du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "140 RMys ou RPsy / 10 m de distance.",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "160 RMys ou RPsy / 80 m de distance.",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "200 RMys ou RPsy / 140 m de distance.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "240 RMys ou RPsy / 200 m de distance.",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "De Corps à Lumière",
+        "level": 52,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "La créature désignée par le sorcier se transforme en pure énergie lumineuse, devenant intangible vis-à-vis de toutes les matières et attaques non basées sur l'énergie. Tant qu'il se trouve dans cet état, le sujet bénéficie d'un bonus à ses compétences secondaires de Vigilance et d'Observation, ainsi qu'à ses Résistances contre les effets basés sur la Lumière. Dans cet état, tous les dégâts infligés par l'Obscurité sont doublés.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "+50 en Vigilance et Observation / +20 aux Résistances.",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "+60 en Vigilance et Observation / +30 aux Résistances.",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 13,
+            "effect": "Identique au Degré Intermédiaire, mais le bonus aux Résistances s'applique à tout les effets surnaturels qui ne sont pas basés sur l'Obscurité.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 160,
+            "requiredIntelligence": 16,
+            "effect": "Identique au Degré Avancé, mais les attaques basées sur l'Obscurité n'infligent plus le double de dégâts.",
+            "maintenance": 20
+          }
+        ]
       },
       {
         "level": 54,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 64,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 74,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 84,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 94,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       }
     ]
   },
@@ -109,47 +853,47 @@
       {
         "level": 14,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 24,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 34,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 44,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 54,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 64,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 74,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 84,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 94,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       }
     ]
   },
@@ -167,47 +911,47 @@
       {
         "level": 14,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 24,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 34,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 44,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 54,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 64,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 74,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 84,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 94,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       }
     ]
   },
@@ -225,47 +969,47 @@
       {
         "level": 14,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 24,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 34,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 44,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 54,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 64,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 74,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 84,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 94,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       }
     ]
   },
@@ -288,92 +1032,92 @@
       {
         "level": 14,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 18,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 24,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 28,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 34,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 38,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 44,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 48,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 54,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 58,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 64,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 68,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 74,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 78,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 84,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 88,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 94,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       },
       {
         "level": 98,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       }
     ]
   },
@@ -396,92 +1140,92 @@
       {
         "level": 14,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 18,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 24,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 28,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 34,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 38,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 44,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 48,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 54,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 58,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 64,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 68,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 74,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 78,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 84,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 88,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 94,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       },
       {
         "level": 98,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       }
     ]
   },
@@ -504,92 +1248,92 @@
       {
         "level": 14,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 18,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 24,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 28,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 34,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 38,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 44,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 48,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 54,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 58,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 64,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 68,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 74,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 78,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 84,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 88,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 94,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       },
       {
         "level": 98,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       }
     ]
   },
@@ -612,92 +1356,92 @@
       {
         "level": 14,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 18,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 24,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 28,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 34,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 38,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 44,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 48,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 54,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 58,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 64,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 68,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 74,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 78,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 84,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 88,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 94,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       },
       {
         "level": 98,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       }
     ]
   },
@@ -720,92 +1464,92 @@
       {
         "level": 14,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 18,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 24,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 28,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 34,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 38,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 44,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 48,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 54,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 58,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 64,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 68,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 74,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 78,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 84,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 88,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 94,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       },
       {
         "level": 98,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       }
     ]
   },
@@ -828,92 +1572,92 @@
       {
         "level": 14,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 18,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 24,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 28,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 34,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 38,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 44,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 48,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 54,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 58,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 64,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 68,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 74,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 78,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 84,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 88,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 94,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       },
       {
         "level": 98,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       }
     ]
   },
@@ -940,47 +1684,47 @@
       {
         "level": 14,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 20
       },
       {
         "level": 24,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 30
       },
       {
         "level": 34,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 40
       },
       {
         "level": 44,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 50
       },
       {
         "level": 54,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 60
       },
       {
         "level": 64,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 70
       },
       {
         "level": 74,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 80
       },
       {
         "level": 84,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 90
       },
       {
         "level": 94,
         "isFreeAccess": true,
-        "maxFreeAccessLevel": 10
+        "maxFreeAccessLevel": 100
       }
     ]
   },
@@ -1188,7 +1932,7 @@
         "level": 54,
         "action": "Active",
         "types": ["Effet"],
-        "effect": "Crée un avorton en solidifiant le chaos environnant. Le lanceur n'a aucun pouvoir sur lui, et ce dernier se comportera de façon complètement imprévisible (mais en règle générale, toujours violemment). L'entité doit être créée comme une créature d'Entre Mondes en utilisant les règles décrites au Chapitre 26 du Livre de base et de Gnose 20, mais le lanceur peut choisir de dépenser volontairement seulement la moitié des PF de la créature, alors que l'autre moitié sera déterminée au hasard par le Meneur de Jeu. Quel que soit le Degré  auquel a été lancé le sort, ce sortilège ne permet pas de créer des créatures d'un niveau supérieur à celui du sorcier, car celles-ci sont basées sur sa présence spirituelle Les avortons du chaos ne peuvent pas recevoir une âme, il est donc impossible de leur donner une vie indépendante grâce au sort Offrir une Âme, ni d'y faire transmigrer un esprit avec le sort Transférer l'Âme ou tout autre moyen.",
+        "effect": "Crée un avorton en solidifiant le chaos environnant. Le lanceur n'a aucun pouvoir sur lui, et ce dernier se comportera de façon complètement imprévisible (mais en règle générale, toujours violemment). L'entité doit être créée comme une créature d'Entre Mondes en utilisant les règles décrites au Chapitre 26 du Livre de base et de Gnose 20, mais le lanceur peut choisir de dépenser volontairement seulement la moitié des PF de la créature, alors que l'autre moitié sera déterminée au hasard par le Meneur de Jeu. Quel que soit le Degré auquel a été lancé le sort, ce sortilège ne permet pas de créer des créatures d'un niveau supérieur à celui du sorcier, car celles-ci sont basées sur sa présence spirituelle Les avortons du chaos ne peuvent pas recevoir une âme, il est donc impossible de leur donner une vie indépendante grâce au sort Offrir une Âme, ni d'y faire transmigrer un esprit avec le sort Transférer l'Âme ou tout autre moyen.",
         "castingLevels": [
           {
             "level": "Initial",
