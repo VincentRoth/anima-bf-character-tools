@@ -9,41 +9,20 @@ import {
   ReferenceTableContainer
 } from 'src/app/shared/models';
 import { copyJson } from 'src/app/shared/utils';
+import { AbstractQueryOnceService } from './abstract-query-once.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ReferenceTableService {
-  private refTables: ReferenceTableContainer;
-  private request: Subject<ReferenceTableContainer>;
-
-  constructor(private http: HttpClient) {
-    this.request = new Subject<ReferenceTableContainer>();
-
-    this.http
-      .get<ReferenceTableContainer>('/assets/data/tables.json')
-      .subscribe({
-        next: data => {
-          this.refTables = data;
-          this.request.next(data);
-          this.request.complete();
-        }
-      });
-  }
-
-  private get(): Observable<ReferenceTableContainer> {
-    return this.request.asObservable();
+export class ReferenceTableService extends AbstractQueryOnceService<
+  ReferenceTableContainer
+> {
+  constructor(http: HttpClient) {
+    super(http, '/assets/data/tables.json');
   }
 
   get books(): ReferenceBook[] {
     return referenceBooks;
-  }
-
-  get referenceTables(): Observable<ReferenceTableContainer> {
-    if (!this.refTables) {
-      return this.get().pipe(map(copyJson));
-    }
-    return of(copyJson(this.refTables));
   }
 
   getByReference(reference: string): Observable<ReferenceTable> {
@@ -51,18 +30,20 @@ export class ReferenceTableService {
     const bookProperty = splitRef[0];
     const tableId = splitRef[1];
     const transform = (data: ReferenceTableContainer) =>
-      data[bookProperty].filter(
-        (table: ReferenceTable) => table.id.toString() === tableId
-      )[0];
-    if (!this.refTables) {
+      copyJson(
+        data[bookProperty].filter(
+          (table: ReferenceTable) => table.id.toString() === tableId
+        )[0]
+      );
+    if (!this.data) {
       return this.get().pipe(map(transform));
     }
-    return of(transform(this.refTables));
+    return of(transform(this.data));
   }
 
   filterByToken(filter: string): Observable<ReferenceTableContainer> {
     const tokens = filter.toLocaleLowerCase().split(' ');
-    return this.referenceTables.pipe(
+    return this.get().pipe(
       map(data => {
         this.books.forEach(book => {
           data[book.reference] = data[book.reference].filter(

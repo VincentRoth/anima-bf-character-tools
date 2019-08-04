@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractSearchComponent } from 'src/app/shared/abstract-search.component';
-import {
-  referenceBooks,
-  ReferenceTable,
-  ReferenceTableContainer
-} from 'src/app/shared/models';
+import { ReferenceTableContainer } from 'src/app/shared/models';
 import { ReferenceTableService } from 'src/app/shared/services';
 
 @Component({
@@ -20,13 +16,13 @@ export class TablesComponent extends AbstractSearchComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.referenceTableService.referenceTables.subscribe({
+    this.referenceTableService.get().subscribe({
       next: data => (this.refTables = data)
     });
   }
 
   get books() {
-    return referenceBooks;
+    return this.referenceTableService.books;
   }
 
   protected search(filter: string) {

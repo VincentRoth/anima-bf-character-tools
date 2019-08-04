@@ -1110,7 +1110,7 @@
         ]
       },
       {
-        "name": "Créer Lumière",
+        "name": "Modifier la Chance",
         "level": 34,
         "action": "Active",
         "types": ["Animique"],
