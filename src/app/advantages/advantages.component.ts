@@ -32,7 +32,7 @@ export class AdvantagesComponent extends AbstractSearchComponent
     });
   }
 
-  get typesKeys(): string[] {
+  get advantageTypes(): string[] {
     return this.types ? Object.keys(this.types).sort() : [];
   }
 

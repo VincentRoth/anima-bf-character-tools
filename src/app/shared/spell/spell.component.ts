@@ -8,10 +8,13 @@ import { Spell } from 'src/app/shared/models';
 })
 export class SpellComponent implements OnInit {
   @Input() spell: Spell;
+  open: boolean;
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.open = false;
+  }
 
   get name() {
     return this.spell.name || 'Sort d\'Accès Libre';
@@ -37,5 +40,9 @@ export class SpellComponent implements OnInit {
 
   isSecondaryPathLevel(): boolean {
     return this.spell.level % 10 === 4;
+  }
+
+  toggleOpen() {
+    this.open = !this.open;
   }
 }

@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 import {
   MagicPath,
   MagicPathStatus,
-  SpellCastingLevel
+  SpellCastingLevel,
+  SpellType
 } from 'src/app/shared/models';
 import { copyJson } from 'src/app/shared/utils';
 import { AbstractQueryOnceService } from './abstract-query-once.service';
@@ -39,38 +40,56 @@ export class SpellService extends AbstractQueryOnceService<MagicPath[]> {
     });
   }
 
-  filterByToken(filter: string): MagicPath[] {
-    if (!filter) {
-      return copyJson(this.data);
+  filterByTokenAndType(filter: string, type: SpellType): MagicPath[] {
+    let filteredPaths = copyJson(this.data);
+    if (!filter && !type) {
+      return filteredPaths;
     }
-    const tokens = filter.toLocaleLowerCase().split(' ');
-    return copyJson(this.data).filter((magicPath: MagicPath) => {
-      magicPath.spells = magicPath.spells.filter(
-        spell =>
-          !spell.isFreeAccess &&
-          tokens.reduce((isSelected: boolean, token: string) => {
-            return (
-              isSelected &&
-              (spell.name.toLocaleLowerCase().includes(token) ||
-                spell.level.toString().includes(token) ||
-                spell.action.toLocaleLowerCase().includes(token) ||
-                spell.types.some(type =>
-                  type.toLocaleLowerCase().includes(token)
-                ) ||
-                spell.effect.toLocaleLowerCase().includes(token) ||
-                spell.castingLevels.some(
-                  (castingLevel: SpellCastingLevel) =>
-                    castingLevel.effect.toLocaleLowerCase().includes(token) ||
-                    castingLevel.maintenance.toString().includes(token) ||
-                    castingLevel.requiredIntelligence
-                      .toString()
-                      .includes(token) ||
-                    castingLevel.zeon.toString().includes(token)
-                ))
-            );
-          }, true)
-      );
-      return !!magicPath.spells.length;
-    });
+    if (type) {
+      filteredPaths = filteredPaths
+        .map((magicPath: MagicPath) => {
+          magicPath.spells = magicPath.spells.filter(
+            spell => !spell.isFreeAccess && spell.types.includes(type)
+          );
+          return magicPath;
+        })
+        .filter((magicPath: MagicPath) => magicPath.spells.length);
+    }
+    if (filter) {
+      const tokens = filter.toLocaleLowerCase().split(' ');
+      filteredPaths = filteredPaths
+        .map((magicPath: MagicPath) => {
+          magicPath.spells = magicPath.spells.filter(
+            spell =>
+              !spell.isFreeAccess &&
+              tokens.reduce((isSelected: boolean, token: string) => {
+                return (
+                  isSelected &&
+                  (spell.name.toLocaleLowerCase().includes(token) ||
+                    spell.level.toString().includes(token) ||
+                    spell.action.toLocaleLowerCase().includes(token) ||
+                    spell.types.some(type =>
+                      type.toLocaleLowerCase().includes(token)
+                    ) ||
+                    spell.effect.toLocaleLowerCase().includes(token) ||
+                    spell.castingLevels.some(
+                      (castingLevel: SpellCastingLevel) =>
+                        castingLevel.effect
+                          .toLocaleLowerCase()
+                          .includes(token) ||
+                        castingLevel.maintenance.toString().includes(token) ||
+                        castingLevel.requiredIntelligence
+                          .toString()
+                          .includes(token) ||
+                        castingLevel.zeon.toString().includes(token)
+                    ))
+                );
+              }, true)
+          );
+          return magicPath;
+        })
+        .filter((magicPath: MagicPath) => magicPath.spells.length);
+    }
+    return filteredPaths;
   }
 }

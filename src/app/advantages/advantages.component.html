@@ -3,7 +3,7 @@
   <mat-form-field class="flex">
     <input
       matInput
-      placeholder="Filtrer"
+      placeholder="Rechercher"
       (keyup)="searchAdvantages($event.target.value)"
     />
   </mat-form-field>
@@ -11,7 +11,7 @@
     <mat-label>Type</mat-label>
     <mat-select (selectionChange)="searchType($event.value)">
       <mat-option></mat-option>
-      <mat-option *ngFor="let type of typesKeys" [value]="type">
+      <mat-option *ngFor="let type of advantageTypes" [value]="type">
         {{ type }} ({{ types[type] }})
       </mat-option>
     </mat-select>

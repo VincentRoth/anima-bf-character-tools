@@ -667,7 +667,7 @@
         "level": 46,
         "action": "Active",
         "types": ["Attaque"],
-        "effect": "Libère une sphère d'énergie lumineuse qui attaque sur le Mode Énergie. Le sort peut être contrôlé avec la Projection Magique du sorcier jusqu'au moment de l'impact. Si une cible esquive l'attaque d'une Sphère Chercheuse, celle-ci pourra continuer à attaquer au round suivant car elle n'aura pas été détruite. Elle ne disparaîtra qu'après avoir infligé des dégâts ou avoir été bloquée. Si le sorcier abandonne son contrôle sur la sphère, elle agit indépendamment et attaque à chaque round la dernière cible fixée avec sa propre Projection magique, qui est indépendante de celle du sorcier.",
+        "effect": "Libère une sphère d'énergie lumineuse qui attaque sur le Mode Énergie. Le sort peut être contrôlé avec la Projection magique du sorcier jusqu'au moment de l'impact. Si une cible esquive l'attaque d'une Sphère Chercheuse, celle-ci pourra continuer à attaquer au round suivant car elle n'aura pas été détruite. Elle ne disparaîtra qu'après avoir infligé des dégâts ou avoir été bloquée. Si le sorcier abandonne son contrôle sur la sphère, elle agit indépendamment et attaque à chaque round la dernière cible fixée avec sa propre Projection magique, qui est indépendante de celle du sorcier.",
         "castingLevels": [
           {
             "level": "Initial",

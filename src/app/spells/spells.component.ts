@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractSearchComponent } from 'src/app/shared/abstract-search.component';
-import { MagicPath } from 'src/app/shared/models';
+import { MagicPath, SpellType } from 'src/app/shared/models';
 import { SpellService } from 'src/app/shared/services';
 
 @Component({
@@ -10,22 +10,37 @@ import { SpellService } from 'src/app/shared/services';
 })
 export class SpellsComponent extends AbstractSearchComponent implements OnInit {
   magicPaths: MagicPath[];
+  private filter: string;
+  private selectedType: SpellType;
 
   constructor(private spellService: SpellService) {
     super();
-  }
-
-  protected search(filter: string): void {
-    this.magicPaths = this.spellService.filterByToken(filter);
-  }
-
-  handleFilter(filter: string) {
-    this.handleSearch(filter);
   }
 
   ngOnInit() {
     this.spellService.get().subscribe({
       next: data => (this.magicPaths = data)
     });
+  }
+
+  get spellypes(): SpellType[] {
+    return Object.values(SpellType).sort();
+  }
+
+  protected search(): void {
+    this.magicPaths = this.spellService.filterByTokenAndType(
+      this.filter,
+      this.selectedType
+    );
+  }
+
+  searchSpells(filter: string) {
+    this.filter = filter;
+    this.handleSearch(filter);
+  }
+
+  searchType(type: SpellType) {
+    this.selectedType = type;
+    this.handleSearch();
   }
 }

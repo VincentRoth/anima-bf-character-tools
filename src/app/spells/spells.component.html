@@ -4,12 +4,22 @@
   <mat-form-field class="flex">
     <input
       matInput
-      placeholder="Filtrer"
-      (keyup)="handleFilter($event.target.value)"
+      placeholder="Rechercher"
+      (keyup)="searchSpells($event.target.value)"
     />
+  </mat-form-field>
+  <mat-form-field class="flex">
+    <mat-label>Type de sort</mat-label>
+    <mat-select (selectionChange)="searchType($event.value)">
+      <mat-option></mat-option>
+      <mat-option *ngFor="let type of spellTypes" [value]="type">
+        {{ type }}
+      </mat-option>
+    </mat-select>
   </mat-form-field>
 </div>
 
-<ng-container *ngFor="let magicPath of magicPaths">
-  <app-magic-path [magicPath]="magicPath"></app-magic-path>
-</ng-container>
+<app-magic-path
+  *ngFor="let magicPath of magicPaths"
+  [magicPath]="magicPath"
+></app-magic-path>
