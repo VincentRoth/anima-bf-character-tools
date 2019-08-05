@@ -318,7 +318,7 @@
         "level": 22,
         "action": "Active",
         "types": ["Attaque"],
-        "effect": "Projette une décharge d'énergie magique basée sur la Lumière. L'attaque se fait sur le Mode Énergie. ",
+        "effect": "Projette une décharge d'énergie magique basée sur la Lumière. L'attaque se fait sur le Mode Énergie.",
         "castingLevels": [
           {
             "level": "Initial",
@@ -584,7 +584,7 @@
         ]
       },
       {
-        "name": "Détruire les Sentiments Négatifs ",
+        "name": "Détruire les Sentiments Négatifs",
         "level": 40,
         "action": "Active",
         "types": ["Animique"],
@@ -738,7 +738,7 @@
         "isDailyMaintenance": true
       },
       {
-        "name": "S'introduire dans les Rêves ",
+        "name": "S'introduire dans les Rêves",
         "level": 50,
         "action": "Active",
         "types": ["Animique"],
@@ -818,9 +818,308 @@
         "maxFreeAccessLevel": 60
       },
       {
+        "name": "Bénédiction",
+        "level": 56,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "La Bénédiction accorde une énergie incroyable d'origine surnaturelle aux personnes autour du sorcier. Ceux qui sont sous son influence reçoivent un bonus à toutes leurs actions et Résistances. Les bénéfices de ce sort ne se cumulent pas, par conséquent un personnage n'obtiendra pas un double bonus s'il se trouve dans une zone avec deux sorts de Bénédiction.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "+10 à toutes les actions / +10 aux Résistances / 5 m de rayon.",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "+20 à toutes les actions / +20 aux Résistances / 25 m de rayon.",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "+20 à toutes les actions / +30 aux Résistances / 50 m de rayon.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "+30 à toutes les actions / +30 aux Résistances / 150 m de rayon.",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Créer des Sentiments Positifs",
+        "level": 58,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort éveille un type de sentiment positif comme l'amour, le plaisir ou l'amitié, chez les cibles désignées par le sorcier qui échouent au test de Résistance du sort. Les personnes affectées peuvent refaire le test une fois par jour.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "120 RMys ou RPsy / 20 m de rayon.",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "160 RMys ou RPsy / 100 m de rayon.",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "180 RMys ou RPsy / 250 m de rayon.",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "220 RMys ou RPsy / 500 m de rayon.",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Voir Réellement",
+        "level": 60,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet à la personne affectée par ce sort de percevoir les forces surnaturelles invisibles pour l'œil humain. Elle pourra voir la magie, les matrices psychiques et les êtres invisibles ou animiques. Bien qu'il ne fonctionne pas contre les sorts d'Illusion, qui s'attaquent à l'esprit et non aux sens, tous ceux utilise Voir Réellement contre les illusions visuelles peuvent appliquer un bonus à leur RMys du fait qu'il leur est plus facile de s'apercevoir de leur fausseté.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "Peut voir la magie, les matrices psychiques et les êtres invisibles / +50 à la RMys contre les illusions.",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Identique au Degré Initial, mais permet aussi de voir en plus les êtres animiques.",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 14,
+            "effect": "Identique au Degré Intermédiaire, mais accorde +75 à la RMys contre les illusions.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 16,
+            "effect": "Identique au Degré Avancé, mais accorde +100 à la RMys contre les illusions.",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Bouclier Anti-Négatif",
+        "level": 62,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Enchante une zone déterminée pour la rendre impénétrable pour les êtres basés naturellement sur les sentiments négatifs ou l'Obscurité. Toute créature de ce type pénétrant dans la zone d'effet du sort doit effectuer à chaque round un test de RMys sous peine de perdre autant de Points de Vie que sa marge d'échec. De plus, si elle échoue à ce test, la créature subit immédiatement un malus de -40 à toutes ses actions tant qu'elle reste à l'intérieur de la zone d'effet. Le sort reste à l'endroit où il a été lancé.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 7,
+            "effect": "120 RMys / 20 m de rayon.",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "140 RMys / 100 m de rayon.",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys / 250 m de rayon.",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys / 500 m de rayon.",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 64,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 70
+      },
+      {
+        "name": "Trouver",
+        "level": 66,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Grâce au sort Trouver, un sorcier obtient la capacité de localiser une personne, un objet ou un lieu, et de connaître son emplacement exact à ce moment précis, quelle que soit la distance qui l'en sépare. Il peut chercher une chose précise ou générique, ou simplement quelque chose qui répond à une condition déterminée. Il peut par exemple tenter de localiser une ville, le voleur qui lui a volé sa balance (et qu'il ne connaît pas), ou même la demoiselle de sang royal la plus proche de lui. Les objets, les lieux ou les personnes affectés doivent réussir un test de RMys pour éviter d'être repérés. Les lieux de grande taille appliquent un malus de -40 à ce test.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 160,
+            "requiredIntelligence": 8,
+            "effect": "140 RMys.",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "180 RMys.",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 260,
+            "requiredIntelligence": 13,
+            "effect": "220 RMys.",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 320,
+            "requiredIntelligence": 16,
+            "effect": "260 RMys.",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Rétablir",
+        "level": 68,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort annule les malus que subit un individu déterminé. Les malus annulés peuvent avoir pour origine la fatigue, la faim, des dégâts physiques ou même des sorts, mais en aucun cas des carences physiques comme un membre amputé ou équivalent. La restitution permet en outre de récupérer une certaine quantité de points de Fatigue dépensés.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "Élimine jusqu’à -40 de malus à toutes les actions et rend 2 points de Fatigue.",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "Élimine jusqu’à -80 de malus à toutes les actions et rend 5 points de Fatigue.",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "Élimine jusqu’a -120 de malus à toutes les actions et rend 10 points de Fatigue.",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "Élimine tous les malus et rend tous les des points de Fatigue.",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Symbole Hypnotique",
+        "level": 70,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Forme un symbole ou un spectacle lumineux dans un lieu déterminé, qui fascine et mystifie tous ceux qui l'observent. Tous les individus regardant le Symbole ne peuvent rien faire d'autre que demeurer absorbés dans sa contemplation et, tant qu'ils sont affectés par le sort, ils ne peuvent faire que des actions passives et n'ont pas la possibilité de se déplacer. Les observateurs doivent effectuer un test de Résistance pour éviter ces effets.  Ils ont le droit d'effectuer un nouveau test de Résistance chaque fois qu'ils subissent une attaque. Regarder directement le Symbole Hypnotique est suffisant pour être affecté.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "Visible dans un rayon de 1 km / 120 RMys ou RPsy.",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Visible dans un rayon de 5 km / 150 RMys ou RPsy.",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 14,
+            "effect": "Visible dans un rayon de 15 km / 180 RMys ou RPsy.",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 360,
+            "requiredIntelligence": 16,
+            "effect": "Visible dans un rayon de 25 km / 220 RMys ou RPsy.",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Lumière Catastrophique",
+        "level": 72,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Projette une décharge d'énergie basée sur la Lumière qui attaque sur le Mode Énergie dans toute une zone à partir du point d'impact.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "Dégâts 120 / 25 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 150 / 100 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 14,
+            "effect": "Dégâts 200 / 150 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 16,
+            "effect": "Dégâts 250 / 250 m de rayon.",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 74,
@@ -828,14 +1127,426 @@
         "maxFreeAccessLevel": 80
       },
       {
+        "name": "Objets Lumineux Matériels",
+        "level": 76,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Forme un objet physique d'énergie lumineuse, qu'il soit aussi complexe qu'une montre ou aussi simple qu'une épée. Bien que fait de lumière, il a une consistance physique. La Présence maximale de l'objet et sa qualité sont déterminées par le Degré du sort. Exceptionnellement, la qualité de l'objet n'influe pas sur sa Présence.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 10,
+            "effect": "Présence 60 / Qualité +5.",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Présence 100 / Qualité +10.",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 14,
+            "effect": "Présence 140 / Qualité +10.",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 16,
+            "effect": "Présence 180 / Qualité +15.",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Transmission par la Lumière",
+        "level": 78,
+        "action": "Active",
+        "types": ["Effet", "Animique"],
+        "effect": "Transporte instantanément les individus ou objets désignés par le sorcier d'une source de lumière à une autre. Si une cible souhaite résister, elle doit réussir un test de RMys. La distance comme la présence affectable maximales sont déterminées par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "100 km / Présence 250 / 120 RMys.",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 360,
+            "requiredIntelligence": 12,
+            "effect": "1000 km / Présence 500 / 140 RMys.",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 14,
+            "effect": "5000 km / Présence 1000 / 180 RMys.",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 16,
+            "effect": "15000 km / Présence 2000 / 200 RMys.",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Seigneur des Rêves",
+        "level": 80,
+        "action": "Active",
+        "types": ["Effet", "Animique"],
+        "effect": "Permet de dominer n'importe quel type de rêve chez un individu échouant au test de RMys du sort. Le sorcier a la capacité de prendre le contrôle du monde onirique d'un dormeur en le modifiant comme s'il avait une Gnose de 45. Si le rêve s'alimente d'énergie négative, autrement dit qu'il se change en cauchemar, la Gnose du sorcier ne sera que de 30. Les sorts que le sorcier lance uniquement grâce à cette Gnose (comme par exemple la Magie Divine) n'ont aucun effets hors de la zone d’influence du sort, et leurs effets disparaissent lorsque le sorcier quitte le rêve ou la Veille. Ce sort a aussi une deuxième fonction si le sorcier se trouve dans la Veille.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys.",
+            "maintenance": 60
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 400,
+            "requiredIntelligence": 14,
+            "effect": "150 RMys / Si le sorcier se retrouve dans un lieu de la Veille fortement influencé par les énergies positives, il contrôle en plus on environnement et obtient les pouvoirs d’une créature de Gnose 40. Sa zone est neutre, la Gnose sera de 30. Ce sort n’affecte la zone de la Veille où il a été lancé, et ceci tant qu'elle n'abrite pas une entité de Gnose similaire.",
+            "maintenance": 65
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "160 RMys / Identique au Degré Intermédiaire, mais la Gnose du sorcier est de 35 dans les zones neutres.",
+            "maintenance": 70
+          },
+          {
+            "level": "Arcane",
+            "zeon": 750,
+            "requiredIntelligence": 18,
+            "effect": "180 RMys / Identique au Degré Avancé, si ce n'est que le sort n'a pas de limites spatiales et qu'il affecte toute partie de la Veille influencées par des énergies positives.",
+            "maintenance": 80
+          }
+        ],
+        "isOldDailyMaintenance": true
+      },
+      {
+        "name": "Création de Lumière",
+        "level": 82,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée un être lumineux avec l'apparence de la vie, sous le contrôle absolu du sorcier. Cet être sera conçu comme une créature d'Entre Mondes, en utilisant les pouvoirs et les limitations des élémentaires de Lumière du Chapitre 26. Pour calculer son niveau maximal, il faut se servir des règles du sort Créer Être, niveau 78 de la voir de Création.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "Niveau 1.",
+            "maintenance": 50
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "Niveau 3.",
+            "maintenance": 70
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 14,
+            "effect": "Niveau 6.",
+            "maintenance": 100
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 16,
+            "effect": "Niveau 10.",
+            "maintenance": 140
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 84,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 90
       },
       {
+        "name": "Prisme Réfléchissant",
+        "level": 86,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Crée un halo de lumière pure qui fonctionne comme un bouclier retournant à son envoyeur tout sort, pourvoir psychique d'attaque ou technique de Ki effectué à distance. Pour que le pouvoir soit renvoyé, le sorcier doit réussir sa défense et un test de choc contre l'équivalent d'une décharge dont les Dégâts sont déterminés par le Degré du sort. S'il s'agit d'une attaque de zone, elle ne sera pas renvoyée en totalité et affectera bormalement toutes les cibles dans la zone affectée à l'exception du sorcier. Ce sort ne renvoie pas les effets Animiques ou Ésotériques. Le sorcier peut utiliser sa Projection magique pour rediriger l'attaque vers la cible de son choix.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 160,
+            "requiredIntelligence": 10,
+            "effect": "100 contre les chocs / 800 Points de Vie.",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 13,
+            "effect": "120 contre les chocs / 1500 Points de Vie.",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "140 contre les chocs / 3000 Points de Vie.",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 17,
+            "effect": "180 contre les chocs / 6000 Points de Vie.",
+            "maintenance": 40
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Omniscience Rayonnante",
+        "level": 88,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet au sorcier d'être omniscient vis-à-vis de tout événement ou pensée autour de lui. Cela n'affecte que les individus avec une Gnose inférieure à celle du personnage et dont la Présence n'est pas supérieure à cd qui est permis par le Degré du sort. Le sorcier sait automatiquement tout ce que se passe à l'intérieur de la zone et ce que pensent les personnes. Il n'y a pas de test de Résistance possible.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "Présence maximale 60 / 500 m de rayon.",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximale 80 / 2 km de rayon.",
+            "maintenance": 50
+          },
+          {
+            "level": "Avancé",
+            "zeon": 400,
+            "requiredIntelligence": 15,
+            "effect": "Présence maximale 100 / 10 km de rayon.",
+            "maintenance": 60
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 18,
+            "effect": "Présence maximale 120 / 50 km de rayon.",
+            "maintenance": 65
+          }
+        ]
+      },
+      {
+        "name": "Prédire",
+        "level": 90,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet de visualiser les événements à venir qui se dérouleront autour d'une personne, d'un objet ou d'un lieu. Prédire montre au sorcier le destin le plus probable qui attendquelqu'un ou quelque chose, lui donnant des informations détaillées sur ce qui va se passer. L'intervalle de temps ne pourra pas s'étendre au-delà de ce qui est autorisé par le Degré du sort. Le MJ doit détailler avec honnêteté au sorcier les événements qui vont se dérouler. Cependant, ceux-ci ne sont pas inéluctables, le sort ne prédit que le destin le plus probable, et il existe toujours la possibilité qu'il puisse être modifié par l'intervention de puissances majeures ou de personnages avec une Gnose bien supérieure à leur Natura.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "Un an.",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "Cinq ans.",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 14,
+            "effect": "Cinquante ans / S'il s'agit d’une prédiction devant arriver sous moins d’un jour, elle sera particulièrement exacte.",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 16,
+            "effect": "Un siècle /  S'il s'agit d’une prédiction devant se réaliser dans les 10 ans, elle sera particulièrement exacte.",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Prison de Lumière",
+        "level": 92,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Emprisonne une créature dans un monde de lumière impossible à traverser, un univers dans lequel elle ne pourra pas interagir avec l'extérieur, ni le contraire. Tant que la cible se trouve à l'intérieur de la prison, elle n'a pas conscience de ce qui se passe dehors et vice-versa. Pour briser le sortilège de l'intérieur, on considère que la prison est une créature à Encaissement avec un IP de 10, et que sa résistance est déterminée par le Degré du sort. Cependany, tout dégâts qui lui est infligé depuis l’extérieur double automatiquement. La prison régénère les dégâts subis avec une Régénération de 19. Si la cible du sort échoue au test de RMys, elle est affectée par le sortilège et n'aura droit à aucun test ultérieur. Si elle désire sortir, elle devra être capable de briser sa prison. Le lanceur du sort ne peut s'enfermer dans sa propre Prison de Lumière.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 14,
+            "effect": "140 RMys / La prison possède 10 000 Points de Vie.",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 16,
+            "effect": "180 RMys / La prison possède 250 000 Points de Vie.",
+            "maintenance": 70
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 18,
+            "effect": "220 RMys / La prison possède 500 000 Points de Vie.",
+            "maintenance": 100
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 20,
+            "effect": "240 RMys / La prison ne peut être brisée de l’intérieur, mais elle a 500 000 Points de Vie en cas d'attaque extérieure.",
+            "maintenance": 160
+          }
+        ],
+        "isOldDailyMaintenance": true
+      },
+      {
         "level": 94,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 100
+      },
+      {
+        "name": "Essence de Lumière",
+        "level": 96,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet au sorcier ou à sa cible d'entrer dans un état de léthargie absolue, tandis que son corps ne fait plus qu'un avec la Lumière. L'entité abandonne le monde et commence son ascension vers le flux des âmes pour se nourrir de son énergie. À l'écart et inconscient de tout ce qui se passe à l'extérieur, le personnage multiplie par 10 sa régénération Zéonique et soigne ses blessures avec une Régénération de 16. Le temps durant leuel il peut rester hors du monde est déterminé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Un jour.",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 400,
+            "requiredIntelligence": 14,
+            "effect": "Une semaine.",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 16,
+            "effect": "Un mois.",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 18,
+            "effect": "Un an.",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Ascension",
+        "level": 98,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sort échange l'essence physique du sorcier contre de l'énergie divine, transformant son esprit en pure puissance surnaturelle. Ce faisant le sorcier ou le personnage désigné par celui-ci augmente sa Gnose jusqu’à la quantié maximale déterminé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 500,
+            "requiredIntelligence": 14,
+            "effect": "Gnose maximale 30.",
+            "maintenance": 30
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 1000,
+            "requiredIntelligence": 16,
+            "effect": "Gnose maximale 35.",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 2000,
+            "requiredIntelligence": 18,
+            "effect": "Gnose maximale 40.",
+            "maintenance": 45
+          },
+          {
+            "level": "Arcane",
+            "zeon": 5000,
+            "requiredIntelligence": 20,
+            "effect": "Gnose maximale 45.",
+            "maintenance": 50
+          }
+        ],
+        "isOldDailyMaintenance": true
+      },
+      {
+        "name": "Holocauste de Lumière",
+        "level": 100,
+        "action": "Active",
+        "types": ["Attaque", "Animique"],
+        "effect": "Ce sort déchaîne la puissance de la Lumière dans son état le plus pur, rasant tout ce qui se trouve sur son passage aussi bien dans le monde matériel que spirituel. L'énergie libérée arrache et dévore toute chose, unifiant son existence à celle de la Lumière. Même les créatures élémentaire de Lumière sont assimilées par son pouvoir. L'Holocauste crée une grande coupole lumineuse qui attaque sur le Mode Énergie. Tout être subissant des dégâts, aussi minimes soient-ils, doit réussir un test de RMys contre 160 sous peine d'être unifié à la Lumière et, de fait, détruit automatiquement corps et âme. Il n'est pas possible de désigner des cibles précises dans le rayon du sort qui affecte tout de la même manière, à l'exception du sorcier.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 600,
+            "requiredIntelligence": 14,
+            "effect": "Dégâts 350 / 100 m de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 1000,
+            "requiredIntelligence": 16,
+            "effect": "Dégâts 500 / 100 km de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 2500,
+            "requiredIntelligence": 18,
+            "effect": "Dégâts 800 / 10 000 km de rayon.",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 10000,
+            "requiredIntelligence": 20,
+            "effect": "Dégâts 1 000 / 1 UA de rayon.",
+            "maintenance": 0
+          }
+        ]
       }
     ]
   },
@@ -1821,7 +2532,7 @@
         "level": 24,
         "action": "Active",
         "types": ["Effet"],
-        "effect": "Le sorcier ou le personnage subit une altération temporaire de sa nature. Il est alors capable de réaliser avec beaucoup plus de facilité des actions extrêmes, qu'elles soient bonnes ou mauvaises. Par conséquent, il augmente ses chances de Maladresse et de Jet Ouvert, aux valeurs indiquées par le Degré du sort. Par exemple, quelqu'un sans maîtrise qui est affecté par ce sort en Degré Initial subit une Maladresse avec un jet de 5 ou moins et obtient un Jet Ouvert avec un jet de 85 ou plus. ",
+        "effect": "Le sorcier ou le personnage subit une altération temporaire de sa nature. Il est alors capable de réaliser avec beaucoup plus de facilité des actions extrêmes, qu'elles soient bonnes ou mauvaises. Par conséquent, il augmente ses chances de Maladresse et de Jet Ouvert, aux valeurs indiquées par le Degré du sort. Par exemple, quelqu'un sans maîtrise qui est affecté par ce sort en Degré Initial subit une Maladresse avec un jet de 5 ou moins et obtient un Jet Ouvert avec un jet de 85 ou plus.",
         "castingLevels": [
           {
             "level": "Initial",
@@ -1928,7 +2639,7 @@
         ]
       },
       {
-        "name": "Aberration Chaotique ",
+        "name": "Aberration Chaotique",
         "level": 54,
         "action": "Active",
         "types": ["Effet"],
@@ -2039,7 +2750,7 @@
         ]
       },
       {
-        "name": "Contrôle du Chaos ",
+        "name": "Contrôle du Chaos",
         "level": 84,
         "action": "Active",
         "types": ["Effet", "Animique"],
