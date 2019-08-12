@@ -27,6 +27,8 @@ export interface SpellCastingLevel {
   maintenance: number;
 }
 
+export const FREE_ACCESS_LEVEL = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
 export interface Spell {
   name: string;
   // For free access spell, level is a ten

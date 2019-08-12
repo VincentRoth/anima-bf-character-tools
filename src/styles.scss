@@ -33,8 +33,13 @@ details {
         cursor: pointer;
         border-bottom: 1px solid $light-grey;
 
-        h3 {
+        h3,
+        h4 {
             display: inline;
+        }
+
+        h4 {
+            padding: 0 1rem;
         }
     }
 }

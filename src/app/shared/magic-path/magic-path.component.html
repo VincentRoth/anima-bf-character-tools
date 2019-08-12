@@ -1,7 +1,7 @@
 <details>
   <summary>
     <h3>{{ magicPath.name }}</h3>
-    <span *ngIf="magicPath.status !== eMagicPathStatus.FREE" class="right">
+    <span *ngIf="!isFreeAccess()" class="right">
       Voie {{ magicPath.status }}
     </span>
   </summary>
@@ -35,10 +35,23 @@
       <br />
     </ng-container>
   </p>
-  <div class="flex flex-row flex-center">
+  <div class="flex flex-row flex-center" *ngIf="!isFreeAccess()">
     <app-spell
       *ngFor="let spell of magicPath.spells"
       [spell]="spell"
     ></app-spell>
   </div>
+  <ng-container *ngIf="isFreeAccess()">
+    <details *ngFor="let level of getFreeAccessSpellLevels()">
+      <summary>
+        <h4>Niveau {{ getFreeAccessSpellLevel(level) }}</h4>
+      </summary>
+      <div class="flex flex-row flex-center">
+        <app-spell
+          *ngFor="let spell of getSpellsByLevel(level)"
+          [spell]="spell"
+        ></app-spell>
+      </div>
+    </details>
+  </ng-container>
 </details>

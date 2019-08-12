@@ -1,13 +1,13 @@
 <mat-card class="spell-card" (click)="toggleOpen()">
   <mat-card-header>
     <mat-card-title class="spell-title">
-      {{ open ? '▾' : '▸' }} {{ spell.level }}. {{ name }}
+      {{ open ? '▾' : '▸' }} {{ getTitle() }}
     </mat-card-title>
   </mat-card-header>
   <mat-card-content class="spell-content" [ngClass]="{ hidden: !open }">
     <div *ngIf="!spell.isFreeAccess">
       <p>
-        <span class="bold">Niveau : </span>{{ spell.level }}
+        <span class="bold">Niveau : </span>{{ getLevel() }}
         <span class="right">
           <span class="bold">Action : </span>{{ spell.action }}
         </span>
@@ -49,6 +49,10 @@
         <span *ngIf="spell.isDailyMaintenance" class="bold">
           Quotidien
         </span>
+      </p>
+      <p *ngIf="spell.forbiddenPaths">
+        <span class="bold">Voies fermées : </span>
+        {{ forbiddenPaths }}
       </p>
     </div>
 

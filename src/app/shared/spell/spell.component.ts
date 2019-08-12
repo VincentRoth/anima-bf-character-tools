@@ -16,10 +16,6 @@ export class SpellComponent implements OnInit {
     this.open = false;
   }
 
-  get name() {
-    return this.spell.name || 'Sort d\'Accès Libre';
-  }
-
   get maintenance() {
     if (
       this.spell.castingLevels &&
@@ -36,6 +32,31 @@ export class SpellComponent implements OnInit {
         .join(' / ');
     }
     return 'Non';
+  }
+
+  get forbiddenPaths() {
+    if (this.spell.forbiddenPaths.length) {
+      return this.spell.forbiddenPaths.join(', ');
+    }
+    return 'Aucun';
+  }
+
+  isFreeAccessSpell(): boolean {
+    return !!this.spell.forbiddenPaths;
+  }
+
+  getTitle(): string {
+    if (this.isFreeAccessSpell()) {
+      return this.spell.name;
+    }
+    return `${this.spell.level}. ${this.spell.name || 'Sort d\'Accès Libre'}`;
+  }
+
+  getLevel(): string | number {
+    if (this.isFreeAccessSpell()) {
+      return `${this.spell.level - 9}-${this.spell.level}`;
+    }
+    return this.spell.level;
   }
 
   isSecondaryPathLevel(): boolean {
