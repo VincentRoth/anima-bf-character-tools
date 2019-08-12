@@ -35,7 +35,7 @@ export class SpellComponent implements OnInit {
         )
         .join(' / ');
     }
-    return 'Aucun';
+    return 'Non';
   }
 
   isSecondaryPathLevel(): boolean {
