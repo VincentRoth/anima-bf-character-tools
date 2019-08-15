@@ -23,7 +23,7 @@ export class SpellsComponent extends AbstractSearchComponent implements OnInit {
     });
   }
 
-  get spellypes(): SpellType[] {
+  get spellTypes(): SpellType[] {
     return Object.values(SpellType).sort();
   }
 

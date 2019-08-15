@@ -31,14 +31,14 @@ export class SpellComponent implements OnInit {
         )
         .join(' / ');
     }
-    return 'Non';
+    return this.spell.specialMaintenance || 'Non';
   }
 
   get forbiddenPaths() {
     if (this.spell.forbiddenPaths.length) {
       return this.spell.forbiddenPaths.join(', ');
     }
-    return 'Aucun';
+    return 'Aucune';
   }
 
   isFreeAccessSpell(): boolean {

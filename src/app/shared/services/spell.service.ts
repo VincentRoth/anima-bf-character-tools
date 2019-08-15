@@ -49,7 +49,9 @@ export class SpellService extends AbstractQueryOnceService<MagicPath[]> {
       filteredPaths = filteredPaths
         .map((magicPath: MagicPath) => {
           magicPath.spells = magicPath.spells.filter(
-            spell => !spell.isFreeAccess && spell.types.includes(type)
+            spell =>
+              !spell.isFreeAccess &&
+              spell.types.some(spellType => spellType.startsWith(type))
           );
           return magicPath;
         })
@@ -68,8 +70,8 @@ export class SpellService extends AbstractQueryOnceService<MagicPath[]> {
                   (spell.name.toLocaleLowerCase().includes(token) ||
                     spell.level.toString().includes(token) ||
                     spell.action.toLocaleLowerCase().includes(token) ||
-                    spell.types.some(type =>
-                      type.toLocaleLowerCase().includes(token)
+                    spell.types.some(spellType =>
+                      spellType.toLocaleLowerCase().includes(token)
                     ) ||
                     spell.effect.toLocaleLowerCase().includes(token) ||
                     spell.castingLevels.some(
@@ -82,7 +84,13 @@ export class SpellService extends AbstractQueryOnceService<MagicPath[]> {
                           .toString()
                           .includes(token) ||
                         castingLevel.zeon.toString().includes(token)
-                    ))
+                    ) ||
+                    (spell.specialMaintenance &&
+                      spell.specialMaintenance
+                        .toLocaleLowerCase()
+                        .includes(token)) ||
+                    (spell.isDailyMaintenance &&
+                      'Quotidien'.toLocaleLowerCase().includes(token)))
                 );
               }, true)
           );

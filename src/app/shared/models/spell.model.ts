@@ -37,6 +37,7 @@ export interface Spell {
   types: SpellType[];
   effect: string;
   castingLevels: SpellCastingLevel[];
+  specialMaintenance?: string;
   isDailyMaintenance?: boolean;
   forbiddenPaths?: string[];
   isFreeAccess?: boolean;

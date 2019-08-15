@@ -20,7 +20,10 @@
         <thead>
           <tr class="bold">
             <th>Degré</th>
-            <th *ngFor="let castingLevel of spell.castingLevels">
+            <th
+              class="text-center"
+              *ngFor="let castingLevel of spell.castingLevels"
+            >
               {{ castingLevel.level }}
             </th>
           </tr>
@@ -28,13 +31,19 @@
         <tbody>
           <tr>
             <td class="bold">Zéon</td>
-            <td *ngFor="let castingLevel of spell.castingLevels">
+            <td
+              class="text-center"
+              *ngFor="let castingLevel of spell.castingLevels"
+            >
               {{ castingLevel.zeon }}
             </td>
           </tr>
           <tr>
             <td class="bold">Int. R.</td>
-            <td *ngFor="let castingLevel of spell.castingLevels">
+            <td
+              class="text-center"
+              *ngFor="let castingLevel of spell.castingLevels"
+            >
               {{ castingLevel.requiredIntelligence }}
             </td>
           </tr>
