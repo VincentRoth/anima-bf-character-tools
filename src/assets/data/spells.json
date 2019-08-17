@@ -4664,9 +4664,194 @@
     "description": "Cette voie permet d'utiliser le pouvoir du flux des âmes pour détruire la réalité elle-même. Ses sorts affectent autant le monde matériel que spirituel. Son pouvoir est par nature très offensif.",
     "spells": [
       {
+        "name": "Fragilité",
+        "level": 2,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Altère la solidité d'un objet en diminuant sa résistance et en le rendant cassant. Tout objet affecté perd automatiquement son Seuil d'Invulnérabilité et, dans le cas d'une arme ou d'une armure, réduit sa Solidité.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "-2 à sa Solidité / Présence maximale affectable 30",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "-4 à sa Solidité / Présence maximale affectable 60",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "-8 à sa Solidité / Présence maximale affectable 90",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "-12 à sa Solidité / Présence maximale affectable 120",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
         "level": 4,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 10
+      },
+      {
+        "name": "Démanteler",
+        "level": 6,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Démantèle un objet formé de plusieurs pièces. Ce sort affecte uniquement les choses inanimées.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 5,
+            "effect": "Présence maximale 20",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "Présence maximale 40",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "Présence maximale 60",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximale 80",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Détruire Intensités",
+        "level": 8,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Détruit les intensités d'un des trois types d'énergie existant : le froid, le feu ou l'électricité. Les êtres formés de ces éléments perdent 5 Points de Vie par intensité retirée s'ils échouent au test de RMys du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 5,
+            "effect": "100 RMys / 1 intensité",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "120 RMys / 5 intensités",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys / 10 intensités",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys / 15 intensités",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Destruction Mineure",
+        "level": 10,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Affecte l'essence d'un objet sans vie, le détruisant complètement, tant que sa Présence ne dépasse pas ce qui est autorisé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "Présence maximale 20",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Présence maximale 40",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 11,
+            "effect": "Présence maximale 60",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 180,
+            "requiredIntelligence": 13,
+            "effect": "Présence maximale 80",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Sphère de Destruction",
+        "level": 12,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Projette une ou plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Energie avec de Dégâts de 30. Chaque attaque peut être dirigée vers une cible différente, mais il faut déterminer tous les objectifs et leur ordre d'attaque au moment du lancement du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "Réalise une attaque",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "Réalise 3 attaques",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "Réalise 5 attaques",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "Réalise 7 attaques",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 14,
@@ -4674,9 +4859,306 @@
         "maxFreeAccessLevel": 20
       },
       {
+        "name": "Augmenter Faiblesse",
+        "level": 16,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort trouve les points faibles d'un individu et les augmente surnaturellement. En termes de jeu, il double tous les malus que subit un personnage à cause d'une quelconque vulnérabilité. Par exemple, un élémentaire vulnérable à la Lumière subit le quadruple des dégâts des attaques lumineuses au lieu du double, tandis qu'un personnage vulnérable aux poisons réduit sa RPoi au quart plutôt qu'à la moitié. La cible doit réussir un test de RMys pour éviter d'être affectée, et ne peut le retenter qu'à chaque fois que sa faiblesse l'affecte à nouveau.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "120 RMys",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "140 RMys",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "160 RMys",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "200 RMys",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Destruction de Magie",
+        "level": 18,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Détruit un sortilège jusqu'à une certaine valeur de Zéon. Destruction de Magie étant un sort passif, il peut être utilisé pour annuler tout sort lancé durant du même round que lui.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Valeur Zéonique 50",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "Valeur Zéonique 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "Valeur Zéonique 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "Valeur Zéonique 350",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Aggraver les Dégâts",
+        "level": 20,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Augmente les Dégâts produit par une attaque, qu'elle soit de type physique ou surnaturelle. Par conséquent, si un combattant frappe avec une arme de Dégâts 60, un sorcier peut augmenter ses Dégâts à 90 avec ce sort au Degré Initial. Bien qu'il s'agisse d'un sortilège passif, il doit être exécuté avant de lancer les dés pour calculer l'attaque et la défense des adversaires.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "+30 aux Dégâts",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "+50 aux Dégâts",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "+90 aux Dégâts",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 220,
+            "requiredIntelligence": 15,
+            "effect": "+120 aux Dégâts",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Destruction de Matrices",
+        "level": 22,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Ce sort défait les énergies matricielles d'un pouvoir psychique. Étant passif, il peut être utilisé pour annuler tout type de pouvoir psychique utilisé au cours du même round que lui.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "Difficulté Moyenne (80)",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 9,
+            "effect": "Difficulté Très Difficile (140)",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Difficulté Quasiment Impossible (240)",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 320,
+            "requiredIntelligence": 16,
+            "effect": "Difficulté Surhumaine (320)",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 24,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 30
+      },
+      {
+        "name": "Blesser",
+        "level": 26,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Blesser affecte la condition physique d'un individu, réduisant son état de santé actuel. Il produit des blessures et des dégâts équivalents à un pourcentage des Points de Vie actuels de sa cible, mais pas de son maximum. Pour résister à ce sort, il faut réussir un test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "120 RMys / 20% des Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 9,
+            "effect": "140 RMys / 40% des Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys / 60% des Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys / 80% des Points de Vie",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Destruction de Ki",
+        "level": 28,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "La magie que libère ce sort s'introduit dans l'âme d'un individu et défait la réserve de Ki dont il dispose. La cible doit réussir un test de RMys sous peine de perdre une quantité de points de Ki égale à la marge d'échec. Le sorcier choisit l'ordre et la répartition des points perdus entre chaque caractéristique.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "140 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 9,
+            "effect": "160 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 220,
+            "requiredIntelligence": 12,
+            "effect": "180 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "220 RMys",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Infliger Dégâts",
+        "level": 30,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Grâce à ce sort, un sorcier inflige automatiquement une blessure sur le corps d'un individu. Si la cible ne réussit pas un test de RMys, elle subit immédiatement des dégâts effectifs. Les créatures à Encaissement appliquent leur Multiple d'Encaissement à cette valeur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "120 RMys / 50 points de dégâts effectifs",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 9,
+            "effect": "140 RMys / 100 points de dégâts effectifs",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys / 180 points de dégâts effectifs",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys / 250 points de dégâts effectifs",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Destruction de Sens",
+        "level": 32,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le sorcier annihile les sens d'un individu si celui-ci échoue à un test de RMys. Le sorcier peut décider des sens qu'il affecte.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "100 RMys",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "120 RMys",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys",
+            "maintenance": 15
+          }
+        ]
       },
       {
         "level": 34,
@@ -4684,9 +5166,306 @@
         "maxFreeAccessLevel": 40
       },
       {
+        "name": "Décharge",
+        "level": 36,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Projette une décharge mystique. L'attaque se fait sur le Mode énergie.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "Dégâts 100",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts 150",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 220,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 250",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Délier les Liens",
+        "level": 38,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Grâce à ce sort, le sorcier défait les liens qui permettent aux invocateurs de dominer leurs créatures. Il peut être indifféremment utilisé sur la créature ou sur son maître, quoi qu'il en soit le créateur du lien doit effectuer le test de Résistance. Si le sort est lancé sur la créature, il n'affecte que le lien en lui-même. S'il est lancé sur l'invocateur, le sort rompt un lien de contrôle supplémentaire par tranche de 10 points de marge d'échec au test de RMys. Les familiers peuvent applique un bonus de +40 à leur RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "120 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 13,
+            "effect": "160 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "200 RMys",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Détruire les Résistances",
+        "level": 40,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "La cible de ce sort voit toutes ses Résistances diminuer d'une valeur égale à sa marge d'échec au test de RMys. Ces malus disparaissent au rythme de 5 points par heure.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "120 RMys",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 160,
+            "requiredIntelligence": 9,
+            "effect": "160 RMys",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "200 RMys",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "240 RMys",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Annuler les États",
+        "level": 42,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort annule immédiatement tous les états décrits dans le Chapitre 14, ou d'autres états équivalents. Il peut affecter autant de personnes que le souhaite le sorcier, tant que la somme de leurs Présences ne dépasse pas la valeur déterminée par le Degré du sort. Ce sort ne peut pas annuler les malus aux actions provoqués par un Critique. Si une cible désire résister, elle doit réussir un test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 7,
+            "effect": "120 RMys / Présence maximale 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys / Présence maximale 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys / Présence maximale 300",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys / Présence maximale 400",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 44,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 50
+      },
+      {
+        "name": "Dôme de Destruction",
+        "level": 46,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Ce sort libère un dôme d'énergie surnaturelle qui explose sur une aire déterminé. L'attaque se fait sur le Mode énergie et il n'est pas possible de choisir ses cibles à l'intérieur de la zone d'effet.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "Dégâts 80 / 10 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "Dégâts 120 / 50 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 160 / 100 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 200 / 150 m de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Zone de Pourrissement",
+        "level": 48,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort enchante une zone fixe à l'intérieur de laquelle toute forme de vie commence à pourrir et à se désagréger à un rythme accéléré. Tout être se trouvant dans la zone de pourrissement perd 10% de ses PV totaux s'il échoue au test de RMys. Il faut effectuer un nouveau test pour chaque round où la cible reste dans la zone, que le précédent ait été réussi ou pas. Pour être affecté par ce sort, il suffit simplement de se trouver dans sa zone d'effet.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 7,
+            "effect": "RMys 100 / 10 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "RMys 120 / 30 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "RMys 160 / 60 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "RMys 200 / 100 m de rayon",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Aura de Destruction",
+        "level": 50,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Enchante un objet ou un lieu, ce qui crée autour de lui une aura de magie qui détruit tout ce qui entre à son contact avec elle. Tout ce qui touche cet objet ou ce lieu doit réussir un test de RMys sous peine de perdre une quantité de PV égale à sa marge d'échec. La Présence maximale de l'objet affecté, ainsi que la superficie affectée s'il s'agi =t d'un lieu, ne peuvent pas dépasser les valeurs déterminées par le Degré du sort. Les effets de ce sort touchent même la personne qui l'a lancé.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "80 RMys / Présence maximale 60 / 1 m de diamètre",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "100 RMys / Présence maximale 90 / 5 m de diamètre",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "120 RMys / Présence maximale 120 / 15 m de diamètre",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "150 RMys / Présence maximale 150 / 25 m de diamètre",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Détruire les Souvenirs",
+        "level": 52,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Affecte les souvenirs d'un individu, lui faisant ainsi oublier tout ce que désire le sorcier. Ce sort n'influe pas sur les compétences d'un personnage, uniquement sur sa mémoire consciente.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 7,
+            "effect": "100 RMys ou RPsy",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "120 RMys ou RPsy",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys ou RPsy",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys ou RPsy",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 54,
@@ -4694,9 +5473,308 @@
         "maxFreeAccessLevel": 60
       },
       {
+        "name": "Bloquer l'Apprentissage",
+        "level": 56,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort bloque la capacité d'apprentissage d'un individu, l'empêchant complètement d'évoluer ou d'acquérir de nouvelles connaissances. Quand une personne se trouve sous l'effet de ce sort, elle ne peut plus acquérir de nouveaux points d'expérience ni développer aucun de ses pouvoirs ou compétences. Pour éviter les effets de ce sort, il faut réussir un test de RMys. On ne peut effectuer ce test qu'une fois par jour.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "120 RMys",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "160 RMys",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "200 RMys",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "240 RMys",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Nier",
+        "level": 58,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le sorcier met un veto sur une action précise d'un individu, allant même jusqu'à empêcher toute tentative de la mener à bien. Ce sort ne permet d'annuler que les actions actives. Pour y résister, il faut réussir un test de RMys mais, si l'action niée est très longue comme ne pas attaquer ou ne pas bouger, la personne affectée peut appliquer un bonus allant de +10 à +30 à sa RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "120 RMys",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "160 RMys",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "200 RMys",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 16,
+            "effect": "240 RMys",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Détruire les Pouvoirs",
+        "level": 60,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Si un individu est affecté par ce sort, il perd automatiquement la capacité d'utiliser toutes ses capacités surnaturelles. Ainsi, le sort bloque les pouvoirs magiques, psychiques ou de puissance intérieure du Ki que possède la cible. Les créatures mystiques perdent aussi tous leurs pouvoirs, mais pas leurs Capacités Primordiales. Pour éviter ses effets, il faut réussir un test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 7,
+            "effect": "120 RMys",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "140 RMys",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "180 RMys",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "220 RMys",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Décharge Majeure",
+        "level": 62,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Projette une puissante décharge mystique. L'attaque se fait sur le Mode Énergie.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "Dégâts 150",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 10,
+            "effect": "Dégâts 300",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 13,
+            "effect": "Dégâts 450",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 16,
+            "effect": "Dégâts 600",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 64,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 70
+      },
+      {
+        "name": "Détruire la Volonté",
+        "level": 66,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort affecte une zone à l'intérieur de laquelle tout individu qui échoue au test de RMys perd automatiquement sa capacité à prendre des décisions. Tant qu'une personne est sous l'influence de ce sort, elle ne peut entreprendre aucune action active, ni se déplacer, sauf par pur réflexe de survie.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 160,
+            "requiredIntelligence": 8,
+            "effect": "120 RMys / 10 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys / 25 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "160 RMys / 50 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 16,
+            "effect": "180 RMys / 100 m de rayon",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Zone de Faiblesse",
+        "level": 68,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort permet au sorcier d'affaiblir les fibres de la réalité même, dans une zone déterminée, rendant ainsi fragile et vulnérable tout ce qui se trouve à l'intérieur. Par conséquent, tout dégât infligé dans cette zone est automatiquement doublé et les personnages subissent des Critiques comme si tout leur corps était un point vulnérable. Les bâtisses et les édifices perdent automatiquement leur Seuil d'Invulnérabilité et les objets avec Solidité (comme les armes et les armures) subissent un malus de -5 à cette valeur. La zone reste fixée au lieu où le sort a été lancé. Tout être vivant ou objet de pouvoir peut éviter les effets en réussissant un test de RMys. Il suffit de se trouver à l'intérieur de la Zone de Faiblesse pour en subir les effets, et il n'est possible d'y échapper qu'en en sortant, car on ne peut refaire le test de Résistance qu'une fois par jour.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 9,
+            "effect": "140 RMys / 25 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys / 100 m de rayon",
+            "maintenance": 30
+          },
+          {
+            "level": "Avancé",
+            "zeon": 400,
+            "requiredIntelligence": 14,
+            "effect": "180 RMys / 250 m de rayon",
+            "maintenance": 40
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "200 RMys / 500 m de rayon",
+            "maintenance": 50
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Essence de Destruction",
+        "level": 70,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier altère la matière d'un objet, la transformant en une forme de pure énergie destructrice, capable de dévorer tout ce qui entre en contact avec elle. Tant que l'objet ciblé se trouve dans cet état, seules les attaques capables d'affecter les corps surnaturels peuvent lui infliger des dégâts. Tout ce l'objet touche doit réussir un test de RMys contre le double de sa Présence sous peine de subir les effets décrits par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts équivalents à la marge d’échec",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts et malus à toutes les actions équivalents à la marge d’échec",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 14,
+            "effect": "Dégâts équivalents au double de la marge d’échec, et malus à toutes les actions équivalents à la marge d’échec",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 16,
+            "effect": "Dégâts et malus à toutes les actions équivalents au double de la marge d’échec",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Mort",
+        "level": 72,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le sorcier a la capacité de provoquer la mort d'un être vivant en séparant son âme de son corps. Le pouvoir de ce sort est si puissant qu'il peut même tuer des êtres Animiques ou des créatures nécromantiques, en les transformant en simples âmes défuntes ou en les détruisant complètement. Pour résister aux effets de ce sort il faut réussir un test de RMys ou de RPhy.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "120 RMys ou RPhy",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys ou RPhy",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 14,
+            "effect": "160 RMys ou RPhy",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 16,
+            "effect": "180 RMys ou RPhy",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 74,
@@ -4704,14 +5782,424 @@
         "maxFreeAccessLevel": 80
       },
       {
+        "name": "Zone Dévorante",
+        "level": 76,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Comme un vide mortel, la Zone Dévorante s'étend en arrachant l'essence de tout ce qu'elle rencontre sur son chemin et la consumant lentement. Peu à peu, les choses que ce sort atteint s'affaiblissent jusqu'à se décomposer, que ce soient des objets matériels ou des êtres vivants. Chaque jour à l'intérieur de la zone oblige à réussir un test de RMys ou de RPhy sous peine de perdre temporairement 5 points de Présence. Si la Présence tombe à 0, la chose ou l'être se décompose, ne laissant quasiment rien derrière lui. Dans le cas d'êtres vivants, ceux-ci subissent en plus un malus à toutes leurs actions égal au double de leurs points de Présence perdus. Ces dommages spirituels sont récupérés au rythme de 5 points par jour, une fois hors de son influence. La zone reste fixée à l'endroit où le sort a été lancé.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 9,
+            "effect": "140 RMys ou RPhy / 500 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 360,
+            "requiredIntelligence": 12,
+            "effect": "195 RMys ou RPhy / 6 000 m de rayon",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 15,
+            "effect": "240 RMys ou RPhy / 10 500 m de rayon",
+            "maintenance": 45
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 17,
+            "effect": "270 RMys ou RPhy / 13 500 m de rayon",
+            "maintenance": 55
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Détruire les Capacités",
+        "level": 78,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort détruit pour toujours une partie des compétences ou des pouvoirs d'un individu. Le sorcier peut librement réduire les PF du personnage affecté et choisir les capacités pu les champs desquels les supprimer. Il pourrait par exemple, au Degré Initial, retirer 30 PF la compétence Attaque et les 20 PF restants d'une compétence secondaire. Il est aussi possible d'utiliser ce sort pour détruire les capacités surnaturelles des créatures mystiques en prenant comme référence les valeurs en PF indiquées au Chapitre 26. Détruire les Capacités permet également de faire disparaître les avantages choisis avec les Points de Création, au prix de 100 PF par point.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "120 RMys / -50 PF",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "160 RMys / -100 PF",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "200 RMys / -150 PF",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "240 RMys / -200 PF",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Couper de l'Existence",
+        "level": 80,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le sorcier s'avère capable de couper la réalité, comme s'il maniait une lame de vide, annihilant tout ce qui se trouve sur son chemin. Il peut de cette façon détruire physiquement et spirituellement toute chose et tout être entrant en contact avec le sort, sans qu'ils ne laissent la moindre trace de leur existence. Le sort permet de couper une ligne ou de concentrer toute sa puissance sur un seul point, détruisant complètement tout ce qu'il touche et qui ne parvient pas à réussir le test de Résistance requis. Bien qu'il s'agisse d'un sort animique, la coupure de la réalité est parfaitement visible, même pour ceux qui ne peuvent pas voir la magie. Les choses ou individus coupés de l'existence par ce sortilège sont complètement détruits et ne retournent pas au flux des âmes. Si le sort est concentré sur un point unique, la difficulté du test de RMys augmente de +20.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "120 RMys / 10 m de long",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 14,
+            "effect": "160 RMys / 100 m de long",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 16,
+            "effect": "200 RMys / 250 m de long",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 18,
+            "effect": "240 RMys / 1 km de long",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Pluie de Destruction",
+        "level": 82,
+        "action": "Active",
+        "types": ["Attaque", "Animique"],
+        "effect": "Déchaîne dans une zone une tempête de décharges sélectives qui détruisent uniquement les cibles désignées par le sorcier. Ce sort attaque sur le Mode Énergie. De plus, si une décharge touche une cible et inflige des dégâts, celle-ci doit réussir un test de RMys sous peine de perdre autant de Points de Vie que sa marge d'échec.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "Dégâts 200 / 140 RMys / 50 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 13,
+            "effect": "Dégâts 250 / 180 RMys / 150 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 300 / 220 RMys / 500 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 17,
+            "effect": "Dégâts 400 / 260 RMys / 1 km de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 84,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 90
       },
       {
+        "name": "Destruction de Zéon",
+        "level": 86,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort, qui affecte directement l'essence même de la magie, peut dissiper le pouvoir d'un autre sortilège actif en diminuant automatiquement sa valeur Zéonique et donc son Degré. Si la valeur Zéonique du sort ainsi réduit descend sous son coût de base, il disparaît.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "-50 aux points de Zéon du sort / N’affecte que les sorts lancés au Degré Initial",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 400,
+            "requiredIntelligence": 12,
+            "effect": "-150 aux points de Zéon du sort / N’affecte que les sorts jusqu'au Degré Intermédiaire",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 14,
+            "effect": "-250 aux points de Zéon du sort / N’affecte que les sorts jusqu'au Degré Avancée",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 16,
+            "effect": "-350 aux points de Zéon du sort / N’affecte que les sorts jusqu'au Degré Arcane",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Rejeter des Cieux",
+        "level": 88,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort dépossède un être de sa présence divine, de sa propre essence, et le transforme temporairement en être terrestre. En termes de jeu, la créature affectée par le sort réduit sa valeur de Gnose. Cette réduction affecte les pouvoirs et les capacités de l'être qui en dépendent, et il ne pourra pas les utiliser tant que cette perte sera maintenue. Pour éviter les effets de ce sort, il faut réussir un test de RMys. Il n'est pas possible de refaire le test de Résistance tant que le sort est actif.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "120 RMys / -5 à la Gnose",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 600,
+            "requiredIntelligence": 14,
+            "effect": "160 RMys / -10 à la Gnose",
+            "maintenance": 30
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1000,
+            "requiredIntelligence": 16,
+            "effect": "200 RMys / -15 à la Gnose",
+            "maintenance": 50
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2000,
+            "requiredIntelligence": 18,
+            "effect": "260 RMys / -20 à la Gnose",
+            "maintenance": 100
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Vide",
+        "level": 90,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort crée une sphère de vide absolu qui, comme un trou noir, absorbe toute la matière physique et spirituelle qui se trouve autour d'elle, la décomposant complètement. Elle doit être placée dans un espace ouvert et restera fixée à l'endroit où le sort a été lancé, jusqu'à sa disparition. Une fois créée, elle commence à absorber tout ce qui est près d'elle. Le pouvoir d'attraction du sort équivaut à une Force de 14 et tout ce qui échoue à un test opposé contre celui-ci est attiré à l'intérieur à une vitesse de 10 mètres par point de marge d'échec. Le Vide est si puissant que tout ce qui entre en contact avec la sphère s'affaiblit jusqu'à disparaître. Une chose ou un être doit réussir deux tests de Résistance distincts par round passé à l'intérieur de la sphère, un de RMys sous peine de perdre autant de points de Zéon que la marge d'échec, et un autre de RPhy sous peine de perdre autant de Points de Vie que la marge d'échec. Quand un personnage se retrouve privé de Zéon, il commence à perdre de façon permanent de un point de sa caractéristique de Pouvoir pour chaque 100 points de Zéon qu'il devrait perdre. Si sa caractéristique tombe à 0 ou qu'il meurt à la suite de la perte de Points de Vie, tout son être sera englouti par le Vide. Bien que le sorcier ne soit pas soumis à la force de succion de la sphère, il subit les effets du vVide s'il entre en contact avec son noyau.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "120 RMys et RPhy / 5 m de rayon / 50 m de succion",
+            "maintenance": 25
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 14,
+            "effect": "160 RMys et RPhy / 15 m de rayon / 500 m de succion",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "200 RMys et RPhy / 25 m de rayon / 1 km de succion",
+            "maintenance": 45
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 18,
+            "effect": "240 RMys et RPhy / 50 m de rayon / 3 km de succion",
+            "maintenance": 55
+          }
+        ]
+      },
+      {
+        "name": "Destruction Majeure",
+        "level": 92,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet de détruire à grande échelle une partie du monde matériel, en désintégrant même les structures importantes comme des cités entières, ou de vastes régions. Elle peut affecter n'importe quel nombre de choses inorganiques automatiquement, tant que la somme de leurs Présences ne dépasse pas la valeur déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximale 100",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 600,
+            "requiredIntelligence": 14,
+            "effect": "Présence maximale 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 900,
+            "requiredIntelligence": 16,
+            "effect": "Présence maximale 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1500,
+            "requiredIntelligence": 18,
+            "effect": "Présence maximale 240",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 94,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 100
+      },
+      {
+        "name": "Détruire les Âmes",
+        "level": 96,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le pouvoir que déchaîne la destruction des âmes annihile la matière spirituelle qui se trouve autour du sorcier, mettant fin à l'existence de tout ce qui ne peut en surmonter les effets. Tout individu à l'intérieur de la zone d'effet du sort doit réussir un test de RMys, sous peine que son âme ne se décompose totalement et qu'il ne meure sur le coup.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 500,
+            "requiredIntelligence": 13,
+            "effect": "100 RMys / 5 km de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 800,
+            "requiredIntelligence": 15,
+            "effect": "140 RMys / 50 km de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1500,
+            "requiredIntelligence": 17,
+            "effect": "180 RMys / 250 km de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2500,
+            "requiredIntelligence": 19,
+            "effect": "220 RMys / 1 000 km de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Chaos",
+        "level": 98,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Il s'agit d'un sort qui peut ébranler les piliers même de la réalité. Quand il le déchaîne, le sorcier désagrège lentement l'ordre du monde, altèrant l'équilibre de toute chose d'une façon complètement imprévue. À l’intérieur d'une zone de chaos, rien ne fonctionne comme il faudrait et tous les évènements se déroulent de manière incohérente et non naturelle. Pour donner quelques exemples, le chaos pourrait affecter la gravité, rendant les choses légères comme une plume à certains moments, et lourdes comme le plomb à d'autres. Il pourrait aussi dérégler le climat, provoquant des bourrasques gelées à quelques mètres de rafales et vagues de chaleur étouffante. Mais ce sort n'attaque pas seulement les éléments naturels car il influence aussi les sentiments et les réactions des personnes, faisant se haïr des couplesou se réconcilier des ennemis mortels. Il peut même affecter le passage du temps, qui fluctue plus ou moins vite (même si cela ne permet de retourner dans le passé). En fait, Chaos peut affecter quasiment n'importe quel facette de la réalité. Le sorcier peut décider quel aspect précis de l'existence il souhaite altérer ou, au contraire, la transformer complètement. De toute façon, ce sort ne lui accorde aucun contrôle sur ce qui a été changé, donc le résultat et le déroulement futur des événements devient, comme son nom l'indique complètement chaotique. Aucune Résistance n'est possible et le sort affecte tous les êtres dont la Gnose n'est pas assez élevée. La seule exception s'applique aux individus dont la Gnose est supérieure de 20 points à leur Natura.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 700,
+            "requiredIntelligence": 14,
+            "effect": "100 km de rayon / Affecte les êtres de Gnose inférieure ou égale à 10",
+            "maintenance": 70
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 1200,
+            "requiredIntelligence": 16,
+            "effect": "1 000 km de rayon / Affecte les êtres de Gnose inférieure ou égale à 20",
+            "maintenance": 80
+          },
+          {
+            "level": "Avancé",
+            "zeon": 2000,
+            "requiredIntelligence": 18,
+            "effect": "10 000 km de rayon / Affecte les êtres de Gnose inférieure ou égale à 30",
+            "maintenance": 90
+          },
+          {
+            "level": "Arcane",
+            "zeon": 5000,
+            "requiredIntelligence": 20,
+            "effect": "Affecte toute la création / Affecte les êtres de Gnose inférieure ou égale à 40",
+            "maintenance": 100
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Désintégrer",
+        "level": 100,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort permet au sorcier de choisir un aspect de l'existence, aussi complexe qu'une cité ou une race, ou aussi simple qu'un individu, et de le faire purement et simplement disparaître. L'élément désintégré est effacé de la réalité avec toutes les conséquences que cela implique, comme s'il n'avait jamais existé. Aucune des personnes qui le connaissaient ne se souviendra de lui, tous les événements dans lesquels il a joué un rôle seront modifiés comme s'il n'avait pas été présent, et même les personnes qui seront mortes par sa faute ressusciterontsi leurs âmes n'ont pas été détruites. Seules les entités avec une Gnose supérieure à 40, ou de 20 points au-dessus de leur Natura, seront consciente du changement. Il est possible d'éviter cet effet en réussissant un test de RMys, même si l'effet concerne une multitude de cibles ou d'individus. Pour savoir qui doit effectuer ce test, il faut prendre le personnage ou la chose affecté avec la plus grande Résistance à l'instant précis du lancement du sort. Il n'est pas possible d'effacer des éléments du passé, uniquement des choses existant dans le présent.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 1000,
+            "requiredIntelligence": 17,
+            "effect": "140 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 2500,
+            "requiredIntelligence": 18,
+            "effect": "160 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 5000,
+            "requiredIntelligence": 19,
+            "effect": "200 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 10000,
+            "requiredIntelligence": 20,
+            "effect": "240 RMys",
+            "maintenance": 0
+          }
+        ]
       }
     ]
   },
