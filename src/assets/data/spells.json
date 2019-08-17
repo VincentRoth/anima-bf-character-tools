@@ -3110,9 +3110,195 @@
     "description": "Le pouvoir de la création est la capacité magique à composer et altérer la réalité qui entoure les sorciers. Ses sorts concernent le changement, la guérison et la création de toutes choses. Cest magie est principalement défensive.",
     "spells": [
       {
+        "name": "Création mineure",
+        "level": 2,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée un ou plusieurs objets simples, dont la Présence ne peut être supérieure à celle indiquée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "1 objet / Présence maximale 25",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "5 objets / Présence maximale 25",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "1 objet / Présence maximale 30",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "5 objets / Présence maximale 30",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
         "level": 4,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 10
+      },
+      {
+        "name": "Reconstruire",
+        "level": 6,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Redonne à un objet sa forme originelle, à partir des pièces ou des composants qui restent de lui. Il faut posséder tous les fragments ou la matière première nécessaire pour que la reconstruction soit complète, sinon elle restera partielle.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 5,
+            "effect": "Présence maximale affectable 20",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 8,
+            "effect": "Présence maximale affectable 60",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "Présence maximale affectable 100",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximale affectable 120",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Créer Énergie",
+        "level": 8,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée une intensité d'un des trois types d'énergie existants : le froid, le feu et l'électricité.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 5,
+            "effect": "1 Intensité",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "5 Intensités",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "10 Intensités",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "20 Intensité",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Régénération",
+        "level": 10,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Augmente la capacité d'une créature à soigner tous les types de blessures. Ce sort accorde une base de Régénération à l'individu ciblé par le mage, la substituant à celle qu'il possède naturellement.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Régénération 4",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "Régénération 8",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 150,
+            "requiredIntelligence": 10,
+            "effect": "Régénération 12",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "Régénération 16",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Modification inorganique",
+        "level": 12,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Grâce à son contrôle de la magie, le sorcier peut altérer la forme et la nature d'un objet inorganique, le transformant en un objet distinct mais de puissance spirituelle équivalente. Ce sort permet donc de transformer n'importe quelle chose en un objet dont la Présence est égale ou inférieure à celle de l’objet original.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Présence maximale affectable 20",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 8,
+            "effect": "Présence maximale affectable 30",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "Présence maximale affectable 40",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximale affectable 50",
+            "maintenance": 10
+          }
+        ]
       },
       {
         "level": 14,
@@ -3120,44 +3306,1354 @@
         "maxFreeAccessLevel": 20
       },
       {
+        "name": "Augmenter les Résistances",
+        "level": 16,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Augmente de façon surnaturelle toutes les Résistances d'un individu (RPhy, RPoi, RMal, RMys et RPsy). Les effets de ce sort ne se cumulent pas et il ne peut affecter qu'une fois chaque cible.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "+10 à toutes les Résistances",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "+20 à toutes les Résistances",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "+30 à toutes les Résistances",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 14,
+            "effect": "+40 à toutes les Résistances",
+            "maintenance": 40
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Bouclier Réel",
+        "level": 18,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Forme une barrière d'énergie qui protège de toutes les sources d'attaque.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 6,
+            "effect": "500 Points de Vie",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "3 000 Points de Vie",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 260,
+            "requiredIntelligence": 10,
+            "effect": "5 000 Points de Vie",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 12,
+            "effect": "10 000 Points de Vie",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Guérison",
+        "level": 20,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet à l'individu ciblé de récupérer des Points de Vie. Ce sort ne permet pas de faire repousser les membres coupés ou amputés mais annule par contre les malus temporaires causés par les Critiques, jusqu'à une valeur équivalente à la moitié des Points de Vie rendus.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "50 Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "150 Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "250 Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 14,
+            "effect": "350 Points de Vie",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Invulnérabilité",
+        "level": 22,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Les énergies surnaturelles que manie ce sort s'unissent au corps de l'individu désigné, le rendant quasiment invulnérable aux dégâts. En termes de jeu, il bénéficie d'une Seuil d'Invulnérabilité (voir Chapitre 14).",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Seuil d’Invulnérabilité 30",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Seuil d’Invulnérabilité 50",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Seuil d’Invulnérabilité 80",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "Seuil d’Invulnérabilité 100",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 24,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 30
       },
       {
-        "level": 34,
-        "isFreeAccess": true,
-        "maxFreeAccessLevel": 40
+        "name": "Créer Homoncule",
+        "level": 26,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Les homoncules sont de petits élémentaires de magie que les sorciers utilisent pour de nombreuses tâches, allant de l'espionnage à l'entretien de leur maison. Ce sort crée un ou plusieurs êtres mystiques de niveau 0 sous le contrôle absolu du sorcier, en se servant des règles décrites dans le Chapitre 26. Il s'agit d'une créature d'Entre Mondes avec une Gnose de 5 mais, du fait de sa nature inférieure, cet être est dirigée par des règles spéciales suivantes :\n1- Ses caractéristiques ne peuvent pas être supérieures à 5, il ne peut avoir le Don mystique et aucune de ses compétences principales ou secondaires ne doit dépasser 50.\n2- De plus, il a un malus de -2 à sa Taille et ne peut choisir Taille inhabituelle.\n3- Aucune de ses compétences intellectuelles ne peut être supérieure à celle de son créateur.\nChaque homoncule créé peut être distinct des autres.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "1 homoncule",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "10 homoncules",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "25 homoncules",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "100 homoncules",
+            "maintenance": 35
+          }
+        ],
+        "isDailyMaintenance": true
       },
       {
-        "level": 44,
+        "name": "Changement Mineur",
+        "level": 28,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort permet d'altérer l'apparence d'un objet ou d'un être en modifiant sa forme. Le changement se limite à son aspect extérieur et ne peut jamais perdre ses qualités ou sa nature originelles. Par conséquent, une épée courte reluisante peut devenir vieille et rouillée, mais pas un objet différent comme un bâton. Dans le cas des êtres vivants, on peut modifier leur aspect physique sans faire varier leur Taille de plus de deux points, ce qui permet par exemple de transformer un homme gros et laid en un jeune éphèbe. Une fois affectés, les objets ne peuvent faire un autre test de Résistance. Les personnes par contre peuvent retenter le test une fois par jour si elles désirent se libérer ses effets. Il est possible d'affecter plusieurs cibles, tant que la somme des Présences ne dépasse pas le maximum autorisé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "80 RMys / Présence Maximale 60",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "100 RMys / Présence Maximale 90",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys / Présence Maximale 120",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys / Présence Maximale 180",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Imiter",
+        "level": 30,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée une copie exacte d'un objet inorganique déjà existant qui se trouve à portée du sorcier. Il se forme une imitation parfaite de l'original avec toutes ses qualités, même surnaturelles, tant qu'il ne s'agit pas de pouvoir de Niveau 4 ou supérieur. Ce sort n'a aucun effet sur les créatures animées par magie, mais fonctionne sur les créations mécaniques si elles ne possèdent pas d'âme.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 6,
+            "effect": "Présence maximale 30",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 9,
+            "effect": "Présence maximale 80",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximale 120",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 15,
+            "effect": "Présence maximale 160",
+            "maintenance": 20
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Immunité",
+        "level": 32,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet au sorcier, ou à la cible qu'il a désignée, une immunité à des intensités d'un type précis d'énergie parmi le feu, le froid ou l'électricité. Si le personnage subit une attaque basée sur un élément contre lequel il est immunisé, chaque intensité diminue de 5 points ses Dégâts et accorde un bonus de +5 aux Résistances contre ses effets.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "5 intensités",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "15 intensités",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "25 intensités",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "35 intensités",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "level": 34,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 50
       },
       {
-        "level": 54,
+        "name": "Réduction des Dégâts",
+        "level": 36,
+        "action": "Passive",
+        "types": ["Automatique"],
+        "effect": "La magie de ce sort affecte la puissance d'une attaque en diminuant la force de son impact. Il réduit les Dégâts d'une attaque. Si ceux-ci chutent en dessous de 0, l'assaut n'a aucun effet. Si, par exemple, ce sort est utilisé au Degré Initial contre une attaque de Dégâts 60, celle-ci sera calculée comme n'en faisant que 20. Deux sorts de Réduction des Dégâts ne se cumulent pas face à une même source d'attaque.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "-40 aux Dégâts de l’attaque",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "-60 aux Dégâts de l’attaque",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 160,
+            "requiredIntelligence": 12,
+            "effect": "-80 aux Dégâts de l’attaque",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 14,
+            "effect": "-120 aux Dégâts de l’attaque",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Contrôle Physique",
+        "level": 38,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Grâce à ce sort, un sorcier peut contrôler le corps d'un être comme s'il s'agissait d'une simple poupée. Comme il n'accorde qu'un contrôle physique, et non mental, l'individu subjugué ne peut pas être forcé à utiliser ses compétences surnaturelles (magie, Ki, pouvoirs psychiques...) contre sa volonté, à la différence de ses compétences martiales. Pour résister au contrôle, la cible doit réussir un test de RMys. La personne affectée a droit à un nouveau test de Résistance par jour, et à chaque fois que les ordres reçus vont complètement à l'encontre de son comportement habituel.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "80 RMys",
+            "maintenance": 25
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "120 RMys",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys",
+            "maintenance": 50
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys",
+            "maintenance": 60
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Acquérir Compétences",
+        "level": 40,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort augmente temporairement les compétences secondaires d'un individu, lui accordant un bonus à répartir dans les compétences de son choix à l'exception de celles qui requièrent des connaissances, jusqu’à un maximum de 320.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "Bonus de +50",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "Bonus de +150",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 12,
+            "effect": "Bonus de +250",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "Bonus de +400",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Fusionner",
+        "level": 42,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort unit deux êtres dans un corps unique, créant ainsi un nouvel individu possédant les caractéristiques et les compétences des deux. Le sorcier choisit les futures capacités prédominantes, sélectionnant celles qui lui conviennent le plus chez chacun des deux êtres. De cette façon, si un combattant et un mentaliste fusionnent, l'individu en résultant pourra avoir l'expérience du combat du guerrier, les capacités mentales du psy et les compétences secondaires les plus élevées des deux. Le contrôle du corps appartiendra à celui qui remporte un test opposé de Volonté, bien qu'il puisse conserver quelques traits typiques de la personnalité de l'autre individu. Les corps d'origine restent dans le même état que juste avant la fusion, et ils se séparent à la fin du sort, retrouvant leur forme et leur état originels. La mort de cette entité a pour conséquence la mort des deux êtres qui la composent. La somme des Présences des deux individus ne peut pas être supérieure à ce qui est déterminé par le Degré du sort. Il est aussi possible de fusionner des personnes avec des objets,auquel cas le MJ décide des avantages ou des capacités qu'il considère appropriées.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 7,
+            "effect": "Présence maximale 80 / 80 RMys",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "Présence maximale 100 / 120 RMys",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximale 150 / 140 RMys",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "Présence maximale 200 / 180 RMys",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "level": 44,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 60
       },
       {
-        "level": 64,
+        "name": "Créer Souvenirs",
+        "level": 46,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Permet de créer de nouveaux souvenirs dans l'esprit d'une cible, sans forcément effacer les souvenirs antérieurs. Le plus souvent, le personnage affecté se sent légèrement confus, mais il est convaincu que tous ses souvenirs sont réels, sauf si le sort affecte des éléments bien ancrés dans sa mémoire. Le sorcier peut déterminer quelles informations il compte introduire, sans se soucier de leur complexité ou de leur durée. Pour éviter l'effet de ce sort, la cible doit réussir un test de RMys ou de RPsy. Bien que ce sort ne requière aucun maintien, l'individu affecté a droit à un nouveau test de Résistance s'il voit ou fait quelque chose qui puisse l'inciter à croire qu'il a été trompé.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 7,
+            "effect": "100 RMys ou RPsy",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "120 RMys ou RPsy",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys ou RPsy",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys ou RPsy",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Récupérer",
+        "level": 48,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort restaure complètement la condition physique d'un individu, lui rendant ses Points de Vie perdus et faisant disparaître tous les malus physiques qui l'affectaient, s'ils n'avaient pas pour origine des membres amputés ou des dégâts similaires. Ce sort ne permet pas de récupérer les points de Fatigue, il n'annule pas non plus les malus provoqués par des effets surnaturels.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 8,
+            "effect": "500 Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 10,
+            "effect": "750 Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "1 000 Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 14,
+            "effect": "1 500 Points de Vie",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Acquérir des Pouvoirs",
+        "level": 50,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Confère au sorcier, ou à celui qu'il désigne, la capacité d'acquérir des capacités de créatures surnaturelles. En termes de jeu, ce sort procure au personnage des PF supplémentaires pour obtenir n'importe lequel des Pouvoirs détaillés au Chapitre 26, comme s'il avait une Gnose de 25. Ces changements affectent temporairement sa forme physique. Si, par exemple, il acquiert Vol Naturel, il sera très logiquement doté de grandes ailes. Les effets de ce sort ne se cumulent pas et il ne peut affecter plus d'une fois un individu à un moment donné.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "100 PF",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "200 PF",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 13,
+            "effect": "300 PF",
+            "maintenance": 50
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 16,
+            "effect": "400 PF / Gnose 30",
+            "maintenance": 60
+          }
+        ]
+      },
+      {
+        "name": "Créer Rejeton",
+        "level": 52,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort crée un être magique ayant l'apparence de la vie, sous le contrôle total du sorcier. Il s'agit d'une créature d'Entre Mondes de Gnose 20 développée suivantc les règles décrites au Chapitre 26. Quel que soit le Degré auquel le sort est lancé, il ne permet pas de créer des créatures d'un niveau supérieur à celui du sorcier, car elles se basent sur sa présence spirituelle. Les rejetons n'ont pas la capacité de recevoir une âme, il n'est donc pas possible de leur donner vie de façon indépendante, à l'aide du sort Offrir une Âme, ni de faire transmigrer un esprit dans leur corps.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "Niveau 2",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "Niveau 4",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "Niveau 8",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "Niveau 12",
+            "maintenance": 50
+          }
+        ]
+      },
+      {
+        "level": 54,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 70
       },
       {
-        "level": 74,
+        "name": "Aura de Protection",
+        "level": 56,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Augmente de façon surnaturelle toutes les Résistances (RPhy, RPoi, RMal, RMys et RPsy) des individus désignés par le sorcier dans une zone autour de lui. Les effets de ce sort ne se cumulent pas et il ne peut affecter qu'une fois chaque cible.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "+20 aux Résistances / 100 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "+50 aux Résistances / 500 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "+80 aux Résistances / 1 km de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "+120 aux Résistances / 10 km de rayon",
+            "maintenance": 35
+          }
+        ]
+      },
+      {
+        "name": "Suspendre l'Essence",
+        "level": 58,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Comme son nom l'indique, ce sort suspend l'esprit d'un individu dans l'état où il se trouvait au moment de son lancement. À partir de cet instant, la cible ne réalise plus de nouveaux tests magiques ou psychiques et conserve la condition mentale inaltérable dans laquelle elle se trouve. Elle ne peut plus être influencée par aucun nouvel état, positif comme négatif. Si la cible désire résister à la suspension, elle doit réussir un test de RMys. En toute logique, une personne affectée par ce sort ne peut pas effectuer de test pour s'en libérer tant qu'il est maintenu.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "100 RMys",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "120 RMys",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Bouclier Parfait",
+        "level": 60,
+        "action": "Active",
+        "types": ["Défense"],
+        "effect": "Forme une barrière d'énergie qui protège contre toute source d'attaque. S'il n'est pas détruit à la fin du round, il récupère automatiquement tous les Points de Vie qu'il avait perdus.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "100 Points de Vie",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "250 Points de Vie",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 13,
+            "effect": "500 Points de Vie",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 16,
+            "effect": "1 000 Points de Vie",
+            "maintenance": 40
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Vitalité",
+        "level": 62,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "La magie crée un état de vitalité surnaturelle chez un individu, augmentant ainsi la valeur maximale de ses Points de Vie tant que le sort est maintenu. Ses effets ne se cumulent pas et il ne peut affecter plus d'une fois un individu en même temps. Les créatures à Encaissement multiplient cette valeur par 5.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "+50 Points de Vie",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "+75 Points de Vie",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 13,
+            "effect": "+100 Points de Vie",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 16,
+            "effect": "+150 Points de Vie",
+            "maintenance": 35
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "level": 64,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 80
       },
       {
-        "level": 84,
+        "name": "Création complète",
+        "level": 66,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Forme un objet dont la Présence  maximale est déterminée par le Degré du sort. La création doit se trouver dans un lieu logique en fonction de sa nature. Par exemple, il n'est pas possible de faire apparaître une petite montagne dans les airs, pour ensuite la laisser tomber. La Présence de l'objet créé ne peut pas dépasser le double de la Présence du sorcier.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "Présence maximale 50",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "Présence maximale 80",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximale 120",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 14,
+            "effect": "Présence maximale 150",
+            "maintenance": 40
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Renforcer la Magie",
+        "level": 68,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Renforce la puissance d'un autre sort en se liant à lui. En termes de jeu, accorde les avantages suivants au sort lié :\n+20 à la difficulté du test de RMys pour y résister.\n+50% aux Dégâts d'une décharge ou aux Points de Vie d'un bouclier (arrondis au multiple de 5 supérieur).\n+20% à toute autre valeur numérique (Présence, intensités, distance, rayon de la zone d'effet, augmentations ou données similaires), sauf pour les valeurs liées à la Gnose.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "Affecte les sorts au Degré Initial",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Affecte les sorts au Degré Intermédiaire",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "Affecte les sorts au Degré Avancée",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 18,
+            "effect": "Affecte les sorts au Degré Arcane",
+            "maintenance": 40
+          }
+        ]
+      },
+      {
+        "name": "Transmuter",
+        "level": 70,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le sorcier transforme un objet inorganique en un autre objet, de puissance animique équivalente. Il peut ainsi modifier une chose en une autre dont la Présence est inférieure ou égale. Si l'objet est surnaturel ou très puissant, il peut résister avec un test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 9,
+            "effect": "120 RMys / Présence maximale 50",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys / Présence maximale 100",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "220 RMys / Présence maximale 150",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 18,
+            "effect": "260 RMys / Présence maximale 200",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Métamorphose",
+        "level": 72,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le sorcier transmute la substance et la forme de la cible, la changeant en ce qu'il désire, tant que sa Présence finale ne dépasse pas celle de l'original. Par exemple, il peut changer une personne suivant ses souhaits (en rat, en statue de pierre...), tant que la Présence de la cible est supérieure à celle de sa forme après métamorphose. Les êtres vivants transformés en choses inorganiques continuent de vivre sous leur nouvelle forme, même s'ils ne peuvent pas se déplacer ou respirer. Quand le sort cesse, l'individu ou l'objet transformé récupère son apparence originelle. Ce sort ne permet pas d'accorder des pouvoirs ou des Capacités Primordiales, à l'exception de ceux que peuvent posséder des êtres vivants naturels avec une Gnose de 0. Pour éviter d'être métamorphosé, il faut réussir un test de RMys. On ne peut effectuer ce test qu'une fois par jour.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "100 RMys",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "120 RMys",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 14,
+            "effect": "200 RMys",
+            "maintenance": 20
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "level": 74,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 90
+      },
+      {
+        "name": "Recréer",
+        "level": 76,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "En manipulant l'essence de la matière et des âmes, le sorcier a la capacité de restaurer toute perte ou tout dégât subi par un individu ou un objet ciblé par ce sort. Il peut choisir quels éléments ou parties recréer, sans être obligé de lui rendre son état originel. De cette façon, si un individu borgne et manchot était pour cible d'un sort de Recréer, le sorcier pourrait lui rendre son œil, son bras ou les deux. Lancer ce sort sur une personne blessée ou une construction détruite fait automatiquement disparaître les malus ou dégâts (selon ce quelle sorcier désire). Recréer annule aussi les effets de pouvoirs surnaturels qui ont physiquement ou spirituellement diminué des individus ou des choses : il restaure jusqu'aux les souvenirs effacés ou aux PF perdus. Ce sort n'a que deux limitations. La première est qu'il affecte uniquement les carences ou pertes subies de façon artificielle, pas celles résultant d'une évolution naturelle ou positive. Par conséquent, il ne permet pas de faire revenir une personne à un état précédent, préjudiciable ou inférieur. Deuxièmement, il n'affecte pas les âmes défuntes ou celles qui sont déjà passées par le flux des âmes, car il ne peut pas rendre la vie aux morts. Enfin, si les Dégâts ou la destruction ont été provoqués par un être de Gnose supérieure d'au moins 15 points à celle du lanceur, la Présence maximale affectable est réduite de moitié.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 8,
+            "effect": "Présence maximale 60",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximale 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 750,
+            "requiredIntelligence": 15,
+            "effect": "Présence maximale 180",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1500,
+            "requiredIntelligence": 18,
+            "effect": "Présence maximale 240",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Créer Être",
+        "level": 78,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée une créature avec l'apparence de la vie, sous le contrôle absolu du sorcier. Cet être est développé comme une créature d'Entres Mondes avec une Gnose de 25 de niveau égal ou inférieur à ce qu'indique le Degré du sort. Comme son existence est directement liée à l'âme du sorcier, le nombre d'êtres qu'il a créés et qui dépendent de lui (qu'il ait utilisé ce sort ou ceux de niveau 82 des voies mineures) limite niveau maximal de l'entité. Par conséquent, une créature peut avoir comme au maximum le niveau de son créateur moins le nombre total de créatures qu'il a fabriquées magiquement et qu'il maintient. Par exemple, si le sorcier crée un seul être, celui-ci pourra atteindre au maximum le niveau juste en-dessous de celui de son maître, deux créatures auront deux niveaux de moins et trois de moins pour trois entitées... Si un ou plusieurs êtres ont déjà le niveau maximal et que le sorcier en crée un nouveau, les précédents perdent immédiatement un niveau.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 9,
+            "effect": "Niveau 1",
+            "maintenance": 50
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 400,
+            "requiredIntelligence": 12,
+            "effect": "Niveau 5",
+            "maintenance": 80
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 15,
+            "effect": "Niveau 9",
+            "maintenance": 120
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1000,
+            "requiredIntelligence": 17,
+            "effect": "Niveau 12",
+            "maintenance": 200
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Chimère",
+        "level": 80,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier, ou la cible qu'il désigne, cesse d'être une créature naturelle pour se transformer en créature d'Entre Mondes avec une Gnose de 25, et profite de tous les avantages que cela suppose. De plus, il obtient des PF supplémentaires à utiliser pour choisir parmi les Capacités Primordiales et les pouvoirs de la Conception de Créatures décrite au Chapitre 26. Il peut aussi choisir des PF de désavantages et malus pour obtenir des points supplémentaires. Les nouveaux PF augmentent le niveau du personnage. Ce sort ne fonctionne que sur les créatures naturels, il ne peut donc pas être lancé sur des créatures d'Entre Mondes ou Animiques pour augmenter leurs capacités. Tous les pouvoirs et les dons acquis grâce à ce sort dépendent directement de la forme physique de l'individu. Si pour une quelconque raison il retourne à son état antérieur ou qu'il installe son âme dans un autre corps, il perd automatiquement les avantages obtenus.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "+100 PF / Jusqu’à 100 PF optionnels en désavantages",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 13,
+            "effect": "+200 PF / Jusqu’à 200 PF optionnels en désavantages",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1000,
+            "requiredIntelligence": 15,
+            "effect": "+300 PF / Jusqu’à 300 PF optionnels en désavantages",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2500,
+            "requiredIntelligence": 17,
+            "effect": "+400 PF / Jusqu’à 400 PF optionnels en désavantages",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Zone de Sauvegarde",
+        "level": 82,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Créé une zone magique à l'intérieur de laquelle rien ni personne ne peut causer de dégât, ni par action ni par omission, à aucun être ni aucune chose. De cette façon, un individu influencé par ce sort sera dans l'incapacité de fracturer une porte en la cognant ou d'écraser un simple cafard par erreur. Ce sort affecte automatiquement toutes les personnes qui se trouvent à l'intérieur de sa zone d'effet, y compris le sorcier. La zone enchantée reste à l'endroit où le sort a été lancé, sans que le sorcier puisse la replacer par la suite. Pour résister à ses effets, il faut réussir un test de RMys. On ne peut refaire le test de Résistance qu'une fois par jour, même en sortant de la zone pour y entrer à nouveau.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys / 100 m de rayon",
+            "maintenance": 35
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys / 500 m de rayon",
+            "maintenance": 50
+          },
+          {
+            "level": "Avancé",
+            "zeon": 800,
+            "requiredIntelligence": 17,
+            "effect": "220 RMys / 1 km de rayon",
+            "maintenance": 80
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1500,
+            "requiredIntelligence": 18,
+            "effect": "250 RMys / 5 km de rayon",
+            "maintenance": 150
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "level": 84,
+        "isFreeAccess": true,
+        "maxFreeAccessLevel": 40
+      },
+      {
+        "name": "Maintien",
+        "level": 86,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Affecte un autre sort actif, le fixant de façon plus durable dans le monde. En termes de jeu, ce sort affecte des points de Zéon au maintien d'un sort déterminé. Gardez à l'esprit que cette quantité n'est pas ajoutée à son potentiel mais seulement employée pour payer le cout de son maintien.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "500 Points de Zéon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 12,
+            "effect": "2 000 Points de Zéon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 900,
+            "requiredIntelligence": 14,
+            "effect": "5 000 Points de Zéon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1600,
+            "requiredIntelligence": 16,
+            "effect": "10 000 Points de Zéon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Offrir une Âme",
+        "level": 88,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Grâce à ce sort, un sorcier peut concevoir une âme complète, accordant ainsi le souffle de vie à un objet ou une créature qui peut la contenir. S'il offre une âme à une créature engendrée par la magie, comme les entités créées par le sort de niveau 78 de cette voie ou de niveau 82 des voies élémentaires, il n'est plus nécessaire de maintenir le sort qui lui donne son énergie et l'être peut désormais vivre de façon indépendante. Il rompt alors tous lien avec son créateur, obtenant son libre arbitre comme une nouvelle créature d'Entre Mondes. Toutes les âmes créées par ce sort ne sont pas capables de pénétrer dans le corps qu'on leur propose, et on ne peut pas les affecter à quelque chose qui possède déjà une âme vivante.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 500,
+            "requiredIntelligence": 13,
+            "effect": "Présence maximale du réceptacle 30",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 800,
+            "requiredIntelligence": 14,
+            "effect": "Présence maximale du réceptacle 50",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1200,
+            "requiredIntelligence": 15,
+            "effect": "Présence maximale du réceptacle 80",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2000,
+            "requiredIntelligence": 16,
+            "effect": "Présence maximale du réceptacle 100",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Création Majeure",
+        "level": 90,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet au sorcier de créer son environnement, en lui accordant une certaine des points de Présence à répartir librement entre divers objets et constructions. Il peut élaborer toute chose inanimée de son choix, depuis des châteaux jusqu'à des montagnes, tant que la Présence de chacune de ses créations ne dépasse pas la limite fixée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 400,
+            "requiredIntelligence": 10,
+            "effect": "500 points de Présence / Présence maximale 100",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 800,
+            "requiredIntelligence": 12,
+            "effect": "1 000 points de Présence / Présence maximale 120",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1200,
+            "requiredIntelligence": 14,
+            "effect": "2 000 points de Présence / Présence maximale 140",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2000,
+            "requiredIntelligence": 16,
+            "effect": "3 000 points de Présence / Présence maximale 180",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Magie Éternelle",
+        "level": 92,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Comme son nom l'indique, ce sort affecte un autre sort actif, réduisant énormément son coût de maintien ou le faisant même disparaître. Ses effets varient selon que le sort a un maintien quotidien ou normal. S'il' est quotidien, Magie Éternelle le suspend et le sort n'a plus besoin d'être maintenu. Il est toujours contrôlé par la personne qui l'a lancé, mais perdurera même après sa mort. Si le maintien se compte en rounds, il se transformera en sort de type Quotidien. Magie Éternelle n'influe que sur les sorts dont le niveau de voie est inférieur à 8O.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 600,
+            "requiredIntelligence": 12,
+            "effect": "Affecte un sort au Degré Initial",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 1000,
+            "requiredIntelligence": 14,
+            "effect": "Affecte un sort au Degré Intermédiaire",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 2500,
+            "requiredIntelligence": 16,
+            "effect": "Affecte un sort au Degré Avancé",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 5000,
+            "requiredIntelligence": 18,
+            "effect": "Affecte un sort au Degré Arcane",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 94,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 100
+      },
+      {
+        "name": "La Barrière",
+        "level": 96,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort inhabituel forme une brèche dans la réalité même, capable de séparer le monde en deux parties. De cette façon, il lève une barrière invisible qui ne permet à personne d'atteindre l'autre côté, comme si le monde se divisait en deux plans distincts, indépendants l'un de l'autre. La séparation n'est pas perceptible de façon naturelle, pas même pour les personnes qui peuvent voir la magie. Elle peut revêtir n'importe quelle apparence, allant d'une barrière invisible à l'aspect tout simple d'un mur de pierres. Dans tous les cas, quelle que soit sa forme, nul ne peut percevoir la réalité qui se cache de l'autre côté. En général, personne n'a conscience de l'existence d'une telle barrière, même en tentant de la traverser. Si quelqu'un essaie de passer de l'autre côté, il ressort à un autre point de la barrière en ignorant complètement ce qui est derrière lui (il est même possible de faire demi-tour sans s'en apercevoir). Le transport n'est pas automatique, la réalité s'adapte progressivement au lieu de sortie, de façon presque imperceptible (difficulté Surhumaine en Vigilance). Par exemple, on pourrait utiliser la Barrière sur une ile, pour la séparer du reste du monde. Ce lieu disparaîtrait de la vue de tous, et un vaisseau qui naviguerait dans la zone ne verrait qu'une étendue d'eau, puis seraient immédiatement transporté vers un autre lieu et poursuivrait sa route. La Barrière n'a pas à être parfaite. Le sorcier peut choisir de laisser délibérément des passages ou des ouvertures, dans un sens ou dans les deux, pour pouvoir la traverser. Certaines conditions permettent à quelques personnes de passer de l'autre côté. Pour commencer l'entité doit avoir une Gnose supérieure à 25 et avoir conscience de l'existence et de la localisation exacte de la barrière. Ces conditions remplies, elle doit réussir un test de RMys pour traverser la barrière. En cas d'échec elle ne peut refaire ce test qu'une fois par jour. Le sort peut affecter un territoire ou s'étendre sur une ligne. Une fois lancée, la barrière demeure au même endroit.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 800,
+            "requiredIntelligence": 15,
+            "effect": "120 RMys / 100 km carrés ou de longueur",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 2500,
+            "requiredIntelligence": 16,
+            "effect": "180 RMys / 1 000 km carrés ou de longueur",
+            "maintenance": 45
+          },
+          {
+            "level": "Avancé",
+            "zeon": 5000,
+            "requiredIntelligence": 17,
+            "effect": "240 RMys / 100 000 km carrés ou de longueur",
+            "maintenance": 45
+          },
+          {
+            "level": "Arcane",
+            "zeon": 10000,
+            "requiredIntelligence": 19,
+            "effect": "300 RMys / Aucune limite d'étendue",
+            "maintenance": 50
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Le Don de la Vie",
+        "level": 98,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier a la capacité de créer une nouvelle forme de vie, le premier né d'une race qui n'a jamais existé auparavant. La création peut être de n'importe quel type (Naturelle, d'Entre Mondes ou Animique), et être liée à un élément déterminé. Le niveau maximal de la créature ne peut être supérieur à celui de son créateur. Ce dernier doit choisir la Gnose de son œuvre, en lui accordant une valeur maximale inférieure de dix points à la sienne. S'il s'agit d'une créature naturelle avec une Gnose inférieure à 20, elle bénéficie de PF supplémentaires pour choisir des pouvoirs et des capacités spéciales raciaux, en utilisant les règles du Chapitre 26.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 800,
+            "requiredIntelligence": 16,
+            "effect": "Niveau 1 et 50 PF pour une créature naturelle",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 2000,
+            "requiredIntelligence": 17,
+            "effect": "Niveau 6 et 100 PF pour une créature naturelle",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 4000,
+            "requiredIntelligence": 18,
+            "effect": "Niveau 11 et 150 PF pour une créature naturelle",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 8000,
+            "requiredIntelligence": 19,
+            "effect": "Niveau 16 et 200 PF pour une créature naturelle",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Créer",
+        "level": 100,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet au sorcier d'obtenir le pouvoir de création absolu, la capacité de concevoir tout ce qu'il désire : des continents, des océans, voire des mondes entiers. En termes de jeu, le sorcier dispose de points de Présence pour créer ce qu'il souhaite, tant qu'il ne dépasse pas la limite de Présence déterminée par le Degré du sort pour le tout et par élément distinct. Ce sort peut aussi imposer de nouvelles règles à la réalité comme altérer la gravité, modifier la vitesse à laquelle passe le temps... Toute personne avec une Gnose inférieure de moitié à celle du sorcier est soumise à ces nouvelles règles.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 1000,
+            "requiredIntelligence": 17,
+            "effect": "1 000 points de Présence / Présence maximale 180 / 1 règle existentielle",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 3000,
+            "requiredIntelligence": 18,
+            "effect": "10 000 points de Présence / Présence maximale 220 / 5 règles existentielles",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 6000,
+            "requiredIntelligence": 19,
+            "effect": "20 000 points de Présence / Présence maximale 260 / 10 règles existentielles",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 12000,
+            "requiredIntelligence": 20,
+            "effect": "100 000 points de Présence / Présence maximale 320 / Pas de limitation pour les règles existentielles",
+            "maintenance": 0
+          }
+        ]
       }
     ]
   },
