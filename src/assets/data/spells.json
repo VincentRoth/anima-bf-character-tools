@@ -6210,9 +6210,84 @@
     "description": "La première des quatres voies élémentaires mineures contrôle les hautes températures. Ses sorts se basent sur la chaleur, le feu et peuvent raser de vastes superficies. Elle accueille aussi les sorts de sacrifice qui permettent de consumer certains aspects d'un individu pour en améliorer d'autres. Cette voie s'avère très offensive.",
     "spells": [
       {
+        "name": "Créer Feu",
+        "level": 2,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée des intensités de feu. Tant que le sort est maintenu, la température reste constante.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "1 intensité de feu",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "6 intensités de feu",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "8 intensités de feu",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "10 intensités de feu",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 4,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 10
+      },
+      {
+        "name": "Réduire le Feu",
+        "level": 6,
+        "action": "Active",
+        "types": ["Effet", "Animique"],
+        "effect": "Réduit les intensités de feu ou de chaleur. Il faut prendre en compte le fait que certaines sources de feu, comme les volcans ou les grands incendies, se reproduisent automatiquement si elles ne sont pas totalement éteintes. Quand ce sort est lancé sur un être basé sur le Feu, il subit 5 points de dégâts par intensité réduite s'il ne réussit pas un test de RMys. Les créatures à Encaissement subissent 25 points de dégâts par intensité réduite.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "100 RMys / -1 intensité de feu",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "120 RMys / -5 intensités de feu",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys / -10 intensités de feu",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 13,
+            "effect": "180 RMys / -15 intensités de feu",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 8,
@@ -6220,9 +6295,121 @@
         "maxFreeAccessLevel": 10
       },
       {
+        "name": "Immunité contre le Feu",
+        "level": 10,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet au sorcier, ou à la personne qu'il désigne, d'être immunisé à un certaine niveau d'intensités de chaleur. S'il subit une attaque basée sur ces éléments, chaque intensité d'immunité réduit de 5 points les Dégâts de l'attaque et accorde un bonus de +5 aux Résistances contre ces effets.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "5 intensités de chaleur",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 8,
+            "effect": "12 intensités de chaleur",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "20 intensités de chaleur",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 13,
+            "effect": "30 intensités de chaleur",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Sentir la Chaleur",
+        "level": 12,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Détecte la localisation de toute source de chaleur dans la zone d'effet du sort. Ce sort ne donne aucune information sur la nature de ce qui la produit, mais permet de sentir les intensités et les tailles. Il est même possible de percevoir la chaleur émise par un corps humain, mais pas celle d'êtres inanimés ou immatériels, comme les golems ou les morts. Pour éviter cette détection, il faut réussir un test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "120 RMys / 25 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "150 RMys / 50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 12,
+            "effect": "180 RMys / 100 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 15,
+            "effect": "220 RMys / 250 m de rayon",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
         "level": 14,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 20
+      },
+      {
+        "name": "Boule de Feu",
+        "level": 16,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Ce sort projette une attaque ignée qui explose sur une zone. Il n'est pas possible de sélectionner les cibles à l'intérieur de la zone de l'explosion. L'attaque se fait sur le Mode Chaleur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "Dégâts 50 / 5 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts 100 / 25 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 160,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 140 / 80 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 160 / 150 m de rayon",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 18,
@@ -6230,9 +6417,121 @@
         "maxFreeAccessLevel": 20
       },
       {
+        "name": "Contrôle sur le Feu",
+        "level": 20,
+        "action": "Active",
+        "types": ["Effet", "Animique"],
+        "effect": "Permet de contrôler la forme et la croissance d'un feu. Ce sort permet également de modifier divers aspects des flammes comme leur couleur, leur apparence et même la fumée qu'elles dégagent. Dans le cas d'un être naturellement basée sur cet éléménet, le sorcier pourra la contrôler si la créature échoue un test de RMys. Elle ne pourra alors plus le refaire, à moins de recevoir un ordre allant à l'encontre de sa nature.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "100 RMys / 5 intensités",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 9,
+            "effect": "120 RMys / 8 intensités",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys / 12 intensités",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 180,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys / 15 intensités",
+            "maintenance": 20
+          }
+        ],
+        "isOldDailyMaintenance": true
+      },
+      {
+        "name": "Barrière de Feu",
+        "level": 22,
+        "action": "Active",
+        "types": ["Automatique", "Défense"],
+        "effect": "Ce sort érige un puissant mur de feu. Toute personne qui tente de le traverser subit automatiquement une attaque avec un Résultat d'Attaque de 240 (Quasiment Impossible) sur le Mode Chaleur. Recevoir des dégâts n'empêche pas une persone de traverser le mur. De plus, le sorcier pourra l'utiliser comme un bouclier magique pour bloquer uniquement les attaques basées sur l'eau, le froid ou le feu.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "Dégâts 80 / 2 m d’extension / 300 Points de Vie",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts 90 / 5 m d’extension / 500 Points de Vie",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 100 / 10 m d’extension / 800 Points de Vie / Permet de bloquer les attaques basées sur l'énergie",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 100 / 15 m d’extension / 1 500 Points de Vie / L'attaque se fait contre une difficulté de 280 (Impossible) / Permet de bloquer tous les types d'attaque",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
         "level": 24,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 30
+      },
+      {
+        "name": "Arme Ignée",
+        "level": 26,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort enveloppe une arme de flammes, ce qui lui permet d'attaquer sur le Mode Chaleur comme Mode principal. Le feu est si puissant qu'il augmente les Dégâts de l'attaque, sans affecter la résistance de l'arme.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "+10 aux Dégâts",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 9,
+            "effect": "+20 aux Dégâts",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 11,
+            "effect": "+30 aux Dégâts",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 14,
+            "effect": "+40 aux Dégâts",
+            "maintenance": 15
+          }
+        ]
       },
       {
         "level": 28,
@@ -6240,9 +6539,121 @@
         "maxFreeAccessLevel": 30
       },
       {
+        "name": "Décharge de Chaleur",
+        "level": 30,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Ce sort projette une décharge d'ondes à haute température, pouvant enflammer n'importe quoi. L'attaque se fait sur le Mode Chaleur. Comme les ondes ne sont pas visibles pour l’œil humain, le défenseur doit pouvoir voir la magie, posséder une vision thermique ou réussir un test Absurde de Vigilance pour ne pas subir le malus de Cécité contre cette attaque.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Dégâts 50",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts 70",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 90",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 110",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Voir dans les Cendres",
+        "level": 32,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort transporte les sens du sorcier dans le passé, lui permettant de voir la cause ou l'incident qui a provoqué un incendie déterminé. Le sorcier doit se trouver parmi les restes de cet incendie pour lancer ce sort, et il n'a pas conscience de ce qui se passe autour de lui pendant toute sa durée.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Peut remonter d'une heure dans le passé",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "Peut remonter d'un jour dans le passé",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 220,
+            "requiredIntelligence": 13,
+            "effect": "Peut remonter d'un mois dans le passé",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 340,
+            "requiredIntelligence": 15,
+            "effect": "Peut remonter d'un an dans le passé",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 34,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 40
+      },
+      {
+        "name": "Augmenter la Température Ambiante",
+        "level": 36,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Augmente la température ambiante. Si celle-ci dépasse de 10 degrés Celsius la température naturelle la plus élevée pour la zone, l’augmentation est alors réduite de moitié.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "+5 degrés Celsius / 1 km de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "+10 degrés Celsius / 5 km de rayon",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "+20 degrés Celsius / 10 km de rayon",
+            "maintenance": 50
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "+30 degrés Celsius / 15 km de rayon",
+            "maintenance": 60
+          }
+        ],
+        "isDailyMaintenance": true
       },
       {
         "level": 38,
@@ -6250,9 +6661,121 @@
         "maxFreeAccessLevel": 40
       },
       {
+        "name": "Mine de Feu",
+        "level": 40,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée une mine de feu qui explose dans toute la zone au moment souhaité par le sorcier, attaquant alors sur le Mode Chaleur. Pour se défendre contre l'explosion, il faut effectuer une défense contre un Résultat d'Attaque de 240 (Quasiment Impossible) si l'on se trouve à plus de la moitié du rayon maximal de l'explosion ou contre 280 (Impossible) en étant à moins de la moitié. À bout portant, c'est-à-dire à moins d'un mètre du centre, le Résultat d'Attaque est de 320 (difficulté Surhumaine). La mine peut être laissée à un endroit ou sur un objet précis, où elle reste fixée jusqu'à son explosion. Le sorcier peut l'activer au moment où il le désire, ce qui ne compte pas comme une action active. Il n'est pas possible de choisir des cibles à l'intérieur de la zone d'explosion, qui affecte toutes les choses et personnes présentes y compris le sorcier.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "Dégâts 80 / 10 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 160,
+            "requiredIntelligence": 10,
+            "effect": "Dégâts 120 / 50 m de rayon",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 180 / 150 m de rayon",
+            "maintenance": 50
+          },
+          {
+            "level": "Arcane",
+            "zeon": 320,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 240 / 250 m de rayon",
+            "maintenance": 60
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Augmenter le Critique",
+        "level": 42,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Accorde un bonus au jet pour calculer le niveau de Critique provoqué par une attaque déterminée. Bien que ce sort soit passif, il doit être utilisé avant que les dés ne soient jetés.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "+20 au Niveau de Critique",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "+40 au Niveau de Critique",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "+60 au Niveau de Critique",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "+80 au Niveau de Critique",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 44,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 50
+      },
+      {
+        "name": "Déshydrater",
+        "level": 46,
+        "action": "Active",
+        "types": ["Effet", "Animique"],
+        "effect": "Ce sort détruit presque toute trace d'humidité à l'intérieur d'une zone définie. Il peut être utilisé pour blesser n'importe quel élémentaire d'Eau, leur infligeant des dégâts équivalents au double de leur marge d'échec sur un test de RMys ou de RPhy. S'il sert à blesser des êtres vivants dont l'organisme est basé sur l'eau, incluant les êtres humains, ses effets peuvent également être très dommageables, même si les dégâts se limite à la moitié de la marge d'échec.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "100 RMys ou RPhy / 5 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "120 RMys ou RPhy / 15 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys ou RPhy / 25 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 14,
+            "effect": "160 RMys ou RPhy / 35 m de rayon",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 48,
@@ -6260,9 +6783,121 @@
         "maxFreeAccessLevel": 50
       },
       {
+        "name": "Fondre",
+        "level": 50,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort chauffe n'importe quel objet inorganique que le sorcier choisit dans un rayon déterminé, ce qui lui permet d'atteindre des températures extrêmement élevées. La chaleur produite est si intense que l'objet doit réussir un test de Résistance sous peine de fondre en un nombre de rounds égal à sa Solidité. Toute personne en contact avec l'objet doit s'en écarter pour ne pas subir de dégâts. Dans le cas contraire elle doit effectuer un jet sur le Tableau 76 à chaque round.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "80 RPhy / 10 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "100 RPhy / 50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 12,
+            "effect": "120 RPhy / 100 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 14,
+            "effect": "140 RPhy / 150 m de rayon",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "De Corps à Feu",
+        "level": 52,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "La créature désignée par le sorcier se transforme en flammes et est ainsi immunisée contre toutes les attaques non basées sur l'énergie, le froid ou l'eau. Toute substance capable d'éteindre le feu (sable, mousse...) inflige aussi des dégâts au personnage. Toute personne en contact avec les flammes de son corps doit réussir un test de RPhy contre le double de sa Présence sous peine de perdre une quantité de Points de Vie égale à la moitié de la marge d'échec. Si la personne affectée possède une protection contre le feu, chaque point d'IP contre le Mode Chaleur lui accorde un bonus de +5 à ce test.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "Les capacités décrites.",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "La cible obtient aussi un bonus de +30 à ses Résistances contre les effets basés sur la chaleur.",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 13,
+            "effect": "Identique au Degré Intermédiaire, et la cible peut se faufiler n’importe où des flammes peuvent passer.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 160,
+            "requiredIntelligence": 16,
+            "effect": "Identique au Degré Avancé, mais les attaques basées sur le froid ou l'eau qui ne sont pas d’origine surnaturelle n’infligent pas de dégâts.",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
         "level": 54,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 60
+      },
+      {
+        "name": "Sacrifice Vital",
+        "level": 56,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet au sorcier de consumer sa force vitale pour augmenter ses capacités physiques quand il en a besoin. Ce sort permet de sacrifier temporairement ses Points de Vie, à l'aide d'une action passive, pour obtenir un bonus à une action déterminée. Chaque 5 Points de Vie que le personnage sacrifie ainsi lui accorde un bonus de +5 à l'un de ses tests (en ce qui concerne les créatures à Encaissement, il faut multiplier ces points par leur Multiple d'Encaissement). Ce bonus ne concerne que les actions physiques et peut s'ajouter aux compétences principales comme l'Attaque, la Défense ou la Projection magique. Bien qu'il s'agisse d'une action passive, il faut déclarer ce sacrifice avant de lancer les dés. Le sorcier peut aussi décider de conférer cette capacité à un autre individu, ce dernier décide alors combien de points dépenser au cas par cas. Les Points de Vie perdus de cette façon se récupèrent à un rythme de 10 par jour, quelle que soit la Régénération naturelle du personnage (c'est-à-dire qu'ils comptent comme un Sacrifice). Les effets de ce sort ne se cumulent pas et un seul sort de ce type peut affecter un individu précis en même temps.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "Sacrifice maximal de 50 PV par round",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "Sacrifice maximal de 100 PV par round",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Sacrifice maximal de 150 PV par round",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "Sacrifice maximal de 200 PV par round",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
       },
       {
         "level": 58,
@@ -6270,9 +6905,121 @@
         "maxFreeAccessLevel": 60
       },
       {
+        "name": "Incinérer",
+        "level": 60,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort recouvre de flammes toutes les cibles désignée le sorcier, qu'elles soient organiques ou non, tant qu'elles se trouvent dans la zone d'effet. En termes de jeu, le sorcier effectue un jet avec un bonus sur le « Tableau 76 : En flammes », pour chaque cible qu'il désire incinérer. Pour résister aux effets de ce sort, il faut réussir un test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys / +100 sur le Tableau 76 / 50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys / +120 sur le Tableau 76 / 100 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 14,
+            "effect": "180 RMys / +140 sur le Tableau 76 / 150 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 260,
+            "requiredIntelligence": 16,
+            "effect": "200 RMys / +160 sur le Tableau 76 / 200 m de rayon",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Consumer l'Essence",
+        "level": 62,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort crée une terrifiante aura surnaturelle autour du sorcier, qui détruit l'essence de vie des gens, consume leur énergie et les empêche de se soigner par des moyens naturels. Chaque cible dans un rayon défini autour du sorcier doit réussir un test de RMys sous peine de perdre une quantité de Points de Vie et de points de Zéon équivalant à la marge d'échec Les PV perdus par un personnage à cause de ce sort ne se récupérent pas de façon naturelle, ils ne peuvent être rendus que par des sorts de guérison ou des moyens surnaturels équivalents. En ce qui concerne les points de Zéon, ils doivent être absorbés chez d'autres sorciers ou dans des réserves magiques.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "120 RMys / 10 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "160 RMys / 25 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "200 RMys / 50 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "220 RMys / 150 m de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 64,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 70
+      },
+      {
+        "name": "Sacrifice de Pouvoir",
+        "level": 66,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet au sorcier de consumer sa propre énergie magique pour augmenter son accumulation magique. Ce sort permet de dépenser des points de Zéon, à l'aide d'une action passive, pour obtenir un bonus temporaire à l'AMR. Pour 10 points dépensés dans ce but, le sorcier bénéficie d'un bonus de +5 à son AMR jusqu'à la fin du round. Les effets de ce sort ne se cumulent pas, un seul sort de ce type peut affecter un individu précis en même temps.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 7,
+            "effect": "20 points de Zéon par round au maximum",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "50 points de Zéon par round au maximum",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "80 points de Zéon par round au maximum",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "120 points de Zéon par round au maximum",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
       },
       {
         "level": 68,
@@ -6280,9 +7027,121 @@
         "maxFreeAccessLevel": 70
       },
       {
+        "name": "Critique Direct",
+        "level": 70,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Provoque une explosion interne chez un individu, ce qui lui inflige un Critique automatique. En termes de jeu, la cible subit l'équivalent d'un niveau de Critique déterminé par le Degré du sort, mais aura la possibilité de le contrer en réussisant un test de RPhy selon les règles habituelles. Pour éviter les effets du sort, il faut réussir un test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "140 RMys / Critique 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 11,
+            "effect": "160 RMys / Critique 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 13,
+            "effect": "180 RMys / Critique 180",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 16,
+            "effect": "200 RMys / Critique 220",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Magie pour les Capacités",
+        "level": 72,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet au sorcier de consumer son énergie magique pour augmenter temporairement ses caractéristiques et les compétences qui en dépendent. Ce sort permet de sacrifier ses points de Zéon pour obtenir un bonus aux caractéristiques, de façon passive. 25 points de Zéon sacrifiés accordent un bonus de +1 à une caractéristique jusqu'à la fin du round. Les effets de ce sort ne se cumulent pas, il ne peut donc affecter qu'une seul fois un individu précis en même temps.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "50 points de Zéon par round au maximum",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "100 points de Zéon par round au maximum",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "150 points de Zéon par round au maximum",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "200 points de Zéon par round au maximum",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 74,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 80
+      },
+      {
+        "name": "Tempête de Feu",
+        "level": 76,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sorcier désigne une zone où il déchaîne une puissante tempête de feu qui calcine tout ce qui se trouve à l'intérieur. Les individus s'y trouvant subissent à chaque round une attaque automatique avec des Dégâts de 100 sur le Mode Chaleur, contre un Résultat d'Attaque déterminé par le Degré du sort. La zone de la tempête a un rayon maximal à l'intérieur duquel il n'est pas possible de désigner des cibles et qui peut affecter également celui qui l'a lancée. Pour être victime de cette attaque, il suffit de se trouver dans la zone lors du round suivant le lancer du sort. Celui-ci reste fixé à l'endroit où il a été lancé.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "Résultat d’Attaque Absurde (180) / 25 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "Résultat d’Attaque Quasiment Impossible (240) / 150 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Résultat d’Attaque Impossible (280) / 200 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 15,
+            "effect": "Résultat d’Attaque Surhumain (320) / 250 m de rayon",
+            "maintenance": 30
+          }
+        ]
       },
       {
         "level": 78,
@@ -6290,9 +7149,123 @@
         "maxFreeAccessLevel": 80
       },
       {
+        "name": "Consumer la Vie par Magie",
+        "level": 80,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet au sorcier de consommer sa propre force vitale pour restaurer sa réserve de magie. Il peut alors sacrifier temporairement des Points de Vie pour récupérer du Zéon, à l'aide d'une action passive. Pour 5 PV sacrifiés de cette façon, le sorcier récupère 100 points de Zéon (les créatures à Encaissement multiplient cette quantité de PV par leur Multiple d'Encaissement). Les Points de Vie perdus ainsi comptent comme un Sacrifice, c'est-à-dire qu'ils se récupèrent à un rythme de 10 par jour, quelle que soit la Régénération naturelle du personnage ou les pouvoirs de guérison qu'il utilise. Les effets de ce sort ne se cumulent pas, un seul sort de ce type peut affecter un individu précis en même temps.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "20 Points de Vie par round au maximum",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "80 Points de Vie par round au maximum",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "140 Points de Vie par round au maximum",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "200 Points de Vie par round au maximum",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Créer Efrit",
+        "level": 82,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Façonne une créature de feu avec l'apparence de la vie, sous le contrôle absolu du sorcier. Cet être est conçu comme une créature d'Entre Mondes, en utilisant les pouvoirs et limitations des élémentaires de Feu du Chapitre 26. Pour calculer son niveau maximum, il faut se servir des règles du sort Créer Être, niveau 78 de la voie de Création.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "Niveau 1",
+            "maintenance": 50
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "Niveau 3",
+            "maintenance": 70
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 14,
+            "effect": "Niveau 6",
+            "maintenance": 100
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 16,
+            "effect": "Niveau 10",
+            "maintenance": 140
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 84,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 90
+      },
+      {
+        "name": "Bûcher",
+        "level": 86,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée des intensités de feu. Tant que le sort est maintenu, les flammes continuent de brûler même si elles n'ont rien à consumer. Si elles se propagent à quelque chose d'inflammable, elle continuent de brûler normalement après la fin du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "15 intensités",
+            "maintenance": 25
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "25 intensités",
+            "maintenance": 30
+          },
+          {
+            "level": "Avancé",
+            "zeon": 350,
+            "requiredIntelligence": 14,
+            "effect": "35 intensités",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 18,
+            "effect": "45 intensités",
+            "maintenance": 35
+          }
+        ],
+        "isDailyMaintenance": true
       },
       {
         "level": 88,
@@ -6300,14 +7273,165 @@
         "maxFreeAccessLevel": 90
       },
       {
+        "name": "Dévastation",
+        "level": 90,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Projette une explosion de feu, capable d'altérer l'énergie, qui attaque sur une zone avec des Dégâts de 200 points sur le Mode Chaleur. Il n'est pas possible de désigner des cibles à l'intérieur de la zone d'effet",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "1 km de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 13,
+            "effect": "5 km de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 400,
+            "requiredIntelligence": 16,
+            "effect": "10 km de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 18,
+            "effect": "15 km de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Sacrifice d'Autrui",
+        "level": 92,
+        "action": "Active",
+        "types": ["Animique", "Effet"],
+        "effect": "Ce sort enchaîne la force vitale et l'essence d'autres personnes au sorcier, ce qui lui permet de les consumer pour son propre bénéfice. En termes de jeu, le sorcier peut utiliser les Points de Vie et de Zéon des cibles affectées par ce sort pour ses sorts de sacrifice : Sacrifice Vital, Magie pour les Capacités, Sacrifice de Pouvoir et Consumer la Vie par Magie. Ce sort fonctionne sur une aire fixe, à l'intérieur de laquelle le sorcier peut désigner autant de cibles qu'il le désire. Il faut réussir un test de RMys pour ne pas être affecté. Dans le cas contraire, les cibles affectées ont droit à un nouveau test chaque par jour, ou à chaque fois que leurs énergies sont absorbées.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 13,
+            "effect": "120 RMys / Zone de 1 km²",
+            "maintenance": 50
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "140 RMys / Zone de 2 km²",
+            "maintenance": 70
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 17,
+            "effect": "160 RMys / Zone de 3 km²",
+            "maintenance": 100
+          },
+          {
+            "level": "Arcane",
+            "zeon": 750,
+            "requiredIntelligence": 19,
+            "effect": "180 RMys / Zone de 5 km²",
+            "maintenance": 150
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 94,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 100
       },
       {
+        "name": "Seigneur du Feu",
+        "level": 96,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sorcier contrôle toutes les particulesliées à la chaleur autour de lui. Ce contrôle lui permet même de manœuvrer les courants de magma sous l'écorce terrestre, et ainsi de créer des volcans ou de provoquer des éruptions. Toute créature basée sur le Feu présente à l'intérieur de la zone doit réussir un test de RMys sous peine d'être contrôlée par le sorcier. En cas de réussite, elle n'a pas à refaire le test. Les êtres affectés n'ont droit à un nouveau test que s'ils modifient leur Résistance.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 10,
+            "effect": "RMys 140 / 100 km de rayon",
+            "maintenance": 30
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 450,
+            "requiredIntelligence": 12,
+            "effect": "RMys 180 / 1 000 km de rayon",
+            "maintenance": 45
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 15,
+            "effect": "RMys 200 / 10 000 km de rayon",
+            "maintenance": 60
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1000,
+            "requiredIntelligence": 18,
+            "effect": "RMys 240 / Affecte n'importe quelle source de chaleur",
+            "maintenance": 100
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 98,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 100
+      },
+      {
+        "name": "Armageddon",
+        "level": 100,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sort de Feu ultime, qui donne au sorcier la capacité de consumer une partie de l'essence même du monde, calcinant ainsi les âmes autour de lui. Toute chose, organique ou non, se trouvant à l'intérieur de la zone d'effet, doit réussir un test de RMys à chaque minute sous peine d'être réduite en cendres physiquement et spirituellement. Tant que le sorcier maintient Armageddon actif, aucune forme de vie ne peut naître ou être créée dans sa zone d'effet.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 450,
+            "requiredIntelligence": 15,
+            "effect": "140 RMys / 10 km de rayon",
+            "maintenance": 270
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 800,
+            "requiredIntelligence": 16,
+            "effect": "150 RMys / 25 km de rayon",
+            "maintenance": 480
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1200,
+            "requiredIntelligence": 17,
+            "effect": "160 RMys / 50 km de rayon",
+            "maintenance": 720
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1600,
+            "requiredIntelligence": 18,
+            "effect": "180 RMys / 150 km de rayon",
+            "maintenance": 960
+          }
+        ],
+        "isDailyMaintenance": true
       }
     ]
   },
