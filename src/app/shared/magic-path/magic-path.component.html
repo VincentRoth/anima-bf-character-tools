@@ -42,16 +42,18 @@
     ></app-spell>
   </div>
   <ng-container *ngIf="isFreeAccess()">
-    <details *ngFor="let level of getFreeAccessSpellLevels()">
-      <summary>
-        <h4>Niveau {{ getFreeAccessSpellLevel(level) }}</h4>
-      </summary>
-      <div class="flex flex-row flex-center">
-        <app-spell
-          *ngFor="let spell of getSpellsByLevel(level)"
-          [spell]="spell"
-        ></app-spell>
-      </div>
-    </details>
+    <ng-container *ngFor="let level of getFreeAccessSpellLevels()">
+      <details *ngIf="getSpellsByLevel(level).length">
+        <summary>
+          <h4>Niveau {{ getFreeAccessSpellLevel(level) }}</h4>
+        </summary>
+        <div class="flex flex-row flex-center">
+          <app-spell
+            *ngFor="let spell of getSpellsByLevel(level)"
+            [spell]="spell"
+          ></app-spell>
+        </div>
+      </details>
+    </ng-container>
   </ng-container>
 </details>

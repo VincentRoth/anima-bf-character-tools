@@ -1,5 +1,5 @@
-<mat-card class="spell-card" (click)="toggleOpen()">
-  <mat-card-header>
+<mat-card class="spell-card">
+  <mat-card-header (click)="toggleOpen()">
     <mat-card-title class="spell-title">
       {{ open ? '▾' : '▸' }} {{ getTitle() }}
     </mat-card-title>
