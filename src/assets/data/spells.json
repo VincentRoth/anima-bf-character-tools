@@ -7350,7 +7350,7 @@
           }
         ],
         "isDailyMaintenance": true,
-        "note": "Des zones de 1 / 2 / 3 / 5 km² correspondent à des rayons de 564 / 797 / 977 / 1261 m. Soit en plus pratique 500 / 750 / 100 / 1250 m."
+        "note": "Des zones de 1 / 2 / 3 / 5 km² correspondent à des rayons de 564 / 797 / 977 / 1261 m. Soit en plus pratique 500 / 750 / 1000 / 1250 m."
       },
       {
         "level": 94,
@@ -14070,7 +14070,7 @@
           }
         ],
         "forbiddenPaths": [],
-        "note": "Ce sort était à maintien Quotidien dans la 1ère édition."
+        "note": "Ce sort était à maintien Quotidien dans la 1ère édition (1 pour 20), soit 30 / 45 / 60 / 75."
       },
       {
         "name": "Renforcer la Magie",
