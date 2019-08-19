@@ -232,7 +232,7 @@
           },
           {
             "level": "Arcane",
-            "zeon": 15,
+            "zeon": 150,
             "requiredIntelligence": 15,
             "effect": "IP 12 contre l’Énergie et IP 6 contre le reste",
             "maintenance": 20
@@ -1236,7 +1236,7 @@
             "maintenance": 80
           }
         ],
-        "isOldDailyMaintenance": true
+        "note": "Ce sort était à maintien Quotidien dans la 1ère édition."
       },
       {
         "name": "Création de Lumière",
@@ -1429,7 +1429,7 @@
             "maintenance": 160
           }
         ],
-        "isOldDailyMaintenance": true
+        "note": "Ce sort était à maintien Quotidien dans la 1ère édition."
       },
       {
         "level": 94,
@@ -1509,7 +1509,7 @@
             "maintenance": 50
           }
         ],
-        "isOldDailyMaintenance": true
+        "note": "Ce sort était à maintien Quotidien dans la 1ère édition."
       },
       {
         "name": "Holocauste de Lumière",
@@ -2480,7 +2480,8 @@
             "effect": "5 km de rayon / Identique au Degré Avancé, mais le sorcier peut en plus effacer toute trace de ce qui est arrivé par le passé dans la zone affectée",
             "maintenance": 0
           }
-        ]
+        ],
+        "note": "Ce sort avait un maintien Quotidien dans la 1ère édition (1 pour 10) soit 10 / 20 / 30 / 40."
       },
       {
         "name": "Bouclier Anti-Positif",
@@ -2788,7 +2789,7 @@
             "maintenance": 80
           }
         ],
-        "isOldDailyMaintenance": true
+        "note": "Ce sort était à maintien Quotidien dans la 1ère édition."
       },
       {
         "name": "Création Obscure",
@@ -2982,7 +2983,7 @@
             "maintenance": 160
           }
         ],
-        "isOldDailyMaintenance": true
+        "note": "Ce sort était à maintien Quotidien dans la 1ère édition."
       },
       {
         "level": 94,
@@ -3062,7 +3063,7 @@
             "maintenance": 50
           }
         ],
-        "isOldDailyMaintenance": true
+        "note": "Ce sort était à maintien Quotidien dans la 1ère édition."
       },
       {
         "name": "Holocauste d'Obscurité",
@@ -5244,7 +5245,7 @@
         "level": 40,
         "action": "Active",
         "types": ["Animique"],
-        "effect": "La cible de ce sort voit toutes ses Résistances diminuer d'une valeur égale à sa marge d'échec au test de RMys. Ces malus disparaissent au rythme de 5 points par heure.",
+        "effect": "La cible de ce sort voit toutes ses Résistances diminuer d'une valeur égale à sa marge d'échec au test de RMys.",
         "castingLevels": [
           {
             "level": "Initial",
@@ -5274,7 +5275,8 @@
             "effect": "240 RMys",
             "maintenance": 30
           }
-        ]
+        ],
+        "note": "Ces malus aux Résistances disparaissent au rythme de 5 points par heure (Effet ésotérique de Ki, Assaut Psychique)."
       },
       {
         "name": "Annuler les États",
@@ -5583,7 +5585,8 @@
             "maintenance": 30
           }
         ],
-        "isDailyMaintenance": true
+        "isDailyMaintenance": true,
+        "note": "Ce sort était à maintien par round dans la 1ère édition."
       },
       {
         "name": "Décharge Majeure",
@@ -6245,7 +6248,8 @@
             "maintenance": 15
           }
         ],
-        "isDailyMaintenance": true
+        "isDailyMaintenance": true,
+        "Note": "Si le feu prend sur une matière naturellement inflammable, il n'est plus nécessaire de maintenir le sort pour qu'elle continue de brûler (Créer du Feu, sort d'accès libre de niveau 1-10)."
       },
       {
         "level": 4,
@@ -6452,7 +6456,7 @@
             "maintenance": 20
           }
         ],
-        "isOldDailyMaintenance": true
+        "note": "Ce sort était à maintien Quotidien dans la 1ère édition. Ce qui tranche avec d'autres sorts de contrôle comme Contrôle des Liquides, niveau 22 de la voie de l'Eau, qui permet aussi de contrôler les élémentaires."
       },
       {
         "name": "Barrière de Feu",
@@ -7345,7 +7349,8 @@
             "maintenance": 150
           }
         ],
-        "isDailyMaintenance": true
+        "isDailyMaintenance": true,
+        "note": "Des zones de 1 / 2 / 3 / 5 km² correspondent à des rayons de 564 / 797 / 977 / 1261 m. Soit en plus pratique 500 / 750 / 100 / 1250 m."
       },
       {
         "level": 94,
@@ -7431,7 +7436,8 @@
             "maintenance": 960
           }
         ],
-        "isDailyMaintenance": true
+        "isDailyMaintenance": true,
+        "note": "Dans l'édition Core Exxet espagnole, son maintien est 90 / 100 / 105 / 110 par round. Ce sort était à maintien Quotidien dans la 1ère édition (1 pour 5) soit 90 / 160 / 240 / 320."
       }
     ]
   },
@@ -9152,7 +9158,7 @@
         "level": 78,
         "action": "Active",
         "types": ["Animique"],
-        "effect": "Le nécromancien arrache l'âme d'une autre personne afin de se nourrir de son essence et de son pouvoir. Plus l'esprit absorbé est puissant, plus grande est l'énergie reçue. L'individu ciblé par ce sort doit réussir un test de RMys sous peine de perdre une quantité de Présence égale à la moitié de sa marge d'échec. Il régresse aussi d'un niveau par tranche de cinq points perdus, ce qui affecte toutes les capacités ou pouvoirs dépendant de celui-ci. Si sa Présence tombe à zéro, son âme a été complètement absorbée et meurt. Tous les 10 points de Présence absorbés accordent temporairement au nécromancien un bonus de +1 à l'une de ses caractéristiques, ou 10 PF pour acquérir un Pouvoir ou une Capacité Primordiale de monstre comme pour un être de Gnose 30. Ces valeurs augmentées disparaissent au rythme d'un +1 ou de 20 PF par jour. Ces dommages spirituels sont récupérés au rythme de 5 points par jour.",
+        "effect": "Le nécromancien arrache l'âme d'une autre personne afin de se nourrir de son essence et de son pouvoir. Plus l'esprit absorbé est puissant, plus grande est l'énergie reçue. L'individu ciblé par ce sort doit réussir un test de RMys sous peine de perdre une quantité de Présence égale à la moitié de sa marge d'échec. Il régresse aussi d'un niveau par tranche de cinq points perdus, ce qui affecte toutes les capacités ou pouvoirs dépendant de celui-ci. Si sa Présence tombe à zéro, son âme a été complètement absorbée et meurt. Tous les 10 points de Présence absorbés accordent temporairement au nécromancien un bonus de +1 à l'une de ses caractéristiques, ou 10 PF pour acquérir un Pouvoir ou une Capacité Primordiale de monstre comme pour un être de Gnose 30. Ces valeurs augmentées disparaissent au rythme d'un +1 ou de 20 PF par jour.",
         "castingLevels": [
           {
             "level": "Initial",
@@ -9182,7 +9188,8 @@
             "effect": "180 RMys",
             "maintenance": 0
           }
-        ]
+        ],
+        "note": "Ces dommages spirituels à la Présence sont récupérés au rythme de 5 points par jour (Zone Dévorante, niveau 76 de la voie de Destruction)."
       },
       {
         "name": "Vaincre la Mort",
@@ -9336,7 +9343,7 @@
             "maintenance": 150
           }
         ],
-        "isOldDailyMaintenance": true
+        "note": "Ce sort était à maintien Quotidien dans la 1ère édition."
       },
       {
         "name": "Subsistance",
@@ -9528,7 +9535,8 @@
             "maintenance": 250
           }
         ],
-        "isDailyMaintenance": true
+        "isDailyMaintenance": true,
+        "note": "Ce sort n'avait pas de maintien dans la 1ère édition."
       }
     ]
   },
@@ -14061,7 +14069,8 @@
             "maintenance": 0
           }
         ],
-        "forbiddenPaths": []
+        "forbiddenPaths": [],
+        "note": "Ce sort était à maintien Quotidien dans la 1ère édition."
       },
       {
         "name": "Renforcer la Magie",

@@ -90,7 +90,9 @@ export class SpellService extends AbstractQueryOnceService<MagicPath[]> {
                         .toLocaleLowerCase()
                         .includes(token)) ||
                     (spell.isDailyMaintenance &&
-                      'Quotidien'.toLocaleLowerCase().includes(token)))
+                      'Quotidien'.toLocaleLowerCase().includes(token)) ||
+                    (spell.note &&
+                      spell.note.toLocaleLowerCase().includes(token)))
                 );
               }, true)
           );

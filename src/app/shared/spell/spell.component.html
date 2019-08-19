@@ -63,6 +63,10 @@
         <span class="bold">Voies fermées : </span>
         {{ forbiddenPaths }}
       </p>
+      <p *ngIf="spell.note">
+        <span class="bold">Note : </span>
+        {{ spell.note }}
+      </p>
     </div>
 
     <div *ngIf="spell.isFreeAccess">

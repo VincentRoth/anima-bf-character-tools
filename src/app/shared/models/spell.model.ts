@@ -41,6 +41,7 @@ export interface Spell {
   isDailyMaintenance?: boolean;
   forbiddenPaths?: string[];
   isFreeAccess?: boolean;
+  note?: string;
 }
 
 export interface Spell {
