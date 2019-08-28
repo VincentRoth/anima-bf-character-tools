@@ -7195,7 +7195,7 @@
         "level": 82,
         "action": "Active",
         "types": ["Effet"],
-        "effect": "Façonne une créature de feu avec l'apparence de la vie, sous le contrôle absolu du sorcier. Cet être est conçu comme une créature d'Entre Mondes, en utilisant les pouvoirs et limitations des élémentaires de Feu du Chapitre 26. Pour calculer son niveau maximum, il faut se servir des règles du sort Créer Être, niveau 78 de la voie de Création.",
+        "effect": "Façonne une créature de feu avec l'apparence de la vie, sous le contrôle absolu du sorcier. Cet être est conçu comme une créature d'Entre Mondes, en utilisant les pouvoirs et limitations des élémentaires de Feu du Chapitre 26. Pour calculer son niveau maximal, il faut se servir des règles du sort Créer Être, niveau 78 de la voie de Création.",
         "castingLevels": [
           {
             "level": "Initial",
@@ -7448,9 +7448,85 @@
     "description": "L'élément de l'Eau accueille de nombreux concepts différents. Cette voie contrôle les liquides et la pureté des choses. Elle représente aussi le pouvoir du gel et des basses températures. Son pouvoir se révèle très équilibré sur les plans offensifs et défensifs.",
     "spells": [
       {
+        "name": "Source",
+        "level": 2,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Attire tous les courants ou ruisseaux souterrains qui se trouvent autour du sorcier, faisant jaillir une source à l'endroit désigné par ce dernier. Le sort influe sur les liquides naturels se trouvant à une distance maximale déterminée par son Degré, sans pouvoir toutefois traverser les barrières d'énergie.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "100 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "250 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "500 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 180,
+            "requiredIntelligence": 12,
+            "effect": "1 km de rayon",
+            "maintenance": 20
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 4,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 10
+      },
+      {
+        "name": "Créer Froid",
+        "level": 6,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée des intensités de froid ou de gel. Tant que le sort est maintenu, la température reste constante.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "1 intensité",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 50,
+            "requiredIntelligence": 7,
+            "effect": "3 intensités",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 10,
+            "effect": "5 intensités",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 12,
+            "effect": "8 intensités",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
       },
       {
         "level": 8,
@@ -7458,9 +7534,122 @@
         "maxFreeAccessLevel": 10
       },
       {
+        "name": "Capacité Aquatique",
+        "level": 10,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Confère la capacité de respirer et de se déplacer librement dans les milieux aquatiques. Le personnage ciblé par ce sort peut y évoluer avec son Mouvement maximal, respirer les liquides et résister à n'importe quelle pression. Ce sort permet d'affecter autant d'individus que le désire le sorcier, tant que la somme de leurs Présences ne dépasse pas ce qui est déterminé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 5,
+            "effect": "Présence maximale 50",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 70,
+            "requiredIntelligence": 8,
+            "effect": "Présence maximale 100",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "Présence maximale 200",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximale 350",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Immunité au Froid",
+        "level": 12,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet au sorcier, ou à la personne qu'il désigne, d'être immunisé à un certain nombre d’intensités de froid. S'il reçoit une attaque basée sur cet élément, chaque intensité d'immunité réduit de 5 points les Dégâts de l'attaque et accorde un bonus de +5 aux Résistances contre ses effets.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "5 intensités de froid",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 8,
+            "effect": "12 intensités de froid",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "20 intensités de froid",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 13,
+            "effect": "30 intensités de froid",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 14,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 20
+      },
+      {
+        "name": "Bulle Protectrice",
+        "level": 16,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Lève une bulle d'énergie magique qui fonctionne comme un bouclier contre tout type d'attaque. La bulle reste intacte face aux attaques dont les Dégâts sont inférieurs ou égaux à ce qui est déterminé par le Degré du sort, mais celles dont les Dégâts sont supérieurs la détruisent automatiquement.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 6,
+            "effect": "Contre Dégâts 40 au maximum",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Contre Dégâts 90 au maximum",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 12,
+            "effect": "Contre Dégâts 120 au maximum",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 220,
+            "requiredIntelligence": 15,
+            "effect": "Contre Dégâts 160 au maximum",
+            "maintenance": 10
+          }
+        ]
       },
       {
         "level": 18,
@@ -7468,9 +7657,121 @@
         "maxFreeAccessLevel": 20
       },
       {
+        "name": "Frappe d'Eau",
+        "level": 20,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Le sorcier génère une décharge offensive qui, tout en attaquant sur le Mode Contondant, peut altérer l'énergie. Si le sort inflige des dégâts ou qu'il est bloqué, sa cible subit un impact dont la Force est déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 5,
+            "effect": "Dégâts 40 / Impact de Force 8",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 8,
+            "effect": "Dégâts 60 / Impact de Force 10",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "Dégâts 80 / Impact de Force 12",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 100 / Impact de Force 14",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Contrôle des Liquides",
+        "level": 22,
+        "action": "Active",
+        "types": ["Effet", "Animique"],
+        "effect": "Ce sort permet de contrôler totalement un volume de liquide. Il peut en altérer la forme et la nature, lui permettre de se déplacer de lui-même, lui donner une autre apparence, voire modifier sa solidité. Si ce sort est lancé contre un élémentaire d'Eau, le sorcier peut en prendre le contrôle si la créature ne réussit pas un test de RMys. Ce sort permet même de manipuler le flux sanguin des êtres vivants mais, dans un tel cas, l'individu affecté applique un bonus de +40 à son test de RMys ou de RPhy. Manipuler la circulation sanguine d'une personne permet au sorcier de lui infliger, à chaque round, un malus aux actions et des dégâts équivalant à la marge d'échec. Les élémentaires ont droit à un nouveau test chaque jour ou s'ils reçoivent un ordre complètement opposé à leur nature, alors que les individus peuvent refaire le test tous les cinq rounds pour tenter de se libérer complètement de l'influence du sorcier.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "100 RMys ou RPhy / 5 litres",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "120 RMys ou RPhy / 50 litres",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys ou RPhy / 500 litres",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 220,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys ou RPhy / 5 000 litres",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 24,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 30
+      },
+      {
+        "name": "Congeler les Émotions",
+        "level": 26,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort gèle les sentiments d'une personne, ce qui lui accorde une immunité psychologique contre tous les états émotionnels.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Affecte les états naturels.",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Identique au Degré Initial, mais en plus l'individu affecté ne sent plus la douleur.",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Identique au Degré Intermédiaire, mais affecte également tous les états surnaturels.",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "Identique au Degré Avancé, mais le sorcierpeut choisir librement quels sentiments geler ou ignorer.",
+            "maintenance": 10
+          }
+        ]
       },
       {
         "level": 28,
@@ -7478,9 +7779,122 @@
         "maxFreeAccessLevel": 30
       },
       {
+        "name": "Contrôle du Froid",
+        "level": 30,
+        "action": "Active",
+        "types": ["Effet", "Animique"],
+        "effect": "Permet de contrôler une certaine quantité de froid ou de glace. Le sorcier peut en altérer la puissance, jusqu'à la moitié de son intensité de base ou même en changer la forme. S'il utilise ce sort sur un être naturellement basé sur le froid, et que ce dernier échoue à son test de RMys, le sorcier peut le contrôler. La créature à droit à un nouveau test par jour, ou à chaque fois qu'elle reçoit un ordre complètement opposé à sa nature.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "100 RMys / 5 intensités",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 9,
+            "effect": "120 RMys / 8 intensités",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys / 12 intensités",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 180,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys / 15 intensités",
+            "maintenance": 20
+          }
+        ],
+        "note": "Ce sort était à maintien Quotidien dans la 1ère édition. Ce qui tranche avec d'autres sorts de contrôle comme Contrôle des Liquides, niveau 22 de cette voie qui permet aussi de contrôler les élémentaires."
+      },
+      {
+        "name": "Congeler",
+        "level": 32,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort provoque un froid intense sur une ou plusieurs personnes, congelant leurs corps tout en les enfermant dans des prisons de glace. S'il est concentré sur un seul adversaire la valeur de la Résistance augmente de 20 points. Selon la marge d'échec au test de Résistance, les conséquences du sort diffèrent. Si la marge est inférieure à 20, la cible subit une paralysie mineure, si elle est inférieure à 8O, la paralysie est partielle, et au delà de 80, elle est totale.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "120 RMys / 5 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "140 RMys / 10 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys / 25 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 220,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys / 50 m de rayon",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 34,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 40
+      },
+      {
+        "name": "Écran de Gel",
+        "level": 36,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Forme une barrière de gel qui protège contre toutes les sources d'attaque. Si le bouclier parvient à bloquer une décharge d'énergie basée sur la Lumière ou l'Obscurité, il peut retourner l'attaque à son envoyeur avec le même Résultat Final.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "400 Points de Vie",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "1500 Points de Vie",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "2500 Points de Vie",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "4000 Points de Vie",
+            "maintenance": 15
+          }
+        ]
       },
       {
         "level": 38,
@@ -7488,9 +7902,121 @@
         "maxFreeAccessLevel": 40
       },
       {
+        "name": "Créer Liquides",
+        "level": 40,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée de l'eau ou un liquide similaire. Si ce dernier a une Présence supérieure à l'eau, le MJ peut en réduire la quantité de façon proportionnelle. Ce sort ne permet pas de créer des liquides possédant des capacités mystiques.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "50 litres d’eau",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 9,
+            "effect": "500 litres d’eau",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "5 000 litres d’eau",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 16,
+            "effect": "50 000 litres d’eau",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Attaque de Gel",
+        "level": 42,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Produit une puissante décharge de gel pouvant altérer l'énergie. Le sorcier peut choisir librement entre le Mode Froid ou Perforant.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "Dégâts 100",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 160,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts 150",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 250",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 44,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 50
+      },
+      {
+        "name": "Cristallisation",
+        "level": 46,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort cristallise la cible, la rendant fragile et cassable. La personne affectée doit réussir un test de RMys ou de RPhy sous peine de voir tout son corps congèler, ce qui provoque une paralysie mineure immédiate. De plus, tous les dégâts reçus sont considérés comme suffisants pour causer un Critiques, quelle que soit leur valeur. Les créatures à Encaissement ne reçoivent pas de Critique direct, mais tout leur corps devient un point vulnérable.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "140 RMys ou RPhy",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "160 RMys ou RPhy",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "180 RMys ou RPhy",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 14,
+            "effect": "200 RMys ou RPhy",
+            "maintenance": 20
+          }
+        ]
       },
       {
         "level": 48,
@@ -7498,9 +8024,120 @@
         "maxFreeAccessLevel": 50
       },
       {
+        "name": "Contrôler Reflet",
+        "level": 50,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le sorcier lie le corps d'un individu au sien, l'obligeant ainsi à imiter tous ses mouvements. D'une certaine manière, la personne ensorcelée se comporte comme un miroir qui copie instantanément celui qui la contrôle. Pour résister à ce sort, il faut réussir un test de RMys. Le sort ne permet pas de refaire le test, sauf si la cible affectée se rend compte qu'elle est sur le point de réaliser une action qu'elle ne ferait jamais en temps normal.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "80 RMys",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 160,
+            "requiredIntelligence": 10,
+            "effect": "130 RMys",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "160 RMys",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Corps Liquide",
+        "level": 52,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "La créature désignée par le sorcier se transforme en substance liquide, ce qui lui permet d'altérer volontairement sa forme et de l'immuniser contre de nombreux types d'attaque. Cette métamorphose limitée reste très discrète, car toutes les personnes qui voient l'individu affecté doivent réussir un test Très Difficile de Vigilance pour s'apercevoir de sa nature liquide. De plus, le bénéficiaire du sort peut transformer ses membres en diverses armes qui possèdent une Qualité de +5. Bien que l'individu ne soit pas véritablement immatériel, il peut entrer dans tout endroit dans lequel peut s'infiltrer de l'eau, comme un petit trou. Dans cet état, un personnage est complètement invulnérable aux attaques Perforantes et Tranchantes qui n'altèrent pas l'énergie. Les dégâts des attaques Contondantes sont quant à eux réduits de moitié, sauf si elles altèrent l'énergie, auquel cas ils sont infligés en totalité. Malheureusement, il devient vulnérable aux effets paralysants du froid, et applique un malus de -20 à ses Résistances contre ces effets.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "Les capacités décrites.",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "La cible du sort pourra se déplacer dans l’eau à une vitesse équivalente à son Mouvement naturel.",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 13,
+            "effect": "Identique au Degré Intermédiaire, mais la Qualité des armes est de +10.",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 160,
+            "requiredIntelligence": 16,
+            "effect": "Identique au Degré Avancé, mais les attaques Perforantes ou Tranchantes basées sur l’énergie n'infligent que la moitié des dégâts.",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
         "level": 54,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 60
+      },
+      {
+        "name": "Refléter les États",
+        "level": 56,
+        "action": "Passive",
+        "types": ["Automatique"],
+        "effect": "Le sorcier crée un miroir mystique, capable de refléter tous les états surnaturels dont un individu proche de lui ou lui-même peut être la cible. L'effet se reflète automatiquement sur celui qui l'a produit, qui doit alors réussir un test de RMys pour éviter d'être victime de son propre pouvoir. Si par exemple le sorcier est soumis à une atroce souffrance de nature magique, ce sort oblige l'individu qui l'a provoquée à effectuer immédiatement le test de RMys sous peine de subir la même souffrance. Ce sort n'a pas de maintien, mais l'état reflété dure autant que le pouvoir qu'il reflète. Chaque effet ne peut être reflété qu'une fois.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 7,
+            "effect": "120 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "150 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "180 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 320,
+            "requiredIntelligence": 16,
+            "effect": "220 RMys",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 58,
@@ -7508,9 +8145,121 @@
         "maxFreeAccessLevel": 60
       },
       {
+        "name": "Tempête de Gel",
+        "level": 60,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Crée une puissante tempête de gel qui congèle tout qu'elle touche. Tous les individus dans sa zone d'effet doivent effectuer un test de RPhy contre 140 tous les cinq rounds sous peine de subir automatiquement 10 points de dégâts de froid et un malus cumulatif de -5 à toutes leurs actions. À cause de cet intense blizzard, la difficulté des tests de compétences perceptives augmente de deux niveaux. La tempête a un rayon à l'intérieur duquel il est impossible de désigner des cibles, et reste à l'endroit où elle a été lancée. Il suffit pour être affecté d'être dans la zone d'effet au round suivant le lancement du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 7,
+            "effect": "50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "150 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Le test de RPhy se fait contre 160 / 500 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 320,
+            "requiredIntelligence": 15,
+            "effect": "Le test de RPhy se fait contre 180 / 1 km de rayon",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Contrôle des Marées",
+        "level": 62,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet au sorcier de contrôler les courants des mers et des fleuves dans un certain rayon autour de lui, de modifier de façon limitée leurs cours et leur puissance. Le pouvoir de ce sort est tel que le sorcier peut aller jusqu'à créer de petits raz de marée ou inverser le cours d'un fleuve.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 6,
+            "effect": "500 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 9,
+            "effect": "1 km de rayon",
+            "maintenance": 30
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 12,
+            "effect": "3 km de rayon",
+            "maintenance": 45
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 15,
+            "effect": "5 km de rayon",
+            "maintenance": 60
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 64,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 70
+      },
+      {
+        "name": "Prison d'Eau",
+        "level": 66,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort crée une immense quantité d'eau qui engloutit toutes les personnes qu'elle touche. Quiconque est pris à l'intérieur se retrouve dans un milieu aquatique et a donc du mal à se déplacer. À moins de pouvoir respirer sous l'eau, on commence également à suffoquer. Cette prison empêche toute fuite grâce à de puissants courants qui attirent les captifs vers le centre. Si un personnage tente de s'échapper, il doit réussir un test opposé contre une Force de 14, mais bénéficie d'un bonus de +1 à sa caractéristique pour chaque niveau de difficulté obtenu au-delà de Facile sur un test de Natation. Pour être affecté, il suffit de se trouver dans la zone d'effet au round suivant le lancement du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 7,
+            "effect": "10 m cube",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "50 m cube",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 13,
+            "effect": "100 m cube",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 16,
+            "effect": "150 m cube / Le test opposé se fait contre Force de 15",
+            "maintenance": 20
+          }
+        ]
       },
       {
         "level": 68,
@@ -7518,9 +8267,121 @@
         "maxFreeAccessLevel": 70
       },
       {
+        "name": "Glaciation",
+        "level": 70,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Comme son nom l'indique, ce sort crée une immense zone glaciale autour du sorcier, sans prendre en compte les conditions climatiques de son environnement. Tout ce qui l'entoure se couvre de glace et de neige, faisant baisser la température ambiante bien au-dessous de zéro. Tant que le sort est maintenu, le froid n'est pas affecté par les phénomènes atmosphériques naturels.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "1 km de rayon",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "3 km de rayon",
+            "maintenance": 60
+          },
+          {
+            "level": "Avancé",
+            "zeon": 400,
+            "requiredIntelligence": 14,
+            "effect": "5 km de rayon",
+            "maintenance": 80
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "10 km de rayon",
+            "maintenance": 100
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Tsunami",
+        "level": 72,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort soulève un tsunami dévastateur, capable de raser complètement une côte. Les constructions disposant d'un Seuil d'Invulnérabilité inférieur à 80 seront immédiatement détruites, tandis que les autres subissent d'énormes dégâts. Bien sûr, tous individu présent à l'intérieur de la zone d'effet subit les conséquences logiques du phénomène.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "1 km de long",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "10 km de long",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 15,
+            "effect": "20 km de long",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 550,
+            "requiredIntelligence": 17,
+            "effect": "30 km de long / Détruit toutes les constructions avec un Seuil d’Invulnérabilité qui n'est pas supérieur à 90",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 74,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 80
+      },
+      {
+        "name": "Reflet de l'Âme",
+        "level": 76,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le pouvoir de ce sort manifeste un reflet spirituel d'une personne ou d'une créature, une copie animique qui conserve toutes les qualités de l'original. L'entité ressemble à la personne ciblée par le sort, si ce n'est qu'il s'agit qu'un être Animique pouvant interagir avec le monde réel et visible par tous. Cependant, il reste immunisé à toutes les attaques ne pouvant altérer l'énergie. Si la créature copiée possède des pouvoirs qui requièrent une Gnose supérieure à 20, ceux-ci ne sont pas copiées. Le reflet obéit à tous les ordres du sorcier, mais il ne peut se manifester que tant qu'il se trouve en présence de l'original. On peut copier l'âme de tout individu. Le sorcier ne peut avoir qu'un seul sort de Reflet de l'Âme actif sur une cible en même temps. Si l'entité copiée tente de résister, elle doit réussir un test de RMys. Ce sort ne peut pas faire effet sur le sorcier lui-même.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys / Copie une entité de Niveau 3 au maximum",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 280,
+            "requiredIntelligence": 12,
+            "effect": "160 RMys / Copie une entité de Niveau 5 au maximum",
+            "maintenance": 30
+          },
+          {
+            "level": "Avancé",
+            "zeon": 320,
+            "requiredIntelligence": 14,
+            "effect": "180 RMys / Copie une entité de Niveau 8 au maximum / Imite les pouvoirs de Gnose 25 au maximum",
+            "maintenance": 35
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 16,
+            "effect": "200 RMys / Copie une entité de Niveau 12 au maximum / Imite les pouvoirs de Gnose 30 au maximum",
+            "maintenance": 40
+          }
+        ]
       },
       {
         "level": 78,
@@ -7528,9 +8389,122 @@
         "maxFreeAccessLevel": 80
       },
       {
+        "name": "Ralentir le Temps",
+        "level": 80,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort influe sur les fibres de l'espace-temps d'une partie de la réalité, ralentissant son cours de façon à ce qu'il passe plus lentement pour tout le monde, y compris le sorcier. Par exemple, si le temps est raccourci à son dixième, chaque minute à l'itnérieur en vaudra 10 à l'extérieur. La zone affectée se sépare temporairement de la réalité, s'étend autour du sorcier et accroîtson rayon de 10 mètres par round à partir du moment où le sort est lancé. Si quelqu'un pénètre plus tard dans la zone, il subit quand même son influence. Les entités affectées peuvent éviter les conséquences de ce sort en réussissant un test de RMys, mais uniquement si elles possèdent une Gnose supérieure à 30. Il suffit de se trouver dans la zone d'effet du sort pour être affecté dès le round suivant son lancement.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "120 RMys / Le temps est réduit à son dixième / 100 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 320,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys / Le temps est réduit à son centième / 200 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 14,
+            "effect": "160 RMys / Le temps est réduit à son millième / 500 m de rayon",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 16,
+            "effect": "180 RMys / Le temps est réduit à son millionième / 1 km de rayon",
+            "maintenance": 35
+          }
+        ]
+      },
+      {
+        "name": "Créer Ondine",
+        "level": 82,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Façonne une créature d'eau avec l'apparence de la vie, sous le contrôle absolu du sorcier. Cet être est développé comme une créature d'Entre Mondes, en utilisant les pouvoirs et limitations des élémentaires d'Eau du Chapitre 26. Pour calculer son niveau maximal, il faut se servir des règles du sort Créer Être, niveau 78 de la voie de Création.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "Niveau 1",
+            "maintenance": 50
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "Niveau 3",
+            "maintenance": 70
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 14,
+            "effect": "Niveau 6",
+            "maintenance": 100
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 16,
+            "effect": "Niveau 10",
+            "maintenance": 140
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 84,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 90
+      },
+      {
+        "name": "Congeler la Magie",
+        "level": 86,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Ce sort congèle la magie et paralyse temporairement un sort, ce qui a pour conséquence d'annuler ses effets. Un sortilège congelé ne disparaît pas, il reste suspendu sans faire d'effet, et ne requiert pas non plus que l'on paie son maintien. Congeler la Magie affecte tout autant les sorts que contrôle son lanceur que ceux lancés par d'autres sorciers. Dès que ce sort n'est plus maintenu, le sortilège suspendu reprend effet. Congeler la Magie étant un sort passif, on peut congeler des sorts utilisés durant le même round où celui-ci est lancé.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 9,
+            "effect": "Valeur Zéonique maximale 150",
+            "maintenance": 50
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 400,
+            "requiredIntelligence": 12,
+            "effect": "Valeur Zéonique maximale 250",
+            "maintenance": 75
+          },
+          {
+            "level": "Avancé",
+            "zeon": 550,
+            "requiredIntelligence": 15,
+            "effect": "Valeur Zéonique maximale 300",
+            "maintenance": 90
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 18,
+            "effect": "Valeur Zéonique maximale 400",
+            "maintenance": 110
+          }
+        ],
+        "isDailyMaintenance": true
       },
       {
         "level": 88,
@@ -7538,14 +8512,166 @@
         "maxFreeAccessLevel": 90
       },
       {
+        "name": "À l'Intérieur du Miroir",
+        "level": 90,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort conjure le reflet d'un endroit, créant une réalité parallèle similaire au lieu qui existe dans le monde réel. Le reflet est identique au site imité, que cela concerne les constructions, la flore ou le climat, qui restent dans un état inaltérable correspondant au moment où a été lancé le sort. Seuls les êtres vivants de Présence supérieure à 20 ainsi que les lieux aux caractéristiques exceptionnelles ne peuvent être imités. Au moment de lancer le sort, le sorcier doit créer des portes distinctes qui relient le monde réel à sa création, lesquelles peuvent être placées où il veut et prendre les formes qu'il souhaite. Le nombre d'ouvertures n'est pas limité, mais il est obligatoire d'en créer au moins une.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 9,
+            "effect": "500 m de rayon au maximum",
+            "maintenance": 30
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 480,
+            "requiredIntelligence": 12,
+            "effect": "2 km de rayon au maximum",
+            "maintenance": 50
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 15,
+            "effect": "5 km de rayon au maximum",
+            "maintenance": 60
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 17,
+            "effect": "10 km de rayon au maximum / Possibilité d'imiter des êtres avec au plus une Présence de 30",
+            "maintenance": 70
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Seigneur des Gelées",
+        "level": 92,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sorcier contrôle tous les atomes de gel et de froid, quel que soit le nombre d'intensités qui les composent. Ce contrôle lui permet aussi de réduire la température ambiante à l'intérieur de la zone d'effet, et de recouvrir de gel tout ce qu'il désire. Toute créature basée sur le froid présente dans la zone d'effet doit réussir un test de RMys sous peine de tomber immédiatement sous le contrôle du sorcier. En cas de réussite, elle n'aura pas à refaire ce test. Les êtres affectés ont droit à un nouveau test uniquement s'ils modifient leur Résistance.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys / 100 km de rayon",
+            "maintenance": 30
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 450,
+            "requiredIntelligence": 12,
+            "effect": "180 RMys / 1 000 km de rayon",
+            "maintenance": 45
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 14,
+            "effect": "200 RMys / 10 000 km de rayon",
+            "maintenance": 60
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1000,
+            "requiredIntelligence": 16,
+            "effect": "240 RMys / 100 000 km de rayon",
+            "maintenance": 100
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 94,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 100
       },
       {
+        "name": "Seigneur des Eaux",
+        "level": 96,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sorcier contrôle toutes les substances liquides autour de lui. Ce contrôle lui permet de modifier à sa guise les océans, les fleuves et les lacs, quelle que soit leur taille, en les modelant comme s'il s'agissait d'une extension de sa propre personne. Toute créature basée sur l'Eau se trouvant dans la zone doit réussir un test de RMys sous peine d'être immédiatement dominée par le sorcier. En cas de réussite, elle n'aura plus à faire ce test. Les êtres affectés n'ont droit à un nouveau test que s'ils modifient leur Résistance.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys / 100 km de rayon",
+            "maintenance": 30
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 450,
+            "requiredIntelligence": 12,
+            "effect": "180 RMys / 1 000 km de rayon",
+            "maintenance": 45
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys / 10 000 km de rayon",
+            "maintenance": 60
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1000,
+            "requiredIntelligence": 18,
+            "effect": "240 RMys / Affecte n'importe quelle substance liquide existante",
+            "maintenance": 100
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 98,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 100
+      },
+      {
+        "name": "Un Monde Parfait",
+        "level": 100,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort congèle toute la réalité, arrêtant complètement le temps qui passe. Tant que durent ses effets, l'existence entière est paralysée et, bien qu'il n'ait plus la capacité de régénérer son Zéon, seul le sorcier peut se déplacer et altérer librement son environnement Les entités affectées peuvent éviter les effets de ce sort en réussissant un test de RMys, mais seulement si elles possèdent une Gnose supérieure à 35 ou 20 points au-dessus de leur Natura.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 450,
+            "requiredIntelligence": 12,
+            "effect": "RMys 120",
+            "maintenance": 90
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 800,
+            "requiredIntelligence": 15,
+            "effect": "RMys 180",
+            "maintenance": 115
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1200,
+            "requiredIntelligence": 17,
+            "effect": "RMys 220",
+            "maintenance": 130
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1600,
+            "requiredIntelligence": 20,
+            "effect": "RMys 260",
+            "maintenance": 145
+          }
+        ],
+        "isDailyMaintenance": true
       }
     ]
   },
