@@ -1,7 +1,7 @@
 {
-  "name": "anima-beyond-fantasy-character-tools",
-  "short_name": "anima-beyond-fantasy-character-tools",
-  "theme_color": "#1976d2",
+  "name": "Anima Beyond Fantasy - Outils pour les personnages",
+  "short_name": "Anima CharTool",
+  "theme_color": "#388E3C",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
