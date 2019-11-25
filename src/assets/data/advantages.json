@@ -244,7 +244,7 @@
   {
     "name": "Armure mystique",
     "description": "L'aura du personnage forme un manteau d'énergie mystique autour de lui, qui le protège contre les attaques surnaturelles.",
-    "effect": "Accorde un Indice de Protection de 4 contre le Modes Énergie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
+    "effect": "Accorde un Indice de Protection de 4 contre le Mode Énergie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
     "costs": [1],
     "source": "Core p.20",
     "types": ["Avantage Général", "Combat"]
@@ -487,7 +487,7 @@
   },
   {
     "name": "Faiblesse physique",
-    "description": "le personnage résiste extrêmement mal aux dégâts physiques. Chaque fois qu'il subit un Critique, il a de fortes chances d'en mourir ou de subir des dégâts irréversibles.",
+    "description": "Le personnage résiste extrêmement mal aux dégâts physiques. Chaque fois qu'il subit un Critique, il a de fortes chances d'en mourir ou de subir des dégâts irréversibles.",
     "effect": "La RPhy du personnage est réduite de moitié.",
     "note": "Seule la Base de RPhy est réduite.",
     "benefits": [1],
@@ -773,7 +773,7 @@
   {
     "name": "Consommation psychique",
     "description": "Quand les pouvoirs psy ne fonctionnent pas, le contrecoup provoque une grave répercussion sur son corps et inflige des dégâts internes.",
-    "effect": "Si un psy subit un échec psychqie, il perd automatiquement autant de Points de Vie que sa marge d'échec par rapport au talent minimum requis.",
+    "effect": "Si un psy subit un échec psychique, il perd automatiquement autant de Points de Vie que sa marge d'échec par rapport au talent minimum requis.",
     "benefits": [2],
     "source": "Core p.24",
     "types": ["Désavantage Psychique"]
