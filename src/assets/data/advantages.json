@@ -244,7 +244,7 @@
   {
     "name": "Armure mystique",
     "description": "L'aura du personnage forme un manteau d'énergie mystique autour de lui, qui le protège contre les attaques surnaturelles.",
-    "effect": "Accorde un Indice de Protection de 4 contre le Modes Énergie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
+    "effect": "Accorde un Indice de Protection de 4 contre le Mode Énergie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
     "costs": [1],
     "source": "Core p.20",
     "types": ["Avantage Général", "Combat"]
@@ -487,7 +487,7 @@
   },
   {
     "name": "Faiblesse physique",
-    "description": "le personnage résiste extrêmement mal aux dégâts physiques. Chaque fois qu'il subit un Critique, il a de fortes chances d'en mourir ou de subir des dégâts irréversibles.",
+    "description": "Le personnage résiste extrêmement mal aux dégâts physiques. Chaque fois qu'il subit un Critique, il a de fortes chances d'en mourir ou de subir des dégâts irréversibles.",
     "effect": "La RPhy du personnage est réduite de moitié.",
     "note": "Seule la Base de RPhy est réduite.",
     "benefits": [1],
@@ -708,7 +708,7 @@
   {
     "name": "Magie soumise à condition",
     "description": "Le contrôle du personnage sur les pouvoirs du flux d'âmes s'avère capriceux ; il ne répond que quand le personnage réalise une action précise. Si, par exemple, sa magie était liée à la danse, ses sorts ne fonctionneraient que quand il danse ; si elle étaient liée au combat, ses sort ne fonctionnerait que pendant qu'il combat. Il est aussi possible que les pouvoirs magiques fonctionnent unqiuement dans des situations ou conditions déterminées, commen pendant la journée ou quand les pieds sont au sol.",
-    "effect": "Le personnage ne peut user  de magie que s'il réalise l'action ou remplit la condition déterminée pour ce désavantage. Dans le cas d'uneaction liée à une compétence secondaire, le sorcier devra réussir un test Difficile pour pouvoir lancer ses sorts.",
+    "effect": "Le personnage ne peut user de magie que s'il réalise l'action ou remplit la condition déterminée pour ce désavantage. Dans le cas d'uneaction liée à une compétence secondaire, le sorcier devra réussir un test Difficile pour pouvoir lancer ses sorts.",
     "benefits": [1],
     "source": "Core p.24",
     "types": ["Désavantage Mystique"]
@@ -773,7 +773,7 @@
   {
     "name": "Consommation psychique",
     "description": "Quand les pouvoirs psy ne fonctionnent pas, le contrecoup provoque une grave répercussion sur son corps et inflige des dégâts internes.",
-    "effect": "Si un psy subit un échec psychqie, il perd automatiquement autant de Points de Vie que sa marge d'échec par rapport au talent minimum requis.",
+    "effect": "Si un psy subit un échec psychique, il perd automatiquement autant de Points de Vie que sa marge d'échec par rapport au talent minimum requis.",
     "benefits": [2],
     "source": "Core p.24",
     "types": ["Désavantage Psychique"]
@@ -869,10 +869,11 @@
     "types": ["Avantage Général", "Physique", "Résistance"]
   },
   {
-    "name": "Sens du combat",
+    "name": "Sens du Combat",
     "description": "Quelle que soit la classe à laquelle il appartient, le personnage est doté d'une capacité spécialle pour la lutte, ce qui augmente l'une de ses compétences de combat physique.",
-    "effect": "Le personnage  obtient un bonus automatique de +5 par niveau à l'une de ses trois compétences martiales primordiale : Attaque, Parade ou Esquive. Ce bonus s'ajoute à n'importe quel autre qu'il pourrait posséder grâce à sa classe.",
+    "effect": "Le personnage obtient un bonus automatique de +5 par niveau à l'une de ses trois compétences martiales primordiale : Attaque, Parade ou Esquive. Ce bonus s'ajoute à n'importe quel autre qu'il pourrait posséder grâce à sa classe.",
     "special": "Le modificateur obtenu avec cet avantage est considéré à tout point de vue comme un bonus automatique de classe. Il ne peut donc pas conférer un bonus total supérieur de +50, même en le combinant à d'autres bonus automatiques ou à ceux obtenus grâce aux arts martiaux.",
+    "note": "Le bonus est obtenu pour une compétence précise. Il ne peut pas être attribué à une autre compétence en changeant de niveau.",
     "costs": [3],
     "source": "KitMJ p.4",
     "types": ["Avantage Général"]
