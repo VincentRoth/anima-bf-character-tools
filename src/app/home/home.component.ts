@@ -85,9 +85,7 @@ export class HomeComponent implements OnInit {
     return {
       'background-image': item.imageUrl ? `url("${item.imageUrl}")` : '',
       'background-position-x': 'center',
-      'background-position-y': item.bgPositionY
-        ? item.bgPositionY
-        : '',
+      'background-position-y': item.bgPositionY ? item.bgPositionY : '',
       'background-size': item.bgSize ? item.bgSize : ''
     };
   }
