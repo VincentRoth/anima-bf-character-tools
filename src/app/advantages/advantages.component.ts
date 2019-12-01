@@ -46,7 +46,7 @@ export class AdvantagesComponent extends AbstractSearchComponent
       );
     }
 
-    if (this.search) {
+    if (this.filter) {
       filteredAvantages = this.advantageService.filterByToken(
         filteredAvantages,
         this.filter
