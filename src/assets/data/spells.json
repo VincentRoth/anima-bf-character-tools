@@ -9625,7 +9625,7 @@
         "level": 80,
         "action": "Active",
         "types": ["Automatique"],
-        "effect": "Le contrôle de la gravité qu'accorde ce sort permet au sorcier de créer un dôme de haute pression capable de faire exploser toutes les choses physiques se trouvant dans sa zone d'effet. Si un individu se trouve à l'intérieur, il doit réussir un test de RPhy contre 180 à chaque round sous peine de subir des dégâts  équivalents à la moitié de la marge d'échec. Toutefois, chaque point d'IP contre les attaques Contondantes lui procure un bonus de +5 à ce test. Le dôme reste fixé à l'endroit où il a été lancé, bien que la pression empêche toute personne se trouvant à l'interieur de sortir sans réussir un test opposé contre une Force de 16. La puissance gravitationnelle est si forte que même les êtres immatériels sont en partie affectés, mais ils peuvent appliquer un bonus de +40 à leur test de Résistance et de +6 à ceuxs de Force. Le sort ne permet pas de choisir de cibles, seul le sorcier est immunisé contre ses effets. Il suffit de se trouver à l'intérieur du dôme au round suivant le lancement du sort pour en subir les effets.",
+        "effect": "Le contrôle de la gravité qu'accorde ce sort permet au sorcier de créer un dôme de haute pression capable de faire exploser toutes les choses physiques se trouvant dans sa zone d'effet. Si un individu se trouve à l'intérieur, il doit réussir un test de RPhy contre 180 à chaque round sous peine de subir des dégâtséquivalents à la moitié de la marge d'échec. Toutefois, chaque point d'IP contre les attaques Contondantes lui procure un bonus de +5 à ce test. Le dôme reste fixé à l'endroit où il a été lancé, bien que la pression empêche toute personne se trouvant à l'interieur de sortir sans réussir un test opposé contre une Force de 16. La puissance gravitationnelle est si forte que même les êtres immatériels sont en partie affectés, mais ils peuvent appliquer un bonus de +40 à leur test de Résistance et de +6 à ceuxs de Force. Le sort ne permet pas de choisir de cibles, seul le sorcier est immunisé contre ses effets. Il suffit de se trouver à l'intérieur du dôme au round suivant le lancement du sort pour en subir les effets.",
         "castingLevels": [
           {
             "level": "Initial",
@@ -11144,9 +11144,85 @@
     "description": "L'Essence contrôle la vie et les âmes. Cette voie tient sous sa coupe les esprits et les êtres naturels qui appartiennent au monde. C'est aussi la voie de la nature et des sorts d'origine druidique.",
     "spells": [
       {
+        "name": "Affinité Naturelle",
+        "level": 2,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Altère l'essence d'un individu en lui accordant une affinité avec n'importe quel type d'être vivant. À partir de ce moment, ceux-ci le considéreront comme un membre de leur espèce. Par exemple, si ce sort peut être utilisé pour obtenir une affinité avec les loups, le bénéficiare sera accepté comme un des leurs. Le sort n'affecte que les êtres qui se basent sur leurs instincts.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "Affecte les animaux naturels (chevaux, lapins, loups...)",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "Affecte toutes les créatures naturelles",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "Affecte aussi bien les êtres naturels que les créatures d'Entre Mondes",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Affecte tous les types de créatures, y compris les êtres surnaturels avec un pouvoir existentiel élevé",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 4,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 10
+      },
+      {
+        "name": "Détecter Essence",
+        "level": 6,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sorcier perçoit sur quelle essence est basé n'importe quel être près de lui. Il n'obtient aucune information sur ces créatures, mais peut reconnaître les liens élémentaires et identifier à posteriori les êtres ayant le même type d'essence ou de même espèce. Il ne s'agit pas d'un sort de détection typique puisque le sorcier doit avoir conscience de la présence d'une entité près de lui pour percevoir son essence. Par contre, ce sort lui permet de percevoir les créatures Animiques invisibles à un œil humain.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "100 RMys / 10 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "140 RMys / 25 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "160 RMys / 50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 12,
+            "effect": "200 RMys / 100 m de rayon",
+            "maintenance": 15
+          }
+        ],
+        "note": "Toute entité qui souhaite ne pas dévoiler son essence à droit à un test de RMys. En cas de réussite, l'essence de l'entité n'est pas reconnaissable par le sorcier."
       },
       {
         "level": 8,
@@ -11154,9 +11230,122 @@
         "maxFreeAccessLevel": 10
       },
       {
+        "name": "Communication par l'Essence",
+        "level": 10,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sort construit un lien animique entre le sorcier et une cible déterminée, ce qui leur permet de communiquer télépathiquement. La conversation s'effectue grâce à des concepts que les deux interlocuteurs comprennent automatiquement, même s'ils s'expriment dans des langues différentes ou si l'un d'eux n'a pas la capacité de parler. Il est même possible de parler aux plantes ou aux animaux qui n'ont pas de language structuré.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 6,
+            "effect": "Permet de communiquer avec les animaux et les plantes",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 70,
+            "requiredIntelligence": 9,
+            "effect": "Permet de communiquer avec tous les êtres naturels",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "Permet de communiquer avec tous les êtres naturels et créatures d'Entre Mondes",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "Permet de communiquer avec n'importe quel type d'entité",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true,
+        "note": "La distance de la communication télépathique est déterminée par la Projection magique du sorcier."
+      },
+      {
+        "name": "Connaissance Naturelle",
+        "level": 12,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet d'analyser toutes les informations sur un type déterminé d'être naturel, comme les animaux ou les plantes. Un sorcier usant de ce sort pourrait par exemple examiner une plante étrange et découvrir si elle est vénéneuse ou si elle possède une quelconque propriété spéciale.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 6,
+            "effect": "Analyse les propriétés simples d'une plante ou d'un animal",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 9,
+            "effect": "Analyse toutes les propriétés d'une plante ou d'un animal",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 10,
+            "effect": "Analyse toutes les propriétés d'une race naturelle",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "Analyse toutes les propriétés et les pouvoirs mystiques ou spéciaux d'un être naturel",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 14,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 20
+      },
+      {
+        "name": "Assainissement",
+        "level": 16,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet de régénérer à une vitesse incroyable les blessures d'une personne en soignant ses Points de Vie perdus. Ce sort ne permet pas de récupérer les membres coupés ou les dégâts similaires, et n'élimine pas non plus les malus provoqués par les Critiques. Par contre, il stoppe tout type de saignement. Dans le cas des créatures à Encaissement, celles-ci ne récupèrent que la moitié du pourcentage.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "20% des Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "40% des Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "60% des Points de Vie",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "80% des Points de Vie",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 18,
@@ -11164,9 +11353,122 @@
         "maxFreeAccessLevel": 20
       },
       {
+        "name": "Barrière d'Âmes",
+        "level": 20,
+        "action": "Active",
+        "types": ["Défense"],
+        "effect": "Crée une barrière spirituelle qui stoppe toutes les attaques animiques affectant les Résistances surnaturelles. Ce sort permet d'utiliser le bouclier pour stopper tous les effets qui obligent le sorcier à faire un test de RMys ou de RPsy, mais se révèle inutile contre d'autres types d'attaques ou de sorts. La barrière ne peut pas non plus arrêter les attaques infligeant des dégâts, comme par exemple le sort Pluie de Destruction. Le bouclier lui-même n'a pas de Points de Vie puisqu'il ne protège pas contre les impacts infligeant des dégâts.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 6,
+            "effect": "Jusqu'à 140 de Résistance",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 9,
+            "effect": "Jusqu'à 160 de Résistance",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 12,
+            "effect": "Jusqu'à 200 de Résistance",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 15,
+            "effect": "Jusqu'à 240 de Résistance",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Partager les Sens",
+        "level": 22,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Connecte les sens du sorcier avec ceux d'autres individus, et inversement, ce qui leur permet de voir et d'entendre ce que perçoivent les autres. S'il le désire, le sorcier peut refuser l'accès à ses propres sens. Pour y résister, il faut réussir un test de RMys ou de RPsy. Tout individu affecté à droit à un nouveau test par heure. Le sort peut cibler plusieurs personnes à la fois, tant que la somme de leurs Présences (sans compte le sorcier) ne dépasse pas ce qui est déterminé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "100 RMys ou RPsy / Présence maximale 100 / Distance maximale 1 km",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "160 RMys ou RPsy / Présence maximale 160 / Distance maximale 10 km",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "190 RMys ou RPsy / Présence maximale 200 / Distance maximale 50 km",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "220 RMys ou RPsy / Présence maximale 240 / Distance maximale 150 km",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 24,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 30
+      },
+      {
+        "name": "Modifier l'Essence",
+        "level": 26,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Permet au sorcier de modifier librement son essence ou celle d'un autre individu. Ce sort n'accorde aucune capacité spéciale suite au changement, mais il modifie temporairement la base animique de la cible. Par exemple, tant qu'il est maintenu, il peut aller jusqu'à transformer l'essence d'un élémentaire de Terre en élémentaire de froid, ce qui le rend vulnérable aux effets et aux attaques basés de chaleur. Si la créature possède des pouvoirs interdits à l'élément dans lequel son essence est transformée, elle perd provisoirement sa capacité à les utiliser.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "140 RMys",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "160 RMys",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "180 RMys",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 12,
+            "effect": "200 RMys",
+            "maintenance": 15
+          }
+        ]
       },
       {
         "level": 28,
@@ -11174,9 +11476,121 @@
         "maxFreeAccessLevel": 30
       },
       {
+        "name": "Venin des Âmes",
+        "level": 30,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le venin d'essence est une création surnaturelle inoculée à l'âme de la cible et qui s'étend dans tout son corps. Le sorcier peut librement décider des effets du venin en suivant les règles du Chapitre 14. Ce sort permet aussi de développer des antidotes, si le sorcier dispose de connaissances suffisantes sur le venin initial.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Venin Niveau 40",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Venin Niveau 50",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Venin Niveau 60",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "Venin Niveau 70",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Analyser l'Âme",
+        "level": 32,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort permet au sorcier d'analyser spirituellement un individu ou une créature afin d'obtenir des informations détaillées sur ses capacités naturelles et ses pouvoirs. Bien qu'il ne permette pas de connaître son savoir, ni le niveau des compétences qui en dépendent, il peut mesurer son potentiel spirituel et estimer comment fonctionnent ses capacités innées. Par exemple, si le sorcier l'utilise sur un être surnaturel, il découvrira quels sont ses pouvoirs et leur niveau, mais pas ce qu'il sait faire ni s'il fera un adversaire redoutable. Ce sort fonctionne automatiquement sur la créature désignée si le sorcier la voit ou s'il connait son nom véritable, toutefois celle-ci peut en éviter les effets en réussissant un test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "120 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "180 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 34,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 40
+      },
+      {
+        "name": "Acquérir des Capacités Naturelles",
+        "level": 36,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Accorde à un individu la capacité d'acquérir des compétences et des caractéristiques d'êtres existant dans le règne végétal ou animal. En termes de jeu, ce sort donne accorde au personnage des PF supplémentaires pour obtenir des compétences secondaires, des Capacités Primordiales ou des Pouvoirs présentés dans le Chapitre 26. On ne peut toutefois choisir des compétences secondaires que dans les domaines physiques d'Agilité, de Perception et de Force, et les pouvoirs spéciaux avec une Gnose 0 comme condition. Les PF sont répartis suivant les coûts de formation de la classe du personnage. Il n'est pas possible d'augmenter les compétences principales, ni d'acquérir des capacités surnaturelles. Il faut prendre en compte que ces changements affectent temporairement l'apparence du personnage. Par exemple, s'il acquiert Armes Naturelles avec dégâts augmentés, il sera logiquement doté de cornes ou de griffes démesurées. Les effets de ce sort ne se cumulent pas et ne peuvent affecter qu'une fois chaque individu. Pour obtenir des pouvoirs différents, il faut annuler le premier sort et en lancer un nouveau.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 7,
+            "effect": "+50 PF",
+            "maintenance": 25
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "+100 PF",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 13,
+            "effect": "+150 PF",
+            "maintenance": 60
+          },
+          {
+            "level": "Arcane",
+            "zeon": 360,
+            "requiredIntelligence": 15,
+            "effect": "+200 PF",
+            "maintenance": 80
+          }
+        ],
+        "isDailyMaintenance": true
       },
       {
         "level": 38,
@@ -11184,9 +11598,121 @@
         "maxFreeAccessLevel": 40
       },
       {
+        "name": "Revitaliser",
+        "level": 40,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée une zone à l'intérieur de laquelle tout être vivant régénère ses blessures et se revitalise à grande vitesse. Les personnes et les animaux récupèrent leur vigueur et les plantes y fleurissent avec une force renouvelée. Le sort affecte une zone autour du sorcier et toutes les créatures vivantes qui restent à l'intérieur bénéficient d'une Régénération de 16.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "200 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "500 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "1 km de rayon",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Esprit de Vie",
+        "level": 42,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Permet au sorcier de connecter son essence avec l'esprit de n'importe quel être vivant de Gnose 10 ou inférieure, y compris les plantes et les animaux, se trouvant à l'intérieur de la zone d'effet du sort. Le sorcier peut ressentir ce qui se trouve autour des êtres affectés en utilisant leurs sens, mais il ne peut en aucun cas les influencer. Comme il leur transmet également une part de son esprit, il peut lancer des sorts avec la moitié de son AMR comme s'il était présent. Inversement, tous les sorts Animiques prenant pour cible son corps d'accueil du moment l'affectent aussi. Quand le sorcier se prépare à introduire son essence dans un individu, celui-ci peut refuser en réussissant un test de RMys. Une fois que le sorcier épie à partir de son hôte, il peut sauter librement vers tout autre être présent dans la zone d'effet du sort, à condition bien entendu que la nouvelle cible ne réussissent pas son test de RMys. Dans le cas contraire, elle ne peut plus être affectée par ce sortilège. Si l'hôte actuel sort de la zone d'effet du sort, le sorcier perd son pouvoir sur lui. En général, une personne affectée ne se rend pas compte qu'elle est utilisée de cette manière, même si elle se trouve au point d'origine de sorts. Esprit de Vie ne permet pas de détecter le nombre de cibles se trouvant dans la zone d'effet, ni leur position exacte, mais le sorcier peut diriger ses pouvoirs vers le lieu où il souhaite envoyer son esprit. Par exemple, il peut décider de rentrer dans l'esprit le plus proche de lui situé à 300 mètres au Nord, et le sort cherchera alors automatiquement l'être qui se rapproche le plus du point désigné. Tant qu'une partie de son essence est hors de son corps, le sorcier n'a pas conscience de ce qui se passe autour de son être véritable.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 7,
+            "effect": "80 RMys / 500 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "120 RMys / 1 km de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "140 RMys / 2 km de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys / 3 km de rayon",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
         "level": 44,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 50
+      },
+      {
+        "name": "Altérer la Croissance",
+        "level": 46,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Modifie le rythme de croissance naturelle d'un organisme en accélérant ou retardant son évolution. En termes de jeu, ce sort permet de multiplier ou diviser le rythme de vieillissement d'un être vivant, de la valeur déterminée par le Degré du sort. Par exemple, si ce sort est lancé au Degré Avancé pour accélérer le vieillissement de quelqu'un, chaque journée passée en vaudra 50 jours pour la cible. Une fois qu'une personne est affectée, elle ne peut plus refaire le test de RMys tant que le sorcier maintient le sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 9,
+            "effect": "100 RMys / Multiplier ou diviser par 2 la croissance",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 11,
+            "effect": "120 RMys / Multiplier ou diviser par 10 la croissance",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 13,
+            "effect": "140 RMys / Multiplier ou diviser par 50 la croissance",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 16,
+            "effect": "160 RMys / Multiplier ou diviser par 100 la croissance",
+            "maintenance": 20
+          }
+        ],
+        "isDailyMaintenance": true
       },
       {
         "level": 48,
@@ -11194,9 +11720,122 @@
         "maxFreeAccessLevel": 50
       },
       {
+        "name": "Imitation Naturelle",
+        "level": 50,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée un animal naturel imitant une espèce existante. Cet être est sous la domination absolue du sorcier, qui peut lui donner des ordres à travers le lien mystique qui les unit. La créature créée doit être un animal avec une Gnose de 0 et d'une espèce existant dans le monde (par exemple ours, lapin, éléphant...). Le sort permet de créer un seul être ou de répartir les niveaux qu'il confère entre différentes créatures, avec un maximum de 5 niveaux par créature. Les créations auront tous les instincts et toutes les capacités naturelless de leur modèle. Utilisez comme référence les créatures du Chapitre 25.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "2 niveaux",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "10 niveaux",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "20 niveaux",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "50 niveaux",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Forme Animique",
+        "level": 52,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Transforme la forme physique d'un individu en matière animique. Dans cet état, il faut appliquer les règles décrites dans le Degré du sort comme s'il s'agissait d'un être Animique, dont les spécificités sont détaillées au Chapitre 26.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "Le personnage devient intangible face à n'importe quelle matière ou attaque non basée en énergie",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "Identique au Degré Initial, et le personnage n'a plus aucun besoin physique",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 13,
+            "effect": "Identique au Degré Intermédiaire, et le personnage obtient aussi invisibilité animique",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 160,
+            "requiredIntelligence": 16,
+            "effect": "Identique au Degré Avancé, et le personnage obtient également le pouvoir Interaction avec le Monde",
+            "maintenance": 20
+          }
+        ],
+        "note": "L'invisibilité animique correspond à ne pouvoir être vu que pas ceux pouvant voir les esprits et être Animiques. Avant ce degré le personnage est donc visible aux yeux de tous."
+      },
+      {
         "level": 54,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 60
+      },
+      {
+        "name": "Contrôle Naturel",
+        "level": 56,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Grâce à ce sort, un sorcier obtient le contrôle absolu sur un membre d'une espèce naturelle de Gnose 0, comme les animaux, les plantes et même les êtres humains normaux. Il peut directement transmettre ses ordres par la connexion mystique qu'il crée avec la cible, sans qu'il ait besoin de lui parler ou qu'elle le comprenne. Pour résister aux effets de ce sort il faut réussir un test de RMys, comme c'est son essence et non son esprit qui est visée, il n'est pas possible d'utiliser sa RPsy. L'individu subjugué a droit à un nouveau test par jour, ainsi qu'à chaque fois qu'il reçoit un ordre qui va complètement à l'encontre de sa nature. Devant une situation qui met sa vie en péril ou qui l'oblige à tuer un être cher, il peut bénéficier d'un bonus de +20 à sa RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "80 RMys",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "120 RMys",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "150 RMys",
+            "maintenance": 50
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys",
+            "maintenance": 60
+          }
+        ],
+        "isDailyMaintenance": true
       },
       {
         "level": 58,
@@ -11204,9 +11843,121 @@
         "maxFreeAccessLevel": 60
       },
       {
+        "name": "Induire un État",
+        "level": 60,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Grâce à cette manipulation de l'âme, la cible du sort est soumise à un des états génériques présentés dans le Chapitre 14, à l'exception de Mort. Le sorcier choisit le moment où l'effet qu'il souhaite provoquer se déclenche, et sa durée dépend des règles générales de chaque état. Pour y résister il faut réussir un test de RMys. Si les états induits sont Coma ou Paralysie Totale, la cible bénéficie d'un bonus de +40 à son test.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "100 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "180 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Retourner au Flux",
+        "level": 62,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort affecte un esprit en le renvoyant dans l'au-delà. Il permet d'influencer aussi bien les âmes en attente de l'Appel que des créatures de nature Animique. Sauf si une âme a une Gnose suffisamment élevée pour revenir dans le monde, son essence disparaît en arrivant dans l'au-delà. En ce qui concerne les Non Morts, leurs âmes n'appartenant déjà plus au monde, ils sont automatiquement détruits.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "120 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "160 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "180 RMys",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "220 RMys",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 64,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 70
+      },
+      {
+        "name": "Interdire",
+        "level": 66,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Enchante une zone déterminée pour la rendre impénétrable à un type d'être précis. Au moment de lancer le sort, le sorcier doit choisir à quelle sorte d'êtres il interdira l'accès, tout en pouvant en désignre autant qu'il le désire. Par exemple, il peut interdire l'accès de la zone à tous les élémentaires de Feu ou ne laisser entrer que les êtres humains. La zone d'effet maximale dépend du Degré du sort, mais cette valeur est doublée si elle prend la forme d'un mur. C'est-à-dire qu'en lançant le sort au Degré Initial le sorcier peut choisir entre un rayon de 20 mètres ou une ligne droite de 40 mètres de longeur. Tout être se trouvant dans la zone d'effet et qui échoue au test de RMys ne pourra traverser la protection. Un être ayant échoué peut refaire le test une fois par heure. Si un des êtres interdits se trouve dans la zone au moment où le sort est activé, il pourra s'y déplacer librement tant qu'il n'en sortira pas. La barrière reste fixée à l'endroit où le sort a été lancé.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 8,
+            "effect": "120 RMys / 20 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "160 RMys / 30 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "180 RMys / 40 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys / 50 m de rayon",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
       },
       {
         "level": 68,
@@ -11214,9 +11965,122 @@
         "maxFreeAccessLevel": 70
       },
       {
+        "name": "Contrôle Surnaturel",
+        "level": 70,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Grâce à ce sort, le sorcier prend le contrôle absolu d'un esprit ou d'une créature d'Entre Mondes. Il peut directement transmettre ses ordres par la connexion mystique qu'il crée avec cette entité. Pour résister, cette dernière doit réussir un test de RMys car, comme c'est son essence et non son esprit qui est visé, il n'est pas possible d'utiliser sa RPsy. L'être peut refaire un test de Résistance par jour ainsi que chaque fois qu'il reçoit des ordres complètement opposés à sa nature.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 8,
+            "effect": "100 RMys",
+            "maintenance": 25
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "120 RMys",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "140 RMys",
+            "maintenance": 50
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "180 RMys",
+            "maintenance": 60
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Partager l'Essence",
+        "level": 72,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le sorcier lie l'essence de deux individus, créant une unité indivisible. De cette façon, tous les dégâts ou effets spirituels subis par l'un sont répercutés à l'identique chez l'autre. En ce qui concerne les sorts animiques, on utilise la RMys la plus élevée. Si l'essence d'un être normal est liée à celle d'une créature à Encaissement, le premier ne reçoit qu'un cinquième des dégâts infligés à la créature. La somme des Présences affectables ne peut pas dépasser une valeur déterminée par le Degré du sort. Si l'une des cibles du sort souhaite y résister, elle devra réussir un test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 8,
+            "effect": "120 RMys / Présence maximale 100",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "140 RMys / Présence maximale 140",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "170 RMys / Présence maximale 200",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "200 RMys / Présence maximale 260",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 74,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 80
+      },
+      {
+        "name": "Transférer l'Âme",
+        "level": 76,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Permet au sorcier de transporter une âme d'un corps à un autre. Ce sort permet d'abandonner l'ancienne forme pour en revêtir une nouvelle, en conservant uniquement les compétences intellectuelles et spirituelles. L'âme peut être transférée soit dans des objets inanimés (pierres, épées ...) soit dans des êtres vivants. L'esprit acquiert naturellement les limitations physiques de son nouveau corps, mais il peut survivre tant que son réceptacle n'est pas détruit. Si sa nouvelle aparence n'a pas de besoin physique, l'individu peut survivre sans. Si, par exemple, une âme est transférée dans une pierre, elle n'aura pas conscience de ce qui se trouve autour d'elle et ne pourra pas se déplacer, mais si la roche devait être détruire, sonéquivaudrait à la mort de son « corps ». Si l'âme est introduite dans un corps sans vie mais bien conservé, il recommencerait à vivre, puisqu'il disposerait désormais de l'âme qui lui manquait. Si le corps vers lequel est transférée l'âme a déjà la sienne, celle-ci essaie naturellement de résister à l'intrusion. Pour calculer le résultat de la lutte entre les deux esprits pour le contrôle du corps, il faut effectuer un test comparatif entre les deux Présences. Chaque âme doit lancer un D100 et ajouter le résultat à sa Présence (sans Jet Ouvert). Si la différence est supérieure à 100, l'âme qui remporte le test consume son adversaire et prend le contrôle du corps pour toujours. Si la différence dépasse 50, l'âme la plus faible reste en sommeil jusqu'à ce que quelque chose la réveille. Enfin, si la différence est inférieure à 50, l'âme victorieuse obtient le contrôle temporaire du corps et celle qui a été la plus faible reste en éveil et à le droit de retenter le test à la fin de chaque jour. Autant l'âme affectée que le corps d'accueil potentiel ont droit à un test de RMys pour résister à ce sort. Ce dernier permet de transférer n'importe quel type d'âme qui se trouve en présence du sorcier, ce qui inclut les esprits défunts qui attendent encore l'Appel, mais il ne peut cependant pas attirer les esprits depuis l'au-delà. Si un esprit surnaturel se retrouve coincé dans un corps physique, il perd ses pouvoirs animiques et réduit, si nécessaire, son niveau. La Présence maximale de l'âme transférée est déterminée par le Degré du sort. ",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "100 RMys / Présence maximale 60",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "140 RMys / Présence maximale 100",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "160 RMys / Présence maximale 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 540,
+            "requiredIntelligence": 18,
+            "effect": "200 RMys / Présence maximale 180",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 78,
@@ -11224,9 +12088,121 @@
         "maxFreeAccessLevel": 80
       },
       {
+        "name": "Existence Animique",
+        "level": 80,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet au sorcier de se transcender vers un état spirituel, en abandonnant définitivement son corps physique. À partir de ce moment, il cesse d'être une créature naturelle ou d'Entre Mondes et se transforme en être Animique de Gnose 25, qui bénéficie de tous les avantages que cela comporte. De plus, il obtient des PF supplémentaires qu'il peut utiliser pour acquérir des Capacités Primordiales et des Pouvoirs présentés dans le Chapitre 26. Il peut aussi choisir des désavantages et malus pour obtenir des PF supplémentaires. En lançant ce sort pour devenir un être Animique, le sorcier monte automatiquement d'un niveau, puis gagne une niveau pour chaque tranche de 100 PF obtenus sans compter ceux obtenus par les désavantages. Ce sort ne fonctionne que sur les êtres naturels et les créatures d'Entre Mondes, il ne peut donc pas être lancé sur des esprits pour augmenter leurs capacités. Si un être Animique se réincarne de nouveau sous forme physique, il perd automatiquement les avantages et les pouvoirs qu'il avait reçus grâce à ce sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "Jusqu'à 100 PF optionnels en désavantages",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 13,
+            "effect": "+100 PF / Jusqu'à 100 PF optionnels en désavantages",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1000,
+            "requiredIntelligence": 15,
+            "effect": "+200 PF / Jusqu'à 200 PF optionnels en désavantages",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2500,
+            "requiredIntelligence": 17,
+            "effect": "+300 PF / Jusqu'à 200 PF optionnels en désavantages",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Créer Esprit",
+        "level": 82,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Grâce à sa magie, le sorcier crée un esprit spirituel sur lequel il a un contrôle absolu. Cette création est développé comme un être Animique, en se servant des pouvoirs et des limitations de ces créatures décrites au Chapitre 26. Pour calculer le niveau maximal de l'entité crée, il faut se servir des règles du sort Créer Être, niveau 78 de la voie de Création.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "Niveau 1",
+            "maintenance": 50
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "Niveau 3",
+            "maintenance": 70
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 14,
+            "effect": "Niveau 6",
+            "maintenance": 100
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 16,
+            "effect": "Niveau 10",
+            "maintenance": 140
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 84,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 90
+      },
+      {
+        "name": "Lier Essence Vitale",
+        "level": 86,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort cache une âme dans un contenant physique, sans la couper totalement de sa forme originelle. L'individu continue d'agir librement à travers son ancien corps puisqu'il existe toujours un lien avec son âme, mais il n'est rien d'autre qu'une carcasse immortelle et vide, son essence vitale se trouvant désormais à l'abri ailleurs. Cependant, le fait qu'il ne meure pas ne signifie pas qu'il est invulnérable, et le corps n'est pas immunisé aux Critiques qui peuvent le mettre hors d'état. De plus, même s'il ne peut pas périr en perdant des Points de Vie, si ceux-ci descendent jusqu'à l'état de mort, il devient un cadavre qui ne pourra être soigné que par des capacités surnaturelles. La dépouille sans âme est immunisée contre tous les effets mystiques animiques, c'est-à-dire ceux qui affectent directement son essence. Par contre, le réceptacle de l'âme reste vulnérable et, s'il est détruit, le personnage meurt immédiatement. Comme il existe un lien entre le corps et l'objet qui sert de cachette à l'âme, il n'est pas possible de mettre trop de distance entre eux sous peine que ce lien se brise et que l'individu périsse. La distance maximale est déterminée par le Degré du sort. Si la cible souhaite résister à cet effet, elle doit réussir un test de RMys mais, si elle échoue, elle ne pourra le retenter qu'une fois en contact physique avec le réceptacle.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "100 RMys / 1 km de distance",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "120 RMys / 5 km de distance",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 400,
+            "requiredIntelligence": 14,
+            "effect": "140 RMys / 50 km de distance",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "160 RMys / 150 km de distance",
+            "maintenance": 0
+          }
+        ]
       },
       {
         "level": 88,
@@ -11234,14 +12210,164 @@
         "maxFreeAccessLevel": 90
       },
       {
+        "name": "Verdure",
+        "level": 90,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier unit son esprit aux créatures les plus naturelles de la création, les animaux et les plantes, et gagne le pouvoir de les faire se multiplier dans le monde entier. Verdure crée une vie végétale et animale autour du sorcier. La végétation et les animaux apparaissent à l'instant même où le sort est lancé, quelles que soient les conditions climatiques du lieu. Le sorcier peut créer une forêt au milieu d'un désert, mais rien ne garantit qu'elle survivra longtemps dans de telles conditions. Les animaux et les plantes doivent appartenir à des espèces existantes.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "10 km de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 450,
+            "requiredIntelligence": 12,
+            "effect": "150 km de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 13,
+            "effect": "350 km de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 750,
+            "requiredIntelligence": 16,
+            "effect": "600 km de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Domaine de la Vie",
+        "level": 92,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sorcier contrôle une partie de l'essence du monde, obtenant ainsi le contrôle absolu sur tous les êtres naturels qui se trouvent autour de lui. Il peut transmettre ses ordres directement par le lien mystique qu'il entretient avec les créatures affectées, sans avoir à être proche d'elles. Pour y résister, il faut réussir un test de RMys (le contrôle se faisant sur l'essence des êtres et non leur esprit, il n'est pas possible d'utiliser la RPsy). Les créatures affectées ont droit à un nouveau test de Résistance chaque jour et à chaque fois que les ordres reçus vont complètement à l'encontre de leur nature.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 10,
+            "effect": "100 RMys / 100 km de rayon",
+            "maintenance": 60
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 13,
+            "effect": "130 RMys / 500 km de rayon",
+            "maintenance": 75
+          },
+          {
+            "level": "Avancé",
+            "zeon": 750,
+            "requiredIntelligence": 15,
+            "effect": "160 RMys / 1 500 km de rayon",
+            "maintenance": 85
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1000,
+            "requiredIntelligence": 18,
+            "effect": "200 RMys / 2 500 km de rayon",
+            "maintenance": 100
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
         "level": 94,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 100
       },
       {
+        "name": "Résurrection",
+        "level": 96,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort arrache une âme morte à l'au-delà et lui rend la vie. La difficulté de ce sort dépend du temps passé depuis le moment où elle a péri car plus il se sera passé de temps, plus elle aura été emportée par le flux des âmes. Ce sort permet uniquement d'attirer l'âme, pas de la lier à son corps ou de la soigner. Pour effectuer une résurrection totale, il faut transférer l'esprit vers un corps approprié grâce au sort Transférer l'Âme. Il est possible que le temps passé dans l'au-delà ait affecté de l'âme de façon irréparable, le Meneur de Jeu a donc toute latitude pour limiter les souvenirs et les connaissances de cet esprit. Il n'est pas possible de ressusciter une âme qui s'est déjà réincarnée ou qui a été détruite. La Présence maximale et la limite de temps passé depuis sa mort sont déterminées par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 400,
+            "requiredIntelligence": 10,
+            "effect": "Présence maximale 30 / 1 mois",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 13,
+            "effect": "Présence maximale 60 / 1 an",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 15,
+            "effect": "Présence maximale 120 / 1 décennie",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 18,
+            "effect": "Présence maximale 150 / 1 siècle",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
         "level": 98,
         "isFreeAccess": true,
         "maxFreeAccessLevel": 100
+      },
+      {
+        "name": "Seigneur des Âmes",
+        "level": 100,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sorcier contrôle une partie du flux des âmes et obtient le contrôle absolu de tous les esprits. Son autorité s'étend sur toutes les âmes, ce qui inclut les êtres Animiques et aux autres créatures de même nature. Elles sont sous son contrôle, et il peut les manipuler à sa guise en les gardant dans le monde, en les rendant au flux des âmes ou en modifiant leur essence selon ses désirs. Il peut aussi les arracher de leurs corps et les réintroduire librement dans d'autres, même dans des enfants encore à naître, ce qui lui permet de contrôler la naissance des Nephilims. Le Seigneur des Âmes peut directement transmettre ses ordres aux créatures qu'il domine grâce au lien mystique qu'il entretient avec leurs âmes, sans avoir à se trouver en leur présence. Toutes les âmes peuvent tenter de résister aux effets de ce sort en réussissant un test de RMys. Celles qui échouent ont droit à un nouveau test de Résistance par jour ou chaque fois que les ordres reçus vont complètement à l'encontre de leur nature. Ce sort ne permet pas de contrôler les esprits des Non Morts, car ils son déjà hors du flux des âmes.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 600,
+            "requiredIntelligence": 12,
+            "effect": "120 RMys / 100 km de rayon",
+            "maintenance": 120
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 800,
+            "requiredIntelligence": 14,
+            "effect": "140 RMys / 1 000 km de rayon",
+            "maintenance": 160
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1200,
+            "requiredIntelligence": 16,
+            "effect": "180 RMys / 2 500 km de rayon",
+            "maintenance": 240
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1500,
+            "requiredIntelligence": 18,
+            "effect": "200 RMys / 5 000 km de rayon",
+            "maintenance": 300
+          }
+        ],
+        "isDailyMaintenance": true
       }
     ]
   },
@@ -17300,28 +18426,28 @@
             "level": "Initial",
             "zeon": 200,
             "requiredIntelligence": 10,
-            "effect": "+10 à la valeur Zéonique de la magie innée  / 25 m de rayon",
+            "effect": "+10 à la valeur Zéonique de la magie innée / 25 m de rayon",
             "maintenance": 50
           },
           {
             "level": "Intermédiaire",
             "zeon": 300,
             "requiredIntelligence": 12,
-            "effect": "+20 à la valeur Zéonique de la magie innée  / 100 m de rayon",
+            "effect": "+20 à la valeur Zéonique de la magie innée / 100 m de rayon",
             "maintenance": 60
           },
           {
             "level": "Avancé",
             "zeon": 400,
             "requiredIntelligence": 14,
-            "effect": "+30 à la valeur Zéonique de la magie innée  / 250 m de rayon",
+            "effect": "+30 à la valeur Zéonique de la magie innée / 250 m de rayon",
             "maintenance": 70
           },
           {
             "level": "Arcane",
             "zeon": 500,
             "requiredIntelligence": 16,
-            "effect": "+40 à la valeur Zéonique de la magie innée  / 500 m de rayon",
+            "effect": "+40 à la valeur Zéonique de la magie innée / 500 m de rayon",
             "maintenance": 80
           }
         ],

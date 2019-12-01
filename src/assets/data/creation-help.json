@@ -380,6 +380,10 @@
           {
             "type": "table",
             "reference": "core-exxet#24"
+          },
+          {
+            "type": "paragraph",
+            "content": "Parfois une perte de Point de Vie sera considéré comme un Sacrifice, c'est le cas notamment de certains sorts de la voie du Feu. Les PV sacrifiés se régénère à un rythme fixe de 10 par jour quelque soit la Régénération."
           }
         ]
       },
