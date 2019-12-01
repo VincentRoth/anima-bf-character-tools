@@ -27,10 +27,7 @@ Images into /src/asset/images and /src/asset/icons folders is intelectual proper
 - Sorts de magie
 - Invocations
 - Pouvoirs psychiques
-- Règles de combat ?
-- Tableaux
-  - Création de technique ? => Calculateur ?
-  - Capacités et pouvoirs de créature ?
+- Tableaux, encarts et autres référence sous forme de table
 - Fiche de personnage ?
 - Prétirés ?
 - PNJ génériques ?

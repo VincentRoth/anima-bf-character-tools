@@ -2599,7 +2599,7 @@
     },
     {
       "id": 43,
-      "title": "Situations spéciales de comabt",
+      "title": "Situations spéciales de combat",
       "headers": [
         "Situation",
         "Attaque",
@@ -2747,7 +2747,7 @@
     },
     {
       "id": 50,
-      "title": "Critiques de ombat",
+      "title": "Critiques de combat",
       "headers": ["1 à 50", "Localisation", "Effet"],
       "rows": [
         [
@@ -5335,7 +5335,7 @@
         ["Liu Xing Chui", "6 PO", 1.2, "Rare"],
         ["Lujiaodao", "15 PO", 0.5, "Rare"],
         ["Masse Barre", "8 PO", 2, ""],
-        ["Montante", "20 PO", 1.8, ""],
+        ["Montante (épée à une main et demie)", "20 PO", 1.8, ""],
         ["Pata", "40 PO", 0.8, "Rare"],
         ["Pique", "4 PO", 4, ""],
         ["Pudao", "10 PO", 1.2, "Rare"],
