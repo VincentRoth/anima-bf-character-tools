@@ -72,7 +72,7 @@ export class HomeComponent implements OnInit {
         imageUrl: '/assets/images/menu/map.jpg'
       },
       {
-        title: 'Tableaux',
+        title: 'Table de référence',
         link: '/tables',
         hasBackground: true,
         imageUrl:
