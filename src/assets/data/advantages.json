@@ -1044,9 +1044,10 @@
     "types": ["Avantage de passé", "Interprétation", "Social"]
   },
   {
-    "name": "Racines cuturelles",
+    "name": "Racines culturelles",
     "description": "Le personnage est très attaché à la culture de son pays et possède de vastes connaissances sur les traditions et les coutumes de sa terre.",
-    "effect": "Cet avantage offre un bonus spécial à plusieurs compétences secondairesen fonction de la position sociale et du pays d'origine du personnage. Il y a pour chacune des nations de Gaïa une liste des différents modificateurs que donnent les racines culturelles.",
+    "effect": "Cet avantage offre un bonus spécial à plusieurs compétences secondaires en fonction de la position sociale et du pays d'origine du personnage. Il y a pour chacune des nations de Gaïa une liste des différents modificateurs que donnent les racines culturelles.",
+    "note": "Dans Gaïa volume 1 (1ère édition des règles), le total des bonus spéciaux est de +80, alors que dans le volume 2 (règles Core Exxet), le total est de +160. Il suffit de doubler les bonus procurés par les racines du volume 1 pour retomber sur un bonus équivalent. Vérifiez ce point avec le Meneur de Jeu.",
     "costs": [1],
     "source": "Gaïa p.288",
     "types": ["Avantage de passé", "Compétences"]
@@ -1250,9 +1251,17 @@
     "types": ["Avantage Général", "Mystique", "Convocation"]
   },
   {
+    "name": "Affinité d'utilisation",
+    "description": "Le personnage a beaucoup de facilités pour comprendre et activer les pouvoirs des objets surnaturels qu'il a en sa possession.",
+    "effect": "Le personnage ajoute 5 points à sa caractéristique de Pouvoir lorsqu'il s'agit de déterminer le temps nécessaire pour maîtriser les capacités de Notions d'utilisation des artefacts qu'il possède.",
+    "costs": [1],
+    "source": "ProEx p.9",
+    "types": ["Avantage Général"]
+  },
+  {
     "name": "Mutations",
     "description": "Le personnage possède des pouvoirs innés ç cause d'une mutation.",
-    "effect": "Octroie 50 PF pour acquérir des Pouvoirs de monstre, comme si le personnage avait une Gnose de 20. L'investissement de points supplémentaires augmente la quantié de points reçus à 100 et 150 respectivement",
+    "effect": "Octroie 50 PF pour acquérir des Pouvoirs de monstre, comme si le personnage avait une Gnose de 20. L'investissement de points supplémentaires augmente la quantié de points reçus à 100 et 150 respectivement.",
     "note": "Cet avantage vise à créer des pouvoirs pour des superhéros, dans un contexte autre que le monde d'Anima, Gaïa. Consulter le Meneur de Jeu.",
     "costs": [1, 2, 3],
     "source": "Core p.334",

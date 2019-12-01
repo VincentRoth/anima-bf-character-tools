@@ -891,7 +891,13 @@
       "id": 27,
       "title": "Fatigue",
       "headers": ["Fatigue", "Malus aux actions"],
-      "rows": [[0, -120], [1, -80], [2, -40], [3, -20], [4, -10]]
+      "rows": [
+        [0, -120],
+        [1, -80],
+        [2, -40],
+        [3, -20],
+        [4, -10]
+      ]
     },
     {
       "id": 28,
@@ -1192,19 +1198,19 @@
       "title": "Prix des poisons",
       "headers": ["Poisons", "Coût", "Disp."],
       "rows": [
-        ["Acqua Toffana ", "25 PO", "Rare"],
-        ["Al-Baladin ", "80 PO", "Très Rare"],
-        ["Arsenic ", "280 PO", "Rare"],
-        ["Atropine ", "2 PO", "Rare"],
-        ["Belladone ", "15 PO", "Rare"],
-        ["Cantharidine ", "2 PO", "Rare"],
-        ["Curare ", "100 PO", "Très Rare"],
-        ["Cyanure ", "80 PO", "Rare"],
-        ["Muscarine ", "1 PO", "Rare"],
-        ["Sève de Ramalen ", "800 PO", "Très Rare"],
-        ["Thallium ", "20 PA", "Rare"],
-        ["Venin de cobra blanc ", "500 PO", "Très Rare"],
-        ["Venin de serpent ", "5 PO", "Rare"],
+        ["Acqua Toffana", "25 PO", "Rare"],
+        ["Al-Baladin", "80 PO", "Très Rare"],
+        ["Arsenic", "280 PO", "Rare"],
+        ["Atropine", "2 PO", "Rare"],
+        ["Belladone", "15 PO", "Rare"],
+        ["Cantharidine", "2 PO", "Rare"],
+        ["Curare", "100 PO", "Très Rare"],
+        ["Cyanure", "80 PO", "Rare"],
+        ["Muscarine", "1 PO", "Rare"],
+        ["Sève de Ramalen", "800 PO", "Très Rare"],
+        ["Thallium", "20 PA", "Rare"],
+        ["Venin de cobra blanc", "500 PO", "Très Rare"],
+        ["Venin de serpent", "5 PO", "Rare"],
         ["Vinaigre de Saturne", "3 PO", "Rare"]
       ]
     },
@@ -1343,7 +1349,7 @@
         ["**Exotiques", "", "", ""],
         ["Boomerang", "3 PO", 0.6, "Rare"],
         ["Brise-lame", "30 PO", 1, "Rare"],
-        ["Griffres de tigre", "3 PO", 0.5, "Rare"],
+        ["Griffes de tigre", "3 PO", 0.5, "Rare"],
         ["Katar", "40 PO", 0.6, "Rare"],
         ["**Projectiles", "", "", ""],
         ["Arquebuse", "500 PO", 4.5, "Très Rare"],
@@ -1422,22 +1428,1431 @@
       ]
     },
     {
-      "id": 0,
-      "title": "//TODO",
-      "headers": ["", ""],
-      "rows": []
+      "id": 30,
+      "title": "Armes communes",
+      "headers": [
+        "Arme",
+        "Dégâts",
+        "Vit.",
+        "FOR R.",
+        "Mode 1",
+        "Mode 2",
+        "Catégorie",
+        "Spécial",
+        "Sol.",
+        "Frac.",
+        "Prés."
+      ],
+      "rows": [
+        [
+          "*Combat à mains nues",
+          10,
+          "+20",
+          "–",
+          "CON",
+          "",
+          "*Mains nues",
+          "Précise",
+          "–",
+          -2,
+          "–"
+        ],
+        ["Bâton", 30, "+10", 4, "CON", "", "Hast", "Deux mains", 11, 0, 30],
+        ["Cestus", 25, "+10", 3, "PER", "TRA", "Arme courte", "", 11, -2, 15],
+        [
+          "Chaîne",
+          25,
+          "+0",
+          6,
+          "CON",
+          "",
+          "Corde",
+          "Complexe, Immobilisation (Force 8)",
+          13,
+          2,
+          15
+        ],
+        ["Cimeterre", 50, -5, 5, "TRA", "", "Épée", "", 13, 4, 20],
+        ["Crochet", 30, "+10", 3, "PER", "", "Arme courte", "", 11, -2, 15],
+        [
+          "Épée à deux mains",
+          90,
+          -60,
+          "8 / 10",
+          "TRA",
+          "CON",
+          "Deux mains",
+          "Une ou deux mains",
+          18,
+          6,
+          30
+        ],
+        [
+          "Épée bâtarde",
+          70,
+          -30,
+          "7 / 9",
+          "TRA",
+          "CON",
+          "Épée / Deux mains",
+          "Une ou deux mains",
+          15,
+          5,
+          25
+        ],
+        [
+          "Épée courte",
+          40,
+          "+15",
+          4,
+          "PER",
+          "TRA",
+          "Arme courte",
+          "Précise",
+          12,
+          1,
+          20
+        ],
+        ["Épée longue", 50, "+0", 6, "TRA", "", "Épée", "", 13, 3, 25],
+        [
+          "Faux",
+          35,
+          "+0",
+          "5 / 9",
+          "TRA",
+          "CON",
+          "Hast / Deux mains",
+          "Une ou deux mains",
+          12,
+          2,
+          25
+        ],
+        [
+          "Filet de gladiateur",
+          5,
+          "+0",
+          4,
+          "CON",
+          "TRA",
+          "Corde",
+          "Lançable, Immobilisation (Force 10), Cf.",
+          13,
+          -4,
+          15
+        ],
+        [
+          "Fléau",
+          40,
+          "+0",
+          6,
+          "CON",
+          "",
+          "Masse / Corde",
+          "Complexe",
+          13,
+          4,
+          15
+        ],
+        [
+          "Fléau à deux mains",
+          80,
+          -50,
+          "8 / 10",
+          "CON",
+          "",
+          "Masse / Deux mains",
+          "Complexe",
+          14,
+          6,
+          20
+        ],
+        [
+          "Fleuret",
+          35,
+          "+15",
+          3,
+          "PER",
+          "",
+          "Épée / Arme courte",
+          "Précise",
+          9,
+          -2,
+          20
+        ],
+        [
+          "Fouet",
+          35,
+          -20,
+          4,
+          "TRA",
+          "CON",
+          "Corde",
+          "Complexe, Immobilisation (Force 8)",
+          9,
+          -3,
+          20
+        ],
+        ["Glaive", 55, -5, 5, "TRA", "", "Épée", "", 15, 3, 25],
+        ["Gourdin", 30, "+0", 5, "CON", "", "Masse", "", 11, -2, 15],
+        [
+          "Hache à deux mains",
+          100,
+          -70,
+          "9 / 11",
+          "TRA",
+          "CON",
+          "Hache / Deux mains",
+          "Une ou deux mains",
+          17,
+          7,
+          30
+        ],
+        [
+          "Hache de bataille",
+          70,
+          -30,
+          7,
+          "TRA",
+          "CON",
+          "Hache",
+          "Lançable",
+          15,
+          5,
+          25
+        ],
+        ["Hachette", 45, "+0", 5, "TRA", "", "Hache", "Lançable", 13, 4, 15],
+        [
+          "Hallebarde",
+          60,
+          -15,
+          6,
+          "TRA",
+          "CON",
+          "Hast / Deux mains",
+          "Deux mains",
+          15,
+          4,
+          20
+        ],
+        [
+          "Harpon",
+          35,
+          -5,
+          "5 / 5",
+          "PER",
+          "",
+          "Hast",
+          "Lançable, Une ou deux mains",
+          11,
+          0,
+          15
+        ],
+        ["Javeline", 35, "+5", 4, "PER", "", "Hast", "Lançable", 10, -2, 20],
+        [
+          "Lance",
+          40,
+          "+5",
+          "4 / 6",
+          "PER",
+          "",
+          "Hast",
+          "Lançable, Une ou deux mains",
+          13,
+          2,
+          25
+        ],
+        ["Lance de cavalerie", 80, -30, 8, "PER", "", "Hast", "Cf.", 12, 7, 25],
+        [
+          "Lasso",
+          5,
+          "+10",
+          4,
+          "CON",
+          "",
+          "Corde",
+          "Complexe, Immobilisation (Force 9), Cf.",
+          9,
+          -4,
+          20
+        ],
+        [
+          "Main gauche",
+          30,
+          "+15",
+          3,
+          "PER",
+          "TRA",
+          "Arme courte",
+          "Lançable, Piège-arme, Précise",
+          12,
+          0,
+          20
+        ],
+        [
+          "Marteau à deux mains",
+          70,
+          -35,
+          "7 / 10",
+          "CON",
+          "",
+          "Masse",
+          "Une ou deux mains",
+          16,
+          6,
+          20
+        ],
+        ["Marteau de guerre", 50, -5, 6, "CON", "", "Masse", "", 15, 4, 15],
+        ["Masse", 40, "+0", 6, "CON", "", "Masse", "", 14, 4, 15],
+        [
+          "Masse à deux mains",
+          60,
+          -15,
+          "6 / 10",
+          "CON",
+          "",
+          "Masse / Deux mains",
+          "Une ou deux mains",
+          16,
+          5,
+          15
+        ],
+        [
+          "Poignard",
+          30,
+          "+20",
+          3,
+          "PER",
+          "TRA",
+          "Arme courte",
+          "Lançable, Précise",
+          10,
+          -2,
+          15
+        ],
+        ["Rapière", 40, "+15", 4, "PER", "TRA", "Épée", "Précise", 11, 2, 20],
+        ["Sabre", 45, "+10", 6, "TRA", "PER", "Épée", "", 12, 3, 20],
+        [
+          "Stylet",
+          25,
+          "+20",
+          3,
+          "PER",
+          "",
+          "Arme courte",
+          "Lançable, Précise",
+          8,
+          -3,
+          15
+        ],
+        [
+          "Trident",
+          40,
+          -10,
+          "6 / 7",
+          "PER",
+          "",
+          "Hast",
+          "Lançable, Une ou deux mains",
+          12,
+          3,
+          15
+        ]
+      ]
+    },
+    {
+      "id": 31,
+      "title": "Armes exotiques",
+      "headers": [
+        "Arme",
+        "Dégâts",
+        "Vit.",
+        "FOR R.",
+        "Mode 1",
+        "Mode 2",
+        "Catégorie",
+        "Spécial",
+        "Sol.",
+        "Frac.",
+        "Prés."
+      ],
+      "rows": [
+        [
+          "Bâton à trois sections",
+          35,
+          "+15",
+          4,
+          "TRA",
+          "PER",
+          "Hast",
+          "Complexe, Deux mains, Cf.",
+          12,
+          2,
+          25
+        ],
+        [
+          "Boomerang",
+          30,
+          "+10",
+          4,
+          "CON",
+          "TRA",
+          "Arme courte",
+          "Lançable, Cf.",
+          10,
+          0,
+          15
+        ],
+        [
+          "Brise-lame",
+          50,
+          -20,
+          "8 / 10",
+          "CON",
+          "TRA",
+          "Deux mains",
+          "Une ou deux mains",
+          16,
+          8,
+          25
+        ],
+        [
+          "Corbeau",
+          35,
+          "+10",
+          4,
+          "CON",
+          "TRA",
+          "Arme courte",
+          "Complexe, Précise, Cf.",
+          11,
+          2,
+          25
+        ],
+        [
+          "Éventail de combat",
+          30,
+          "+20",
+          4,
+          "TRA",
+          "CON",
+          "Arme courte",
+          "Lançable, Précise",
+          8,
+          0,
+          25
+        ],
+        [
+          "Griffes de tigre",
+          30,
+          "+15",
+          4,
+          "TRA",
+          "PER",
+          "Arme courte",
+          "",
+          12,
+          2,
+          15
+        ],
+        [
+          "Katana",
+          50,
+          "+0",
+          "5 / 6",
+          "TRA",
+          "",
+          "Épée",
+          "Une ou deux mains",
+          11,
+          3,
+          40
+        ],
+        ["Katana à deux lames", 55, -5, 8, "TRA", "", "Épée", "Cf.", 11, 3, 40],
+        [
+          "Katar",
+          40,
+          "+10",
+          8,
+          "PER",
+          "TRA",
+          "Arme courte",
+          "Complexe, Cf.",
+          13,
+          3,
+          25
+        ],
+        [
+          "Kusari-gama",
+          40,
+          "+5",
+          5,
+          "TRA",
+          "CON",
+          "Arme courte  / Corde",
+          "Deux mains, Immobilisation (Force 8), Cf.",
+          12,
+          4,
+          25
+        ],
+        [
+          "No-dachi",
+          80,
+          -35,
+          "8 / 10",
+          "TRA",
+          "",
+          "Deux mains",
+          "Une ou deux mains",
+          14,
+          4,
+          40
+        ],
+        ["Nunchaku", 30, "+15", 5, "CON", "", "Corde", "", 11, 0, 15],
+        [
+          "Saï",
+          35,
+          "+15",
+          4,
+          "PER",
+          "TRA",
+          "Arme courte",
+          "Piège-arme, Précise",
+          12,
+          0,
+          25
+        ],
+        ["Shuko", 20, "+10", 4, "PER", "", "Arme courte", "Cf.", 9, -2, 25],
+        [
+          "Shuriken",
+          25,
+          "+20",
+          4,
+          "TRA",
+          "PER",
+          "Arme courte",
+          "Lançable",
+          10,
+          1,
+          20
+        ],
+        ["Tanto", 40, "+20", 3, "TRA", "", "Arme courte", "Précise", 9, 1, 40],
+        ["Tonfa", 30, "+20", 4, "CON", "", "Arme courte", "Précise", 13, 0, 25]
+      ]
+    },
+    {
+      "id": 32,
+      "title": "Armes improvisées",
+      "headers": [
+        "Arme",
+        "Dégâts",
+        "Vit.",
+        "FOR R.",
+        "Mode 1",
+        "Mode 2",
+        "Catégorie",
+        "Spécial",
+        "Sol.",
+        "Frac.",
+        "Prés."
+      ],
+      "rows": [
+        ["Barre métallique", 25, -5, 5, "CON", "", "Masse", "", 12, 2, 15],
+        [
+          "Bouteille cassée",
+          15,
+          "+10",
+          3,
+          "TRA",
+          "CON",
+          "Arme courte",
+          "",
+          5,
+          -3,
+          15
+        ],
+        ["Chaise", 25, -20, 5, "CON", "", "Deux mains", "Deux mains", 9, 0, 20],
+        [
+          "Couteau de cuisine",
+          25,
+          "+10",
+          4,
+          "TRA",
+          "",
+          "Arme courte",
+          "",
+          9,
+          -1,
+          10
+        ],
+        ["Faucille", 35, -10, 4, "TRA", "PER", "Arme courte", "", 8, 0, 15],
+        [
+          "Hache de bûcheron",
+          40,
+          -10,
+          "5 / 7",
+          "TRA",
+          "",
+          "Hache",
+          "Une ou deux mains",
+          12,
+          3,
+          15
+        ],
+        ["Houe", 30, -20, 4, "TRA", "CON", "Hache", "", 10, 1, 15],
+        ["Marteau", 30, -20, 4, "CON", "", "Masse", "", 12, 2, 10],
+        ["Pioche", 40, -20, 5, "PER", "", "Arme courte", "", 10, 3, 15],
+        ["Planche", 20, "+0", 4, "CON", "", "Masse", "", 8, -1, 10],
+        ["Torche", 20, -10, 4, "CON", "CHA", "Masse", "", 10, -2, 20],
+        ["Vase", 15, -10, 4, "CON", "", "Masse", "Lançable", 6, -2, 20]
+      ]
+    },
+    {
+      "id": 33,
+      "title": "Boucliers",
+      "headers": [
+        "Arme",
+        "Dégâts",
+        "Vit.",
+        "FOR R.",
+        "Mode 1",
+        "Mode 2",
+        "Catégorie",
+        "Spécial",
+        "Sol.",
+        "Frac.",
+        "Prés."
+      ],
+      "rows": [
+        [
+          "Rondache",
+          15,
+          "-15 spé.",
+          5,
+          "CON",
+          "",
+          "Bouclier",
+          "+10 parade, +5 esquive, Cf.",
+          14,
+          0,
+          20
+        ],
+        [
+          "Bouclier",
+          20,
+          "-25 spé.",
+          7,
+          "CON",
+          "",
+          "Bouclier",
+          "+20 parade, +10 esquive, Cf.",
+          16,
+          0,
+          25
+        ],
+        [
+          "Pavois",
+          25,
+          "-40 spé.",
+          10,
+          "CON",
+          "",
+          "Bouclier",
+          "+30 parade, +15 esquive, Cf.",
+          18,
+          1,
+          25
+        ]
+      ]
+    },
+    {
+      "id": 34,
+      "title": "Rechargement et Cadence de Tir",
+      "headers": ["Arme", "Catégorie", "Cad. Tir", "Indi. Recharg.", "Portée"],
+      "rows": [
+        ["Arbalète", "Tir", "", 2, "60 m"],
+        ["Arbalète à répétition", "Tir", "", 3, "60 m"],
+        ["Arbalète de poing", "Tir", "", 2, "30 m"],
+        ["Arbalète lourde", "Tir", "", 2, "80 m"],
+        ["Arc court", "Tir", "", 1, "40 m"],
+        ["Arc long", "Tir", "", 1, "60 m"],
+        ["Arc long composite", "Tir", "", 1, "90 m"],
+        ["Arquebuse", "Tir", "", 4, "80 m"],
+        ["Baliste légère", "Tir", "", 10, "150 m"],
+        ["Baliste lourde", "Tir", "", 12, "200 m"],
+        ["Bolas", "Lancer", 80, "", "20 m"],
+        ["Boomerang", "Lancer", 60, "", "20 m"],
+        ["Boules de jet", "Lancer", 50, "", "20 m"],
+        ["Canon", "Tir", "", 12, "250 m"],
+        ["Chakram", "Lancer", 80, "", "30 m"],
+        ["Dards de jet", "Lancer", 40, "", "20 m"],
+        ["Éventail de combat", "Lancer", 40, "", "20 m"],
+        ["Filet de gladiateur", "Lancer", 100, "", "5 m"],
+        ["Fronde", "Tir", "", 1, "50 m"],
+        ["Hache de bataille", "Lancer", 100, "", "5 m"],
+        ["Hachette", "Lancer", 80, "", "10 m"],
+        ["Harpon", "Lancer", 100, "", "20 m"],
+        ["Javeline", "Lancer", 80, "", "30 m"],
+        ["Lance", "Lancer", 80, "", "30 m"],
+        ["Main gauche", "Lancer", 50, "", "15 m"],
+        ["Pistolet à mèche", "Tir", "", 4, "50 m"],
+        ["Poignard", "Lancer", 50, "", "20 m"],
+        ["Sarbacane", "Tir", "", 1, "50 m"],
+        ["Shuriken", "Lancer", 30, "", "20 m"],
+        ["Stylet", "Lancer", 30, "", "30 m"],
+        ["Trident", "Lancer", 100, "", "15 m"]
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Armes à projectiles",
+      "headers": [
+        "Arme",
+        "Dégâts",
+        "Vit.",
+        "FOR R.",
+        "Mode 1",
+        "Mode 2",
+        "Catégorie",
+        "Spécial",
+        "Sol.",
+        "Frac.",
+        "Prés."
+      ],
+      "rows": [
+        [
+          "Arbalète",
+          "",
+          "+0",
+          "4 / 8",
+          "",
+          "",
+          "Tir",
+          "Force 8, Une ou deux mains, Cf.",
+          8,
+          -2,
+          20
+        ],
+        [
+          "Arbalète à répétition",
+          "",
+          "+0",
+          "5 / 8",
+          "",
+          "",
+          "Tir",
+          "Force 8, Une ou deux mains, Cf.",
+          6,
+          -2,
+          20
+        ],
+        [
+          "*Carreau",
+          40,
+          "",
+          "",
+          "PER",
+          "",
+          "*Munition",
+          "*Munition pour arbalète",
+          3,
+          0,
+          15
+        ],
+        [
+          "Arbalète de poing",
+          "",
+          "+10",
+          3,
+          "",
+          "",
+          "Tir",
+          "Force 5, Une ou deux mains, Cf.",
+          5,
+          -4,
+          15
+        ],
+        [
+          "*Carreau léger",
+          30,
+          "",
+          "",
+          "PER",
+          "",
+          "*Munition",
+          "*Munition pour arbalète légère",
+          2,
+          -1,
+          15
+        ],
+        [
+          "Arbalète lourde",
+          "",
+          -20,
+          "7 /10",
+          "",
+          "",
+          "Tir",
+          "Force 10, Une ou deux mains, Cf.",
+          8,
+          -1,
+          20
+        ],
+        [
+          "*Carreau lourd",
+          60,
+          "",
+          "",
+          "PER",
+          "",
+          "*Munition",
+          "*Munition pour arbalète lourde",
+          4,
+          1,
+          15
+        ],
+        ["Arc court", "", -10, 4, "", "", "Tir", "Deux mains", 7, -3, 15],
+        ["Arc long", "", -30, 7, "", "", "Tir", "Deux mains", 8, -2, 20],
+        [
+          "Arc long composite",
+          "",
+          -30,
+          7,
+          "",
+          "",
+          "Tir",
+          "Deux mains",
+          8,
+          -2,
+          25
+        ],
+        [
+          "*Flèche légère",
+          30,
+          "",
+          "",
+          "PER",
+          "",
+          "*Munition",
+          "*Munition pour aArc, Cf.",
+          3,
+          0,
+          20
+        ],
+        [
+          "*Flèche",
+          40,
+          "",
+          "",
+          "PER",
+          "",
+          "*Munition",
+          "*Munition pour arc, Cf.",
+          4,
+          1,
+          20
+        ],
+        [
+          "*Flèche perce-armure",
+          30,
+          "",
+          "",
+          "PER",
+          "",
+          "*Munition",
+          "*Munition pour arc, Cf.",
+          3,
+          0,
+          20
+        ],
+        [
+          "Arquebuse",
+          "",
+          -20,
+          6,
+          "",
+          "",
+          "Tir",
+          "Force 11, Complexe, Cf.",
+          9,
+          -3,
+          20
+        ],
+        [
+          "*Balle",
+          60,
+          "",
+          "",
+          "PER",
+          "",
+          "*Munition",
+          "*Munition pour arquebuse",
+          11,
+          5,
+          15
+        ],
+        [
+          "Pistolet à mèche",
+          "",
+          "+0",
+          4,
+          "",
+          "",
+          "Tir",
+          "Force 9, Complexe, Cf.",
+          8,
+          -3,
+          20
+        ],
+        [
+          "*Balle",
+          60,
+          "",
+          "",
+          "PER",
+          "",
+          "*Munition",
+          "*Munition pour pistolet",
+          11,
+          5,
+          15
+        ],
+        [
+          "Bolas",
+          30,
+          -10,
+          5,
+          "CON",
+          "",
+          "Lancer",
+          "Immobilisation (Force 10), Complexe, Cf.",
+          6,
+          2,
+          15
+        ],
+        ["Boules de jet", 20, "+0", 5, "CON", "", "Lancer", "", 10, 2, 15],
+        ["Chakram", 40, "+0", 6, "TRA", "", "Lancer", "Cf.", 9, 2, 20],
+        ["Dards de jet", 20, "+20", 3, "PER", "", "Lancer", "", 3, -4, 15],
+        ["Fronde", "", -40, 4, "", "", "Tir", "", 3, -6, 10],
+        [
+          "*Billes de fronde",
+          15,
+          "",
+          "",
+          "CON",
+          "",
+          "*Munition",
+          "*Munition pour fronde",
+          7,
+          2,
+          10
+        ],
+        ["Sarbacane", "", -10, 4, "", "", "Tir", "", 3, -3, 15],
+        [
+          "*Dards de sarbacane",
+          5,
+          "",
+          "",
+          "PER",
+          "",
+          "*Munition",
+          "*Munition pour sarbacane",
+          2,
+          -4,
+          15
+        ]
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Armes de siège",
+      "headers": [
+        "Arme",
+        "Dégâts",
+        "Vit.",
+        "FOR R.",
+        "Mode 1",
+        "Mode 2",
+        "Catégorie",
+        "Spécial",
+        "Sol.",
+        "Frac.",
+        "Prés."
+      ],
+      "rows": [
+        [
+          "Baliste légère",
+          "",
+          -80,
+          "NA",
+          "",
+          "",
+          "Tir",
+          "Force 12, Cf.",
+          18,
+          "–",
+          25
+        ],
+        [
+          "*Trait léger",
+          120,
+          "",
+          "",
+          "PER",
+          "",
+          "*Munition",
+          "*Munition pour baliste légère",
+          16,
+          8,
+          15
+        ],
+        [
+          "Baliste lourde",
+          "",
+          -100,
+          "NA",
+          "",
+          "",
+          "Tir",
+          "Force 13, Cf.",
+          20,
+          "–",
+          30
+        ],
+        [
+          "*Trait lourd",
+          150,
+          "",
+          "",
+          "PER",
+          "",
+          "*Munition",
+          "*Munition pour baliste lourde",
+          18,
+          12,
+          15
+        ],
+        ["Canon", "", -100, "NA", "", "", "Tir", "Force 14, Cf.", 24, "–", 30],
+        [
+          "*Boulet",
+          150,
+          "",
+          "",
+          "CON",
+          "",
+          "*Munition",
+          "*Munition pour canon",
+          20,
+          14,
+          15
+        ]
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Armues",
+      "headers": [
+        "Nom",
+        "Port r.",
+        "Malus",
+        "Restr. Mouv.",
+        "Sol.",
+        "Prés.",
+        "Localisation",
+        "Catégorie"
+      ],
+      "rows": [
+        ["Armure matelassée", 0, -5, 0, 10, 25, "Chemise", "Souple"],
+        ["Cuir", 0, 0, 0, 12, 25, "Chemise", "Souple"],
+        ["Manteau renforcé", 0, -5, 0, 10, 25, "Complète", "Souple"],
+        ["Peau", 10, -10, 0, 10, 25, "Chemise", "Souple"],
+        ["Cuir complète", 10, 0, 1, 12, 25, "Complète", "Souple"],
+        ["Cuir bouilli", 20, -10, 0, 13, 25, "Plastron", "Rigide"],
+        ["Cuir et plaques", 25, -10, 1, 14, 25, "Plastron", "Rigide"],
+        ["Mailles", 30, -15, 1, 15, 30, "Complète", "Souple"],
+        ["Plastron", 40, -15, 1, 16, 30, "Plastron", "Rigide"],
+        ["Plaques partielle", 50, -20, 2, 15, 30, "Complète", "Rigide"],
+        ["Anneaux", 60, -20, 2, 15, 30, "Chemise", "Souple"],
+        ["Demi-plaques", 70, -20, 3, 16, 35, "Complète", "Rigide"],
+        ["Écailles", 80, -25, 3, 17, 35, "Complète", "Rigide"],
+        ["Plaques", 90, -35, 4, 17, 40, "Complète", "Rigide"],
+        ["Harnois", 100, -50, 4, 18, 45, "Complète", "Rigide"],
+        ["Gothique", 120, -60, 5, 19, 45, "Complète", "Rigide"],
+        ["Harnois de bataille", 150, -70, 6, 20, 50, "Complète", "Rigide"]
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Indice de Protection",
+      "headers": ["Nom", "TRA", "CON", "PER", "CHA", "ÉLE", "FRO", "ÉNE"],
+      "rows": [
+        ["Armure matelassée", 1, 1, 1, 1, 2, 2, 0],
+        ["Cuir", 1, 0, 2, 1, 2, 1, 0],
+        ["Manteau renforcé", 1, 0, 2, 1, 2, 2, 0],
+        ["Peau", 2, 1, 2, 1, 2, 2, 0],
+        ["Cuir complète", 1, 0, 2, 1, 2, 1, 0],
+        ["Cuir bouilli", 2, 2, 2, 2, 2, 2, 0],
+        ["Cuir et plaques", 3, 1, 2, 2, 1, 2, 0],
+        ["Mailles", 4, 2, 1, 2, 0, 1, 0],
+        ["Plastron", 4, 5, 4, 1, 0, 1, 0],
+        ["Plaques partielle", 4, 3, 2, 3, 2, 2, 0],
+        ["Anneaux", 4, 3, 1, 2, 2, 1, 0],
+        ["Demi-plaques", 4, 4, 4, 2, 2, 1, 1],
+        ["Écailles", 4, 4, 4, 3, 2, 3, 1],
+        ["Plaques", 5, 4, 5, 3, 2, 3, 1],
+        ["Harnois", 5, 5, 5, 4, 2, 4, 2],
+        ["Gothique", 6, 6, 6, 4, 2, 4, 2],
+        ["Harnois de bataille", 7, 7, 7, 4, 2, 4, 2],
+        ["Barde légère", 2, 2, 2, 2, 1, 2, 0],
+        ["Barde lourde", 4, 4, 4, 4, 1, 4, 0]
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Casques",
+      "headers": [
+        "Nom",
+        "Port r.",
+        "Malus Percep.",
+        "Sol.",
+        "Prés.",
+        "Localisation",
+        "Catégorie"
+      ],
+      "rows": [
+        ["Bandeau", 0, 0, 8, 15, "Tête", "Rigide"],
+        ["Capuchon de cuir", 0, 0, 10, 15, "Tête", "Souple"],
+        ["Masque frontal", 0, 0, 12, 15, "Tête", "Rigide"],
+        ["Casque salade", 0, 0, 12, 15, "Tête", "Rigide"],
+        ["Camail", 0, -10, 13, 20, "Tête", "Souple"],
+        ["Barbute", 5, -20, 16, 25, "Tête", "Rigide"],
+        ["Armet", 10, -30, 16, 25, "Tête", "Rigide"]
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Protection des casques",
+      "headers": ["Nom", "TRA", "CON", "PER", "CHA", "ÉLE", "FRO", "ÉNE"],
+      "rows": [
+        ["Bandeau", 2, 2, 1, 1, 1, 1, 0],
+        ["Capuchon de cuir", 1, 0, 2, 1, 3, 1, 0],
+        ["Masque frontal", 3, 3, 3, 1, 1, 2, 0],
+        ["Casque salade", 4, 4, 3, 2, 0, 3, 0],
+        ["Camail", 4, 2, 1, 2, 0, 1, 0],
+        ["Barbute", 5, 4, 5, 3, 0, 3, 1],
+        ["Armet", 5, 5, 5, 4, 0, 4, 2]
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Actions",
+      "headers": ["Dextérité + Agilité", "Nombre maximal d'actions"],
+      "rows": [
+        ["1 à 10", 1],
+        ["11 à 14", 2],
+        ["15 à 19", 3],
+        ["20 à 22", 4],
+        ["23 à 25", 5],
+        ["26 à 28", 6],
+        ["29 à 31", 8],
+        ["32 et +", 10]
+      ]
+    },
+    {
+      "id": 42,
+      "title": "Table des dégâts calculés",
+      "headers": [
+        "% / Dégâts",
+        "10",
+        "20",
+        "30",
+        "40",
+        "50",
+        "60",
+        "70",
+        "80",
+        "90",
+        "100",
+        "+5"
+      ],
+      "rows": [
+        ["10 %", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "+0"],
+        ["20 %", 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, "+1"],
+        ["30 %", 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, "+1"],
+        ["40 %", 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, "+2"],
+        ["50 %", 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, "+2"],
+        ["60 %", 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, "+3"],
+        ["70 %", 7, 14, 21, 28, 35, 42, 49, 56, 63, 70, "+3"],
+        ["80 %", 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, "+4"],
+        ["90 %", 9, 18, 27, 36, 45, 54, 63, 72, 81, 90, "+4"],
+        ["100 %", 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, "+5"],
+        ["110 %", 11, 22, 33, 44, 55, 66, 77, 88, 99, 110, "+5"],
+        ["120 %", 12, 24, 36, 48, 60, 72, 84, 96, 108, 120, "+6"],
+        ["130 %", 13, 26, 39, 52, 65, 78, 91, 104, 117, 130, "+6"],
+        ["140 %", 14, 28, 42, 56, 70, 84, 98, 112, 126, 140, "+7"],
+        ["150 %", 15, 30, 45, 60, 75, 90, 105, 120, 135, 150, "+7"],
+        ["160 %", 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, "+8"],
+        ["170 %", 17, 34, 51, 68, 85, 102, 119, 136, 153, 170, "+8"],
+        ["180 %", 18, 36, 54, 72, 90, 108, 126, 144, 162, 180, "+9"],
+        ["190 %", 19, 38, 57, 76, 95, 114, 133, 152, 171, 190, "+9"],
+        ["200 %", 20, 40, 60, 80, 100, 120, 140, 160, 180, 200, "+10"]
+      ]
+    },
+    {
+      "id": 43,
+      "title": "Situations spéciales de comabt",
+      "headers": [
+        "Situation",
+        "Attaque",
+        "Parade",
+        "Esquive",
+        "Initiative",
+        "Action physique"
+      ],
+      "rows": [
+        ["Adversaire minuscule", -20, -10, "–", "–", "–"],
+        ["Cécité partielle", -30, -30, -15, "–", -30],
+        ["Cécité totale", -100, -80, -80, "–", -90],
+        ["De dos", -30, -80, -80, "–", "–"],
+        ["De flanc", -10, -30, -30, "–", "–"],
+        ["Dégainer", -25, -25, "–", "–", -25],
+        ["En charge", "+10", -10, -20, "–", "–"],
+        ["En joue", -20, -120, -120, -50, -100],
+        ["En lévitation", -20, -20, -40, "–", -60],
+        ["Espace réduit", "-40 spé.", "-40 spé.", -40, "–", -20],
+        ["Paralysie légère", -20, -20, -40, -20, -40],
+        ["Paralysie partielle", -80, -80, -80, -30, -60],
+        ["Paralysie totale", -200, -200, -200, -100, -200],
+        ["Petit adversaire", -10, "–", "–", "–", "–"],
+        ["Position supérieur", "+20", "–", "–", "–", "–"],
+        ["Qualité de Vol 7 à 14", "+10", "+10", "+10", "+10", "–"],
+        ["Qualité de Vol 15 et +", "+15", "+10", "+20", "+10", "–"],
+        ["Renversé", -30, -30, -30, -10, -30],
+        ["Surprise", "–", -90, -90, "–", -90]
+      ]
+    },
+    {
+      "id": 44,
+      "title": "Défenses supplémentaires",
+      "headers": ["Attaque n°", "Malus défensif"],
+      "rows": [
+        [2, -30],
+        [3, -50],
+        [4, -70],
+        ["5+", -90]
+      ]
+    },
+    {
+      "id": 45,
+      "title": "Attaques visées",
+      "headers": ["Zone du corps", "Malus contre les humanoïdes"],
+      "rows": [
+        ["Abdomen", -20],
+        ["Aine", -60],
+        ["Bras", -20],
+        ["Cœur", -60],
+        ["Cou", -80],
+        ["Coude", -60],
+        ["Cuisse", -20],
+        ["Épaule", -30],
+        ["Genou", -40],
+        ["Main", -40],
+        ["Œil", -100],
+        ["Pied", -50],
+        ["Poignet", -40],
+        ["Tête", -60],
+        ["Tibia", -10],
+        ["Torse", -10]
+      ]
+    },
+    {
+      "id": "VII",
+      "title": "Bonus au Fracassement",
+      "headers": ["Force", "Fracassement"],
+      "rows": [
+        ["8 ou 9", "+1"],
+        [10, "+2"],
+        ["11 ou 12", "+4"],
+        ["13 ou 14", "+6"],
+        ["15 ou plus", "+8"]
+      ]
+    },
+    {
+      "id": 46,
+      "title": "Portée en fonction de la Force",
+      "headers": ["Force", "Distance", "Qualité nécessaire"],
+      "rows": [
+        [3, "-30 m", ""],
+        [4, "-10 m", ""],
+        ["5 / 6", "Aucun", ""],
+        [7, "+10 m", ""],
+        [8, "+20 m", ""],
+        [9, "+30 m", ""],
+        [10, "+50 m", ""],
+        [11, "+100 m", "+5"],
+        [12, "+250 m", "+10"],
+        [13, "+500 m", "+10"],
+        [14, "+1 km", "+15"],
+        [15, "+5 km", "+15"],
+        ["16+", "+10 km", "+20"]
+      ]
+    },
+    {
+      "id": 47,
+      "title": "Modificateurs aux projectiles",
+      "headers": ["Situation", "Modificateurs"],
+      "rows": [
+        ["Se déplacer de plus d'un quart de son Mouvement", -10],
+        ["Courir à son Mouvement maximum", -50],
+        ["Faible visibilité", -20],
+        ["Cible à couvert", -40],
+        ["Changer de cible", -10],
+        ["Si la cible se déplace à un Mouvement de 8 ou 9", -20],
+        ["Si la cible se déplace à un Mouvement de 10", -40],
+        ["Si la cible se déplace à un Mouvement de plus de 10", -60],
+        ["Après s'être défendu au cours du même round", -40],
+        ["Attaquer plus loin que la portée efficace de l'arme", -30],
+        ["Grande cible", "+30"],
+        ["Viser pendant un round", "+10"],
+        ["Viser pendant deux rounds", "+20"],
+        ["Viser pendant trois rounds", "+30"],
+        ["Tirer à boût portant", "+30"]
+      ]
+    },
+    {
+      "id": 48,
+      "title": "Difficulté de tir",
+      "headers": ["Situation", "Difficulté"],
+      "rows": [
+        ["À boût portant : moins d'un mètre", "Facile"],
+        ["Portée courte : 2 à 10 mètres", "Moyenne"],
+        ["Portée moyenne : 11 à 50 mètres", "Difficile"],
+        ["Portée longue : 51 à 150 mètres", "Très Difficile"],
+        ["Très longue portée : 151 à 500 mètres", "Absurde"],
+        ["Portée extrême : 501 mètres à 1 km", "Quasiment Impossible"],
+        ["Inclassable : plus d'un km", "Impossible"]
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Défense contre les projectiles",
+      "headers": ["Situation", "Contre tirs", "Contre lancers"],
+      "rows": [
+        ["Parade", -80, -50],
+        ["Esquive", -30, "NA"],
+        ["Parade avec maîtrise", -20, "NA"],
+        ["Esquive avec maîtrise", "NA", "NA"],
+        ["Parade avec bouclier", -30, "NA"],
+        ["Parade avec maîtrise et bouclier", "NA", "NA"]
+      ]
+    },
+    {
+      "id": 50,
+      "title": "Critiques de ombat",
+      "headers": ["1 à 50", "Localisation", "Effet"],
+      "rows": [
+        [
+          "1 à 50",
+          "Non",
+          "Le personnage reçoit un malus à toutes ses actions égal à sa marge d'échec. Il récupère de ce malus au rythme de 5 points par round."
+        ],
+        [
+          "51 à 100",
+          "Oui",
+          "Le personnage reçoit un malus à toutes ses actions égal à sa marge d'échec. Il récupère de ce malus au rythme de 5 points par round, jusqu'à la moitié de sa valeur. Il faut localiser la zone d'impact."
+        ],
+        [
+          "101 à 150",
+          "Oui",
+          "Idem que précédemment. Si la localisation indique un membre, celui-ci est détruit ou amputé de façon irrécupérable. Si le coup touche la tête ou le cœur, le personnage meurt."
+        ],
+        [
+          "151 et +",
+          "Oui",
+          "Idem que précédemment, mais le personnage tombe aussi immédiatement dans l'inconscience. Il meurt dans un nombre de minutes égal à sa Constitution s'il ne reçoit pas d'aide médicale."
+        ]
+      ]
+    },
+    {
+      "id": 51,
+      "title": "Localisations",
+      "headers": ["Localisation", "Résultat"],
+      "rows": [
+        ["**Torse", "**1-50"],
+        ["Côtes", "1-10"],
+        ["Épaule", "11-20"],
+        ["Estomac", "21-30"],
+        ["Reins", "31-35"],
+        ["Torse", "36-48"],
+        ["Cœur", "49-50"],
+        ["**Bras droit", "**51-60"],
+        ["Bras", "51-54"],
+        ["Avant-bras", "55-58"],
+        ["Main", "59-60"],
+        ["**Bras gauche", "**61-70"],
+        ["Bras", "61-64"],
+        ["Avant-bras", "65-68"],
+        ["Main", "69-70"],
+        ["**Jambe droite", "**71-80"],
+        ["Cuisse", "71-74"],
+        ["Tibia", "75-78"],
+        ["Pied", "79-80"],
+        ["**Jambe gauche", "**81-90"],
+        ["Cuisse", "81-84"],
+        ["Tibia", "85-88"],
+        ["Pied", "89-90"],
+        ["**Tête", "**91-100"]
+      ]
+    },
+    {
+      "id": 52,
+      "title": "Maladresse en Initiative",
+      "headers": ["Résultat", "Malus"],
+      "rows": [
+        ["01", -125],
+        ["02", -100],
+        ["03", -75]
+      ]
     },
     {
       "id": 53,
       "title": "Accumulation de Ki",
       "headers": ["Caractéristique", "Base d'Accumulation de Ki"],
-      "rows": [["1 - 9", 1], ["10 - 12", 2], ["13 - 15", 3], ["16+", 4]]
+      "rows": [
+        ["1 - 9", 1],
+        ["10 - 12", 2],
+        ["13 - 15", 3],
+        ["16+", 4]
+      ]
+    },
+    {
+      "id": "VIII",
+      "title": "Détection du Ki",
+      "headers": ["Difficulté", "Distance"],
+      "rows": [
+        ["Routinière", "Détecte l'énergie des individu en contact physique."],
+        [
+          "Facile",
+          "Détecte l'énergie de tout être vivant se situant à moins d'un mètre."
+        ],
+        ["Moyenne", "Le rayon de détection s'étend à 5 m."],
+        ["Difficile", "10 m"],
+        ["Très Difficile", "20 m"],
+        ["Absurde", "50 m"],
+        ["Quasiment Impossible", "100 m"],
+        ["Impossible", "250 m"],
+        ["Surhumaine", "1 km. Nécessite Surhumanité."],
+        ["Zen", "Des centaines de kilomètres. Nécessite Zen."]
+      ]
     },
     {
       "id": 54,
       "title": "Les niveaux des techniques",
       "headers": ["Niveau", "DI maximal", "DI minimal", "Désavantage"],
-      "rows": [[1, 50, 20, 1], [2, 100, 40, 2], [3, 200, 60, 3]]
+      "rows": [
+        [1, 50, 20, 1],
+        [2, 100, 40, 2],
+        [3, 200, 60, 3]
+      ]
     },
     {
       "id": 55,
@@ -1479,6 +2894,27 @@
         ["16 à 17", 25],
         ["18 à 19", 30],
         [20, 35]
+      ]
+    },
+    {
+      "id": "X",
+      "title": "Difficultés de la Projection magique",
+      "headers": ["Difficulté", "Distance maximale"],
+      "rows": [
+        ["Routinière", "Soi-même ou contact"],
+        ["Facile", "5 m"],
+        ["Moyenne", "25 m"],
+        ["Difficile", "100 m"],
+        ["Très Difficile", "250 m"],
+        ["Absurde", "500 m"],
+        [
+          "Quasiment Impossible",
+          "1 km. Permet d'utiliser les sorts sur des cibles que le sorcier n'a pas la possibiltié de voir, mais dont il connaît la localisation précise d'une manière ou d'une autre."
+        ],
+        [
+          "Impossible",
+          "5 km. Permet d'atteindre des cibles cachées au personnage et dont il n'a qu'une idée approximative de la localisation."
+        ]
       ]
     },
     {
@@ -1660,6 +3096,130 @@
       ]
     },
     {
+      "id": "XI.1",
+      "title": "Échec à la Convocation",
+      "headers": ["Résultat total", "Effet"],
+      "rows": [
+        [
+          "Entre -1 et -10",
+          "La convocation ne fonctionne pas, mais le personnage ne perd pas les points de Zéon requis."
+        ],
+        [
+          "Entre -11 et -25",
+          "La convocation ne fonctionne pas, mais le personnage perd les points de Zéon requis."
+        ],
+        [
+          "Entre -26 et -50",
+          "La convocation ne fonctionne pas, mais le personnage perd le double des points de Zéon requis."
+        ],
+        [
+          "Entre -51 et -75",
+          "La convocation fonctionne à l'inverse de ce qui était prévu et, au lieu de la créature que le personnage comptait appeler, il en apparaît une autre de niveau supérieur et de nature opposée. Le personnage n'a pas la capacité de lier ni de dominer cette créarture au moment de son apparition et il perd tous les bonus dont il bénéficiait grâce à un rituel éventuel. Le coût en Zéon est le double de celui de la convocation originelle."
+        ],
+        [
+          "Entre -76 et -100",
+          "La convocation s'inverse et il apparaît un grand nombre de créatures de nature opposée et de niveau supérieur? Le convocateur n'a pas la capacité de les lier ni de les dominer au moment de leur apparition et perd tous les bonus dont il bénéficiait grâce à un rituel éventuel. Le coût en Zéon est le quadruple de celui de la convocation originelle."
+        ],
+        [
+          "Inférieur à -100",
+          "Une erreur de ce niveau peut coûter la vie au personnage, car au lieu de convoquer la créature désirée, il se téléporte lui-même à proximité d'une créature très puissante, de nature opposée à celle qu'il voulait convoquer. Le personnage perd tous ses points de Zéon."
+        ]
+      ]
+    },
+    {
+      "id": "XI.2",
+      "title": "Échec à la Domination",
+      "headers": ["Résultat Total", "Effet"],
+      "rows": [
+        [
+          "Entre -1 et -10",
+          "La domination ne fonctionne pas, mais le personnage ne perd pas les points de Zéon requis."
+        ],
+        [
+          "Entre -11 et -25",
+          "La domination ne fonctionne pas, mais le personnage perd les points de Zéon requis."
+        ],
+        [
+          "Entre -26 et -50",
+          "La domination ne fonctionne pas, mais le personnage perd le double des points de Zéon requis."
+        ],
+        [
+          "Entre -51 et -75",
+          "La domination n'a aucun effet, et la créature ciblée devient immunisée à la compétence Dominer du personnage. Il perd aussi le double des points de Zéon requis."
+        ],
+        [
+          "Entre -76 et -100",
+          "La domination s'inverse et la créature prend le contrôle du convocateur, comme s'il avait réussi à le dominer. Le personnage perd le quadruple des points de Zéon requis."
+        ],
+        [
+          "Inférieur à -100",
+          "La domination s'inverse et la créature prend le contrôle du convocateur, ce dernier perdant toute volonté et devenant une simple marionnette à son service jusqu'à la fin de ses jours. Le personnage perd tous ses points de Zéon."
+        ]
+      ]
+    },
+    {
+      "id": "XI.3",
+      "title": "Échec au Lien",
+      "headers": ["Résultat Total", "Effet"],
+      "rows": [
+        [
+          "Entre -1 et -10",
+          "Le lien ne fonctionne pas, mais le personnage ne perd pas les points de Zéon requis."
+        ],
+        [
+          "Entre -11 et -25",
+          "Le lien ne fonctionne pas, mais le personnage perd les points de Zéon requis."
+        ],
+        [
+          "Entre -26 et -50",
+          "Le lien ne fonctionne pas, mais le personnage perd le double des points de Zéon requis."
+        ],
+        [
+          "Entre -51 et -75",
+          "Le lien n'a aucun effet, et la créature ciblée devient immunisée à la compétence Lier du personnage. Tout les êtres dominés ou liés par le convocateur se libèrent automatiquement. Le personnage perd le double des points de Zéon requis."
+        ],
+        [
+          "Entre -76 et -100",
+          "Le lien n'a aucun effet, et la créature ciblée devient immunisée à la compétence Lier du personnage. Tout les êtres dominés ou liés par le convocateur se libèrent automatiquement et deviennent immunisés à ses pouvoirs. Le personnage perd le quadruple des points de Zéon requis."
+        ],
+        [
+          "Inférieur à -100",
+          "Le lien s'inverse et l'essence du personnage reste liée à la créature. Le convocateur partage désormais son destin avec celui de la créature : il mourra lui aussi si celle-ci meurt. De plus, tout les êtres dominés ou liés par le convocateur se libèrent automatiquement et deviennent immunisés à ses pouvoirs. Le personnage perd tous ses points de Zéon."
+        ]
+      ]
+    },
+    {
+      "id": "XI.4",
+      "title": "Échec à la Révocation",
+      "headers": ["Résultat Total", "Effet"],
+      "rows": [
+        [
+          "Entre -1 et -10",
+          "La révocation ne fonctionne pas, mais le personnage ne perd pas les points de Zéon requis."
+        ],
+        [
+          "Entre -11 et -25",
+          "La révocation ne fonctionne pas, mais le personnage perd les points de Zéon requis."
+        ],
+        [
+          "Entre -26 et -50",
+          "La révocation ne fonctionne pas, mais le personnage perd le double des points de Zéon requis."
+        ],
+        [
+          "Entre -51 et -75",
+          "La révocation échoue et la créature devient immunisée à la compétence Révoquer du personnage. Il perd le double des points de Zéon requis."
+        ],
+        [
+          "Entre -76 et -100",
+          "La révocation fonctionne à l'inverse. Au lieu de faire disparaître la créature, de nombreuses créatures similaires apparaissent, immunisées à la compétence Révoquer du personnage. Il perd le quadruple des points de Zéon requis."
+        ],
+        [
+          "Inférieur à -100",
+          "La révocation fonctionne à l'inverse. Au lieu de faire disparaître la créature, des myriades de créatures similaires mais de plus haut niveau apparaissent, immunisées à la compétence de Révocation du personnage. Il perd tous ses points de Zéon requis."
+        ]
+      ]
+    },
+    {
       "id": 67,
       "title": "La Roue de Fortune",
       "headers": ["Résultat", "Invocation"],
@@ -1738,6 +3298,27 @@
         ["8 (36)", "+80"],
         ["9 (45)", "+90"],
         ["10 (55)", "+100"]
+      ]
+    },
+    {
+      "id": "XIV",
+      "title": "Difficultés de la Projection psychique",
+      "headers": ["Difficulté", "Distance maximale"],
+      "rows": [
+        ["Routinière", "Soi-même ou contact"],
+        ["Facile", "5 m"],
+        ["Moyenne", "20 m"],
+        ["Difficile", "100 m"],
+        ["Très Difficile", "250 m"],
+        ["Absurde", "500 m"],
+        [
+          "Quasiment Impossible",
+          "1 km. Permet d'utiliser les pouvoirs psy sur des cibles hors de vue mais localisées avec précision."
+        ],
+        [
+          "Impossible",
+          "10 km. Permet d'utiliser les pouvoirs psy sur des cibles hors de vue mais localisées approximativement."
+        ]
       ]
     },
     {
@@ -2219,13 +3800,13 @@
       "title": "Fracassement et Solidité",
       "headers": ["Taille", "Fracassement", "Solidité"],
       "rows": [
-        ["Minuscule ", -4, 4],
-        ["Petite ", -2, 8],
-        ["Moyenne ", 0, 12],
-        ["Grande ", 4, 16],
-        ["Énorme ", 8, 20],
-        ["Gigantesque ", 12, 28],
-        ["Colossal ", 16, 34]
+        ["Minuscule", -4, 4],
+        ["Petite", -2, 8],
+        ["Moyenne", 0, 12],
+        ["Grande", 4, 16],
+        ["Énorme", 8, 20],
+        ["Gigantesque", 12, 28],
+        ["Colossal", 16, 34]
       ]
     },
     {
@@ -3162,7 +4743,166 @@
       ]
     }
   ],
-  "kit-mj": [],
+  "kit-mj": [
+    {
+      "id": 1,
+      "title": "Limites aux compétences",
+      "headers": ["Niveau", "Compétences maximale conseillée"],
+      "rows": [
+        ["1 à 3", 200],
+        ["4 à 6", 280],
+        ["7 à 9", 320],
+        ["10+", "Sans limite"]
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Limites au niveau de magie",
+      "headers": [
+        "Niveau surnaturel",
+        "Connaissance maximale de départ",
+        "Niveau de magie"
+      ],
+      "rows": [
+        ["**Niveau faible", "", ""],
+        ["Archétype mystique", 40, "30 %"],
+        ["Archétype mixte", 20, "20 %"],
+        ["Autres Archétypes", "Aucune", "Aucun"],
+        ["**Niveau moyen", "", ""],
+        ["Archétype mystique", 50, "50 %"],
+        ["Archétype mixte", 40, "40 %"],
+        ["Autres Archétypes", 10, "10 %"],
+        ["**Niveau élevé", "", ""],
+        ["Archétype mystique", 60, "80 %"],
+        ["Archétype mixte", 50, "60 %"],
+        ["Autres Archétypes", 20, "25 %"]
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Limites aux Développement Intérieur",
+      "headers": ["Niveau surnaturel", "Accès"],
+      "rows": [
+        ["Niveau faible", "Un quart"],
+        ["Niveau moyen", "La moitié"],
+        ["Niveau élevé", "Complet"]
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Invocations initiales",
+      "headers": ["Niveau surnaturel", "Serviteurs", "Invocations"],
+      "rows": [
+        [
+          "Niveau faible",
+          "Une créature de niveau inférieur au personnage",
+          "Aucune"
+        ],
+        [
+          "Niveau moyen",
+          "Une créature du même niveau que le personnage",
+          "Une (Niveau III)"
+        ],
+        [
+          "Niveau élevé",
+          "Une créature du même niveau et deux ou trois de niveau inférieur",
+          "Une (Niveau IV)"
+        ]
+      ]
+    },
+    {
+      "id": 5,
+      "title": "L'équilibre mental",
+      "headers": ["Total", "Santé Mentale", "Seuil de Folie"],
+      "rows": [
+        ["3 - 8", "*Non applicable*", "*Non applicable*"],
+        ["9 - 12", 20, 5],
+        ["13 - 15", 30, 10],
+        ["16 - 18", 50, 15],
+        ["19 - 21", 80, 20],
+        ["22 - 24", 120, 25],
+        ["25 - 28", 150, 30],
+        ["29 - 31", 200, 40],
+        ["32 - 34", 350, 50],
+        ["35+", 500, 60]
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Tests de Choc",
+      "headers": [
+        "Marge d'échec au test",
+        "Effets sur la Santé Mentale",
+        "Effets physiques",
+        "Troubles"
+      ],
+      "rows": [
+        ["Marge de 1", "Santé Mental -1", "–", "–"],
+        ["Marge de 2", "Santé Mental -2", "–", "–"],
+        ["Marge de 3", "Santé Mental -3", "–", "–"],
+        ["Marge de 4", "Santé Mental -5", "–", "–"],
+        ["Marge de 5", "Santé Mental -8", "–", "–"],
+        ["Marge de 6", "Santé Mental -10", "–", "–"],
+        ["Marge de 7", "Santé Mental -15", "Choc physique RPhy 60", "–"],
+        [
+          "Marge de 8",
+          "Santé Mental -20",
+          "Choc physique RPhy 80",
+          "Trouble temporaire mineur"
+        ],
+        [
+          "Marge de 9",
+          "Santé Mental -30",
+          "Choc physique RPhy 100",
+          "Trouble temporaire mineur"
+        ],
+        [
+          "Marge de 10",
+          "Santé Mental -40",
+          "Choc physique RPhy 120",
+          "Trouble temporaire grave"
+        ],
+        [
+          "Marge de 11 ou plus",
+          "Santé Mental -50",
+          "Choc physique RPhy 140",
+          "Trouble temporaire grave"
+        ]
+      ]
+    },
+    {
+      "id": "p.31-FAQ",
+      "title": "Arme : Arankar double",
+      "headers": [
+        "Arme",
+        "Dégâts",
+        "Vit.",
+        "FOR R.",
+        "Mode 1",
+        "Mode 2",
+        "Catégorie",
+        "Spécial",
+        "Sol.",
+        "Frac.",
+        "Prés."
+      ],
+      "rows": [
+        [
+          "Arankar double",
+          60,
+          -15,
+          7,
+          "TRA",
+          "",
+          "Épée / Deux mains",
+          "Complexe, Cf. Katana à deux lames",
+          14,
+          4,
+          20
+        ]
+      ]
+    }
+  ],
   "dominus-exxet": [
     {
       "id": 1,
@@ -3831,31 +5571,103 @@
           "1-10",
           "Classe basse",
           "Les vêtements que vous portez, un peu de nourriture, quelques possessions de peu de valeur ou une arme de piètre qualité. 5 PC.",
-          "Athlétisme +15, Équitation +10, Habileté manuelle +10, Histoire (locale) +10, Natation +10, Persuasion +10, Vigilance +15."
+          "Athlétisme +15, Équitation +10, Habileté manuelle +10, Histoire (locale) +10, Natation +10, Persuasion +10, Vigilance +15"
         ],
         [
           "11-60",
           "Classe moyenne",
           "Deux tenues de rechange, des rations pour un peu plus d'une semaine, un équipement de voyage assez complet ou bien une arme et armure légère quelconques. 1 PO.",
-          "Athlétisme +15, Équitation +10, Habileté manuelle +10, Histoire (locale) +10, Natation +10, Persuasion +10, Vigilance +15."
+          "Athlétisme +15, Équitation +10, Habileté manuelle +10, Histoire (locale) +10, Natation +10, Persuasion +10, Vigilance +15"
         ],
         [
           "61-90",
           "Bourgeois",
           "Une monture, plusieurs tenues variées, des rations de qualité pour plus d'une semaine, du matériel de voyage très complet qui peut comprendre des armes et une armure légère. 20 PO.",
-          "Danse +10, Équitation +10, Estimation +15, Histoire (locale) +10, Natation +10, Persuasion +15, Style +10."
+          "Danse +10, Équitation +10, Estimation +15, Histoire (locale) +10, Natation +10, Persuasion +15, Style +10"
         ],
         [
           "91-100",
           "Noblesse",
           "Un pur-sang ou monture équivalente, une grande quantité de vêtements variés de qualité, d'excellentes rations pour plus d'une semaine, toutes sortes de matériel de voyage, comprenant une arme et une armure légère ou moyenne. 150 PO.",
-          "Commandement +20, Danse +10, Équitation +10, Histoire (locale) +10, Musique ou Art +10, Persuasion +10, Style +10."
+          "Commandement +20, Danse +10, Équitation +10, Histoire (locale) +10, Musique ou Art +10, Persuasion +10, Style +10"
         ],
         [
-          "Priv.(2)",
+          "*Priv.(2)",
           "Haute Noblesse",
           "Vous avez virtuellement accès à presque tout ce qui peut se trouver sur le marché ; plusieurs montures (y compris des pur-sangs ou des chevaux de guerre), toutes sortes de vêtements de qualité, accès à du matériel varié de n'importe quel endroit du monde et à tout type d'arme et d'armure (l'une d'elle peut même être +5). 1000 PO.",
-          "Commandement +20, Danse +10, Équitation +10, Histoire (locale) +10, Musique ou Art +10, Persuasion +10, Style +10."
+          "Commandement +20, Danse +10, Équitation +10, Histoire (locale) +10, Musique ou Art +10, Persuasion +10, Style +10"
+        ]
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Ilmora",
+      "headers": [
+        "Valeur",
+        "Classe sociale",
+        "Équipement de départ",
+        "Racines culturelles"
+      ],
+      "rows": [
+        [
+          "1-10",
+          "Classe basse",
+          "Les vêtements que vous portez, de la nourriture et quelques possessions sans valeur parmi lesquelles on peut inclure comme trésor un journal intime. 5 PC.",
+          "Art +10, Commandement +10, Herboristerie +10, Histoire +10, Médecine +10, Mémorisation +10, Persuasion +10, Science +10"
+        ],
+        [
+          "11-85",
+          "Classe moyenne",
+          "Deux tenues de rechange, des rations pour un peu plus d'une semaine, un équipement de voyage simple et quelques livres. 1 PO.",
+          "Art +10, Commandement +10, Herboristerie +10, Histoire +10, Médecine +10, Mémorisation +10, Persuasion +10, Science +10"
+        ],
+        [
+          "86-100",
+          "Noblesse",
+          "Une monture, plusieurs tenues diverses (ce qui comprend généralement quelques tuniques), des rations de qualité, un équipement de voyage assez complet et une vaste collection de livre. 75 PO.",
+          "Commandement +10, Danse +10, Histoire +10, Mémorisation +10, Musique ou Art +10, Persuasion +10, Science +10, Style +10"
+        ],
+        [
+          "*Priv.",
+          "Haute noblesse",
+          "Un pur-sang (ou monture équivalente), plusieurs vêtements de qualité et accès à du matériel varié et extravagant, ce qui comprend des livres rares, des montres, des lunettes ou des machines à engrenage simple. 600 PO.",
+          "Commandement +10, Danse +10, Histoire +10, Mémorisation +10, Musique ou Art +10, Persuasion +10, Science +10, Style +10"
+        ]
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Hélénia",
+      "headers": [
+        "Valeur",
+        "Classe sociale",
+        "Équipement de départ",
+        "Racines culturelles"
+      ],
+      "rows": [
+        [
+          "1-15",
+          "Classe basse",
+          "Les vêtements que vous portez, un peu de nourriture, quelques possessions de peu de valeur ou un outil de labour. 2 PC.",
+          "Animaux +10, Athlétisme +10, Équitation +20, Escalade +10, Herboristerie +10, Natation +10, Vigilance +10"
+        ],
+        [
+          "16-60",
+          "Classe moyenne",
+          "Deux tenues de rechange, à manger pour une semaine, un sac à dos avec du matériel varié, plusieurs outils de labour ou un chien de berger. 50 PA.",
+          "Animaux +10, Athlétisme +10, Équitation +20, Escalade +10, Herboristerie +10, Natation +10, Vigilance +10"
+        ],
+        [
+          "61-80",
+          "Nomade",
+          "Les vêtements que vous portez, une cape imperméable, une monture, un peu de nourriture, plusieurs instruments de labour, un couteau paysan. 25 PA.",
+          "Animaux +10, Athlétisme +10, Équitation +20, Escalade +10, Herboristerie +20, Pistage +10"
+        ],
+        [
+          "81-100",
+          "Noblesse",
+          "Un pur-sang (ou monture équivalente), plusieurs vêtements de qualité et accès à du matériel varié et extravagant, ce qui comprend des livres rares, des montres, des lunettes ou des machines à engrenage simple. 600 PO.",
+          "Animaux +10, Athlétisme +10, Commandement +10, Équitation +20, Escalade +10, Natation +10, Vigilance +10"
         ]
       ]
     },
@@ -3885,10 +5697,146 @@
       ]
     },
     {
-      "id": 0,
-      "title": "//TODO",
-      "headers": ["", ""],
-      "rows": []
+      "id": 34,
+      "title": "Réputation et reconnaissance",
+      "headers": ["Réputation", "Niveau de reconnaissance", "Difficulté"],
+      "rows": [
+        [0, "Inconnu", -0],
+        [10, "Connu", -1],
+        [20, "Populaire", -3],
+        [30, "Renommé", -5],
+        [40, "Fameux", -10],
+        [50, "Célèbre", -15],
+        [70, "Légendaire", -25],
+        [100, "Au-delà des légendes", "NA"]
+      ]
+    },
+    {
+      "id": 35,
+      "title": "Sacrifice du Pacte",
+      "headers": ["Résultat", "Perte"],
+      "rows": [
+        ["1-4", "Son sens de la vue"],
+        ["5-8", "Son bonheur (il est incapable de le ressentir)"],
+        ["9-12", "Son sens du goût"],
+        ["13-16", "Sa chance"],
+        ["17-20", "Son sens du toucher"],
+        ["21-24", "Sa capacité à parler"],
+        ["25-28", "Son sens de l'odorat"],
+        ["29-32", "Sa capacité à conserver les choses"],
+        ["33-36", "Son sens de l'oïe"],
+        ["37-40", "Son charisme ou son charme"],
+        ["41-44", "Sa capacité à rêver"],
+        ["45-48", "Son espoir ou son envie de vivre"],
+        ["49-52", "Sa santé mentale (seulement s'il est sain d'esprit)"],
+        ["53-56", "Sa capacité à aimer"],
+        ["57-60", "Sa capacité à créer ou à concevoir"],
+        [
+          "61-64",
+          "Sa moralité (il est incapable de distinguer le bien du mal)"
+        ],
+        ["65-68", "Sa mémoire (il oublie tout en fin de journée)"],
+        ["69-72", "Sa jeunesse (seulement s'il est jeune)"],
+        ["73-76", "Son existence (personne ne se souvient de lui)"],
+        ["77-80", "Sa capacité à haïr"],
+        ["81-84", "Son intelligence (réduite irrémédiablement de moitié)"],
+        [
+          "85-100",
+          "Sa raison d'être (l'artiste perd son art, le musicien son send de la musique...)"
+        ]
+      ]
+    },
+    {
+      "id": 36,
+      "title": "Situation commerciale",
+      "headers": ["Situations commerciales", "Modificateur"],
+      "rows": [
+        ["Affluence commerciale quasi nulle", -30],
+        ["Mauvaise affluence commerciale", -10],
+        ["Bonne affluence commerciale", "+10"],
+        ["Affaire prometteuse", "+10"],
+        ["Affaire avec peu d'avenir", -20],
+        ["Premier trimestre", -30],
+        ["2ème et 3ème trimestre", -10],
+        ["Vol", "-10 à -40"],
+        ["Catastrophe mineure", -20],
+        ["Catastrophe majeure", -50],
+        ["Attaque commerciale rivale", "-10 à -30"]
+      ]
+    },
+    {
+      "id": 37,
+      "title": "Évolution du marché",
+      "headers": ["Résultat", "Effet", "Modificateur"],
+      "rows": [
+        [1, "Faillite du marché", -60],
+        ["2 à 10", "Trimestre tragique", -40],
+        ["11 à 30", "Trimestre négatif", -20],
+        ["31 à 70", "Trimestre normal", "+0"],
+        ["71 à 90", "Trimestre positif", "+10"],
+        ["91 à 99", "Trimestre exceptionnel", "+20"],
+        [100, "Trimestre miraculeux", "+30"]
+      ]
+    },
+    {
+      "id": 38,
+      "title": "Habieté en Commerce",
+      "headers": ["Difficulté", "Modificateur"],
+      "rows": [
+        ["Routinière", -20],
+        ["Facile", -10],
+        ["Moyenne", 0],
+        ["Difficile", "+10"],
+        ["Très Difficile", "+20"],
+        ["Absurde", "+30"],
+        ["Quasiment Impossible", "+40"],
+        ["Impossible", "+50"]
+      ]
+    },
+    {
+      "id": 39,
+      "title": "Résultat du Trimestre",
+      "headers": ["Résultat", "Effet", "Gains"],
+      "rows": [
+        [-30, "Faillite totale", "-100%"],
+        ["-29 à 1", "Désastreux", "-50%"],
+        ["2 à 10", "Mauvais", "-20%"],
+        ["11 à 20", "Négatif", "-10%"],
+        ["21 à 40", "Neutre", "0%"],
+        ["41 à 80", "Positif", "+10%"],
+        ["81 à 99", "Bon", "+30%"],
+        ["100 à 129", "Exceptionnel", "+50%"],
+        ["130+", "Miraculeux", "+100%"]
+      ]
+    },
+    {
+      "id": 40,
+      "title": "Procès",
+      "headers": ["Situations", "Modificateur"],
+      "rows": [
+        ["Opinion publique favorable", "+20"],
+        ["Opinion publique défavorable", -40],
+        ["Témoin clé", "+60 / -60"],
+        ["Nombreux témoins", "+30 / -30"],
+        ["Bouc émissaire", -20],
+        ["Crime horrible", -20],
+        ["Position sociale inférieure", -50],
+        ["Position sociale supérieure", "+50"],
+        ["Indice douteux", "+20 / -20"],
+        ["Preuves mineures", "+60 / -60"],
+        ["Preuves écrasantes", "+120 / -120"]
+      ]
+    },
+    {
+      "id": 41,
+      "title": "Verdict",
+      "headers": ["Résultat", "Verdict"],
+      "rows": [
+        ["0 ou plus", "Absous"],
+        ["-1 à -20", "Peine minime"],
+        ["-21 à -80", "Peine normale"],
+        ["-81 ou moins", "Peine maximale"]
+      ]
     },
     {
       "id": 42,
@@ -3908,14 +5856,37 @@
         ["*Tuan Dalyr", 0],
         ["*Turak", "*0"]
       ]
-    },
-    {
-      "id": 0,
-      "title": "//TODO",
-      "headers": ["", ""],
-      "rows": []
     }
   ],
   "gaia-2": [],
-  "cqmpn": []
+  "cqmpn": [
+    {
+      "id": 1,
+      "title": "Masse d'Ennemis : Bonus en Attaque",
+      "headers": ["Nb d'Ennemis", "Bonus en Attaque"],
+      "rows": [
+        ["3+", "+30"],
+        ["5+", "+50"],
+        ["10+", "+70"],
+        ["15+", "+90"],
+        ["25+", "+110"],
+        ["50+", "+130"],
+        ["100+", "+150"]
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Masse d'Ennemis : Multiplicateur de Dégâts",
+      "headers": ["Nb d'Ennemis", "Multiplicateur de Dégâts"],
+      "rows": [
+        ["2 à 3 adversaires", "x2"],
+        ["3 à 4 adversaires", "x3"],
+        ["5 à 9 adversaires", "x4"],
+        ["10 à 24 adversaires", "x5"],
+        ["25 à 100 adversaires", "x10"],
+        ["100+ adversaires", "x15"],
+        ["1000+ adversaires", "x25"]
+      ]
+    }
+  ]
 }
