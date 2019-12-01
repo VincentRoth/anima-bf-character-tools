@@ -1,5 +1,9 @@
 <h2>Classes</h2>
 
+<div class="flex flex-row flex-center" *ngIf="!classes">
+  <mat-spinner></mat-spinner>
+</div>
+
 <mat-accordion>
   <mat-expansion-panel *ngFor="let clazz of classes">
     <mat-expansion-panel-header>

@@ -19,6 +19,10 @@
   </mat-form-field>
 </div>
 
+<div class="flex flex-row flex-center" *ngIf="!magicPaths">
+  <mat-spinner></mat-spinner>
+</div>
+
 <app-magic-path
   *ngFor="let magicPath of magicPaths"
   [magicPath]="magicPath"

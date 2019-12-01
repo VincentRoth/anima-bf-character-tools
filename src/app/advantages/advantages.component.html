@@ -18,7 +18,8 @@
   </mat-form-field>
 </div>
 
-<div class="flex-row flex-center">
+<div class="flex flex-row flex-center">
+  <mat-spinner *ngIf="!advantages"></mat-spinner>
   <app-advantage
     *ngFor="let advantage of filteredAvantages"
     [advantage]="advantage"

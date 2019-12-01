@@ -10,7 +10,7 @@ import { AdvantageService } from 'src/app/shared/services';
 })
 export class AdvantagesComponent extends AbstractSearchComponent
   implements OnInit {
-  private advantages: UnknownAdvantage[];
+  advantages: UnknownAdvantage[];
   filteredAvantages: UnknownAdvantage[];
 
   private types: object;

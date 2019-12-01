@@ -1,5 +1,9 @@
 <h2>Races</h2>
 
+<div class="flex flex-row flex-center" *ngIf="!races">
+  <mat-spinner></mat-spinner>
+</div>
+
 <mat-accordion>
   <mat-expansion-panel *ngFor="let race of races">
     <mat-expansion-panel-header>

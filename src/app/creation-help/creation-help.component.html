@@ -1,43 +1,45 @@
-<div class="app-creation-help">
-  <h2>Aide à la création de personnage</h2>
+<h2>Aide à la création de personnage</h2>
 
-  <mat-accordion>
-    <mat-expansion-panel *ngFor="let panel of contentPanels">
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          <app-content-title
-            [level]="1"
-            [title]="panel.title"
-          ></app-content-title>
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-
-      <mat-accordion *ngIf="isParentPanel(panel)">
-        <mat-expansion-panel *ngFor="let subPanel of panel.content">
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              <app-content-title
-                [level]="2"
-                [title]="subPanel.title"
-              ></app-content-title>
-            </mat-panel-title>
-          </mat-expansion-panel-header>
-
-          <app-panel-content
-            *ngFor="let contentUnit of subPanel.content"
-            [content]="contentUnit"
-            [level]="3"
-          ></app-panel-content>
-        </mat-expansion-panel>
-      </mat-accordion>
-
-      <ng-container *ngIf="!isParentPanel(panel)">
-        <app-panel-content
-          *ngFor="let contentUnit of panel.content"
-          [content]="contentUnit"
-          [level]="2"
-        ></app-panel-content>
-      </ng-container>
-    </mat-expansion-panel>
-  </mat-accordion>
+<div class="flex flex-row flex-center" *ngIf="!contentPanels">
+  <mat-spinner></mat-spinner>
 </div>
+
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let panel of contentPanels">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <app-content-title
+          [level]="1"
+          [title]="panel.title"
+        ></app-content-title>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <mat-accordion *ngIf="isParentPanel(panel)">
+      <mat-expansion-panel *ngFor="let subPanel of panel.content">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <app-content-title
+              [level]="2"
+              [title]="subPanel.title"
+            ></app-content-title>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <app-panel-content
+          *ngFor="let contentUnit of subPanel.content"
+          [content]="contentUnit"
+          [level]="3"
+        ></app-panel-content>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <ng-container *ngIf="!isParentPanel(panel)">
+      <app-panel-content
+        *ngFor="let contentUnit of panel.content"
+        [content]="contentUnit"
+        [level]="2"
+      ></app-panel-content>
+    </ng-container>
+  </mat-expansion-panel>
+</mat-accordion>
