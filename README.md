@@ -6,16 +6,18 @@ Stable application version is deployed at https://anima-beyond-fantasy.herokuapp
 
 # Licence
 
-This project is provided under [Creative Common Licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+This application it-self is provided under [Creative Common Licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/).  
+Application uses Angular, Angular Material and Material Icons.
 
-It is a derivated work of Anima Beyond Fantasy by Anima Project Studio.
-
-Application use Angular, Angular Material and Material Icons.
+It is a derivated work of Anima Beyond Fantasy by Anima Project Studio.  
+Data into /src/asset/data folder is intelectual property of Anima Project Studio and are unlicensed for any used.
 
 Image credits go to:
 
 - [Wen-M](https://www.deviantart.com/wen-m), Anima illustrations
 - wirelizard [CC0], [via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ten_sided_dice.png)
+
+Images into /src/asset/images and /src/asset/icons folders is intelectual property of Wen-M and/or Anima Project Studio and are unlicensed for any used.
 
 # ToDo
 
@@ -49,6 +51,8 @@ Image credits go to:
   Les seuils de l'édition précédente avaient été conservés alors que le niveau ne peut plus aller au dessus de 100. Niveaux ajustés par rapport à l'édition Core Exxet espagnole.
 - Table de Combat (p.335)  
   Ne prend pas en compte la nouvelle règle d'absoption (p.86) et ne correspond pas à l'exemple donné pour le calcul des dégâts (p.87). La Table entière a été ajustée avec la règle d'absoption, maintenant le % de dégâts dans la table est linéaire.
+- Tableau 3 de Gaïa volume 1 (p.58) Classe sociale de l'Hélénia  
+  Prend en compte un tableau fournit dans la FAQ française, car identique au Tableau 2 des classes sociales de l'Ilmora.
 - Prix des nouvelles armes et armures (Dominus Exxet)
   Les prix des armes et armures ont été publiés dans le 3ème supplément web espagnole, et traduit par [Exarkfr](http://projet.animajdr.free.fr/download.php?view.210).
 - Natura des Turaks  

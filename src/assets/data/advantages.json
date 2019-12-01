@@ -112,7 +112,7 @@
   },
   {
     "name": "Don mystique",
-    "description": "Le personnage peut sentir et manipuler les énergies surnaturelles du flux d'âmes. La magie traverse sson esprit et, avec les connaissances appropriées, il pourra lancer des sorts.",
+    "description": "Le personnage peut sentir et manipuler les énergies surnaturelles du flux d'âmes. La magie traverse son esprit et, avec les connaissances appropriées, il pourra lancer des sorts.",
     "effect": "Le personnage a la capacité de voir et d'utiliser la magie. Il ajoute aussi un bonus spécial de +10 à sa RMys, car sa conscience surnaturelle lui permet de mieux résister aux effets mystiques.",
     "costs": [2],
     "source": "Core p.19",
@@ -724,7 +724,7 @@
   {
     "name": "Magie étanche",
     "description": "La magie ne filtre pas naturellement à travers le corps et l'âme du personnage. Certains blocages l'empêchent de canaliser les pouvoir ambiants et même son âme ne régénère pas la magie. Quand il utilise son pouvoir, le personnage ne le récupère jamais de lui-même. La seule méthode à sa disposition consiste à s'alimenter des énergie msytiques d'autres êtres magiques ou d'objets.",
-    "effect": "Le personnage n'a aucune régénération Zéonique, ce qui l'empêche de récupérer naturellement les points de 2eon qu'il dépense. Il ne pourra récupérer de la magie qu'en la drainant d'objets qui le permetent ou d'êtres vivant possédant le Don mystique.",
+    "effect": "Le personnage n'a aucune régénération Zéonique, ce qui l'empêche de récupérer naturellement les points de Zéon qu'il dépense. Il ne pourra récupérer de la magie qu'en la drainant d'objets qui le permetent ou d'êtres vivant possédant le Don mystique.",
     "condition": "Ce désavantage ne peut être combiné à récupération lente de la magie.",
     "benefits": [2],
     "source": "Core p.24",
@@ -996,7 +996,7 @@
   },
   {
     "name": "Maudit",
-    "description": "Une force obscure pèse sur le personnage, une certaine anomalie de caractère surnaturell qui se mêle à son destin et l'entraîne vers le malheur et le chagrin. L'intensité de la malédiction est échelonnée sur deux niveaux, en fonction des points de bénéfices qu'elle donne. Celle à un point représente le fait qu'un personnage subit continuellement un certain effet négatif qui lui nuit ; ce pourrait être le cas d'un guerrir qui égare tout le temps ses armes lorsqu'il les perd de vue, ou d'une personne incapable de garder de l'argent quoi qu'elle tente.\nCelle à deux points est une malédiction de caractère supérieure qui entraîne de terribles évènements pour celui qui la subit. Ce pourrait être le cas de quelqu'un qui est condamné à perdre tout ce qu'il possède, dont le corps se couvre de douloureuses blessures sanglantes chaque fois qu'il lutte avec quelqu'un ou qui mourra inévitablement le jour ou il ôtera une vie.",
+    "description": "Une force obscure pèse sur le personnage, une certaine anomalie de caractère surnaturell qui se mêle à son destin et l'entraîne vers le malheur et le chagrin. L'intensité de la malédiction est échelonnée sur deux niveaux, en fonction des points de bénéfices qu'elle donne. Celle à un point représente le fait qu'un personnage subit continuellement un certain effet négatif qui lui nuit ; ce pourrait être le cas d'un guerrier qui égare tout le temps ses armes lorsqu'il les perd de vue, ou d'une personne incapable de garder de l'argent quoi qu'elle tente.\nCelle à deux points est une malédiction de caractère supérieure qui entraîne de terribles évènements pour celui qui la subit. Ce pourrait être le cas de quelqu'un qui est condamné à perdre tout ce qu'il possède, dont le corps se couvre de douloureuses blessures sanglantes chaque fois qu'il lutte avec quelqu'un ou qui mourra inévitablement le jour ou il ôtera une vie.",
     "effect": "Les effets exacts de ce désavantage doivent être interprétés par le Meneur de Jeu, en fonction de son degré.",
     "benefits": [1, 2],
     "source": "KitMJ p.5",
@@ -1044,9 +1044,10 @@
     "types": ["Avantage de passé", "Interprétation", "Social"]
   },
   {
-    "name": "Racines cuturelles",
+    "name": "Racines culturelles",
     "description": "Le personnage est très attaché à la culture de son pays et possède de vastes connaissances sur les traditions et les coutumes de sa terre.",
-    "effect": "Cet avantage offre un bonus spécial à plusieurs compétences secondairesen fonction de la position sociale et du pays d'origine du personnage. Il y a pour chacune des nations de Gaïa une liste des différents modificateurs que donnent les racines culturelles.",
+    "effect": "Cet avantage offre un bonus spécial à plusieurs compétences secondaires en fonction de la position sociale et du pays d'origine du personnage. Il y a pour chacune des nations de Gaïa une liste des différents modificateurs que donnent les racines culturelles.",
+    "note": "Dans Gaïa volume 1 (1ère édition des règles), le total des bonus spéciaux est de +80, alors que dans le volume 2 (règles Core Exxet), le total est de +160. Il suffit de doubler les bonus procurés par les racines du volume 1 pour retomber sur un bonus équivalent. Vérifiez ce point avec le Meneur de Jeu.",
     "costs": [1],
     "source": "Gaïa p.288",
     "types": ["Avantage de passé", "Compétences"]
@@ -1250,9 +1251,17 @@
     "types": ["Avantage Général", "Mystique", "Convocation"]
   },
   {
+    "name": "Affinité d'utilisation",
+    "description": "Le personnage a beaucoup de facilités pour comprendre et activer les pouvoirs des objets surnaturels qu'il a en sa possession.",
+    "effect": "Le personnage ajoute 5 points à sa caractéristique de Pouvoir lorsqu'il s'agit de déterminer le temps nécessaire pour maîtriser les capacités de Notions d'utilisation des artefacts qu'il possède.",
+    "costs": [1],
+    "source": "ProEx p.9",
+    "types": ["Avantage Général"]
+  },
+  {
     "name": "Mutations",
     "description": "Le personnage possède des pouvoirs innés ç cause d'une mutation.",
-    "effect": "Octroie 50 PF pour acquérir des Pouvoirs de monstre, comme si le personnage avait une Gnose de 20. L'investissement de points supplémentaires augmente la quantié de points reçus à 100 et 150 respectivement",
+    "effect": "Octroie 50 PF pour acquérir des Pouvoirs de monstre, comme si le personnage avait une Gnose de 20. L'investissement de points supplémentaires augmente la quantié de points reçus à 100 et 150 respectivement.",
     "note": "Cet avantage vise à créer des pouvoirs pour des superhéros, dans un contexte autre que le monde d'Anima, Gaïa. Consulter le Meneur de Jeu.",
     "costs": [1, 2, 3],
     "source": "Core p.334",
