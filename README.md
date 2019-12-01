@@ -21,24 +21,28 @@ Images into /src/asset/images and /src/asset/icons folders is intelectual proper
 
 # ToDo
 
-- Modules d'Arme
+- Modules d'Arme et manoeuvres
 - Arts Martiaux
-- Pouvoir du Ki
-- Sorts de magie
-- Invocations
+- Pouvoir du Ki/Némésis
+- Métamagie
+- Arcanes et Invocations
 - Pouvoirs psychiques
+- Patrons psychiques ?
 - Tableaux, encarts et autres référence sous forme de table
 - Fiche de personnage ?
 - Prétirés ?
-- PNJ génériques ?
+- PNJ génériques
 
 # Ne sera pas disponible sur l'application
 
+- Description des règles autre que pour la création de personnage et les concepts qui y sont liés.
+- Techniques de Ki
 - Élan
-- Détails historiques et géographiques des 2 volumes de Gaïa
-- Créatures du Core Exxet et de Ceux Qui Marchaient Parmi Nous
-- Sheele de l'Arcana Exxet
+- Limite, Héritage de sang, Ars Magnus, Armes Impossibles et Sceaux d'Invocation de Dominus Exxet
+- Grimoires, Incarnation et Sheele de l'Arcana Exxet
 - Artefacts de Prometheum Exxet
+- Créatures du Core Exxet et de Ceux Qui Marchaient Parmi Nous, ainsi ques les Capacités Primordiales et Pouvoir de créature
+- Détails historiques et géographiques des volumes de Gaïa
 
 # Changements majeurs par rapport à l'édition Core Exxet française
 
@@ -49,7 +53,7 @@ Images into /src/asset/images and /src/asset/icons folders is intelectual proper
 - Table de Combat (p.335)  
   Ne prend pas en compte la nouvelle règle d'absoption (p.86) et ne correspond pas à l'exemple donné pour le calcul des dégâts (p.87). La Table entière a été ajustée avec la règle d'absoption, maintenant le % de dégâts dans la table est linéaire.
 - Tableau 3 de Gaïa volume 1 (p.58) Classe sociale de l'Hélénia  
-  Prend en compte un tableau fournit dans la FAQ française, car identique au Tableau 2 des classes sociales de l'Ilmora.
+  Prend en compte un tableau fournit dans la Q&R française, car identique au Tableau 2 des classes sociales de l'Ilmora.
 - Prix des nouvelles armes et armures (Dominus Exxet)
   Les prix des armes et armures ont été publiés dans le 3ème supplément web espagnole, et traduit par [Exarkfr](http://projet.animajdr.free.fr/download.php?view.210).
 - Natura des Turaks  

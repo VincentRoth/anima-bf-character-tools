@@ -18,11 +18,7 @@ const spells = JSON.parse(
 );
 
 const clearAndTrimText = function(text) {
-  let trimedText = text
-    .trim()
-    .replace(/\t/g, ' ')
-    .replace(/	/g, ' ')
-    .replace(/ /g, ' ');
+  let trimedText = text.trim().replace(/\t|	| /g, ' ');
   while (/  /.test(trimedText)) {
     trimedText = trimedText.replace(/  /g, ' ');
   }
