@@ -12,13 +12,15 @@ a {
     max-width: calc(50% - 1rem);
 }
 
-
 .menu-card {
-    height: 0;
-    width: 10rem;
-    max-width: calc(100% - 1rem);
-    // Hack with height 0 to display item with an height equals to current width
-    padding: 0.5rem 0.5rem calc(100% - 0.5rem);
+    $card-dimension: calc(50vw - 2.5rem);
+    $card-max-dimension: 10rem;
+
+    height: $card-dimension;
+    width: $card-dimension;
+    max-height: $card-max-dimension;
+    max-width: $card-max-dimension;
+    padding: 0.5rem;
     background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;

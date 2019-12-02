@@ -1,23 +1,24 @@
-# AnimaBeyondFantasyCharacterTools
+# Anima Beyond Fantasy - Character Tools
 
 A suit tools for building and playing character at Anima Beyond Fantasy tabletop RPG.
 
-Stable application version is deployed at https://anima-beyond-fantasy.herokuapp.com/.
+Stable application version (master branch) is deployed at https://anima-beyond-fantasy.herokuapp.com/.
 
 # Licence
 
-This application it-self is provided under [Creative Common Licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/).  
-Application uses Angular, Angular Material and Material Icons.
+The web application it-self (HTML, CSS, TS files) is provided under [Creative Common Licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/).  
+Application uses Angular, Angular Material and Material Icons.  
+All data into /src/asset folder is not covered by this licence.
 
 It is a derivated work of Anima Beyond Fantasy by Anima Project Studio.  
-Data into /src/asset/data folder is intelectual property of Anima Project Studio and are unlicensed for any used.
+Data into /src/asset/data folder is intelectual property of Anima Project Studio and are unlicensed for any use.
 
 Image credits go to:
 
 - [Wen-M](https://www.deviantart.com/wen-m), Anima illustrations
-- wirelizard [CC0], [via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ten_sided_dice.png)
+- wirelizard, for [ten sided dice via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ten_sided_dice.png), under [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en) 
 
-Images into /src/asset/images and /src/asset/icons folders is intelectual property of Wen-M and/or Anima Project Studio and are unlicensed for any used.
+Images into /src/asset/images and /src/asset/icons folders are intelectual property of Wen-M and/or Anima Project Studio and are unlicensed for any use.
 
 # ToDo
 
@@ -60,4 +61,4 @@ Images into /src/asset/images and /src/asset/icons folders is intelectual proper
   La base de Natura des Turaks n'est pas indiquée dans Gaïa Volume 2, une base de 0 a été choisie car ils n'ont pas de capacité mystique, à l'instar des Jayans et des Tuan Dalyr.
 
 Quelques autres ajustements mineurs ont été fait pour garder une cohérence au niveau des règles provenant d'autres livres que celui dans lequel elle apparaît, tel la Natura (Gaïa Volume 1, Tableau 42) ou la liste des compétences (Core Exxet, Encadré II).  
-Inclut aussi les erratas français et parfois espagnols.
+Inclut aussi les erratas français et espagnols.
