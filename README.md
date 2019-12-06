@@ -47,8 +47,6 @@ Images into /src/asset/images and /src/asset/icons folders are intelectual prope
 
 # Changements majeurs par rapport à l'édition Core Exxet française
 
-- Avantage de passé (p.20, Kit du MJ p.5, Arcana Exxet p.11)  
-  Les avantages Élan et Familier, ainsi que le désavantage Bleu, sont considérés ici comme étant de passé. Pour Bleu il s'agit du pendant à l'avantage de passé Chevronné. Pour les deux autres, ils s'agit d'éléments provenant de l'historique du personnage qui peuvent être perdus en jeu.
 - Niveau de Maladresse (p.47)  
   Les seuils de l'édition précédente avaient été conservés alors que le niveau ne peut plus aller au dessus de 100. Niveaux ajustés par rapport à l'édition Core Exxet espagnole.
 - Table de Combat (p.335)  

@@ -320,10 +320,9 @@
     "name": "Élan",
     "description": "De façon inconsciente, le personnage a réussi à attirer l'attention d'un Shajad ou d'une Béryl. Cela signigie souvent que les ancêtres du personnage étaient liés à cette puissance et qu'elle conserve une sorte de lien avec tous les membres de cette famille. Il est aussi possible que cette attention soit due à certaines actions que le personnage a réalisées. Quoi qu'il en soit, le personnage profite de ses faveurs. Par contre, à partir du moment où le joueur prend le contrôle de son personnage, la relation dépendra de la façon dont celui-ci se comporte.",
     "effect": "Le personnage a un Élan de 20 vis-à-vis de l'entité de son choix. Les Points de Création supplémentaires augmentent ce niveau à 40 et 50 respectivement.",
-    "note": "Comme il s'agit d'un élément lié à l'historique d'un personnage, cet avantage est considéré comme de passé (Règle non officielle).",
     "costs": [1, 2, 3],
     "source": "Core p.20",
-    "types": ["Avantage de passé"]
+    "types": ["Avantage Général"]
   },
   {
     "name": "Apprentissage",
@@ -965,10 +964,9 @@
     "description": "Contrairement à ses compagnons, le personnage a une expérience sur le terrain très limitée. En conséquence, ses compétences seront dès le départ inférieures à celles des autres.",
     "effect": "Le personnage commence avec 100 points d'expérience de moins que le reste des personnages de son groupe. Dans le cas où il seraient tous de niveau 1, celui qui aura ce désavantage sera de niveau 0, et un minimum de trois séances de jeu sera requis pour atteindre le premier niveau.",
     "special": "Ce désavantage est lié aux autres personnage du groupe. Seul un joueur (ou deux, dans le cas où il y aurait cinq participants ou plus) peut le choisir.",
-    "note": "Comme il s'agit du pendant de l'avantage de passé Chevronné, ce désavantage est considéré comme de passé (Règle non officielle).",
     "benefits": [1],
     "source": "KitMJ p.5",
-    "types": ["Désavantage de passé", "Expérience"]
+    "types": ["Désavantage Général", "Expérience"]
   },
   {
     "name": "Destin funeste",
@@ -1237,10 +1235,9 @@
     "name": "Familier",
     "description": "À un moment dans sa vie, le personnage a été capable de signer un pacte de familier avec une créature.",
     "effect": "Le personnage commence la partie avec une créature de son niveau en tant que familier. Un Point de Création supplémentaire permet même au familier en question d'avoir un niveau de plus que celui du personnage.",
-    "note": "Comme il s'agit d'un élément lié à l'historique d'un personnage, cet avantage est considéré comme de passé (Règle non officielle).",
     "costs": [2, 3],
     "source": "ArcEx p.11",
-    "types": ["Avantage de passé", "Mystique", "Convocation"]
+    "types": ["Avantage Général", "Mystique", "Convocation"]
   },
   {
     "name": "Convocateur en masse",
