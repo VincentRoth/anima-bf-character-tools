@@ -1,12 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import cloneDeep from 'lodash-es/cloneDeep';
 import {
   MagicPath,
   MagicPathStatus,
   SpellCastingLevel,
   SpellType
 } from 'src/app/shared/models';
-import { copyJson } from 'src/app/shared/utils';
 import { AbstractQueryOnceService } from './abstract-query-once.service';
 
 @Injectable({
@@ -41,7 +41,7 @@ export class SpellService extends AbstractQueryOnceService<MagicPath[]> {
   }
 
   filterByTokenAndType(filter: string, type: SpellType): MagicPath[] {
-    let filteredPaths = copyJson(this.data);
+    let filteredPaths = cloneDeep(this.data);
     if (!filter && !type) {
       return filteredPaths;
     }

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
+import cloneDeep from 'lodash-es/cloneDeep';
 import { Observable, of, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { copyJson } from 'src/app/shared/utils';
 
 export abstract class AbstractQueryOnceService<T> {
   protected data: T;
@@ -29,8 +29,8 @@ export abstract class AbstractQueryOnceService<T> {
 
   get(): Observable<T> {
     if (!this.data) {
-      return this.getData().pipe(map(copyJson));
+      return this.getData().pipe(map(cloneDeep));
     }
-    return of(copyJson(this.data));
+    return of(cloneDeep(this.data));
   }
 }

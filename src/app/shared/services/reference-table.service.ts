@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of, Subject } from 'rxjs';
+import cloneDeep from 'lodash-es/cloneDeep';
+import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 import {
   ReferenceBook,
@@ -8,7 +9,6 @@ import {
   ReferenceTable,
   ReferenceTableContainer
 } from 'src/app/shared/models';
-import { copyJson } from 'src/app/shared/utils';
 import { AbstractQueryOnceService } from './abstract-query-once.service';
 
 @Injectable({
@@ -30,7 +30,7 @@ export class ReferenceTableService extends AbstractQueryOnceService<
     const bookProperty = splitRef[0];
     const tableId = splitRef[1];
     const transform = (data: ReferenceTableContainer) =>
-      copyJson(
+      cloneDeep(
         data[bookProperty].filter(
           (table: ReferenceTable) => table.id.toString() === tableId
         )[0]

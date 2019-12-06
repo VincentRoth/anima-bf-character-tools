@@ -6,7 +6,7 @@ Stable application version (master branch) is deployed at https://anima-beyond-f
 
 # Licence
 
-The web application it-self (HTML, CSS, TS files) is provided under [Creative Common Licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/).  
+The web application it-self (HTML, CSS, TS files) is provided under [Creative Common Licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
 Application uses Angular, Angular Material and Material Icons.  
 All data into /src/asset folder is not covered by this licence.
 
