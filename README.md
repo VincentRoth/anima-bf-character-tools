@@ -10,7 +10,7 @@ The web application it-self (HTML, CSS, TS files) is provided under [Creative Co
 Application uses Angular, Angular Material and Material Icons.  
 All data into /src/asset folder is not covered by this licence.
 
-It is a derivated work of Anima Beyond Fantasy by Anima Project Studio.  
+This application is not affiliated with Anima Studio Studio neither with Edge Entertainment.  
 Data into /src/asset/data folder is intelectual property of Anima Project Studio and are unlicensed for any use.
 
 Image credits go to:
@@ -45,7 +45,7 @@ Images into /src/asset/images and /src/asset/icons folders are intelectual prope
 - Créatures du Core Exxet et de Ceux Qui Marchaient Parmi Nous, ainsi ques les Capacités Primordiales et Pouvoir de créature
 - Détails historiques et géographiques des volumes de Gaïa
 
-# Changements majeurs par rapport à l'édition Core Exxet française
+# Changements principaux par rapport à l'édition Core Exxet française
 
 - Niveau de Maladresse (p.47)  
   Les seuils de l'édition précédente avaient été conservés alors que le niveau ne peut plus aller au dessus de 100. Niveaux ajustés par rapport à l'édition Core Exxet espagnole.
