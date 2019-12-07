@@ -68,22 +68,14 @@ export class SpellService extends AbstractQueryOnceService<MagicPath[]> {
                 return (
                   isSelected &&
                   (spell.name.toLocaleLowerCase().includes(token) ||
-                    spell.level.toString().includes(token) ||
+                    // no filter on level
                     spell.action.toLocaleLowerCase().includes(token) ||
-                    spell.types.some(spellType =>
-                      spellType.toLocaleLowerCase().includes(token)
-                    ) ||
+                    // spell types is filter with other input
                     spell.effect.toLocaleLowerCase().includes(token) ||
                     spell.castingLevels.some(
                       (castingLevel: SpellCastingLevel) =>
-                        castingLevel.effect
-                          .toLocaleLowerCase()
-                          .includes(token) ||
-                        castingLevel.maintenance.toString().includes(token) ||
-                        castingLevel.requiredIntelligence
-                          .toString()
-                          .includes(token) ||
-                        castingLevel.zeon.toString().includes(token)
+                        castingLevel.effect.toLocaleLowerCase().includes(token)
+                      // no filter on zeon, int and maintenance cost
                     ) ||
                     (spell.specialMaintenance &&
                       spell.specialMaintenance

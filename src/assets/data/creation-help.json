@@ -393,7 +393,7 @@
         "content": [
           {
             "type": "paragraph",
-            "content": "La Fatigue est liées aux actions physiques que réalise un personngae. Quand quelqu'un fait des efforts physiques importants, il s'épuise peu à peu. La Base de cette capacité est égale à la Constitution."
+            "content": "La Fatigue est liées aux actions physiques que réalise un personnage. Quand quelqu'un fait des efforts physiques importants, il s'épuise peu à peu. La Base de cette capacité est égale à la Constitution."
           },
           {
             "type": "paragraph",
@@ -958,7 +958,7 @@
       {
         "type": "sub-paragraph",
         "title": "Compétences naturelles",
-        "content": "Les compétences naturelles sont une série de modificateurs. À chaque niveau, incluant le niveau 1, le personngae choisit 5 compétences secondaires différentes et ajoute un modificateur de +10 à chacune d'elles. Pour un même niveau, il n'est pas possible de choisir deux fois la même compétence, mais l'amélioration peut être cumulé avec le bonus naturel pour une même compétence."
+        "content": "Les compétences naturelles sont une série de modificateurs. À chaque niveau, incluant le niveau 1, le personnage choisit 5 compétences secondaires différentes et ajoute un modificateur de +10 à chacune d'elles. Pour un même niveau, il n'est pas possible de choisir deux fois la même compétence, mais l'amélioration peut être cumulé avec le bonus naturel pour une même compétence."
       },
       {
         "type": "sub-paragraph",
