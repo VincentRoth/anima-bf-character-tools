@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentPanel } from 'src/app/shared/models';
-import { RaceService } from './race.service';
+import { RaceService } from 'src/app/shared/services';
 
 @Component({
   selector: 'app-races',
@@ -13,9 +13,11 @@ export class RacesComponent implements OnInit {
   constructor(private raceService: RaceService) {}
 
   ngOnInit() {
-    this.raceService.get().subscribe(data => {
-      this.races = data;
-      this.races.sort((r1, r2) => r1.title.localeCompare(r2.title));
+    this.raceService.get().subscribe({
+      next: data => {
+        this.races = data;
+        this.races.sort((r1, r2) => r1.title.localeCompare(r2.title));
+      }
     });
   }
 }

@@ -3,24 +3,32 @@
   <mat-form-field class="flex">
     <input
       matInput
-      placeholder="Filtrer"
+      placeholder="Rechercher"
       (keyup)="handleSearch($event.target.value)"
     />
   </mat-form-field>
 </div>
 
+<div class="flex flex-row flex-center" *ngIf="!refTables">
+  <mat-spinner></mat-spinner>
+</div>
+
 <ng-container *ngIf="refTables">
   <ng-container *ngFor="let book of books">
-    <h3>{{ book.title }}</h3>
-    <div class="flex flex-row flex-center">
-      <app-table
-        *ngFor="let table of refTables[book.reference]"
-        [table]="table"
-        [reference]="book.reference + '#' + table.id"
-      ></app-table>
-    </div>
-    <p *ngIf="!refTables[book.reference].length">
-      Aucun résultat pour ce livre.
-    </p>
+    <details *ngIf="refTables[book.reference].length">
+      <summary>
+        <h3>{{ book.title }}</h3>
+        <span class="right">
+          {{ refTables[book.reference].length }} Table(s)
+        </span>
+      </summary>
+      <div class="flex-row flex-center">
+        <app-table
+          *ngFor="let table of refTables[book.reference]"
+          [table]="table"
+          [reference]="book.reference + '#' + table.id"
+        ></app-table>
+      </div>
+    </details>
   </ng-container>
 </ng-container>

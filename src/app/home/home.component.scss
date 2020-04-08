@@ -1,6 +1,3 @@
-$card-dimension: 10rem;
-$card-padding: 1rem;
-
 :host {
     display: flex;
     flex: 1 1 100%;
@@ -12,12 +9,18 @@ $card-padding: 1rem;
 a {
     margin: 0.5rem;
     text-decoration: none;
+    max-width: calc(50% - 1rem);
 }
 
 .menu-card {
-    padding: $card-padding;
-    width: $card-dimension;
+    $card-dimension: calc(50vw - 2.5rem);
+    $card-max-dimension: 10rem;
+
     height: $card-dimension;
+    width: $card-dimension;
+    max-height: $card-max-dimension;
+    max-width: $card-max-dimension;
+    padding: 0.5rem;
     background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -25,12 +28,5 @@ a {
     .menu-title {
         text-shadow: white 0 0 0.75rem, white 0 0 0.75rem, white 0 0 0.75rem,
             white 0 0 0.5rem, white 0 0 0.5rem;
-    }
-
-    img {
-        height: $card-dimension - 2rem;
-        width: auto;
-        display: block;
-        margin: 0 auto;
     }
 }

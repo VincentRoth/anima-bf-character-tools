@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { CharacterService } from 'src/app/shared/character/character.service';
 import { constant } from 'src/app/shared/constant';
 import { Character } from 'src/app/shared/models';
-import { ReferenceTableService } from 'src/app/shared/reference-table/reference-table.service';
+import {
+  CharacterService,
+  ReferenceTableService
+} from 'src/app/shared/services';
 
 @Component({
   selector: 'app-character-sheet',

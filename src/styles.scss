@@ -1,5 +1,5 @@
-@import './styles/theme';
-@import './styles/footer.theme';
+@import "./styles/theme";
+@import "./styles/footer.theme";
 
 $theme: mat-light-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);
@@ -12,13 +12,15 @@ body {
 
 body {
     margin: 0;
-    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 app-root {
     display: flex;
     flex-direction: column;
+    width: min-content;
     min-height: 100vh;
+    min-width: 100%;
     margin: 0;
 }
 
@@ -26,8 +28,26 @@ h2 {
     margin-top: 0.4rem;
 }
 
+details {
+    margin-bottom: 0.5rem;
+
+    summary {
+        cursor: pointer;
+        border-bottom: 1px solid $light-grey;
+
+        h3,
+        h4 {
+            display: inline;
+        }
+
+        h4 {
+            padding: 0 1rem;
+        }
+    }
+}
+
 .flex {
-    flex: 1 1;
+    flex: 1 0 auto;
 }
 
 .flex-row {
@@ -58,6 +78,10 @@ h2 {
 
 .italic {
     font-style: italic;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .right {

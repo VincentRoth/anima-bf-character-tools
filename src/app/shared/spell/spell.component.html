@@ -1,0 +1,84 @@
+<mat-card class="spell-card">
+  <mat-card-header (click)="toggleOpen()">
+    <mat-card-title class="spell-title">
+      {{ open ? '▾' : '▸' }} {{ getTitle() }}
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="spell-content" [ngClass]="{ hidden: !open }">
+    <div *ngIf="!spell.isFreeAccess">
+      <p>
+        <span class="bold">Niveau : </span>{{ getLevel() }}
+        <span class="right">
+          <span class="bold">Action : </span>{{ spell.action }}
+        </span>
+      </p>
+      <p>
+        <span class="bold">Type de sort : </span>{{ spell.types.join(', ') }}
+      </p>
+      <p><span class="bold">Effet : </span>{{ spell.effect }}</p>
+      <table cellspacing="0">
+        <thead>
+          <tr class="bold">
+            <th>Degré</th>
+            <th
+              class="text-center"
+              *ngFor="let castingLevel of spell.castingLevels"
+            >
+              {{ castingLevel.level }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bold">Zéon</td>
+            <td
+              class="text-center"
+              *ngFor="let castingLevel of spell.castingLevels"
+            >
+              {{ castingLevel.zeon }}
+            </td>
+          </tr>
+          <tr>
+            <td class="bold">Int. R.</td>
+            <td
+              class="text-center"
+              *ngFor="let castingLevel of spell.castingLevels"
+            >
+              {{ castingLevel.requiredIntelligence }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p *ngFor="let castingLevel of spell.castingLevels">
+        <span class="bold">{{ castingLevel.level }} : </span>
+        {{ castingLevel.effect }}
+      </p>
+      <p>
+        <span class="bold">Maintien : </span>{{ maintenance }}
+        <span *ngIf="spell.isDailyMaintenance" class="bold">
+          Quotidien
+        </span>
+      </p>
+      <p *ngIf="spell.forbiddenPaths">
+        <span class="bold">Voies fermées : </span>
+        {{ forbiddenPaths }}
+      </p>
+      <p *ngIf="spell.note">
+        <span class="bold">Note : </span>
+        {{ spell.note }}
+      </p>
+    </div>
+
+    <div *ngIf="spell.isFreeAccess">
+      <p>
+        <span class="bold">Accès libre : </span>
+        Niveau 1-{{ spell.maxFreeAccessLevel }}
+      </p>
+      <p *ngIf="isSecondaryPathLevel()">
+        ou
+        <br />
+        <span class="bold">Voie secondaire : </span>Niveau {{ spell.level }}
+      </p>
+    </div>
+  </mat-card-content>
+</mat-card>

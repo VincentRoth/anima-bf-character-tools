@@ -1,0 +1,59 @@
+<details>
+  <summary>
+    <h3>{{ magicPath.name }}</h3>
+    <span *ngIf="!isFreeAccess()" class="right">
+      Voie {{ magicPath.status }}
+    </span>
+  </summary>
+  <p>
+    {{ magicPath.description }}
+    <br />
+    <ng-container
+      *ngIf="magicPath.oppositePaths && magicPath.oppositePaths.length"
+    >
+      <span class="bold">Voies principales opposées : </span>
+      {{ magicPath.oppositePaths.join(', ') }}
+      <br />
+    </ng-container>
+    <ng-container
+      *ngIf="magicPath.permittedPaths && magicPath.permittedPaths.length"
+    >
+      <span class="bold">Voies secondaires autorisées : </span>
+      {{ magicPath.permittedPaths.join(', ') }}
+      <br />
+    </ng-container>
+    <ng-container
+      *ngIf="magicPath.forbiddenPaths && magicPath.forbiddenPaths.length"
+    >
+      <span class="bold">Liens fermés : </span>
+      {{ magicPath.forbiddenPaths.join(', ') }}
+      <br />
+    </ng-container>
+    <ng-container *ngIf="magicPath.limits">
+      <span class="bold">Limites : </span>
+      {{ magicPath.limits }}
+      <br />
+    </ng-container>
+  </p>
+  <div class="flex flex-row flex-center" *ngIf="!isFreeAccess()">
+    <app-spell
+      *ngFor="let spell of magicPath.spells"
+      [spell]="spell"
+    ></app-spell>
+  </div>
+  <ng-container *ngIf="isFreeAccess()">
+    <ng-container *ngFor="let level of getFreeAccessSpellLevels()">
+      <details *ngIf="getSpellsByLevel(level).length">
+        <summary>
+          <h4>Niveau {{ getFreeAccessSpellLevel(level) }}</h4>
+        </summary>
+        <div class="flex flex-row flex-center">
+          <app-spell
+            *ngFor="let spell of getSpellsByLevel(level)"
+            [spell]="spell"
+          ></app-spell>
+        </div>
+      </details>
+    </ng-container>
+  </ng-container>
+</details>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RollService } from 'src/app/shared/roll/roll.service';
+import { RollService } from 'src/app/shared/services';
 
 @Component({
   selector: 'app-dice-roll',
@@ -9,13 +9,11 @@ import { RollService } from 'src/app/shared/roll/roll.service';
 export class DiceRollComponent implements OnInit {
   private diceValue: number;
   rollHistory: string[];
-  private is10Dice: boolean;
   private is100Dice: boolean;
 
   constructor(private rollService: RollService) {}
 
   ngOnInit() {
-    this.is10Dice = false;
     this.is100Dice = false;
     this.rollHistory = [];
   }
@@ -38,7 +36,6 @@ export class DiceRollComponent implements OnInit {
   }
 
   roll10Dice() {
-    this.is10Dice = true;
     this.is100Dice = false;
 
     this.addRollToHistory();
@@ -46,7 +43,6 @@ export class DiceRollComponent implements OnInit {
   }
 
   roll100Dice() {
-    this.is10Dice = false;
     this.is100Dice = true;
 
     this.addRollToHistory();

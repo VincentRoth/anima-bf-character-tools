@@ -1,5 +1,9 @@
 <h2>Classes</h2>
 
+<div class="flex flex-row flex-center" *ngIf="!classes">
+  <mat-spinner></mat-spinner>
+</div>
+
 <mat-accordion>
   <mat-expansion-panel *ngFor="let clazz of classes">
     <mat-expansion-panel-header>
@@ -129,7 +133,9 @@
 
         <h5>Coûts Réduits</h5>
         <p>
-          <span *ngIf="!clazz.secondary.reducedCosts.length">Aucun</span>
+          <ng-container *ngIf="!clazz.secondary.reducedCosts.length">
+            Aucun
+          </ng-container>
           <ng-container
             *ngFor="
               let reduceCost of clazz.secondary.reducedCosts;
@@ -148,7 +154,9 @@
 
         <h5>Champs principaux</h5>
         <p>
-          <span *ngIf="!clazz.bonus.primary.length">Aucun</span>
+          <ng-container *ngIf="!clazz.bonus.primary.length">
+            Aucun
+          </ng-container>
           <ng-container
             *ngFor="let bonus of clazz.bonus.primary; let $last = last"
           >
@@ -164,7 +172,9 @@
 
         <h5>Champs secondaires</h5>
         <p>
-          <span *ngIf="!clazz.bonus.secondary.length">Aucun</span>
+          <ng-container *ngIf="!clazz.bonus.secondary.length">
+            Aucun
+          </ng-container>
           <ng-container
             *ngFor="let bonus of clazz.bonus.secondary; let $last = last"
           >

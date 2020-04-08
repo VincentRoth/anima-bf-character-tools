@@ -3,4 +3,5 @@
 
 $primary: mat-palette($mat-green, 700, A700, 900);
 $accent: mat-palette($mat-deep-purple, A200, A100, A400);
-$warn: mat-palette($mat-red)
+$warn: mat-palette($mat-red);
+$light-grey: map_get($mat-grey, 300);

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentPanel, EContentType } from 'src/app/shared/models';
-import { CreationHelpService } from './creation-help.service';
+import { CreationHelpService } from 'src/app/shared/services';
 
 @Component({
   selector: 'app-creation-help',

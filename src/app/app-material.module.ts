@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,16 +15,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   exports: [
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatMenuModule,
-    MatIconModule,
+    MatBadgeModule,
     MatButtonModule,
     MatCardModule,
-    MatInputModule,
+    MatExpansionModule,
     MatFormFieldModule,
-    MatBadgeModule,
+    MatIconModule,
+    MatInputModule,
+    MatMenuModule,
+    MatProgressSpinnerModule,
     MatSelectModule,
-    MatExpansionModule
+    MatToolbarModule
   ]
 })
 export class AppMaterialModule {}
