@@ -137,7 +137,7 @@
   {
     "name": "Apte dans une compétence",
     "description": "Le personnage bénéficie d'une capacité d'apprentissage hors du commun dans une compétence secondaire. Cela lui permet de la développer avec peu d'efforts par rapport aux autres membres de sa classe.",
-    "effect": "Cet avantage réduit d'un point le coût de formation d'une compétence secondaire pour chaque Point de cration investi.",
+    "effect": "Cet avantage réduit d'un point le coût de formation d'une compétence secondaire pour chaque Point de Création investi.",
     "special": "Les coûts de formation ne peuvent être réduits en dessous de 1. Cet avantage ne fonctionne que pour les coûts des compétences secondaires.",
     "costs": [1, 2, 3],
     "source": "Core p.19",
@@ -285,7 +285,7 @@
   {
     "name": "Infatiguable",
     "description": "La résitance du personnage à la fatigue est bien supérieure à ce que sa Constitution permettrait normalement.",
-    "effect": "Augmente de 3 points la Fatigue du personnage. Les Points de Créations supplémentaires",
+    "effect": "Augmente de 3 points la Fatigue du personnage. Les Points de Créations supplémentaires augmentent le bonus à 6 et 9 respectivement.",
     "costs": [1, 2, 3],
     "source": "Core p.20",
     "types": ["Avantage Général", "Combat"]
@@ -1257,7 +1257,7 @@
   },
   {
     "name": "Mutations",
-    "description": "Le personnage possède des pouvoirs innés ç cause d'une mutation.",
+    "description": "Le personnage possède des pouvoirs innés à cause d'une mutation.",
     "effect": "Octroie 50 PF pour acquérir des Pouvoirs de monstre, comme si le personnage avait une Gnose de 20. L'investissement de points supplémentaires augmente la quantié de points reçus à 100 et 150 respectivement.",
     "note": "Cet avantage vise à créer des pouvoirs pour des superhéros, dans un contexte autre que le monde d'Anima, Gaïa. Consulter le Meneur de Jeu.",
     "costs": [1, 2, 3],
