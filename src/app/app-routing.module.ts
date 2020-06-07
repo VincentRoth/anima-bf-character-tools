@@ -13,7 +13,7 @@ import { SpellsComponent } from './spells/spells.component';
 import { TablesComponent } from './tables/tables.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'dice-roll', component: DiceRollComponent },
   { path: 'character-sheet', component: CharacterSheetComponent },
   { path: 'creation-help', component: CreationHelpComponent },
@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'spells', component: SpellsComponent },
   { path: 'map', component: MapComponent },
   { path: 'tables', component: TablesComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' }
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({

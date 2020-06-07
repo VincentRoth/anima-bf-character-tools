@@ -8,43 +8,23 @@
 
   <mat-menu #rootMenu="matMenu">
     <a mat-menu-item routerLink="home"><mat-icon>home</mat-icon>Accueil</a>
-    <a mat-menu-item routerLink="dice-roll">
-      <mat-icon>casino</mat-icon>Lancer de dé
-    </a>
-    <a mat-menu-item routerLink="character-sheet">
-      <mat-icon>portrait</mat-icon>Mon personnage
-    </a>
-    <button mat-menu-item [matMenuTriggerFor]="characterMenu">
-      <mat-icon>list</mat-icon>Création de personnage
-    </button>
-    <button mat-menu-item [matMenuTriggerFor]="powerMenu">
-      <mat-icon>list</mat-icon>Puissance surnaturelle
-    </button>
-    <a mat-menu-item routerLink="map">
-      <mat-icon>explore</mat-icon>Carte de Gaïa
-    </a>
-    <a mat-menu-item routerLink="tables">
-      <mat-icon>table_chart</mat-icon>Tables de référence
-    </a>
-    <a
-      mat-menu-item
-      href="https://github.com/VincentRoth/anima-bf-character-tools/issues"
-      target="_blank"
-    >
+    <a mat-menu-item routerLink="dice-roll"> <mat-icon>casino</mat-icon>Lancer de dé </a>
+    <a mat-menu-item routerLink="character-sheet"> <mat-icon>portrait</mat-icon>Mon personnage </a>
+    <button mat-menu-item [matMenuTriggerFor]="characterMenu"><mat-icon>list</mat-icon>Création de personnage</button>
+    <button mat-menu-item [matMenuTriggerFor]="powerMenu"><mat-icon>list</mat-icon>Puissance surnaturelle</button>
+    <a mat-menu-item routerLink="map"> <mat-icon>explore</mat-icon>Carte de Gaïa </a>
+    <a mat-menu-item routerLink="tables"> <mat-icon>table_chart</mat-icon>Tables de référence </a>
+    <a mat-menu-item href="https://github.com/VincentRoth/anima-bf-character-tools/issues" target="_blank">
       <mat-icon>question_answer</mat-icon>Contact
     </a>
   </mat-menu>
 </header>
 
 <mat-menu #characterMenu="matMenu">
-  <a mat-menu-item routerLink="creation-help">
-    <mat-icon>help</mat-icon>Aide à la création
-  </a>
+  <a mat-menu-item routerLink="creation-help"> <mat-icon>help</mat-icon>Aide à la création </a>
   <a mat-menu-item routerLink="races"><mat-icon>person</mat-icon>Races</a>
   <a mat-menu-item routerLink="classes"><mat-icon>school</mat-icon>Classes</a>
-  <a mat-menu-item routerLink="advantages">
-    <mat-icon>person_add</mat-icon>Avantages
-  </a>
+  <a mat-menu-item routerLink="advantages"> <mat-icon>person_add</mat-icon>Avantages </a>
 </mat-menu>
 
 <mat-menu #powerMenu="matMenu">
@@ -59,14 +39,10 @@
   <p id="version">v{{ version }}</p>
   <p>
     Ce site est mis à disposition selon les termes de la Licence CC BY NC SA 4.0
-    <a
-      rel="license"
-      href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
-      target="_blank"
-    >
+    <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
       <img
         alt="Licence Creative Commons"
-        style="border-width:0"
+        style="border-width: 0;"
         src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"
       />
     </a>
@@ -77,33 +53,15 @@
   <p>Anima Beyond Fantasy est une marque déposée d'Anima Project Studio.</p>
   <p>
     Anima Beyond Fantasy est édité par
-    <a href="https://www.black-book-editions.fr/" target="_blank">
-      Edge Entertainment
-    </a>
-    .
+    <a href="https://www.black-book-editions.fr/" target="_blank">Edge Entertainment</a>.
   </p>
   <p>
     La plupart des images proviennent de la
-    <a href="https://www.deviantart.com/wen-m" target="_blank">
-      gallerie de Wen-M
-    </a>
-    , illustrateur pour la gamme Anima.
+    <a href="https://www.deviantart.com/wen-m" target="_blank">gallerie de Wen-M</a>, illustrateur pour la gamme Anima.
   </p>
   <p>
     L'image de dé 10 est de wirelizard,
-    <a
-      href="https://commons.wikimedia.org/wiki/File:Ten_sided_dice.png"
-      target="_blank"
-    >
-      via Wikimedia Commons
-    </a>
-    , licence
-    <a
-      href="https://creativecommons.org/publicdomain/zero/1.0/deed.en"
-      target="_blank"
-    >
-      CC0
-    </a>
-    .
+    <a href="https://commons.wikimedia.org/wiki/File:Ten_sided_dice.png" target="_blank">via Wikimedia Commons</a>,
+    licence <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank">CC0</a>.
   </p>
 </footer>
