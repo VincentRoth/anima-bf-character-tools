@@ -1,26 +1,40 @@
-# Anima Beyond Fantasy - Character Tools
+# Anima Beyond Fantasy - Outils pour les personnages
 
-A suit tools for building and playing character at Anima Beyond Fantasy tabletop RPG.
+Une suite d'outils pour créer et jouer des personnages du jeu de rôle papier Aniam Beyond Fantasy.
 
-Stable application version (master branch) is deployed at https://anima-beyond-fantasy.herokuapp.com/.
+La dernière version stable (branche master) est déployée sur https://anima-beyond-fantasy.herokuapp.com.
 
-# Licence
+# License
 
-The web application it-self (HTML, CSS, TS files) is provided under [Creative Common Licence Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
-Application uses Angular, Angular Material and Material Icons.  
-All data into /src/asset folder is not covered by this licence.
+L'application web elle-même (HTML, CSS, TS files) est disponible sous license [Creative Common Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
+L'application utilises Angular, Angular Material et Material Icons.  
+Toutes les données dans le répertoire /src/asset n'est pas couverte par cette license.
 
-This application is not affiliated with Anima Studio Studio neither with Edge Entertainment.  
-Data into /src/asset/data folder is intelectual property of Anima Project Studio and are unlicensed for any use.
+Cette application n'est pas affiliée à Anima Studio Studio ni à Edge Entertainment.
+Les données dans le répertoire /src/asset/data relève de la propriété intellectuelle d'Anima Project Studio et n'est couverte par aucune license pour aucun usage.
 
-Image credits go to:
+Les images sont attribuées à :
 
-- [Wen-M](https://www.deviantart.com/wen-m), Anima illustrations
+- [Wen-M](https://www.deviantart.com/wen-m), Anima illustrations, unlicensed
 - wirelizard, for [ten sided dice via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ten_sided_dice.png), under [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
 
-Images into /src/asset/images and /src/asset/icons folders are intelectual property of Wen-M and/or Anima Project Studio and are unlicensed for any use.
+Les images dans les répertoires /src/asset/images et /src/asset/icons sont la propriété intellectuelle de Wen-M et/ou Anima Project Studio et ne sont couvertes par aucune license pour aucun usage.
 
-# ToDo
+# Disponible sur l'application
+
+- Lancers de dé 10 et 100
+- Aide à la création : règles nécessaires pour créer un personnage
+- Races
+- Classes
+- Avantages
+- Sorts (partiellement)
+- Carte de Gaïa
+- Tables de références des livres
+- Mon personnage
+  - Avantages choisis
+  - Tables de référence marquées
+
+# À venir
 
 - Modules d'Arme et manoeuvres
 - Arts Martiaux
@@ -28,11 +42,17 @@ Images into /src/asset/images and /src/asset/icons folders are intelectual prope
 - Métamagie
 - Arcanes et Invocations
 - Pouvoirs psychiques
-- Patrons psychiques ?
-- Tableaux, encarts et autres référence sous forme de table
+- Patrons psychiques
+- Tableaux, encarts et autres références sous forme de table
 - Fiche de personnage ?
 - Prétirés ?
 - PNJ génériques
+
+##
+
+- Mon personnage
+  - Indication de comment l'utiliser
+  - Voies de magie et sorts libres
 
 # Ne sera pas disponible sur l'application
 
@@ -42,7 +62,7 @@ Images into /src/asset/images and /src/asset/icons folders are intelectual prope
 - Limite, Héritage de sang, Ars Magnus, Armes Impossibles et Sceaux d'Invocation de Dominus Exxet
 - Grimoires, Incarnation et Sheele de l'Arcana Exxet
 - Artefacts de Prometheum Exxet
-- Créatures du Core Exxet et de Ceux Qui Marchaient Parmi Nous, ainsi ques les Capacités Primordiales et Pouvoir de créature
+- Créatures du Core Exxet et de Ceux Qui Marchaient Parmi Nous, ainsi ques les Capacités Primordiales et Pouvoirs de créature
 - Détails historiques et géographiques des volumes de Gaïa
 
 # Changements principaux par rapport à l'édition Core Exxet française
