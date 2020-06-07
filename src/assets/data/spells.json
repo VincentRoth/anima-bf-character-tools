@@ -13606,16 +13606,7 @@
   },
   {
     "name": "Nécromancie",
-    "oppositePaths": [
-      "Lumière",
-      "Obscurité",
-      "Air",
-      "Eau",
-      "Feu",
-      "Terre",
-      "Essence",
-      "Illusion"
-    ],
+    "oppositePaths": ["Lumière", "Obscurité", "Air", "Eau", "Feu", "Terre", "Essence", "Illusion"],
     "status": "Majeure",
     "description": "La Nécromancie est une perversion de la magie en tant que telle. Alors que les autres voies se nourrissent de l'énergie du flux des âmes, cette voie l'arrache de cet endroit. Ses sorts détruisent l'essence de la vie, étouffant et pervertissant les âmes qu'elle utilise. Son pouvoir permet de rendre la vie aux morts, de détruire les âmes et de drainer la vie et l'essence d'autres être. La Nécromancie s'oppose à toute les autres voies de magie.",
     "spells": [
@@ -19776,14 +19767,7 @@
   },
   {
     "name": "Chaos",
-    "forbiddenPaths": [
-      "Eau",
-      "Feu",
-      "Terre",
-      "Essence",
-      "Illusion",
-      "Nécromancie"
-    ],
+    "forbiddenPaths": ["Eau", "Feu", "Terre", "Essence", "Illusion", "Nécromancie"],
     "status": "Secondaire",
     "description": "Cette voie manie le principe absolu du chaos, le pouvoir de l'imprédictible et l'altération des événements.",
     "spells": [
@@ -20163,14 +20147,7 @@
   },
   {
     "name": "Guerre",
-    "forbiddenPaths": [
-      "Lumière",
-      "Création",
-      "Air",
-      "Eau",
-      "Essence",
-      "Illusion"
-    ],
+    "forbiddenPaths": ["Lumière", "Création", "Air", "Eau", "Essence", "Illusion"],
     "status": "Secondaire",
     "description": "Les sorciers de la guerre sont ceux qui maîtrisent les champs de bataille à volonté, pouvant renforcer selon leurs souhaits les compétences de leurs alliés ou même d'armées entières.",
     "spells": [
@@ -20549,29 +20526,14 @@
   },
   {
     "name": "Literae",
-    "forbiddenPaths": [
-      "Destruction",
-      "Air",
-      "Feu",
-      "Terre",
-      "Essence",
-      "Nécromancie"
-    ],
+    "forbiddenPaths": ["Destruction", "Air", "Feu", "Terre", "Essence", "Nécromancie"],
     "status": "Secondaire",
     "description": "",
     "spells": []
   },
   {
     "name": "Mort",
-    "forbiddenPaths": [
-      "Lumière",
-      "Création",
-      "Air",
-      "Eau",
-      "Terre",
-      "Essence",
-      "Illusion"
-    ],
+    "forbiddenPaths": ["Lumière", "Création", "Air", "Eau", "Terre", "Essence", "Illusion"],
     "status": "Secondaire",
     "description": "",
     "spells": []
@@ -20592,13 +20554,7 @@
   },
   {
     "name": "Paix",
-    "forbiddenPaths": [
-      "Obscurité",
-      "Destruction",
-      "Feu",
-      "Illusion",
-      "Nécromancie"
-    ],
+    "forbiddenPaths": ["Obscurité", "Destruction", "Feu", "Illusion", "Nécromancie"],
     "status": "Secondaire",
     "description": "",
     "spells": []
@@ -20622,8 +20578,380 @@
     "forbiddenPaths": ["Lumière", "Air", "Feu", "Terre", "Illusion"],
     "status": "Secondaire",
     "description": "",
-    "limits": "",
-    "spells": []
+    "limits": "Bien sûr, les êtres sans circulation sanguine comme les élémentaires, les âmes ou les golems inorganiques sont immunisés contre les sorts de cette voie secondaire.",
+    "spells": [
+      {
+        "name": "Ralentissement du Pouls",
+        "level": 4,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Affecte le torrent sanguin de ses cibles, le ralentissant s'il est anormalement rapide (comme dans le cas d'émotions extrêmes, comme la Colère ou la Peur). La personne affectée se sent relaxée, toute émotion extrême étant éliminée, qu'elle soit d'origine naturelle ou non. La sensation de tranquillité est si grande, que durant la minute qui suit la cible du sort subit un -10 à toutes ses actions physiques. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "RMys 80",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "RMys 100",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "RMys 160",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Coagulation",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Soigne magiquement les blessures, les suturant et empêchant la perte de sang. Il n'est pas possible d'affecter quelqu'un plus d'une fois par jour avec ce sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 6,
+            "effect": "Élimine automatiquement toute hémorragie",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "Redonne 20 % des points de vie perdus à cause de blessures dues à des coupures ou des hémorragies",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "Redonne 40% des points de vie perdus à cause de blessures dues à des coupures ou des hémorragies",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 160,
+            "requiredIntelligence": 13,
+            "effect": "Redonne 60% des points de vie perdus à cause de blessures dues à des coupures ou des hémorragies",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Sang Froid",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Change la température corporelle des cibles du sort, leur permettant de la réguler en fonction des conditions externes. Ainsi, elles ne seront pas affectées par une météorologie défavorable, et pourront survivre à des déserts glacés ou brûlants. Affecte autant de personnes que le détermine le lanceur, tant que la somme de leurs présences ne dépasse pas ce qui est indiqué dans le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "Présence maximale affectable de 60",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Présence maximale affectable de 100",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximale affectable de 180",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "Présence maximale affectable de 300",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Création de Sang",
+        "level": 34,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée un objet ou une arme à partir du sang du sorcier, le cristallisant jusqu'à le convertir en un matériau d'une extrême dureté. Malheureusement, cela implique obligatoirement le sacrifice d'une partie du propre sang du sorcier, qui perd par ce biais des points de vie comme indiqué par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "Sacrifice de -10 PV / Qualité +0 / Objets jusqu'à 2 kg",
+            "maintenance": 30
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 9,
+            "effect": "Sacrifice de -20 PV / Qualité +5 / Objets jusqu'à 5 kg",
+            "maintenance": 40
+          },
+          {
+            "level": "Avancé",
+            "zeon": 160,
+            "requiredIntelligence": 12,
+            "effect": "Sacrifice de -40 PV / Qualité +10 / Objets jusqu'à 15 kg",
+            "maintenance": 50
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 15,
+            "effect": "Sacrifice de -60 PV / Qualité +15 / Objets jusqu'à 25 kg. Maintien :",
+            "maintenance": 60
+          }
+        ]
+      },
+      {
+        "name": "Transfusion",
+        "level": 44,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "En séparant les éléments vitaux du sang du sorcier et en les imprégnant dans le corps d'un allié, cela lui permet de transférer une partie de ses points de vie à une autre personne. La quantité de points de vie sacrifiée par le lanceur est multipliée par la quantité indiquée par le Degré du sort. Par exemple, si le sorcier lance ce sort en Degré Intermédiaire et sacrifie 10 PV, son allié récupère 50 PV. Ce sort ne permet pas de restaurer des membres arrachés ou des pertes définitives, mais il élimine les malus causés par les critiques d'une valeur équivalente aux points de vie sacrifiés.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 6,
+            "effect": "Points de vie sacrifiés x2",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "Points de vie sacrifiés x5",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 80,
+            "requiredIntelligence": 10,
+            "effect": "Points de vie sacrifiés x10",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 100,
+            "requiredIntelligence": 12,
+            "effect": "Points de vie sacrifiés x20",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Saigner",
+        "level": 54,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort provoque sur la cible des blessures qui saignent horriblement, augmentant ainsi les dégâts qu'elle subit. Tant qu'il est actif, la personne affectée augmente les dégâts qu'elle subit d'une quantité déterminée par le Degré du sort. Pour que Saigner ait un effet, les dégâts doivent provenir de contusions, d'hémorragies et de coupures, alors que les blessures provoquées par la chaleur, le froid, l'électricité ou l'énergie ne sont pas concernées par cette règle. Pour éviter d'être affectée par ces effets la cible doit réussir un test de RMys, mais elle peut le refaire à chaque fois qu'elle subit un coup dont les dégâts sont accrus par ce sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 6,
+            "effect": "Augmente les dégâts subis de 50 % / RMys 120",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "Double les dégâts subis / RMys 140",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Triple les dégâts subis / RMys 160",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 15,
+            "effect": "Quadruple les dégâts subis / RMys 180",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Vampirisme",
+        "level": 64,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort fait en sorte qu'une arme boive une partie du sang de ceux qu'elle blesse, canalisant leurs énergies vitales et les offrant à celui qui la manie pour qu'il récupère ses points de vie perdus. Dans le cas d'une attaque contre une créature à Encaissement, la quantité drainée doit être divisée par dix.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "Draine 10 % des blessures causées",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "Draine 20 % des blessures causées",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "Draine 30 % des blessures causées",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "Draine 40 % des blessures causées",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Larmes de Sang",
+        "level": 74,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort terrifiant provoque une dilatation du sang dans le cœur de la cible et le fait exploser de l'intérieur sous la pression. Si le personnage échoue à son test de plus de 40 points, il meurt automatiquement. Mais si la marge d'échec est inférieure à 40, il subit les dégâts déterminés dans la description du Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 280,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPhy 140 / 50 points de dégâts",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 13,
+            "effect": "RMys ou RPhy 180 / 100 points de dégâts",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 360,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPhy 220 / 150 points de dégâts",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 17,
+            "effect": "RMys ou RPhy 260 / 200 points de dégâts",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Circulation Sanguine",
+        "level": 84,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Augmente la vitesse du torrent sanguin du sorcier et des alliés qu'il désigne, ce qui a pour effet d'augmenter leurs capacités de façon importante. Toutefois, la pression à laquelle est soumis le cœur de ceux qui en bénéficient leur provoque des dégâts internes qui peuvent aller jusqu'à les tuer si le sort est maintenu trop longtemps.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "+10 à toutes les actions / -5 PV par round",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "+20 à toutes les actions / -15 PV par round",
+            "maintenance": 50
+          },
+          {
+            "level": "Avancé",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "+40 à toutes les actions / -30 PV par round",
+            "maintenance": 60
+          },
+          {
+            "level": "Arcane",
+            "zeon": 340,
+            "requiredIntelligence": 17,
+            "effect": "+60 à toutes les actions / -50 PV par round",
+            "maintenance": 70
+          }
+        ]
+      },
+      {
+        "name": "Un Monde de Sang",
+        "level": 94,
+        "action": "Active",
+        "types": ["Animique", "Effet"],
+        "effect": "Le sorcier obtient une maîtrise absolue sur le sang qui se trouve à l'intérieur du rayon d'action du sortilège. Sa maîtrise est telle qu'elle peut aller de la paralysie des corps des êtres vivants à la création de pratiquement toute chose qu'il désire avec le sang qui a été versé. Tout individu affecté par le sort devra réussir un test de RMys ou RPhy pour ne pas être contrôlé comme une marionnette par le sorcier. Si celui-ci le désire, il peut à la place occasionner des dégâts équivalents au double de la marge d'échec. Si le sorcier souhaite utiliser le sang versé comme moyen d'attaque ou de défense (en créant des lames, des épines ou des écrans avec), il peut utiliser sa Projection magique pour le manier en tant que projectiles aiguisés ou que bouclier mystique. Tant les bases de dégâts de ces attaques que la résistance des objets matérialisés pour se défendre sont déterminés par le Degré du sort, mais il ne peut bien sûr utiliser ces derniers que s'il y a suffisamment de sang aux alentours.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 280,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPhy 120 / Dégâts 60 / 500 Points de Vie",
+            "maintenance": 60
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 320,
+            "requiredIntelligence": 13,
+            "effect": "RMys ou RPhy 140 / Dégâts 90 / 1 200 Points de Vie",
+            "maintenance": 65
+          },
+          {
+            "level": "Avancé",
+            "zeon": 360,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPhy 160 / Dégâts 120 / 2 400 Points de Vie",
+            "maintenance": 75
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 17,
+            "effect": "RMys ou RPhy 180 / Dégâts 150 / 3 600 Points de Vie",
+            "maintenance": 80
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Songes",
@@ -20634,15 +20962,7 @@
   },
   {
     "name": "Temps",
-    "forbiddenPaths": [
-      "Air",
-      "Eau",
-      "Feu",
-      "Terre",
-      "Essence",
-      "Illusion",
-      "Nécromancie"
-    ],
+    "forbiddenPaths": ["Air", "Eau", "Feu", "Terre", "Essence", "Illusion", "Nécromancie"],
     "status": "Secondaire",
     "description": "",
     "limits": "",
@@ -20657,14 +20977,7 @@
   },
   {
     "name": "Vide",
-    "forbiddenPaths": [
-      "Lumière",
-      "Création",
-      "Feu",
-      "Terre",
-      "Essence",
-      "Illusion"
-    ],
+    "forbiddenPaths": ["Lumière", "Création", "Feu", "Terre", "Essence", "Illusion"],
     "status": "Secondaire",
     "description": "",
     "spells": []

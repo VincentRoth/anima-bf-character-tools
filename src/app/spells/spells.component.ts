@@ -19,11 +19,15 @@ export class SpellsComponent extends AbstractSearchComponent implements OnInit {
 
   ngOnInit() {
     this.spellService.get().subscribe({
-      next: data => {
-        // TODO remove this filtre after integrating all magic paths
-        this.magicPaths = data.filter(
-          path => path.spells.length
-        );
+      next: (data) => {
+        // TODO remove this filter after integrating all magic paths
+        this.magicPaths = data.filter((path) => path.spells.length);
+        this.magicPaths.sort((p1, p2) => {
+          if (p1.status === MagicPathStatus.SECONDARY && p1.status === p2.status) {
+            return p1.name.localeCompare(p2.name);
+          }
+          return -1;
+        });
       }
     });
   }
@@ -33,10 +37,7 @@ export class SpellsComponent extends AbstractSearchComponent implements OnInit {
   }
 
   protected search(): void {
-    this.magicPaths = this.spellService.filterByTokenAndType(
-      this.filter,
-      this.selectedType
-    );
+    this.magicPaths = this.spellService.filterByTokenAndType(this.filter, this.selectedType);
   }
 
   searchSpells(filter: string) {
