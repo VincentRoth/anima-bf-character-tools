@@ -20911,7 +20911,381 @@
     "forbiddenPaths": ["Lumière", "Création", "Air", "Eau", "Terre", "Essence", "Illusion"],
     "status": "Secondaire",
     "description": "Cette voie secondaire contrôle la fin des choses, la mort dans son concept de fin de la vie",
-    "spells": []
+    "spells": [
+      {
+        "name": "Autopsie",
+        "level": 4,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Détermine la cause de la mort et l'heure du décès. Ne précise pas si la cible du sort est morte assassinée ni qui en est responsable mais si, par exemple, quelqu'un est mort d'une contusion massive ou quel type de maladie l'a tué. Le Degré du sort précise la portée dans le temps qu'il peut remonter. Au-delà, le sortilège est incapable d'obtenir l'information.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 4,
+            "effect": "1 heure",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "1 jour",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "1 semaine",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "1 mois",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Résistance à la Mort",
+        "level": 14,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Ce sort protège contre tout effet qui pourrait provoquer la mort de manière automatique, accordant un bonus aux Résistances de la cible contre des effets de ce type.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "+20 aux Résistances",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "+40 aux Résistances",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "+60 aux Résistances",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 14,
+            "effect": "+80 aux Résistances",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Extermination Mineure",
+        "level": 24,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Tue toutes les créatures avec une présence de 20 sélectionnées par le lanceur dans une zone, si celles-ci ne dépassent pas la RMys déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys 60 / 10 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "RMys 80 / 25 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "RMys 100 / 50 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 13,
+            "effect": "RMys 120 / 75 m de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Coup de Grâce",
+        "level": 34,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Achève quelqu'un qui est sur le point de mourir. Pour être affectée, la cible devra être dans l'état Entre la Vie et la Mort, et mourra de manière automatique si elle ne dépasse pas la RMys déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "RMys 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 9,
+            "effect": "RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 11,
+            "effect": "RMys 180",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "RMys 200",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Faire Reposer",
+        "level": 44,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Détruit automatiquement les créatures non mortes sans âme dans la zone d'effet du sort. Les créatures peuvent résister à ses effets en dépassant la RMys déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "RMys 120 / 10 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 10,
+            "effect": "RMys 140 25 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "RMys 160 / 50 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "RMys 180 / 75 m de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Sentir la Mort",
+        "level": 54,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le lanceur est capable de ressentir la mort aux alentours, remarquant si quelqu'un est mort ou sur le point de mourir dans les environs. Cette compétence de prédiction ne permet pas de connaître les choses qui vont se passer avec une certitude absolue, juste de pressentir la mort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "Le lanceur remarque si quelqu'un est mort dans une zone de 100 mètres de rayon, il y a moins d'une heure, ou s'il y a tout près un moribond qui va trépasser dans moins d'une minute",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "Le lanceur remarque si quelqu'un est mort dans une zone de 150 mètres de rayon, il y a moins de six heures, ou s'il y a tout près un moribond qui va trépasser dans moins de dix minutes",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "Le lanceur pressent la mort avec précision. Il peut percevoir si quelqu'un est mort aux alentours dans le passé ou combien de temps à peu près il reste à vivre à une personne, et si sa mort est probable ou improbable",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "Comme pour le Degré Avancé, mais le lanceur est capable de percevoir la cause probable de la mort, aussi bien de ceux qui sont morts par le passé que de ceux qui pourraient mourir dans un futur proche",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Memento Mori",
+        "level": 64,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort tue dans sa zone d'effet toute créature qui peut être considérée comme un être vivant, quelle que soit sa nature ou sa condition. Les personnes affectées ignorent ces effets en réussissant une RMys contre la difficulté déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 8,
+            "effect": "RMys 80 / 5 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 10,
+            "effect": "RMys 100 / 10 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 13,
+            "effect": "RMys 120 / 25 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 260,
+            "requiredIntelligence": 15,
+            "effect": "RMys 140 / 50 m de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Malédiction Mortelle",
+        "level": 74,
+        "action": "Active",
+        "types": ["Animique", "Automatique"],
+        "effect": "Le lanceur peut faire en sorte qu'un individu meure à un moment déterminé par lui et de la façon qu'il a choisi. Ainsi, il crée pour la cible une certaine « prédestination à mourir » de la façon qui lui convient. Pour que ce sort fonctionne, le lanceur doit atteindre son objectif avec celui-ci avec une marge suffisante, et la cible doit échouer au test de RMys déterminé par le Degré du sortilège. À partir de ce moment, tous les individus liés à la façon de mourir de celui qui a réussi le test de prédestination à mourir peuvent également tenter d'éviter ses effets de la même manière. Nul besoin de les atteindre avec la projection du sort, ils sont affectés automatiquement par la RMys du simple fait qu'ils sont liés à la personne maudite.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "RMys 120",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 11,
+            "effect": "RMys 160",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 350,
+            "requiredIntelligence": 13,
+            "effect": "RMys 200",
+            "maintenance": 35
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "RMys 240",
+            "maintenance": 50
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Arrêter la Mort",
+        "level": 84,
+        "action": "Passive",
+        "types": ["Effet", "Animique"],
+        "effect": "La cible de ce sort devient temporairement immortelle. Cela ne signifie absolument pas qu'elle se transforme en non mort, seulement que pendant que le sort est maintenu, la mort n'a aucun pouvoir sur elle. Ce sort n'a aucun effet sur les pouvoirs qui exterminent directement l'âme ou les effets similaires.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 350,
+            "requiredIntelligence": 10,
+            "effect": "La cible ignore automatiquement tout effet qui produit une mort automatique, mais elle n'est pas immortelle face aux dégâts physiques",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 12,
+            "effect": "Idem que pour le Degré Initial, mais le personnage devient immortel aux dégâts physiques. Toutefois, si son corps est endommagé suffisamment pour le tuer, il mourra de manière automatique si jamais les effets de ce sortilège disparaissent avant qu'il puisse être soigné. Cet effet ne le protège pas de la mort s'il reçoit un coup causant un critique à un point vital ou s'il est décapité",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 800,
+            "requiredIntelligence": 14,
+            "effect": "Idem que pour le Degré Intermédiaire, mais la personne affectée ne peut pas non plus mourir suite à un coup causant un critique, quelles qu'en soient les conséquences",
+            "maintenance": 40
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1200,
+            "requiredIntelligence": 16,
+            "effect": "Idem que pour le Degré Avancé, mais la personne affectée est immunisée contre tous les malus à l'action qui pourraient découler d'une détérioration physique",
+            "maintenance": 60
+          }
+        ]
+      },
+      {
+        "name": "La Mort",
+        "level": 94,
+        "action": "Active",
+        "types": ["Effet", "Automatique"],
+        "effect": "Le sorcier obtient un pouvoir absolu sur la mort, il peut décider librement qui va mourir dans le rayon d'action du sort. Comme pour un effet Automatique, le lanceur peut choisir que n'importe quel être vivant meure s'il ne réussit pas une RMys ou une RPhy contre la valeur déterminée par le Degré du sort. Une personne qui dépasse une fois la Résistance ne peut plus être affectée à nouveau par ce pouvoir (lancé par le même sorcier).",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 400,
+            "requiredIntelligence": 12,
+            "effect": "500 m de rayon / RPhy ou RMys 80",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 750,
+            "requiredIntelligence": 14,
+            "effect": "1 km de rayon / RPhy ou RMys 100",
+            "maintenance": 75
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1200,
+            "requiredIntelligence": 16,
+            "effect": "5 km de rayon / RPhy ou RMys 120",
+            "maintenance": 120
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2000,
+            "requiredIntelligence": 18,
+            "effect": "10 km de rayon / RPhy ou RMys 140",
+            "maintenance": 200
+          }
+        ],
+        "isDailyMaintenance": true
+      }
+    ]
   },
   {
     "name": "Musique",
