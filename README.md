@@ -16,7 +16,7 @@ Data into /src/asset/data folder is intelectual property of Anima Project Studio
 Image credits go to:
 
 - [Wen-M](https://www.deviantart.com/wen-m), Anima illustrations
-- wirelizard, for [ten sided dice via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ten_sided_dice.png), under [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en) 
+- wirelizard, for [ten sided dice via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ten_sided_dice.png), under [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
 
 Images into /src/asset/images and /src/asset/icons folders are intelectual property of Wen-M and/or Anima Project Studio and are unlicensed for any use.
 
@@ -52,7 +52,7 @@ Images into /src/asset/images and /src/asset/icons folders are intelectual prope
 - Table de Combat (p.335)  
   Ne prend pas en compte la nouvelle règle d'absoption (p.86) et ne correspond pas à l'exemple donné pour le calcul des dégâts (p.87). La Table entière a été ajustée avec la règle d'absoption, maintenant le % de dégâts dans la table est linéaire.
 - Tableau 3 de Gaïa volume 1 (p.58) Classe sociale de l'Hélénia  
-  Prend en compte un tableau fournit dans la Q&R française, car identique au Tableau 2 des classes sociales de l'Ilmora.
+  Prend en compte un tableau fournit dans la [Q&R française](http://projet.animajdr.free.fr/download.php?view.148), car identique au Tableau 2 des classes sociales de l'Ilmora.
 - Prix des nouvelles armes et armures (Dominus Exxet)
   Les prix des armes et armures ont été publiés dans le 3ème supplément web espagnole, et traduit par [Exarkfr](http://projet.animajdr.free.fr/download.php?view.210).
 - Natura des Turaks  
