@@ -20528,14 +20528,389 @@
     "name": "Literae",
     "forbiddenPaths": ["Destruction", "Air", "Feu", "Terre", "Essence", "Nécromancie"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Literae est la magie des mots, la voie de la modification de la réalité en écrivant des annotations en marge du livre que nous appelons la réalité. Ceux qui l'emploient sont capables d'utiliser la sorcellerie pour réécrire le scénario de la vie en l'adaptant à leurs besoins.",
+    "spells": [
+      {
+        "name": "Plumes de la Réalité",
+        "level": 4,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée une plume surnaturelle qui écrit sur n'importe quelle surface sans avoir besoin d'encre. En l'utilisant tout en lançant un sort de la voie secondaire Literae, le sorcier peut renforcer considérablement les effets de sortilège, et réduire de moitié son coût en Zéon. Par exemple, un sort de Missive au Degré Initial aura un coût de 40 points au lieu de 80.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "Affecte les sorts Literae en Degré Initial",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "Affecte les sorts Literae en Degré Intermédiaire",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "Affecte les sorts Literae en Degré Avancé",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Affecte (es sorts Literae en Degré Arcane",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Missive",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Après avoir écrit une lettre il est possible d'utiliser ce sort pour envoyer son contenu à un individu que le sorcier connait personnellement. La lettre, comme son enveloppe, disparaît dans un éclair et un nuage de fumée, réapparaissant quelques instants après à côté de son destinataire. La portée du sort dépend de son Degré. Missive peut traverser des structures enchantées de moindre pouvoir tant qu'il y suffisamment d'espace pour cela, par exemple en « glissant » la lettre sous une porte.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "10 km",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 9,
+            "effect": "100 km",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "1000 km",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 15,
+            "effect": "N'importe où",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Journal de Bord",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Enchante un livre afin qu'il recueille toutes les péripéties que traverse le mage pour pouvoir les examiner ultérieurement, comme si dans le jeu il tenait un journal détaillé. Le Degré du sort détermine la période de temps maximum que le livre couvre rétrospectivement à partir du moment du lancement.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 6,
+            "effect": "1 jour",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "1 semaine",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "1 mois",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "1 an",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Ordre Écrit",
+        "level": 34,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Permet d'écrire sur un parchemin un ordre simple qui affectera la première personne qui le lira, l'obligeant à l'accomplir s'il échoue au test de résistance du sortilège. L'ordre fonctionnera même s'il est caché parmi d'autres phrases, toutefois le personnage affecté obtient entre +20 et +60 à son test si la directive va directement à l'encontre de sa nature.\nCe sort peut contenir plusieurs directives liées pour créer un ordre complet comme « ouvre la porte et ensuite oublie ce qui s'est passé ». Le pouvoir des phrases perd son pouvoir après avoir imprégné une personne avec l'ordre, se transformant en une lettre classique à partir de ce moment.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "RMys ou RPhy 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 240,
+            "requiredIntelligence": 9,
+            "effect": "RMys ou RPhy 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 360,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPhy 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 480,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPhy 180",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Bouclier de Mots",
+        "level": 44,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Utilisant une plume magique (qui peut être la Plume de la Réalité) pour tracer des caractères dans l'air, le sorcier crée un bouclier de mots qui le défendent aussi bien des attaques physiques que surnaturelles. Le bouclier se régénère à chaque round d'autant de points de vie que le score de la compétence du mage en Art (littérature).",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "200 Points de Vie",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "500 Points de Vie",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "800 Points de Vie. Arcane",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "1 200 Points de Vie",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Théâtre de la Vie",
+        "level": 54,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Permet au sorcier de modifier le comportement des personnes qui sont autour de lui en écrivant sur une surface les actions qu'il souhaite les voir accomplir. Tout simplement, le sorcier se convertit en écrivain d'une pièce de théâtre en mettant les cibles du sort dans la position d'acteurs qui jouent leur rôle suivant sa narration.\nCe sort peut affecter plusieurs personnes, tant que leur présence combinée ne dépasse pas la limite indiquée par le Degré du sortilège. Pour que les cibles de ce sort qui sont dans sa zone d'effet soient affectées, il faut que le lanceur connaisse leurs véritables noms. Celles-ci peuvent tenter de résister en réussissant une RMys ou une RPsy pour ne pas être contrôlées. Si le narrateur cesse d'écrire et que les personnes affectées n'ont plus de nouveaux ordres à suivre, elles resteront tranquilles dans l'attente du rôle suivant.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 240,
+            "requiredIntelligence": 6,
+            "effect": "RMys ou RPsy 120 / Présence maximale affectable 100 / 20 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 360,
+            "requiredIntelligence": 9,
+            "effect": "RMys ou RPsy 140 / Présence maximale affectable 180 / 40 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 480,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPhy 160 / Présence maximale affectable 240 / 80 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPhy 180 / Présence maximale affectable 320 / 150 m de rayon",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Compendium",
+        "level": 64,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Enchante un livre pour qu'il réponde aux questions qui lui sont posées de manière à ce que, lorsque quelqu'un pose une question en sa présence, il inscrive la réponse entre ses pages. Malheureusement, le livre n'est pas capable de répondre à un doute. En lançant Compendium, le manuscrit affecté reçoit un score dans une compétence du champ secondaire intellectuel déterminée par le Degré du sort. Quand on l'interrogera, il donnera la réponse appropriée selon ce que saurait un expert avec ce score sur le thème de la compétence.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 7,
+            "effect": "120 points de compétence intellectuelle",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 260,
+            "requiredIntelligence": 10,
+            "effect": "240 points de compétence intellectuelle",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 380,
+            "requiredIntelligence": 13,
+            "effect": "320 points de compétence intellectuelle",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "440 points de compétence intellectuelle",
+            "maintenance": 40
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Dramaturge",
+        "level": 74,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort modifie la réalité tant que cela reste plausible et que cela n'affecte pas directement un autre être vivant. Par exemple, si le sorcier tombe depuis une échelle il peut « écrire » qu'il le fait sur une carriole de foin qui amortit sa chute et cela se passera ainsi, ou s'il veut entrer dans un endroit fermé, il pourra « raconter » que la porte n'est pas verrouillée et il en sera ainsi. Les possibilités de ce sort sont presque infinies, tant que les éléments et les objets utilisés sont simples et avec une présence qui ne dépasse pas ce qui est déterminé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 280,
+            "requiredIntelligence": 10,
+            "effect": "Présence maximum de 40",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 320,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximum de 80",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 480,
+            "requiredIntelligence": 14,
+            "effect": "Présence maximum de 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 16,
+            "effect": "Présence maximum de 160",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Secondaire",
+        "level": 84,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée un « personnage » ayant la personnalité et les compétences souhaitées par le sorcier. Pour ce faire, le lanceur doit décrire dans un livre la personnalité, l'histoire et la nature de cet individu, et celui-ci croira vraiment être tel que le sorcier l'a décrit.\nL'existence du Secondaire est liée au livre et donc, si ce dernier est détruit, le personnage disparaîtra immédiatement. Le niveau du Secondaire ne peut dépasser ce qui est indiqué par le Degré du sortilège et ne peut pas être supérieur à celui du sorcier.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 400,
+            "requiredIntelligence": 10,
+            "effect": "Niveau 2",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 600,
+            "requiredIntelligence": 12,
+            "effect": "Niveau 5",
+            "maintenance": 60
+          },
+          {
+            "level": "Avancé",
+            "zeon": 800,
+            "requiredIntelligence": 14,
+            "effect": "Niveau 7",
+            "maintenance": 80
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1200,
+            "requiredIntelligence": 17,
+            "effect": "Niveau 10",
+            "maintenance": 120
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Tragédie",
+        "level": 94,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort réalise la transformation ultime de la réalité, altérant la destinée d'un autre être vivant pour la faire se terminer comme il plaît au mage. Le lanceur peut écrire tout type de dénouement qu'il souhaite pour la vie d'une personne, comme « et en trébuchant, il tomba sur son épée, s'embrochant mortellement » ou « le ciel s'illumina quand, des nuages de la tempête un éclair tomba sur lui, apaisant les dieux vindicatifs ». La condition pour être affecté par ce sortilège est d'avoir été vu par le sorcier au moins une fois et que celui-ci connaisse votre nom véritable. Pour éviter ces effets, aussi bien la cible de Tragédie que toute personne directement impliquée dans le destin écrit doit réussir une RMys contre la difficulté indiquée par le Degré du sort. Si elles réussissent, elles deviennent immunisées contre ce sort (lancé par le même sorcier) pendant le reste de leur existence.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 500,
+            "requiredIntelligence": 12,
+            "effect": "RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 900,
+            "requiredIntelligence": 15,
+            "effect": "RMys 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1400,
+            "requiredIntelligence": 17,
+            "effect": "RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2500,
+            "requiredIntelligence": 19,
+            "effect": "RMys 180",
+            "maintenance": 0
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Mort",
     "forbiddenPaths": ["Lumière", "Création", "Air", "Eau", "Terre", "Essence", "Illusion"],
     "status": "Secondaire",
-    "description": "",
+    "description": "Cette voie secondaire contrôle la fin des choses, la mort dans son concept de fin de la vie",
     "spells": []
   },
   {
@@ -20577,7 +20952,7 @@
     "name": "Sang",
     "forbiddenPaths": ["Lumière", "Air", "Feu", "Terre", "Illusion"],
     "status": "Secondaire",
-    "description": "",
+    "description": "Cette voie secondaire contrôle le principe qui donne la vie aux êtres organiques, celui du sang lui-même.",
     "limits": "Bien sûr, les êtres sans circulation sanguine comme les élémentaires, les âmes ou les golems inorganiques sont immunisés contre les sorts de cette voie secondaire.",
     "spells": [
       {
