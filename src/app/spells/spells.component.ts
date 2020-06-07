@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractSearchComponent } from 'src/app/shared/abstract-search.component';
-import { MagicPath, SpellType } from 'src/app/shared/models';
+import { MagicPath, MagicPathStatus, SpellType } from 'src/app/shared/models';
 import { SpellService } from 'src/app/shared/services';
 
 @Component({
@@ -19,7 +19,12 @@ export class SpellsComponent extends AbstractSearchComponent implements OnInit {
 
   ngOnInit() {
     this.spellService.get().subscribe({
-      next: data => (this.magicPaths = data)
+      next: data => {
+        // TODO remove this filtre after integrating all magic paths
+        this.magicPaths = data.filter(
+          path => path.spells.length
+        );
+      }
     });
   }
 
