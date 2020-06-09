@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Advantage, Disadvantage } from 'src/app/shared/models';
 import { CharacterService } from 'src/app/shared/services';
 
@@ -7,29 +7,24 @@ import { CharacterService } from 'src/app/shared/services';
   templateUrl: './advantage.component.html',
   styleUrls: ['./advantage.component.scss']
 })
-export class AdvantageComponent implements OnInit {
+export class AdvantageComponent {
   @Input() advantage: Advantage | Disadvantage;
 
-  constructor(private characterService: CharacterService) {}
-
-  ngOnInit() {}
-
-  get costs() {
+  get costs(): number[] {
     return (this.advantage as Advantage).costs;
   }
 
-  get benefits() {
+  get benefits(): number[] {
     return (this.advantage as Disadvantage).benefits;
   }
 
+  constructor(private characterService: CharacterService) {}
+
   characterHasAdvantage(creationPoints: number): boolean {
-    return this.characterService.hasAdvantage(
-      this.advantage.name,
-      creationPoints
-    );
+    return this.characterService.hasAdvantage(this.advantage.name, creationPoints);
   }
 
-  toggleAdvantage(creationPoints: number) {
+  toggleAdvantage(creationPoints: number): void {
     if (this.characterHasAdvantage(creationPoints)) {
       this.characterService.removeAdvantage(this.advantage.name);
     } else {

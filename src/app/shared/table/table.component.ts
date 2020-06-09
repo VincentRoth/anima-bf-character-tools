@@ -17,13 +17,6 @@ export class TableComponent implements OnInit {
   belongsToCharacter: boolean;
   hasBeenToggled: boolean;
 
-  constructor(private characterService: CharacterService) {}
-
-  ngOnInit() {
-    this.belongsToCharacter = this.characterHasTable();
-    this.hasBeenToggled = false;
-  }
-
   get caption(): string {
     if (!this.table) {
       return;
@@ -31,14 +24,17 @@ export class TableComponent implements OnInit {
     if (typeof this.table.id === 'number') {
       return `Tableau ${this.table.id} : ${this.table.title}`;
     }
-    if (
-      this.table.id.startsWith('I') ||
-      this.table.id.startsWith('V') ||
-      this.table.id.startsWith('X')
-    ) {
+    if (this.table.id.startsWith('I') || this.table.id.startsWith('V') || this.table.id.startsWith('X')) {
       return `Encadré ${this.table.id} : ${this.table.title}`;
     }
     return `${this.table.id} : ${this.table.title}`;
+  }
+
+  constructor(private characterService: CharacterService) {}
+
+  ngOnInit(): void {
+    this.belongsToCharacter = this.characterHasTable();
+    this.hasBeenToggled = false;
   }
 
   getCellStyle(value: any): string {
@@ -66,7 +62,7 @@ export class TableComponent implements OnInit {
     return this.characterService.hasRefTable(this.reference);
   }
 
-  toggleTable() {
+  toggleTable(): void {
     this.hasBeenToggled = true;
     if (this.characterHasTable()) {
       this.characterService.removeRefTable(this.reference);

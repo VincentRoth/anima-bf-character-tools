@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { constant } from 'src/app/shared/constant';
 import { Character } from 'src/app/shared/models';
-import {
-  CharacterService,
-  ReferenceTableService
-} from 'src/app/shared/services';
+import { CharacterService, ReferenceTableService } from 'src/app/shared/services';
 
 @Component({
   selector: 'app-character-sheet',
@@ -16,18 +13,15 @@ export class CharacterSheetComponent implements OnInit {
   private tables: object;
   nbMaximumDisadvantages: number;
 
-  constructor(
-    private characterService: CharacterService,
-    private referenceTableService: ReferenceTableService
-  ) {}
+  constructor(private characterService: CharacterService, private referenceTableService: ReferenceTableService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.nbMaximumDisadvantages = constant.maximumDisadvantages;
     this.character = this.characterService.get();
     this.tables = [];
-    this.character.refTables.forEach(reference =>
+    this.character.refTables.forEach((reference) =>
       this.referenceTableService.getByReference(reference).subscribe({
-        next: table => (this.tables[reference] = table)
+        next: (table) => (this.tables[reference] = table)
       })
     );
   }

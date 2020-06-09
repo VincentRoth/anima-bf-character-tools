@@ -1,64 +1,41 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, Injector, OnInit } from '@angular/core';
 import { AbstractSearchComponent } from 'src/app/shared/abstract-search.component';
-import { ReferenceTableContainer } from 'src/app/shared/models';
+import { ReferenceBook, ReferenceTableContainer } from 'src/app/shared/models';
 import { ReferenceTableService } from 'src/app/shared/services';
-import { TablesParams } from './tables.params';
+import { SearchParams } from '../shared/search.params';
 @Component({
   selector: 'app-tables',
   templateUrl: './tables.component.html',
   styleUrls: ['./tables.component.scss']
 })
-export class TablesComponent extends AbstractSearchComponent implements OnInit {
+export class TablesComponent extends AbstractSearchComponent<SearchParams> implements OnInit {
   refTables: ReferenceTableContainer;
-  filters: TablesParams;
 
-  constructor(
-    private referenceTableService: ReferenceTableService,
-    private activatedRoute: ActivatedRoute,
-    private router: Router
-  ) {
-    super();
+  get books(): ReferenceBook[] {
+    return this.referenceTableService.books;
   }
 
-  ngOnInit() {
-    this.filters = {
-      q: this.getUrlFilter()
-    };
+  constructor(private referenceTableService: ReferenceTableService, injector: Injector) {
+    super(injector);
+  }
+
+  ngOnInit(): void {
+    this.initFilters({ q: null });
 
     this.referenceTableService.get().subscribe({
       next: (data) => {
         this.refTables = data;
 
         if (this.filters.q) {
-          this.handleSearch(this.filters.q);
+          this.handleSearch(this.filters, 0);
         }
       }
     });
   }
 
-  get books() {
-    return this.referenceTableService.books;
-  }
-
-  protected search(filter: string) {
-    this.setUrlFilter(filter);
-    this.referenceTableService.filterByToken(filter).subscribe({
+  protected search(filters: SearchParams): void {
+    this.referenceTableService.filterByToken(filters.q).subscribe({
       next: (data) => (this.refTables = data)
     });
-  }
-
-  private getUrlFilter(): string {
-    return this.activatedRoute.snapshot.queryParamMap.get('q');
-  }
-
-  private setUrlFilter(filter: string): void {
-    if (this.filters.q !== filter) {
-      this.filters.q = filter ? filter : null;
-      this.router.navigate(['.'], {
-        queryParams: this.filters,
-        relativeTo: this.activatedRoute
-      });
-    }
   }
 }

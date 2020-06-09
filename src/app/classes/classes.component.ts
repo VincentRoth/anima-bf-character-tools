@@ -12,9 +12,9 @@ export class ClassesComponent implements OnInit {
 
   constructor(private classesService: ClassesService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.classesService.get().subscribe({
-      next: data => (this.classes = data)
+      next: (data) => (this.classes = data)
     });
   }
 

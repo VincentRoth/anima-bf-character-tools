@@ -10,35 +10,26 @@ export class SpellComponent implements OnInit {
   @Input() spell: Spell;
   open: boolean;
 
-  constructor() {}
-
-  ngOnInit() {
-    this.open = false;
-  }
-
-  get maintenance() {
-    if (
-      this.spell.castingLevels &&
-      this.spell.castingLevels.some(
-        castingLevel => castingLevel.maintenance > 0
-      )
-    ) {
+  get maintenance(): string {
+    if (this.spell.castingLevels && this.spell.castingLevels.some((castingLevel) => castingLevel.maintenance > 0)) {
       return this.spell.castingLevels
-        .reduce(
-          (maintenances, castingLevel) =>
-            maintenances.concat(castingLevel.maintenance),
-          []
-        )
+        .reduce((maintenances, castingLevel) => maintenances.concat(castingLevel.maintenance), [])
         .join(' / ');
     }
     return this.spell.specialMaintenance || 'Non';
   }
 
-  get forbiddenPaths() {
+  get forbiddenPaths(): string {
     if (this.spell.forbiddenPaths.length) {
       return this.spell.forbiddenPaths.join(', ');
     }
     return 'Aucune';
+  }
+
+  constructor() {}
+
+  ngOnInit(): void {
+    this.open = false;
   }
 
   isFreeAccessSpell(): boolean {
@@ -63,7 +54,7 @@ export class SpellComponent implements OnInit {
     return this.spell.level % 10 === 4;
   }
 
-  toggleOpen() {
+  toggleOpen(): void {
     this.open = !this.open;
   }
 }

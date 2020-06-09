@@ -1,22 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
-import {
-  FREE_ACCESS_LEVEL,
-  MagicPath,
-  MagicPathStatus,
-  Spell
-} from 'src/app/shared/models';
+import { Component, Input } from '@angular/core';
+import { FREE_ACCESS_LEVEL, MagicPath, MagicPathStatus, Spell } from 'src/app/shared/models';
 
 @Component({
   selector: 'app-magic-path',
   templateUrl: './magic-path.component.html',
   styleUrls: ['./magic-path.component.scss']
 })
-export class MagicPathComponent implements OnInit {
+export class MagicPathComponent {
   @Input() magicPath: MagicPath;
 
   constructor() {}
-
-  ngOnInit() {}
 
   isFreeAccess(): boolean {
     return this.magicPath.status === MagicPathStatus.FREE;
@@ -31,6 +24,6 @@ export class MagicPathComponent implements OnInit {
   }
 
   getSpellsByLevel(level: number): Spell[] {
-    return this.magicPath.spells.filter(spell => spell.level === level);
+    return this.magicPath.spells.filter((spell) => spell.level === level);
   }
 }

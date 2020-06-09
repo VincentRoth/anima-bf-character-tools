@@ -12,16 +12,13 @@ export class CreationHelpComponent implements OnInit {
 
   constructor(private creationHelpService: CreationHelpService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.creationHelpService.get().subscribe({
-      next: data => (this.contentPanels = data)
+      next: (data) => (this.contentPanels = data)
     });
   }
 
   isParentPanel(panel: ContentPanel) {
-    return (
-      panel.content &&
-      panel.content.every(unit => unit.type === EContentType.PANEL)
-    );
+    return panel.content && panel.content.every((unit) => unit.type === EContentType.PANEL);
   }
 }

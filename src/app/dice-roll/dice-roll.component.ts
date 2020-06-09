@@ -13,7 +13,7 @@ export class DiceRollComponent implements OnInit {
 
   constructor(private rollService: RollService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.is100Dice = false;
     this.rollHistory = [];
   }
@@ -28,21 +28,21 @@ export class DiceRollComponent implements OnInit {
     return this.diceValue.toString();
   }
 
-  addRollToHistory() {
+  addRollToHistory(): void {
     this.rollHistory.unshift(this.getFormatedDiceValue());
     if (this.rollHistory.length > 10) {
       this.rollHistory.pop();
     }
   }
 
-  roll10Dice() {
+  roll10Dice(): void {
     this.is100Dice = false;
 
     this.addRollToHistory();
     this.diceValue = this.rollService.roll10();
   }
 
-  roll100Dice() {
+  roll100Dice(): void {
     this.is100Dice = true;
 
     this.addRollToHistory();

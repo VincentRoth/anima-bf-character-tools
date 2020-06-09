@@ -18,16 +18,14 @@ export class HomeComponent implements OnInit {
 
   constructor() {}
 
-  // tslint:disable: max-line-length
-  ngOnInit() {
+  ngOnInit(): void {
     this.items = [
       {
         title: 'Lancer de dé',
         link: '/dice-roll',
         bgSize: '70%',
         bgPositionY: 'calc(100% - 1rem)',
-        imageUrl:
-          'https://upload.wikimedia.org/wikipedia/commons/b/bb/Ten_sided_dice.png'
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/bb/Ten_sided_dice.png'
       },
       {
         title: 'Mon personnage',

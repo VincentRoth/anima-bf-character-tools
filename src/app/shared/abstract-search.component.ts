@@ -1,14 +1,45 @@
-export abstract class AbstractSearchComponent {
+import { Injector, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { SearchParams } from './search.params';
+
+export abstract class AbstractSearchComponent<T extends SearchParams> {
+  filters: T;
+  protected activatedRoute: ActivatedRoute;
+  protected router: Router;
   private timeout;
 
-  constructor() {}
+  constructor(injector: Injector) {
+    this.activatedRoute = injector.get(ActivatedRoute);
+    this.router = injector.get(Router);
+  }
 
-  protected abstract search(filter?: string): void;
+  protected abstract search(filters: T): void;
 
-  handleSearch(filter?: string) {
+  handleSearch(filters: T, delay = 500) {
     if (this.timeout) {
       clearTimeout(this.timeout);
     }
-    this.timeout = setTimeout(() => this.search(filter), 500);
+    this.timeout = setTimeout(() => {
+      this.search(filters);
+      this.setUrlFilter(filters);
+    }, delay);
+  }
+
+  protected initFilters(filters: T): void {
+    this.filters = filters;
+    Object.keys(this.filters).forEach((key) => {
+      this.filters[key] = this.activatedRoute.snapshot.queryParamMap.get(key);
+    });
+  }
+
+  protected setUrlFilter(filters: T): void {
+    const keys = Object.keys(this.filters);
+    if (keys.some((key) => this.filters[key] !== filters[key])) {
+      keys.forEach((key) => (this.filters[key] = filters[key] || null));
+      this.router.navigate(['.'], {
+        queryParams: this.filters,
+        relativeTo: this.activatedRoute
+      });
+    }
   }
 }

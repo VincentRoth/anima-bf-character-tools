@@ -1,11 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {
-  ContentPanel,
-  ContentTable,
-  ContentUnit,
-  EContentType,
-  ReferenceTable
-} from 'src/app/shared/models';
+import { ContentPanel, ContentTable, ContentUnit, EContentType, ReferenceTable } from 'src/app/shared/models';
 import { ReferenceTableService } from 'src/app/shared/services';
 
 @Component({
@@ -18,29 +12,27 @@ export class PanelContentComponent implements OnInit {
   @Input() level: number;
   table: ReferenceTable;
 
+  get eContentType(): typeof EContentType {
+    return EContentType;
+  }
+
+  get isParentPanel(): boolean {
+    return (
+      (this.content as ContentPanel).content &&
+      (this.content as ContentPanel).content.some((unit) => unit.type === EContentType.PANEL)
+    );
+  }
+
   constructor(private refTablesService: ReferenceTableService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     if (this.content.type === EContentType.TABLE) {
       this.refTablesService
         .getByReference((this.content as ContentTable).reference)
-        .subscribe({ next: data => (this.table = data) });
+        .subscribe({ next: (data) => (this.table = data) });
     }
     if (!this.level) {
       this.level = 1;
     }
-  }
-
-  get eContentType() {
-    return EContentType;
-  }
-
-  get isParentPanel() {
-    return (
-      (this.content as ContentPanel).content &&
-      (this.content as ContentPanel).content.some(
-        unit => unit.type === EContentType.PANEL
-      )
-    );
   }
 }
