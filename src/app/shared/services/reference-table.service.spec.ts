@@ -1,9 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import {
-  HttpClientTestingModule,
-  HttpTestingController
-} from '@angular/common/http/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { ReferenceTableContainer } from 'src/app/shared/models/';
 import { ReferenceTableService } from './reference-table.service';
 
@@ -15,21 +12,17 @@ describe('ReferenceTableService', () => {
   );
 
   it('should be created', () => {
-    const service: ReferenceTableService = TestBed.get(ReferenceTableService);
+    const service: ReferenceTableService = TestBed.inject(ReferenceTableService);
     expect(service).toBeTruthy();
   });
 
   it('should request only once the tables data', () => {
-    const service: ReferenceTableService = TestBed.get(ReferenceTableService);
-    const httpMock: HttpTestingController = TestBed.get(HttpTestingController);
+    const service: ReferenceTableService = TestBed.inject(ReferenceTableService);
+    const httpMock: HttpTestingController = TestBed.inject(HttpTestingController);
 
-    service
-      .getByReference('core-exxet#1')
-      .subscribe({ next: table => expect(table.id).toEqual(1) });
+    service.getByReference('core-exxet#1').subscribe({ next: (table) => expect(table.id).toEqual(1) });
 
-    service
-      .getByReference('core-exxet#2')
-      .subscribe({ next: table => expect(table.id).toEqual(2) });
+    service.getByReference('core-exxet#2').subscribe({ next: (table) => expect(table.id).toEqual(2) });
 
     const req = httpMock.expectOne('/assets/data/tables.json');
     expect(req.request.method).toEqual('GET');

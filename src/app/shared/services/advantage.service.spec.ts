@@ -11,7 +11,7 @@ describe('AdvantageService', () => {
   );
 
   it('should be created', () => {
-    const service: AdvantageService = TestBed.get(AdvantageService);
+    const service: AdvantageService = TestBed.inject(AdvantageService);
     expect(service).toBeTruthy();
   });
 });

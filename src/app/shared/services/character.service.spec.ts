@@ -37,12 +37,12 @@ describe('CharacterService', () => {
   });
 
   it('should be created', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
     expect(service).toBeTruthy();
   });
 
   it('should init a default character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     const expectedResult = {
       raceName: null,
@@ -56,13 +56,11 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResult);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResult
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResult);
   });
 
   it('should set character race', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.changeRace('Humain');
 
@@ -78,13 +76,11 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResult);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResult
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResult);
   });
 
   it('should set character class', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.changeClass('Guerrier');
 
@@ -100,13 +96,11 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResult);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResult
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResult);
   });
 
   it('should add an advantage to character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.addAdvantage(advantage, 2);
 
@@ -136,13 +130,11 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResult);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResult
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResult);
   });
 
   it('should add a disadvantage to character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.addAdvantage(disadvantage, 1);
 
@@ -172,13 +164,11 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResult);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResult
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResult);
   });
 
   it('should remove an advantage from character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.addAdvantage(advantage, 3);
 
@@ -206,13 +196,11 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResult);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResult
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResult);
   });
 
   it('should remove a disadvantage from character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.addAdvantage(disadvantage, 2);
 
@@ -240,13 +228,11 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResult);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResult
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResult);
   });
 
   it('should take in account only last same advantage', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.addAdvantage(advantage, 1);
     service.addAdvantage(advantage, 2);
@@ -275,7 +261,7 @@ describe('CharacterService', () => {
   });
 
   it('should indicate if advantage belongs to character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     expect(service.hasAdvantage(advantage.name)).toBeFalsy();
     expect(service.hasAdvantage(advantage.name, 1)).toBeFalsy();
@@ -291,7 +277,7 @@ describe('CharacterService', () => {
   });
 
   it('should indicate if disadvantage belongs to character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     expect(service.hasAdvantage(disadvantage.name)).toBeFalsy();
     expect(service.hasAdvantage(disadvantage.name, 1)).toBeFalsy();
@@ -307,7 +293,7 @@ describe('CharacterService', () => {
   });
 
   it('should set character level', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.changeLevel(9);
 
@@ -323,13 +309,11 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResult);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResult
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResult);
   });
 
   it('should add a reference table to character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.addRefTable('test#ref');
 
@@ -345,13 +329,11 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResult);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResult
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResult);
   });
 
   it('should not add twice a reference table to character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.addRefTable('test#ref');
     service.addRefTable('test#ref');
@@ -368,7 +350,7 @@ describe('CharacterService', () => {
   });
 
   it('should remove a reference table from character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.addRefTable('test#ref');
 
@@ -396,13 +378,11 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResult);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResult
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResult);
   });
 
   it('should indicate if referrence table belongs to character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     expect(service.hasRefTable('test#ref')).toBeFalsy();
 
@@ -412,7 +392,7 @@ describe('CharacterService', () => {
   });
 
   it('should clear the character', () => {
-    const service: CharacterService = TestBed.get(CharacterService);
+    const service: CharacterService = TestBed.inject(CharacterService);
 
     service.changeRace('Humain');
     service.changeClass('Guerrier');
@@ -433,9 +413,7 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResult);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResult
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResult);
 
     service.clearCharacter();
 
@@ -451,8 +429,6 @@ describe('CharacterService', () => {
 
     expect(service.get()).toEqual(expectedResultAfterClear);
 
-    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(
-      expectedResultAfterClear
-    );
+    expect(JSON.parse(localStorage.getItem(storageKey))).toEqual(expectedResultAfterClear);
   });
 });

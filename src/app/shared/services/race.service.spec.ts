@@ -11,7 +11,7 @@ describe('RaceService', () => {
   );
 
   it('should be created', () => {
-    const service: RaceService = TestBed.get(RaceService);
+    const service: RaceService = TestBed.inject(RaceService);
     expect(service).toBeTruthy();
   });
 });

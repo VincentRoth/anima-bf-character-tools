@@ -1,9 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import {
-  HttpClientTestingModule,
-  HttpTestingController
-} from '@angular/common/http/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { MagicPath, MagicPathStatus } from 'src/app/shared/models';
 import { SpellService } from './spell.service';
 
@@ -15,24 +12,24 @@ describe('SpellService', () => {
   );
 
   it('should be created', () => {
-    const service: SpellService = TestBed.get(SpellService);
+    const service: SpellService = TestBed.inject(SpellService);
     expect(service).toBeTruthy();
   });
 
   it('should request only once the spells data', () => {
-    const service: SpellService = TestBed.get(SpellService);
-    const httpMock: HttpTestingController = TestBed.get(HttpTestingController);
+    const service: SpellService = TestBed.inject(SpellService);
+    const httpMock: HttpTestingController = TestBed.inject(HttpTestingController);
 
     // Two consecutive calls should lead to only one HTTP request
     service.get().subscribe({
-      next: magichPaths => {
+      next: (magichPaths) => {
         expect(magichPaths.length).toEqual(1);
         expect(magichPaths[0].name).toEqual('Magic Path');
       }
     });
 
     service.get().subscribe({
-      next: magichPaths => {
+      next: (magichPaths) => {
         expect(magichPaths.length).toEqual(1);
         expect(magichPaths[0].name).toEqual('Magic Path');
       }
