@@ -1,32 +1,31 @@
 :host {
-    display: flex;
-    flex: 1 1 100%;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: flex-start;
+  display: flex;
+  flex: 1 1 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-start;
 }
 
 a {
-    margin: 0.5rem;
-    text-decoration: none;
-    max-width: calc(50% - 1rem);
+  margin: 0.5rem;
+  text-decoration: none;
+  max-width: calc(50% - 1rem);
 }
 
 .menu-card {
-    $card-dimension: calc(50vw - 2.5rem);
-    $card-max-dimension: 10rem;
+  $card-dimension: calc(50vw - 2.5rem);
+  $card-max-dimension: 10rem;
 
-    height: $card-dimension;
-    width: $card-dimension;
-    max-height: $card-max-dimension;
-    max-width: $card-max-dimension;
-    padding: 0.5rem;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    overflow: hidden;
+  height: $card-dimension;
+  width: $card-dimension;
+  max-height: $card-max-dimension;
+  max-width: $card-max-dimension;
+  padding: 0.5rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
 
-    .menu-title {
-        text-shadow: white 0 0 0.75rem, white 0 0 0.75rem, white 0 0 0.75rem,
-            white 0 0 0.5rem, white 0 0 0.5rem;
-    }
+  .menu-title {
+    text-shadow: white 0 0 0.75rem, white 0 0 0.75rem, white 0 0 0.75rem, white 0 0 0.5rem, white 0 0 0.5rem;
+  }
 }

@@ -11,12 +11,19 @@ export abstract class AbstractQueryOnceService<T> {
     this.request = new Subject<T>();
 
     this.http.get<T>(url).subscribe({
-      next: data => {
+      next: (data) => {
         this.data = this.transformData(data);
         this.request.next(data);
         this.request.complete();
       }
     });
+  }
+
+  get(): Observable<T> {
+    if (!this.data) {
+      return this.getData().pipe(map(cloneDeep));
+    }
+    return of(cloneDeep(this.data));
   }
 
   protected transformData(data: T): T {
@@ -25,12 +32,5 @@ export abstract class AbstractQueryOnceService<T> {
 
   private getData(): Observable<T> {
     return this.request.asObservable();
-  }
-
-  get(): Observable<T> {
-    if (!this.data) {
-      return this.getData().pipe(map(cloneDeep));
-    }
-    return of(cloneDeep(this.data));
   }
 }

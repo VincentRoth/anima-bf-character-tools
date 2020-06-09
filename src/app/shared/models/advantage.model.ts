@@ -1,12 +1,12 @@
 export interface UnknownAdvantage {
-  id: number;
-  name: string;
+  condition?: string;
   description: string;
   effect: string;
-  condition?: string;
-  special?: string;
+  id: number;
+  name: string;
   note?: string;
   source: string;
+  special?: string;
   types: string[];
 }
 

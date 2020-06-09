@@ -1,23 +1,23 @@
 export interface ReferenceTable {
+  headers: string[];
   // For a "real" book table, id is the book table number.
   // For other, can be a roman number like "XIV"
   // or the page and an indice like "p.47" or "p.47.1"
   // in case of multiple non numbered tables on the same page.
   id: number | string;
-  title: string;
-  headers: string[];
   rows: (string | number)[][];
+  title: string;
 }
 
 export interface ReferenceTableContainer {
-  'core-exxet': ReferenceTable[];
-  'kit-mj': ReferenceTable[];
-  'dominus-exxet': ReferenceTable[];
   'arcana-exxet': ReferenceTable[];
-  'prometheum-exxet': ReferenceTable[];
+  'core-exxet': ReferenceTable[];
+  cqmpn: ReferenceTable[];
+  'dominus-exxet': ReferenceTable[];
   'gaia-1': ReferenceTable[];
   'gaia-2': ReferenceTable[];
-  cqmpn: ReferenceTable[];
+  'kit-mj': ReferenceTable[];
+  'prometheum-exxet': ReferenceTable[];
 }
 
 export interface ReferenceBook {

@@ -7,15 +7,17 @@ import { RollService } from '../shared/services';
   styleUrls: ['./dice-roll.component.scss']
 })
 export class DiceRollComponent implements OnInit {
-  private diceValue: number;
   rollHistory: string[];
+  private diceValue: number;
   private is100Dice: boolean;
 
   constructor(private rollService: RollService) {}
 
-  ngOnInit(): void {
-    this.is100Dice = false;
-    this.rollHistory = [];
+  addRollToHistory(): void {
+    this.rollHistory.unshift(this.getFormatedDiceValue());
+    if (this.rollHistory.length > 10) {
+      this.rollHistory.pop();
+    }
   }
 
   getFormatedDiceValue(): string {
@@ -28,18 +30,9 @@ export class DiceRollComponent implements OnInit {
     return this.diceValue.toString();
   }
 
-  addRollToHistory(): void {
-    this.rollHistory.unshift(this.getFormatedDiceValue());
-    if (this.rollHistory.length > 10) {
-      this.rollHistory.pop();
-    }
-  }
-
-  roll10Dice(): void {
+  ngOnInit(): void {
     this.is100Dice = false;
-
-    this.addRollToHistory();
-    this.diceValue = this.rollService.roll10();
+    this.rollHistory = [];
   }
 
   roll100Dice(): void {
@@ -47,5 +40,12 @@ export class DiceRollComponent implements OnInit {
 
     this.addRollToHistory();
     this.diceValue = this.rollService.roll100();
+  }
+
+  roll10Dice(): void {
+    this.is100Dice = false;
+
+    this.addRollToHistory();
+    this.diceValue = this.rollService.roll10();
   }
 }

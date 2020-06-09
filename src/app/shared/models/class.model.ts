@@ -1,22 +1,22 @@
 interface MartialAbilities {
-  limit: number;
   attack: number;
   block: number;
   dodge: number;
-  wearArmor: number;
   ki: number;
   kiAccumulation: number;
+  limit: number;
+  wearArmor: number;
 }
 
 interface MysticAbilities {
-  limit: number;
-  zeon: number;
-  maMultiple: number;
-  magicProjection: number;
-  summon: number;
-  control: number;
-  bind: number;
   banish: number;
+  bind: number;
+  control: number;
+  limit: number;
+  magicProjection: number;
+  maMultiple: number;
+  summon: number;
+  zeon: number;
 }
 
 interface PsychicAbilities {
@@ -38,13 +38,13 @@ interface ReducedCost {
 
 interface SecondaryAbilities {
   athletics: number;
-  social: number;
-  perceptive: number;
-  intellectual: number;
-  vigor: number;
-  subterfuge: number;
   creative: number;
+  intellectual: number;
+  perceptive: number;
   reducedCosts: ReducedCost[];
+  social: number;
+  subterfuge: number;
+  vigor: number;
 }
 
 interface InnateBonus {
@@ -59,16 +59,16 @@ interface InnateBonuses {
 }
 
 export interface ClassModel {
-  name: string;
-  description: string;
   archetypes: string[];
+  bonus: InnateBonuses;
+  description: string;
+  initiativePerLevel: number;
   lifePointMult: number;
   lifePointPerLevel: number;
-  initiativePerLevel: number;
   martialKnowledgePerLevel: number;
-  psychicPointPerLevel: number;
+  name: string;
   primary: PrimaryAbilities;
+  psychicPointPerLevel: number;
   secondary: SecondaryAbilities;
-  bonus: InnateBonuses;
   special: string;
 }

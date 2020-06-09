@@ -8,10 +8,7 @@
   <mat-expansion-panel *ngFor="let panel of contentPanels">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <app-content-title
-          [level]="1"
-          [title]="panel.title"
-        ></app-content-title>
+        <app-content-title [level]="1" [title]="panel.title"></app-content-title>
       </mat-panel-title>
     </mat-expansion-panel-header>
 
@@ -19,10 +16,7 @@
       <mat-expansion-panel *ngFor="let subPanel of panel.content">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <app-content-title
-              [level]="2"
-              [title]="subPanel.title"
-            ></app-content-title>
+            <app-content-title [level]="2" [title]="subPanel.title"></app-content-title>
           </mat-panel-title>
         </mat-expansion-panel-header>
 

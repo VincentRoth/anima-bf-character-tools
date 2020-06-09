@@ -18,24 +18,24 @@ export interface ContentImage extends ContentUnit {
 }
 
 export interface ContentLink extends ContentUnit {
+  link: string;
   title: string;
   type: EContentType.LINK;
-  link: string;
 }
 
 export interface ContentParagraph extends ContentUnit {
+  content: string;
   title?: string;
   type: EContentType.PARAGRAPH | EContentType.SUB_PARAGRAPH;
-  content: string;
 }
 
 export interface ContentTable extends ContentUnit {
-  type: EContentType.TABLE;
   reference: string;
+  type: EContentType.TABLE;
 }
 
 export interface ContentPanel extends ContentUnit {
+  content: ContentUnit[];
   title: string;
   type: EContentType.PANEL;
-  content: ContentUnit[];
 }

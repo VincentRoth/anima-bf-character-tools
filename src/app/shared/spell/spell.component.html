@@ -1,29 +1,20 @@
 <mat-card class="spell-card">
   <mat-card-header (click)="toggleOpen()">
-    <mat-card-title class="spell-title">
-      {{ open ? '▾' : '▸' }} {{ getTitle() }}
-    </mat-card-title>
+    <mat-card-title class="spell-title"> {{ open ? '▾' : '▸' }} {{ getTitle() }} </mat-card-title>
   </mat-card-header>
   <mat-card-content class="spell-content" [ngClass]="{ hidden: !open }">
     <div *ngIf="!spell.isFreeAccess">
       <p>
         <span class="bold">Niveau : </span>{{ getLevel() }}
-        <span class="right">
-          <span class="bold">Action : </span>{{ spell.action }}
-        </span>
+        <span class="right"> <span class="bold">Action : </span>{{ spell.action }} </span>
       </p>
-      <p>
-        <span class="bold">Type de sort : </span>{{ spell.types.join(', ') }}
-      </p>
+      <p><span class="bold">Type de sort : </span>{{ spell.types.join(', ') }}</p>
       <p><span class="bold">Effet : </span>{{ spell.effect }}</p>
       <table cellspacing="0">
         <thead>
           <tr class="bold">
             <th>Degré</th>
-            <th
-              class="text-center"
-              *ngFor="let castingLevel of spell.castingLevels"
-            >
+            <th class="text-center" *ngFor="let castingLevel of spell.castingLevels">
               {{ castingLevel.level }}
             </th>
           </tr>
@@ -31,19 +22,13 @@
         <tbody>
           <tr>
             <td class="bold">Zéon</td>
-            <td
-              class="text-center"
-              *ngFor="let castingLevel of spell.castingLevels"
-            >
+            <td class="text-center" *ngFor="let castingLevel of spell.castingLevels">
               {{ castingLevel.zeon }}
             </td>
           </tr>
           <tr>
             <td class="bold">Int. R.</td>
-            <td
-              class="text-center"
-              *ngFor="let castingLevel of spell.castingLevels"
-            >
+            <td class="text-center" *ngFor="let castingLevel of spell.castingLevels">
               {{ castingLevel.requiredIntelligence }}
             </td>
           </tr>

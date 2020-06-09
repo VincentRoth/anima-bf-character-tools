@@ -10,11 +10,10 @@ import { SpellService } from '../shared/services';
   styleUrls: ['./spells.component.scss']
 })
 export class SpellsComponent extends AbstractSearchComponent<SpellsSearchParams> implements OnInit {
-  magicPaths: MagicPath[];
-
   get spellTypes(): SpellType[] {
     return Object.values(SpellType).sort();
   }
+  magicPaths: MagicPath[];
 
   constructor(private spellService: SpellService, injector: Injector) {
     super(injector);
@@ -42,15 +41,15 @@ export class SpellsComponent extends AbstractSearchComponent<SpellsSearchParams>
     });
   }
 
-  protected search(filters: SpellsSearchParams): void {
-    this.magicPaths = this.spellService.filter(filters);
-  }
-
   searchSpells(q: string): void {
     this.handleSearch({ ...this.filters, q });
   }
 
   searchType(type: SpellType): void {
     this.handleSearch({ ...this.filters, type });
+  }
+
+  protected search(filters: SpellsSearchParams): void {
+    this.magicPaths = this.spellService.filter(filters);
   }
 }

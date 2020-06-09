@@ -7,8 +7,12 @@ import { Spell } from '../models';
   styleUrls: ['./spell.component.scss']
 })
 export class SpellComponent implements OnInit {
-  @Input() spell: Spell;
-  open: boolean;
+  get forbiddenPaths(): string {
+    if (this.spell.forbiddenPaths.length) {
+      return this.spell.forbiddenPaths.join(', ');
+    }
+    return 'Aucune';
+  }
 
   get maintenance(): string {
     if (this.spell.castingLevels && this.spell.castingLevels.some((castingLevel) => castingLevel.maintenance > 0)) {
@@ -18,30 +22,10 @@ export class SpellComponent implements OnInit {
     }
     return this.spell.specialMaintenance || 'Non';
   }
-
-  get forbiddenPaths(): string {
-    if (this.spell.forbiddenPaths.length) {
-      return this.spell.forbiddenPaths.join(', ');
-    }
-    return 'Aucune';
-  }
+  open: boolean;
+  @Input() spell: Spell;
 
   constructor() {}
-
-  ngOnInit(): void {
-    this.open = false;
-  }
-
-  isFreeAccessSpell(): boolean {
-    return !!this.spell.forbiddenPaths;
-  }
-
-  getTitle(): string {
-    if (this.isFreeAccessSpell()) {
-      return this.spell.name;
-    }
-    return `${this.spell.level}. ${this.spell.name || 'Sort d\'Accès Libre'}`;
-  }
 
   getLevel(): string | number {
     if (this.isFreeAccessSpell()) {
@@ -50,8 +34,24 @@ export class SpellComponent implements OnInit {
     return this.spell.level;
   }
 
+  getTitle(): string {
+    if (this.isFreeAccessSpell()) {
+      return this.spell.name;
+    }
+    const defaultName = "Sort d'Accès Libre";
+    return `${this.spell.level}. ${this.spell.name || defaultName}`;
+  }
+
+  isFreeAccessSpell(): boolean {
+    return !!this.spell.forbiddenPaths;
+  }
+
   isSecondaryPathLevel(): boolean {
     return this.spell.level % 10 === 4;
+  }
+
+  ngOnInit(): void {
+    this.open = false;
   }
 
   toggleOpen(): void {

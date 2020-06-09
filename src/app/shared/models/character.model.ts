@@ -1,14 +1,14 @@
 export interface AdvantageReference {
-  id: number;
   creationPoints: number;
+  id: number;
 }
 
 export interface Character {
-  raceName: string;
+  advantages: AdvantageReference[];
   className: string;
   creationPoints: number;
-  advantages: AdvantageReference[];
   disadvantages: AdvantageReference[];
   level: number;
+  raceName: string;
   refTables: string[];
 }

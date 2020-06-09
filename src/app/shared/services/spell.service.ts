@@ -13,23 +13,6 @@ export class SpellService extends AbstractQueryOnceService<MagicPath[]> {
     super(http, '/assets/data/spells.json');
   }
 
-  protected transformData(data: MagicPath[]): MagicPath[] {
-    return data.map((magicPath) => {
-      if (magicPath.status === MagicPathStatus.MAJOR || magicPath.status === MagicPathStatus.MINOR) {
-        // link non forbidden secondary paths to primary paths
-        magicPath.permittedPaths = data
-          .filter(
-            (secondaryPath) =>
-              secondaryPath.status === MagicPathStatus.SECONDARY &&
-              secondaryPath.forbiddenPaths.indexOf(magicPath.name) === -1
-          )
-          .reduce((paths, secondaryPath) => paths.concat(secondaryPath.name), []);
-        magicPath.permittedPaths.sort();
-      }
-      return magicPath;
-    });
-  }
-
   filter(filters: SpellsSearchParams): MagicPath[] {
     let filteredPaths = cloneDeep(this.data);
     if (!Object.values(filters).some(Boolean)) {
@@ -75,5 +58,22 @@ export class SpellService extends AbstractQueryOnceService<MagicPath[]> {
         .filter((magicPath: MagicPath) => magicPath.spells.length);
     }
     return filteredPaths;
+  }
+
+  protected transformData(data: MagicPath[]): MagicPath[] {
+    return data.map((magicPath) => {
+      if (magicPath.status === MagicPathStatus.MAJOR || magicPath.status === MagicPathStatus.MINOR) {
+        // link non forbidden secondary paths to primary paths
+        magicPath.permittedPaths = data
+          .filter(
+            (secondaryPath) =>
+              secondaryPath.status === MagicPathStatus.SECONDARY &&
+              secondaryPath.forbiddenPaths.indexOf(magicPath.name) === -1
+          )
+          .reduce((paths, secondaryPath) => paths.concat(secondaryPath.name), []);
+        magicPath.permittedPaths.sort();
+      }
+      return magicPath;
+    });
   }
 }

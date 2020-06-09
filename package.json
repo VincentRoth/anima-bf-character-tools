@@ -11,13 +11,19 @@
     "node": ">=10.x"
   },
   "scripts": {
+    "start": "node server.js",
     "ng": "ng",
     "serve": "ng serve -o",
     "build": "ng build --prod",
+    "prettier": "prettier --config ./.prettierrc \"**/*.*\"",
+    "lint": "npm run lint:prettier && npm run lint:tslint",
+    "lint:prettier": "npm run prettier -- --check",
+    "lint:tslint": "ng lint",
+    "fix": "npm run fix:prettier && npm run fix:tslint",
+    "fix:prettier": "npm run prettier -- --write",
+    "fix:tslint": "ng lint --fix",
     "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "start": "node server.js"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -47,7 +53,7 @@
     "@types/jasmine": "^3.5.0",
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "^12.11.1",
-    "codelyzer": "^5.1.2",
+    "codelyzer": "^5.2.2",
     "jasmine-core": "^3.5.0",
     "jasmine-spec-reporter": "^4.2.1",
     "karma": "^5.0.0",
@@ -55,9 +61,11 @@
     "karma-coverage-istanbul-reporter": "^2.1.0",
     "karma-jasmine": "^3.0.1",
     "karma-jasmine-html-reporter": "^1.4.2",
+    "prettier": "^2.0.5",
     "protractor": "^7.0.0",
     "ts-node": "^8.5.4",
     "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "~3.8.3"
   }
 }

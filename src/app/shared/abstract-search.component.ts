@@ -3,17 +3,15 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { SearchParams } from './search-params/search.params';
 
 export abstract class AbstractSearchComponent<T extends SearchParams> {
-  filters: T;
   protected activatedRoute: ActivatedRoute;
   protected router: Router;
+  filters: T;
   private timeout;
 
   constructor(injector: Injector) {
     this.activatedRoute = injector.get(ActivatedRoute);
     this.router = injector.get(Router);
   }
-
-  protected abstract search(filters: T): void;
 
   handleSearch(filters: T, delay = 500) {
     if (this.timeout) {
@@ -31,6 +29,8 @@ export abstract class AbstractSearchComponent<T extends SearchParams> {
       this.filters[key] = this.activatedRoute.snapshot.queryParamMap.get(key);
     });
   }
+
+  protected abstract search(filters: T): void;
 
   protected setUrlFilter(filters: T): void {
     const keys = Object.keys(this.filters);

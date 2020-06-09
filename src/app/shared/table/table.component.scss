@@ -1,112 +1,112 @@
 @import 'src/styles/theme';
 
 :host {
-    margin: 0.5rem;
+  margin: 0.5rem;
 }
 
 table {
-    margin: 0 auto;
+  margin: 0 auto;
 
-    caption {
-        font-style: italic;
-        cursor: pointer;
+  caption {
+    font-style: italic;
+    cursor: pointer;
 
-        .icon {
-            font-size: 1.2rem;
-            font-style: normal;
-            font-weight: bold;
-            text-align: center;
-            font-family: monospace;
+    .icon {
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: bold;
+      text-align: center;
+      font-family: monospace;
 
-            &::after {
-                transition: color 0.75s ease 0.25s;
-            }
+      &::after {
+        transition: color 0.75s ease 0.25s;
+      }
 
-            &.plus::after {
-                content: "+";
-                color: map_get($primary, 700);
-            }
+      &.plus::after {
+        content: '+';
+        color: map_get($primary, 700);
+      }
 
-            &.animated-plus::after {
-                animation: 1s 1 content-to-plus;
-            }
+      &.animated-plus::after {
+        animation: 1s 1 content-to-plus;
+      }
 
-            &.minus::after {
-                content: "-";
-                color: map_get($warn, 700);
-            }
+      &.minus::after {
+        content: '-';
+        color: map_get($warn, 700);
+      }
 
-            &.animated-minus::after {
-                animation: 1s 1 content-to-minus;
-            }
+      &.animated-minus::after {
+        animation: 1s 1 content-to-minus;
+      }
 
-            @keyframes content-appear {
-                0% {
-                    color: white;
-                }
-
-                50% {
-                    color: white;
-                }
-            }
-
-            @keyframes content-to-minus {
-                0% {
-                    content: "+";
-                }
-
-                50% {
-                    color: white;
-                }
-            }
-
-            @keyframes content-to-plus {
-                0% {
-                    content: "-";
-                }
-
-                50% {
-                    color: white;
-                }
-            }
+      @keyframes content-appear {
+        0% {
+          color: white;
         }
+
+        50% {
+          color: white;
+        }
+      }
+
+      @keyframes content-to-minus {
+        0% {
+          content: '+';
+        }
+
+        50% {
+          color: white;
+        }
+      }
+
+      @keyframes content-to-plus {
+        0% {
+          content: '-';
+        }
+
+        50% {
+          color: white;
+        }
+      }
+    }
+  }
+
+  thead {
+    tr {
+      background: linear-gradient(to right, #bc511c, #861a07);
+      color: white;
+    }
+  }
+
+  tbody {
+    tr:nth-child(odd) {
+      background: linear-gradient(to right, #fde0c7, #e0d2bc);
     }
 
-    thead {
-        tr {
-            background: linear-gradient(to right, #bc511c, #861a07);
-            color: white;
-        }
+    tr:nth-child(even) {
+      background: linear-gradient(to right, #e3d6af, #cac2a1);
     }
 
-    tbody {
-        tr:nth-child(odd) {
-            background: linear-gradient(to right, #fde0c7, #e0d2bc);
-        }
-
-        tr:nth-child(even) {
-            background: linear-gradient(to right, #e3d6af, #cac2a1);
-        }
-
-        td {
-            border-right: 0.125rem solid white;
-            border-bottom: 0.125rem solid white;
-            max-width: 30rem;
-        }
-
-        tr td:last-child {
-            border-right: none;
-        }
-
-        tr:last-child td {
-            border-bottom: none;
-        }
-    }
-
-    th,
     td {
-        text-align: center;
-        padding: 0 0.4rem;
-        white-space: pre-line;
+      border-right: 0.125rem solid white;
+      border-bottom: 0.125rem solid white;
+      max-width: 30rem;
     }
+
+    tr td:last-child {
+      border-right: none;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+  }
+
+  th,
+  td {
+    text-align: center;
+    padding: 0 0.4rem;
+    white-space: pre-line;
+  }
 }

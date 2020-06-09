@@ -15,23 +15,6 @@ export class AdvantageService extends AbstractQueryOnceService<UnknownAdvantage[
     super(http, '/assets/data/advantages.json');
   }
 
-  getById(id: number): Observable<UnknownAdvantage> {
-    const transform = (data: UnknownAdvantage[]) =>
-      cloneDeep(data.find((advantage: UnknownAdvantage) => advantage.id === id));
-    if (!this.data) {
-      return this.get().pipe(map(transform));
-    }
-    return of(transform(this.data));
-  }
-
-  getTypes(): object {
-    const types = {};
-    this.data.forEach((a) => {
-      a.types.forEach((type) => (types[type] ? types[type]++ : (types[type] = 1)));
-    });
-    return types;
-  }
-
   filter(filters: AdvantagesSearchParams): UnknownAdvantage[] {
     let advantages = cloneDeep(this.data);
     if (!Object.values(filters).some(Boolean)) {
@@ -65,7 +48,24 @@ export class AdvantageService extends AbstractQueryOnceService<UnknownAdvantage[
     return advantages;
   }
 
-  sort(a1: UnknownAdvantage, a2: UnknownAdvantage) {
+  getById(id: number): Observable<UnknownAdvantage> {
+    const transform = (data: UnknownAdvantage[]) =>
+      cloneDeep(data.find((advantage: UnknownAdvantage) => advantage.id === id));
+    if (!this.data) {
+      return this.get().pipe(map(transform));
+    }
+    return of(transform(this.data));
+  }
+
+  getTypes(): object {
+    const types = {};
+    this.data.forEach((a) => {
+      a.types.forEach((type) => (types[type] ? types[type]++ : (types[type] = 1)));
+    });
+    return types;
+  }
+
+  sort(a1: UnknownAdvantage, a2: UnknownAdvantage): number {
     if ((a1 as Advantage).costs && (a2 as Disadvantage).benefits) {
       return -1;
     }

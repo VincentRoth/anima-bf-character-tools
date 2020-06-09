@@ -11,8 +11,8 @@ import { AdvantageService, CharacterService, ReferenceTableService } from '../sh
 })
 export class CharacterSheetComponent implements OnInit {
   advantages: Advantage[];
-  disadvantages: Disadvantage[];
   character: Character;
+  disadvantages: Disadvantage[];
   nbMaximumDisadvantages: number;
   tables: object;
 

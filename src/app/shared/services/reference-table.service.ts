@@ -10,24 +10,11 @@ import { AbstractQueryOnceService } from './abstract-query-once.service';
   providedIn: 'root'
 })
 export class ReferenceTableService extends AbstractQueryOnceService<ReferenceTableContainer> {
-  constructor(http: HttpClient) {
-    super(http, '/assets/data/tables.json');
-  }
-
   get books(): ReferenceBook[] {
     return referenceBooks;
   }
-
-  getByReference(reference: string): Observable<ReferenceTable> {
-    const splitRef = reference.split('#');
-    const bookProperty = splitRef[0];
-    const tableId = splitRef[1];
-    const transform = (data: ReferenceTableContainer) =>
-      cloneDeep(data[bookProperty].filter((table: ReferenceTable) => table.id.toString() === tableId)[0]);
-    if (!this.data) {
-      return this.get().pipe(map(transform));
-    }
-    return of(transform(this.data));
+  constructor(http: HttpClient) {
+    super(http, '/assets/data/tables.json');
   }
 
   filterByToken(filter: string): Observable<ReferenceTableContainer> {
@@ -52,5 +39,17 @@ export class ReferenceTableService extends AbstractQueryOnceService<ReferenceTab
         return data;
       })
     );
+  }
+
+  getByReference(reference: string): Observable<ReferenceTable> {
+    const splitRef = reference.split('#');
+    const bookProperty = splitRef[0];
+    const tableId = splitRef[1];
+    const transform = (data: ReferenceTableContainer) =>
+      cloneDeep(data[bookProperty].filter((table: ReferenceTable) => table.id.toString() === tableId)[0]);
+    if (!this.data) {
+      return this.get().pipe(map(transform));
+    }
+    return of(transform(this.data));
   }
 }

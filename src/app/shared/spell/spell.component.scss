@@ -1,49 +1,49 @@
 :host {
-    display: flex;
-    // 5 spells per row
-    flex: 1 1 20%;
-    min-width: 16rem;
-    max-width: 24rem;
+  display: flex;
+  // 5 spells per row
+  flex: 1 1 20%;
+  min-width: 16rem;
+  max-width: 24rem;
 }
 
 .spell-card {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  margin: 0.5rem;
+  min-width: 16rem;
+  max-width: 24rem;
+
+  .spell-title {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+  }
+
+  .spell-content {
     display: flex;
-    flex: 1 1 100%;
     flex-direction: column;
-    margin: 0.5rem;
-    min-width: 16rem;
-    max-width: 24rem;
+    flex: 1 1 100%;
 
-    .spell-title {
-        font-size: 1rem;
-        margin: 0 0 0.5rem;
+    &.hidden {
+      display: none;
     }
+  }
 
-    .spell-content {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 100%;
+  p {
+    font-size: 0.75rem;
+    text-align: justify;
+    white-space: pre-line;
+    margin: 0.1rem 0;
+  }
 
-        &.hidden {
-            display: none;
-        }
+  table {
+    width: 100%;
+    font-size: 0.75rem;
+    text-align: center;
+    table-layout: auto;
+
+    .bold {
+      text-align: left;
     }
-
-    p {
-        font-size: 0.75rem;
-        text-align: justify;
-        white-space: pre-line;
-        margin: 0.1rem 0;
-    }
-
-    table {
-        width: 100%;
-        font-size: 0.75rem;
-        text-align: center;
-        table-layout: auto;
-
-        .bold {
-            text-align: left;
-        }
-    }
+  }
 }

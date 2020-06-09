@@ -12,11 +12,6 @@ const italicRegExp = /^\*/;
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
-  @Input() reference: string;
-  @Input() table: ReferenceTable;
-  belongsToCharacter: boolean;
-  hasBeenToggled: boolean;
-
   get caption(): string {
     if (!this.table) {
       return;
@@ -29,12 +24,18 @@ export class TableComponent implements OnInit {
     }
     return `${this.table.id} : ${this.table.title}`;
   }
+  belongsToCharacter: boolean;
+  hasBeenToggled: boolean;
+  @Input() reference: string;
+  @Input() table: ReferenceTable;
 
   constructor(private characterService: CharacterService) {}
 
-  ngOnInit(): void {
-    this.belongsToCharacter = this.characterHasTable();
-    this.hasBeenToggled = false;
+  formatValue(value: any): string {
+    if (typeof value === 'string' && value && value.startsWith('*')) {
+      return value.replace(/^\**/, '');
+    }
+    return value;
   }
 
   getCellStyle(value: any): string {
@@ -51,15 +52,9 @@ export class TableComponent implements OnInit {
     }
   }
 
-  formatValue(value: any): string {
-    if (typeof value === 'string' && value && value.startsWith('*')) {
-      return value.replace(/^\**/, '');
-    }
-    return value;
-  }
-
-  private characterHasTable(): boolean {
-    return this.characterService.hasRefTable(this.reference);
+  ngOnInit(): void {
+    this.belongsToCharacter = this.characterHasTable();
+    this.hasBeenToggled = false;
   }
 
   toggleTable(): void {
@@ -70,5 +65,9 @@ export class TableComponent implements OnInit {
       this.characterService.addRefTable(this.reference);
     }
     this.belongsToCharacter = this.characterHasTable();
+  }
+
+  private characterHasTable(): boolean {
+    return this.characterService.hasRefTable(this.reference);
   }
 }
