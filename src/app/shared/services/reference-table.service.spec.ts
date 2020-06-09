@@ -1,25 +1,25 @@
-import { TestBed } from '@angular/core/testing';
-
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { ReferenceTableContainer } from 'src/app/shared/models/';
+import { TestBed } from '@angular/core/testing';
+import { ReferenceTableContainer } from '../models/';
 import { ReferenceTableService } from './reference-table.service';
 
 describe('ReferenceTableService', () => {
-  beforeEach(() =>
+  let service: ReferenceTableService;
+  let httpMock: HttpTestingController;
+
+  beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule]
-    })
-  );
+    });
+    service = TestBed.inject(ReferenceTableService);
+    httpMock = TestBed.inject(HttpTestingController);
+  });
 
   it('should be created', () => {
-    const service: ReferenceTableService = TestBed.inject(ReferenceTableService);
     expect(service).toBeTruthy();
   });
 
   it('should request only once the tables data', () => {
-    const service: ReferenceTableService = TestBed.inject(ReferenceTableService);
-    const httpMock: HttpTestingController = TestBed.inject(HttpTestingController);
-
     service.getByReference('core-exxet#1').subscribe({ next: (table) => expect(table.id).toEqual(1) });
 
     service.getByReference('core-exxet#2').subscribe({ next: (table) => expect(table.id).toEqual(2) });
@@ -49,6 +49,7 @@ describe('ReferenceTableService', () => {
       'gaia-2': [],
       cqmpn: []
     } as ReferenceTableContainer);
+
     httpMock.verify();
   });
 });

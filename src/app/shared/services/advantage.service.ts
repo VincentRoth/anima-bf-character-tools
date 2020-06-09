@@ -1,69 +1,68 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import {
-  Advantage,
-  Disadvantage,
-  UnknownAdvantage
-} from 'src/app/shared/models';
+import cloneDeep from 'lodash-es/cloneDeep';
+import { Observable, of } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { Advantage, Disadvantage, UnknownAdvantage } from '../models';
+import { AdvantagesSearchParams } from '../search-params/advantages-search.params';
+import { AbstractQueryOnceService } from './abstract-query-once.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AdvantageService {
-  constructor(private http: HttpClient) {}
-
-  get(): Observable<UnknownAdvantage[]> {
-    return this.http.get<UnknownAdvantage[]>('/assets/data/advantages.json');
+export class AdvantageService extends AbstractQueryOnceService<UnknownAdvantage[]> {
+  constructor(http: HttpClient) {
+    super(http, '/assets/data/advantages.json');
   }
 
-  getTypes(advantages: UnknownAdvantage[]): object {
+  getById(id: number): Observable<UnknownAdvantage> {
+    const transform = (data: UnknownAdvantage[]) =>
+      cloneDeep(data.find((advantage: UnknownAdvantage) => advantage.id === id));
+    if (!this.data) {
+      return this.get().pipe(map(transform));
+    }
+    return of(transform(this.data));
+  }
+
+  getTypes(): object {
     const types = {};
-    advantages.forEach(a => {
-      a.types.forEach(type =>
-        types[type] ? types[type]++ : (types[type] = 1)
-      );
+    this.data.forEach((a) => {
+      a.types.forEach((type) => (types[type] ? types[type]++ : (types[type] = 1)));
     });
     return types;
   }
 
-  filterByType(advantages: UnknownAdvantage[], typeFilter: string) {
-    return advantages.filter(
-      advantage =>
-        advantage.types.filter((type: string) => type === typeFilter).length > 0
-    );
-  }
-
-  filterByToken(advantages: UnknownAdvantage[], search: string) {
-    const tokens = search.toLocaleLowerCase().split(' ');
-    return advantages.filter(advantage =>
-      tokens.reduce((isSelected: boolean, token: string) => {
-        return (
-          isSelected &&
-          (advantage.name.toLocaleLowerCase().includes(token) ||
-            advantage.description.toLocaleLowerCase().includes(token) ||
-            advantage.effect.toLocaleLowerCase().includes(token) ||
-            (advantage.condition &&
-              advantage.condition.toLocaleLowerCase().includes(token)) ||
-            (advantage.special &&
-              advantage.special.toLocaleLowerCase().includes(token)) ||
-            ((advantage as Advantage).costs &&
-              (advantage as Advantage).costs.some(
-                cost => cost.toString() === token
-              )) ||
-            ((advantage as Disadvantage).benefits &&
-              (advantage as Disadvantage).benefits.some(
-                benefit => benefit.toString() === token
-              )) ||
-            (advantage.note &&
-              advantage.note.toLocaleLowerCase().includes(token)) ||
-            advantage.source.toLocaleLowerCase().includes(token) ||
-            advantage.types.some((type: string) =>
-              type.toLocaleLowerCase().includes(token)
-            ))
-        );
-      }, true)
-    );
+  filter(filters: AdvantagesSearchParams): UnknownAdvantage[] {
+    let advantages = cloneDeep(this.data);
+    if (!Object.values(filters).some(Boolean)) {
+      return advantages;
+    }
+    if (filters.type) {
+      advantages = advantages.filter((advantage) => advantage.types.includes(filters.type));
+    }
+    if (filters.q) {
+      const tokens = filters.q.toLocaleLowerCase().split(' ');
+      advantages = advantages.filter((advantage) =>
+        tokens.reduce((isSelected: boolean, token: string) => {
+          return (
+            isSelected &&
+            (advantage.name.toLocaleLowerCase().includes(token) ||
+              advantage.description.toLocaleLowerCase().includes(token) ||
+              advantage.effect.toLocaleLowerCase().includes(token) ||
+              (advantage.condition && advantage.condition.toLocaleLowerCase().includes(token)) ||
+              (advantage.special && advantage.special.toLocaleLowerCase().includes(token)) ||
+              ((advantage as Advantage).costs &&
+                (advantage as Advantage).costs.some((cost) => cost.toString() === token)) ||
+              ((advantage as Disadvantage).benefits &&
+                (advantage as Disadvantage).benefits.some((benefit) => benefit.toString() === token)) ||
+              (advantage.note && advantage.note.toLocaleLowerCase().includes(token)) ||
+              advantage.source.toLocaleLowerCase().includes(token) ||
+              advantage.types.some((type: string) => type.toLocaleLowerCase().includes(token)))
+          );
+        }, true)
+      );
+    }
+    return advantages;
   }
 
   sort(a1: UnknownAdvantage, a2: UnknownAdvantage) {

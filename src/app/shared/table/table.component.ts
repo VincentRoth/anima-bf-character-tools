@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ReferenceTable } from 'src/app/shared/models';
-import { CharacterService } from 'src/app/shared/services';
+import { ReferenceTable } from '../models';
+import { CharacterService } from '../services';
 
 const boldItalicRegExp = /^\*\*\*/;
 const boldRegExp = /^\*\*/;

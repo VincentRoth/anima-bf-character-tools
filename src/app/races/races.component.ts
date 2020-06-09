@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ContentPanel } from 'src/app/shared/models';
-import { RaceService } from 'src/app/shared/services';
+import { ContentPanel } from '../shared/models';
+import { RaceService } from '../shared/services';
 
 @Component({
   selector: 'app-races',

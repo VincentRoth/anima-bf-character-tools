@@ -1,8 +1,8 @@
 import { Component, Injector, OnInit } from '@angular/core';
-import { AbstractSearchComponent } from 'src/app/shared/abstract-search.component';
-import { ReferenceBook, ReferenceTableContainer } from 'src/app/shared/models';
-import { ReferenceTableService } from 'src/app/shared/services';
-import { SearchParams } from '../shared/search.params';
+import { AbstractSearchComponent } from '../shared/abstract-search.component';
+import { ReferenceBook, ReferenceTableContainer } from '../shared/models';
+import { SearchParams } from '../shared/search-params/search.params';
+import { ReferenceTableService } from '../shared/services';
 @Component({
   selector: 'app-tables',
   templateUrl: './tables.component.html',

@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { AppMaterialModule } from 'src/app/app-material.module';
-import { Advantage } from 'src/app/shared/models';
+import { AppMaterialModule } from '../app-material.module';
+import { Advantage } from '../models';
 import { AdvantageComponent } from './advantage.component';
 
 describe('AdvantageComponent', () => {

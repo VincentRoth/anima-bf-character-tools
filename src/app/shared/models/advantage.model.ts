@@ -1,4 +1,5 @@
 export interface UnknownAdvantage {
+  id: number;
   name: string;
   description: string;
   effect: string;

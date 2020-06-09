@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { environment } from '../environments/environment';
-import { AppMaterialModule } from './app-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppMaterialModule } from './shared/app-material.module';
 
 import { AdvantagesModule } from './advantages/advantages.module';
 import { CharacterSheetModule } from './character-sheet/character-sheet.module';

@@ -1,13 +1,6 @@
 import { Injectable } from '@angular/core';
-import { constant } from 'src/app/shared/constant';
-import {
-  Advantage,
-  Character,
-  CharacterAdvantage,
-  CharacterDisadvantage,
-  CharacterUnknownAdvantage,
-  UnknownAdvantage
-} from 'src/app/shared/models';
+import { constant } from '../constant';
+import { Advantage, AdvantageReference, Character, UnknownAdvantage } from '../models';
 
 @Injectable({
   providedIn: 'root'
@@ -32,22 +25,22 @@ export class CharacterService {
   }
 
   private loadCharacter(): void {
-    const savedCharacter = JSON.parse(
-      localStorage.getItem(constant.localCharacterKey)
-    );
+    const savedCharacter = JSON.parse(localStorage.getItem(constant.localCharacterKey));
     if (!savedCharacter) {
       this.initCharacter();
       this.saveCharacter();
     } else {
       this.character = savedCharacter as Character;
+      if (this.character.advantages.some((a) => !a.id) || this.character.disadvantages.some((a) => !a.id)) {
+        this.character.advantages = this.character.advantages.filter((a) => a.id);
+        this.character.disadvantages = this.character.disadvantages.filter((a) => a.id);
+        this.saveCharacter();
+      }
     }
   }
 
   private saveCharacter(): void {
-    localStorage.setItem(
-      constant.localCharacterKey,
-      JSON.stringify(this.character)
-    );
+    localStorage.setItem(constant.localCharacterKey, JSON.stringify(this.character));
   }
 
   clearCharacter(): void {
@@ -71,64 +64,45 @@ export class CharacterService {
 
   addAdvantage(advantage: UnknownAdvantage, creationPoints: number): void {
     // To avoid any duplicate, remove existing advantage sith same name
-    // Name should be unique
-    this.removeAdvantage(advantage.name);
+    this.removeAdvantage(advantage.id);
 
-    const advantageCopy = JSON.parse(
-      JSON.stringify(advantage)
-    ) as CharacterUnknownAdvantage;
-    advantageCopy.creationPoints = creationPoints;
+    const advantageRef: AdvantageReference = { id: advantage.id, creationPoints };
+
     if ((advantage as Advantage).costs) {
       // It is an Advantage
-      this.character.advantages.push(advantageCopy as CharacterAdvantage);
+      this.character.advantages.push(advantageRef);
       this.character.creationPoints -= creationPoints;
     } else {
       // It is a Disadvantage
-      this.character.disadvantages.push(advantageCopy as CharacterDisadvantage);
+      this.character.disadvantages.push(advantageRef);
       this.character.creationPoints += creationPoints;
     }
     this.saveCharacter();
   }
 
-  removeAdvantage(advantageName: string): void {
-    const advantage = this.character.advantages.find(
-      a => a.name === advantageName
-    );
+  removeAdvantage(advantageId: number): void {
+    const advantage = this.character.advantages.find((a) => a.id === advantageId);
     if (advantage) {
-      this.character.advantages.splice(
-        this.character.advantages.indexOf(advantage),
-        1
-      );
+      this.character.advantages.splice(this.character.advantages.indexOf(advantage), 1);
       this.character.creationPoints += advantage.creationPoints;
     }
 
-    const disadvantage = this.character.disadvantages.find(
-      d => d.name === advantageName
-    );
+    const disadvantage = this.character.disadvantages.find((d) => d.id === advantageId);
     if (disadvantage) {
-      this.character.disadvantages.splice(
-        this.character.disadvantages.indexOf(disadvantage),
-        1
-      );
+      this.character.disadvantages.splice(this.character.disadvantages.indexOf(disadvantage), 1);
       this.character.creationPoints -= disadvantage.creationPoints;
     }
 
     this.saveCharacter();
   }
 
-  hasAdvantage(advantageName: string, creationPoints?: number): boolean {
-    const advantage = this.character.advantages.find(
-      a => a.name === advantageName
-    );
-    const disadvantage = this.character.disadvantages.find(
-      d => d.name === advantageName
-    );
+  hasAdvantage(advantageId: number, creationPoints?: number): boolean {
+    const advantage = this.character.advantages.find((a) => a.id === advantageId);
+    const disadvantage = this.character.disadvantages.find((d) => d.id === advantageId);
 
     return !!(
-      (advantage &&
-        (!creationPoints || advantage.creationPoints === creationPoints)) ||
-      (disadvantage &&
-        (!creationPoints || disadvantage.creationPoints === creationPoints))
+      (advantage && (!creationPoints || advantage.creationPoints === creationPoints)) ||
+      (disadvantage && (!creationPoints || disadvantage.creationPoints === creationPoints))
     );
   }
 
@@ -145,10 +119,7 @@ export class CharacterService {
   }
 
   removeRefTable(tableReference: string): void {
-    this.character.refTables.splice(
-      this.character.refTables.indexOf(tableReference),
-      1
-    );
+    this.character.refTables.splice(this.character.refTables.indexOf(tableReference), 1);
     this.saveCharacter();
   }
 

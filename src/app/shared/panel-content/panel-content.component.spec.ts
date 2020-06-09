@@ -1,11 +1,10 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppMaterialModule } from 'src/app/app-material.module';
-import { ContentTitleComponent } from 'src/app/shared/content-title/content-title.component';
-import { EContentType } from 'src/app/shared/models';
-import { TableComponent } from 'src/app/shared/table/table.component';
+import { AppMaterialModule } from '../app-material.module';
+import { ContentTitleComponent } from '../content-title/content-title.component';
+import { EContentType } from '../models';
+import { TableComponent } from '../table/table.component';
 import { PanelContentComponent } from './panel-content.component';
 
 describe('PanelContentComponent', () => {
@@ -14,11 +13,7 @@ describe('PanelContentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        PanelContentComponent,
-        ContentTitleComponent,
-        TableComponent
-      ],
+      declarations: [PanelContentComponent, ContentTitleComponent, TableComponent],
       imports: [HttpClientTestingModule, RouterTestingModule, AppMaterialModule]
     }).compileComponents();
   }));

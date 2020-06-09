@@ -1,8 +1,8 @@
 import { Component, Injector, OnInit } from '@angular/core';
-import { AbstractSearchComponent } from 'src/app/shared/abstract-search.component';
-import { UnknownAdvantage } from 'src/app/shared/models';
-import { AdvantageService } from 'src/app/shared/services';
-import { AdvantagesSearchParams } from './advantages-search.params';
+import { AbstractSearchComponent } from '../shared/abstract-search.component';
+import { UnknownAdvantage } from '../shared/models';
+import { AdvantagesSearchParams } from '../shared/search-params/advantages-search.params';
+import { AdvantageService } from '../shared/services';
 
 @Component({
   selector: 'app-advantages',
@@ -28,7 +28,7 @@ export class AdvantagesComponent extends AbstractSearchComponent<AdvantagesSearc
     this.advantageService.get().subscribe({
       next: (data) => {
         this.advantages = data;
-        this.types = this.advantageService.getTypes(data);
+        this.types = this.advantageService.getTypes();
         this.filteredAvantages = data;
         this.filteredAvantages.sort(this.advantageService.sort);
 
@@ -40,18 +40,7 @@ export class AdvantagesComponent extends AbstractSearchComponent<AdvantagesSearc
   }
 
   protected search(filters: AdvantagesSearchParams): void {
-    let filteredAvantages = this.advantages;
-
-    if (filters.type) {
-      filteredAvantages = this.advantageService.filterByType(filteredAvantages, filters.type);
-    }
-
-    if (filters.q) {
-      filteredAvantages = this.advantageService.filterByToken(filteredAvantages, filters.q);
-    }
-
-    filteredAvantages.sort(this.advantageService.sort);
-    this.filteredAvantages = filteredAvantages;
+    this.filteredAvantages = this.advantageService.filter(filters).sort(this.advantageService.sort);
   }
 
   searchAdvantages(q: string): void {

@@ -1,6 +1,6 @@
-import { Injector, OnInit } from '@angular/core';
+import { Injector } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SearchParams } from './search.params';
+import { SearchParams } from './search-params/search.params';
 
 export abstract class AbstractSearchComponent<T extends SearchParams> {
   filters: T;

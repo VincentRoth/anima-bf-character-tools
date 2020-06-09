@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { FREE_ACCESS_LEVEL, MagicPath, MagicPathStatus, Spell } from 'src/app/shared/models';
+import { FREE_ACCESS_LEVEL, MagicPath, MagicPathStatus, Spell } from '../models';
 
 @Component({
   selector: 'app-magic-path',

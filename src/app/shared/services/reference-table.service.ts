@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import cloneDeep from 'lodash-es/cloneDeep';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { ReferenceBook, referenceBooks, ReferenceTable, ReferenceTableContainer } from 'src/app/shared/models';
+import { ReferenceBook, referenceBooks, ReferenceTable, ReferenceTableContainer } from '../models';
 import { AbstractQueryOnceService } from './abstract-query-once.service';
 
 @Injectable({

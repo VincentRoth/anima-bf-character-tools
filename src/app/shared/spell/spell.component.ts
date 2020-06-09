@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Spell } from 'src/app/shared/models';
+import { Spell } from '../models';
 
 @Component({
   selector: 'app-spell',

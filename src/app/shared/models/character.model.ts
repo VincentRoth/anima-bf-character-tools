@@ -1,21 +1,14 @@
-import { UnknownAdvantage } from 'src/app/shared/models';
-
-export interface CharacterUnknownAdvantage extends UnknownAdvantage {
+export interface AdvantageReference {
+  id: number;
   creationPoints: number;
-}
-export interface CharacterAdvantage extends CharacterUnknownAdvantage {
-  costs: number[];
-}
-export interface CharacterDisadvantage extends CharacterUnknownAdvantage {
-  benefits: number[];
 }
 
 export interface Character {
   raceName: string;
   className: string;
   creationPoints: number;
-  advantages: CharacterAdvantage[];
-  disadvantages: CharacterDisadvantage[];
+  advantages: AdvantageReference[];
+  disadvantages: AdvantageReference[];
   level: number;
   refTables: string[];
 }

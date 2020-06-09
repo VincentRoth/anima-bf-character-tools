@@ -1,8 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { AppMaterialModule } from 'src/app/app-material.module';
-import { MagicPathStatus } from 'src/app/shared/models';
-import { SpellComponent } from 'src/app/shared/spell/spell.component';
+import { AppMaterialModule } from '../app-material.module';
+import { MagicPathStatus } from '../models';
+import { SpellComponent } from '../spell/spell.component';
 import { MagicPathComponent } from './magic-path.component';
 
 describe('MagicPathComponent', () => {

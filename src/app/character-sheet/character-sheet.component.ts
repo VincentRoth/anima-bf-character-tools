@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { constant } from 'src/app/shared/constant';
-import { Character } from 'src/app/shared/models';
-import { CharacterService, ReferenceTableService } from 'src/app/shared/services';
+import { forkJoin } from 'rxjs';
+import { constant } from '../shared/constant';
+import { Advantage, Character, Disadvantage } from '../shared/models';
+import { AdvantageService, CharacterService, ReferenceTableService } from '../shared/services';
 
 @Component({
   selector: 'app-character-sheet',
@@ -9,11 +10,17 @@ import { CharacterService, ReferenceTableService } from 'src/app/shared/services
   styleUrls: ['./character-sheet.component.scss']
 })
 export class CharacterSheetComponent implements OnInit {
+  advantages: Advantage[];
+  disadvantages: Disadvantage[];
   character: Character;
-  private tables: object;
   nbMaximumDisadvantages: number;
+  tables: object;
 
-  constructor(private characterService: CharacterService, private referenceTableService: ReferenceTableService) {}
+  constructor(
+    private characterService: CharacterService,
+    private referenceTableService: ReferenceTableService,
+    private advantageService: AdvantageService
+  ) {}
 
   ngOnInit(): void {
     this.nbMaximumDisadvantages = constant.maximumDisadvantages;
@@ -24,5 +31,19 @@ export class CharacterSheetComponent implements OnInit {
         next: (table) => (this.tables[reference] = table)
       })
     );
+    forkJoin(this.character.advantages.map((advantageRef) => this.advantageService.getById(advantageRef.id))).subscribe(
+      {
+        next: (advantages: Advantage[]) => {
+          this.advantages = advantages;
+        }
+      }
+    );
+    forkJoin(
+      this.character.disadvantages.map((advantageRef) => this.advantageService.getById(advantageRef.id))
+    ).subscribe({
+      next: (disadvantages: Disadvantage[]) => {
+        this.disadvantages = disadvantages;
+      }
+    });
   }
 }
