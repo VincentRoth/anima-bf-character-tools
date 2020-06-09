@@ -4439,10 +4439,413 @@
       ]
     },
     {
-      "id": 0,
-      "title": "//TODO",
-      "headers": ["", ""],
-      "rows": []
+      "id": 3,
+      "title": "Calligraphie Rituelle",
+      "headers": ["Niveau du sort", "Difficulté"],
+      "rows": [
+        ["Niveau 2-20", 40],
+        ["Niveau 22-30", 80],
+        ["Niveau 32-40", 120],
+        ["Niveau 42-50", 140],
+        ["Niveau 52-60", 180],
+        ["Niveau 62-70", 240],
+        ["Niveau 72-80", 320],
+        ["Niveau 82-90", 440]
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Temps employé à créer les Ofudas",
+      "headers": ["Temps", "Bonus"],
+      "rows": [
+        ["Une minute", -40],
+        ["Cinq minutes", -20],
+        ["Trente minutes", 0],
+        ["Une heure", "+20"],
+        ["Un jour", "+40"],
+        ["Une semaine", "+80"],
+        ["Un mois", "+120"]
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Liens physiques",
+      "headers": ["Lien physique", "Bonus à la RMys"],
+      "rows": [
+        ["Cheveux", "+10"],
+        ["Sang", "+20"],
+        ["Morceau du corps", "+20"],
+        ["Objet personnel", "+10"],
+        ["Objet personnel important", "+20"],
+        ["Portrait", "+10"],
+        ["Parent proche", "+30"],
+        ["Dépouille d'un parent proche", "+10"]
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Difficulté par niveau d'effet mystique",
+      "headers": ["Niveau de l'effet", "Test de Pouvoir"],
+      "rows": [
+        [1, 14],
+        [2, 18],
+        [3, 24],
+        [4, 30],
+        [5, 36]
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Modificateurs de Difficulté mystique",
+      "headers": ["Distance", "Modificateur", "Durée", "Modificateur"],
+      "rows": [
+        ["Contact", "+0", "Immédiat", "+0"],
+        ["Objet", "+1", "5 rounds", "+1"],
+        ["Projection +0", "+1", "1 minute", "+2"],
+        ["Projection +40", "+2", "10 minutes", "+3"],
+        ["Projection +80", "+3", "1 heure", "+4"],
+        ["Projection +120", "+4", "1 jour", "+5"]
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Modificateur par Zéon dépensé",
+      "headers": ["Zéon dépensé", "Bonus au test de Pouvoir"],
+      "rows": [
+        ["0+", -8],
+        ["20+", -4],
+        ["50+", "+0"],
+        ["100+", "+2"],
+        ["150+", "+4"],
+        ["200+", "+6"],
+        ["300+", "+8"],
+        ["400+", "+10"],
+        ["500+", "+12"],
+        ["750+", "+14"],
+        ["1000+", "+16"]
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Résultat du test",
+      "headers": ["Résultat", "Effet"],
+      "rows": [
+        ["3+", "L'effet est réussi sans aucun tort pour le lanceur du sort."],
+        [
+          "1+",
+          "L'effet est réussi, mais le lanceur du sort perd une quantité de points de Fatigue équivalente au niveau de l'effet."
+        ],
+        ["0+", "L'effet est partiellement réussi, mais sa puissance est un peu plus faible que prévu."],
+        [
+          "-1 à -4",
+          "L'effet est raté, le lanceur du sort perd une quantité de points de Fatigue équivalente au niveau de l'effet."
+        ],
+        [
+          "-5 à -8",
+          "L'effet est un échec, il produit des conséquences négatives inattendues proportionnelles au pouvoir naturel du sorcier. De plus, celui-ci perd la moitié de ses points de Zéon restants et applique un malus à toutes les actions de -80, malus qu'il annulera à un rythme de 10 points par heure."
+        ],
+        [
+          "-9 ou inférieur",
+          "L'effet est un échec total. Le sorcier reste inconscient pendant plusieurs jours et perd de façon irrémédiable un nombre de point de Pouvoir équivalent au niveau de l'effet."
+        ]
+      ]
+    },
+    {
+      "id": "I",
+      "title": "Niveaux d'Effet",
+      "headers": ["Niveau", "Effets possibles", "Dégâts", "Aire d'effet", "Bouclier", "RMys", "Carac."],
+      "rows": [
+        [
+          1,
+          "Ce sont des effets faibles et insignifiants qui ont une influence minime sur l'environnement. Il peut s'agir d'allumer une bougie (Élémentaliste), de tirer un objet pesant moins d'un kilo (Transmutateur), de provoquer des fourmillements dans l'épaule d'une personne (Manipulateur), ou de soulager légèrement une douleur chronique (Guérisseur).",
+          20,
+          "Non",
+          40,
+          80,
+          4
+        ],
+        [
+          2,
+          "Ce sont des effets mineurs, comme créer un bouclier magique protecteur (Créateur), altérer par une illusion l'aspect d'une personne (Illusionniste), voir l'aura d'une personne (Animiste) ou faire détaler un groupe d'animaux sauvages (Manipulateur).",
+          50,
+          "5 m",
+          150,
+          100,
+          6
+        ],
+        [
+          3,
+          "Incendier une maison ou faire pleuvoir (Élémentaliste), soigner une maladie naturelle (Guérisseur), lancer une puissante décharge d'énergie surnaturelle (Destructeur) ou provoquer une peur intense chez un groupe de personnes (Manipulateur).",
+          100,
+          "15 m",
+          500,
+          120,
+          9
+        ],
+        [
+          4,
+          "Effets majeurs et très puissants, comme congeler un lac (Élémentaliste), créer une illusion qu'un village est abandonné et inhabité (Illusionniste), créer un portail vers La Veille (Animiste) ou transformer une personne normale en entité monstrueuse (Transmutateur).",
+          150,
+          "50 m",
+          1000,
+          160,
+          12
+        ],
+        [
+          5,
+          "Les effets de niveau 5 sont hors de proportions, ils peuvent tuer d'un mot une personne (Destructeur), causer un raz-de-marée (Élémentaliste), créer une montagne à partir de rien (Créateur) ou faire en sorte qu'une personne, qui vient de mourir et dont l'esprit attend l'Appel, revienne à la vie (Guérisseur).",
+          250,
+          "250 m",
+          2500,
+          180,
+          16
+        ]
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Magie combinée",
+      "headers": ["Composantes", "Bonus à l'Intellignece"],
+      "rows": [
+        [2, "+0"],
+        ["3 à 4", "+1"],
+        ["5 à 6", "+2"],
+        [7, "+3"],
+        ["8 à 11", "+4"],
+        [12, "+5"],
+        ["13 à 20", "+6"],
+        [21, "+7"],
+        ["22 à 100", "+8"],
+        ["101+", "+9"]
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Pandora",
+      "headers": ["Jet", "État"],
+      "rows": [
+        ["1-5", "Récupère 200 PV"],
+        ["6-10", "Fascination"],
+        ["11-15", "+20 à toutes les actions"],
+        ["16-20", "Douleur"],
+        ["21-25", "Dégâts"],
+        ["26-30", "Colère"],
+        ["31-35", "+40 à toutes les résistances"],
+        ["36-40", "Aveuglement"],
+        ["41-45", "Surdité"],
+        ["46-50", "Euphorie"],
+        ["51-55", "Mutisme"],
+        ["56-60", "Inconscience"],
+        ["61-65", "Coma"],
+        ["66-70", "Extase"],
+        ["71-75", "Hallucinations"],
+        ["76-80", "Faiblesse"],
+        ["81-85", "Paralysie complète"],
+        ["86-90", "Peur"],
+        ["91-95", "Terreur"],
+        ["96-99", "+50 à toutes les actions"],
+        [100, "Mort"]
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Modificateurs de temps des incarnations",
+      "headers": ["Temps de\nsynchronisation", "Modificateur à la\n difficulté"],
+      "rows": [
+        ["5 rounds", -50],
+        ["10 rounds", -25],
+        ["Une minute", "+0"],
+        ["Dix minutes", "+40"],
+        ["Trente minutes", "+80"],
+        ["Une heure", "+120"]
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Type de Sheele",
+      "headers": ["Jet", "Sheele"],
+      "rows": [
+        ["1-10", "Lumière"],
+        ["11-20", "Air"],
+        ["21-30", "Nature"],
+        ["31-40", "Terre"],
+        ["41-50", "Feu"],
+        ["51-60", "Illusion"],
+        ["61-70", "Eau"],
+        ["71-80", "Obscurité"],
+        ["81-100", "Au choix du personnage"]
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Renforcement Mystique des Sheeles",
+      "headers": ["Dominer", "Zéon maximum"],
+      "rows": [
+        ["0+", 20],
+        ["50+", 30],
+        ["100+", 40],
+        ["150+", 50],
+        ["200+", 60],
+        ["250+", 70],
+        ["300+", 80],
+        ["350+", 90],
+        ["400+", 100]
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Patron mental Folie",
+      "headers": ["D10", "Modificateur au Talent\npsychique"],
+      "rows": [
+        [1, -40],
+        [2, -30],
+        [3, -20],
+        [4, -10],
+        [5, "+0"],
+        [6, "+10"],
+        [7, "+20"],
+        [8, "+30"],
+        [9, "+40"],
+        [10, "+50"]
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Infection Surnaturelle",
+      "headers": ["Différence de présences", "Effet"],
+      "rows": [
+        ["La somme des présences des objets dépasse 10 fois la présence du personnage.", "Interférence Mystique"],
+        ["La somme des présences des objets dépasse 20 fois la présence du personnage.", "Infection Animique"]
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Mutations possibles",
+      "headers": ["Exposition", "Gnose", "Niveau", "Pouvoirs"],
+      "rows": [
+        ["Exposition mineure", "+5", "+1", "+50"],
+        ["Exposition moyenne", "+10", "+2", "+150"],
+        ["Exposition majeure", "+15", "+3", "+300"]
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Amélioration de la Magie",
+      "headers": ["Bénéfice", "Modificateur à la\ndifficulté"],
+      "rows": [
+        ["AMR +10", "NA"],
+        ["AMR +20", "+1"],
+        ["AMR +30", "+2"],
+        ["AMR +40", "+3"],
+        ["AMR +50", "+4"],
+        [" ", " "],
+        ["AMR doublée", "+5"],
+        ["AMR triplée", "+6"],
+        ["AMR quadruplée", "+7"],
+        ["AMR quintuplée", "+8"],
+        [" ", " "],
+        ["Dépense de la moitié du Zéon", "+2"],
+        ["Aucune dépense de Zéon", "+4"],
+        [" ", " "],
+        ["Niveau maximum +1", "+1"],
+        ["Niveau maximum +2", "+2"],
+        ["Niveau maximum +3", "+3"],
+        ["Niveau maximum +4", "+4"],
+        ["Niveau maximum +5", "+5"],
+        [" ", " "],
+        ["Projection magique +25", "+1"],
+        ["Projection magique +50", "+2"],
+        ["Projection magique +75", "+3"],
+        ["Projection magique +100", "+4"],
+        [" ", " "],
+        ["Haute Magie", "+1"],
+        ["Magie Divine", "+8"]
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Échec en Magie",
+      "headers": ["Échec au test de Pouvoir", "Résultat"],
+      "rows": [
+        ["1 à 3", "Choc surnaturel"],
+        ["4 à 6", "Consomption spirituelle"],
+        ["7+", "Incréation"]
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Amélioration Psychique",
+      "headers": ["Bénéfice", "Modificateur à la\ndifficulté"],
+      "rows": [
+        ["Talent psychique +10", "NA"],
+        ["Talent psychique +20", "+1"],
+        ["Talent psychique +30", "+2"],
+        ["Talent psychique +40", "+3"],
+        ["Talent psychique +50", "+4"],
+        [" ", " "],
+        ["Projection psychique +10", "+1"],
+        ["Projection psychique +25", "+2"],
+        ["Projection psychique +50", "+3"],
+        [" ", " "],
+        ["Pouvoir de niveau 1", "+1"],
+        ["Pouvoir de niveau 2", "+2"],
+        ["Pouvoir de niveau 3", "+3"]
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Échec en Pouvoir Psychique",
+      "headers": ["Échec au test de Pouvoir", "Résultat"],
+      "rows": [
+        ["1 à 4", "Choc psychique"],
+        ["5 à 8", "Consomption spirituelle"],
+        ["9+", "Incréation"]
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Amélioration du Ki",
+      "headers": ["Bénéfice", "Modificateur à la\ndifficulté"],
+      "rows": [
+        ["Accumulations +1", "+1"],
+        ["Accumulations +2", "+2"],
+        ["Accumulations +3", "+4"],
+        [" ", " "],
+        ["Dépense de la moitié du Ki", "+2"],
+        ["Aucune dépense de Ki", "+4"]
+      ]
+    },
+    {
+      "id": 23,
+      "title": "Échec en Ki",
+      "headers": ["Échec au test de Pouvoir", "Résultat"],
+      "rows": [
+        ["1 à 4", "Choc physique"],
+        ["5 à 8", "Consomption spirituelle"],
+        ["9+", "Incréation"]
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Autres modificateurs",
+      "headers": ["Modificateurs", "Modificateur à la\ndifficulté"],
+      "rows": [
+        ["Nœud chaotique ou corrompu", "+1 à +5"],
+        ["Nœud contrôlé", "-1 à -3"],
+        ["Premier lien", "+1"]
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Créer un Sanctum Sanctorum",
+      "headers": ["Niveau du\nSanctuaire", "Présence\nRequise", "Effest\nMineurs Max", "Effest\nMajeurs Max", "Rituel"],
+      "rows": [
+        ["Niveau 1", "40+", 3, 0, "Très Difficile"],
+        ["Niveau 2", "50+", 6, 1, "Absurde"],
+        ["Niveau 3", "60+", 9, 2, "Quasiment Impossible"],
+        ["Niveau 4", "70+", 12, 3, "Impossible"],
+        ["Niveau 5", 85, 15, 4, "Surhumaine"]
+      ]
     }
   ],
   "prometheum-exxet": [
