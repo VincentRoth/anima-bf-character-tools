@@ -21291,22 +21291,1144 @@
     "name": "Musique",
     "forbiddenPaths": ["Destruction", "Feu", "Terre", "Nécromancie"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Cette voie secondaire regroupe tous les pouvoirs en relation avec la musique et les mélodies. Les sorciers qui utilisent ses sorts sont habituellement appelés mages musiciens, car c'est au travers de leurs mélodies qu'ils sont capables de provoquer les effets et les merveilles les plus invraisemblables.",
+    "spells": [
+      {
+        "name": "Tempo",
+        "level": 4,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Contrôlant le rythme du monde, ce sort isole le sorcier des distractions extérieures et lui permet de discerner de manière intuitive tous les sons qui l'entourent. Par conséquent, il obtient un bonus à sa compétence secondaire Observation pour tous les tests en relation avec le son pendant un round.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "+40 en Observation",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 50,
+            "requiredIntelligence": 8,
+            "effect": "+60 en Observation",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 70,
+            "requiredIntelligence": 10,
+            "effect": "+80 en Observation",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 100,
+            "requiredIntelligence": 12,
+            "effect": "+100 en Observation",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Cantabile",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet au personnage de faire résonner sa voix ou une mélodie qu'il interprète dans n'importe quel endroit qu'il a choisi jusqu'à une distance maximale déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 5,
+            "effect": "100 m",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "250 m",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 80,
+            "requiredIntelligence": 10,
+            "effect": "500 m",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 100,
+            "requiredIntelligence": 12,
+            "effect": "1 km",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Plagiat",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet au mage d'avoir la fibre artistique nécessaire pour interpréter tout type de composition musicale, soit en chantant, soit en jouant d'un instrument. Le sorcier devra connaître ou avoir écouté, même de façon incomplète, l'œuvre musicale qu'il souhaite reproduire. Pour ce faire, le personnage à un niveau de compétence de Musique équivalent à celui déterminé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "120 en Musique",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 70,
+            "requiredIntelligence": 8,
+            "effect": "180 en Musique",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 10,
+            "effect": "240 en Musique",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "280 en Musique",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Mezzo Forte",
+        "level": 34,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "En créant une note musicale discordante, le sorcier déchaîne une onde sonique destructive qui abat toute chose solide avec laquelle elle entre en contact. L'attaque se fait sur le Mode Énergie et a une base de dégâts très basse mais, si elle inflige des dégâts, le défenseur doit réussir un test de RPhy contre une difficulté égale à 10 fois la perte de points de vie subie (jusqu'à un maximum de 240) ou subir des dégâts supplémentaires équivalents à la marge d'échec. Par exemple, si ce sort est lancé au Degré Intermédiaire (dégâts de 20) et que l'attaque entraîne la perte de 16 Points de Vie, la personne affectée devra faire son test de RPhy contre 160.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "Base de dégâts 10",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Base de dégâts 20",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "Base de dégâts 30",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "Base de dégâts 40",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Adagio",
+        "level": 44,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort crée une mélodie chargée d'émotions fortes qui atteignent tous ceux qui l'écoutent en moins d'un round. Toutes les personnes touchées doivent réussir un test de RMys ou être complètement submergées par l'émotion choisie par le sorcier pour la symphonie. Si quelqu'un écoute partiellement Adagio ou s'il arrive à couvrir ses oreilles, il obtient un bonus de +40 à son test de Résistance. Adagio est entendu dans une zone autour du sorcier, à l'intérieur de laquelle le lanceur ne peut choisir ses cibles.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "RMys 120 / 20 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 160,
+            "requiredIntelligence": 9,
+            "effect": "RMys 140 / 50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 220,
+            "requiredIntelligence": 11,
+            "effect": "RMys 160 / 100 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 13,
+            "effect": "RMys 180 / 150 m de rayon",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Allegro",
+        "level": 54,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Crée la plus belle mélodie imaginable, qui étourdit et éblouit ceux qui l'écoutent. Tous ceux qui sont autour du sorcier doivent réussir tous les deux rounds une RMys ou subir l'état de Fascination, et être incapables de réaliser des actions actives de leur propre volonté. Les cibles sourdes sont immunisées contre ce sort, et si quelqu'un écoute la musique partiellement ou réussit à se couvrir les oreilles, il obtient un bonus de +40 à son test de Résistance.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "RMys 120 / 10 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 160,
+            "requiredIntelligence": 9,
+            "effect": "RMys 140 / 25 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 220,
+            "requiredIntelligence": 11,
+            "effect": "RMys 160 / 50 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 13,
+            "effect": "RMys 180 / 100 m de rayon",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Presstisimo",
+        "level": 64,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort crée une mélodie frénétique qui augmente la rapidité de réaction de tous ceux qui l'écoutent et qui sont désignés par le lanceur. Les personnes affectées qui sont proches du sorcier obtiennent immédiatement un bonus à leur initiative et augmentent leur rapidité de déplacement.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 8,
+            "effect": "10 m de rayon / +1 au Mouvement / +30 à l'Initiative",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "20 m de rayon / +2 au Mouvement / +30 à l'Initiative",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "30 m de rayon / +2 au Mouvement / +40 à l'Initiative",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 14,
+            "effect": "40 m de rayon / +3 au Mouvement / +50 à l'Initiative",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Fortissimo",
+        "level": 74,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier obtient un contrôle absolu sur n'importe quel son produit clans la zone d'influence déterminée par le Degré du sort. Il peut le modifier, augmenter sa puissance ou le rendre complètement imperceptible. Par exemple, il pourrait réunir de faibles murmures dans l'environnement pour former une agréable mélodie ou déformer les paroles d'une personne. À moins que le son n'ait une présence en tant que tel, ou qu'il soit produit par un être avec une Gnose de 40 ou plus, personne ne peut éviter les effets de ce sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 8,
+            "effect": "10 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "25 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "50 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 14,
+            "effect": "100 m de rayon",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Marziale",
+        "level": 84,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée une puissante mélodie qui renforce l'endurance innée de ceux qui l'écoutent et sont désignés par le lanceur. Les personnes affectées qui se trouvent autour du sorcier obtiennent différents bonus, décrits dans les Degré s du sort. Les bénéfices de ce sort ne se superposent pas, donc un individu qui est dans la zone d'influence de deux Marziale différents n'applique pas deux fois les bonus.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 8,
+            "effect": "10 m de rayon / +2 à l'IP / +20 en RMys",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "25 m de rayon / +3 à l'IP / +20 en RMys et en RPhy",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "50 m de rayon / +4 à l'IP / +20 en RMys, en RPhy et en RPsy / Seuil d'invulnérabilité de 50",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 14,
+            "effect": "100 m de rayon/ +5 à l'IP / +30 en RMys, en RPhy et en RPsy / Seuil d'invulnérabilité de 60",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Anima",
+        "level": 94,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Anima est un sort qui charge une mélodie de pouvoirs surnaturels pour pénétrer automatiquement l'âme de ceux qui l'écoutent. Anima doit être lancé en combinaison avec un autre sort, de type Animique, rendant ce sortilège Automatique et le faisant agir sur tous ceux qui sont à moins de 50 mètres du sorcier et qui écoutent la mélodie plus d'un round. La RMys à dépasser est la même que celle du sort affecté par Anima, mais si quelqu'un perçoit partiellement la mélodie ou s'il arrive à couvrir ses oreilles, il obtient un bonus de +40 à son test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 8,
+            "effect": "Affecte les sorts en Degré Initial",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 450,
+            "requiredIntelligence": 10,
+            "effect": "Affecte les sorts en Degré Intermédiaire",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 12,
+            "effect": "Affecte les sorts en Degré Avancé",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 14,
+            "effect": "Affecte les sorts en Degré Arcane",
+            "maintenance": 20
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Noblesse",
     "forbiddenPaths": ["Création", "Destruction", "Feu", "Nécromancie"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Cette voie secondaire regroupe tous les principes en relation avec l'apparence, la position sociale et la supériorité sur les autres. C'est la magie dont usent la noblesse et les grands seigneurs pour assurer leur domination sur les autres.",
+    "spells": [
+      {
+        "name": "Visage",
+        "level": 4,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Élimine les imperfections externes qui peuvent altérer le visage de la cible du sort, couvrant ces effets d'une douce couche de maquillage surnaturel et appliquant un léger effet curatif qui élimine toute maladie de la peau et en rehausse le teint. Le personnage obtient une apparence de vitalité et de bonne santé.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "Les effets généraux décrits pour le sort",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 50,
+            "requiredIntelligence": 8,
+            "effect": "Comme pour le Degré Initial, mais le personnage augmente d'un point son Apparence (jusqu'à un maximum de 9) ce qui le fait paraître plus jeune de quelques années",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 80,
+            "requiredIntelligence": 10,
+            "effect": "Comme pour le Degré Intermédiaire, mais il augmente de deux points son Apparence (jusqu'à un maximum de 10)",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Avancé, mais il augmente de trois points son Apparence (jusqu'à un maximum de 10)",
+            "maintenance": 10
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Parfum",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet", "Automatique"],
+        "effect": "Ce sort modifie l'odeur corporelle de la cible désignée par le sorcier, la transformant en un arôme d'une fragrance suave et agréable au nez, qui évoque des sensations plaisantes à qui les respire dans une zone déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 5,
+            "effect": "Les effets généraux décrits pour le sort / 20 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "Comme pour le Degré Initial, mais à chaque fois qu'une personne affectée par ce sort doit réussir un test de Style sur lequel peut influer son odeur corporelle, elle augmente automatiquement d'un niveau la difficulté atteinte / 30 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 10,
+            "effect": "Comme pour le Degré Intermédiaire, mais augmente automatiquement de deux niveaux la difficulté atteinte / 40 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Avancé, mais tous ceux qui sentent le parfum pendant plus de 5 rounds doivent réussir un test de RMys contre 100 ou passer automatiquement en état de Fascination, restant étourdis et plus sensibles aux paroles de la cible du sort / 50 m de rayon",
+            "maintenance": 10
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Muse",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Accorde au lanceur l'inspiration nécessaire pour donner une interprétation magistrale de toute forme d'art traditionnel comme jouer d'un instrument, chanter, danser, peindre, écrire, composer... Ce sort accorde au sorcier, soit la valeur indiquée par le Degré du sort dans la compétence secondaire mise à l'épreuve (Musique, Danse ou Art), soit la moitié de cette valeur comme bonus à sa propre compétence. Bien qu'il n'y ait pas de maintien, les effets de ce sort durent le temps suffisant pour finir l'œuvre commencée, tant que cela ne prend pas plus d'un jour.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "120 de compétence",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "180 de compétence",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "240 de compétence",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "280 de compétence",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Garde-Robe",
+        "level": 34,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Transforme temporairement les vêtements de la cible du sort en d'autres d'une qualité exquise, et leur donne la capacité de rester propres et sans le moindre pli à tout moment. Les taches et les éclaboussures rebondissent sur la toile sans causer la moindre imperfection au tissu et tout accroc sera recousu de façon surnaturelle en quelques secondes.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Les effets généraux décrits pour le sort",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Comme pour le Degré Initial, mais pendant qu'il porte les vêtements, le personnage obtient un bonus de +50 à sa compétence secondaire Style",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "Comme pour le Degré Intermédiaire, mais les vêtements varient de forme et de couleur suivant la situation et le besoin du moment, tout en conservant à tout moment un aspect resplendissant et impressionnant",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "Comme pour le Degré Avancé, mais les vêtements accordent un IP de 4 contre tout type d'attaque, et se réparent automatiquement s'ils subissent des dégâts, tant qu'ils ne sont pas d'origine surnaturelle",
+            "maintenance": 10
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Conversation Agréable",
+        "level": 44,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Permet de ressentir les pensées superficielles et les centres d'intérêts les plus courants d'un individu pour pouvoir avoir avec lui une conversation qui lui soit agréable ou distrayante. La personne affectée peut résister en réussissant un test de RMys ou de RPsy. En cas d'échec, le mage obtient un bonus de +200 à tous ses jets de Style et Persuasion dans le but de fasciner la cible et de l'attirer, au cours d'une conversation élémentaire. Pour que le sort fonctionne il faut parler au moins 30 secondes avec une personne qui n'est pas ouvertement hostile. Bien qu'il n'y ait pas de maintien, le bonus est valable tant que la conversation dure.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 14,
+            "effect": "RMys ou RPsy 240",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Grandeur",
+        "level": 54,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort recouvre le sorcier d'une chape de grandeur, lui accordant une puissante autorité qui intimide tous ceux qui sont habitués à obéir aux ordres. Tous ceux qui se trouvent dans une zone de 5 mètres autour de lui devront réussir un jet de RMys ou de RPsy, sous peine de se sentir poussés à lui plaire, le traitant avec le respect et la déférence dus à un supérieur. Un soldat ne posera pas de questions, un aubergiste offrira sa meilleure table et les serviteurs s'agenouilleront à son passage en répondant au moindre de ses désirs. Grandeur n'a aucun effet sur les individus qui ont une attitude hostile marquée contre le lanceur, ceux qui le connaissent ou sont capables de sentir qu'ils sont son égal ou qu'ils lui sont supérieurs, ou bien les êtres qui, simplement, considèrent qu'ils ne pourraient obéir au sorcier sous aucun prétexte. Les personnes affectées peuvent refaire le test uniquement lorsque le lanceur fait une action tellement inappropriée qu'ils remettent en question leur soumission.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 160",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 200",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 14,
+            "effect": "RMys ou RPsy 240",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Conquête des Cœurs",
+        "level": 64,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort altère la perception des personnes en présence du lanceur ou de la cible qu'il a désignée, leur faisant ressentir qu'il est un être d'une beauté et d'une sensualité enivrante. Toute personne sexuellement compatible avec le personnage qui est touchée par ces effets doit réussir un test de RMys ou de RPsy, sous peine d'être automatiquement charmée, montrant un intérêt marqué conforme à sa nature, sa personnalité ou sa façon d'être. De plus, l'individu sur lequel est placé ce sort obtient un bonus de +200 en Persuasion (Séduction) contre toute personne qui aurait échoué au test. Pour être affecté par ce sortilège il faut accorder une véritable attention à l'apparence de l'individu qui en bénéficie.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 11,
+            "effect": "RMys ou RPsy 160",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 13,
+            "effect": "RMys ou RPsy 200",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 240",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Présence Absolue",
+        "level": 74,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sortilège fait que n'importe quel individu dans un rayon déterminé par le Degré du sort autour du sorcier concentre complètement son attention sur lui, devenant incapable de fixer du regard ou de se concentrer sur une autre personne que celui-ci. Toute personne qui tente de faire une activité qui n'est pas centrée sur le sorcier subit automatiquement un malus de -40 à toutes les actions (-120 si l'action est en relation avec les compétences de perception). Pour être affecté par ce sort il faut simplement être à l'intérieur de la zone et échouer à un test de RMys ou de RPsy.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 9,
+            "effect": "RMys ou RPsy 120 / 20 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 160 / 50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 14,
+            "effect": "RMys ou RPsy 200 / 100 m de-rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 16,
+            "effect": "RMys ou RPsy 240 / 150 m de rayon",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Perfection",
+        "level": 84,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "La cible du sort altère son apparence physique, la rendant automatiquement parfaite.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 9,
+            "effect": "La cible obtient une Apparence de 10 et un bonus de +100 à ses compétences Style, Persuasion, Intimidation et Commandement",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Initial, mais ses blessures disparaissent toujours sans laisser de marques ou de cicatrices. Elle augmente de 3 points sa base de Régénération",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 14,
+            "effect": "Comme pour le Degré Intermédiaire, mais le bonus en Style, Persuasion, Intimidation et Commandement passe à +200",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 16,
+            "effect": "Comme pour le Degré Avancé, mais le personnage obtient un bonus de +1 à toutes ses caractéristiques",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Le Roi du Monde",
+        "level": 94,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier utilise la magie pour diviniser ses capacités sociales, se transformant en centre de l'attention et de la vénération de tous ceux qui l'entourent. Toute personne dans un rayon autour de lui déterminé par le Degré du sort doit réussir automatiquement un test de RMys, ou il considérera le sorcier comme son maître et son idéal, le sommet de son admiration. Le sorcier n'aura pas de véritable contrôle sur les personnes affectées, qui continueront à se comporter suivant leur personnalité, mais elles essaieront toutes de satisfaire, d'aider et d'obtenir l'approbation du lanceur comme si elles étaient ses fidèles adeptes.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 10,
+            "effect": "500 m de rayon / RMys 120",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 450,
+            "requiredIntelligence": 13,
+            "effect": "1 km de rayon / RMys 160",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "2 km de rayon / RMys 200",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 17,
+            "effect": "5 km de rayon / RMys 240",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true
+      }
+    ]
   },
   {
     "name": "Paix",
     "forbiddenPaths": ["Obscurité", "Destruction", "Feu", "Illusion", "Nécromancie"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "C'est la voie qui incarne l'harmonie et l'absence de conflits.",
+    "spells": [
+      {
+        "name": "Bouclier Salvateur",
+        "level": 4,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Crée une barrière protectrice qui abrite de tout type d'attaque. Dans le cas d'une utilisation pour protéger plusieurs individus contre une attaque de zone, le sort permet de protéger autant de cibles qu'il est indiqué pour le Degré du sort sans souffrir pour autant de dégâts supplémentaires ni appliquer de malus à la compétence défensive du lanceur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "Le bouclier a 300 Points de Vie / Il peut protéger jusqu'à deux personnes sans aucun malus",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "Le bouclier a 900 Points de Vie / Il peut protéger jusqu'à cinq personnes sans aucun malus",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 160,
+            "requiredIntelligence": 10,
+            "effect": "Le bouclier a 1 500 Points de Vie / Il peut protéger jusqu'à huit personnes sans aucun malus",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 14,
+            "effect": "Le bouclier a 3 000 Points de Vie / Il peut protéger jusqu'à douze personnes sans aucun malus",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Équilibre Intérieur",
+        "level": 14,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Le sorcier ou la cible désignée par celui-ci atteint un niveau de paix intérieure qui l'immunise contre tout effet qui peut déséquilibrer son état d'esprit.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "Le personnage est immunisé contre les états psychologiques négatifs",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "Comme pour le Degré Initial, mais le personnage obtient en outre un +40 à ses résistances contre les effets déséquilibrants",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Intermédiaire, mais le bonus applicable est de +80",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "Le personnage ne peut être affecté par aucun effet qui altère négativement ou de façon déséquilibrante sa conduite",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Défenseur",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Accorde un bonus à la compétence de défense d'un individu qui utilise une manœuvre de Défense totale. Affecte autant de personnes que le détermine le lanceur, tant que la somme de leurs présences ne dépasse pas ce qui est indiqué dans le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "+20 à la compétence de défense / Présence maximale affectable de 60",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "+20 à la compétence de défense / Présence maximale affectable de 100",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "+30 à la compétence de défense / Présence maximale affectable de 150",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "+40 à la compétence de défense / Présence maximale affectable de 250",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Détecter l'Harmonie",
+        "level": 34,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Le sorcier détecte les personnes à l'intérieur du rayon du sort qui ont des sentiments pacifiques et ceux qui en ont des violents, si ils ne dépassent pas la RMys déterminée par le Degré du sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "10 m de rayon / RMys 100",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "25 m de rayon / RMys 120",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "50 m de rayon / RMys 140",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 14,
+            "effect": "100 m de rayon / RMys 160",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Havre de Paix",
+        "level": 44,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort génère une zone capable de faire perdre tout instinct agressif. Quiconque pénètre à l'intérieur doit réussir automatiquement un test de RMys contre la difficulté déterminée par le Degré du sort sous peine de perdre toute attitude violente. Une personne affectée par ce sort ne peut plus retenter le test, sauf si elle ressent quelque chose qui pourrait lui rendre son comportement agressif. Quelqu'un qui a réussi le test n'est plus affecté par les effets de Havre de Paix tant qu'il ne sort pas de sa zone d'influence. La zone reste statique, là où elle a été lancée.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 160,
+            "requiredIntelligence": 8,
+            "effect": "10 m de rayon / RMys 100",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 220,
+            "requiredIntelligence": 10,
+            "effect": "25 m de rayon / RMys 120",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 12,
+            "effect": "50 m de rayon / RMys 140",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 14,
+            "effect": "100 m de rayon / RMys 160",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Signe de Paix",
+        "level": 54,
+        "action": "Passive",
+        "types": ["Automatique"],
+        "effect": "Le sorcier annule une action offensive dirigée contre lui. Pour être affecté il faut être à l'origine d'une attaque dont la cible est le lanceur (y compris s'il y a d'autres individus également visés par l'attaque). Pour éviter ces effets, il faut réussir une RMys contre une difficulté indiquée par le Degré du sort. Une même attaque ne peut être affectée qu'une fois par un sort de Signe de Paix.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 260,
+            "requiredIntelligence": 12,
+            "effect": "RMys 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 340,
+            "requiredIntelligence": 14,
+            "effect": "RMys 240",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Défense Absolue",
+        "level": 64,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Quand le sorcier ne fait aucune action offensive pendant un round, il peut ajouter un bonus à sa Projection magique pour se défendre.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "+20 à la Projection magique en défense",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 9,
+            "effect": "+30 à la Projection magique en défense",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 110,
+            "requiredIntelligence": 12,
+            "effect": "+40 à la Projection magique en défense",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 15,
+            "effect": "+50 à la Projection magique en défense",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Ailes du Salut",
+        "level": 74,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Crée une barrière protectrice qui protège de tout type d'attaque. Le sort permet de protéger tous les individus à l'intérieur du rayon d'action qui est indiqué pour le Degré du sort sans souffrir pour autant de dégâts supplémentaires ni appliquer de malus à la compétence défensive du lanceur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "Le bouclier a 500 Points de Vie / 5 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 11,
+            "effect": "Le bouclier a 1 200 Points de Vie / 15 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 350,
+            "requiredIntelligence": 13,
+            "effect": "Le bouclier a 2 500 Points de Vie / 25 m de rayon",
+            "maintenance": 35
+          },
+          {
+            "level": "Arcane",
+            "zeon": 450,
+            "requiredIntelligence": 15,
+            "effect": "Le bouclier a 5 000 Points de Vie / 50 m de rayon",
+            "maintenance": 45
+          }
+        ]
+      },
+      {
+        "name": "Paix Absolue",
+        "level": 84,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "La cible de ce sort est imprégnée d'une énergie de la paix la plus pure, qui l'empêchera d'amorcer des actes violents de quelque sorte que ce soit. Quiconque échouant à la RMys déterminée par le Degré du sortilège ne peut plus faire d'actions offensives contre personne de façon consciente. Son essence violente disparaissant complètement, il n'est alors plus nécessaire de maintenir le sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 9,
+            "effect": "RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 11,
+            "effect": "RMys 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "RMys 180",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Pax In Terrax",
+        "level": 94,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Lancer ce sort crée une zone de non-violence absolue, dans laquelle il ne peut y avoir aucun conflit ou guerre. Tous les individus qui entrent dans cette zone doivent réussir automatiquement un test de RMys contre la valeur indiquée dans le Degré du sort ou abandonner toute idée de violence ou de confrontation, et être incapables de faire des actions violentes. Une personne qui échoue au test de Résistance ne peut plus le refaire tant qu'elle est dans la zone d'action du sort, alors que celles qui le réussissent doivent le refaire à chaque fois qu'elles tentent de réaliser une action violente et qu'elles sont toujours dans la zone d'influence du sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 350,
+            "requiredIntelligence": 8,
+            "effect": "1 km de rayon / RMys 120",
+            "maintenance": 35
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 600,
+            "requiredIntelligence": 10,
+            "effect": "5 km de rayon / RMys 140",
+            "maintenance": 60
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1000,
+            "requiredIntelligence": 12,
+            "effect": "15 km de rayon / RMys 160",
+            "maintenance": 100
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1600,
+            "requiredIntelligence": 14,
+            "effect": "50 km de rayon / RMys 180",
+            "maintenance": 160
+          }
+        ],
+        "isDailyMaintenance": true
+      }
+    ]
   },
   {
     "name": "Péché",

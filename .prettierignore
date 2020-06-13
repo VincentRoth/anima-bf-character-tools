@@ -4,3 +4,5 @@
 !src/**/*.scss
 !src/**/*.html
 !src/**/*.json
+!utils/**/*.js
+!utils/**/*.json
