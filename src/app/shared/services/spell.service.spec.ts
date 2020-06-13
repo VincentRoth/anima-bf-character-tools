@@ -1,38 +1,35 @@
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-
-import {
-  HttpClientTestingModule,
-  HttpTestingController
-} from '@angular/common/http/testing';
-import { MagicPath, MagicPathStatus } from 'src/app/shared/models';
+import { MagicPath, MagicPathStatus } from '../models';
 import { SpellService } from './spell.service';
 
 describe('SpellService', () => {
-  beforeEach(() =>
+  let service: SpellService;
+  let httpMock: HttpTestingController;
+
+  beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule]
-    })
-  );
+    });
+    service = TestBed.inject(SpellService);
+    httpMock = TestBed.inject(HttpTestingController);
+  });
 
   it('should be created', () => {
-    const service: SpellService = TestBed.get(SpellService);
     expect(service).toBeTruthy();
   });
 
   it('should request only once the spells data', () => {
-    const service: SpellService = TestBed.get(SpellService);
-    const httpMock: HttpTestingController = TestBed.get(HttpTestingController);
-
     // Two consecutive calls should lead to only one HTTP request
     service.get().subscribe({
-      next: magichPaths => {
+      next: (magichPaths) => {
         expect(magichPaths.length).toEqual(1);
         expect(magichPaths[0].name).toEqual('Magic Path');
       }
     });
 
     service.get().subscribe({
-      next: magichPaths => {
+      next: (magichPaths) => {
         expect(magichPaths.length).toEqual(1);
         expect(magichPaths[0].name).toEqual('Magic Path');
       }
@@ -49,6 +46,7 @@ describe('SpellService', () => {
         spells: []
       }
     ] as MagicPath[]);
+
     httpMock.verify();
   });
 });

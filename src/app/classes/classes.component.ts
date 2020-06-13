@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ClassModel } from 'src/app/shared/models';
-import { ClassesService } from 'src/app/shared/services';
+import { ClassModel } from '../shared/models';
+import { ClassesService } from '../shared/services';
 
 @Component({
   selector: 'app-classes',
@@ -12,16 +12,16 @@ export class ClassesComponent implements OnInit {
 
   constructor(private classesService: ClassesService) {}
 
-  ngOnInit() {
-    this.classesService.get().subscribe({
-      next: data => (this.classes = data)
-    });
-  }
-
   getPsychicPointPerLevel(clazz: ClassModel): string {
     if (clazz.psychicPointPerLevel >= 1) {
       return `+ ${clazz.psychicPointPerLevel} par niveau`;
     }
     return `+ 1 tous les ${Math.trunc(1 / clazz.psychicPointPerLevel)} niveaux`;
+  }
+
+  ngOnInit(): void {
+    this.classesService.get().subscribe({
+      next: (data) => (this.classes = data)
+    });
   }
 }

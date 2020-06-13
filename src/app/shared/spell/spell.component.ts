@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Spell } from 'src/app/shared/models';
+import { Spell } from '../models';
 
 @Component({
   selector: 'app-spell',
@@ -7,50 +7,25 @@ import { Spell } from 'src/app/shared/models';
   styleUrls: ['./spell.component.scss']
 })
 export class SpellComponent implements OnInit {
-  @Input() spell: Spell;
-  open: boolean;
-
-  constructor() {}
-
-  ngOnInit() {
-    this.open = false;
+  get forbiddenPaths(): string {
+    return this.spell.forbiddenPaths?.join(', ') || 'Aucune';
   }
 
-  get maintenance() {
-    if (
-      this.spell.castingLevels &&
-      this.spell.castingLevels.some(
-        castingLevel => castingLevel.maintenance > 0
-      )
-    ) {
+  get maintenance(): string {
+    if (this.spell.specialMaintenance) {
+      return this.spell.specialMaintenance;
+    }
+    if (this.spell.castingLevels && this.spell.castingLevels.some((castingLevel) => castingLevel.maintenance > 0)) {
       return this.spell.castingLevels
-        .reduce(
-          (maintenances, castingLevel) =>
-            maintenances.concat(castingLevel.maintenance),
-          []
-        )
+        .reduce((maintenances, castingLevel) => maintenances.concat(castingLevel.maintenance), [])
         .join(' / ');
     }
-    return this.spell.specialMaintenance || 'Non';
+    return 'Non';
   }
+  open: boolean;
+  @Input() spell: Spell;
 
-  get forbiddenPaths() {
-    if (this.spell.forbiddenPaths.length) {
-      return this.spell.forbiddenPaths.join(', ');
-    }
-    return 'Aucune';
-  }
-
-  isFreeAccessSpell(): boolean {
-    return !!this.spell.forbiddenPaths;
-  }
-
-  getTitle(): string {
-    if (this.isFreeAccessSpell()) {
-      return this.spell.name;
-    }
-    return `${this.spell.level}. ${this.spell.name || 'Sort d\'Accès Libre'}`;
-  }
+  constructor() {}
 
   getLevel(): string | number {
     if (this.isFreeAccessSpell()) {
@@ -59,11 +34,27 @@ export class SpellComponent implements OnInit {
     return this.spell.level;
   }
 
+  getTitle(): string {
+    if (this.isFreeAccessSpell()) {
+      return this.spell.name;
+    }
+    const defaultName = "Sort d'Accès Libre";
+    return `${this.spell.level}. ${this.spell.name || defaultName}`;
+  }
+
+  isFreeAccessSpell(): boolean {
+    return !!this.spell.forbiddenPaths;
+  }
+
   isSecondaryPathLevel(): boolean {
     return this.spell.level % 10 === 4;
   }
 
-  toggleOpen() {
+  ngOnInit(): void {
+    this.open = false;
+  }
+
+  toggleOpen(): void {
     this.open = !this.open;
   }
 }

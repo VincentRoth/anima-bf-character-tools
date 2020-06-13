@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Refaire un jet de caractéristique",
     "description": "Le hasard permet à votre personnage de modifier une de ses caractéristiques principales.",
     "effect": "Une fois que vous avez généré toutes les caractéristiques de votre personnage, vous pouvez lancer un dé supplémentaire et utiliser le résultat obtenu à la place d'un des précédents. Si le dé supplémentaire est inférieur à la plus basse des valeurs déjà généré, relancez-le.",
@@ -10,6 +11,7 @@
     "types": ["Avantage Général", "Caractéristique", "Cumulable"]
   },
   {
+    "id": 2,
     "name": "Rajouter un point à une caractéristique",
     "description": "Une des caractéristiques du personnage est supérieure à sa valeur originelle.",
     "effect": "Augmentez d'un point la valeur d'une caractéristique principale de votre personnage.",
@@ -20,6 +22,7 @@
     "types": ["Avantage Général", "Caractéristique", "Cumulable"]
   },
   {
+    "id": 3,
     "name": "Monter une caractéristique à neuf",
     "description": "Change la valeur d'une caractéristique du personnage pour 9.",
     "effect": "La valeur de la caractéristique choisie passe à 9, quelle que soit sa valeur originelle.",
@@ -29,6 +32,7 @@
     "types": ["Avantage Général", "Caractéristique", "Cumulable"]
   },
   {
+    "id": 4,
     "name": "Résistance physique exceptionnelle",
     "description": "La résitance physique du personnage est très élevée. Les dégâts, poisons ou maladies n'ont pas autant d'effet sur lui que chez d'autres personnes normales.",
     "effect": "Ajoute un bonus spécial de +25 à la Résistance physique (RPhy), la Résistance aux maladies (RMal) et la Résistance aux poisons (RPoi). Investir un deuxième Point de Création augmente ce bonus à +50.",
@@ -37,6 +41,7 @@
     "types": ["Avantage Général", "Résistance", "Physique"]
   },
   {
+    "id": 5,
     "name": "Accès à toutes les disciplines psychiques",
     "description": "Le personnage a la possibilité d'accéder à n'importe quel nombre de disciplines psychiques. Il lui faut cependant réaliser ce potentiel en dépensant des PPP.",
     "effect": "Cet avantage autorise à dépenser un PPP pour acquérir une affinité avec n'importe quelle discipline psychique.",
@@ -45,6 +50,7 @@
     "types": ["Avantage Général", "Psychique"]
   },
   {
+    "id": 6,
     "name": "Résistance psychique exceptionnelle",
     "description": "L'esprit du personnage possède des barrières très solides, qui en rendent l'accès très difficile.",
     "effect": "Ajoute un bonus spécial de +25 à la Résistance psychique (RPsy). Investir un deuxième Point de Création augmente ce bonus à +50.",
@@ -53,6 +59,7 @@
     "types": ["Avantage Général", "Résistance", "Psychique"]
   },
   {
+    "id": 7,
     "name": "Accès à une discipline psychique",
     "description": "Le personnage a en lui l'étincelle permettant d'utiliser les pouvoirs d'une discipline psychique. Il lui faut encore réaliser ce potentiel en dépensant des PPP. Cependant, quels que soient ses efforts, il n'aura jamais accès à d'autres disciplines psychiques.",
     "effect": "Cet avantage autorise à dépenser un PPP pour acquérir une affinité avec la discipline psychique choisie, et elle seule.",
@@ -61,6 +68,7 @@
     "types": ["Avantage Général", "Psychique"]
   },
   {
+    "id": 8,
     "name": "Résistance mystique exceptionnelle",
     "description": "Le personnage résiste particulièrement bien aux effets de nature mystique.",
     "effect": "Ajoute un bonus spécial de +25 à la Résistance mystique (RMys). Investir un deuxième Point de Création augmente ce bonus à +50.",
@@ -69,6 +77,7 @@
     "types": ["Avantage Général", "Résistance", "Mystique"]
   },
   {
+    "id": 9,
     "name": "Biens de départ",
     "description": "Le personnage possède une grande fortune matérielle ou sous forme d'équipement.",
     "effect": "Cet avantage accorde une somme d'argent ou d'équipement initial égale à 2000 écus d'or (PO). Les Points de Création supplémentaires augmentent cette somme à 5000 et 10000 écus d'or respectivement.",
@@ -79,6 +88,7 @@
     "types": ["Avantage de passé", "Richesse"]
   },
   {
+    "id": 10,
     "name": "Affinité avec les animaux",
     "description": "Tout personnage possédant cet avantage bénéficie d'un lien spécial avec les animaux, qui lui permet d'obtenir une réaction positive de leur part. Étonnament, il a aussi la capacité de communiquer de façon limitée avec les animaux, comprenant en gros quelles sont leurs intentions ou faisant comprendre les siennes.",
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu. Quoi qu'il en soit, un animal entraîné à l'attaque s'en prendra au personnage malgré cet avantage, mais seulement après un avertissement et en lui laissant la possibilité de fuir. Si un animal attaque un groupe comprenant le personnage, celui-ci sera toujours la dernière personne que l'animal attaquera.",
@@ -87,6 +97,7 @@
     "types": ["Avantage Général", "Interprétation"]
   },
   {
+    "id": 11,
     "name": "Régénération basique avancée et majeure",
     "description": "Les blessures subies par le spersonnage guérissent très facilement. Son corps possède un facteur de guérison très élevé.",
     "effect": "Augmente de deux niveaux la Régénération du personnage. Les Points de Création supplémentaires augmentent la Régénération de quatre et six niveaux, respectivement.",
@@ -95,6 +106,7 @@
     "types": ["Avantage Général", "Physique"]
   },
   {
+    "id": 12,
     "name": "Sens aiguisé",
     "description": "Les sens du personnage sont aussi développés que ceux d'un animal.",
     "effect": "Ajoute un point à la Perception du personnage pour les tests de caractéristique, ainsi qu'un bonus spécial de +50 à ses compétences secondaires de Vigilance et d'Observation.",
@@ -103,6 +115,7 @@
     "types": ["Avantage Général", "Physique", "Perception", "Compétences"]
   },
   {
+    "id": 13,
     "name": "Ambidextrie",
     "description": "Une presonne ambidextre maîtrise parfaitement ses deux mains et peut les utiliser avec la même habilité.",
     "effect": "Un pesonnage ambidextre peut effectuer des manœuvres avec n'importe quelle main de façon équivalente. Au combat, cela permet de réduire à -10 les malus des attaques efectuées evec une arme supplémentaire. En cas de combat avec des armes de jet, cet avantage ne permet pas d'en lancer une de plus (on considère que le personnage utilise déjà ses deux mains pour accoître sa cadence de lancer).",
@@ -111,6 +124,7 @@
     "types": ["Avantage Général", "Combat"]
   },
   {
+    "id": 14,
     "name": "Don mystique",
     "description": "Le personnage peut sentir et manipuler les énergies surnaturelles du flux d'âmes. La magie traverse son esprit et, avec les connaissances appropriées, il pourra lancer des sorts.",
     "effect": "Le personnage a la capacité de voir et d'utiliser la magie. Il ajoute aussi un bonus spécial de +10 à sa RMys, car sa conscience surnaturelle lui permet de mieux résister aux effets mystiques.",
@@ -119,6 +133,7 @@
     "types": ["Avantage Général", "Mystique", "Résistance"]
   },
   {
+    "id": 15,
     "name": "Vision nocturne",
     "description": "Cet avantage permet au personnage de voir dans l'obscurité et de s'adapter très rapidement à tout changement d'intensité lumineuse.",
     "effect": "Permet d'ignorer tous malus provoqué par l'obscurité, tant qu'il ne s'agit pas d'un lieu plongé dans une obscurité magique ou totalement dépourvu de lumière. Dans ce dernier cas, les malus sont réduits de moitié.",
@@ -127,6 +142,7 @@
     "types": ["Avantage Général", "Perception"]
   },
   {
+    "id": 16,
     "name": "Inquiétant",
     "description": "Le personnage a le don de rendre nerveux les gens autour de lui, quand il le désire. Même un individu petit et malingre peut inquitéer les autres s'il possède cet avantage. De cette façon, il pourra désamorcer des situations explosives qui le menacent ou forcer des personnes intimidables à agir selon ses désirs.",
     "effect": "Le personnage peut se montrer inquiétant s'il le désire. Les effets excats de cet avantage doivent être interprés par le Menuer de Jeu.",
@@ -135,6 +151,7 @@
     "types": ["Avantage Général", "Interprétation", "Social"]
   },
   {
+    "id": 17,
     "name": "Apte dans une compétence",
     "description": "Le personnage bénéficie d'une capacité d'apprentissage hors du commun dans une compétence secondaire. Cela lui permet de la développer avec peu d'efforts par rapport aux autres membres de sa classe.",
     "effect": "Cet avantage réduit d'un point le coût de formation d'une compétence secondaire pour chaque Point de Création investi.",
@@ -144,6 +161,7 @@
     "types": ["Avantage Général", "Compétences"]
   },
   {
+    "id": 18,
     "name": "Chance",
     "description": "Le personnage a beaucoup de chance au moment d'agir et il commet rarement de graves erreurs.",
     "effect": "Le personnage est moins sujet aux Maladresses. Il ne provoque une Maladresse que sur un 1 ou un 2. Pour une compétence dont il est maître, seul un 1 provoquera une Maladresse.",
@@ -152,6 +170,7 @@
     "types": ["Avantage Général", "Chance"]
   },
   {
+    "id": 19,
     "name": "Bonne fortune ",
     "description": "Un personnage avec bonne fortune a véritablement beaucoup de chance. Il pourra se sortir de nombreuses situations difficiles en comptant uniquement sur sa bonne étoile.",
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de jeu. En tout cas, le personnage ne subit jamais les effets négatifs d'un piège ou d'une attaque réussie par hasard.",
@@ -160,6 +179,7 @@
     "types": ["Avantage Général", "Interprétation", "Chance"]
   },
   {
+    "id": 20,
     "name": "Apte dans un champ de compétence",
     "description": "Comme précédemment, si ce n'est que le personnage a cette fois une grande capacité d'apprentissage vis-à-vis des coûts de tout un champ de compétence.",
     "effect": "Le coût de formation de toutes les compétences d'un champ secondaire est réduit d'un point. Si la classe du personnage possède une compétence secondaire dans ce champs dont le coût est inférieur au reste, cette valeur diminue aussi.",
@@ -169,6 +189,7 @@
     "types": ["Avantage Général", "Compétences"]
   },
   {
+    "id": 21,
     "name": "Apprentisage inné",
     "description": "Le personnage a un don pour s'améliorer dans une compétence secondaire. Sans se forcer ni même s'entraîner, il se perfectionne peu à peu.",
     "effect": "Accorde l'équivalent d'un bonus de classe de +10 par niveau dans une compétence secondaire. Ce bonus s'ajoute à tout autre bonus automatique dont peut disposer le personnage grâce à sa classe. L'investissement d'un point supplémentaire augmente ce bonus à +20.",
@@ -177,6 +198,7 @@
     "types": ["Avantage Général", "Compétences"]
   },
   {
+    "id": 22,
     "name": "Apprentisage inné dans un champ de compétence",
     "description": "Idem que précédemment, sauf que dans ce cas le personnage améliore toute les compétences d'un champ secondaire.",
     "effect": "Accorde l'équivalent d'un bonus de classe de +5 par niveau à toutes les compétences d'un champ secondaire. Ces bonus s'ajoutent à tous les bonus automatiques dont peut disposer le personnage grâce à sa classe. L'investissement d'un point supplémentaire augmente ce bonus à +10.",
@@ -185,6 +207,7 @@
     "types": ["Avantage Général", "Compétences"]
   },
   {
+    "id": 23,
     "name": "Sommeil léger",
     "description": "Le personnage reste partiellmeent conscient pendant qu'ildort et se réveille au moindre bruit ou mouvement.",
     "effect": "Le personnage n'applique que -20 de malus à sa compétence Vigilance quand il dort.",
@@ -193,6 +216,7 @@
     "types": ["Avantage Général", "Compétences", "Perception"]
   },
   {
+    "id": 24,
     "name": "Charme",
     "description": "Le personnage dégage un tel magnétisme que tout le monde le trouve sympathique. Il provoque une réaction positive chez les gens qu'il ne connait pas et peut obtenir de certains individus qu'ils soient plus compréhensifs à son égards",
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de jeu.",
@@ -201,6 +225,7 @@
     "types": ["Avantage Général", "Interprétation", "Social"]
   },
   {
+    "id": 25,
     "name": "Réflexes rapides",
     "description": "Le personnage a des réflexes exceptionnels qui lui permettent de réagir à toute vitesse face à n'importe quelle situation.",
     "effect": "Accorde un bonus spécial de +25 à l'Initiative. Les Points de Création supplémentaires augmentent respectivement ce bonus à +45 et +60.",
@@ -209,6 +234,7 @@
     "types": ["Avantage Général", "Combat"]
   },
   {
+    "id": 26,
     "name": "Homme à tout faire",
     "description": "Le personnage possède l'exceptionnel don de s'adapter à toutes les situations qu'il rencontre et qui développe des connaissances dans tous les domaines. Quel que soient la rareté ou l'usage inhabituel d'un compétence secondaire qu'il doit utiliser, il dispose d'une base de connaissance ou de talent qui s'avère utile dans cette situation.",
     "effect": "Le personnage a une Base de 0 plutôt que de -30 dans les compétences secondaires pour lesquelles il n'a pas investi de PF. Il bénéfice aussi d'un bonus naturel de +10 dans toutes les compétences secondaires, lequel s'ajoute directement au bonus octroyé par sa caractéristique et compte donc dans la limite de +100.",
@@ -217,6 +243,7 @@
     "types": ["Avantage Général", "Compétences"]
   },
   {
+    "id": 27,
     "name": "Taille inhabituelle",
     "description": "Le personnage a une taille ne correspondant pas à sa Froce et sa Constitution, ce qui permet à une personne dont les caractéristiques feraient un véritable colosse musculeux d'avoir un gabarit normal, ou inversement.",
     "effect": "Le personnage peut augmenter ou diminuer de cinq points maximum sa Taille à la création de personnage.",
@@ -226,6 +253,7 @@
     "types": ["Avantage Général", "Physique"]
   },
   {
+    "id": 28,
     "name": "Sens du danger",
     "description": "Accorde au personnage un sixième sens, qui lui permet de ressentir quand quelque chose de dangeureux s'approche ou le menace. Il ne sera pas capable de détecter l'origine ou la nature de ce danger jusqu'au moment où celui-ci sera sur lui, mais ressentira sa présence à l'avance.",
     "effect": "Le personnage ne peut pas être pris par surprise, sauf en cas d'une différence d'Initiative de 150 en faveur de son adversaire.",
@@ -234,6 +262,7 @@
     "types": ["Avantage Général", "Combat"]
   },
   {
+    "id": 29,
     "name": "Armure naturelle",
     "description": "La peau du personnage est extrêmement résistante et ses muscles extrêmement durs, suffisamment pour qu'il s'avère difficile de les transpercer.",
     "effect": "Accorde un Indice de Protection de 2 contre tous les Modes sauf Énergie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
@@ -242,6 +271,7 @@
     "types": ["Avantage Général", "Combat"]
   },
   {
+    "id": 30,
     "name": "Armure mystique",
     "description": "L'aura du personnage forme un manteau d'énergie mystique autour de lui, qui le protège contre les attaques surnaturelles.",
     "effect": "Accorde un Indice de Protection de 4 contre le Mode Énergie. Bien que cela compte domme une armure, le personnage ne subit pas le malus s'il porte d'autres couches d'armure.",
@@ -250,6 +280,7 @@
     "types": ["Avantage Général", "Combat"]
   },
   {
+    "id": 31,
     "name": "Accès à un pouvoir psychique naturel",
     "description": "Le personnage possède un unique pouvoir psychique dont il sait se servir inconsciemment. En fait, il ne connait pas l'origine de son pouvoir ni ne le contrôle complètement, mais il est capable de l'utiliser dès qu'il le souhaite.",
     "effect": "Le personnage peut utiliser de manière innée un unique pouvoir mental de son choix. En fait, le personnage n'est pas vraiment un psy et il ne peut pas utiliser de PPP pour acquérir de nouveaux pouvoirs ou pour améliorer son pouvoir. Son Talent psychique ne dépend pas de sa Volonté. Il ne requiert de lancer les dés pour le calculer : il atteint un niveau de Difficile. Le pouvoir choisi peut être d'un niveau quelconque mais sa difficulté minimale ne doit dépasser Difficile. Le personnage peut l'utiliser une fois par minute sans problème. Par contre, chaque utilisation supplémentaire au cours de cette période de repos provoque la perte d'un point de Fatigue. Les Points de Création supplémentaires augmentent le Talent psychique naturel à Très Difficile et à Absurde, respectivement.",
@@ -259,6 +290,7 @@
     "types": ["Avantage Général", "Psychique"]
   },
   {
+    "id": 32,
     "name": "Immunité à la douleur et à la fatigue",
     "description": "Le personnage se révèle particulièrement résistant aux effets de la douleur et de la fatigue.",
     "effect": "Les malus que provoquent la douleur et la Fatigue sont réduits de moitié.",
@@ -267,6 +299,7 @@
     "types": ["Avantage Général", "Physique"]
   },
   {
+    "id": 33,
     "name": "Voir le surnaturel",
     "description": "Les yeux du personnage peuvent discerner le tissage du flux des a^mes et percevoir l'énergie des matrices.",
     "effect": "Le personnage voit le surnaturel, autant la magie et les matrices psychiques que les créatures Animiques. Il n'applique pas le malus de cécité dans aucune de ces situation.",
@@ -275,6 +308,7 @@
     "types": ["Avantage Général", "Perception", "Mystique", "Psychique"]
   },
   {
+    "id": 34,
     "name": "Maître martial",
     "description": "Les connaissances martiales du personnage sont bien supérieures à celles de quelqu'un du même niveau. En général, il a suivi un entraînement spécial qui lui a permis d'explorer ses compétences de Ki, mais il est possible qu'il soit tout simplement né avec d'énormes capacités naturelles.",
     "effect": "Ajoute 40 points au Développement intérieur. Les Points de Création supplémentaires augmentent le bonus à 80 et 120 points, respectivement.",
@@ -283,6 +317,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 35,
     "name": "Infatiguable",
     "description": "La résitance du personnage à la fatigue est bien supérieure à ce que sa Constitution permettrait normalement.",
     "effect": "Augmente de 3 points la Fatigue du personnage. Les Points de Créations supplémentaires augmentent le bonus à 6 et 9 respectivement.",
@@ -291,6 +326,7 @@
     "types": ["Avantage Général", "Combat"]
   },
   {
+    "id": 36,
     "name": "Chevronné",
     "description": "Le personnage a déjà connu de nombreuses expériences dans le monde réel, dont il a tiré de grandes leçons",
     "effect": "Le personnage commence avec 50 points d'Expérience. Les Points de Création augmentent les Points d'Expérience initiaux à 100 et 150 respectivement. Cette augmentation permet de monter de niveau de façon habituelle si le personnage atteint la quantité de point d'expérience nécessaire",
@@ -300,6 +336,7 @@
     "types": ["Avantage de passé", "Expérience"]
   },
   {
+    "id": 37,
     "name": "Artefact",
     "description": "Le personnage possède un artefact de grand pouvoir",
     "effect": "Le joueur et le Meneur de Jeu doivent se mettre d'accord sur les capacités de l'artefact. Les points supplémentaires doivent augmenter les pouvoirs de l'objet.",
@@ -309,6 +346,7 @@
     "types": ["Avantage de passé", "Interprétation", "Richesse"]
   },
   {
+    "id": 38,
     "name": "Récupération du Ki",
     "description": "Le personnage récupère son énergie spirituelle à une vitesse supérieure à la normale.",
     "effect": "Le personnage récupère un point de Ki de chaque caractéristique toutes les dix minutes, au lieu d'un point par heure. Les Points de Créations supplémentaires diminuent ce délai à cinq et une minute, respectivement.",
@@ -317,6 +355,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 39,
     "name": "Élan",
     "description": "De façon inconsciente, le personnage a réussi à attirer l'attention d'un Shajad ou d'une Béryl. Cela signigie souvent que les ancêtres du personnage étaient liés à cette puissance et qu'elle conserve une sorte de lien avec tous les membres de cette famille. Il est aussi possible que cette attention soit due à certaines actions que le personnage a réalisées. Quoi qu'il en soit, le personnage profite de ses faveurs. Par contre, à partir du moment où le joueur prend le contrôle de son personnage, la relation dépendra de la façon dont celui-ci se comporte.",
     "effect": "Le personnage a un Élan de 20 vis-à-vis de l'entité de son choix. Les Points de Création supplémentaires augmentent ce niveau à 40 et 50 respectivement.",
@@ -325,6 +364,7 @@
     "types": ["Avantage Général"]
   },
   {
+    "id": 40,
     "name": "Apprentissage",
     "description": "Le personnage a une énorme capacité d'apprentissage, qui lui permet de développer son potentiel et de toujours tirer le meilleur profit de ce qu'il a vu ou fait.",
     "effect": "À la fin de chaque session de jeu, le personnage obtient 3 points d'expérience en plus de ceux accordés par le Meneur de Jeu. Les Points de Création supplémentaires augmentent ce bénéfice à 6 et 9 points, respectivement.",
@@ -333,6 +373,7 @@
     "types": ["Avantage Général", "Expérience"]
   },
   {
+    "id": 41,
     "name": "Récupération de magie rapide",
     "description": "L'essence du personnage agit comme un phare pour la magie. Il peut régénérer son pouvoir à un rythme bien supérieur de celui des autres individus dotés de capacités mystiques.",
     "effect": "Le personnage récupère ses points de Zéon au double de sa vitesse de régénération Zéonique. Les Points de Création supplémentaires augmentent respectivmenet ce rythme au triple et au quadruple.",
@@ -341,6 +382,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 42,
     "name": "Grand potentiel magique",
     "description": "Le personnage peut atteindre avec ses sorts des niveaux de pouvoir bien supérieur à ce qui ne lui permettrait son Intelligence",
     "effect": "Le personnage ajoute 3 points à son Intelligence pour calculer la quantité maximale de points de magie qu'il peut investir dans chacun de ses sorts. Ce bonus ne s'applique à aucune autre compétence, ni pour calculer son niveau de magie.",
@@ -349,6 +391,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 43,
     "name": "Connaissance innée d'une voie",
     "description": "Le personnage est né avec la capacité de réaliser certains sorts de façon naturelle, sans avoir eu besoin de les étudier. Il peut instinctivement tisser la puissance du flux des âmes d'une voie, comme si elle était capable de répondre à ses désirs. Le personnage sait utiliser ces sorts à la perfection, mais il ne comprend pas la théorie qui les sous-tend ni ne pourrait les expliques.",
     "effect": "Cet avantage accord une connaissance innée d'une voie au niveau 40, sans investir aucun point de niveau de magie. Comme il s'agit d'une connaissance innée, le personnage peux continuer à la développer à partir du niveau 40 en dépensant de nouveaux niveaux de magie.",
@@ -358,6 +401,7 @@
     "types": ["Avantage Mystique", "Cumulable"]
   },
   {
+    "id": 44,
     "name": "Magie innée améliorée",
     "description": "Le personnage doté de cette capacité peut exécuter ses sorts innés avec une valeur supérieure à la normale.",
     "effect": "Les sorts innés du personnage bénéficient d'un bonus de +10 en valeur, s'ajoutant à ce qu'indique son AMR. Les Points de Création supplémentaires augmentent respectivement la valeur des sorts innés à +20 et +30.",
@@ -366,6 +410,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 45,
     "name": "Prédilection séphirotique",
     "description": "Idem que précédemment, à l'exception que le personnage ressent une affinité naturelle avec la moitié de l'arbre mystique.",
     "effect": "Le personnage bénéficie d'un bonus spécial de +20 à son AMR et de +20 à sa RMys pour les cinq voies magiques d'un coté de l'arbre. Il applique pour les autres un malus de -20 à son AMR et de -20 à sa RMys.",
@@ -374,6 +419,7 @@
     "types": ["Avantage Mystique", "Résistance"]
   },
   {
+    "id": 46,
     "name": "Sorts renforcés",
     "description": "Les pouvoirs mystiques du personnage sont particulièrement virulents face à une autre compétence surnaturelle.",
     "effect": "Le personnage applique un bonus de +50 à ses jets pour calculer le résultat des chocs de sorts.",
@@ -382,6 +428,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 47,
     "name": "Dispence de geste",
     "description": "Le personnage n'a pas besoin de gestes pour canalyser son énergie magique.",
     "effect": "Il peut donc réaliser tout type d'action physique sans que se réduise sa capacité à contrôler ses pouvoirs. Le personnage ne réduit pas son AMR quand il ne peut faire de gestes.",
@@ -390,6 +437,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 48,
     "name": "Dispense de paroles",
     "description": "Le personnage n'a pas besoin de parler pour contrôler la puissance du flux d'âmes.",
     "effect": "Le personnage peut lancer des sorts en silence sans que ça réduise son AMR.",
@@ -398,6 +446,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 49,
     "name": "Prédilection élémentaire",
     "description": "Le personnage possède une affinité naturelle avec une voie magique, tout en étant plus faible dans une autre. Son essence est fortement liée à cet élément et, par conséquent, l'énergie magique lui vient bien plus vite quand il utilise ces sorts.",
     "effect": "Le personnage bénéficie d'un bonus spécial de +20 à son AMR et de +20 à sa RMys dans la voie magique de son choix. Par contre, quand il utilise des sorts de la voie opposée, il applique un malus de -20 à son AMR et de -20 à sa RMys. Si la voie choisie est la nécromancie, le malue s'applique à toutes les autres voies.",
@@ -406,6 +455,7 @@
     "types": ["Avantage Mystique", "Résistance"]
   },
   {
+    "id": 50,
     "name": "Viseur mental",
     "description": "Les attaques mentales du personnage sont particulièrement précises lorsqu'il consacre son potentiel psychique.",
     "effect": "Chaque PPP libre dépensé pour amélioré la Projection psychique donne un bonus de +20 au lieu de +10.",
@@ -414,6 +464,7 @@
     "types": ["Avantage Psychique"]
   },
   {
+    "id": 51,
     "name": "Concentration intense",
     "description": "La concentration du personnage est si profonde qu'il en tire un plus grand avantage que la normale.",
     "effect": "Le psy double le bonus au Talent psychique que lui rapporte la concentration. Par exemple, s'il se concentre un round, le personnage obtient un bonus de +20 plutôt que +10.",
@@ -422,6 +473,7 @@
     "types": ["Avantage Psychique"]
   },
   {
+    "id": 52,
     "name": "Attache psychique renforcée",
     "description": "Le personnage peut maintenir des pouvoirs plus puissants que ce que permet son Talent pyschique.",
     "effect": "Le personnage peut maintenir ses pouvoirs attachés à un niveau de difficulté au-dessus de ce qu'indique son Talent psychique.",
@@ -430,6 +482,7 @@
     "types": ["Avantage Psychique"]
   },
   {
+    "id": 53,
     "name": "Résistance à la fatigue psychique",
     "description": "L'utilisation des compétences psychiques ne fatigue presque jamais le personnage.",
     "effect": "Si le psy obtient un échec quand il utilise un de ses pouvoirs, il ne perd pas de fatigue même s'il ne lui rest pas de PPP à dépenser. Cet avantage n'a pas d'effet sur les pouvoirs de niveau 3.",
@@ -438,6 +491,7 @@
     "types": ["Avantage Psychique"]
   },
   {
+    "id": 54,
     "name": "Récupération rapide des PPP",
     "description": "Le psy a la capacité de récupérer avec facilité de la tension que provoque l'utilisation potentielle de ses compétences.",
     "effect": "La vitesse de récupération des PPP libres est d'un toutes les dix minutes. Les Points de Création suplémentaires réduisent respectivement ce délai à cinq et une minute.",
@@ -446,6 +500,7 @@
     "types": ["Avantage Psychique"]
   },
   {
+    "id": 55,
     "name": "Préférence psychique",
     "description": "L'une des disciplines psychiques du personnage est potentiellement bien plus haute que les autres.",
     "effect": "Quand il utilise les pouvoirs de la discipline choisie, le personnage atteint le niveau de diffculté au-dessus de celui qu'il a obtenu grâce à son Talent psychique.",
@@ -454,6 +509,7 @@
     "types": ["Avantage Psychique"]
   },
   {
+    "id": 56,
     "name": "Concentration passive",
     "description": "Le personnage peut se concentrer quelle que soit la situation, sans se préoccuper des menaces ou des distractions.",
     "effect": "Le psy peut se concentrer pour renforcer un pouvoir, alors même qu'il réalise des actions actives.",
@@ -462,6 +518,7 @@
     "types": ["Avantage Psychique"]
   },
   {
+    "id": 57,
     "name": "Réduire une caractéristique de deux points",
     "description": "Une des caractéristique du personnage a été moins développée que son potentiel légitime.",
     "effect": "Réduit de deux points une caractéristiques principale.",
@@ -471,20 +528,16 @@
     "types": ["Désavantage Général", "Caractéristique"]
   },
   {
+    "id": 58,
     "name": "Myopie",
     "description": "La vision du personnage est affecté d'un problème qui l'empêche de bien voir. De nombreuses choses lui paraissent floues et il a du mal à lire, ce qui l'obliqe à user de lunettes ou d'un autre instrument pour compenser son défaut.",
     "effect": "Le personnage subit un malus de -50 aux compétences Vigilance et Observation quand il utilise le sens de la vision, et d'un malus de -3 aux jets de Perception basés sur la vision. Ce malus s'applique aussi au tir. Si le personnage porte des lunettes, le malus est réduit à la discrétion du Menueur de Jeu.",
     "benefits": [1],
     "source": "Core p.22",
-    "types": [
-      "Désavantage Général",
-      "Physique",
-      "Perception",
-      "Compétences",
-      "Combat"
-    ]
+    "types": ["Désavantage Général", "Physique", "Perception", "Compétences", "Combat"]
   },
   {
+    "id": 59,
     "name": "Faiblesse physique",
     "description": "Le personnage résiste extrêmement mal aux dégâts physiques. Chaque fois qu'il subit un Critique, il a de fortes chances d'en mourir ou de subir des dégâts irréversibles.",
     "effect": "La RPhy du personnage est réduite de moitié.",
@@ -494,6 +547,7 @@
     "types": ["Désavantage Général", "Physique", "Résistance"]
   },
   {
+    "id": 60,
     "name": "Mauvaise santé",
     "description": "La santé du personnage est terriblement faible et il tombe facilement malade.",
     "effect": "Le Total RMal du personnage est réduite de moitié.",
@@ -502,6 +556,7 @@
     "types": ["Désavantage Général", "Physique", "Résistance"]
   },
   {
+    "id": 61,
     "name": "Vulnérabilité aux poisons",
     "description": "Le corps du personnage n'est pas capable de supporter les poisons, ses défenses biologiques ne sont pas préparées à combattre aucune substance nocive.",
     "effect": "Le Total RPoi du personnage est réduit de moitié.",
@@ -510,6 +565,7 @@
     "types": ["Désavantage Général", "Physique", "Résistance"]
   },
   {
+    "id": 62,
     "name": "Possession facilité",
     "description": "Bien que sa volonté soit forte, le personnage subit très facilement la domination des entités qui ont la capacité d'affecter son esprit ou d'altérer sa personnalité.",
     "effect": "Le personnage subit un malus de -50 aux tests de RPsy ou RMys qu'il effectue contre les tentatives de possession, de domination ou de modification du comportement.",
@@ -518,6 +574,7 @@
     "types": ["Désavantage Général", "Psychique", "Mystique", "Résistance"]
   },
   {
+    "id": 63,
     "name": "Vulnérabilité à la magie",
     "description": "Ce désavantage indique que le personnage est très facilement affecté par les énergies magiques.",
     "effect": "Le Total RMys du personnage est réduit de moitié.",
@@ -526,6 +583,7 @@
     "types": ["Désavantage Général", "Mystique", "Résistance"]
   },
   {
+    "id": 64,
     "name": "Vulnérabilité au froid ou à la chaleur",
     "description": "La chaleur ou le froid, au choix du joueur, affectent fortement le personnage et provoquent chez lui de graves problèmes physiques. Son corps est très sérieusement handicapé chaque fois qu'il entre en contact avec quelque chose de très chaud ou de très froid, ainsi que s'il visite des lieux aux températures extrêmes, comme des volcans ou des zones arctiques.",
     "effect": "Le personnage subit un malus de -80 à toutes ses Résistances contre ces éléments et -30 à toutes ses actions dans les climats extrêmes.",
@@ -534,6 +592,7 @@
     "types": ["Désavantage Général", "Physique", "Résistance"]
   },
   {
+    "id": 65,
     "name": "Membre atrophié",
     "description": "Le personnage a de sérieuses difficultés à contrôler un de ses membres. Ce membre tremble fortement à tout bout de champ ou cesse de répondre au moment où il en à le plus besoin.",
     "effect": "Le personnage subit un malus de -80 à toutes les actions physiques requérant l'utilisation du membre atrophié. Peux causer une réduction d'AMR chez un magicien si le handicap l'empêche de faire les gestes nécessaires.",
@@ -542,6 +601,7 @@
     "types": ["Désavantage Général", "Physique"]
   },
   {
+    "id": 66,
     "name": "Apparence désagréable",
     "description": "Le personnage est terriblement difforme, ce qui rend son apparence extrêment désagréable.",
     "effect": "L'apparence du personnage est de 2.",
@@ -551,6 +611,7 @@
     "types": ["Désavantage Général", "Social"]
   },
   {
+    "id": 67,
     "name": "Guérison lente",
     "description": "Quelle qu'en soit la raison, la capacité de régénération du personnage est terriblement réduite. Il récupère les blessures dont il souffre avec beaucoup de difficulté, même avec des moyens surnaturels.",
     "effect": "Le personnage ne récupère que la moitié des Points de Vie qu'il devrait récupérer normalement, que ce soit par sa régénération normale ou par des moyens surnaturels.",
@@ -559,6 +620,7 @@
     "types": ["Désavantage Général", "Physique"]
   },
   {
+    "id": 68,
     "name": "Grave maladie",
     "description": "Le personnage souffre d'une grave maladie dégénérative qui finira par le tuer. En général, il lui reste à peine plus d'un an à vivre au moment de commencer la partie, mais cette période de temps peut être plus ou moins longue si le Menueur de Jeu le désire, en fonction des limites temporelles de sa campagne. Contrairement à ce que l'on pourrait en penser, un personnage avec ce désavantage est parfaitement jouable, mais il peut aussi avoir comme objectif de trouver un remède à sa maladie.",
     "effect": "Le personnage applique un bonus cumulatif de -10 à toutes ses actions pour chaque mois qui passe. Le Meneur de Jeu détermine en secret une date à laquelle le personnage mourra.",
@@ -567,6 +629,7 @@
     "types": ["Désavantage Général", "Physique", "Interprétation"]
   },
   {
+    "id": 69,
     "name": "Grave allergie",
     "description": "Le personnage a une allergie quelconque, si grave que par simple contact ou inhalation il subit une terrible réaction allergique qui dure plusieurs heures. Il peut être allergique au métal, au pollen, ou même à la lumière solaire, par exemple.",
     "effect": "Les malus à chaque action en cas de contact avec la substance allergique varient entre -40 et -80, suivant la gravité de l'allergie ou du temps passé au contact de la substance.",
@@ -575,6 +638,7 @@
     "types": ["Désavantage Général", "Physique"]
   },
   {
+    "id": 70,
     "name": "Sommeil profond",
     "description": "Ce désavantage est terrifiant pour une personne dont la vie peut être menacée même quand elle dort. Le personnage à un sommeil très profond et il lui est difficile de se réveiller. Il supporte sans se réveiller un contact physique léger ; quand il finit par se réveiller, il reste étourdi pendant plusieurs minutes",
     "effect": "Le personnage subit un malus de -200 à tout jeu de Perception quand il dort. Durant les dix rounds suivant son réveil, il subit un malus de -40 à toutes ses actions.",
@@ -583,6 +647,7 @@
     "types": ["Désavantage Général", "Physique", "Perception"]
   },
   {
+    "id": 71,
     "name": "Phobie sévère",
     "description": "Le personnage ressent une peur terrible envers quelque chose, qui l'oblige à se comporter de manière irrationelle en sa présence. Voici qulques bons exemples de phobie : l'hydrophobie (la peur de l'eau), l'hémophobie (la peur du sang), la claustrophobie (la peur des espaces clos). Naturellement, le Meneur de Jeu ne devrait pas accepter la peur d'un élément trop précis ; il décide de son impact exact.",
     "effect": "Le personnage subit les malus de l'état de peur chaque fois qu'il se retrouve en présence de l'objet de sa phobie.",
@@ -591,6 +656,7 @@
     "types": ["Désavantage Général", "Interprétation"]
   },
   {
+    "id": 72,
     "name": "Malchance",
     "description": "Le personnage fait preuve de malchance au moment de réaliser des actions et il échoue habituellement de manière catastrophique, bien plus souvent qu'il ne le voudrait.",
     "effect": "Le résultat provoquant une Maladresse augmente de 2. Avec les compétences normales, le personnage échoue sur un 5 ou moins, un 4 s'il est maître.",
@@ -599,6 +665,7 @@
     "types": ["Désavantage Général", "Chance"]
   },
   {
+    "id": 73,
     "name": "Infortuné",
     "description": "Le malheur accompagne partout le personnage. Où qu'il soit, il se passe toujours des choses terribles, quels que soient ses efforts pour l'éviter.",
     "effect": "Les effets exacts de ce désavantages doivent être interprétés par le Meneur de Jeu. Dans un groupe, un personnage infortuné est toujours celui qui déclenche un piège et le premier que l'on attaque quand le hasard détermine la cible d'attaque.",
@@ -607,6 +674,7 @@
     "types": ["Désavantage Général", "Interprétation", "Chance"]
   },
   {
+    "id": 74,
     "name": "Muet",
     "description": "Quelle qu'en soit la raison, le personnage est privé de la capacité physique de parler.",
     "effect": "Le personnage ne peut pas parler.",
@@ -615,6 +683,7 @@
     "types": ["Désavantage Général", "Physique"]
   },
   {
+    "id": 75,
     "name": "Aveugle",
     "description": "Quelle qu'en soit la raison, le personnage est privé du sens de la vision ou est complètement aveugle (ce qui revient au même)",
     "effect": "Le personnage ne peut utiliser aucune compétence qui nécessite d'y voir. Il subit à tout moment le malus de cécité.",
@@ -623,6 +692,7 @@
     "types": ["Désavantage Général", "Physique", "Perception"]
   },
   {
+    "id": 76,
     "name": "Sourd",
     "description": "Comme son nom l'indique, le personnage est totalement sourd, c'est-à-dire, dépourvu du sens de l'audition.",
     "effect": "Le personnage ne peut utiliser aucune compétence qui requiert le sens de l'ouïe.",
@@ -631,6 +701,7 @@
     "types": ["Désavantage Général", "Physique", "Perception"]
   },
   {
+    "id": 77,
     "name": "Arme exclusive",
     "description": "Ce désavantage indique que le personnage a l'habitude de combattre exclusivement avec une arme précise et que sa capacité à utiliser tout autre arme, même d'une catégorie identique, est bien plus faible",
     "effect": "Le personnage subit un malus de -30 s'il combat avec une arme différente de la sienne.",
@@ -641,6 +712,7 @@
     "types": ["Désavantage Général", "Combat"]
   },
   {
+    "id": 78,
     "name": "Réaction lente",
     "description": "Les réflexes du personnage sont peu préparés à répondre avec rapidité aux événements.",
     "effect": "Le personnage subit un malus spécial de -30 à son Initiative. Le point de désavantge supplémentaire augmente ce malus à -50.",
@@ -649,6 +721,7 @@
     "types": ["Désavantage Général", "Combat"]
   },
   {
+    "id": 79,
     "name": "Addiction ou vice grave",
     "description": "Ce désavantage indique que le personnage ressent le besoin impérieux de réaliser un acte précis ou de consommer une substance spéciale de façon quotidienne. Un personnage avec ce désavantage fait tout le nécessaire pour satisfaire son besoin, car dans le cas contraire il commence à se sentir nerveux et à faire une crise.",
     "effect": "Le personnage subit un malus cumulatif de -10 par jour passé sans satisfaire son vice.",
@@ -657,6 +730,7 @@
     "types": ["Désavantage Général", "Interprétation"]
   },
   {
+    "id": 80,
     "name": "Apprentissage lent",
     "description": "La capacité d'apprentissage du personnage est bien plus limité que celle d'un individu normal. Cela ne veut pas dire qu'il est moins intelligent que les autres, mais qu'il apprend pas autant de ses erreurs ni ne tire vraiment profit de ses réussites.",
     "effect": "Le personnage subit un malus de 4 points d'expérience à la fin de chaque session de jeu. Le point de désavantage supplémentaire augmente ce malus à 8.",
@@ -665,6 +739,7 @@
     "types": ["Désavantage Général", "Expérience"]
   },
   {
+    "id": 81,
     "name": "Vulnérabilité à la douleur",
     "description": "Le personnage n'a pas la capacité de résister à la douleur physique, qui le paralyse et le gène fortement.",
     "effect": "Double tous les malus provoqués par la souffrance, qu'il soient provoqués par des Critiques ou des effets surnaturels",
@@ -673,6 +748,7 @@
     "types": ["Désavantage Général", "Physique"]
   },
   {
+    "id": 82,
     "name": "Épuisement",
     "description": "Le personnage se révèle très vulnérable aux effets de Fatigue. Non seulement il se fatigue plus que les autres, mais il subit aussi plus durement les effets de la fatigue.",
     "effect": "Double le malus aux actions provoqués par la fatigue et diminue d'un point la Base de Fatigue du personnage.",
@@ -681,6 +757,7 @@
     "types": ["Désavantage Général"]
   },
   {
+    "id": 83,
     "name": "Obligations de paroles",
     "description": "Les paroles mystiques sont un élément fondmental de la magie du personnage. Il ne peut réaliser des sorts que s'il est capacble de prononcer des paroles mystiques.",
     "effect": "Le personnage doit être capable de parler pour accumuler la magie et lancer des sorts.",
@@ -689,6 +766,7 @@
     "types": ["Désavantage Mystique"]
   },
   {
+    "id": 84,
     "name": "Obligation de gestes",
     "description": "Le personnage ne peut se passer de gestes pour tisser la magie. S'il ne dispose pas d'une liberté totale de mouvement, il s'avère incapable d'user de ses pouvoirs et, par conséquent, ne peut lancer aucun sort.",
     "effect": "Le personnage doit bouger librement pour accumuler la magie et lancer ses sorts.",
@@ -697,6 +775,7 @@
     "types": ["Désavantage Mystique"]
   },
   {
+    "id": 85,
     "name": "Exténuation magique",
     "description": "La tension de la magie provoque une intense fatigue chez le personnage chaque fois qu'il manipule les énergies mystiques. Les sorciers s'épuisent s'ils réalisent des sorts de puissance élevée, ce qui peut les mener à l'évanouissement s'ils forcent trop sur leurs capacités.",
     "effect": "Le personnage perd un point de fatigue au moment où il lance un sort de valeur supérieur à 100, deux points si la valeur est supérieure à 200 et trois si elle dépasse 300.",
@@ -705,6 +784,7 @@
     "types": ["Désavantage Mystique"]
   },
   {
+    "id": 86,
     "name": "Magie soumise à condition",
     "description": "Le contrôle du personnage sur les pouvoirs du flux d'âmes s'avère capriceux ; il ne répond que quand le personnage réalise une action précise. Si, par exemple, sa magie était liée à la danse, ses sorts ne fonctionneraient que quand il danse ; si elle étaient liée au combat, ses sort ne fonctionnerait que pendant qu'il combat. Il est aussi possible que les pouvoirs magiques fonctionnent unqiuement dans des situations ou conditions déterminées, commen pendant la journée ou quand les pieds sont au sol.",
     "effect": "Le personnage ne peut user de magie que s'il réalise l'action ou remplit la condition déterminée pour ce désavantage. Dans le cas d'uneaction liée à une compétence secondaire, le sorcier devra réussir un test Difficile pour pouvoir lancer ses sorts.",
@@ -713,6 +793,7 @@
     "types": ["Désavantage Mystique"]
   },
   {
+    "id": 87,
     "name": "Récupération lente de la magie",
     "description": "La magie connaît quelques problèmes à filtrer à travers l'essence du personnage, ce qui lui pose quelques problèmes pour récupérer le pouvoir qu'il a utilisé.",
     "effect": "La régénération Zéonique du personnage est réduite de moitié.",
@@ -721,6 +802,7 @@
     "types": ["Désavantage Mystique"]
   },
   {
+    "id": 88,
     "name": "Magie étanche",
     "description": "La magie ne filtre pas naturellement à travers le corps et l'âme du personnage. Certains blocages l'empêchent de canaliser les pouvoir ambiants et même son âme ne régénère pas la magie. Quand il utilise son pouvoir, le personnage ne le récupère jamais de lui-même. La seule méthode à sa disposition consiste à s'alimenter des énergie msytiques d'autres êtres magiques ou d'objets.",
     "effect": "Le personnage n'a aucune régénération Zéonique, ce qui l'empêche de récupérer naturellement les points de Zéon qu'il dépense. Il ne pourra récupérer de la magie qu'en la drainant d'objets qui le permetent ou d'êtres vivant possédant le Don mystique.",
@@ -730,6 +812,7 @@
     "types": ["Désavantage Mystique"]
   },
   {
+    "id": 89,
     "name": "Lien existentiel",
     "description": "Les pouvoirs du sorcier sont liés aux même racines que les voies de magie, et donc sa capacité à développer ou à créer ses propres sorts est pratiquement nulle. Le personnage ne connaît que ses voies, à partir desquelles il ne pourra pas développer ses propres sortilèges.",
     "effect": "Le sorcier ne peut pas choisir de sort d'Accès libre dans ses voies de magie et il se révèle incapable de choisir librement des sorts.",
@@ -738,6 +821,7 @@
     "types": ["Désavantage Mystique"]
   },
   {
+    "id": 90,
     "name": "Sorcellerie",
     "description": "La magie pratiquée par le personnage à une saveur tribale et chamanique, dont lesprincipes constituent la base de son énergie. Ses pouvoirs surnaturels sont fortement liés au monde matériel, et il a donc l'obligation d'utiliser certains composants pour canaliser et effectuer des sorts.",
     "effect": "Le personnage doit obligatoirement utiliser des composantes matérielles pour lancer ses sorts. Chaque sortilège requiert un composant précis déterminé par le Meneur de Jeu, en fonction de l'origine et des connaissances du personnage.",
@@ -746,6 +830,7 @@
     "types": ["Désavantage Mystique", "Interprétation"]
   },
   {
+    "id": 91,
     "name": "Sans concentration",
     "description": "Les pouvoirs du personnage ne dépendent absolument pas de sa capacité de concentration, il s'avèrent bien trop inconstants pour qu'il puisse les préparer afin d'améliorer leur puissance.",
     "effect": "Un psy avec ce désavantage ne peut appliquer de bonus à son Talent psychique quand il se concentre.",
@@ -754,6 +839,7 @@
     "types": ["Désavantage Psychique"]
   },
   {
+    "id": 92,
     "name": "Pouvoir unique",
     "description": "Les aptitudes psychiques du personnage ne lui permettent pas d'utiliser plusieurs pouvoirs en même temps. Quand le personnage en emploie un, il se concentre tellement qu'il perd la capacité d'en projeter d'autres, à l'exception de ceux qu'il maintient de façon innée.",
     "effect": "Le psy ne peut utiliser qu'un seul pouvoir psychique par round. Cela ne l'empêche pas d'en maintenir d'autres, tant qu'ils ont été lancés au cours de rounds précédents.",
@@ -762,6 +848,7 @@
     "types": ["Désavantage Psychique"]
   },
   {
+    "id": 93,
     "name": "Exténuation psychique",
     "description": "L'utilisation des pouvoirs psychiques du personnage provoque chez lui de grave répercutions physiques, qui le laissentextrêment fatigué, même quand il n'emploie que des compétences psychiques de bas niveau.",
     "effect": "Le personnage perd le double des points de Fatigue indiqués par sa fatigue psychique.",
@@ -770,6 +857,7 @@
     "types": ["Désavantage Psychique"]
   },
   {
+    "id": 94,
     "name": "Consommation psychique",
     "description": "Quand les pouvoirs psy ne fonctionnent pas, le contrecoup provoque une grave répercussion sur son corps et inflige des dégâts internes.",
     "effect": "Si un psy subit un échec psychique, il perd automatiquement autant de Points de Vie que sa marge d'échec par rapport au talent minimum requis.",
@@ -778,6 +866,7 @@
     "types": ["Désavantage Psychique"]
   },
   {
+    "id": 95,
     "name": "Adroit",
     "description": "Représente le fait que le personnage a toujours été doué d'une certaine adresse manuelle, très supérieure à ce que sa Dextérité naturelle lui permet.",
     "effect": "Le personnage ajoute un bonus spécial de +30 à son Habileté manuelle et peut appliquer un bonus de +3 aux tests opposés de Dextérité.",
@@ -786,6 +875,7 @@
     "types": ["Avantage Général", "Compétences"]
   },
   {
+    "id": 96,
     "name": "Bonus naturel accru",
     "description": "L'amélioration naturelle du personnage en fonction de ses caractéristiques est bien supérieure à celle de la majorité des individus.",
     "effect": "Le personnage obtient une seconde fois son bonus naturel, c'est pourquoi à chaque fois qu'il gagne un niveau, il peut ajouter une fois de plus le modificateur de l'une de ses caractéristiques physiques et celui de l'une de ses caractéristiques spirituelles à n'importe lesquelles de ses compétences secondaires qui en dépendent. Chaque modificateur obtenu grâce à cet avantage peut s'appliquer à une compétence différente.",
@@ -794,6 +884,7 @@
     "types": ["Avantage Général", "Compétences"]
   },
   {
+    "id": 97,
     "name": "Énergie du désespoir",
     "description": "Quand il est au bord de la mort, le personnage sombre dans un état de désespoir qui le pousse à donner le meilleur de lui-même et à se dépasser, ce qui lui permet de réaliser des actions qui dépassent de loin son potentiel habituel.",
     "effect": "Quand les Points de Vie du personnage descendent au-dessous du quart de leur total, il reçoit un bonus de +20 à toutes ses actions. Ce modificateur s'applique seulement dans les situations où le personnage met sa vie, ou celle des autres, en danger.",
@@ -802,6 +893,7 @@
     "types": ["Avantage Général", "Interprétation"]
   },
   {
+    "id": 98,
     "name": "Grande vitalité",
     "description": "Quelle que soit sa valeur de Constitution, le personnage possède une vitalité bien supérieure qui le rend particulièrement résistant aux coups reçus.",
     "effect": "Donne un bonus automatique de +10 Points de Vie par niveau qui s'ajoute à celui que le personnage gagne naturellement de par sa classe. De cette manière un guerrier qui choisirait cet avantage obtiendrait 25 PV par niveau (15 pour sa classe plus les 10 de Grande vitalité). Investir des points supplémentaires augmente le bonus de +20 ou +30 Points de Vie. Au cas où vous appliqueriez les règles optionnelles d'\"Entre la vie et la mort\" de ce supplément, cet avantage offre également au personnage un bonus spécial de +10 lorsqu'il effectue ses tests de Résistance (+20 et +30 si on utilise des points supplémentaires).",
@@ -810,6 +902,7 @@
     "types": ["Avantage Général", "Physique"]
   },
   {
+    "id": 99,
     "name": "Immunité psychique",
     "description": "Un individu ayant cet avantage est exceptionnellement résistant aux effest émotionnels, c'est pourquoi il n'est généralement pas influencé par les peurs et les désirs normaux.",
     "effect": "Le personnage obtient un bonus de +60 à tout test d'Impassibilité réalisé dans le but de calmer ses états émotionnels.",
@@ -819,6 +912,7 @@
     "types": ["Avantage Général", "Compétences"]
   },
   {
+    "id": 100,
     "name": "Immunité surnaturelle",
     "description": "L'essence du personnage est par nature anathème pour la magie ; il ignore donc de nombreux sortilèges et effets surnaturels. D'une certaine façon, c'est comme si tout ce qui était mystique l'évitait totalement. En fonction du niveau de cet avantage, il est capable d'ignorer des pouvoirs de plus en plus forts.",
     "effect": "Un personnage ayant cet avantage ignore, de façon automatique, tout sortilège de valeur zéonique inférieure ou égale à 60 lancé contre lui. De la même manière, il résiste directement à tout effet mystique qui provoquerait un test contre une RMys ne dépassant 80. Tenez compte du fait que cela lui permet seulement d'éviter les effets directs de la magie et non ceux qui en dérivent. Par exemple, si une Décharge de Lumière fait s'écrouler le toit sur lui, il sera toujours enseveli normalement. Les points supplémentaires invetis augmentent l'immunité à 90 et à 120 en ce qui concerne la valeur zéonique des sortilèges, et à 100 et 120 pour la difficulté des tests de RMys auxquels il résiste.",
@@ -828,6 +922,7 @@
     "types": ["Avantage Général", "Mystique", "Résistance"]
   },
   {
+    "id": 101,
     "name": "Libre arbitre",
     "description": "Le personnage possède une volonté inébranlable lorsqu'il s'agit d'effets liés à la possession et à la domination. Quelle que soit la difficulté de la situation, il tend à se rebeller contre les influences externes et se laisse porter uniquement par ses propres ordres.",
     "effect": "Donne un bonus spécial de +60 à tout test de Résistance en rapport avec la possession ou la domination.",
@@ -836,6 +931,7 @@
     "types": ["Avantage Général", "Psychique", "Mystique", "Résistance"]
   },
   {
+    "id": 102,
     "name": "Utilisation d'armure",
     "description": "Le personnage possède une très grande facilité naturelle pour apprendre à porter des armures, indépendamment de sa classe.",
     "effect": "Donne un bonus automatique de +5 par niveau à la compétence principale martiale Port d'armure, qui s'ajoute à tout autre que le personnage pourrait avoir de par sa classe. Les points supplémentaires investis augmentent ce bonus à +10 et +15, respectivement.",
@@ -844,6 +940,7 @@
     "types": ["Avantage Général", "Combat"]
   },
   {
+    "id": 103,
     "name": "Polyvalent",
     "description": "Le personnage possède une incroyable faculté d'adaptation aux chagements et sait facilement orienter son existence d'une manière différente. Grâce à cela, il a moins de problèmes pour effectuer un changement de classe.",
     "effect": "Le personnage réduit de moitié le coût en PF pour changer de classe et il n'a pas besoin d'attendre deux niveaux pour le faire, du moment que le passage du temps et la justification de l'apprentissage soient suffisants selon le Meneur. Par conséquent, il ne doit investir que 10 PF pour passer à une classe proche, 20 PF pour une classe mixte et 30 PF pour une classe appartenant à un archétype différent.",
@@ -852,6 +949,7 @@
     "types": ["Avantage Général"]
   },
   {
+    "id": 104,
     "name": "Sans limite de familier",
     "description": "L'essence du personnage est partagé avec toutes les créatures qu'il appelle à son service, ce qui lui permet d'établir un lien de familier avec n'importe laquelle d'entre elles au lieu de se limiter à une seule entité. D'une certaine manière, il fait un avec tous les êtres qui l'accompagnent, transformant ces derniers en une partie indispensable de son être.",
     "effect": "Le personnage cesse d'être limité à la possession d'un seul familier, pouvant ainsi créer un lien d'union avec autant de créatures qu'il le souhaite.",
@@ -860,6 +958,7 @@
     "types": ["Avantage Général", "Mystique", "Convocation"]
   },
   {
+    "id": 105,
     "name": "Survivant",
     "description": "Quelle que soit la gravité de son état, quiconque ayant cet avantage possède une capacité spéciale pour survivre quand il se trouve à la limite de la mort.",
     "effect": "Le personnage supporte dix fois sa valeur de Constitution en Points de Vie négatifs, au lieu de cinq fois seulement. De plus, il applique un bonus de +40 à ses tests de RPhy pour réussir à se stabiliser. Une fois sorti de la limite ténu entre la vie et la mort, le malus appliqué est de seulement -30 à toute action au lieu de -60. Si vous utilisez les règles optionnelles d'\"Entre la vie et la mort\" de ce supplément, appliquez le +40 aux tests de RPhy pour résister.",
@@ -868,6 +967,7 @@
     "types": ["Avantage Général", "Physique", "Résistance"]
   },
   {
+    "id": 106,
     "name": "Sens du Combat",
     "description": "Quelle que soit la classe à laquelle il appartient, le personnage est doté d'une capacité spécialle pour la lutte, ce qui augmente l'une de ses compétences de combat physique.",
     "effect": "Le personnage obtient un bonus automatique de +5 par niveau à l'une de ses trois compétences martiales primordiale : Attaque, Parade ou Esquive. Ce bonus s'ajoute à n'importe quel autre qu'il pourrait posséder grâce à sa classe.",
@@ -878,6 +978,7 @@
     "types": ["Avantage Général"]
   },
   {
+    "id": 107,
     "name": "Touché par le destin",
     "description": "Il y a quelque chose de spécial dans le personnage qui lui donne une certaine capacité à influencer sur certaines de ses actions, un soupçon de chance ou de génie qui lui permet de profiter de la chance dans les moments les plus importants.",
     "effect": "Une fois par partie, le joueur a le droit de recommencer un de ses jets et de choisir le nouveau résultat au lieu du précédent. Cette capacité s'applique à toute sorte de jet, des test de compétences à ceux de Résistances.",
@@ -887,6 +988,7 @@
     "types": ["Avantage Général", "Cumulable", "Chance"]
   },
   {
+    "id": 108,
     "name": "Séducteur",
     "description": "Quelqu'un possédant cet avantage dégage un magnétisme particulier envers les membres du sexes opposé, qui éprouvent habituellement une certaine attirance envers lui lorsqu'il parle ou s'exprime en leur présence.",
     "effect": "Le personnage est doté d'une facilité pour traiter avec des individus du sexe opposé. On applique un bonus de +60 à ses tests de Persuasion dans tous les domains liés à la séduction.",
@@ -896,6 +998,7 @@
     "types": ["Avantage Général", "Compétences", "Social"]
   },
   {
+    "id": 109,
     "name": "Diction magique",
     "description": "Le sorcier a un don spécial pour interpréter et lancer des sortilèges à partir de livres et de grimoire, en sentant les mots à travers ses mains et en les utilisant de manière instinctive.",
     "effect": "Le personnage ne réduit pas son AMR lorsqu'il lance des sorts inscrits dans des grimoires, des parchemins ou des livres, et utilise donc toujours son potentiel au maximum même s'il n'est alors pas capable de faire des gestes.",
@@ -904,6 +1007,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 110,
     "name": "Magie opposée",
     "description": "Contrairement à d'autres sorciers, la nature mystique du personnage s'appuie sur des pouvoirs opposés et antagonistes. Il peut donc lancer des sorts de voies opposées le plus naturellement du monde.",
     "effect": "Le personnage ne double pas le coût en niveaux de magie des voies opposés à celles qu'il connaît déjà. Par exemple, il pourrait parfaitement apprendre les voies de Lumière et d'Obscurité sans qu'aucune d'entre elles ne double les points à investir.",
@@ -912,6 +1016,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 111,
     "name": "Nature magique",
     "description": "L'essence du sorcier regorge d'une quantité de magie pure hors du commun, ce qui augmente de manière surnaturelle ses réserves innées d'énergie.",
     "effect": "Le personnage obtient un bonus automatique de +50 points de Zéon par niveau, qui s'ajoute à tout bonus qu'il possèderait déjà grâce à sa classe. Inverstir des points supplémentaires augmente la valeur du bonus à +100 et +150 points de Zéon par niveau.",
@@ -920,6 +1025,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 112,
     "name": "Pouvoir naturel",
     "description": "Le sorcier lance ses sorts en employant son pouvoir spirituel, en les renfoçant avec son essence et non ses connaissances.",
     "effect": "Pour calculer le potentiel maximal des sortilèges, le personnage utilise sa caractéristique Pouvoir au lieu de son Intelligence. Cet avantage ne joue absolument pas sur les niveaux de magie à sa disposition, qui continueront d'utilisre l'Intelligence de façon normale.",
@@ -928,6 +1034,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 113,
     "name": "Ambivalence psychique",
     "description": "Les capacités psychiques du personnage sont particulièrement renforcées au moment d'utiliser plus d'un pouvoir à la fois. Il obtient des bénéfices plus grands que d'autres individus possédant des capacités mentales.",
     "effect": "Quand le personnage divise sont Talent pyschique pour utiliser plus d'un pouvoir par round, il obtient un bonus spécial cumulatif de +5 pour chaque pouvoir ainsi déclaré.",
@@ -936,6 +1043,7 @@
     "types": ["Avantage Psychique"]
   },
   {
+    "id": 114,
     "name": "Modificateur psychique accru",
     "description": "Le personnage est particulièrement doué pour profiter des éventuelles conditions environnementales qui jouent sur ses pouvoirs.",
     "effect": "Le psy double tout modificateur naturel que possède la discipline psychique qu'il utilise. Par exemple, un télépathe appliquerait un bonus de +40 s'il est contact avec le personnage sur lequel il utilise son pouvoir (au lieu de seulement +20) et un pyrokynésiste +60 s'il se trouve dans un volcan (au li du +30 habituel). Les modificateurs négatifs, s'ils existent, sont également doublés.",
@@ -944,6 +1052,7 @@
     "types": ["Avantage Psychique"]
   },
   {
+    "id": 115,
     "name": "Insupportable",
     "description": "Le personnage possède une certaine capacité naturelle à être antipathique. Peu importent ses efforts, il provoque toujours une réaction négative de la part des gens qui ne le connaissent pas, et même sa simple présence provoque ou peut provoquer une légère irritation chez certains individus.",
     "effect": "Les effets exacts de ce désavantages doivent être interprétés par le Meneur de Jeu.",
@@ -952,6 +1061,7 @@
     "types": ["Désavantage Général", "Interprétation", "Social"]
   },
   {
+    "id": 116,
     "name": "Couard",
     "description": "Le personnage est peureux par nature, jusqu'à un point qu'il a du mal à contrôler. À chaque fois qu'il se trouve dans une situation qui présente un certain danger, même s'il ne risque pas sa vie, il essayera de l'éviter de toutes les manières possibles.",
     "effect": "Dans Anima, il est préférable de laisser chaque joueur interpréter des aspects tel que la couardise d'un personnage. Cependant, ce désavantage signifie que le personnage n'est pas capable de contrôler sa peur du dangerqui court dans ses veines. Donc, à chaque foisque celui-ci sera confronté à un risque réel, il succombera à l'état de peur. S'il réussit un test d'Impassibilité à un niveau Très Difficile, il peut réduire le malus à seulement -20.",
@@ -960,6 +1070,7 @@
     "types": ["Désavantage Général", "Interprétation"]
   },
   {
+    "id": 117,
     "name": "Bleu",
     "description": "Contrairement à ses compagnons, le personnage a une expérience sur le terrain très limitée. En conséquence, ses compétences seront dès le départ inférieures à celles des autres.",
     "effect": "Le personnage commence avec 100 points d'expérience de moins que le reste des personnages de son groupe. Dans le cas où il seraient tous de niveau 1, celui qui aura ce désavantage sera de niveau 0, et un minimum de trois séances de jeu sera requis pour atteindre le premier niveau.",
@@ -969,6 +1080,7 @@
     "types": ["Désavantage Général", "Expérience"]
   },
   {
+    "id": 118,
     "name": "Destin funeste",
     "description": "La fatalité plane au-dessus du personnage ; malgré toutes ses tentatives, ses actions ne se verront jamais récompensées par une chance exceptionnelle ou un moment brillant. Ce n'est pas une question de chance ou de malchance, simplement il semble que le destion lui-même lui ait tourné le dos",
     "effect": "Le personnage ne peut obtenir de Jet Ouvert, quel que soit son résultat aux dés.",
@@ -977,6 +1089,7 @@
     "types": ["Désavantage Général", "Chance"]
   },
   {
+    "id": 119,
     "name": "Faible",
     "description": "Quand le personnage est mal en point, il subit une diminution drastique de ses capacités qui l'empêche d'utiliser tout son potentiel, et ce même s'il ne souffre d'aucune vraie blessure physique.",
     "effect": "Quand les Points de Vie du personnage tombent en-dessous du tiers de leur total, il subit un malus de -30 à toutes ses actions jusqu'à ce qu'il réussisse à récupérer.",
@@ -985,6 +1098,7 @@
     "types": ["Désavantage Général", "Physique"]
   },
   {
+    "id": 120,
     "name": "Maladroit",
     "description": "Même si la Dextérité du personnage est élevée, ce dernier tend vers un certain degré de maladresse, à cause de sa distraction et du manque de coordination.",
     "effect": "Ce désavantage donne un malus de -30 à tout test d'Habileté manuelle demandant de la coordination, et de -3 à tous les tests opposés de Dextérité.",
@@ -993,6 +1107,7 @@
     "types": ["Désavantage Général", "Compétences"]
   },
   {
+    "id": 121,
     "name": "Maudit",
     "description": "Une force obscure pèse sur le personnage, une certaine anomalie de caractère surnaturell qui se mêle à son destin et l'entraîne vers le malheur et le chagrin. L'intensité de la malédiction est échelonnée sur deux niveaux, en fonction des points de bénéfices qu'elle donne. Celle à un point représente le fait qu'un personnage subit continuellement un certain effet négatif qui lui nuit ; ce pourrait être le cas d'un guerrier qui égare tout le temps ses armes lorsqu'il les perd de vue, ou d'une personne incapable de garder de l'argent quoi qu'elle tente.\nCelle à deux points est une malédiction de caractère supérieure qui entraîne de terribles évènements pour celui qui la subit. Ce pourrait être le cas de quelqu'un qui est condamné à perdre tout ce qu'il possède, dont le corps se couvre de douloureuses blessures sanglantes chaque fois qu'il lutte avec quelqu'un ou qui mourra inévitablement le jour ou il ôtera une vie.",
     "effect": "Les effets exacts de ce désavantage doivent être interprétés par le Meneur de Jeu, en fonction de son degré.",
@@ -1001,6 +1116,7 @@
     "types": ["Désavantage Général", "Interprétation"]
   },
   {
+    "id": 122,
     "name": "Sans bonus naturel",
     "description": "Le personnage n'a pas de talent pour profiter particulièrement de ses caractéristiques, se basant plus sur ce qu'il apprend que sur ses capacités naturelles.",
     "effect": "Ce désavantage fait que le personnage n'applique pas ses bonus naturels par niveau, son amélioration naturelle étant donc limités aux +10 des compétences naturelles.",
@@ -1009,6 +1125,7 @@
     "types": ["Désavantage Général"]
   },
   {
+    "id": 123,
     "name": "Sang ancien",
     "description": "Bien qu'il l'ignore sans doute, le personnage possède du Sang Ancien de Salomon. Il possède une affinité naturelle avec la technologie des Loges Perdues, ainsi qu'il est expliqué dans le chapitre correspondant.",
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de jeu.",
@@ -1018,6 +1135,7 @@
     "types": ["Avantage Général", "Interprétation"]
   },
   {
+    "id": 124,
     "name": "Allié puissant",
     "description": "Quelqu'un ayant un certain pouvoir ou influence est prêt à aider le personnage à tout moment. Ce peut être un noble important, un grand seigneur du crime ou un puissant sorcier, qui ne s'arrêtera devant rien pour appuyer le personnage lorsque ce dernier en aura besoin.",
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu. Naturellement, plus l'investissement sera grand, plus son allié aura de pouvoir personnel. Comme référence, vous pouvez utiliser le Tableau 33.",
@@ -1026,6 +1144,7 @@
     "types": ["Avantage de passé", "Interprétation", "Social"]
   },
   {
+    "id": 125,
     "name": "Contacts",
     "description": "Le personnage a des connaissances pouvant lui donner des informations, voire une aide limitée, au moment où il le demandera. En fonction du niveau de cet avantage, il seront plus ou moins utiles ou puissants. S'il le souhaite, le personnage peut également avoir des liens avec une organisation de Gaïa.",
     "effect": "À chaque fois que ce sera nécessaire, un individu possédant cet avantage pourra utiliser ses contacts afin d'obtenir des informations ou une aide limitée dans leur domaine d'influence. Par exemple, s'il a des accointances dans l'Ordre de Mague, ceux-ci pourront le renseigner sur des sujets surnaturels, mais bien peu en politique ou en rumeurs de la rue. Il y a dans le Tableau 33 une petite liste indiquant les valeurs recommandées afin de disposer de contacts avec différentes forces de Gaïa. Ce sont des chiffres minimums ; un joueur peut investir une plus grande quantité de PC pour les augmenter. Par exemple, si quelqu'un dépense 3 Points de Création pour l'Ordre de Magus, cela voudra dire que ses contacts se trouvent dans les plus hautes sphères de l'organisation, et seront par conséquent capables de lui donner bien plus d'aide et d'informations.",
@@ -1034,6 +1153,7 @@
     "types": ["Avantage de passé", "Social"]
   },
   {
+    "id": 126,
     "name": "Position sociale",
     "description": "Cela signifie que le personnage appartient à la plus haute classe de la société, un statut supérieur de la noblesse. Il commencera donc en détenant un titre prestigieux et une fortune personnelle considérable. Il est important de signaler qu'il n'est pas nécessairement le chef de sa famille ; il peut être l'un des héritiers.",
     "effect": "En plus de ses effets sur l'interprétation, cet avantage donne accès au personnage aux classes réservées de chaque principauté sans qu'il ait besoin de faire un quelconque jet de dés. Sa valeur en Poins de Création dépend par conséquent du niveau de ces classes.",
@@ -1042,6 +1162,7 @@
     "types": ["Avantage de passé", "Interprétation", "Social"]
   },
   {
+    "id": 127,
     "name": "Racines culturelles",
     "description": "Le personnage est très attaché à la culture de son pays et possède de vastes connaissances sur les traditions et les coutumes de sa terre.",
     "effect": "Cet avantage offre un bonus spécial à plusieurs compétences secondaires en fonction de la position sociale et du pays d'origine du personnage. Il y a pour chacune des nations de Gaïa une liste des différents modificateurs que donnent les racines culturelles.",
@@ -1051,6 +1172,7 @@
     "types": ["Avantage de passé", "Compétences"]
   },
   {
+    "id": 128,
     "name": "Réputation",
     "description": "Pour une raison ou pour une autre, le personnage est un individu exceptionnellement connu partout. Il se peut qu'il s'agisse d'un acteur illustre ou que des légendes circulent sur ses compétences martiales (qu'elles soient vrai ou pas), mais c'est en tout les cas une véritable célébrité.",
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu. Le joueur doit établir la raison de la renommée de son personnage au moment de sa création. Au cas où on utiliserait les règles optionnelles de Réputation de ce même chapitre, cet avantage donne 40 ou 65 points de réputation, en fonction des PC investis.",
@@ -1059,6 +1181,7 @@
     "types": ["Avantage de passé", "Interprétation", "Social"]
   },
   {
+    "id": 129,
     "name": "Saint",
     "description": "Le personnage a reçu la distinction de saint de la part de l'Église, ce qui signifie que ses pouvoirs sont officellement un don divin et n'émanent pas du démon. Il est par conséquent libre d'utiliser ses compétences surnaturelles de manière limitées sans crainte d'être poursuivi par l'Inquisition ou de subir d'autres conséquences. Il est important de signaler que, même si l'Église tend à être réticente à admettre qu'elle s'est trompée sur une nomination, cela ne donne pas au personnage une liberté d'action totale. Non seulement il est obligé d'utiliser le moins possible ses capacités en public, mais en plus tout agissement que l'Eglise pourrait considérer comme négatif lui ferait perdre immédiatement ce status.",
     "effect": "Les effets exacts de cet avantage doivent être interprétés par le Meneur de Jeu.",
@@ -1068,6 +1191,7 @@
     "types": ["Avantage de passé", "Interprétation", "Social"]
   },
   {
+    "id": 130,
     "name": "Code de conduite",
     "description": "Là où il a été elevé, le personnage vécut suivant un strict code de conduite qui pèse toujours sur lui. Il ne peut pas y désobéir et se verra obligé de le suivre en toutes circonstances. Il ne sait tout simplement pas vivre autrement.",
     "effect": "Le personnage doit suivre un strict code de conduite, lié d'une certaine manière à son pays d'origine.",
@@ -1076,6 +1200,7 @@
     "types": ["Désavantage de passé"]
   },
   {
+    "id": 131,
     "name": "Dettes",
     "description": "Pour son malheur, le personnage a contracté une dette gigantesque qu'il est incapable de payer. Elle lui a déjà coûté tout ce qu'il possédait, mais il est encore obligé de débourser bien plus. Il revient au Meneur de Jeu de déterminer la nature exact de la dette : peut-être doit-il la payer tous les mois afin de couvrir les frais d'hôpital de sa mère, ou que sa famille s'est ruinée, la lui léguant.",
     "effect": "Quel que soit son status social, le personnage ne commence avec aucune autre possession que ce qu'il porte, se voyant obligé à amortir une dette fixée à plus de 10 000 écus do'r. Une autre possibilité est qu'il doive obligatoirmeent payer 500 écus d'or tous les mois",
@@ -1084,6 +1209,7 @@
     "types": ["Désavantage de passé", "Richesse"]
   },
   {
+    "id": 132,
     "name": "Ennemi puissant",
     "description": "Au cours de sa vie, le personnage s'est fait un dangereux ennemi qui le poursuit sans relâche afin de le détruire. Il se peut qu'un important seigneur du crime soit à ses trousses, ou que l'Inquisition le considère comme un sorcier et le recherche dans le but de l'éliminer.",
     "effect": "Les effets exacts de ce désavantgae doivent être interprétés par le Meneur de Jeu. Naturellement, plus le bénéfice est élevé, plus le pouvoir de l'ennemi ou de l'organisation qui le poursuit sera grand. Vous pouvez utiliser le Tableau 33 comme référence.",
@@ -1092,6 +1218,7 @@
     "types": ["Désavantage de passé", "Interprétation"]
   },
   {
+    "id": 133,
     "name": "Paria",
     "description": "Pour une raison quelconque, le personnage est totalement rejeté par la société. Ou qu'il aille, les gens le méprisent et fuient toujours sa compagnie. Il se peut qu'il appartienne à une famille connue pour être coupable de haute trahison, qu'on l'ait accusé d'un tas de crims horribles ou toute autre raison pouvant causer le rejet.",
     "effect": "Le personnage est automatiquement considéré comme un paria dans tous les cercles sociaux.",
@@ -1100,6 +1227,7 @@
     "types": ["Désavantage de passé", "Social"]
   },
   {
+    "id": 134,
     "name": "Secret inavouable",
     "description": "Le personnage cache un sombre et terrifiant secret, quelque chose qui pourrait signifier sa ruine et celle de ceux auxquels il tient s'il était révélé au grand jour. Il se peut qu'il soit coupable d'un crime affreux, ou qu'il ait été utilisé étant petit pour mener à bien un terrible rituel ayant causé la mort de milliers de gens, auquel cas les membres de la secte déchaîneraient un enfer sur lui s'ils découvraient qu'il est encore vivant.",
     "effect": "Le joueur et le Meneur de Jeu doivent décider ensemble de la nature du secret et des conséquences de son éventuelle révélation.",
@@ -1108,6 +1236,7 @@
     "types": ["Désavantage de passé", "Interprétation"]
   },
   {
+    "id": 135,
     "name": "Accumulation de Ki accrue",
     "description": "Lorsqu'il se concentre pour accumuler du Ki, le personnage est capable d'augmenter fortement sa capacité à concentrer son énergie à grande vitesse.",
     "effect": "Si le personnage n'effecture aucune autre action pendant le round, active ou passive, à part accumuler du Ki, il peut ajouter +1 à la valeur de toutes ses Accumulation de Ki durant ce round. Investir un Point de Création en plus augmente ce bonus à +2.",
@@ -1117,6 +1246,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 136,
     "name": "Apprentissage martial",
     "description": "Le personnage possède une incroyable facilité à maîtriser les techniques et les pouvoirs du Ki en très peu de temps, même celles qu'il devrait lui être extrêment difficile d'apprendre.",
     "effect": "Quelqu'un avec cet avantage augmente de deux le rang d'apprentissage que lui donne son DI dans le tableau 6. Ainsi, un personnage ayant 120 points de DI (rang 2) apprendrait des techniques comme s'il était de rang 4",
@@ -1125,6 +1255,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 137,
     "name": "Dispense de gestes (Sceaux)",
     "description": "Le personnage n'a pas besoin de faire de gestes pour pratiquer des Sceaux d'Invocation, car l'essence de ces derniers est directement liée à son âme.",
     "effect": "Le personnage ne réduit pas son Accumulation de Ki, même s'il est incapable d'utiliser ses mains.",
@@ -1133,6 +1264,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 138,
     "name": "Ki imperceptible",
     "description": "L'énergie physique du personnage est extrêmement difficile à détecter car elle disparaît sans laisser de traces.",
     "effect": "Cet avantage donne un bonus spécial de +10 par niveau en Dissimulation du Ki.",
@@ -1142,6 +1274,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 139,
     "name": "Limite double",
     "description": "Le personnage a un double potentiel qui lui permet de lier son essence à deux Limites",
     "effect": "Le personnage peut choisir jusqu'à deux Limites au lieux d'une.",
@@ -1150,6 +1283,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 140,
     "name": "Perception du Ki",
     "description": "Les sens du personnage sont capables de percevoir naturellement le Ki, ce qui lui permet d'accroître énormément ses capacités de détection.",
     "effect": "Cet avantage donne un bonus spécial de +10 par niveau en Détection du Ki.",
@@ -1159,6 +1293,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 141,
     "name": "Pleine accumulation",
     "description": "Le personnage est doté de la capacité à accumuler son énergie physique de manière innée, sans avoir besoin de se concentrer pour y arriver. Il est par conséquent capable d'utiliser pleinement son Ki en toute liberté, sans que ses pouvoirs ne soient réduits par aucun facteur.",
     "effect": "Le personnage ne réduit pas ses Accumulations de Ki lorsqu'il réalise des actions actives ou passives. En termes de jeu, il dispose toujours de sa pleine accumulation, quoi qu'il fasse durant le round.",
@@ -1167,6 +1302,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 142,
     "name": "Pouvoir inné",
     "description": "Toute l'énergie physique du personnage provient de son âme qui alimente ses techniques et pouvoirs du Ki.",
     "effect": "Lorsqu'il doit calculer ses points de Ki initiaux, au lieu d'utiliser normalement la valeur de base de ses caractéristiques, le personnage n'emploie que celle de Pouvoir et multiplie par six la quantité que lui donne celle-ci. Les points supplémentaires lorsque la caractéristique est supérieure à 10 sont également multipliés.",
@@ -1176,6 +1312,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 143,
     "name": "Sceaux magistraux",
     "description": "Les sceaux d'Invocation réalisés par le personnage jouissent d'une puissance inusitée, car son âme renforce énormément leurs effets.",
     "effect": "Lorsque l'on établit le test de difficulté d'une invocation en utilisant des Sceaux, le personnage est considéré comme ayant deux niveaux de plus. Un personnage de niveau 2 pourrait donc invoquer des créatures comme s'il était de niveau 4.",
@@ -1184,6 +1321,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 144,
     "name": "Techniques déliées",
     "description": "Les techniques du personnage sont complètement déliées, sans qu'il soit nécessaire de maintenir entre elles une structure de corrélation.",
     "effect": "Le personnage peut développer ou apprendre des techniques de la puissance intérieure librement, sans avoir besoin de suivre les règles d'arbre, c'est-à-dire qu'il na pas besoin des techniques de niveau inférieur pour en apprendre d'autres de niveau supérieur.",
@@ -1192,6 +1330,7 @@
     "types": ["Avantage Général", "Ki"]
   },
   {
+    "id": 145,
     "name": "Versatilité métamagique",
     "description": "Le personnage a une grande facilité pour développer des avantages métamagiques très différents.",
     "effect": "Le personnage peut chosir deux points de départ différents dans l'Arcana Shephirah.",
@@ -1200,6 +1339,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 146,
     "name": "Sorcier naturel",
     "description": "Les formules mystiques et le développement de sorts semblent naturels à ce personnage qui est capable de créer et d'apprendre avec une grande facilité jusqu'aux sorts les plus complexes.",
     "effect": "Le mage augmente de deux niveaux son Rang d'apprentissage dans le Tableau 1.",
@@ -1208,6 +1348,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 147,
     "name": "Apprentissage magique graduel",
     "description": "À mesure que le personnage augmente ses capacités et ses pouvoirs, il augmente également son savoir magique de façon innée.",
     "effect": "Chaque fois qu'il monte de niveau, le personnage obtient un +5 à son Niveau de Magie total.",
@@ -1216,6 +1357,7 @@
     "types": ["Avantage Mystique"]
   },
   {
+    "id": 148,
     "name": "Don incomplet",
     "description": "Le personnage qui possède cet avantage est né avec de bonnes capacités pour la magie et peut parfois utiliser des sorts mineurs de la même façon qu'une personne ayant vraiment le Don mystique.",
     "effect": "Le personnage ne peut voir la magie mais il est capable de lancer des sorts de façon limitée. Chaque fois qu'il souhaite utiliser un sortilège, il doit réussir un test de Pouvoir contre une difficulté de 10 plus un point pour chaque dix Niveau de Magie du sort. S'il échoue, il perdra du Zéon comme s'il avait lancé le sort, mais celui-ci n'aura pas fonctionné.",
@@ -1224,6 +1366,7 @@
     "types": ["Avantage Général", "Mystique"]
   },
   {
+    "id": 149,
     "name": "Essence Sheele",
     "description": "Le personnage est lié de façon existentielle à l'essence des Sheeles, et s'il se lie à l'une d'entre elles, l'élémentaire de magie obtient des pouvoirs bien supérieurs à la normale.",
     "effect": "Si le personnage s'unit à une Sheele, cette dernière peut obtenir deux Améliorations supplémentaires au moment de sceller le Lien.",
@@ -1232,6 +1375,7 @@
     "types": ["Avantage Général", "Mystique", "Convocation"]
   },
   {
+    "id": 150,
     "name": "Familier",
     "description": "À un moment dans sa vie, le personnage a été capable de signer un pacte de familier avec une créature.",
     "effect": "Le personnage commence la partie avec une créature de son niveau en tant que familier. Un Point de Création supplémentaire permet même au familier en question d'avoir un niveau de plus que celui du personnage.",
@@ -1240,6 +1384,7 @@
     "types": ["Avantage Général", "Mystique", "Convocation"]
   },
   {
+    "id": 151,
     "name": "Convocateur en masse",
     "description": "Une personne avec cette compétence à d'énormes facilités pour convoquer un grand nombre de créatures.",
     "effect": "Le personnage qui réalise une convocation en masse le fait comme s'il avait un niveau de plus. Les points supplémentaire augmentent le niveau théorique du personnage à deux ou trois niveaux de plus.",
@@ -1248,6 +1393,7 @@
     "types": ["Avantage Général", "Mystique", "Convocation"]
   },
   {
+    "id": 152,
     "name": "Affinité d'utilisation",
     "description": "Le personnage a beaucoup de facilités pour comprendre et activer les pouvoirs des objets surnaturels qu'il a en sa possession.",
     "effect": "Le personnage ajoute 5 points à sa caractéristique de Pouvoir lorsqu'il s'agit de déterminer le temps nécessaire pour maîtriser les capacités de Notions d'utilisation des artefacts qu'il possède.",
@@ -1256,6 +1402,7 @@
     "types": ["Avantage Général"]
   },
   {
+    "id": 153,
     "name": "Mutations",
     "description": "Le personnage possède des pouvoirs innés à cause d'une mutation.",
     "effect": "Octroie 50 PF pour acquérir des Pouvoirs de monstre, comme si le personnage avait une Gnose de 20. L'investissement de points supplémentaires augmente la quantié de points reçus à 100 et 150 respectivement.",

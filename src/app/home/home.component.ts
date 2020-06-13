@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 interface IHomeItem {
-  title: string;
-  link: string;
-  bgSize?: string;
   bgPositionY?: string;
+  bgSize?: string;
   imageUrl: string;
+  link: string;
+  title: string;
 }
 
 @Component({
@@ -18,16 +18,23 @@ export class HomeComponent implements OnInit {
 
   constructor() {}
 
-  // tslint:disable: max-line-length
-  ngOnInit() {
+  getStyle(item: IHomeItem) {
+    return {
+      'background-image': item.imageUrl ? `url("${item.imageUrl}")` : '',
+      'background-position-x': 'center',
+      'background-position-y': item.bgPositionY ? item.bgPositionY : '',
+      'background-size': item.bgSize ? item.bgSize : ''
+    };
+  }
+
+  ngOnInit(): void {
     this.items = [
       {
         title: 'Lancer de dé',
         link: '/dice-roll',
         bgSize: '70%',
         bgPositionY: 'calc(100% - 1rem)',
-        imageUrl:
-          'https://upload.wikimedia.org/wikipedia/commons/b/bb/Ten_sided_dice.png'
+        imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/b/bb/Ten_sided_dice.png'
       },
       {
         title: 'Mon personnage',
@@ -79,14 +86,5 @@ export class HomeComponent implements OnInit {
           'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/415e335e-b1cb-4849-9250-5b886f627634/dc0ge24-245d4239-45eb-4969-b71e-6c671924c85b.jpg/v1/fill/w_822,h_972,q_70,strp/anima__magnus_by_wen_m_dc0ge24-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIxMSIsInBhdGgiOiJcL2ZcLzQxNWUzMzVlLWIxY2ItNDg0OS05MjUwLTViODg2ZjYyNzYzNFwvZGMwZ2UyNC0yNDVkNDIzOS00NWViLTQ5NjktYjcxZS02YzY3MTkyNGM4NWIuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.j6Hb3amqNHvrs3iJNp_sKYzcf9D7TS3Z2MdBH-GTkrA'
       }
     ];
-  }
-
-  getStyle(item: IHomeItem) {
-    return {
-      'background-image': item.imageUrl ? `url("${item.imageUrl}")` : '',
-      'background-position-x': 'center',
-      'background-position-y': item.bgPositionY ? item.bgPositionY : '',
-      'background-size': item.bgSize ? item.bgSize : ''
-    };
   }
 }

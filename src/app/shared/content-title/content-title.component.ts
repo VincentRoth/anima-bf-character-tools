@@ -1,15 +1,13 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-content-title',
   templateUrl: './content-title.component.html',
   styleUrls: ['./content-title.component.scss']
 })
-export class ContentTitleComponent implements OnInit {
+export class ContentTitleComponent {
   @Input() level: number;
   @Input() title: string;
 
   constructor() {}
-
-  ngOnInit() {}
 }

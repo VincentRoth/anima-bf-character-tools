@@ -1,6 +1,5 @@
-import { TestBed } from '@angular/core/testing';
-
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { TestBed } from '@angular/core/testing';
 import { ClassesService } from './classes.service';
 
 describe('ClassesService', () => {
@@ -11,7 +10,7 @@ describe('ClassesService', () => {
   );
 
   it('should be created', () => {
-    const service: ClassesService = TestBed.get(ClassesService);
+    const service: ClassesService = TestBed.inject(ClassesService);
     expect(service).toBeTruthy();
   });
 });

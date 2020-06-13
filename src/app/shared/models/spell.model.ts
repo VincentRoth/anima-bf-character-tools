@@ -20,42 +20,30 @@ export enum CastingLevel {
 }
 
 export interface SpellCastingLevel {
-  level: CastingLevel;
-  zeon: number;
-  requiredIntelligence: number;
   effect: string;
+  level: CastingLevel;
   maintenance: number;
+  requiredIntelligence: number;
+  zeon: number;
 }
 
 export const FREE_ACCESS_LEVEL = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
 export interface Spell {
-  name: string;
+  action: ActionType;
+  castingLevels: SpellCastingLevel[];
+  effect: string;
+  forbiddenPaths?: string[];
+  isDailyMaintenance?: boolean;
+  isFreeAccess?: boolean;
   // For free access spell, level is a ten
   level: number;
-  action: ActionType;
-  types: SpellType[];
-  effect: string;
-  castingLevels: SpellCastingLevel[];
-  specialMaintenance?: string;
-  isDailyMaintenance?: boolean;
-  forbiddenPaths?: string[];
-  isFreeAccess?: boolean;
-  note?: string;
-}
-
-export interface Spell {
-  name: string;
-  // For free access spell, level is a ten
-  level: number;
-  action: ActionType;
-  types: SpellType[];
-  effect: string;
-  castingLevels: SpellCastingLevel[];
-  isDailyMaintenance?: boolean;
-  forbiddenPaths?: string[];
-  isFreeAccess?: boolean;
+  limit?: string;
   maxFreeAccessLevel?: 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100;
+  name: string;
+  note?: string;
+  specialMaintenance?: string;
+  types: SpellType[];
 }
 
 export enum MagicPathStatus {
@@ -66,14 +54,14 @@ export enum MagicPathStatus {
 }
 
 interface AbstractMagicPath {
-  name: string;
-  status: MagicPathStatus;
   description: string;
-  oppositePaths?: string[];
-  permittedPaths?: string[];
   forbiddenPaths?: string[];
   limits?: string;
+  name: string;
+  oppositePaths?: string[];
+  permittedPaths?: string[];
   spells: Spell[];
+  status: MagicPathStatus;
 }
 
 export interface MagicPrimaryPath extends AbstractMagicPath {
@@ -91,7 +79,4 @@ export interface FreeAccessSpells extends AbstractMagicPath {
   status: MagicPathStatus.FREE;
 }
 
-export declare type MagicPath =
-  | MagicPrimaryPath
-  | MagicSecondaryPath
-  | FreeAccessSpells;
+export declare type MagicPath = MagicPrimaryPath | MagicSecondaryPath | FreeAccessSpells;

@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { AppMaterialModule } from 'src/app/app-material.module';
-import { ActionType, SpellType } from 'src/app/shared/models';
+import { AppMaterialModule } from '../app-material.module';
+import { ActionType, SpellType } from '../models';
 import { SpellComponent } from './spell.component';
 
 describe('SpellComponent', () => {

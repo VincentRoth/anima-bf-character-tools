@@ -4822,7 +4822,7 @@
         "level": 12,
         "action": "Active",
         "types": ["Attaque"],
-        "effect": "Projette une ou plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Energie avec de Dégâts de 30. Chaque attaque peut être dirigée vers une cible différente, mais il faut déterminer tous les objectifs et leur ordre d'attaque au moment du lancement du sort.",
+        "effect": "Projette une ou plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Énergie avec de Dégâts de 30. Chaque attaque peut être dirigée vers une cible différente, mais il faut déterminer tous les objectifs et leur ordre d'attaque au moment du lancement du sort.",
         "castingLevels": [
           {
             "level": "Initial",
@@ -20528,56 +20528,2673 @@
     "name": "Literae",
     "forbiddenPaths": ["Destruction", "Air", "Feu", "Terre", "Essence", "Nécromancie"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Literae est la magie des mots, la voie de la modification de la réalité en écrivant des annotations en marge du livre que nous appelons la réalité. Ceux qui l'emploient sont capables d'utiliser la sorcellerie pour réécrire le scénario de la vie en l'adaptant à leurs besoins.",
+    "spells": [
+      {
+        "name": "Plumes de la Réalité",
+        "level": 4,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée une plume surnaturelle qui écrit sur n'importe quelle surface sans avoir besoin d'encre. En l'utilisant tout en lançant un sort de la voie secondaire Literae, le sorcier peut renforcer considérablement les effets de sortilège, et réduire de moitié son coût en Zéon. Par exemple, un sort de Missive au Degré Initial aura un coût de 40 points au lieu de 80.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "Affecte les sorts Literae en Degré Initial",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "Affecte les sorts Literae en Degré Intermédiaire",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "Affecte les sorts Literae en Degré Avancé",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Affecte (es sorts Literae en Degré Arcane",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Missive",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Après avoir écrit une lettre il est possible d'utiliser ce sort pour envoyer son contenu à un individu que le sorcier connait personnellement. La lettre, comme son enveloppe, disparaît dans un éclair et un nuage de fumée, réapparaissant quelques instants après à côté de son destinataire. La portée du sort dépend de son Degré. Missive peut traverser des structures enchantées de moindre pouvoir tant qu'il y suffisamment d'espace pour cela, par exemple en « glissant » la lettre sous une porte.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 6,
+            "effect": "10 km",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 9,
+            "effect": "100 km",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "1000 km",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 15,
+            "effect": "N'importe où",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Journal de Bord",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Enchante un livre afin qu'il recueille toutes les péripéties que traverse le mage pour pouvoir les examiner ultérieurement, comme si dans le jeu il tenait un journal détaillé. Le Degré du sort détermine la période de temps maximum que le livre couvre rétrospectivement à partir du moment du lancement.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 6,
+            "effect": "1 jour",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "1 semaine",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "1 mois",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "1 an",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Ordre Écrit",
+        "level": 34,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Permet d'écrire sur un parchemin un ordre simple qui affectera la première personne qui le lira, l'obligeant à l'accomplir s'il échoue au test de résistance du sortilège. L'ordre fonctionnera même s'il est caché parmi d'autres phrases, toutefois le personnage affecté obtient entre +20 et +60 à son test si la directive va directement à l'encontre de sa nature.\nCe sort peut contenir plusieurs directives liées pour créer un ordre complet comme « ouvre la porte et ensuite oublie ce qui s'est passé ». Le pouvoir des phrases perd son pouvoir après avoir imprégné une personne avec l'ordre, se transformant en une lettre classique à partir de ce moment.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "RMys ou RPhy 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 240,
+            "requiredIntelligence": 9,
+            "effect": "RMys ou RPhy 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 360,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPhy 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 480,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPhy 180",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Bouclier de Mots",
+        "level": 44,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Utilisant une plume magique (qui peut être la Plume de la Réalité) pour tracer des caractères dans l'air, le sorcier crée un bouclier de mots qui le défendent aussi bien des attaques physiques que surnaturelles. Le bouclier se régénère à chaque round d'autant de points de vie que le score de la compétence du mage en Art (littérature).",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "200 Points de Vie",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "500 Points de Vie",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "800 Points de Vie. Arcane",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "1 200 Points de Vie",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Théâtre de la Vie",
+        "level": 54,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Permet au sorcier de modifier le comportement des personnes qui sont autour de lui en écrivant sur une surface les actions qu'il souhaite les voir accomplir. Tout simplement, le sorcier se convertit en écrivain d'une pièce de théâtre en mettant les cibles du sort dans la position d'acteurs qui jouent leur rôle suivant sa narration.\nCe sort peut affecter plusieurs personnes, tant que leur présence combinée ne dépasse pas la limite indiquée par le Degré du sortilège. Pour que les cibles de ce sort qui sont dans sa zone d'effet soient affectées, il faut que le lanceur connaisse leurs véritables noms. Celles-ci peuvent tenter de résister en réussissant une RMys ou une RPsy pour ne pas être contrôlées. Si le narrateur cesse d'écrire et que les personnes affectées n'ont plus de nouveaux ordres à suivre, elles resteront tranquilles dans l'attente du rôle suivant.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 240,
+            "requiredIntelligence": 6,
+            "effect": "RMys ou RPsy 120 / Présence maximale affectable 100 / 20 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 360,
+            "requiredIntelligence": 9,
+            "effect": "RMys ou RPsy 140 / Présence maximale affectable 180 / 40 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 480,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPhy 160 / Présence maximale affectable 240 / 80 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPhy 180 / Présence maximale affectable 320 / 150 m de rayon",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Compendium",
+        "level": 64,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Enchante un livre pour qu'il réponde aux questions qui lui sont posées de manière à ce que, lorsque quelqu'un pose une question en sa présence, il inscrive la réponse entre ses pages. Malheureusement, le livre n'est pas capable de répondre à un doute. En lançant Compendium, le manuscrit affecté reçoit un score dans une compétence du champ secondaire intellectuel déterminée par le Degré du sort. Quand on l'interrogera, il donnera la réponse appropriée selon ce que saurait un expert avec ce score sur le thème de la compétence.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 7,
+            "effect": "120 points de compétence intellectuelle",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 260,
+            "requiredIntelligence": 10,
+            "effect": "240 points de compétence intellectuelle",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 380,
+            "requiredIntelligence": 13,
+            "effect": "320 points de compétence intellectuelle",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "440 points de compétence intellectuelle",
+            "maintenance": 40
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Dramaturge",
+        "level": 74,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort modifie la réalité tant que cela reste plausible et que cela n'affecte pas directement un autre être vivant. Par exemple, si le sorcier tombe depuis une échelle il peut « écrire » qu'il le fait sur une carriole de foin qui amortit sa chute et cela se passera ainsi, ou s'il veut entrer dans un endroit fermé, il pourra « raconter » que la porte n'est pas verrouillée et il en sera ainsi. Les possibilités de ce sort sont presque infinies, tant que les éléments et les objets utilisés sont simples et avec une présence qui ne dépasse pas ce qui est déterminé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 280,
+            "requiredIntelligence": 10,
+            "effect": "Présence maximum de 40",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 320,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximum de 80",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 480,
+            "requiredIntelligence": 14,
+            "effect": "Présence maximum de 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 16,
+            "effect": "Présence maximum de 160",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Secondaire",
+        "level": 84,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée un « personnage » ayant la personnalité et les compétences souhaitées par le sorcier. Pour ce faire, le lanceur doit décrire dans un livre la personnalité, l'histoire et la nature de cet individu, et celui-ci croira vraiment être tel que le sorcier l'a décrit.\nL'existence du Secondaire est liée au livre et donc, si ce dernier est détruit, le personnage disparaîtra immédiatement. Le niveau du Secondaire ne peut dépasser ce qui est indiqué par le Degré du sortilège et ne peut pas être supérieur à celui du sorcier.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 400,
+            "requiredIntelligence": 10,
+            "effect": "Niveau 2",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 600,
+            "requiredIntelligence": 12,
+            "effect": "Niveau 5",
+            "maintenance": 60
+          },
+          {
+            "level": "Avancé",
+            "zeon": 800,
+            "requiredIntelligence": 14,
+            "effect": "Niveau 7",
+            "maintenance": 80
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1200,
+            "requiredIntelligence": 17,
+            "effect": "Niveau 10",
+            "maintenance": 120
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Tragédie",
+        "level": 94,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort réalise la transformation ultime de la réalité, altérant la destinée d'un autre être vivant pour la faire se terminer comme il plaît au mage. Le lanceur peut écrire tout type de dénouement qu'il souhaite pour la vie d'une personne, comme « et en trébuchant, il tomba sur son épée, s'embrochant mortellement » ou « le ciel s'illumina quand, des nuages de la tempête un éclair tomba sur lui, apaisant les dieux vindicatifs ». La condition pour être affecté par ce sortilège est d'avoir été vu par le sorcier au moins une fois et que celui-ci connaisse votre nom véritable. Pour éviter ces effets, aussi bien la cible de Tragédie que toute personne directement impliquée dans le destin écrit doit réussir une RMys contre la difficulté indiquée par le Degré du sort. Si elles réussissent, elles deviennent immunisées contre ce sort (lancé par le même sorcier) pendant le reste de leur existence.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 500,
+            "requiredIntelligence": 12,
+            "effect": "RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 900,
+            "requiredIntelligence": 15,
+            "effect": "RMys 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1400,
+            "requiredIntelligence": 17,
+            "effect": "RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2500,
+            "requiredIntelligence": 19,
+            "effect": "RMys 180",
+            "maintenance": 0
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Mort",
     "forbiddenPaths": ["Lumière", "Création", "Air", "Eau", "Terre", "Essence", "Illusion"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Cette voie secondaire contrôle la fin des choses, la mort dans son concept de fin de la vie",
+    "spells": [
+      {
+        "name": "Autopsie",
+        "level": 4,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Détermine la cause de la mort et l'heure du décès. Ne précise pas si la cible du sort est morte assassinée ni qui en est responsable mais si, par exemple, quelqu'un est mort d'une contusion massive ou quel type de maladie l'a tué. Le Degré du sort précise la portée dans le temps qu'il peut remonter. Au-delà, le sortilège est incapable d'obtenir l'information.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 4,
+            "effect": "1 heure",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "1 jour",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "1 semaine",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "1 mois",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Résistance à la Mort",
+        "level": 14,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Ce sort protège contre tout effet qui pourrait provoquer la mort de manière automatique, accordant un bonus aux Résistances de la cible contre des effets de ce type.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "+20 aux Résistances",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "+40 aux Résistances",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "+60 aux Résistances",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 14,
+            "effect": "+80 aux Résistances",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Extermination Mineure",
+        "level": 24,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Tue toutes les créatures avec une présence de 20 sélectionnées par le lanceur dans une zone, si celles-ci ne dépassent pas la RMys déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys 60 / 10 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "RMys 80 / 25 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "RMys 100 / 50 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 13,
+            "effect": "RMys 120 / 75 m de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Coup de Grâce",
+        "level": 34,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Achève quelqu'un qui est sur le point de mourir. Pour être affectée, la cible devra être dans l'état Entre la Vie et la Mort, et mourra de manière automatique si elle ne dépasse pas la RMys déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "RMys 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 9,
+            "effect": "RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 11,
+            "effect": "RMys 180",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "RMys 200",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Faire Reposer",
+        "level": 44,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Détruit automatiquement les créatures non mortes sans âme dans la zone d'effet du sort. Les créatures peuvent résister à ses effets en dépassant la RMys déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "RMys 120 / 10 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 10,
+            "effect": "RMys 140 25 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "RMys 160 / 50 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "RMys 180 / 75 m de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Sentir la Mort",
+        "level": 54,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le lanceur est capable de ressentir la mort aux alentours, remarquant si quelqu'un est mort ou sur le point de mourir dans les environs. Cette compétence de prédiction ne permet pas de connaître les choses qui vont se passer avec une certitude absolue, juste de pressentir la mort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "Le lanceur remarque si quelqu'un est mort dans une zone de 100 mètres de rayon, il y a moins d'une heure, ou s'il y a tout près un moribond qui va trépasser dans moins d'une minute",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "Le lanceur remarque si quelqu'un est mort dans une zone de 150 mètres de rayon, il y a moins de six heures, ou s'il y a tout près un moribond qui va trépasser dans moins de dix minutes",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "Le lanceur pressent la mort avec précision. Il peut percevoir si quelqu'un est mort aux alentours dans le passé ou combien de temps à peu près il reste à vivre à une personne, et si sa mort est probable ou improbable",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "Comme pour le Degré Avancé, mais le lanceur est capable de percevoir la cause probable de la mort, aussi bien de ceux qui sont morts par le passé que de ceux qui pourraient mourir dans un futur proche",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Memento Mori",
+        "level": 64,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort tue dans sa zone d'effet toute créature qui peut être considérée comme un être vivant, quelle que soit sa nature ou sa condition. Les personnes affectées ignorent ces effets en réussissant une RMys contre la difficulté déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 8,
+            "effect": "RMys 80 / 5 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 10,
+            "effect": "RMys 100 / 10 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 13,
+            "effect": "RMys 120 / 25 m de rayon",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 260,
+            "requiredIntelligence": 15,
+            "effect": "RMys 140 / 50 m de rayon",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Malédiction Mortelle",
+        "level": 74,
+        "action": "Active",
+        "types": ["Animique", "Automatique"],
+        "effect": "Le lanceur peut faire en sorte qu'un individu meure à un moment déterminé par lui et de la façon qu'il a choisi. Ainsi, il crée pour la cible une certaine « prédestination à mourir » de la façon qui lui convient. Pour que ce sort fonctionne, le lanceur doit atteindre son objectif avec celui-ci avec une marge suffisante, et la cible doit échouer au test de RMys déterminé par le Degré du sortilège. À partir de ce moment, tous les individus liés à la façon de mourir de celui qui a réussi le test de prédestination à mourir peuvent également tenter d'éviter ses effets de la même manière. Nul besoin de les atteindre avec la projection du sort, ils sont affectés automatiquement par la RMys du simple fait qu'ils sont liés à la personne maudite.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "RMys 120",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 11,
+            "effect": "RMys 160",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 350,
+            "requiredIntelligence": 13,
+            "effect": "RMys 200",
+            "maintenance": 35
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "RMys 240",
+            "maintenance": 50
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Arrêter la Mort",
+        "level": 84,
+        "action": "Passive",
+        "types": ["Effet", "Animique"],
+        "effect": "La cible de ce sort devient temporairement immortelle. Cela ne signifie absolument pas qu'elle se transforme en non mort, seulement que pendant que le sort est maintenu, la mort n'a aucun pouvoir sur elle. Ce sort n'a aucun effet sur les pouvoirs qui exterminent directement l'âme ou les effets similaires.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 350,
+            "requiredIntelligence": 10,
+            "effect": "La cible ignore automatiquement tout effet qui produit une mort automatique, mais elle n'est pas immortelle face aux dégâts physiques",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 12,
+            "effect": "Idem que pour le Degré Initial, mais le personnage devient immortel aux dégâts physiques. Toutefois, si son corps est endommagé suffisamment pour le tuer, il mourra de manière automatique si jamais les effets de ce sortilège disparaissent avant qu'il puisse être soigné. Cet effet ne le protège pas de la mort s'il reçoit un coup causant un critique à un point vital ou s'il est décapité",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 800,
+            "requiredIntelligence": 14,
+            "effect": "Idem que pour le Degré Intermédiaire, mais la personne affectée ne peut pas non plus mourir suite à un coup causant un critique, quelles qu'en soient les conséquences",
+            "maintenance": 40
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1200,
+            "requiredIntelligence": 16,
+            "effect": "Idem que pour le Degré Avancé, mais la personne affectée est immunisée contre tous les malus à l'action qui pourraient découler d'une détérioration physique",
+            "maintenance": 60
+          }
+        ]
+      },
+      {
+        "name": "La Mort",
+        "level": 94,
+        "action": "Active",
+        "types": ["Effet", "Automatique"],
+        "effect": "Le sorcier obtient un pouvoir absolu sur la mort, il peut décider librement qui va mourir dans le rayon d'action du sort. Comme pour un effet Automatique, le lanceur peut choisir que n'importe quel être vivant meure s'il ne réussit pas une RMys ou une RPhy contre la valeur déterminée par le Degré du sort. Une personne qui dépasse une fois la Résistance ne peut plus être affectée à nouveau par ce pouvoir (lancé par le même sorcier).",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 400,
+            "requiredIntelligence": 12,
+            "effect": "500 m de rayon / RPhy ou RMys 80",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 750,
+            "requiredIntelligence": 14,
+            "effect": "1 km de rayon / RPhy ou RMys 100",
+            "maintenance": 75
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1200,
+            "requiredIntelligence": 16,
+            "effect": "5 km de rayon / RPhy ou RMys 120",
+            "maintenance": 120
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2000,
+            "requiredIntelligence": 18,
+            "effect": "10 km de rayon / RPhy ou RMys 140",
+            "maintenance": 200
+          }
+        ],
+        "isDailyMaintenance": true
+      }
+    ]
   },
   {
     "name": "Musique",
     "forbiddenPaths": ["Destruction", "Feu", "Terre", "Nécromancie"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Cette voie secondaire regroupe tous les pouvoirs en relation avec la musique et les mélodies. Les sorciers qui utilisent ses sorts sont habituellement appelés mages musiciens, car c'est au travers de leurs mélodies qu'ils sont capables de provoquer les effets et les merveilles les plus invraisemblables.",
+    "spells": [
+      {
+        "name": "Tempo",
+        "level": 4,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Contrôlant le rythme du monde, ce sort isole le sorcier des distractions extérieures et lui permet de discerner de manière intuitive tous les sons qui l'entourent. Par conséquent, il obtient un bonus à sa compétence secondaire Observation pour tous les tests en relation avec le son pendant un round.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "+40 en Observation",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 50,
+            "requiredIntelligence": 8,
+            "effect": "+60 en Observation",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 70,
+            "requiredIntelligence": 10,
+            "effect": "+80 en Observation",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 100,
+            "requiredIntelligence": 12,
+            "effect": "+100 en Observation",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Cantabile",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet au personnage de faire résonner sa voix ou une mélodie qu'il interprète dans n'importe quel endroit qu'il a choisi jusqu'à une distance maximale déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 5,
+            "effect": "100 m",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "250 m",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 80,
+            "requiredIntelligence": 10,
+            "effect": "500 m",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 100,
+            "requiredIntelligence": 12,
+            "effect": "1 km",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Plagiat",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet au mage d'avoir la fibre artistique nécessaire pour interpréter tout type de composition musicale, soit en chantant, soit en jouant d'un instrument. Le sorcier devra connaître ou avoir écouté, même de façon incomplète, l'œuvre musicale qu'il souhaite reproduire. Pour ce faire, le personnage à un niveau de compétence de Musique équivalent à celui déterminé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "120 en Musique",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 70,
+            "requiredIntelligence": 8,
+            "effect": "180 en Musique",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 10,
+            "effect": "240 en Musique",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "280 en Musique",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Mezzo Forte",
+        "level": 34,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "En créant une note musicale discordante, le sorcier déchaîne une onde sonique destructive qui abat toute chose solide avec laquelle elle entre en contact. L'attaque se fait sur le Mode Énergie et a une base de dégâts très basse mais, si elle inflige des dégâts, le défenseur doit réussir un test de RPhy contre une difficulté égale à 10 fois la perte de points de vie subie (jusqu'à un maximum de 240) ou subir des dégâts supplémentaires équivalents à la marge d'échec. Par exemple, si ce sort est lancé au Degré Intermédiaire (dégâts de 20) et que l'attaque entraîne la perte de 16 Points de Vie, la personne affectée devra faire son test de RPhy contre 160.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "Base de dégâts 10",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Base de dégâts 20",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "Base de dégâts 30",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "Base de dégâts 40",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Adagio",
+        "level": 44,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort crée une mélodie chargée d'émotions fortes qui atteignent tous ceux qui l'écoutent en moins d'un round. Toutes les personnes touchées doivent réussir un test de RMys ou être complètement submergées par l'émotion choisie par le sorcier pour la symphonie. Si quelqu'un écoute partiellement Adagio ou s'il arrive à couvrir ses oreilles, il obtient un bonus de +40 à son test de Résistance. Adagio est entendu dans une zone autour du sorcier, à l'intérieur de laquelle le lanceur ne peut choisir ses cibles.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "RMys 120 / 20 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 160,
+            "requiredIntelligence": 9,
+            "effect": "RMys 140 / 50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 220,
+            "requiredIntelligence": 11,
+            "effect": "RMys 160 / 100 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 13,
+            "effect": "RMys 180 / 150 m de rayon",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Allegro",
+        "level": 54,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Crée la plus belle mélodie imaginable, qui étourdit et éblouit ceux qui l'écoutent. Tous ceux qui sont autour du sorcier doivent réussir tous les deux rounds une RMys ou subir l'état de Fascination, et être incapables de réaliser des actions actives de leur propre volonté. Les cibles sourdes sont immunisées contre ce sort, et si quelqu'un écoute la musique partiellement ou réussit à se couvrir les oreilles, il obtient un bonus de +40 à son test de Résistance.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "RMys 120 / 10 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 160,
+            "requiredIntelligence": 9,
+            "effect": "RMys 140 / 25 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 220,
+            "requiredIntelligence": 11,
+            "effect": "RMys 160 / 50 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 280,
+            "requiredIntelligence": 13,
+            "effect": "RMys 180 / 100 m de rayon",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Presstisimo",
+        "level": 64,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort crée une mélodie frénétique qui augmente la rapidité de réaction de tous ceux qui l'écoutent et qui sont désignés par le lanceur. Les personnes affectées qui sont proches du sorcier obtiennent immédiatement un bonus à leur initiative et augmentent leur rapidité de déplacement.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 8,
+            "effect": "10 m de rayon / +1 au Mouvement / +30 à l'Initiative",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "20 m de rayon / +2 au Mouvement / +30 à l'Initiative",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "30 m de rayon / +2 au Mouvement / +40 à l'Initiative",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 14,
+            "effect": "40 m de rayon / +3 au Mouvement / +50 à l'Initiative",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Fortissimo",
+        "level": 74,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier obtient un contrôle absolu sur n'importe quel son produit clans la zone d'influence déterminée par le Degré du sort. Il peut le modifier, augmenter sa puissance ou le rendre complètement imperceptible. Par exemple, il pourrait réunir de faibles murmures dans l'environnement pour former une agréable mélodie ou déformer les paroles d'une personne. À moins que le son n'ait une présence en tant que tel, ou qu'il soit produit par un être avec une Gnose de 40 ou plus, personne ne peut éviter les effets de ce sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 8,
+            "effect": "10 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "25 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "50 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 14,
+            "effect": "100 m de rayon",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Marziale",
+        "level": 84,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Crée une puissante mélodie qui renforce l'endurance innée de ceux qui l'écoutent et sont désignés par le lanceur. Les personnes affectées qui se trouvent autour du sorcier obtiennent différents bonus, décrits dans les Degré s du sort. Les bénéfices de ce sort ne se superposent pas, donc un individu qui est dans la zone d'influence de deux Marziale différents n'applique pas deux fois les bonus.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 8,
+            "effect": "10 m de rayon / +2 à l'IP / +20 en RMys",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "25 m de rayon / +3 à l'IP / +20 en RMys et en RPhy",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "50 m de rayon / +4 à l'IP / +20 en RMys, en RPhy et en RPsy / Seuil d'invulnérabilité de 50",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 14,
+            "effect": "100 m de rayon/ +5 à l'IP / +30 en RMys, en RPhy et en RPsy / Seuil d'invulnérabilité de 60",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Anima",
+        "level": 94,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Anima est un sort qui charge une mélodie de pouvoirs surnaturels pour pénétrer automatiquement l'âme de ceux qui l'écoutent. Anima doit être lancé en combinaison avec un autre sort, de type Animique, rendant ce sortilège Automatique et le faisant agir sur tous ceux qui sont à moins de 50 mètres du sorcier et qui écoutent la mélodie plus d'un round. La RMys à dépasser est la même que celle du sort affecté par Anima, mais si quelqu'un perçoit partiellement la mélodie ou s'il arrive à couvrir ses oreilles, il obtient un bonus de +40 à son test de RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 8,
+            "effect": "Affecte les sorts en Degré Initial",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 450,
+            "requiredIntelligence": 10,
+            "effect": "Affecte les sorts en Degré Intermédiaire",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 600,
+            "requiredIntelligence": 12,
+            "effect": "Affecte les sorts en Degré Avancé",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 14,
+            "effect": "Affecte les sorts en Degré Arcane",
+            "maintenance": 20
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Noblesse",
     "forbiddenPaths": ["Création", "Destruction", "Feu", "Nécromancie"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Cette voie secondaire regroupe tous les principes en relation avec l'apparence, la position sociale et la supériorité sur les autres. C'est la magie dont usent la noblesse et les grands seigneurs pour assurer leur domination sur les autres.",
+    "spells": [
+      {
+        "name": "Visage",
+        "level": 4,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Élimine les imperfections externes qui peuvent altérer le visage de la cible du sort, couvrant ces effets d'une douce couche de maquillage surnaturel et appliquant un léger effet curatif qui élimine toute maladie de la peau et en rehausse le teint. Le personnage obtient une apparence de vitalité et de bonne santé.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "Les effets généraux décrits pour le sort",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 50,
+            "requiredIntelligence": 8,
+            "effect": "Comme pour le Degré Initial, mais le personnage augmente d'un point son Apparence (jusqu'à un maximum de 9) ce qui le fait paraître plus jeune de quelques années",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 80,
+            "requiredIntelligence": 10,
+            "effect": "Comme pour le Degré Intermédiaire, mais il augmente de deux points son Apparence (jusqu'à un maximum de 10)",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Avancé, mais il augmente de trois points son Apparence (jusqu'à un maximum de 10)",
+            "maintenance": 10
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Parfum",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet", "Automatique"],
+        "effect": "Ce sort modifie l'odeur corporelle de la cible désignée par le sorcier, la transformant en un arôme d'une fragrance suave et agréable au nez, qui évoque des sensations plaisantes à qui les respire dans une zone déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 5,
+            "effect": "Les effets généraux décrits pour le sort / 20 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "Comme pour le Degré Initial, mais à chaque fois qu'une personne affectée par ce sort doit réussir un test de Style sur lequel peut influer son odeur corporelle, elle augmente automatiquement d'un niveau la difficulté atteinte / 30 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 10,
+            "effect": "Comme pour le Degré Intermédiaire, mais augmente automatiquement de deux niveaux la difficulté atteinte / 40 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Avancé, mais tous ceux qui sentent le parfum pendant plus de 5 rounds doivent réussir un test de RMys contre 100 ou passer automatiquement en état de Fascination, restant étourdis et plus sensibles aux paroles de la cible du sort / 50 m de rayon",
+            "maintenance": 10
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Muse",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Accorde au lanceur l'inspiration nécessaire pour donner une interprétation magistrale de toute forme d'art traditionnel comme jouer d'un instrument, chanter, danser, peindre, écrire, composer... Ce sort accorde au sorcier, soit la valeur indiquée par le Degré du sort dans la compétence secondaire mise à l'épreuve (Musique, Danse ou Art), soit la moitié de cette valeur comme bonus à sa propre compétence. Bien qu'il n'y ait pas de maintien, les effets de ce sort durent le temps suffisant pour finir l'œuvre commencée, tant que cela ne prend pas plus d'un jour.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "120 de compétence",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "180 de compétence",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "240 de compétence",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "280 de compétence",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Garde-Robe",
+        "level": 34,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Transforme temporairement les vêtements de la cible du sort en d'autres d'une qualité exquise, et leur donne la capacité de rester propres et sans le moindre pli à tout moment. Les taches et les éclaboussures rebondissent sur la toile sans causer la moindre imperfection au tissu et tout accroc sera recousu de façon surnaturelle en quelques secondes.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Les effets généraux décrits pour le sort",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Comme pour le Degré Initial, mais pendant qu'il porte les vêtements, le personnage obtient un bonus de +50 à sa compétence secondaire Style",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "Comme pour le Degré Intermédiaire, mais les vêtements varient de forme et de couleur suivant la situation et le besoin du moment, tout en conservant à tout moment un aspect resplendissant et impressionnant",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "Comme pour le Degré Avancé, mais les vêtements accordent un IP de 4 contre tout type d'attaque, et se réparent automatiquement s'ils subissent des dégâts, tant qu'ils ne sont pas d'origine surnaturelle",
+            "maintenance": 10
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Conversation Agréable",
+        "level": 44,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Permet de ressentir les pensées superficielles et les centres d'intérêts les plus courants d'un individu pour pouvoir avoir avec lui une conversation qui lui soit agréable ou distrayante. La personne affectée peut résister en réussissant un test de RMys ou de RPsy. En cas d'échec, le mage obtient un bonus de +200 à tous ses jets de Style et Persuasion dans le but de fasciner la cible et de l'attirer, au cours d'une conversation élémentaire. Pour que le sort fonctionne il faut parler au moins 30 secondes avec une personne qui n'est pas ouvertement hostile. Bien qu'il n'y ait pas de maintien, le bonus est valable tant que la conversation dure.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 14,
+            "effect": "RMys ou RPsy 240",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Grandeur",
+        "level": 54,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort recouvre le sorcier d'une chape de grandeur, lui accordant une puissante autorité qui intimide tous ceux qui sont habitués à obéir aux ordres. Tous ceux qui se trouvent dans une zone de 5 mètres autour de lui devront réussir un jet de RMys ou de RPsy, sous peine de se sentir poussés à lui plaire, le traitant avec le respect et la déférence dus à un supérieur. Un soldat ne posera pas de questions, un aubergiste offrira sa meilleure table et les serviteurs s'agenouilleront à son passage en répondant au moindre de ses désirs. Grandeur n'a aucun effet sur les individus qui ont une attitude hostile marquée contre le lanceur, ceux qui le connaissent ou sont capables de sentir qu'ils sont son égal ou qu'ils lui sont supérieurs, ou bien les êtres qui, simplement, considèrent qu'ils ne pourraient obéir au sorcier sous aucun prétexte. Les personnes affectées peuvent refaire le test uniquement lorsque le lanceur fait une action tellement inappropriée qu'ils remettent en question leur soumission.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 160",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 200",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 14,
+            "effect": "RMys ou RPsy 240",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Conquête des Cœurs",
+        "level": 64,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort altère la perception des personnes en présence du lanceur ou de la cible qu'il a désignée, leur faisant ressentir qu'il est un être d'une beauté et d'une sensualité enivrante. Toute personne sexuellement compatible avec le personnage qui est touchée par ces effets doit réussir un test de RMys ou de RPsy, sous peine d'être automatiquement charmée, montrant un intérêt marqué conforme à sa nature, sa personnalité ou sa façon d'être. De plus, l'individu sur lequel est placé ce sort obtient un bonus de +200 en Persuasion (Séduction) contre toute personne qui aurait échoué au test. Pour être affecté par ce sortilège il faut accorder une véritable attention à l'apparence de l'individu qui en bénéficie.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 11,
+            "effect": "RMys ou RPsy 160",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 13,
+            "effect": "RMys ou RPsy 200",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 240",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Présence Absolue",
+        "level": 74,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sortilège fait que n'importe quel individu dans un rayon déterminé par le Degré du sort autour du sorcier concentre complètement son attention sur lui, devenant incapable de fixer du regard ou de se concentrer sur une autre personne que celui-ci. Toute personne qui tente de faire une activité qui n'est pas centrée sur le sorcier subit automatiquement un malus de -40 à toutes les actions (-120 si l'action est en relation avec les compétences de perception). Pour être affecté par ce sort il faut simplement être à l'intérieur de la zone et échouer à un test de RMys ou de RPsy.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 9,
+            "effect": "RMys ou RPsy 120 / 20 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 160 / 50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 14,
+            "effect": "RMys ou RPsy 200 / 100 m de-rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 16,
+            "effect": "RMys ou RPsy 240 / 150 m de rayon",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Perfection",
+        "level": 84,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "La cible du sort altère son apparence physique, la rendant automatiquement parfaite.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 9,
+            "effect": "La cible obtient une Apparence de 10 et un bonus de +100 à ses compétences Style, Persuasion, Intimidation et Commandement",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Initial, mais ses blessures disparaissent toujours sans laisser de marques ou de cicatrices. Elle augmente de 3 points sa base de Régénération",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 14,
+            "effect": "Comme pour le Degré Intermédiaire, mais le bonus en Style, Persuasion, Intimidation et Commandement passe à +200",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 16,
+            "effect": "Comme pour le Degré Avancé, mais le personnage obtient un bonus de +1 à toutes ses caractéristiques",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Le Roi du Monde",
+        "level": 94,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier utilise la magie pour diviniser ses capacités sociales, se transformant en centre de l'attention et de la vénération de tous ceux qui l'entourent. Toute personne dans un rayon autour de lui déterminé par le Degré du sort doit réussir automatiquement un test de RMys, ou il considérera le sorcier comme son maître et son idéal, le sommet de son admiration. Le sorcier n'aura pas de véritable contrôle sur les personnes affectées, qui continueront à se comporter suivant leur personnalité, mais elles essaieront toutes de satisfaire, d'aider et d'obtenir l'approbation du lanceur comme si elles étaient ses fidèles adeptes.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 10,
+            "effect": "500 m de rayon / RMys 120",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 450,
+            "requiredIntelligence": 13,
+            "effect": "1 km de rayon / RMys 160",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "2 km de rayon / RMys 200",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 17,
+            "effect": "5 km de rayon / RMys 240",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true
+      }
+    ]
   },
   {
     "name": "Paix",
     "forbiddenPaths": ["Obscurité", "Destruction", "Feu", "Illusion", "Nécromancie"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "C'est la voie qui incarne l'harmonie et l'absence de conflits.",
+    "spells": [
+      {
+        "name": "Bouclier Salvateur",
+        "level": 4,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Crée une barrière protectrice qui abrite de tout type d'attaque. Dans le cas d'une utilisation pour protéger plusieurs individus contre une attaque de zone, le sort permet de protéger autant de cibles qu'il est indiqué pour le Degré du sort sans souffrir pour autant de dégâts supplémentaires ni appliquer de malus à la compétence défensive du lanceur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "Le bouclier a 300 Points de Vie / Il peut protéger jusqu'à deux personnes sans aucun malus",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "Le bouclier a 900 Points de Vie / Il peut protéger jusqu'à cinq personnes sans aucun malus",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 160,
+            "requiredIntelligence": 10,
+            "effect": "Le bouclier a 1 500 Points de Vie / Il peut protéger jusqu'à huit personnes sans aucun malus",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 14,
+            "effect": "Le bouclier a 3 000 Points de Vie / Il peut protéger jusqu'à douze personnes sans aucun malus",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Équilibre Intérieur",
+        "level": 14,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Le sorcier ou la cible désignée par celui-ci atteint un niveau de paix intérieure qui l'immunise contre tout effet qui peut déséquilibrer son état d'esprit.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "Le personnage est immunisé contre les états psychologiques négatifs",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "Comme pour le Degré Initial, mais le personnage obtient en outre un +40 à ses résistances contre les effets déséquilibrants",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Intermédiaire, mais le bonus applicable est de +80",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "Le personnage ne peut être affecté par aucun effet qui altère négativement ou de façon déséquilibrante sa conduite",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Défenseur",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Accorde un bonus à la compétence de défense d'un individu qui utilise une manœuvre de Défense totale. Affecte autant de personnes que le détermine le lanceur, tant que la somme de leurs présences ne dépasse pas ce qui est indiqué dans le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "+20 à la compétence de défense / Présence maximale affectable de 60",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "+20 à la compétence de défense / Présence maximale affectable de 100",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "+30 à la compétence de défense / Présence maximale affectable de 150",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "+40 à la compétence de défense / Présence maximale affectable de 250",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Détecter l'Harmonie",
+        "level": 34,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Le sorcier détecte les personnes à l'intérieur du rayon du sort qui ont des sentiments pacifiques et ceux qui en ont des violents, si ils ne dépassent pas la RMys déterminée par le Degré du sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "10 m de rayon / RMys 100",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "25 m de rayon / RMys 120",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "50 m de rayon / RMys 140",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 14,
+            "effect": "100 m de rayon / RMys 160",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Havre de Paix",
+        "level": 44,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort génère une zone capable de faire perdre tout instinct agressif. Quiconque pénètre à l'intérieur doit réussir automatiquement un test de RMys contre la difficulté déterminée par le Degré du sort sous peine de perdre toute attitude violente. Une personne affectée par ce sort ne peut plus retenter le test, sauf si elle ressent quelque chose qui pourrait lui rendre son comportement agressif. Quelqu'un qui a réussi le test n'est plus affecté par les effets de Havre de Paix tant qu'il ne sort pas de sa zone d'influence. La zone reste statique, là où elle a été lancée.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 160,
+            "requiredIntelligence": 8,
+            "effect": "10 m de rayon / RMys 100",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 220,
+            "requiredIntelligence": 10,
+            "effect": "25 m de rayon / RMys 120",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 12,
+            "effect": "50 m de rayon / RMys 140",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 14,
+            "effect": "100 m de rayon / RMys 160",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Signe de Paix",
+        "level": 54,
+        "action": "Passive",
+        "types": ["Automatique"],
+        "effect": "Le sorcier annule une action offensive dirigée contre lui. Pour être affecté il faut être à l'origine d'une attaque dont la cible est le lanceur (y compris s'il y a d'autres individus également visés par l'attaque). Pour éviter ces effets, il faut réussir une RMys contre une difficulté indiquée par le Degré du sort. Une même attaque ne peut être affectée qu'une fois par un sort de Signe de Paix.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 10,
+            "effect": "RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 260,
+            "requiredIntelligence": 12,
+            "effect": "RMys 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 340,
+            "requiredIntelligence": 14,
+            "effect": "RMys 240",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Défense Absolue",
+        "level": 64,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Quand le sorcier ne fait aucune action offensive pendant un round, il peut ajouter un bonus à sa Projection magique pour se défendre.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "+20 à la Projection magique en défense",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 9,
+            "effect": "+30 à la Projection magique en défense",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 110,
+            "requiredIntelligence": 12,
+            "effect": "+40 à la Projection magique en défense",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 15,
+            "effect": "+50 à la Projection magique en défense",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Ailes du Salut",
+        "level": 74,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Crée une barrière protectrice qui protège de tout type d'attaque. Le sort permet de protéger tous les individus à l'intérieur du rayon d'action qui est indiqué pour le Degré du sort sans souffrir pour autant de dégâts supplémentaires ni appliquer de malus à la compétence défensive du lanceur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "Le bouclier a 500 Points de Vie / 5 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 11,
+            "effect": "Le bouclier a 1 200 Points de Vie / 15 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 350,
+            "requiredIntelligence": 13,
+            "effect": "Le bouclier a 2 500 Points de Vie / 25 m de rayon",
+            "maintenance": 35
+          },
+          {
+            "level": "Arcane",
+            "zeon": 450,
+            "requiredIntelligence": 15,
+            "effect": "Le bouclier a 5 000 Points de Vie / 50 m de rayon",
+            "maintenance": 45
+          }
+        ]
+      },
+      {
+        "name": "Paix Absolue",
+        "level": 84,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "La cible de ce sort est imprégnée d'une énergie de la paix la plus pure, qui l'empêchera d'amorcer des actes violents de quelque sorte que ce soit. Quiconque échouant à la RMys déterminée par le Degré du sortilège ne peut plus faire d'actions offensives contre personne de façon consciente. Son essence violente disparaissant complètement, il n'est alors plus nécessaire de maintenir le sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 9,
+            "effect": "RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 11,
+            "effect": "RMys 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "RMys 180",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Pax In Terrax",
+        "level": 94,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Lancer ce sort crée une zone de non-violence absolue, dans laquelle il ne peut y avoir aucun conflit ou guerre. Tous les individus qui entrent dans cette zone doivent réussir automatiquement un test de RMys contre la valeur indiquée dans le Degré du sort ou abandonner toute idée de violence ou de confrontation, et être incapables de faire des actions violentes. Une personne qui échoue au test de Résistance ne peut plus le refaire tant qu'elle est dans la zone d'action du sort, alors que celles qui le réussissent doivent le refaire à chaque fois qu'elles tentent de réaliser une action violente et qu'elles sont toujours dans la zone d'influence du sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 350,
+            "requiredIntelligence": 8,
+            "effect": "1 km de rayon / RMys 120",
+            "maintenance": 35
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 600,
+            "requiredIntelligence": 10,
+            "effect": "5 km de rayon / RMys 140",
+            "maintenance": 60
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1000,
+            "requiredIntelligence": 12,
+            "effect": "15 km de rayon / RMys 160",
+            "maintenance": 100
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1600,
+            "requiredIntelligence": 14,
+            "effect": "50 km de rayon / RMys 180",
+            "maintenance": 160
+          }
+        ],
+        "isDailyMaintenance": true
+      }
+    ]
   },
   {
     "name": "Péché",
     "forbiddenPaths": ["Lumière", "Eau", "Terre", "Essence", "Illusion"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Cette voie secondaire est la plus obscure et la plus retorse de toutes, car elle regroupe tous les pouvoirs en relation avec les émotions négatives, le péché et plus globalement le mal à l'état pur. C'est la magie utilisée par la grande majorité des créatures infernales, ainsi que par les adorateurs des divinités maléfiques de chaque culture.",
+    "spells": [
+      {
+        "name": "Ressentir le Péché",
+        "level": 4,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Grâce à ce sort, le sorcier peut voir les péchés que quelqu'un a commis. Il n'obtiendra aucune information spécifique sur eux (il saura le type de péché sans savoir exactement ce qu'ils ont fait), mais il en ressentira plus ou moins le degré de gravité et approximativement à quel moment ils ont été perpétrés. Par exemple, il pourra savoir que le péché commis par une personne est le mensonge, mais sans savoir sur quoi ou pourquoi il a menti. Le lanceur peut ressentir un péché tous les 10 points de marge d'échec de la cible à son test de RMys contre la difficulté prévue par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 6,
+            "effect": "RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "RMys 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 10,
+            "effect": "RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "RMys 180",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Inciter au Péché",
+        "level": 14,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "La cible du sorcier est incitée à commettre le péché capital qui lui correspond le plus. Une personne très gourmande ressentira le besoin de manger en permanence, alors qu'un individu porté à la luxure se jettera dans les bras de toute personne proche qu'il considère comme attractive. Quiconque échoue à la RMys du sort sera affecté et n'aura le droit de refaire le test qu'à chaque fois qu'il verra quelque chose qui lui donnera à nouveau l'envie de pécher.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "RMys 120",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 70,
+            "requiredIntelligence": 8,
+            "effect": "RMys 140",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "RMys 160",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 12,
+            "effect": "RMys 180",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Gourmandise",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier récupère automatiquement une partie des points de Zéon (arrondie à l'inférieur par tranches de 5) et de Ki dépensés dans un rayon autour de lui déterminé par le Degré du sort. Par exemple, si le lanceur a activé Gourmandise en Degré Initial et qu'un sorcier lance un sort dans son rayon d'action avec un coût en Zéon de 100 points, il récupèrera automatiquement 10 points de Zéon. Gourmandise n'a aucun effet sur les sorts innés ou les pouvoirs magiques qui ne consomment pas de Zéon, pas plus que sur les capacités utilisées par le lanceur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "Absorbe 10 % / 10 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "Absorbe 20 % / 20 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 11,
+            "effect": "Absorbe 30 % / 40 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 180,
+            "requiredIntelligence": 13,
+            "effect": "Absorbe 50 % / 60 m de rayon",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Luxure",
+        "level": 34,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "La cible du sort se transforme en un aimant pour toute personne attirée par le genre de celle-ci. Toute personne dans ce cas qui la voit et ne réussit pas la RMys déterminée par le Degré du sort se sentira extrêmement attirée physiquement par la cible, et celle qui échouera de plus de 40 points au test subira une attraction obsessionnelle et maladive, perdant même la raison et faisant tout pour posséder l'objet de son désir. Tout individu affecté peut refaire le test une fois par heure. La cible du sort peut résister à Luxure si elle le désire, en dépassant la RMys du sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "RMys 140",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "RMys 160",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "RMys 180",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "RMys 200",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Avarice",
+        "level": 44,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Dérobera automatiquement un objet en possession de la cible du sort, le faisant apparaître devant le sorcier. Il n'est pas nécessaire que l'objet puisse se « déplacer » jusqu'au lanceur. Ce sortilège peut affecter depuis quelque chose que la cible tient dans ses mains, jusqu'aux vêtements ou aux pièces d'armure qu'elle porte. L'objet choisit ne peut avoir une présence supérieure à celle qui est déterminée par le Degré du sort. Toute personne consciente qu'elle pourrait être la cible de ce sort peut essayer de résister à ses effets en réussissant une RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 8,
+            "effect": "RMys 120 / Présence maximale de 50",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 10,
+            "effect": "RMys 140 / Présence maximale de 80",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "RMys 160 / Présence maximale de 100",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 260,
+            "requiredIntelligence": 14,
+            "effect": "RMys 180 / Présence maximale de 120",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Paresse",
+        "level": 54,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "La cible est soumise à un profond état de paresse. Par conséquent, durant toute la durée de l'effet du sortilège elle ne pourra réaliser que des actions passives. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "RMys 100",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 9,
+            "effect": "RMys 120",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 11,
+            "effect": "RMys 140",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "RMys 160",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Orgueil",
+        "level": 64,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Celui qui souffre de cet effet obtient une confiance en lui-même illimitée, méprisant les compétences de tous ceux qui l'entourent. Cette personne augmente automatiquement ses compétences, obtenant des bonus spéciaux déterminés par le Degré du sort. Toutefois, dans le même temps ses capacités spéciales sont très limitées, avec une incapacité à utiliser les techniques de Ki ou les Ars Magnus, les pouvoirs psychiques de Niveau 2 ou 3, ou les sort d'un niveau supérieur à 40, bien que les effets maintenus restent en place normalement. Pour résister à ces effets, il faut réussir une RMys contre une difficulté déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys 120 / +10 à toutes les actions / +50 au Style",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "RMys 140 / +20 à toutes les actions / +100 au Style",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "RMys 160 / +20 à toutes les actions / +150 au Style / +100 en Résistance à la douleur",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 13,
+            "effect": "RMys 180 / +30 à toutes les actions / +200 au Style / +150 en Résistance à la douleur",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Colère",
+        "level": 74,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "La cible du sorcier entre dans un état de Colère digne d'un berserker qu'elle ne peut contrôler, attaquant immédiatement tous ceux qui sont l'objet de sa fureur. Le sorcier pourra, en lançant le sort, cibler contre qui toute cette colère sera dirigée. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "RMys 120",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "RMys 140",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 12,
+            "effect": "RMys 160",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 220,
+            "requiredIntelligence": 14,
+            "effect": "RMys 180",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Envie",
+        "level": 84,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Si la cible échoue au test de RMys déterminé par le Degré du sort, elle subira tout ce que subit le sorcier, tant en positif qu'en négatif. Par exemple, si le personnage affecté inflige des dégâts au lanceur, il subira les mêmes dégâts. Ou si le sorcier reçoit n'importe quel effet mystique, quelle que soit sa nature, ce dernier sera aussi transféré.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "RMys 120",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 11,
+            "effect": "RMys 140",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 13,
+            "effect": "RMys 160",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 15,
+            "effect": "RMys 180",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "La Semence du Mal",
+        "level": 94,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Un individu affecté par ce sortilège devient entièrement mauvais, perdant tout concept de moralité. Le personnage devient automatiquement d'une méchanceté extrême. Une personne réellement pure, sans aucun concept du mal en elle, est immunisée contre ce sort. Pour résister à ses effets, il faut réussir un test de RMys contre la difficulté déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 12,
+            "effect": "RMys 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 260,
+            "requiredIntelligence": 14,
+            "effect": "RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 320,
+            "requiredIntelligence": 16,
+            "effect": "RMys 180",
+            "maintenance": 0
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Connaissance",
     "forbiddenPaths": ["Destruction", "Feu", "Terre", "Illusion"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Connaissance est une voie secondaire primordiale qui domine le concept même du savoir. Les sorciers qui l'utilisent ont la maîtrise sur tout ce qui peut être appris.",
+    "spells": [
+      {
+        "name": "Catégoriser",
+        "level": 4,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le lanceur du sort obtient des connaissances sur la nature d'une création et peut, par exemple, l'utiliser sur un plat cuisiné pour tenter de découvrir sa recette, ou sur un engin pour voir comment et de quoi il est fait. Il ne permet pas au lanceur de savoir comment recréer une telle chose, mais au moins il le guide sur les matériaux à chercher ou les éléments à utiliser. Si l'objet ciblé est particulièrement complexe, ou s'il possède une présence très élevée, il sera immunisé contre ce sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "Le lanceur sait dans quel champ d'étude l'objet se situe : cuisine, mécanique, forge... sans avoir plus d'informations",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "Il obtient des informations sur les matériaux qui composent l'objet, ainsi qu'une idée approximative du pourcentage de chacun d'entre eux dans la composition finale",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "Il obtient une vague idée de comment l'objet fonctionne, mais pas à quoi il sert",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "Le lanceur obtient une vague idée de comment a été créé l'objet, mais pas suffisamment pour savoir comment le créer à nouveau",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Savoir",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Accorde au lanceur un savoir inné dans une matière. Le sorcier obtient une valeur dans la compétence de connaissance qu'il souhaite, la substituant à celle qu'il avait déjà. Un personnage peut lancer plusieurs fois ce sort, mais à chaque fois il doit choisir un savoir différent.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 6,
+            "effect": "40 à une compétence",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 9,
+            "effect": "60 à une compétence",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "80 à une compétence",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 160,
+            "requiredIntelligence": 13,
+            "effect": "100 à une compétence",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Connaissance des Faiblesses",
+        "level": 24,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Permet au sorcier de voir les imperfections et les faiblesses de quelque chose ou de quelqu'un. Lancé sur une créature, il permet de découvrir ses défauts et ses faiblesses, alors que si la cible est un objet, le sorcier saura s'il a une faiblesse particulière contre quelque chose et quel est son point de faille. La seule condition pour être affecté par ce sort est de se trouver en présence du lanceur, mais la cible peut résister à ses effets en réussissant une RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 7,
+            "effect": "RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "RMys 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 11,
+            "effect": "RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 180,
+            "requiredIntelligence": 13,
+            "effect": "RMys 180",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Savoir la Vérité",
+        "level": 34,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Le sorcier sait quand quelqu'un lui ment. Si une personne ment face au lanceur, elle doit réussir une RMys contre la difficulté déterminée par le Degré du sort. Si elle échoue, le sorcier saura qu'elle a menti, mais pas exactement à propos de quoi.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys 80",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 9,
+            "effect": "RMys 100",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 160,
+            "requiredIntelligence": 11,
+            "effect": "RMys 120",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 13,
+            "effect": "RMys 140",
+            "maintenance": 20
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Savoir Magique",
+        "level": 44,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le lanceur obtient les connaissances pour lancer un sort dans une voie qu'il ne connaît pas, tant que ce sortilège n'est pas d'un niveau supérieur à celui indiquer par le Degré du sort. Une fois que Savoir Magique a été exécuté, le sorcier a un maximum de 5 rounds pour utiliser le nouveau sortilège, sous peine d'en perdre la possibilité. Ce sort ne permet pas d'utiliser un sortilège d'une voie opposée à celle dont dépend cette voie secondaire.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "Un sort jusqu'au niveau 20",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 10,
+            "effect": "Un sort jusqu'au niveau 30",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Un sort jusqu'au niveau 40",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 14,
+            "effect": "Un sort jusqu'au niveau 50",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Connaissance du Combat",
+        "level": 54,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sorcier perçoit et comprend les compétences d'un adversaire, ainsi que sa tactique de combat et comment anticiper ses déplacements. Ainsi, si la cible ne réussit pas à surpasser la RMys déterminée par le sort, le lanceur obtient un bonus à toutes les compétences opposées à cet ennemi. Pour être affecté par ce sortilège, il suffit d'être en présence du sorcier.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys 140 / +20 à toute action opposée",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 9,
+            "effect": "RMys 160 / +30 à toute action opposée",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 160,
+            "requiredIntelligence": 11,
+            "effect": "RMys 180 / +30 à toute action opposée",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 13,
+            "effect": "RMys 200 / +40 à toute action opposée",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Apprentissage",
+        "level": 64,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "La cible du sort améliore sa capacité à apprendre de nouvelles choses à des niveaux impossibles, diminuant le temps d'études ou de pratique pour maîtriser la connaissance qu'elle souhaite acquérir. Elle pourra par exemple apprendre un sortilège en baissant d'un niveau sa complexité d'apprentissage.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "Diminue d'un niveau les difficultés d'apprentissage",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 10,
+            "effect": "Diminue de deux niveaux les difficultés d'apprentissage",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Diminue de trois niveaux les difficultés d'apprentissage",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 14,
+            "effect": "Diminue de quatre niveaux les difficultés d'apprentissage",
+            "maintenance": 40
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Conseiller",
+        "level": 74,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Comme son nom l'indique, ce sort conseille judicieusement le lanceur quant à un questionnement ou un doute. Le sort ne devine rien et n'a pas un savoir supérieur à celui que possède le lanceur, mais en utilisant ses connaissances comme une base il conseillera le lanceur du mieux qu'il peut, ce qui peut prendre plusieurs rounds et nécessiter un maintien.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "Le lanceur obtient un conseil approximatif sur la meilleure décision à prendre. L'indice de certitude est élevé, mais c'est loin d'être une prédiction parfaite",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "Le conseiller montre l'éventail de possibilités et les éventuelles conséquences de ces événements ainsi que celle qui est la plus susceptible de se produire",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 11,
+            "effect": "Le lanceur obtient un conseil très judicieux à propos des décisions qu'il doit prendre ou de ce qu'il doit faire. L'indice de certitude est très élevé",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 13,
+            "effect": "Le lanceur obtient un conseil détaillé avec toutes les possibilités et possibles conséquences de ses actes, ainsi qu'un pourcentage approximatif des probabilités d'occurrence de chacune d'entre elles",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Accorder des Connaissances",
+        "level": 84,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Permet de transférer des connaissances d'un individu à un autre. Par exemple, il pourra faire en sorte qu'une personne perde ses connaissances sur l'archéologie ou les rituels occultes pour les accorder à un autre individu tant que durera le sortilège. En termes de jeu, Accorder des Connaissances permet de transmettre une compétence intellectuelle dont la valeur ne dépasse pas la valeur indiquée par le Degré du sort. Il faut noter que le lanceur peut choisir s'il transfère toutes les informations pertinentes ou seulement un thème en particulier. Cette compétence permet également d'envoyer des informations ayant trait à la connaissance de sorts, dans une proportion maximale équivalente à la valeur déterminée par le Degré du sortilège. Dans ce cas, si le lanceur transfère, par exemple, 40 Niveaux de Magie de Lumière à un individu qui a cette voie à 70, la personne affectée perdra la capacité de lancer les sorts des niveaux 2 à 40, mais pourra continuer à lancer ceux des niveaux 42 à 70. Il est important de garder à l'esprit que ce sort n'accorde pas le Don mystique, donc si l'on transfère des sorts à une personne qui n'a pas cet avantage, elle ne pourra tout simplement pas les utiliser. Pour résister aux effets de ce sortilège il faut réussir une RMys déterminée par le Degré du sort. Une personne affectée peut refaire le test une fois par jour.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 8,
+            "effect": "RMys 120 / Compétence intellectuelle jusqu'à une valeur de 50 ou 20 Niveaux de Magie",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 10,
+            "effect": "RMys 140 / Compétence intellectuelle jusqu'à une valeur de 100 ou 40 Niveaux de Magie",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "RMys 160 / Compétence intellectuelle jusqu'à une valeur de 150 ou 60 Niveaux de Magie",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 14,
+            "effect": "RMys 180 / Compétence intellectuelle jusqu'à une valeur de 200 ou 80 Niveaux de Magie",
+            "maintenance": 20
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Vie",
+        "level": 94,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort accorde temporairement des expériences vitales au personnage, lui permettant d'augmenter en un instant ses compétences et son savoir. En termes de jeu ce sortilège accorde des niveaux supplémentaires au lanceur, lui donnant momentanément la capacité d'utiliser les PF obtenus pour s'améliorer de façon tout à fait normale. Les effets de ce sort ne se superposent pas, et le sorcier ne peut bénéficier que d'un sort de Vie à la fois.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 400,
+            "requiredIntelligence": 10,
+            "effect": "+1 niveau",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 600,
+            "requiredIntelligence": 12,
+            "effect": "+2 niveaux",
+            "maintenance": 60
+          },
+          {
+            "level": "Avancé",
+            "zeon": 800,
+            "requiredIntelligence": 14,
+            "effect": "+3 niveaux",
+            "maintenance": 80
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1000,
+            "requiredIntelligence": 16,
+            "effect": "+4 niveaux",
+            "maintenance": 100
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Sang",
     "forbiddenPaths": ["Lumière", "Air", "Feu", "Terre", "Illusion"],
     "status": "Secondaire",
-    "description": "",
+    "description": "Cette voie secondaire contrôle le principe qui donne la vie aux êtres organiques, celui du sang lui-même.",
     "limits": "Bien sûr, les êtres sans circulation sanguine comme les élémentaires, les âmes ou les golems inorganiques sont immunisés contre les sorts de cette voie secondaire.",
     "spells": [
       {
@@ -20957,29 +23574,1529 @@
     "name": "Songes",
     "forbiddenPaths": ["Création", "Destruction", "Eau", "Feu", "Terre"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Songes est la voie de magie secondaire qui contrôle le monde onirique des rêveurs, ainsi que son reflet dans la Veille.",
+    "spells": [
+      {
+        "name": "Sentir les Songes",
+        "level": 4,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Grâce à ce sort, le sorcier est capable de localiser les énergies oniriques de tous les êtres qui rêvent près de lui. De plus, grâce à l'énergie qu'ils dégagent il pourra savoir si leurs rêves sont paisibles ou si ce sont au contraire de terribles cauchemars. Pour résister à la détection, les dormeurs doivent réussir une RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 5,
+            "effect": "50 mètres / RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "150 mètres / RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 80,
+            "requiredIntelligence": 10,
+            "effect": "200 mètres / RMys 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 100,
+            "requiredIntelligence": 12,
+            "effect": "500 mètres / RMys 240",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Sommeil Imperturbable",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort protège un personnage des sorts ou effets de tous types en relation avec les rêves, lui accordant un bonus à la RMys et à la RPsy contre eux. De plus, ce sort évite que le personnage soit transporté de façon involontaire dans la Veille, lui accordant le même bonus à la RMys et à la RPsy si quelqu'un tentait de le forcer à s'y rendre contre sa volonté.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 5,
+            "effect": "+40 à la RMys ou RPsy",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "+60 à la RMys ou RPsy",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "+80 à la RMys ou RPsy",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "+100 à la RMys ou RPsy",
+            "maintenance": 10
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Espionner les Songes",
+        "level": 24,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort permet d'observer ce qui se passe dans les rêves d'un dormeur, qu'ils soient paisibles ou que ce soient des cauchemars. Il n'est pas possible d'intervenir dans ceux-ci mais on peut les voir de façon détaillée. Une personne peut résister en réussissant un test de RMys. Si elle échoue, elle n'a droit qu'à un nouvel essai par jour, à partir du moment où elle est consciente ou qu'elle suspecte qu'elle peut être affectée par un sortilège de ce type.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "RMys 140",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "RMys 160",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "RMys 180",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "RMys 200 / Le lanceur peut créer une image matérielle des songes de l'individu affecté, permettant à n'importe quelle personne proche de lui de les voir",
+            "maintenance": 15
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Altérer les Songes",
+        "level": 34,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Grâce à ce sort, le sorcier peut altérer les songes (qu'ils soient bons ou mauvais) de toutes les personnes dans le rayon d'action déterminé par le Degré du sortilège. Ce sort ne fonctionne que si le sorcier ne fait pas lui-même partie du songe, et il n'est pas possible de l'utiliser pour ses propres rêves ou dans la Veille. Ce sort n'affecte que les personnes endormies à ce moment et disparaît dès qu'elles se réveillent.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys 100 / 50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "RMys 120 / 150 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 11,
+            "effect": "RMys 140 / 250 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 13,
+            "effect": "RMys 160 / 500 m de rayon",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Noctambulisme",
+        "level": 44,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Grâce à ce sortilège, le sorcier ou la personne désignée par celui-ci peut amener dans le monde son alter ego onirique, la forme que prend sa conscience le plus souvent lorsqu'il rêve. Ainsi, pendant que son corps est endormi, il peut se déplacer librement dans le monde sous la forme qu'il revêt dans ses songes. Pendant qu'une personne est affectée par ce sort et arpente le monde de cette façon, elle est invisible à l'œil humain (sauf pour ceux capables de voir les esprits) et ne fait aucun bruit. Elle est également complètement intangible et ne peut rien toucher. La distance maximale sur laquelle la personne affectée peut se séparer de son enveloppe corporelle est déterminée par le Degré du sort. Si cette projection subit des dégâts de quelque type que ce soit, le sort est interrompu.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "Distance maximale 1 kilomètre",
+            "maintenance": 30
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "Distance maximale 2 kilomètres / La personne affectée peut devenir visible à volonté et parler avec n'importe qui",
+            "maintenance": 30
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 14,
+            "effect": "Distance maximale 5 kilomètres / Comme pour le Degré Intermédiaire, mais le personnage peut altérer son aspect physique à volonté, prenant toute forme dont il pourrait rêver",
+            "maintenance": 40
+          },
+          {
+            "level": "Arcane",
+            "zeon": 160,
+            "requiredIntelligence": 16,
+            "effect": "Distance illimitée / Comme pour le Degré Avancé, mais la projection peut entrer dans le monde onirique de n'importe quel dormeur qu'elle croise, si le rêveur ne réussit pas un test de RMys contre 150",
+            "maintenance": 40
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Sommeil Éternel",
+        "level": 54,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce terrible sort plonge sa victime dans un sommeil dont elle ne peut s'éveiller avant que le sorcier ne le décide, quoi qu'il arrive à son corps. Une personne affectée par ce sort a le droit de faire un test de Résistance par jour, mais en appliquant -40 à ses Résistances pour arriver à se réveiller.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "RMys 80",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 9,
+            "effect": "RMys 100",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 11,
+            "effect": "RMys 120",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 13,
+            "effect": "RMys 140",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Déchirer la Membrane",
+        "level": 64,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier crée un vortex dans la réalité qui lui permet d'ouvrir un portail vers la Veille.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "Le portail ne laisse passer que le sorcier et dans une seule direction",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "Le portail peut être traversé par n'importe quel type et nombre de créatures, mais dans une seule direction",
+            "maintenance": 50
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 14,
+            "effect": "Comme pour le Degré Intermédiaire, mais le portail peut être utilisé dans les deux sens",
+            "maintenance": 60
+          },
+          {
+            "level": "Arcane",
+            "zeon": 320,
+            "requiredIntelligence": 16,
+            "effect": "Comme pour le Degré Avancé, mais le sorcier peut déterminer librement qui peut traverser le portail ou s'il faut éprouver un sentiment ou posséder une qualité spécifique pour l'ouvrir",
+            "maintenance": 70
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Bannir dans la Veille",
+        "level": 74,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort permet d'arracher une entité au monde terrestre et de l'envoyer dans un endroit au hasard dans la Veille. Le lanceur peut choisir de faire voyager uniquement le subconscient onirique de la personne affectée (son corps restant endormi pendant que son esprit est envoyé dans la Veille). Si elle dormait déjà elle ne pourra pas remarquer le saut dimensionnel, mais si elle était éveillée son corps tombera dans un profond sommeil. Si ce sortilège est utilisé pour affecter des créatures propres à la Veille, elles sont alors complétement entraînées. Pour y résister il faut réussir un test de RMys d'une difficulté déterminée par le Degré du Sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "RMys 100",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 140,
+            "requiredIntelligence": 14,
+            "effect": "RMys 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 160,
+            "requiredIntelligence": 16,
+            "effect": "RMys 160",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Entre Rêve et Réalité",
+        "level": 84,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Permet au sorcier d'altérer les liens entre le monde réel et la Veille, lui permettant temporairement de fondre ces deux aspects de la réalité en un seul. Les créatures qui entrent dans cette zone resteront cependant « de leur côté », car en sortant de la zone affectée elles seront toujours « de leur côté » (c'est-à-dire qu'une créature de la Veille continuera sur son plan d'existence en traversant la zone affectée par le sort). Toutefois, les créatures qui ont des pouvoirs spéciaux dans la Veille les conserveront dans cette zone.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 400,
+            "requiredIntelligence": 13,
+            "effect": "100 m de rayon",
+            "maintenance": 80
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "500 m de rayon",
+            "maintenance": 100
+          },
+          {
+            "level": "Avancé",
+            "zeon": 700,
+            "requiredIntelligence": 17,
+            "effect": "1 km de rayon",
+            "maintenance": 140
+          },
+          {
+            "level": "Arcane",
+            "zeon": 900,
+            "requiredIntelligence": 19,
+            "effect": "3 km de rayon",
+            "maintenance": 180
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Rendre les Rêves Réels",
+        "level": 94,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort fait exactement ce qu'indique son titre : il permet au sorcier d'amener dans le monde réel tout être ou objet issu des songes d'une personne endormie. Il pourra, par exemple, attirer à la réalité un bouclier dont rêve un guerrier ou le cheval qu'il montait dans son enfance. En faisant cela, la réalité le matérialisera, lui donnant de la « substance ». Si c'est un être « vivant », la créature aura tous les aspects d'une entité réelle, mais elle ne pourra pas avoir de pouvoirs supérieurs à ceux accessibles aux êtres d'une Gnose de 25 ni un niveau supérieur à celui déterminé par le Degré du sort. Si c'est un objet, sa présence maximale sera déterminée par le Degré du sort. Il est important de noter que ce sort ne permet pas au lanceur d'observer ce qui se passe à l'intérieur des rêves des personnes, pour choisir exactement ce qu'il veut rapporter il devra utiliser un autre moyen pour « voir » le songe.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "Présence maximum 80 / Niveau 3",
+            "maintenance": 50
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 600,
+            "requiredIntelligence": 14,
+            "effect": "Présence maximum 120 / Niveau 6",
+            "maintenance": 60
+          },
+          {
+            "level": "Avancé",
+            "zeon": 900,
+            "requiredIntelligence": 16,
+            "effect": "Présence maximum 160 / Niveau 9",
+            "maintenance": 65
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1200,
+            "requiredIntelligence": 18,
+            "effect": "Présence maximum 200 / Niveau 12",
+            "maintenance": 75
+          }
+        ],
+        "isDailyMaintenance": true
+      }
+    ]
   },
   {
     "name": "Temps",
     "forbiddenPaths": ["Air", "Eau", "Feu", "Terre", "Essence", "Illusion", "Nécromancie"],
     "status": "Secondaire",
-    "description": "",
-    "limits": "",
-    "spells": []
+    "description": "Pour beaucoup d'occultistes le principe qui contrôle cette voie secondaire est le plus grand de tous, y compris parmi ceux des voies majeures. Ceux qui l'utilisent sont appelés les Chronomants, ou mages du temps, et leurs capacités consistent à utiliser la magie pour contrôler le passage du temps comme s'il s'agissait simplement d'un élément de plus.",
+    "limits": "La magie du temps sur Gaïa : Contrairement aux autres voies de magie, tous les sorts en relation avec le temps sur Gaïa sont très limités et contrôlés par les Puissances dans l'Ombre. De ce fait, tout sortilège en relation avec le continuum espace-temps à même de provoquer une modification de l'histoire est simplement sans effet, car il est annulé par les systèmes Ormus d'Imperium.",
+    "spells": [
+      {
+        "name": "Connaissance du Temps",
+        "level": 4,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le personnage peut percevoir de façon surnaturelle le passage du temps.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "Permet de percevoir de façon surnaturelle la date et l'heure en utilisant un calendrier connu du lanceur",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 50,
+            "requiredIntelligence": 7,
+            "effect": "Comme pour le Degré Initial mais le lanceur ressent en plus avec une exactitude absolue les secondes et les millièmes de secondes. De plus, il permet de sentir s'il existe une altération surnaturelle dans le flux du temps",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 70,
+            "requiredIntelligence": 10,
+            "effect": "Comme Pour le Degré Intermédiaire, mais le personnage peut mettre en place une alarme à un moment déterminé à partir de cet instant, ressentant automatiquement lorsque le temps prévu est écoulé. Par exemple, il pourra déterminer qu'il veut savoir quand quatre heures, douze minutes et sept secondes se seront écoulées",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 90,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Avancé, mais le lanceur peut calculer le laps de temps que va prendre une chose pour se terminer, comme par exemple combien de temps mettra une personne qui marche à une vitesse constante pour traverser une plage ou combien de temps va s'écouler avant qu'une mélodie en train d'être jouée ne se termine",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Accélération du Temps",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier accélère son essence face au passage du temps. Pendant qu'il perçoit le monde au ralenti, les autres ne voient qu'une tache en mouvement. En termes de jeu, cela accorde différents bonus au lanceur ou à l'individu désigné par celui-ci, en fonction du Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "+1 en Mouvement / +20 à l'Initiative / +10 à toutes les actions",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "+2 en Mouvement / +30 à l'Initiative / +15 à toutes les actions",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 12,
+            "effect": "+2 en Mouvement / +40 à l'Initiative / +20 à toutes les actions",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 15,
+            "effect": "+3 en Mouvement / +50 à l'Initiative / +25 à toutes les actions",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Ralentissement du temps",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort affecte une zone déterminée dans laquelle tout individu désigné par le lanceur est entraîné dans un flux temporel ralenti. Par conséquent, les personnes affectées se déplacent beaucoup plus lentement, souffrant ainsi de divers malus indiqués en fonction des Degrés du sortilège. La zone affectée par Ralentissement du Temps reste à l'endroit où elle a été lancée. Pour résister à ses effets il faut réussir une RMys, mais quelqu'un qui a échoué au test ne peut pas le refaire tant qu'il ne sort pas de la zone d'influence du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "-2 en Mouvement / -40 à l'Initiative / 10 m de rayon / RMys 100",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 10,
+            "effect": "-4 en Mouvement / -60 à l'Initiative / -10 à toutes les actions / 25 m de rayon / RMys 120",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "-6 en Mouvement / -80 à l'Initiative / -20 à toutes les actions / 50 m de rayon / RMys 140",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 15,
+            "effect": "-8 en Mouvement / -100 à l'Initiative / -30 à toutes les actions / 100 m de rayon / RMys 160",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Retenir le Temps",
+        "level": 34,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort crée une bulle surnaturelle qui bloque le flux du temps. Tant que le sortilège est actif, l'état des choses à l'intérieur de cette bulle ne peut changer. En termes de jeu, ce sort mémorise l'état et la condition actuels de tout ce qui se trouve dans un rayon d'action déterminé par le Degré du sortilège au moment où celui-ci est lancé, empêchant à tout moment que, quels que soient les dégâts que subissent des choses ou des personnes à partir de ce moment, leurs effets ou conséquences puissent se produire. Par exemple, pendant que le sort est maintenu, un personnage blessé conservera toujours la même quantité de points de vie perdus, même si par la suite il essuie de nouvelles attaques qui peuvent le blesser plus sérieusement et même le tuer. De la même manière, les effets négatifs physiques comme la douleur ou la fatigue n'ont pas plus d'effet pendant ce temps. Malheureusement, Retenir le Temps ne peut que retarder les effets de ce qui s'est réellement passé, et non les éviter, donc tout ce qu'a subi un individu ou une chose durant ce laps de temps bloqué apparaîtra immédiatement à la fin du sort ou en sortant de sa zone d'influence. Cela signifie que si quelqu'un est mort à l'intérieur d'une zone bloquée, quels que soient les soins qu'elle reçoit à posteriori elle ne pourra être sauvée lorsque le sort s'arrêtera, car elle sera morte depuis longtemps. Le sorcier peut choisir librement qui est affecté ou non, et quelles choses pourront être détruites ou non. Néanmoins, ce sortilège n'affecte jamais son lanceur, car il est le nœud qui relie le passé au présent. La zone affectée par Retenir le Temps reste à l'endroit où il a été lancée.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "5 m",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 11,
+            "effect": "10 m",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 13,
+            "effect": "25 m",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 380,
+            "requiredIntelligence": 15,
+            "effect": "50 m",
+            "maintenance": 40
+          }
+        ]
+      },
+      {
+        "name": "Arrêter le Temps",
+        "level": 44,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort fait en sorte que le temps s'arrête à l'intérieur d'un espace déterminé. Toute chose ou tout individu qui, à partir du round postérieur au lancement du sort, se trouve à l'intérieur de sa zone d'effet reste figé dans le temps s'il ne réussit pas un test de RMys dont la difficulté est déterminée par le Degré du sort. Les personnes ou choses figées dans le temps sont complètement solides, rien ne peut interagir avec elles, les toucher ou leur infliger de dégâts d'aucune sorte, et elles ne peuvent pas non plus interagir avec quoi que ce soit. Les créatures avec une Gnose de 40 ou plus peuvent ignorer cet effet, car elles sont capables d'interagir librement avec les choses figées sans aucun problème. Une personne affectée peut refaire le test une fois par jour. La zone affectée par Arrêter le Temps reste fixe, là où le sort a été lancé, et il n'est pas possible de choisir des cibles à l'intérieur. Il affecte donc tout ce qui s'y trouve à l'exception du lanceur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 9,
+            "effect": "RMys 120 / 10 m",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "RMys 140 / 25 m",
+            "maintenance": 60
+          },
+          {
+            "level": "Avancé",
+            "zeon": 400,
+            "requiredIntelligence": 14,
+            "effect": "RMys 160 / 50 m",
+            "maintenance": 80
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "RMys 180 / 100 m",
+            "maintenance": 100
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Rétroévolution",
+        "level": 54,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sortilège affecte l'essence de la cible, faisant repartir son « existence » en arrière dans le temps. Naturellement, la personne affectée ne voyage pas vraiment dans le passé, c'est son essence qui revient à un moment antérieur de sa vie. De cette façon, un vieillard redeviendra jeune et un adulte pourra se transformer en enfant, et même en bébé. Malheureusement, le temps remonté s'efface de la vie de l'individu et il perd donc cette partie de sa vie, oubliant ses souvenirs ou même perdant (ou regagnant) les capacités qu'il avait avant. Bien sûr, si cela est nécessaire, cela peut aller jusqu'à modifier le niveau de la personne affectée. Ce sort ne permet pas de récupérer des membres amputés ni d'annuler des effets ou des dégâts infligés par des créatures de Gnose 40 ou supérieure. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "RMys 120 / Remonte au plus d'un jour",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 13,
+            "effect": "RMys 140 / Remonte au plus d'un mois",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 15,
+            "effect": "RMys 160 / Remonte au plus d'un an",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 17,
+            "effect": "RMys 180 / Remonte au plus d'une décennie",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Défaire le Temps",
+        "level": 64,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet de faire en sorte que les fibres du temps reculent de quelques instants dans une zone déterminée, défaisant n'importe quel événement étant survenu pendant cette période. De cette manière, il est possible de refaire à nouveau quelques rounds, ou même de faire revenir à la vie quelqu'un mort pendant ce laps de temps. Seul le lanceur, les créatures avec une Gnose supérieure de 15 points à leur Natura ou celles de nature divine seront conscientes de ce qui s'est passé durant la période de temps défaite. Pour les autres, elle n'aura jamais existé.\nCe sort ne permet pas de défaire les actions dans lesquelles est directement impliquée une créature avec une Gnose de 40 ou plus, sauf si le lanceur a une Gnose encore plus élevée, ni de rendre la vie à une personne dont l'âme a été décréée.\nIl est important de noter que pour la réalité générale, le temps ne recule pas, mais qu'une partie du monde se sépare du continuum espace-temps naturel et le fait brièvement repartir en arrière. Ainsi, une brève distorsion temporelle se crée, que l'existence se chargera de réparer en faisant le moins de dégâts possibles.\nLa zone affectée et la période de temps qu'il est possible de remonter sont déterminées par le Degré du sort. Aucun jet de Résistance n'est possible.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 11,
+            "effect": "15 secondes (5 rounds) / 50 m",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 14,
+            "effect": "30 secondes (10 rounds) / 150 m",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "Une minute / 250 m",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 18,
+            "effect": "Une heure / 1 km",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Saut dans le Temps",
+        "level": 74,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort affecte un individu ou une chose en lui faisant faire un saut dans le futur. En termes de jeu, la cible du sort disparaît d'où elle était, apparaissant au même endroit un certain temps après, ou au plus proche lieu libre si quelque chose a pris sa place.\nAlors que pour elle seul l'environnement change et qu'elle ne perçoit aucun écoulement du temps, une personne à ses côtés à cet instant la verrait disparaître complètement.\nLe lanceur choisit combien de temps dans le futur il va envoyer la personne affectée, tant que cela ne dépasse pas les limites déterminées par le Degré du sort. Toutefois, il y a une limite à ces effets. Certains moments de l'histoire sont des événements si importants de l'existence qu'il est impossible de les éviter. De ce fait, si la période de temps du saut temporel devrait contenir l'un d'entre eux, l'individu qui fait ce saut sera stoppé, le sortilège s'arrêtant avant ce qui été prévu.\nLa cible du sort peut résister à ses effets en réussissant une RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 11,
+            "effect": "10 minutes au maximum / RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 14,
+            "effect": "Un jour au maximum / RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 16,
+            "effect": "Un mois au maximum / RMys 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 18,
+            "effect": "Un an au maximum / RMys 240",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Boucle Temporelle",
+        "level": 84,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort crée une boucle sur un laps de temps, faisant se répéter l'histoire encore et encore. Tant que le sortilège est maintenu, lorsque la période arrive à la fin assignée par le lanceur, le temps se réinitialise, donnant un nouveau début aux mêmes événements. À part les individus désignés par le lanceur, ou ceux qui ont une Gnose de 35 ou plus (ou, à défaut, ceux dont la Gnose est au moins de 15 points supérieure à la Natura du lanceur), personne ne sera conscient que l'histoire se répète.\nCe sort a une zone d'effet définie, mais cela ne signifie pas que le temps avance hors de cette zone. Lorsque le sort se termine, on considère que seule la dernière occurrence de la Boucle Temporelle a réellement eu lieu. Les créatures avec une Gnose de 40 ou plus sont conscientes du lieu et de la position de toutes les Boucles Temporelles existantes à chaque instant.\nS'il le souhaite, le lanceur peut imposer un événement comme fin du sortilège. Ainsi, si les choses se passent comme il l'avait défini, le sort se termine immédiatement.\nLe maintien de ce sort se calcule d'une façon spéciale. Contrairement aux règles générales, le sorcier doit payer un coût de maintien à la fin de chaque occurrence de la boucle qu'il a définie. C'est-à-dire que s'il établit une boucle temporelle de dix minutes, il devra dépenser son Zéon à la fin de cette période. Malheureusement, en liant son essence à un moment statique de l'histoire, le lanceur de la Boucle Temporelle n'a aucun moyen de récupérer du Zéon tant que le sort est maintenu actif.\nAucun jet de Résistance n'est possible contre une Boucle Temporelle.",
+        "limit": "Contrairement aux règles générales des sorts d'Accès Libre et des voies secondaires, la Boucle Temporelle est considérée comme un sort de Haute Magie.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 400,
+            "requiredIntelligence": 11,
+            "effect": "250 m de rayon / Un jour au maximum",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 600,
+            "requiredIntelligence": 14,
+            "effect": "500 m de rayon / Une semaine au maximum",
+            "maintenance": 60
+          },
+          {
+            "level": "Avancé",
+            "zeon": 900,
+            "requiredIntelligence": 16,
+            "effect": "1 km de rayon / Un mois au maximum",
+            "maintenance": 90
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1400,
+            "requiredIntelligence": 18,
+            "effect": "5 km de rayon / Un an au maximum",
+            "maintenance": 140
+          }
+        ],
+        "specialMaintenance": "40 / 60 / 90 / 140 (Spécial)"
+      },
+      {
+        "name": "Superposition du Temps",
+        "level": 94,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet au lanceur de créer un point de réunion entre le présent et le passé, fusionnant les deux instants en un.\nAinsi, tout ce qu'il y avait à l'intérieur de la zone déterminée par le Degré du sort au moment désigné par le sorcier se manifeste dans le présent, comme s'il avait toujours été là.\nEn réalité, le passé n'est pas du tout altéré, c'est le présent qui est modifié, en rajoutant sur celui-ci une ligne temporelle antérieure. Cela signifie que, aussi bien les personnes que les choses qui existaient à ce moment et à cet endroit réapparaissent dans le présent. Il n'y a aucune limite à la quantité d'éléments qui sont amenés dans la zone affectée. Il peut s'agir d'armées entières ou de villes qui existaient il y a des éons. Les êtres et les objets qui apparaissent ne sont pas vraiment des copies, mais en même temps, ils ne sont pas complètement réels. Ce sont des êtres hors de leur ligne temporelle dont l'existence prolongée est, dans le meilleur des cas, non naturelle.\nSi deux choses identiques se superposent au même endroit (comme c'est souvent le cas avec les constructions pérennes et les reliefs géographiques), s'imposera celle qui aura le plus de présence entre les deux versions ou, dans le cas de deux présences très similaires, elles se mêleront pour donner un résultat intermédiaire entre les deux. Dans le cas où une même personne se trouve au même endroit aux deux moments, le résultat est toujours instable. Il est possible qu'elle fusionne en une seule personne, qu'elle existe comme deux entités séparées ou, même que les deux soient complètement détruites. Néanmoins, ce sort a aussi ses limites. En premier lieu, il est impossible de « ramener » du passé quelqu'un ou quelque chose qui a été décréé ou dont l'âme a été détruite (dans le second de ces cas, son corps apparaîtra, mais ne sera qu'une carcasse vide). De plus, si un objet unique avec un niveau de Pouvoir de 5 devrait être ramené et qu'il existe toujours dans le présent, la manifestation de cet objet sera incomplète, possédant des qualités très inférieures à celles de l'objet qui existe toujours.",
+        "limit": "Contrairement aux règles générales des sorts d'Accès Libre et donc des voies secondaires, la Superposition du Temps est considérée comme un sort de Magie Divine.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 500,
+            "requiredIntelligence": 12,
+            "effect": "5 m de rayon / Un an au maximum dans le passé",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 800,
+            "requiredIntelligence": 15,
+            "effect": "25 m de rayon / Une décennie au maximum dans le passé",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1250,
+            "requiredIntelligence": 17,
+            "effect": "500 m de rayon / Un siècle au maximum dans le passé",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2500,
+            "requiredIntelligence": 19,
+            "effect": "1 km de rayon / Mille ans au maximum dans le passé",
+            "maintenance": 0
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Seuil",
     "forbiddenPaths": ["Lumière", "Création", "Destruction", "Eau", "Essence"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "La peur et la folie sont les émotions les plus sombres, primaires et puissantes, antérieures même aux temps où les hommes ont pris conscience de leur destin. Cette voie secondaire à ces deux concepts comme base, c'est la magie des horreurs primitives qui sont au-delà des ténèbres elles-mêmes.",
+    "spells": [
+      {
+        "name": "Les Yeux de l'Autre Côté",
+        "level": 4,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Les yeux du sorcier lui permettent de voir les peurs intrinsèques des gens, tout comme leurs troubles et leurs folies. Pendant que ce sort est actif, toute personne capable de percevoir les esprits verra comment les yeux du personnage deviennent intégralement noirs, comme si une obscurité intérieure les dévorait. Pour éviter les effets de ce sort, un individu devra réussir un test de RMys ou de RPsy contre la difficulté déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "Le personnage peut sentir si une personne est apeurée ou non / RMys ou RPsy 120",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "Le personnage peut percevoir, non seulement si une personne est effrayée ou non, mais aussi quelles sont la nature et l'origine de la peur qu'elle ressent à cet instant / RMys ou RPsy 140",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 11,
+            "effect": "Le mage perçoit les peurs et les troubles de façon générale, même lorsque les personnes qu'il observe ne sont pas effrayées / RMys ou RPsy 160",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 14,
+            "effect": "Le personnage perçoit les peurs et les troubles des personnes, voyant des représentations visuelles de ces peurs marcher à côté d'elles / RMys ou RPsy 180",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Ombre de la Peur",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort affecte une zone, la rendant lugubre et sombre pour tout autre que le sorcier. Il est important de préciser que différentes personnes peuvent percevoir la même zone de façon différente, selon ce qu'elles considèrent comme un endroit lugubre.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 6,
+            "effect": "50 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 70,
+            "requiredIntelligence": 9,
+            "effect": "250 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 12,
+            "effect": "500 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 130,
+            "requiredIntelligence": 15,
+            "effect": "1 km de rayon",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Les Susurrements de l'Autre Côté",
+        "level": 24,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Provoque l'apparition de voix susurrantes dans une zone donnée. Ces sons inondent les cœurs de leurs victimes d'une peur primordiale. Toute personne à l'intérieur du rayon d'action du sort qui écoute les voix plus de cinq rounds doit réussir automatiquement un test de RMys ou de RPsy contre la difficulté déterminée par le Degré du sort, sous peine de tomber sous l'emprise de la Peur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "RMys ou RPsy 80 / 10 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "RMys ou RPsy 100 / 25 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 160,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 120 / 50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 140 / 100 m de rayon",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Sentier de la Folie",
+        "level": 34,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le sorcier altère l'esprit d'une personne par des idées et des concepts démentiels, chamboulant sa perception du monde et la soumettant temporairement à la folie. La cible de ce sort doit réussir un test de RMys ou de RPsy contre une difficulté déterminée par le Degré du sort sous peine d'être prise d'une folie passagère comme la psychose, la schizophrénie ou la paranoïa, perdant toute capacité à être maîtresse de ses propres actes. Le personnage affecté ne pourra refaire le test de Résistance qu'une fois par jour.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 140",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "RMys ou RPsy 160",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 180",
+            "maintenance": 20
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Harceler par les Rêves",
+        "level": 44,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Cette malédiction permet au sorcier de changer les rêves de sa victime en une prison dans laquelle il enferme son âme dans un cauchemar sans fin. La cible reste soumise à un rêve éternel dans lequel elle est constamment harcelée par des monstres et autres créatures innommables qui la pourchasseront pour la tuer. Ce sort doit être lancé contre un individu qui rêve et, si celui-ci échoue à son test de RMys ou de RPsy, il ne pourra pas se réveiller tant que le sort ne se terminera pas. La cible ne pourra pas refaire test de Résistance tant que, dans son monde de cauchemar, son esprit ne considèrera pas qu'il a vaincu les mauvais rêves qui le harcèlent.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 160",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 13,
+            "effect": "RMys ou RPsy 200",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 240",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Accentuation",
+        "level": 54,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le personnage accentue les peurs et les folies des individus qui se trouvent dans la zone d'effet du sort. Toute personne qui ne réussit pas le test de RMys ou RPsy passera de l'état de Peur à celui de Terreur quelle que soit la source de l'effroi initial, et la folie passagère se transformera en démence profonde. Le test ne peut être refait qu'une fois par jour, ou bien quand les Résistances du personnage augmentent.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "RMys ou RPsy 120 / 50 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "RMys ou RPsy 140 / 100 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 160 / 250 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 180 / 500 m de rayon",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Terreur",
+        "level": 64,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Provoque temporairement l'état de Terreur sur tous les sujets se trouvant autour du lanceur. Le sorcier décide quelle est l'origine de ce sentiment chez les personnes affectées.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "RMys ou RPsy 120 / 10 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 140 / 50 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 180 / 100 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 200 / 250 m de rayon",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Seigneur des Fous",
+        "level": 74,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sorcier obtient la capacité de contrôler toute personne folle en altérant à volonté sa démence et sa perception de la réalité. Pour être affecté par ce sortilège il suffit d'être dans la zone d'influence du sort et d'avoir une démence grave. Tous ceux qui ne souffrent que d'une folie passagère peuvent appliquer un +40 à leurs RMys ou RPsy contre les effets de ce sort. Les personnes affectées ont le droit de refaire le test une fois par jour ou quand elles augmentent leurs Résistances.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 140 / 100 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 160 / 250 m de rayon",
+            "maintenance": 30
+          },
+          {
+            "level": "Avancé",
+            "zeon": 400,
+            "requiredIntelligence": 14,
+            "effect": "RMys ou RPsy 180 / 1 km de rayon",
+            "maintenance": 40
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "RMys ou RPsy 200 / 5 km de rayon",
+            "maintenance": 50
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Incarnation de la Peur",
+        "level": 84,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort crée une incarnation pure de la peur d'une personne, une créature d'Entre Mondes née d'endroits les plus profonds du subconscient de sa cible. La créature est réelle à tous points de vue, mais seul l'individu ou les individus qui la craignent peuvent la voir ou interagir avec elle (de la même façon la créature ne sent et ne peut toucher que ceux qu'elle effraie). Lorsqu'il lance ce sort, le sorcier doit choisir comme cible une personne qui est en sa présence, et celle-ci sera automatiquement affectée. Si cet individu ne réussit pas la RMys ou la RPsy déterminée par le Degré du sort, elle donne immédiatement forme à un être à l'image en tout point conforme aux peurs du personnage. La créature peut avoir n'importe quel niveau ou pouvoirs, tant qu'elle n'a pas une Gnose supérieure à 30 ou qu'elle ne dépasse pas les limites de niveau imposées par le Degré du sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 10,
+            "effect": "Niveau 4 / RMys 140",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "Niveau 8 / RMys 160",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "Niveau 12 / RMys 180",
+            "maintenance": 50
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 18,
+            "effect": "Niveau 15 / RMys 200",
+            "maintenance": 70
+          }
+        ]
+      },
+      {
+        "name": "La Peur faite Chair",
+        "level": 94,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le personnage se transforme en source de peur, provoquant l'effroi de toutes les créatures, même celles qui sont normalement immunisées contre les effets psychologiques. Tout ce qui est en sa présence est soumis automatiquement à l'état de Peur, sans possibilité de résister, et doit réussir un test de RMys ou de RPsy pour ne pas être en plus soumis à l'état de Terreur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 11,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 13,
+            "effect": "RMys ou RPsy 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 17,
+            "effect": "RMys ou RPsy 240",
+            "maintenance": 0
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Vide",
     "forbiddenPaths": ["Lumière", "Création", "Feu", "Terre", "Essence", "Illusion"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Vide est la voie secondaire qui contrôle les énergies du néant, l'absence totale de toute matière physique ou spirituelle.",
+    "spells": [
+      {
+        "name": "L'Ombre du Vide",
+        "level": 4,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Amène dans l'existence un fragment de vide, une simple ombre du néant primordial qui pendant quelques instants absorbe en partie la lumière, réduit la quantité d'oxygène de la zone et aspire l'énergie vitale qui l'entoure. Tout ce qui se trouve dans la zone affectée par ce sort doit réussir un test de RMys ou perdre un point de Fatigue pour les êtres vivants et deux intensités pour les énergies, ce qui revient à 10 Points de Vie pour les élémentaires.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "RMys 80 / Zone de 5 m de large",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "RMys 100 / Zone de 10 m de large",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 11,
+            "effect": "RMys 120 / Zone de 15 m de large",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 14,
+            "effect": "RMys 150 / Zone de 30 m de large",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Vague de Vide",
+        "level": 14,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Ce sort envoie une légère onde de vide capable de déstructurer les fibres surnaturelles de n'importe quelle protection. Ce sort ne provoque pas en soi de dégâts à ses adversaires, mais dirigé contre un bouclier surnaturel, il entraîne sa désagrégation. La Vague de Vide est invisible à l'œil humain, sauf pour ceux capables de voir la magie.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 6,
+            "effect": "Dégâts 120 contre les boucliers",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts 250 contre les boucliers",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 400 contre les boucliers",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 600 contre les boucliers",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Bouclier de Vide",
+        "level": 24,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Crée une barrière de particules de vide qui absorbent et anéantissent les attaques qu'elle subit. Outre le fait qu'il résiste comme un bouclier conventionnel, tout pouvoir surnaturel qu'il arrête sera automatiquement annulé si l'attaquant ne réussit pas un test de Volonté ou de Pouvoir contre la difficulté déterminée par le Degré du sort. C'est-à-dire que si un adversaire lance un sortilège offensif ou animique contre un mage qui se protège derrière un Bouclier de Vide au Degré Intermédiaire, et que ce dernier obtient une défense avec succès, l'attaquant devra réussir un test de Volonté ou de Pouvoir contre 16, sinon son attaque sera annulée sans faire le moindre dégât au bouclier. De la même façon, tout objet physique que le bouclier réussi à parer doit réussir une RPhy contre la difficulté déterminée par le bouclier ou être détruit immédiatement.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "200 Points de Vie / Difficulté 14 / 100 RPhy",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "300 Points de Vie / Difficulté 16 / 120 RPhy",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "400 Points de Vie / Difficulté 18 / 140 RPhy",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "500 Points de Vie / Difficulté 20 / 160 RPhy",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Vortex de Réalité",
+        "level": 34,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Crée une zone remplie de millions de microscopiques particules de vide. Tout individu se trouvant à l'intérieur pendant plus d'un round doit réussir automatiquement un test de RMys à chaque round, ou subir des dégâts et une perte de points de Ki équivalents à la moitié de la marge d'échec, ainsi qu'une perte de points de Zéon équivalents à la marge d'échec. Ce sort ne permet pas de choisir de cibles, il affecte tout le monde de la même façon y compris le lanceur lui-même.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys 100 / 5 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "RMys 120 / 10 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 13,
+            "effect": "RMys 140 / 20 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 15,
+            "effect": "RMys 160 / 40 m de rayon",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Lame Noire de Perdition",
+        "level": 44,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Invoque le vide à l'état le plus pur, donnant forme à une lame de pouvoir crépitante qui se manifeste entre les mains du sorcier. L'arme est de taille grande (G), a la même initiative que le lancer d'un sort, peut être utilisée par le sorcier pour parer ou attaquer sur le mode Tranchant avec la Projection magique ou la compétence de corps-à-corps du lanceur, ne peut être brisée ni briser d'autre arme en combattant, et elle ignore complètement tout Indice de Protection. Le sorcier peut maintenir la lame active pour faire de nouvelles attaques au cours des rounds suivants, mais à chaque round il doit réussir un test de Volonté contre une difficulté de 12 ou perdre le contrôle de l'épée et du sort. Chaque fois qu'il arrive à réussir le test il augmente d'un point sa difficulté pour le test du round suivant. S'il échoue, l'épée se retourne contre le sorcier, l'attaquant avec sa propre compétence entière +50.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 6,
+            "effect": "Dégâts 80",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts 120",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 160",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 200",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Aura de Vide",
+        "level": 54,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Recouvre le sorcier d'une aura de vide qui le protège des effets des attaques surnaturelles, lui accordant un IP contre le Mode Énergie chaque fois qu'elle dévore un sort ou un pouvoir psychique d'une valeur inférieure à celle indiquée, laquelle perdure pendant toute la durée du sort et se cumule aux précédentes selon les règles habituelles pour les sorts procurant un Indice de Protection. Malheureusement, ce sort ne fait pas la différence entre les pouvoirs amis et ennemis, et les dévore tous sans distinction. La couche de vide est invisible, mais tout ce qui entoure le sorcier semble plus ténu et éteint.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "IP 4 / Valeur en Zéon de 60 / Talent psychique de 80",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "IP 6 / Valeur en Zéon de 90 / Talent psychique de 120",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "IP 8 / Valeur en Zéon de 120 / Talent psychique de 140",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "IP 10 / Valeur en Zéon de 160 / Talent psychique de 180",
+            "maintenance": 35
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Points Noirs",
+        "level": 64,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Crée une zone autour du sorcier remplie de vortex existentiels et de trous de vide qui se déplacent d'un côté à l'autre de façon chaotique. Toute personne entrant dans cette zone, à l'exception du sorcier, doit réussir à chaque round un test d'Athlétisme, d'Acrobaties ou de Défense (une parade incapable d'affecter l'énergie est inefficace) contre une difficulté déterminée par le Degré du sort, sous peine de heurter un des Points Noirs. Dans ce cas, le personnage doit réussir un test de RPhy ou de RMys contre la difficulté déterminée par le sort ou subir des dégâts et une perte de points de Ki équivalents à la moitié de ta marge d'échec, ainsi qu'une perte de Zéon équivalente à la marge d'échec. Il n'est pas possible de désigner de cibles à l'intérieur du sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "Difficulté de 120 / 10 m de rayon / RMys ou RPhy 120",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "Difficulté de 140 / 20 m de rayon / RMys ou RPhy 140",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "Difficulté de 180 / 50 m de rayon / RMys ou RPhy 160",
+            "maintenance": 35
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "Difficulté de 240 / 100 m de rayon / RMys ou RPhy 180",
+            "maintenance": 50
+          }
+        ]
+      },
+      {
+        "name": "Protection contre le Vide",
+        "level": 74,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Recouvre le sorcier d'une énergie surnaturelle qui repousse les effets du vide. Tout sort ou pouvoir en relation avec le néant n'a aucun effet sur lui, ni ne peut lui infliger de dégâts.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "Protège contre les sorts de cette voie secondaire à l'exception de la Porte sur Nulle Part",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Initial sans son exception, mais personnage est également immunisé contre les effets et les attaques de créatures basées sur le vide, comme les Etrien Gnosos",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 14,
+            "effect": "Le personnage est immunisé contre tout effet en relation avec le vide, sauf le néant primordial",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 16,
+            "effect": "Comme pour le Degré Avancé, mais le personnage est capable de survivre même au néant primordial",
+            "maintenance": 40
+          }
+        ]
+      },
+      {
+        "name": "Implosion",
+        "level": 84,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Ce sort terrorisant crée un point de vide à l'intérieur de quelque chose, attirant toute sa masse vers l'intérieur et provoquant une implosion de sa structure et sa disparition complète. Comme il absorbe la chair, les os et les organes, si le résultat de l'attaque devrait infliger des dommages ce sortilège provoque directement les dégâts indiqués, sans Mode qui puisse les réduire par un quelconque Indice de Protection, et provoque en plus un critique automatique avec un bonus déterminé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 14,
+            "effect": "Dégâts 200 / Niveau de critique +20",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "Dégâts 400 / Niveau de critique +40",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 750,
+            "requiredIntelligence": 18,
+            "effect": "Dégâts 600 / Niveau de critique +60",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1000,
+            "requiredIntelligence": 20,
+            "effect": "Dégâts 800 / Niveau de critique +100",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Porte sur Nulle Part",
+        "level": 94,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Ouvre un portail à sens unique vers le vide le plus absolu, le néant primitif qui dévorera un jour l'univers. Tout ce qui passe la porte cesse d'exister automatiquement, sans qu'aucun test de Résistance ne soit possible. Seuls les êtres possédant une Gnose de 35 ou plus, les objets d'une présence équivalente ou les individus protégés par quelque moyen que ce soit contre le Vide peuvent y survivre, mais ils perdent un point par minute à leur caractéristique de Pouvoir, qu'ils récupèrent au rythme d'un par jour. Naturellement, quelque chose qui reste à l'intérieur est virtuellement immunisé contre tout type d'attaque car celles-ci ne peuvent l'atteindre. Les dimensions du portail sont déterminées par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 11,
+            "effect": "2 m de diamètre",
+            "maintenance": 30
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 13,
+            "effect": "5 m de diamètre",
+            "maintenance": 50
+          },
+          {
+            "level": "Avancé",
+            "zeon": 800,
+            "requiredIntelligence": 15,
+            "effect": "15 m de diamètre",
+            "maintenance": 80
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1200,
+            "requiredIntelligence": 18,
+            "effect": "50 m de diamètre",
+            "maintenance": 120
+          }
+        ]
+      }
+    ]
   }
 ]

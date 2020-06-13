@@ -7,14 +7,8 @@
   {{ nbMaximumDisadvantages }}
 </p>
 <div class="flex flex-row flex-center">
-  <app-advantage
-    *ngFor="let advantage of character.advantages"
-    [advantage]="advantage"
-  ></app-advantage>
-  <app-advantage
-    *ngFor="let advantage of character.disadvantages"
-    [advantage]="advantage"
-  ></app-advantage>
+  <app-advantage *ngFor="let advantage of advantages" [advantage]="advantage"></app-advantage>
+  <app-advantage *ngFor="let advantage of disadvantages" [advantage]="advantage"></app-advantage>
 </div>
 
 <h2>Tables de référence</h2>

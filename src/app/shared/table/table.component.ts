@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ReferenceTable } from 'src/app/shared/models';
-import { CharacterService } from 'src/app/shared/services';
+import { ReferenceTable } from '../models';
+import { CharacterService } from '../services';
 
 const boldItalicRegExp = /^\*\*\*/;
 const boldRegExp = /^\*\*/;
@@ -12,18 +12,6 @@ const italicRegExp = /^\*/;
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
-  @Input() reference: string;
-  @Input() table: ReferenceTable;
-  belongsToCharacter: boolean;
-  hasBeenToggled: boolean;
-
-  constructor(private characterService: CharacterService) {}
-
-  ngOnInit() {
-    this.belongsToCharacter = this.characterHasTable();
-    this.hasBeenToggled = false;
-  }
-
   get caption(): string {
     if (!this.table) {
       return;
@@ -31,14 +19,23 @@ export class TableComponent implements OnInit {
     if (typeof this.table.id === 'number') {
       return `Tableau ${this.table.id} : ${this.table.title}`;
     }
-    if (
-      this.table.id.startsWith('I') ||
-      this.table.id.startsWith('V') ||
-      this.table.id.startsWith('X')
-    ) {
+    if (this.table.id.startsWith('I') || this.table.id.startsWith('V') || this.table.id.startsWith('X')) {
       return `Encadré ${this.table.id} : ${this.table.title}`;
     }
     return `${this.table.id} : ${this.table.title}`;
+  }
+  belongsToCharacter: boolean;
+  hasBeenToggled: boolean;
+  @Input() reference: string;
+  @Input() table: ReferenceTable;
+
+  constructor(private characterService: CharacterService) {}
+
+  formatValue(value: any): string {
+    if (typeof value === 'string' && value && value.startsWith('*')) {
+      return value.replace(/^\**/, '');
+    }
+    return value;
   }
 
   getCellStyle(value: any): string {
@@ -55,18 +52,12 @@ export class TableComponent implements OnInit {
     }
   }
 
-  formatValue(value: any): string {
-    if (typeof value === 'string' && value && value.startsWith('*')) {
-      return value.replace(/^\**/, '');
-    }
-    return value;
+  ngOnInit(): void {
+    this.belongsToCharacter = this.characterHasTable();
+    this.hasBeenToggled = false;
   }
 
-  private characterHasTable(): boolean {
-    return this.characterService.hasRefTable(this.reference);
-  }
-
-  toggleTable() {
+  toggleTable(): void {
     this.hasBeenToggled = true;
     if (this.characterHasTable()) {
       this.characterService.removeRefTable(this.reference);
@@ -74,5 +65,9 @@ export class TableComponent implements OnInit {
       this.characterService.addRefTable(this.reference);
     }
     this.belongsToCharacter = this.characterHasTable();
+  }
+
+  private characterHasTable(): boolean {
+    return this.characterService.hasRefTable(this.reference);
   }
 }

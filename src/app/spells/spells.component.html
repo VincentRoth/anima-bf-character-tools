@@ -2,19 +2,13 @@
 
 <div class="filter flex-row">
   <mat-form-field class="flex">
-    <input
-      matInput
-      placeholder="Rechercher"
-      (keyup)="searchSpells($event.target.value)"
-    />
+    <input matInput placeholder="Rechercher" (keyup)="searchSpells($event.target.value)" [value]="filters.q" />
   </mat-form-field>
   <mat-form-field class="flex">
     <mat-label>Type de sort</mat-label>
-    <mat-select (selectionChange)="searchType($event.value)">
+    <mat-select (selectionChange)="searchType($event.value)" [value]="filters.type">
       <mat-option></mat-option>
-      <mat-option *ngFor="let type of spellTypes" [value]="type">
-        {{ type }}
-      </mat-option>
+      <mat-option *ngFor="let type of spellTypes" [value]="type">{{ type }}</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
@@ -23,7 +17,4 @@
   <mat-spinner></mat-spinner>
 </div>
 
-<app-magic-path
-  *ngFor="let magicPath of magicPaths"
-  [magicPath]="magicPath"
-></app-magic-path>
+<app-magic-path *ngFor="let magicPath of magicPaths" [magicPath]="magicPath"></app-magic-path>

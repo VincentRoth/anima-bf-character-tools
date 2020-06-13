@@ -1,7 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import { SharedModule } from '../shared/shared.module';
 import { SpellsComponent } from './spells.component';
 
 describe('SpellsComponent', () => {
@@ -11,7 +11,7 @@ describe('SpellsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [SpellsComponent],
-      imports: [HttpClientTestingModule, SharedModule]
+      imports: [HttpClientTestingModule, RouterTestingModule, SharedModule]
     }).compileComponents();
   }));
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ContentPanel, EContentType } from 'src/app/shared/models';
-import { CreationHelpService } from 'src/app/shared/services';
+import { ContentPanel, EContentType } from '../shared/models';
+import { CreationHelpService } from '../shared/services';
 
 @Component({
   selector: 'app-creation-help',
@@ -12,16 +12,13 @@ export class CreationHelpComponent implements OnInit {
 
   constructor(private creationHelpService: CreationHelpService) {}
 
-  ngOnInit() {
-    this.creationHelpService.get().subscribe({
-      next: data => (this.contentPanels = data)
-    });
+  isParentPanel(panel: ContentPanel): boolean {
+    return panel.content && panel.content.every((unit) => unit.type === EContentType.PANEL);
   }
 
-  isParentPanel(panel: ContentPanel) {
-    return (
-      panel.content &&
-      panel.content.every(unit => unit.type === EContentType.PANEL)
-    );
+  ngOnInit(): void {
+    this.creationHelpService.get().subscribe({
+      next: (data) => (this.contentPanels = data)
+    });
   }
 }

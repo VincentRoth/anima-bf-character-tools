@@ -1,27 +1,18 @@
 <h2>Avantages et Désavantages</h2>
 <div class="filter flex-row">
   <mat-form-field class="flex">
-    <input
-      matInput
-      placeholder="Rechercher"
-      (keyup)="searchAdvantages($event.target.value)"
-    />
+    <input matInput placeholder="Rechercher" (keyup)="searchAdvantages($event.target.value)" [value]="filters.q" />
   </mat-form-field>
   <mat-form-field class="flex">
     <mat-label>Type</mat-label>
-    <mat-select (selectionChange)="searchType($event.value)">
+    <mat-select (selectionChange)="searchType($event.value)" [value]="filters.type">
       <mat-option></mat-option>
-      <mat-option *ngFor="let type of advantageTypes" [value]="type">
-        {{ type }} ({{ types[type] }})
-      </mat-option>
+      <mat-option *ngFor="let type of advantageTypes" [value]="type">{{ type }} ({{ types[type] }})</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
 
 <div class="flex flex-row flex-center">
   <mat-spinner *ngIf="!advantages"></mat-spinner>
-  <app-advantage
-    *ngFor="let advantage of filteredAvantages"
-    [advantage]="advantage"
-  ></app-advantage>
+  <app-advantage *ngFor="let advantage of filteredAvantages" [advantage]="advantage"></app-advantage>
 </div>

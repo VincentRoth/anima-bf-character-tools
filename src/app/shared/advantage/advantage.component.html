@@ -3,10 +3,7 @@
     <mat-card-title class="advantage-title">
       <ng-container [ngSwitch]="true">
         <span
-          *ngSwitchCase="
-            advantage.types[0] === 'Avantage de passé' ||
-            advantage.types[0] === 'Désavantage de passé'
-          "
+          *ngSwitchCase="advantage.types[0] === 'Avantage de passé' || advantage.types[0] === 'Désavantage de passé'"
           matBadge="⌛"
           matBadgeOverlap="false"
           matBadgePosition="before"
@@ -15,10 +12,7 @@
         </span>
 
         <span
-          *ngSwitchCase="
-            advantage.types[0] === 'Avantage Mystique' ||
-            advantage.types[0] === 'Désavantage Mystique'
-          "
+          *ngSwitchCase="advantage.types[0] === 'Avantage Mystique' || advantage.types[0] === 'Désavantage Mystique'"
           matBadge="M"
           matBadgeOverlap="false"
           matBadgePosition="before"
@@ -28,10 +22,7 @@
         </span>
 
         <span
-          *ngSwitchCase="
-            advantage.types[0] === 'Avantage Psychique' ||
-            advantage.types[0] === 'Désavantage Psychique'
-          "
+          *ngSwitchCase="advantage.types[0] === 'Avantage Psychique' || advantage.types[0] === 'Désavantage Psychique'"
           matBadge="P"
           matBadgeOverlap="false"
           matBadgePosition="before"
@@ -56,15 +47,9 @@
   <mat-card-content class="advantage-content">
     <p>{{ advantage.description }}</p>
     <p><span class="bold">Effets : </span>{{ advantage.effect }}</p>
-    <p *ngIf="advantage.condition">
-      <span class="bold">Condition : </span>{{ advantage.condition }}
-    </p>
-    <p *ngIf="advantage.special">
-      <span class="bold">Spécial : </span>{{ advantage.special }}
-    </p>
-    <p *ngIf="advantage.note">
-      <span class="bold">Note : </span>{{ advantage.note }}
-    </p>
+    <p *ngIf="advantage.condition"><span class="bold">Condition : </span>{{ advantage.condition }}</p>
+    <p *ngIf="advantage.special"><span class="bold">Spécial : </span>{{ advantage.special }}</p>
+    <p *ngIf="advantage.note"><span class="bold">Note : </span>{{ advantage.note }}</p>
     <p class="costs">
       <ng-container *ngIf="costs">
         <span class="bold">Coût : </span>

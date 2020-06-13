@@ -1,11 +1,7 @@
 <h2>Tables de référence</h2>
 <div class="filter flex-row">
   <mat-form-field class="flex">
-    <input
-      matInput
-      placeholder="Rechercher"
-      (keyup)="handleSearch($event.target.value)"
-    />
+    <input matInput placeholder="Rechercher" (keyup)="handleSearch({ q: $event.target.value })" [value]="filters.q" />
   </mat-form-field>
 </div>
 
@@ -18,9 +14,7 @@
     <details *ngIf="refTables[book.reference].length">
       <summary>
         <h3>{{ book.title }}</h3>
-        <span class="right">
-          {{ refTables[book.reference].length }} Table(s)
-        </span>
+        <span class="right"> {{ refTables[book.reference].length }} Table(s) </span>
       </summary>
       <div class="flex-row flex-center">
         <app-table

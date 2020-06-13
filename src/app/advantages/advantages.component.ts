@@ -1,69 +1,52 @@
-import { Component, OnInit } from '@angular/core';
-import { AbstractSearchComponent } from 'src/app/shared/abstract-search.component';
-import { UnknownAdvantage } from 'src/app/shared/models';
-import { AdvantageService } from 'src/app/shared/services';
+import { Component, Injector, OnInit } from '@angular/core';
+import { AbstractSearchComponent } from '../shared/abstract-search.component';
+import { UnknownAdvantage } from '../shared/models';
+import { AdvantagesSearchParams } from '../shared/search-params/advantages-search.params';
+import { AdvantageService } from '../shared/services';
 
 @Component({
   selector: 'app-advantages',
   templateUrl: './advantages.component.html',
   styleUrls: ['./advantages.component.scss']
 })
-export class AdvantagesComponent extends AbstractSearchComponent
-  implements OnInit {
+export class AdvantagesComponent extends AbstractSearchComponent<AdvantagesSearchParams> implements OnInit {
+  get advantageTypes(): string[] {
+    return this.types ? Object.keys(this.types).sort() : [];
+  }
   advantages: UnknownAdvantage[];
   filteredAvantages: UnknownAdvantage[];
-
   private types: object;
-  private filter: string;
-  private selectedType: string;
 
-  constructor(private advantageService: AdvantageService) {
-    super();
+  constructor(private advantageService: AdvantageService, injector: Injector) {
+    super(injector);
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.initFilters({ q: null, type: null });
+
     this.advantageService.get().subscribe({
-      next: data => {
+      next: (data) => {
         this.advantages = data;
-        this.types = this.advantageService.getTypes(data);
+        this.types = this.advantageService.getTypes();
         this.filteredAvantages = data;
         this.filteredAvantages.sort(this.advantageService.sort);
+
+        if (Object.values(this.filters).some(Boolean)) {
+          this.handleSearch(this.filters, 0);
+        }
       }
     });
   }
 
-  get advantageTypes(): string[] {
-    return this.types ? Object.keys(this.types).sort() : [];
+  searchAdvantages(q: string): void {
+    this.handleSearch({ ...this.filters, q });
   }
 
-  protected search() {
-    let filteredAvantages = this.advantages;
-
-    if (this.selectedType) {
-      filteredAvantages = this.advantageService.filterByType(
-        filteredAvantages,
-        this.selectedType
-      );
-    }
-
-    if (this.filter) {
-      filteredAvantages = this.advantageService.filterByToken(
-        filteredAvantages,
-        this.filter
-      );
-    }
-
-    filteredAvantages.sort(this.advantageService.sort);
-    this.filteredAvantages = filteredAvantages;
+  searchType(type: string): void {
+    this.handleSearch({ ...this.filters, type });
   }
 
-  searchAdvantages(filter: string) {
-    this.filter = filter;
-    this.handleSearch();
-  }
-
-  searchType(type: string) {
-    this.selectedType = type;
-    this.handleSearch();
+  protected search(filters: AdvantagesSearchParams): void {
+    this.filteredAvantages = this.advantageService.filter(filters).sort(this.advantageService.sort);
   }
 }

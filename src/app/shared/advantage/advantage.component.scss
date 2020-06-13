@@ -1,46 +1,47 @@
 :host {
-    display: flex;
+  display: flex;
 }
 
 .advantage-card {
+  display: flex;
+  flex: 1 1 100%;
+  flex-direction: column;
+  margin: 0.5rem;
+  max-width: 16rem;
+
+  .advantage-title {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .advantage-content {
     display: flex;
-    flex: 1 1 100%;
     flex-direction: column;
-    margin: 0.5rem;
-    max-width: 16rem;
+    flex: 1 1 100%;
+  }
 
-    .advantage-title {
-        font-size: 1rem;
-        margin: 0;
+  p {
+    font-size: 0.75rem;
+    text-align: justify;
+    margin: 0.4rem 0;
+
+    &.costs {
+      margin-top: auto;
     }
 
-    .advantage-content {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 100%;
+    .source {
+      padding-top: 13px;
     }
+  }
 
-    p {
-        font-size: 0.75rem;
-        text-align: justify;
-        margin: 0.4rem 0;
+  button {
+    margin: 0 0.25rem;
 
-        &.costs {
-            margin-top: auto
-        }
-
-        .source {
-            padding-top: 13px;
-        }
+    &.disabled {
+      background-color: rgba(0, 0, 0, 0.12);
+      color: rgba(0, 0, 0, 0.26);
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14),
+        0px 0px 0px 0px rgba(0, 0, 0, 0.12);
     }
-
-    button {
-        margin: 0 0.25rem;
-
-        &.disabled {
-            background-color: rgba(0, 0, 0, 0.12);
-            color: rgba(0, 0, 0, 0.26);
-            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
-        }
-    }
+  }
 }

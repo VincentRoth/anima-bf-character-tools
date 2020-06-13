@@ -1,7 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { AppMaterialModule } from 'src/app/app-material.module';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { SharedModule } from '../shared/shared.module';
 import { ClassesComponent } from './classes.component';
 
 describe('ClassesComponent', () => {
@@ -11,7 +10,7 @@ describe('ClassesComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ClassesComponent],
-      imports: [HttpClientTestingModule, AppMaterialModule]
+      imports: [HttpClientTestingModule, SharedModule]
     }).compileComponents();
   }));
 

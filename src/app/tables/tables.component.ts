@@ -1,33 +1,41 @@
-import { Component, OnInit } from '@angular/core';
-import { AbstractSearchComponent } from 'src/app/shared/abstract-search.component';
-import { ReferenceTableContainer } from 'src/app/shared/models';
-import { ReferenceTableService } from 'src/app/shared/services';
-
+import { Component, Injector, OnInit } from '@angular/core';
+import { AbstractSearchComponent } from '../shared/abstract-search.component';
+import { ReferenceBook, ReferenceTableContainer } from '../shared/models';
+import { SearchParams } from '../shared/search-params/search.params';
+import { ReferenceTableService } from '../shared/services';
 @Component({
   selector: 'app-tables',
   templateUrl: './tables.component.html',
   styleUrls: ['./tables.component.scss']
 })
-export class TablesComponent extends AbstractSearchComponent implements OnInit {
+export class TablesComponent extends AbstractSearchComponent<SearchParams> implements OnInit {
   refTables: ReferenceTableContainer;
 
-  constructor(private referenceTableService: ReferenceTableService) {
-    super();
-  }
-
-  ngOnInit() {
-    this.referenceTableService.get().subscribe({
-      next: data => (this.refTables = data)
-    });
-  }
-
-  get books() {
+  get books(): ReferenceBook[] {
     return this.referenceTableService.books;
   }
 
-  protected search(filter: string) {
-    this.referenceTableService.filterByToken(filter).subscribe({
-      next: data => (this.refTables = data)
+  constructor(private referenceTableService: ReferenceTableService, injector: Injector) {
+    super(injector);
+  }
+
+  ngOnInit(): void {
+    this.initFilters({ q: null });
+
+    this.referenceTableService.get().subscribe({
+      next: (data) => {
+        this.refTables = data;
+
+        if (this.filters.q) {
+          this.handleSearch(this.filters, 0);
+        }
+      }
+    });
+  }
+
+  protected search(filters: SearchParams): void {
+    this.referenceTableService.filterByToken(filters.q).subscribe({
+      next: (data) => (this.refTables = data)
     });
   }
 }

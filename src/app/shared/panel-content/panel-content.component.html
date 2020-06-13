@@ -15,10 +15,7 @@
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
-          <app-content-title
-            [level]="level"
-            [title]="content.title"
-          ></app-content-title>
+          <app-content-title [level]="level" [title]="content.title"></app-content-title>
         </mat-panel-title>
       </mat-expansion-panel-header>
 
@@ -31,28 +28,16 @@
   </ng-container>
 
   <ng-container *ngSwitchCase="eContentType.PARAGRAPH">
-    <app-content-title
-      *ngIf="content.title"
-      [level]="level"
-      [title]="content.title"
-    ></app-content-title>
+    <app-content-title *ngIf="content.title" [level]="level" [title]="content.title"></app-content-title>
     <p>{{ content.content }}</p>
   </ng-container>
 
   <ng-container *ngSwitchCase="eContentType.SUB_PARAGRAPH">
-    <app-content-title
-      *ngIf="content.title"
-      [level]="level + 1"
-      [title]="content.title"
-    ></app-content-title>
+    <app-content-title *ngIf="content.title" [level]="level + 1" [title]="content.title"></app-content-title>
     <p>{{ content.content }}</p>
   </ng-container>
 
   <ng-container *ngSwitchCase="eContentType.TABLE">
-    <app-table
-      *ngIf="table"
-      [table]="table"
-      [reference]="content.reference"
-    ></app-table>
+    <app-table *ngIf="table" [table]="table" [reference]="content.reference"></app-table>
   </ng-container>
 </ng-container>

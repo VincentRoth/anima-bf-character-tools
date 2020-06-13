@@ -38,9 +38,7 @@
 
         <h5>
           Champ martial :
-          <span class="limit">
-            Limite {{ clazz.primary.martial.limit * 100 }}%
-          </span>
+          <span class="limit"> Limite {{ clazz.primary.martial.limit * 100 }}% </span>
         </h5>
         <p>
           <span class="bold">+1 Attaque : </span>
@@ -64,9 +62,7 @@
 
         <h5>
           Champ mystique :
-          <span class="limit">
-            Limite {{ clazz.primary.mystic.limit * 100 }}%
-          </span>
+          <span class="limit"> Limite {{ clazz.primary.mystic.limit * 100 }}% </span>
         </h5>
         <p>
           <span class="bold">+5 Zéon : </span>
@@ -93,9 +89,7 @@
 
         <h5>
           Champ psychique :
-          <span class="limit">
-            Limite {{ clazz.primary.psychic.limit * 100 }}%
-          </span>
+          <span class="limit"> Limite {{ clazz.primary.psychic.limit * 100 }}% </span>
         </h5>
         <p>
           <span class="bold">+1 PPP : </span>
@@ -136,12 +130,7 @@
           <ng-container *ngIf="!clazz.secondary.reducedCosts.length">
             Aucun
           </ng-container>
-          <ng-container
-            *ngFor="
-              let reduceCost of clazz.secondary.reducedCosts;
-              let $last = last
-            "
-          >
+          <ng-container *ngFor="let reduceCost of clazz.secondary.reducedCosts; let $last = last">
             <span class="bold">+1 {{ reduceCost.ability }} : </span>
             {{ reduceCost.cost }}
             <br *ngIf="!$last" />
@@ -157,15 +146,9 @@
           <ng-container *ngIf="!clazz.bonus.primary.length">
             Aucun
           </ng-container>
-          <ng-container
-            *ngFor="let bonus of clazz.bonus.primary; let $last = last"
-          >
-            <span class="bold">
-              +{{ bonus.bonus }} {{ bonus.ability }} par niveau
-            </span>
-            <span class="italic" *ngIf="bonus.limit">
-              (maximum +{{ bonus.limit }})
-            </span>
+          <ng-container *ngFor="let bonus of clazz.bonus.primary; let $last = last">
+            <span class="bold"> +{{ bonus.bonus }} {{ bonus.ability }} par niveau </span>
+            <span class="italic" *ngIf="bonus.limit"> (maximum +{{ bonus.limit }}) </span>
             <br *ngIf="!$last" />
           </ng-container>
         </p>
@@ -175,9 +158,7 @@
           <ng-container *ngIf="!clazz.bonus.secondary.length">
             Aucun
           </ng-container>
-          <ng-container
-            *ngFor="let bonus of clazz.bonus.secondary; let $last = last"
-          >
+          <ng-container *ngFor="let bonus of clazz.bonus.secondary; let $last = last">
             <span class="bold">+{{ bonus.bonus }}</span>
             {{ bonus.ability }} par niveau
             <br *ngIf="!$last" />
