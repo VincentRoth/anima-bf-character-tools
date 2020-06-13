@@ -38,23 +38,11 @@ export interface Spell {
   isFreeAccess?: boolean;
   // For free access spell, level is a ten
   level: number;
+  limit?: string;
+  maxFreeAccessLevel?: 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100;
   name: string;
   note?: string;
   specialMaintenance?: string;
-  types: SpellType[];
-}
-
-export interface Spell {
-  action: ActionType;
-  castingLevels: SpellCastingLevel[];
-  effect: string;
-  forbiddenPaths?: string[];
-  isDailyMaintenance?: boolean;
-  isFreeAccess?: boolean;
-  // For free access spell, level is a ten
-  level: number;
-  maxFreeAccessLevel?: 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100;
-  name: string;
   types: SpellType[];
 }
 

@@ -8,19 +8,19 @@ import { Spell } from '../models';
 })
 export class SpellComponent implements OnInit {
   get forbiddenPaths(): string {
-    if (this.spell.forbiddenPaths.length) {
-      return this.spell.forbiddenPaths.join(', ');
-    }
-    return 'Aucune';
+    return this.spell.forbiddenPaths?.join(', ') || 'Aucune';
   }
 
   get maintenance(): string {
+    if (this.spell.specialMaintenance) {
+      return this.spell.specialMaintenance;
+    }
     if (this.spell.castingLevels && this.spell.castingLevels.some((castingLevel) => castingLevel.maintenance > 0)) {
       return this.spell.castingLevels
         .reduce((maintenances, castingLevel) => maintenances.concat(castingLevel.maintenance), [])
         .join(' / ');
     }
-    return this.spell.specialMaintenance || 'Non';
+    return 'Non';
   }
   open: boolean;
   @Input() spell: Spell;

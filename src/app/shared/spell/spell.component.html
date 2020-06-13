@@ -10,6 +10,10 @@
       </p>
       <p><span class="bold">Type de sort : </span>{{ spell.types.join(', ') }}</p>
       <p><span class="bold">Effet : </span>{{ spell.effect }}</p>
+      <p *ngIf="spell.limit">
+        <span class="bold">Limitation spéciale : </span>
+        {{ spell.limit }}
+      </p>
       <table cellspacing="0">
         <thead>
           <tr class="bold">

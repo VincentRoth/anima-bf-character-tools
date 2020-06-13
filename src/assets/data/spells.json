@@ -4822,7 +4822,7 @@
         "level": 12,
         "action": "Active",
         "types": ["Attaque"],
-        "effect": "Projette une ou plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Energie avec de Dégâts de 30. Chaque attaque peut être dirigée vers une cible différente, mais il faut déterminer tous les objectifs et leur ordre d'attaque au moment du lancement du sort.",
+        "effect": "Projette une ou plusieurs décharges d'énergies magiques. L'attaque se fait sur le Mode Énergie avec de Dégâts de 30. Chaque attaque peut être dirigée vers une cible différente, mais il faut déterminer tous les objectifs et leur ordre d'attaque au moment du lancement du sort.",
         "castingLevels": [
           {
             "level": "Initial",
@@ -23959,22 +23959,1144 @@
     "name": "Temps",
     "forbiddenPaths": ["Air", "Eau", "Feu", "Terre", "Essence", "Illusion", "Nécromancie"],
     "status": "Secondaire",
-    "description": "",
-    "limits": "",
-    "spells": []
+    "description": "Pour beaucoup d'occultistes le principe qui contrôle cette voie secondaire est le plus grand de tous, y compris parmi ceux des voies majeures. Ceux qui l'utilisent sont appelés les Chronomants, ou mages du temps, et leurs capacités consistent à utiliser la magie pour contrôler le passage du temps comme s'il s'agissait simplement d'un élément de plus.",
+    "limits": "La magie du temps sur Gaïa : Contrairement aux autres voies de magie, tous les sorts en relation avec le temps sur Gaïa sont très limités et contrôlés par les Puissances dans l'Ombre. De ce fait, tout sortilège en relation avec le continuum espace-temps à même de provoquer une modification de l'histoire est simplement sans effet, car il est annulé par les systèmes Ormus d'Imperium.",
+    "spells": [
+      {
+        "name": "Connaissance du Temps",
+        "level": 4,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le personnage peut percevoir de façon surnaturelle le passage du temps.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "Permet de percevoir de façon surnaturelle la date et l'heure en utilisant un calendrier connu du lanceur",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 50,
+            "requiredIntelligence": 7,
+            "effect": "Comme pour le Degré Initial mais le lanceur ressent en plus avec une exactitude absolue les secondes et les millièmes de secondes. De plus, il permet de sentir s'il existe une altération surnaturelle dans le flux du temps",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 70,
+            "requiredIntelligence": 10,
+            "effect": "Comme Pour le Degré Intermédiaire, mais le personnage peut mettre en place une alarme à un moment déterminé à partir de cet instant, ressentant automatiquement lorsque le temps prévu est écoulé. Par exemple, il pourra déterminer qu'il veut savoir quand quatre heures, douze minutes et sept secondes se seront écoulées",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 90,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Avancé, mais le lanceur peut calculer le laps de temps que va prendre une chose pour se terminer, comme par exemple combien de temps mettra une personne qui marche à une vitesse constante pour traverser une plage ou combien de temps va s'écouler avant qu'une mélodie en train d'être jouée ne se termine",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Accélération du Temps",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Le sorcier accélère son essence face au passage du temps. Pendant qu'il perçoit le monde au ralenti, les autres ne voient qu'une tache en mouvement. En termes de jeu, cela accorde différents bonus au lanceur ou à l'individu désigné par celui-ci, en fonction du Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "+1 en Mouvement / +20 à l'Initiative / +10 à toutes les actions",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "+2 en Mouvement / +30 à l'Initiative / +15 à toutes les actions",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 12,
+            "effect": "+2 en Mouvement / +40 à l'Initiative / +20 à toutes les actions",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 15,
+            "effect": "+3 en Mouvement / +50 à l'Initiative / +25 à toutes les actions",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Ralentissement du temps",
+        "level": 24,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort affecte une zone déterminée dans laquelle tout individu désigné par le lanceur est entraîné dans un flux temporel ralenti. Par conséquent, les personnes affectées se déplacent beaucoup plus lentement, souffrant ainsi de divers malus indiqués en fonction des Degrés du sortilège. La zone affectée par Ralentissement du Temps reste à l'endroit où elle a été lancée. Pour résister à ses effets il faut réussir une RMys, mais quelqu'un qui a échoué au test ne peut pas le refaire tant qu'il ne sort pas de la zone d'influence du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "-2 en Mouvement / -40 à l'Initiative / 10 m de rayon / RMys 100",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 10,
+            "effect": "-4 en Mouvement / -60 à l'Initiative / -10 à toutes les actions / 25 m de rayon / RMys 120",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "-6 en Mouvement / -80 à l'Initiative / -20 à toutes les actions / 50 m de rayon / RMys 140",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 15,
+            "effect": "-8 en Mouvement / -100 à l'Initiative / -30 à toutes les actions / 100 m de rayon / RMys 160",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Retenir le Temps",
+        "level": 34,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort crée une bulle surnaturelle qui bloque le flux du temps. Tant que le sortilège est actif, l'état des choses à l'intérieur de cette bulle ne peut changer. En termes de jeu, ce sort mémorise l'état et la condition actuels de tout ce qui se trouve dans un rayon d'action déterminé par le Degré du sortilège au moment où celui-ci est lancé, empêchant à tout moment que, quels que soient les dégâts que subissent des choses ou des personnes à partir de ce moment, leurs effets ou conséquences puissent se produire. Par exemple, pendant que le sort est maintenu, un personnage blessé conservera toujours la même quantité de points de vie perdus, même si par la suite il essuie de nouvelles attaques qui peuvent le blesser plus sérieusement et même le tuer. De la même manière, les effets négatifs physiques comme la douleur ou la fatigue n'ont pas plus d'effet pendant ce temps. Malheureusement, Retenir le Temps ne peut que retarder les effets de ce qui s'est réellement passé, et non les éviter, donc tout ce qu'a subi un individu ou une chose durant ce laps de temps bloqué apparaîtra immédiatement à la fin du sort ou en sortant de sa zone d'influence. Cela signifie que si quelqu'un est mort à l'intérieur d'une zone bloquée, quels que soient les soins qu'elle reçoit à posteriori elle ne pourra être sauvée lorsque le sort s'arrêtera, car elle sera morte depuis longtemps. Le sorcier peut choisir librement qui est affecté ou non, et quelles choses pourront être détruites ou non. Néanmoins, ce sortilège n'affecte jamais son lanceur, car il est le nœud qui relie le passé au présent. La zone affectée par Retenir le Temps reste à l'endroit où il a été lancée.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "5 m",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 11,
+            "effect": "10 m",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 13,
+            "effect": "25 m",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 380,
+            "requiredIntelligence": 15,
+            "effect": "50 m",
+            "maintenance": 40
+          }
+        ]
+      },
+      {
+        "name": "Arrêter le Temps",
+        "level": 44,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort fait en sorte que le temps s'arrête à l'intérieur d'un espace déterminé. Toute chose ou tout individu qui, à partir du round postérieur au lancement du sort, se trouve à l'intérieur de sa zone d'effet reste figé dans le temps s'il ne réussit pas un test de RMys dont la difficulté est déterminée par le Degré du sort. Les personnes ou choses figées dans le temps sont complètement solides, rien ne peut interagir avec elles, les toucher ou leur infliger de dégâts d'aucune sorte, et elles ne peuvent pas non plus interagir avec quoi que ce soit. Les créatures avec une Gnose de 40 ou plus peuvent ignorer cet effet, car elles sont capables d'interagir librement avec les choses figées sans aucun problème. Une personne affectée peut refaire le test une fois par jour. La zone affectée par Arrêter le Temps reste fixe, là où le sort a été lancé, et il n'est pas possible de choisir des cibles à l'intérieur. Il affecte donc tout ce qui s'y trouve à l'exception du lanceur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 9,
+            "effect": "RMys 120 / 10 m",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "RMys 140 / 25 m",
+            "maintenance": 60
+          },
+          {
+            "level": "Avancé",
+            "zeon": 400,
+            "requiredIntelligence": 14,
+            "effect": "RMys 160 / 50 m",
+            "maintenance": 80
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "RMys 180 / 100 m",
+            "maintenance": 100
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Rétroévolution",
+        "level": 54,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sortilège affecte l'essence de la cible, faisant repartir son « existence » en arrière dans le temps. Naturellement, la personne affectée ne voyage pas vraiment dans le passé, c'est son essence qui revient à un moment antérieur de sa vie. De cette façon, un vieillard redeviendra jeune et un adulte pourra se transformer en enfant, et même en bébé. Malheureusement, le temps remonté s'efface de la vie de l'individu et il perd donc cette partie de sa vie, oubliant ses souvenirs ou même perdant (ou regagnant) les capacités qu'il avait avant. Bien sûr, si cela est nécessaire, cela peut aller jusqu'à modifier le niveau de la personne affectée. Ce sort ne permet pas de récupérer des membres amputés ni d'annuler des effets ou des dégâts infligés par des créatures de Gnose 40 ou supérieure. Pour résister aux effets de ce sort il faut réussir un test de RMys contre la difficulté déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "RMys 120 / Remonte au plus d'un jour",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 13,
+            "effect": "RMys 140 / Remonte au plus d'un mois",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 15,
+            "effect": "RMys 160 / Remonte au plus d'un an",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 17,
+            "effect": "RMys 180 / Remonte au plus d'une décennie",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Défaire le Temps",
+        "level": 64,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet de faire en sorte que les fibres du temps reculent de quelques instants dans une zone déterminée, défaisant n'importe quel événement étant survenu pendant cette période. De cette manière, il est possible de refaire à nouveau quelques rounds, ou même de faire revenir à la vie quelqu'un mort pendant ce laps de temps. Seul le lanceur, les créatures avec une Gnose supérieure de 15 points à leur Natura ou celles de nature divine seront conscientes de ce qui s'est passé durant la période de temps défaite. Pour les autres, elle n'aura jamais existé.\nCe sort ne permet pas de défaire les actions dans lesquelles est directement impliquée une créature avec une Gnose de 40 ou plus, sauf si le lanceur a une Gnose encore plus élevée, ni de rendre la vie à une personne dont l'âme a été décréée.\nIl est important de noter que pour la réalité générale, le temps ne recule pas, mais qu'une partie du monde se sépare du continuum espace-temps naturel et le fait brièvement repartir en arrière. Ainsi, une brève distorsion temporelle se crée, que l'existence se chargera de réparer en faisant le moins de dégâts possibles.\nLa zone affectée et la période de temps qu'il est possible de remonter sont déterminées par le Degré du sort. Aucun jet de Résistance n'est possible.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 11,
+            "effect": "15 secondes (5 rounds) / 50 m",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 14,
+            "effect": "30 secondes (10 rounds) / 150 m",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "Une minute / 250 m",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 800,
+            "requiredIntelligence": 18,
+            "effect": "Une heure / 1 km",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Saut dans le Temps",
+        "level": 74,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Ce sort affecte un individu ou une chose en lui faisant faire un saut dans le futur. En termes de jeu, la cible du sort disparaît d'où elle était, apparaissant au même endroit un certain temps après, ou au plus proche lieu libre si quelque chose a pris sa place.\nAlors que pour elle seul l'environnement change et qu'elle ne perçoit aucun écoulement du temps, une personne à ses côtés à cet instant la verrait disparaître complètement.\nLe lanceur choisit combien de temps dans le futur il va envoyer la personne affectée, tant que cela ne dépasse pas les limites déterminées par le Degré du sort. Toutefois, il y a une limite à ces effets. Certains moments de l'histoire sont des événements si importants de l'existence qu'il est impossible de les éviter. De ce fait, si la période de temps du saut temporel devrait contenir l'un d'entre eux, l'individu qui fait ce saut sera stoppé, le sortilège s'arrêtant avant ce qui été prévu.\nLa cible du sort peut résister à ses effets en réussissant une RMys.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 11,
+            "effect": "10 minutes au maximum / RMys 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 14,
+            "effect": "Un jour au maximum / RMys 160",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 16,
+            "effect": "Un mois au maximum / RMys 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 18,
+            "effect": "Un an au maximum / RMys 240",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Boucle Temporelle",
+        "level": 84,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort crée une boucle sur un laps de temps, faisant se répéter l'histoire encore et encore. Tant que le sortilège est maintenu, lorsque la période arrive à la fin assignée par le lanceur, le temps se réinitialise, donnant un nouveau début aux mêmes événements. À part les individus désignés par le lanceur, ou ceux qui ont une Gnose de 35 ou plus (ou, à défaut, ceux dont la Gnose est au moins de 15 points supérieure à la Natura du lanceur), personne ne sera conscient que l'histoire se répète.\nCe sort a une zone d'effet définie, mais cela ne signifie pas que le temps avance hors de cette zone. Lorsque le sort se termine, on considère que seule la dernière occurrence de la Boucle Temporelle a réellement eu lieu. Les créatures avec une Gnose de 40 ou plus sont conscientes du lieu et de la position de toutes les Boucles Temporelles existantes à chaque instant.\nS'il le souhaite, le lanceur peut imposer un événement comme fin du sortilège. Ainsi, si les choses se passent comme il l'avait défini, le sort se termine immédiatement.\nLe maintien de ce sort se calcule d'une façon spéciale. Contrairement aux règles générales, le sorcier doit payer un coût de maintien à la fin de chaque occurrence de la boucle qu'il a définie. C'est-à-dire que s'il établit une boucle temporelle de dix minutes, il devra dépenser son Zéon à la fin de cette période. Malheureusement, en liant son essence à un moment statique de l'histoire, le lanceur de la Boucle Temporelle n'a aucun moyen de récupérer du Zéon tant que le sort est maintenu actif.\nAucun jet de Résistance n'est possible contre une Boucle Temporelle.",
+        "limit": "Contrairement aux règles générales des sorts d'Accès Libre et des voies secondaires, la Boucle Temporelle est considérée comme un sort de Haute Magie.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 400,
+            "requiredIntelligence": 11,
+            "effect": "250 m de rayon / Un jour au maximum",
+            "maintenance": 40
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 600,
+            "requiredIntelligence": 14,
+            "effect": "500 m de rayon / Une semaine au maximum",
+            "maintenance": 60
+          },
+          {
+            "level": "Avancé",
+            "zeon": 900,
+            "requiredIntelligence": 16,
+            "effect": "1 km de rayon / Un mois au maximum",
+            "maintenance": 90
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1400,
+            "requiredIntelligence": 18,
+            "effect": "5 km de rayon / Un an au maximum",
+            "maintenance": 140
+          }
+        ],
+        "specialMaintenance": "40 / 60 / 90 / 140 (Spécial)"
+      },
+      {
+        "name": "Superposition du Temps",
+        "level": 94,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort permet au lanceur de créer un point de réunion entre le présent et le passé, fusionnant les deux instants en un.\nAinsi, tout ce qu'il y avait à l'intérieur de la zone déterminée par le Degré du sort au moment désigné par le sorcier se manifeste dans le présent, comme s'il avait toujours été là.\nEn réalité, le passé n'est pas du tout altéré, c'est le présent qui est modifié, en rajoutant sur celui-ci une ligne temporelle antérieure. Cela signifie que, aussi bien les personnes que les choses qui existaient à ce moment et à cet endroit réapparaissent dans le présent. Il n'y a aucune limite à la quantité d'éléments qui sont amenés dans la zone affectée. Il peut s'agir d'armées entières ou de villes qui existaient il y a des éons. Les êtres et les objets qui apparaissent ne sont pas vraiment des copies, mais en même temps, ils ne sont pas complètement réels. Ce sont des êtres hors de leur ligne temporelle dont l'existence prolongée est, dans le meilleur des cas, non naturelle.\nSi deux choses identiques se superposent au même endroit (comme c'est souvent le cas avec les constructions pérennes et les reliefs géographiques), s'imposera celle qui aura le plus de présence entre les deux versions ou, dans le cas de deux présences très similaires, elles se mêleront pour donner un résultat intermédiaire entre les deux. Dans le cas où une même personne se trouve au même endroit aux deux moments, le résultat est toujours instable. Il est possible qu'elle fusionne en une seule personne, qu'elle existe comme deux entités séparées ou, même que les deux soient complètement détruites. Néanmoins, ce sort a aussi ses limites. En premier lieu, il est impossible de « ramener » du passé quelqu'un ou quelque chose qui a été décréé ou dont l'âme a été détruite (dans le second de ces cas, son corps apparaîtra, mais ne sera qu'une carcasse vide). De plus, si un objet unique avec un niveau de Pouvoir de 5 devrait être ramené et qu'il existe toujours dans le présent, la manifestation de cet objet sera incomplète, possédant des qualités très inférieures à celles de l'objet qui existe toujours.",
+        "limit": "Contrairement aux règles générales des sorts d'Accès Libre et donc des voies secondaires, la Superposition du Temps est considérée comme un sort de Magie Divine.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 500,
+            "requiredIntelligence": 12,
+            "effect": "5 m de rayon / Un an au maximum dans le passé",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 800,
+            "requiredIntelligence": 15,
+            "effect": "25 m de rayon / Une décennie au maximum dans le passé",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 1250,
+            "requiredIntelligence": 17,
+            "effect": "500 m de rayon / Un siècle au maximum dans le passé",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 2500,
+            "requiredIntelligence": 19,
+            "effect": "1 km de rayon / Mille ans au maximum dans le passé",
+            "maintenance": 0
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Seuil",
     "forbiddenPaths": ["Lumière", "Création", "Destruction", "Eau", "Essence"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "La peur et la folie sont les émotions les plus sombres, primaires et puissantes, antérieures même aux temps où les hommes ont pris conscience de leur destin. Cette voie secondaire à ces deux concepts comme base, c'est la magie des horreurs primitives qui sont au-delà des ténèbres elles-mêmes.",
+    "spells": [
+      {
+        "name": "Les Yeux de l'Autre Côté",
+        "level": 4,
+        "action": "Active",
+        "types": ["Détection"],
+        "effect": "Les yeux du sorcier lui permettent de voir les peurs intrinsèques des gens, tout comme leurs troubles et leurs folies. Pendant que ce sort est actif, toute personne capable de percevoir les esprits verra comment les yeux du personnage deviennent intégralement noirs, comme si une obscurité intérieure les dévorait. Pour éviter les effets de ce sort, un individu devra réussir un test de RMys ou de RPsy contre la difficulté déterminée par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "Le personnage peut sentir si une personne est apeurée ou non / RMys ou RPsy 120",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "Le personnage peut percevoir, non seulement si une personne est effrayée ou non, mais aussi quelles sont la nature et l'origine de la peur qu'elle ressent à cet instant / RMys ou RPsy 140",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 11,
+            "effect": "Le mage perçoit les peurs et les troubles de façon générale, même lorsque les personnes qu'il observe ne sont pas effrayées / RMys ou RPsy 160",
+            "maintenance": 5
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 14,
+            "effect": "Le personnage perçoit les peurs et les troubles des personnes, voyant des représentations visuelles de ces peurs marcher à côté d'elles / RMys ou RPsy 180",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Ombre de la Peur",
+        "level": 14,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Ce sort affecte une zone, la rendant lugubre et sombre pour tout autre que le sorcier. Il est important de préciser que différentes personnes peuvent percevoir la même zone de façon différente, selon ce qu'elles considèrent comme un endroit lugubre.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 40,
+            "requiredIntelligence": 6,
+            "effect": "50 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 70,
+            "requiredIntelligence": 9,
+            "effect": "250 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 100,
+            "requiredIntelligence": 12,
+            "effect": "500 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 130,
+            "requiredIntelligence": 15,
+            "effect": "1 km de rayon",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Les Susurrements de l'Autre Côté",
+        "level": 24,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Provoque l'apparition de voix susurrantes dans une zone donnée. Ces sons inondent les cœurs de leurs victimes d'une peur primordiale. Toute personne à l'intérieur du rayon d'action du sort qui écoute les voix plus de cinq rounds doit réussir automatiquement un test de RMys ou de RPsy contre la difficulté déterminée par le Degré du sort, sous peine de tomber sous l'emprise de la Peur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 60,
+            "requiredIntelligence": 6,
+            "effect": "RMys ou RPsy 80 / 10 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 9,
+            "effect": "RMys ou RPsy 100 / 25 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Avancé",
+            "zeon": 160,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 120 / 50 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 200,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 140 / 100 m de rayon",
+            "maintenance": 10
+          }
+        ]
+      },
+      {
+        "name": "Sentier de la Folie",
+        "level": 34,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le sorcier altère l'esprit d'une personne par des idées et des concepts démentiels, chamboulant sa perception du monde et la soumettant temporairement à la folie. La cible de ce sort doit réussir un test de RMys ou de RPsy contre une difficulté déterminée par le Degré du sort sous peine d'être prise d'une folie passagère comme la psychose, la schizophrénie ou la paranoïa, perdant toute capacité à être maîtresse de ses propres actes. Le personnage affecté ne pourra refaire le test de Résistance qu'une fois par jour.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 100,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 140",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 13,
+            "effect": "RMys ou RPsy 160",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 140,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 180",
+            "maintenance": 20
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Harceler par les Rêves",
+        "level": 44,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Cette malédiction permet au sorcier de changer les rêves de sa victime en une prison dans laquelle il enferme son âme dans un cauchemar sans fin. La cible reste soumise à un rêve éternel dans lequel elle est constamment harcelée par des monstres et autres créatures innommables qui la pourchasseront pour la tuer. Ce sort doit être lancé contre un individu qui rêve et, si celui-ci échoue à son test de RMys ou de RPsy, il ne pourra pas se réveiller tant que le sort ne se terminera pas. La cible ne pourra pas refaire test de Résistance tant que, dans son monde de cauchemar, son esprit ne considèrera pas qu'il a vaincu les mauvais rêves qui le harcèlent.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 7,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 160",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 13,
+            "effect": "RMys ou RPsy 200",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 240",
+            "maintenance": 25
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Accentuation",
+        "level": 54,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Le personnage accentue les peurs et les folies des individus qui se trouvent dans la zone d'effet du sort. Toute personne qui ne réussit pas le test de RMys ou RPsy passera de l'état de Peur à celui de Terreur quelle que soit la source de l'effroi initial, et la folie passagère se transformera en démence profonde. Le test ne peut être refait qu'une fois par jour, ou bien quand les Résistances du personnage augmentent.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "RMys ou RPsy 120 / 50 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "RMys ou RPsy 140 / 100 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 160 / 250 m de rayon",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 300,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 180 / 500 m de rayon",
+            "maintenance": 30
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Terreur",
+        "level": 64,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Provoque temporairement l'état de Terreur sur tous les sujets se trouvant autour du lanceur. Le sorcier décide quelle est l'origine de ce sentiment chez les personnes affectées.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 8,
+            "effect": "RMys ou RPsy 120 / 10 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 140 / 50 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 180 / 100 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 200 / 250 m de rayon",
+            "maintenance": 25
+          }
+        ]
+      },
+      {
+        "name": "Seigneur des Fous",
+        "level": 74,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le sorcier obtient la capacité de contrôler toute personne folle en altérant à volonté sa démence et sa perception de la réalité. Pour être affecté par ce sortilège il suffit d'être dans la zone d'influence du sort et d'avoir une démence grave. Tous ceux qui ne souffrent que d'une folie passagère peuvent appliquer un +40 à leurs RMys ou RPsy contre les effets de ce sort. Les personnes affectées ont le droit de refaire le test une fois par jour ou quand elles augmentent leurs Résistances.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 200,
+            "requiredIntelligence": 10,
+            "effect": "RMys ou RPsy 140 / 100 m de rayon",
+            "maintenance": 20
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 300,
+            "requiredIntelligence": 12,
+            "effect": "RMys ou RPsy 160 / 250 m de rayon",
+            "maintenance": 30
+          },
+          {
+            "level": "Avancé",
+            "zeon": 400,
+            "requiredIntelligence": 14,
+            "effect": "RMys ou RPsy 180 / 1 km de rayon",
+            "maintenance": 40
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "RMys ou RPsy 200 / 5 km de rayon",
+            "maintenance": 50
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Incarnation de la Peur",
+        "level": 84,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Ce sort crée une incarnation pure de la peur d'une personne, une créature d'Entre Mondes née d'endroits les plus profonds du subconscient de sa cible. La créature est réelle à tous points de vue, mais seul l'individu ou les individus qui la craignent peuvent la voir ou interagir avec elle (de la même façon la créature ne sent et ne peut toucher que ceux qu'elle effraie). Lorsqu'il lance ce sort, le sorcier doit choisir comme cible une personne qui est en sa présence, et celle-ci sera automatiquement affectée. Si cet individu ne réussit pas la RMys ou la RPsy déterminée par le Degré du sort, elle donne immédiatement forme à un être à l'image en tout point conforme aux peurs du personnage. La créature peut avoir n'importe quel niveau ou pouvoirs, tant qu'elle n'a pas une Gnose supérieure à 30 ou qu'elle ne dépasse pas les limites de niveau imposées par le Degré du sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 10,
+            "effect": "Niveau 4 / RMys 140",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 12,
+            "effect": "Niveau 8 / RMys 160",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "Niveau 12 / RMys 180",
+            "maintenance": 50
+          },
+          {
+            "level": "Arcane",
+            "zeon": 700,
+            "requiredIntelligence": 18,
+            "effect": "Niveau 15 / RMys 200",
+            "maintenance": 70
+          }
+        ]
+      },
+      {
+        "name": "La Peur faite Chair",
+        "level": 94,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Le personnage se transforme en source de peur, provoquant l'effroi de toutes les créatures, même celles qui sont normalement immunisées contre les effets psychologiques. Tout ce qui est en sa présence est soumis automatiquement à l'état de Peur, sans possibilité de résister, et doit réussir un test de RMys ou de RPsy pour ne pas être en plus soumis à l'état de Terreur.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 11,
+            "effect": "RMys ou RPsy 120",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 350,
+            "requiredIntelligence": 13,
+            "effect": "RMys ou RPsy 140",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 450,
+            "requiredIntelligence": 15,
+            "effect": "RMys ou RPsy 200",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 600,
+            "requiredIntelligence": 17,
+            "effect": "RMys ou RPsy 240",
+            "maintenance": 0
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "Vide",
     "forbiddenPaths": ["Lumière", "Création", "Feu", "Terre", "Essence", "Illusion"],
     "status": "Secondaire",
-    "description": "",
-    "spells": []
+    "description": "Vide est la voie secondaire qui contrôle les énergies du néant, l'absence totale de toute matière physique ou spirituelle.",
+    "spells": [
+      {
+        "name": "L'Ombre du Vide",
+        "level": 4,
+        "action": "Active",
+        "types": ["Animique"],
+        "effect": "Amène dans l'existence un fragment de vide, une simple ombre du néant primordial qui pendant quelques instants absorbe en partie la lumière, réduit la quantité d'oxygène de la zone et aspire l'énergie vitale qui l'entoure. Tout ce qui se trouve dans la zone affectée par ce sort doit réussir un test de RMys ou perdre un point de Fatigue pour les êtres vivants et deux intensités pour les énergies, ce qui revient à 10 Points de Vie pour les élémentaires.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 5,
+            "effect": "RMys 80 / Zone de 5 m de large",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 8,
+            "effect": "RMys 100 / Zone de 10 m de large",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 11,
+            "effect": "RMys 120 / Zone de 15 m de large",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 14,
+            "effect": "RMys 150 / Zone de 30 m de large",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Vague de Vide",
+        "level": 14,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Ce sort envoie une légère onde de vide capable de déstructurer les fibres surnaturelles de n'importe quelle protection. Ce sort ne provoque pas en soi de dégâts à ses adversaires, mais dirigé contre un bouclier surnaturel, il entraîne sa désagrégation. La Vague de Vide est invisible à l'œil humain, sauf pour ceux capables de voir la magie.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 30,
+            "requiredIntelligence": 6,
+            "effect": "Dégâts 120 contre les boucliers",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 60,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts 250 contre les boucliers",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 90,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 400 contre les boucliers",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 120,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 600 contre les boucliers",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Bouclier de Vide",
+        "level": 24,
+        "action": "Passive",
+        "types": ["Défense"],
+        "effect": "Crée une barrière de particules de vide qui absorbent et anéantissent les attaques qu'elle subit. Outre le fait qu'il résiste comme un bouclier conventionnel, tout pouvoir surnaturel qu'il arrête sera automatiquement annulé si l'attaquant ne réussit pas un test de Volonté ou de Pouvoir contre la difficulté déterminée par le Degré du sort. C'est-à-dire que si un adversaire lance un sortilège offensif ou animique contre un mage qui se protège derrière un Bouclier de Vide au Degré Intermédiaire, et que ce dernier obtient une défense avec succès, l'attaquant devra réussir un test de Volonté ou de Pouvoir contre 16, sinon son attaque sera annulée sans faire le moindre dégât au bouclier. De la même façon, tout objet physique que le bouclier réussi à parer doit réussir une RPhy contre la difficulté déterminée par le bouclier ou être détruit immédiatement.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 50,
+            "requiredIntelligence": 6,
+            "effect": "200 Points de Vie / Difficulté 14 / 100 RPhy",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 90,
+            "requiredIntelligence": 9,
+            "effect": "300 Points de Vie / Difficulté 16 / 120 RPhy",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 120,
+            "requiredIntelligence": 12,
+            "effect": "400 Points de Vie / Difficulté 18 / 140 RPhy",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 150,
+            "requiredIntelligence": 15,
+            "effect": "500 Points de Vie / Difficulté 20 / 160 RPhy",
+            "maintenance": 30
+          }
+        ]
+      },
+      {
+        "name": "Vortex de Réalité",
+        "level": 34,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Crée une zone remplie de millions de microscopiques particules de vide. Tout individu se trouvant à l'intérieur pendant plus d'un round doit réussir automatiquement un test de RMys à chaque round, ou subir des dégâts et une perte de points de Ki équivalents à la moitié de la marge d'échec, ainsi qu'une perte de points de Zéon équivalents à la marge d'échec. Ce sort ne permet pas de choisir de cibles, il affecte tout le monde de la même façon y compris le lanceur lui-même.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 80,
+            "requiredIntelligence": 7,
+            "effect": "RMys 100 / 5 m de rayon",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 120,
+            "requiredIntelligence": 10,
+            "effect": "RMys 120 / 10 m de rayon",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 180,
+            "requiredIntelligence": 13,
+            "effect": "RMys 140 / 20 m de rayon",
+            "maintenance": 15
+          },
+          {
+            "level": "Arcane",
+            "zeon": 240,
+            "requiredIntelligence": 15,
+            "effect": "RMys 160 / 40 m de rayon",
+            "maintenance": 20
+          }
+        ]
+      },
+      {
+        "name": "Lame Noire de Perdition",
+        "level": 44,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Invoque le vide à l'état le plus pur, donnant forme à une lame de pouvoir crépitante qui se manifeste entre les mains du sorcier. L'arme est de taille grande (G), a la même initiative que le lancer d'un sort, peut être utilisée par le sorcier pour parer ou attaquer sur le mode Tranchant avec la Projection magique ou la compétence de corps-à-corps du lanceur, ne peut être brisée ni briser d'autre arme en combattant, et elle ignore complètement tout Indice de Protection. Le sorcier peut maintenir la lame active pour faire de nouvelles attaques au cours des rounds suivants, mais à chaque round il doit réussir un test de Volonté contre une difficulté de 12 ou perdre le contrôle de l'épée et du sort. Chaque fois qu'il arrive à réussir le test il augmente d'un point sa difficulté pour le test du round suivant. S'il échoue, l'épée se retourne contre le sorcier, l'attaquant avec sa propre compétence entière +50.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 100,
+            "requiredIntelligence": 6,
+            "effect": "Dégâts 80",
+            "maintenance": 5
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 150,
+            "requiredIntelligence": 9,
+            "effect": "Dégâts 120",
+            "maintenance": 10
+          },
+          {
+            "level": "Avancé",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Dégâts 160",
+            "maintenance": 10
+          },
+          {
+            "level": "Arcane",
+            "zeon": 250,
+            "requiredIntelligence": 15,
+            "effect": "Dégâts 200",
+            "maintenance": 15
+          }
+        ]
+      },
+      {
+        "name": "Aura de Vide",
+        "level": 54,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Recouvre le sorcier d'une aura de vide qui le protège des effets des attaques surnaturelles, lui accordant un IP contre le Mode Énergie chaque fois qu'elle dévore un sort ou un pouvoir psychique d'une valeur inférieure à celle indiquée, laquelle perdure pendant toute la durée du sort et se cumule aux précédentes selon les règles habituelles pour les sorts procurant un Indice de Protection. Malheureusement, ce sort ne fait pas la différence entre les pouvoirs amis et ennemis, et les dévore tous sans distinction. La couche de vide est invisible, mais tout ce qui entoure le sorcier semble plus ténu et éteint.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 120,
+            "requiredIntelligence": 6,
+            "effect": "IP 4 / Valeur en Zéon de 60 / Talent psychique de 80",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 180,
+            "requiredIntelligence": 9,
+            "effect": "IP 6 / Valeur en Zéon de 90 / Talent psychique de 120",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 240,
+            "requiredIntelligence": 12,
+            "effect": "IP 8 / Valeur en Zéon de 120 / Talent psychique de 140",
+            "maintenance": 25
+          },
+          {
+            "level": "Arcane",
+            "zeon": 350,
+            "requiredIntelligence": 15,
+            "effect": "IP 10 / Valeur en Zéon de 160 / Talent psychique de 180",
+            "maintenance": 35
+          }
+        ],
+        "isDailyMaintenance": true
+      },
+      {
+        "name": "Points Noirs",
+        "level": 64,
+        "action": "Active",
+        "types": ["Automatique"],
+        "effect": "Crée une zone autour du sorcier remplie de vortex existentiels et de trous de vide qui se déplacent d'un côté à l'autre de façon chaotique. Toute personne entrant dans cette zone, à l'exception du sorcier, doit réussir à chaque round un test d'Athlétisme, d'Acrobaties ou de Défense (une parade incapable d'affecter l'énergie est inefficace) contre une difficulté déterminée par le Degré du sort, sous peine de heurter un des Points Noirs. Dans ce cas, le personnage doit réussir un test de RPhy ou de RMys contre la difficulté déterminée par le sort ou subir des dégâts et une perte de points de Ki équivalents à la moitié de ta marge d'échec, ainsi qu'une perte de Zéon équivalente à la marge d'échec. Il n'est pas possible de désigner de cibles à l'intérieur du sortilège.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 150,
+            "requiredIntelligence": 8,
+            "effect": "Difficulté de 120 / 10 m de rayon / RMys ou RPhy 120",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 250,
+            "requiredIntelligence": 10,
+            "effect": "Difficulté de 140 / 20 m de rayon / RMys ou RPhy 140",
+            "maintenance": 25
+          },
+          {
+            "level": "Avancé",
+            "zeon": 350,
+            "requiredIntelligence": 12,
+            "effect": "Difficulté de 180 / 50 m de rayon / RMys ou RPhy 160",
+            "maintenance": 35
+          },
+          {
+            "level": "Arcane",
+            "zeon": 500,
+            "requiredIntelligence": 15,
+            "effect": "Difficulté de 240 / 100 m de rayon / RMys ou RPhy 180",
+            "maintenance": 50
+          }
+        ]
+      },
+      {
+        "name": "Protection contre le Vide",
+        "level": 74,
+        "action": "Active",
+        "types": ["Effet"],
+        "effect": "Recouvre le sorcier d'une énergie surnaturelle qui repousse les effets du vide. Tout sort ou pouvoir en relation avec le néant n'a aucun effet sur lui, ni ne peut lui infliger de dégâts.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 140,
+            "requiredIntelligence": 10,
+            "effect": "Protège contre les sorts de cette voie secondaire à l'exception de la Porte sur Nulle Part",
+            "maintenance": 15
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 200,
+            "requiredIntelligence": 12,
+            "effect": "Comme pour le Degré Initial sans son exception, mais personnage est également immunisé contre les effets et les attaques de créatures basées sur le vide, comme les Etrien Gnosos",
+            "maintenance": 20
+          },
+          {
+            "level": "Avancé",
+            "zeon": 280,
+            "requiredIntelligence": 14,
+            "effect": "Le personnage est immunisé contre tout effet en relation avec le vide, sauf le néant primordial",
+            "maintenance": 30
+          },
+          {
+            "level": "Arcane",
+            "zeon": 400,
+            "requiredIntelligence": 16,
+            "effect": "Comme pour le Degré Avancé, mais le personnage est capable de survivre même au néant primordial",
+            "maintenance": 40
+          }
+        ]
+      },
+      {
+        "name": "Implosion",
+        "level": 84,
+        "action": "Active",
+        "types": ["Attaque"],
+        "effect": "Ce sort terrorisant crée un point de vide à l'intérieur de quelque chose, attirant toute sa masse vers l'intérieur et provoquant une implosion de sa structure et sa disparition complète. Comme il absorbe la chair, les os et les organes, si le résultat de l'attaque devrait infliger des dommages ce sortilège provoque directement les dégâts indiqués, sans Mode qui puisse les réduire par un quelconque Indice de Protection, et provoque en plus un critique automatique avec un bonus déterminé par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 250,
+            "requiredIntelligence": 14,
+            "effect": "Dégâts 200 / Niveau de critique +20",
+            "maintenance": 0
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 16,
+            "effect": "Dégâts 400 / Niveau de critique +40",
+            "maintenance": 0
+          },
+          {
+            "level": "Avancé",
+            "zeon": 750,
+            "requiredIntelligence": 18,
+            "effect": "Dégâts 600 / Niveau de critique +60",
+            "maintenance": 0
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1000,
+            "requiredIntelligence": 20,
+            "effect": "Dégâts 800 / Niveau de critique +100",
+            "maintenance": 0
+          }
+        ]
+      },
+      {
+        "name": "Porte sur Nulle Part",
+        "level": 94,
+        "action": "Passive",
+        "types": ["Effet"],
+        "effect": "Ouvre un portail à sens unique vers le vide le plus absolu, le néant primitif qui dévorera un jour l'univers. Tout ce qui passe la porte cesse d'exister automatiquement, sans qu'aucun test de Résistance ne soit possible. Seuls les êtres possédant une Gnose de 35 ou plus, les objets d'une présence équivalente ou les individus protégés par quelque moyen que ce soit contre le Vide peuvent y survivre, mais ils perdent un point par minute à leur caractéristique de Pouvoir, qu'ils récupèrent au rythme d'un par jour. Naturellement, quelque chose qui reste à l'intérieur est virtuellement immunisé contre tout type d'attaque car celles-ci ne peuvent l'atteindre. Les dimensions du portail sont déterminées par le Degré du sort.",
+        "castingLevels": [
+          {
+            "level": "Initial",
+            "zeon": 300,
+            "requiredIntelligence": 11,
+            "effect": "2 m de diamètre",
+            "maintenance": 30
+          },
+          {
+            "level": "Intermédiaire",
+            "zeon": 500,
+            "requiredIntelligence": 13,
+            "effect": "5 m de diamètre",
+            "maintenance": 50
+          },
+          {
+            "level": "Avancé",
+            "zeon": 800,
+            "requiredIntelligence": 15,
+            "effect": "15 m de diamètre",
+            "maintenance": 80
+          },
+          {
+            "level": "Arcane",
+            "zeon": 1200,
+            "requiredIntelligence": 18,
+            "effect": "50 m de diamètre",
+            "maintenance": 120
+          }
+        ]
+      }
+    ]
   }
 ]

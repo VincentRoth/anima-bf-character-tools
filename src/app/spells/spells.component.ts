@@ -24,8 +24,7 @@ export class SpellsComponent extends AbstractSearchComponent<SpellsSearchParams>
 
     this.spellService.get().subscribe({
       next: (data) => {
-        // TODO remove this filter after integrating all magic paths
-        this.magicPaths = data.filter((path) => path.spells.length);
+        this.magicPaths = data;
 
         if (Object.values(this.filters).some(Boolean)) {
           this.handleSearch(this.filters, 0);
