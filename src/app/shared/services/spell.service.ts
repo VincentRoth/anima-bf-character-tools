@@ -46,14 +46,14 @@ export class SpellService extends AbstractQueryOnceService<MagicPath[], SpellsSe
                   tokens.reduce((isSelected: boolean, token: string) => {
                     return (
                       isSelected &&
+                      // no filter on level
+                      // spell types is filter with other param
                       (spell.name.toLocaleLowerCase().includes(token) ||
-                        // no filter on level
                         spell.action.toLocaleLowerCase().includes(token) ||
-                        // spell types is filter with other input
                         spell.effect.toLocaleLowerCase().includes(token) ||
                         spell.castingLevels.some(
-                          (castingLevel: SpellCastingLevel) => castingLevel.effect.toLocaleLowerCase().includes(token)
                           // no filter on zeon, int and maintenance cost
+                          (castingLevel: SpellCastingLevel) => castingLevel.effect.toLocaleLowerCase().includes(token)
                         ) ||
                         (spell.specialMaintenance && spell.specialMaintenance.toLocaleLowerCase().includes(token)) ||
                         (spell.isDailyMaintenance && 'Quotidien'.toLocaleLowerCase().includes(token)) ||
