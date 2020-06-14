@@ -1,7 +1,4 @@
-export enum ActionType {
-  ACTIVE = 'Active',
-  PASSIVE = 'Passive'
-}
+import { ActionType } from './common.model';
 
 export enum SpellType {
   ATTACK = 'Attaque',

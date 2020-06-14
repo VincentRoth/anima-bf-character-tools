@@ -1,7 +1,7 @@
 import { Component, Injector, OnInit } from '@angular/core';
-import { AbstractSearchComponent } from '../shared/abstract-search.component';
 import { UnknownAdvantage } from '../shared/models';
-import { AdvantagesSearchParams } from '../shared/search-params/advantages-search.params';
+import { AbstractSearchComponent } from '../shared/search/abstract-search.component';
+import { AdvantagesSearchParams } from '../shared/search/advantages-search.params';
 import { AdvantageService } from '../shared/services';
 
 @Component({
@@ -28,8 +28,6 @@ export class AdvantagesComponent extends AbstractSearchComponent<AdvantagesSearc
       next: (data) => {
         this.advantages = data;
         this.types = this.advantageService.getTypes();
-        this.filteredAvantages = data;
-        this.filteredAvantages.sort(this.advantageService.sort);
 
         if (Object.values(this.filters).some(Boolean)) {
           this.handleSearch(this.filters, 0);
@@ -46,7 +44,12 @@ export class AdvantagesComponent extends AbstractSearchComponent<AdvantagesSearc
     this.handleSearch({ ...this.filters, type });
   }
 
-  protected search(filters: AdvantagesSearchParams): void {
-    this.filteredAvantages = this.advantageService.filter(filters).sort(this.advantageService.sort);
+  protected search(params: AdvantagesSearchParams): void {
+    this.advantageService.filter(params).subscribe({
+      next: (data) => {
+        this.filteredAvantages = data;
+        this.filteredAvantages.sort(this.advantageService.sort);
+      }
+    });
   }
 }
