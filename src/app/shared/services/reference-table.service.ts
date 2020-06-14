@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 import cloneDeep from 'lodash-es/cloneDeep';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { ReferenceBook, referenceBooks, ReferenceTable, ReferenceTableContainer } from '../models';
+import { constant } from '../constant';
+import { DifficultyLevel, ReferenceBook, referenceBooks, ReferenceTable, ReferenceTableContainer } from '../models';
 import { SearchParams } from '../search/search.params';
 import { AbstractQueryOnceService } from './abstract-query-once.service';
 
@@ -57,5 +58,16 @@ export class ReferenceTableService extends AbstractQueryOnceService<ReferenceTab
       return this.get().pipe(map(transform));
     }
     return of(transform(this.data));
+  }
+
+  getDifficultyLevels(): Observable<DifficultyLevel[]> {
+    return this.getByReference(constant.refTables.difficulty).pipe(
+      map((difficultyTable: ReferenceTable): DifficultyLevel[] => {
+        return difficultyTable.rows.map((row) => ({
+          name: (row[0] as string).split(' (')[0],
+          value: row[1] as number
+        }));
+      })
+    );
   }
 }

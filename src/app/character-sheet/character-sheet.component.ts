@@ -23,7 +23,7 @@ export class CharacterSheetComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.nbMaximumDisadvantages = constant.maximumDisadvantages;
+    this.nbMaximumDisadvantages = constant.advantages.maximumDisadvantages;
     this.character = this.characterService.get();
     this.tables = [];
     this.character.refTables.forEach((reference) =>
