@@ -6,12 +6,13 @@ import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import { ReferenceBook, referenceBooks, ReferenceTable, ReferenceTableContainer } from '../models';
+import { SearchParams } from '../search/search.params';
 import { AbstractQueryOnceService } from './abstract-query-once.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ReferenceTableService extends AbstractQueryOnceService<ReferenceTableContainer> {
+export class ReferenceTableService extends AbstractQueryOnceService<ReferenceTableContainer, SearchParams> {
   get books(): ReferenceBook[] {
     return referenceBooks;
   }
@@ -19,12 +20,17 @@ export class ReferenceTableService extends AbstractQueryOnceService<ReferenceTab
     super(http, './assets/data/tables.json');
   }
 
-  filterByToken(filter: string): Observable<ReferenceTableContainer> {
-    const tokens = filter.toLocaleLowerCase().split(' ');
+  filter(params: SearchParams): Observable<ReferenceTableContainer> {
     return this.get().pipe(
       map((data) => {
+        if (!Object.values(params).some(Boolean)) {
+          return data;
+        }
+
+        const filteredData = data;
+        const tokens = this.splitSearchToken(params);
         this.books.forEach((book) => {
-          data[book.reference] = data[book.reference].filter((table: ReferenceTable) =>
+          filteredData[book.reference] = filteredData[book.reference].filter((table: ReferenceTable) =>
             tokens.reduce((isSelected: boolean, token: string) => {
               return (
                 isSelected &&
@@ -38,7 +44,7 @@ export class ReferenceTableService extends AbstractQueryOnceService<ReferenceTab
             }, true)
           );
         });
-        return data;
+        return filteredData;
       })
     );
   }

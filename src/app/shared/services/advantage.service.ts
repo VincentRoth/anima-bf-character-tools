@@ -6,48 +6,55 @@ import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import { Advantage, Disadvantage, UnknownAdvantage } from '../models';
-import { AdvantagesSearchParams } from '../search-params/advantages-search.params';
+import { AdvantagesSearchParams } from '../search/advantages-search.params';
 import { AbstractQueryOnceService } from './abstract-query-once.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AdvantageService extends AbstractQueryOnceService<UnknownAdvantage[]> {
+export class AdvantageService extends AbstractQueryOnceService<UnknownAdvantage[], AdvantagesSearchParams> {
   constructor(http: HttpClient) {
     super(http, './assets/data/advantages.json');
   }
 
-  filter(filters: AdvantagesSearchParams): UnknownAdvantage[] {
-    let advantages = cloneDeep(this.data);
-    if (!Object.values(filters).some(Boolean)) {
-      return advantages;
-    }
-    if (filters.type) {
-      advantages = advantages.filter((advantage) => advantage.types.includes(filters.type));
-    }
-    if (filters.q) {
-      const tokens = filters.q.toLocaleLowerCase().split(' ');
-      advantages = advantages.filter((advantage) =>
-        tokens.reduce((isSelected: boolean, token: string) => {
-          return (
-            isSelected &&
-            (advantage.name.toLocaleLowerCase().includes(token) ||
-              advantage.description.toLocaleLowerCase().includes(token) ||
-              advantage.effect.toLocaleLowerCase().includes(token) ||
-              (advantage.condition && advantage.condition.toLocaleLowerCase().includes(token)) ||
-              (advantage.special && advantage.special.toLocaleLowerCase().includes(token)) ||
-              ((advantage as Advantage).costs &&
-                (advantage as Advantage).costs.some((cost) => cost.toString() === token)) ||
-              ((advantage as Disadvantage).benefits &&
-                (advantage as Disadvantage).benefits.some((benefit) => benefit.toString() === token)) ||
-              (advantage.note && advantage.note.toLocaleLowerCase().includes(token)) ||
-              advantage.source.toLocaleLowerCase().includes(token) ||
-              advantage.types.some((type: string) => type.toLocaleLowerCase().includes(token)))
+  filter(params: AdvantagesSearchParams): Observable<UnknownAdvantage[]> {
+    return this.get().pipe(
+      map((data) => {
+        if (!Object.values(params).some(Boolean)) {
+          return data;
+        }
+
+        let filteredAdvantages = data;
+
+        if (params.type) {
+          filteredAdvantages = filteredAdvantages.filter((advantage) => advantage.types.includes(params.type));
+        }
+
+        if (params.q) {
+          const tokens = this.splitSearchToken(params);
+          filteredAdvantages = filteredAdvantages.filter((advantage) =>
+            tokens.reduce((isSelected: boolean, token: string) => {
+              return (
+                isSelected &&
+                (advantage.name.toLocaleLowerCase().includes(token) ||
+                  advantage.description.toLocaleLowerCase().includes(token) ||
+                  advantage.effect.toLocaleLowerCase().includes(token) ||
+                  (advantage.condition && advantage.condition.toLocaleLowerCase().includes(token)) ||
+                  (advantage.special && advantage.special.toLocaleLowerCase().includes(token)) ||
+                  ((advantage as Advantage).costs &&
+                    (advantage as Advantage).costs.some((cost) => cost.toString() === token)) ||
+                  ((advantage as Disadvantage).benefits &&
+                    (advantage as Disadvantage).benefits.some((benefit) => benefit.toString() === token)) ||
+                  (advantage.note && advantage.note.toLocaleLowerCase().includes(token)) ||
+                  advantage.source.toLocaleLowerCase().includes(token) ||
+                  advantage.types.some((type: string) => type.toLocaleLowerCase().includes(token)))
+              );
+            }, true)
           );
-        }, true)
-      );
-    }
-    return advantages;
+        }
+        return filteredAdvantages;
+      })
+    );
   }
 
   getById(id: number): Observable<UnknownAdvantage> {
