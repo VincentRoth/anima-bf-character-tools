@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { AppMaterialModule } from '../app-material.module';
 import { ActionType, SpellType } from '../models';
 import { SpellComponent } from './spell.component';
@@ -7,12 +7,14 @@ describe('SpellComponent', () => {
   let component: SpellComponent;
   let fixture: ComponentFixture<SpellComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [SpellComponent],
-      imports: [AppMaterialModule]
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [SpellComponent],
+        imports: [AppMaterialModule]
+      }).compileComponents();
+    })
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(SpellComponent);

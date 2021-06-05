@@ -1,8 +1,9 @@
+@use '~@angular/material' as mat;
 @import './styles/theme';
 @import './styles/footer.theme';
 
-$theme: mat-light-theme($primary, $accent, $warn);
-@include angular-material-theme($theme);
+$theme: mat.define-light-theme($primary, $accent, $warn);
+@include mat.all-component-themes($theme);
 @include footer-theme($theme);
 
 html,

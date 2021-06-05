@@ -99,8 +99,9 @@ describe('CharacterService', () => {
   it('should add an advantage to character', () => {
     service.addAdvantage(advantage, 2);
 
-    expect(advantage).toEqual(
-      {
+    expect(advantage)
+      .withContext('Original advantage should not be modified.')
+      .toEqual({
         id: 1,
         name: 'Dump advantage',
         description: 'Dump advantage description',
@@ -110,9 +111,7 @@ describe('CharacterService', () => {
         costs: [1, 2, 3],
         source: 'Core p.18',
         types: ['Avantage de passé', 'Richesse']
-      } as Advantage,
-      'Original advantage should not be modified.'
-    );
+      } as Advantage);
 
     const expectedResult = {
       raceName: null,
@@ -132,8 +131,9 @@ describe('CharacterService', () => {
   it('should add a disadvantage to character', () => {
     service.addAdvantage(disadvantage, 1);
 
-    expect(disadvantage).toEqual(
-      {
+    expect(disadvantage)
+      .withContext('Original disadvantage should not be modified.')
+      .toEqual({
         id: 2,
         name: 'Dump disadvantage',
         description: 'Dump disadvantage description',
@@ -143,9 +143,7 @@ describe('CharacterService', () => {
         benefits: [1, 2],
         source: 'Core p.19',
         types: ['Désavantage de passé', 'Test']
-      } as Disadvantage,
-      'Original disadvantage should not be modified.'
-    );
+      } as Disadvantage);
 
     const expectedResult = {
       raceName: null,
