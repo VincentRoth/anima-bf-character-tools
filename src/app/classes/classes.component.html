@@ -127,9 +127,7 @@
 
         <h5>Coûts Réduits</h5>
         <p>
-          <ng-container *ngIf="!clazz.secondary.reducedCosts.length">
-            Aucun
-          </ng-container>
+          <ng-container *ngIf="!clazz.secondary.reducedCosts.length">Aucun</ng-container>
           <ng-container *ngFor="let reduceCost of clazz.secondary.reducedCosts; let $last = last">
             <span class="bold">+1 {{ reduceCost.ability }} : </span>
             {{ reduceCost.cost }}
@@ -143,9 +141,7 @@
 
         <h5>Champs principaux</h5>
         <p>
-          <ng-container *ngIf="!clazz.bonus.primary.length">
-            Aucun
-          </ng-container>
+          <ng-container *ngIf="!clazz.bonus.primary.length">Aucun</ng-container>
           <ng-container *ngFor="let bonus of clazz.bonus.primary; let $last = last">
             <span class="bold"> +{{ bonus.bonus }} {{ bonus.ability }} par niveau </span>
             <span class="italic" *ngIf="bonus.limit"> (maximum +{{ bonus.limit }}) </span>
@@ -155,9 +151,7 @@
 
         <h5>Champs secondaires</h5>
         <p>
-          <ng-container *ngIf="!clazz.bonus.secondary.length">
-            Aucun
-          </ng-container>
+          <ng-container *ngIf="!clazz.bonus.secondary.length">Aucun</ng-container>
           <ng-container *ngFor="let bonus of clazz.bonus.secondary; let $last = last">
             <span class="bold">+{{ bonus.bonus }}</span>
             {{ bonus.ability }} par niveau
