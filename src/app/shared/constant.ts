@@ -1,7 +1,14 @@
 export const constant = {
-  localCharacterKey: 'character',
-  startingCreationPoints: 3,
-  maximumDisadvantages: 3,
+  advantages: {
+    startingCreationPoints: 3,
+    maximumDisadvantages: 3
+  },
+  refTables: {
+    level: 'core-exxet#6',
+    difficulty: 'core-exxet#7'
+  },
   startingLevel: 1,
-  levelRefTable: 'core-exxet#6'
+  storageKeys: {
+    character: 'character'
+  }
 };

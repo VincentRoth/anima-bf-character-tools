@@ -2,8 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import cloneDeep from 'lodash-es/cloneDeep';
 import { Observable, of, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { SearchParams } from '../search/search.params';
 
-export abstract class AbstractQueryOnceService<T> {
+export abstract class AbstractQueryOnceService<T, PARAMS extends SearchParams> {
   protected data: T;
   protected request: Subject<T>;
 
@@ -19,11 +20,17 @@ export abstract class AbstractQueryOnceService<T> {
     });
   }
 
+  abstract filter(params: PARAMS): Observable<T>;
+
   get(): Observable<T> {
     if (!this.data) {
       return this.getData().pipe(map(cloneDeep));
     }
     return of(cloneDeep(this.data));
+  }
+
+  protected splitSearchToken(params: PARAMS): string[] {
+    return params.q?.toLocaleLowerCase().split(' ');
   }
 
   protected transformData(data: T): T {
