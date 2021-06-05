@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { AppMaterialModule } from '../app-material.module';
 import { Advantage } from '../models';
 import { AdvantageComponent } from './advantage.component';
@@ -7,12 +7,14 @@ describe('AdvantageComponent', () => {
   let component: AdvantageComponent;
   let fixture: ComponentFixture<AdvantageComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [AdvantageComponent],
-      imports: [AppMaterialModule]
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [AdvantageComponent],
+        imports: [AppMaterialModule]
+      }).compileComponents();
+    })
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(AdvantageComponent);

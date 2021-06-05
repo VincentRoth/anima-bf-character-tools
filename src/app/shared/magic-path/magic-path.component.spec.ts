@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { AppMaterialModule } from '../app-material.module';
 import { MagicPathStatus } from '../models';
 import { SpellComponent } from '../spell/spell.component';
@@ -8,12 +8,14 @@ describe('MagicPathComponent', () => {
   let component: MagicPathComponent;
   let fixture: ComponentFixture<MagicPathComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [MagicPathComponent, SpellComponent],
-      imports: [AppMaterialModule]
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [MagicPathComponent, SpellComponent],
+        imports: [AppMaterialModule]
+      }).compileComponents();
+    })
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MagicPathComponent);

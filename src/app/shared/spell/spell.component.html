@@ -44,9 +44,7 @@
       </p>
       <p>
         <span class="bold">Maintien : </span>{{ maintenance }}
-        <span *ngIf="spell.isDailyMaintenance" class="bold">
-          Quotidien
-        </span>
+        <span *ngIf="spell.isDailyMaintenance" class="bold">Quotidien</span>
       </p>
       <p *ngIf="spell.forbiddenPaths">
         <span class="bold">Voies fermées : </span>
