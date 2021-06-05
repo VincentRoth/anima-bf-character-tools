@@ -14,7 +14,7 @@
     "start": "node server.js",
     "ng": "ng",
     "serve": "ng serve -o",
-    "build": "ng build --prod",
+    "build": "ng build",
     "prettier": "prettier --config ./.prettierrc \"**/*.*\"",
     "lint": "npm run lint:prettier && npm run lint:tslint",
     "lint:prettier": "npm run prettier -- --check",
