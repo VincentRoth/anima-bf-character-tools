@@ -7,8 +7,8 @@ La dernière version stable (branche master) est déployée sur https://anima-be
 # License
 
 L'application web elle-même (HTML, CSS, TS files) est disponible sous license [Creative Common Attribution-NonCommercial-ShareAlike 4.0 Unported (CC BY-NC-SA4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
-L'application utilises Angular, Angular Material et Material Icons.  
-Toutes les données dans le répertoire /src/asset n'est pas couverte par cette license.
+L'application utilise Angular, Angular Material et Material Icons.  
+Toutes les données dans le répertoire /src/asset ne sont pas couvertes par cette license.
 
 Cette application n'est pas affiliée à Anima Studio Studio ni à Edge Entertainment.
 Les données dans le répertoire /src/asset/data relève de la propriété intellectuelle d'Anima Project Studio et n'est couverte par aucune license pour aucun usage.
