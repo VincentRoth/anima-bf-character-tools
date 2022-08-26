@@ -12,7 +12,7 @@ import { AbstractQueryOnceService } from './abstract-query-once.service';
 })
 export class AdvantageService extends AbstractQueryOnceService<UnknownAdvantage[]> {
   constructor(http: HttpClient) {
-    super(http, '/assets/data/advantages.json');
+    super(http, './assets/data/advantages.json');
   }
 
   filter(filters: AdvantagesSearchParams): UnknownAdvantage[] {

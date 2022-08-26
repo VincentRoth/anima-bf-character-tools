@@ -24,7 +24,7 @@ describe('ReferenceTableService', () => {
 
     service.getByReference('core-exxet#2').subscribe({ next: (table) => expect(table.id).toEqual(2) });
 
-    const req = httpMock.expectOne('/assets/data/tables.json');
+    const req = httpMock.expectOne('./assets/data/tables.json');
     expect(req.request.method).toEqual('GET');
     req.flush({
       'core-exxet': [

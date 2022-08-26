@@ -42,7 +42,7 @@ describe('AdvantageService', () => {
       }
     });
 
-    const req = httpMock.expectOne('/assets/data/advantages.json');
+    const req = httpMock.expectOne('./assets/data/advantages.json');
     expect(req.request.method).toEqual('GET');
     req.flush([
       {

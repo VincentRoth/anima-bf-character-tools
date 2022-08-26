@@ -10,6 +10,6 @@ export class CreationHelpService {
   constructor(private http: HttpClient) {}
 
   get(): Observable<ContentPanel[]> {
-    return this.http.get<ContentPanel[]>('/assets/data/creation-help.json');
+    return this.http.get<ContentPanel[]>('./assets/data/creation-help.json');
   }
 }

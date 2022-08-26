@@ -10,6 +10,6 @@ export class RaceService {
   constructor(private http: HttpClient) {}
 
   get(): Observable<ContentPanel[]> {
-    return this.http.get<ContentPanel[]>('/assets/data/races.json');
+    return this.http.get<ContentPanel[]>('./assets/data/races.json');
   }
 }

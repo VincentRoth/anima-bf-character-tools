@@ -426,7 +426,7 @@
       {
         "type": "image",
         "title": "Jayan",
-        "url": "/assets/images/races/jayan1.png"
+        "url": "./assets/images/races/jayan1.png"
       },
       {
         "type": "paragraph",
@@ -1298,7 +1298,7 @@
       {
         "type": "image",
         "title": "Turak",
-        "url": "/assets/images/races/turak1.png"
+        "url": "./assets/images/races/turak1.png"
       },
       {
         "type": "paragraph",

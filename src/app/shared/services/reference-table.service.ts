@@ -14,7 +14,7 @@ export class ReferenceTableService extends AbstractQueryOnceService<ReferenceTab
     return referenceBooks;
   }
   constructor(http: HttpClient) {
-    super(http, '/assets/data/tables.json');
+    super(http, './assets/data/tables.json');
   }
 
   filterByToken(filter: string): Observable<ReferenceTableContainer> {

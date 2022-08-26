@@ -10,7 +10,7 @@ import { AbstractQueryOnceService } from './abstract-query-once.service';
 })
 export class SpellService extends AbstractQueryOnceService<MagicPath[]> {
   constructor(http: HttpClient) {
-    super(http, '/assets/data/spells.json');
+    super(http, './assets/data/spells.json');
   }
 
   filter(filters: SpellsSearchParams): MagicPath[] {

@@ -10,6 +10,6 @@ export class ClassesService {
   constructor(private http: HttpClient) {}
 
   get(): Observable<ClassModel[]> {
-    return this.http.get<ClassModel[]>('/assets/data/classes.json');
+    return this.http.get<ClassModel[]>('./assets/data/classes.json');
   }
 }

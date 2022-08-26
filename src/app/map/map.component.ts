@@ -9,6 +9,6 @@ export class MapComponent {
   constructor() {}
 
   displayImageFullScreen(): void {
-    window.location.pathname = '/assets/images/map/gaia_2.jpg';
+    window.location.pathname = './assets/images/map/gaia_2.jpg';
   }
 }

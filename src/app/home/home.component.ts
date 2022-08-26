@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit {
         title: 'Carte de Gaïa',
         link: '/map',
         bgPositionY: 'bottom',
-        imageUrl: '/assets/images/menu/map.jpg'
+        imageUrl: './assets/images/menu/map.jpg'
       },
       {
         title: 'Tables de référence',

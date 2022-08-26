@@ -35,7 +35,7 @@ describe('SpellService', () => {
       }
     });
 
-    const req = httpMock.expectOne('/assets/data/spells.json');
+    const req = httpMock.expectOne('./assets/data/spells.json');
     expect(req.request.method).toEqual('GET');
     req.flush([
       {
