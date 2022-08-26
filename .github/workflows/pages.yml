@@ -31,6 +31,13 @@ jobs:
       run: |
         npm install
         npm run build
+    - name: Upload artifact
+        # https://github.com/actions/upload-artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: build
+        path: dist
+        retention-days: 1
   deploy:
     needs: build
     environment:
@@ -38,11 +45,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Download build artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+          path: dist
       - name: Setup Pages
         uses: actions/configure-pages@v2
-      - name: Upload artifact
+      - name: Upload artifact to Pages
         uses: actions/upload-pages-artifact@v1
         with:
           path: 'dist/anima-beyond-fantasy-character-tools'
