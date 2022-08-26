@@ -55,7 +55,7 @@ jobs:
       - name: Upload artifact to Pages
         uses: actions/upload-pages-artifact@v1
         with:
-          path: 'dist/anima-beyond-fantasy-character-tools'
+          path: './dist/anima-beyond-fantasy-character-tools'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
