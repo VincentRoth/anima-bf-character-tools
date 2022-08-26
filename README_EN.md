@@ -2,7 +2,7 @@
 
 A suit tools for building and playing character at Anima Beyond Fantasy tabletop RPG.
 
-Stable application version (master branch) is deployed at https://anima-beyond-fantasy.herokuapp.com.
+Stable application version (master branch) is deployed at https://vincentroth.github.io/anima-bf-character-tools.
 
 # Licence
 

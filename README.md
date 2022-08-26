@@ -2,7 +2,7 @@
 
 Une suite d'outils pour créer et jouer des personnages du jeu de rôle papier Aniam Beyond Fantasy.
 
-La dernière version stable (branche master) est déployée sur https://anima-beyond-fantasy.herokuapp.com.
+La dernière version stable (branche master) est déployée sur https://vincentroth.github.io/anima-bf-character-tools.
 
 # License
 
