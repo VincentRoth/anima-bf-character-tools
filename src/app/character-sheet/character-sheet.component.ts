@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { forkJoin } from 'rxjs';
+
 import { constant } from '../shared/constant';
 import { Advantage, Character, Disadvantage } from '../shared/models';
 import { AdvantageService, CharacterService, ReferenceTableService } from '../shared/services';

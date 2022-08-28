@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ContentPanel, EContentType } from '../shared/models';
 import { CreationHelpService } from '../shared/services';
 

@@ -18,12 +18,12 @@ export class HomeComponent implements OnInit {
 
   constructor() {}
 
-  getStyle(item: IHomeItem) {
+  getStyle(item: IHomeItem): Partial<CSSStyleDeclaration>  {
     return {
-      'background-image': item.imageUrl ? `url("${item.imageUrl}")` : '',
-      'background-position-x': 'center',
-      'background-position-y': item.bgPositionY ? item.bgPositionY : '',
-      'background-size': item.bgSize ? item.bgSize : ''
+      backgroundImage: item.imageUrl ? `url("${item.imageUrl}")` : '',
+      backgroundPositionX: 'center',
+      backgroundPositionY: item.bgPositionY ? item.bgPositionY : '',
+      backgroundSize: item.bgSize ? item.bgSize : ''
     };
   }
 

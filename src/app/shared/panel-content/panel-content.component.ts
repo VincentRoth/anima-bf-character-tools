@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+
 import { ContentPanel, ContentTable, ContentUnit, EContentType, ReferenceTable } from '../models';
 import { ReferenceTableService } from '../services';
 

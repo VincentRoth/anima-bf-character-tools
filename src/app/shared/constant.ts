@@ -3,5 +3,5 @@ export const constant = {
   startingCreationPoints: 3,
   maximumDisadvantages: 3,
   startingLevel: 1,
-  levelRefTable: 'core-exxet#6'
+  levelRefTable: 'coreExxet#6'
 };

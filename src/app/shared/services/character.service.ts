@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+
 import { constant } from '../constant';
 import { Advantage, AdvantageReference, Character, UnknownAdvantage } from '../models';
 

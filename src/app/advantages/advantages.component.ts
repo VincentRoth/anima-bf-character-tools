@@ -1,4 +1,5 @@
 import { Component, Injector, OnInit } from '@angular/core';
+
 import { AbstractSearchComponent } from '../shared/abstract-search.component';
 import { UnknownAdvantage } from '../shared/models';
 import { AdvantagesSearchParams } from '../shared/search-params/advantages-search.params';

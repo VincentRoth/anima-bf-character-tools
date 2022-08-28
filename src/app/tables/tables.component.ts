@@ -1,8 +1,10 @@
 import { Component, Injector, OnInit } from '@angular/core';
+
 import { AbstractSearchComponent } from '../shared/abstract-search.component';
 import { ReferenceBook, ReferenceTableContainer } from '../shared/models';
 import { SearchParams } from '../shared/search-params/search.params';
 import { ReferenceTableService } from '../shared/services';
+
 @Component({
   selector: 'app-tables',
   templateUrl: './tables.component.html',

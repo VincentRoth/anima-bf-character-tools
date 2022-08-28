@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+
 import cloneDeep from 'lodash-es/cloneDeep';
+
 import { MagicPath, MagicPathStatus, SpellCastingLevel } from '../models';
 import { SpellsSearchParams } from '../search-params/spells-search.params';
 import { AbstractQueryOnceService } from './abstract-query-once.service';

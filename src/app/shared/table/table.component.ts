@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+
 import { ReferenceTable } from '../models';
 import { CharacterService } from '../services';
 
@@ -12,9 +13,9 @@ const italicRegExp = /^\*/;
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit  {
-  get caption(): string | void {
+  get caption(): string {
     if (!this.table) {
-      return;
+      return '';
     }
     if (typeof this.table.id === 'number') {
       return `Tableau ${this.table.id} : ${this.table.title}`;

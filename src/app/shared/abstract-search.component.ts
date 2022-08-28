@@ -1,11 +1,12 @@
 import { Injector } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+
 import { SearchParams } from './search-params/search.params';
 
 export abstract class AbstractSearchComponent<T extends SearchParams> {
+  filters: T;
   protected activatedRoute: ActivatedRoute;
   protected router: Router;
-  filters: T;
   private timeout;
 
   constructor(injector: Injector) {
@@ -13,7 +14,7 @@ export abstract class AbstractSearchComponent<T extends SearchParams> {
     this.router = injector.get(Router);
   }
 
-  handleSearch(filters: T, delay = 500) {
+  handleSearch(filters: T, delay = 500): void {
     if (this.timeout) {
       clearTimeout(this.timeout);
     }

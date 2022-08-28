@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+
 import { constant } from '../constant';
 import { Advantage, Disadvantage } from '../models';
 import { CharacterService } from './character.service';

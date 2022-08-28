@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+
 import { TableComponent } from './table.component';
 
 describe('TableComponent', () => {

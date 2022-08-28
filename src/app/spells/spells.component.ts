@@ -1,4 +1,5 @@
 import { Component, Injector, OnInit } from '@angular/core';
+
 import { AbstractSearchComponent } from '../shared/abstract-search.component';
 import { MagicPath, MagicPathStatus, SpellType } from '../shared/models';
 import { SpellsSearchParams } from '../shared/search-params/spells-search.params';

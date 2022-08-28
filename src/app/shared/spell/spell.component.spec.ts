@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+
 import { AppMaterialModule } from '../app-material.module';
 import { ActionType, SpellType } from '../models';
 import { SpellComponent } from './spell.component';

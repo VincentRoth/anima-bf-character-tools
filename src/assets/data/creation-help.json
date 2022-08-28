@@ -50,7 +50,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#1"
+            "reference": "coreExxet#1"
           },
           {
             "type": "paragraph",
@@ -88,7 +88,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#p.47"
+            "reference": "coreExxet#p.47"
           },
           {
             "type": "paragraph",
@@ -173,7 +173,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#2"
+            "reference": "coreExxet#2"
           }
         ]
       },
@@ -215,7 +215,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#3"
+            "reference": "coreExxet#3"
           },
           {
             "type": "paragraph",
@@ -286,7 +286,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#26"
+            "reference": "coreExxet#26"
           }
         ]
       },
@@ -326,7 +326,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#25"
+            "reference": "coreExxet#25"
           },
           {
             "type": "paragraph",
@@ -349,7 +349,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#4"
+            "reference": "coreExxet#4"
           },
           {
             "type": "paragraph",
@@ -371,7 +371,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#23"
+            "reference": "coreExxet#23"
           },
           {
             "type": "paragraph",
@@ -379,7 +379,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#24"
+            "reference": "coreExxet#24"
           },
           {
             "type": "paragraph",
@@ -426,7 +426,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#27"
+            "reference": "coreExxet#27"
           }
         ]
       },
@@ -440,7 +440,7 @@
           },
           {
             "type": "table",
-            "reference": "dominus-exxet#5"
+            "reference": "dominusExxet#5"
           },
           {
             "type": "paragraph",
@@ -531,7 +531,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#53"
+            "reference": "coreExxet#53"
           }
         ]
       },
@@ -551,7 +551,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#55"
+            "reference": "coreExxet#55"
           },
           {
             "type": "paragraph",
@@ -560,7 +560,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#56"
+            "reference": "coreExxet#56"
           },
           {
             "type": "paragraph",
@@ -574,7 +574,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#59"
+            "reference": "coreExxet#59"
           },
           {
             "type": "paragraph",
@@ -624,11 +624,11 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#68"
+            "reference": "coreExxet#68"
           },
           {
             "type": "table",
-            "reference": "core-exxet#70"
+            "reference": "coreExxet#70"
           },
           {
             "type": "paragraph",
@@ -668,7 +668,7 @@
         "content": [
           {
             "type": "table",
-            "reference": "core-exxet#II"
+            "reference": "coreExxet#II"
           }
         ]
       },
@@ -702,7 +702,7 @@
         "content": [
           {
             "type": "table",
-            "reference": "core-exxet#III"
+            "reference": "coreExxet#III"
           },
           {
             "type": "paragraph",
@@ -992,7 +992,7 @@
       },
       {
         "type": "table",
-        "reference": "core-exxet#5"
+        "reference": "coreExxet#5"
       },
       {
         "type": "paragraph",
@@ -1055,7 +1055,7 @@
       },
       {
         "type": "table",
-        "reference": "core-exxet#6"
+        "reference": "coreExxet#6"
       },
       {
         "type": "sub-paragraph",
@@ -1097,11 +1097,11 @@
       },
       {
         "type": "table",
-        "reference": "core-exxet#p.68.2"
+        "reference": "coreExxet#p.68.2"
       },
       {
         "type": "table",
-        "reference": "core-exxet#p.68.1"
+        "reference": "coreExxet#p.68.1"
       },
       {
         "type": "paragraph",
@@ -1133,7 +1133,7 @@
           },
           {
             "type": "table",
-            "reference": "core-exxet#83"
+            "reference": "coreExxet#83"
           },
           {
             "type": "paragraph",
@@ -1164,7 +1164,7 @@
           },
           {
             "type": "table",
-            "reference": "gaia-1#42"
+            "reference": "gaia1#42"
           }
         ]
       }

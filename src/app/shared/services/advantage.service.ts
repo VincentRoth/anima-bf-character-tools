@@ -1,8 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+
 import cloneDeep from 'lodash-es/cloneDeep';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
+
 import { Advantage, Disadvantage, UnknownAdvantage } from '../models';
 import { AdvantagesSearchParams } from '../search-params/advantages-search.params';
 import { AbstractQueryOnceService } from './abstract-query-once.service';
@@ -49,7 +51,7 @@ export class AdvantageService extends AbstractQueryOnceService<UnknownAdvantage[
   }
 
   getById(id: number): Observable<UnknownAdvantage> {
-    const transform = (data: UnknownAdvantage[]) =>
+    const transform = (data: UnknownAdvantage[]): UnknownAdvantage =>
       cloneDeep(data.find((advantage: UnknownAdvantage) => advantage.id === id));
     if (!this.data) {
       return this.get().pipe(map(transform));

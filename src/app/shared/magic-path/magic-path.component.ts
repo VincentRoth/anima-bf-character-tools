@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+
 import { FREE_ACCESS_LEVEL, MagicPath, MagicPathStatus, Spell } from '../models';
 
 @Component({

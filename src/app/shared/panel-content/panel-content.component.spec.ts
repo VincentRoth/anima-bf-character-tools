@@ -1,6 +1,7 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+
 import { AppMaterialModule } from '../app-material.module';
 import { ContentTitleComponent } from '../content-title/content-title.component';
 import { EContentType } from '../models';

@@ -1,5 +1,5 @@
 {
-  "core-exxet": [
+  "coreExxet": [
     {
       "id": 1,
       "title": "Tests de caractéristique",
@@ -721,27 +721,9 @@
           "-20 par heure",
           "Tout membre amputé se recolle s'il est maintenu contre le moignon pendant un round. À l'exception de la tête, tout membre amputé repousse en une semaine."
         ],
-        [
-          16,
-          "10 par round",
-          "N/A",
-          "-10 par minute",
-          "À l'exception de la tête, tout membre amputé repousse en un jour."
-        ],
-        [
-          17,
-          "25 par round",
-          "N/A",
-          "-15 par round",
-          "À l'exception de la tête, tout membre amputé repousse en quelques minutes."
-        ],
-        [
-          18,
-          "50 par round",
-          "N/A",
-          "-20 par round",
-          "À l'exception de la tête, tout membre amputé repousse en quelques rounds."
-        ],
+        [16, "10 par round", "N/A", "-10 par minute", "À l'exception de la tête, tout membre amputé repousse en un jour."],
+        [17, "25 par round", "N/A", "-15 par round", "À l'exception de la tête, tout membre amputé repousse en quelques minutes."],
+        [18, "50 par round", "N/A", "-20 par round", "À l'exception de la tête, tout membre amputé repousse en quelques rounds."],
         [
           "*19",
           "*100 par round",
@@ -749,13 +731,7 @@
           "*Tous",
           "*Requiert Gnose 40 minimum. Tout membre coupé repousse et redevient fonctionnel en un round."
         ],
-        [
-          "*20",
-          "*250 par round",
-          "*N/A",
-          "*Tous",
-          "*Requiert Gnose 45 minimum. Tous les Critiques physiques sont annulés."
-        ]
+        ["*20", "*250 par round", "*N/A", "*Tous", "*Requiert Gnose 45 minimum. Tous les Critiques physiques sont annulés."]
       ]
     },
     {
@@ -1355,19 +1331,7 @@
     {
       "id": 30,
       "title": "Armes communes",
-      "headers": [
-        "Arme",
-        "Dégâts",
-        "Vit.",
-        "FOR R.",
-        "Mode 1",
-        "Mode 2",
-        "Catégorie",
-        "Spécial",
-        "Sol.",
-        "Frac.",
-        "Prés."
-      ],
+      "headers": ["Arme", "Dégâts", "Vit.", "FOR R.", "Mode 1", "Mode 2", "Catégorie", "Spécial", "Sol.", "Frac.", "Prés."],
       "rows": [
         ["*Combat à mains nues", 10, "+20", "–", "CON", "", "*Mains nues", "Précise", "–", -2, "–"],
         ["Bâton", 30, "+10", 4, "CON", "", "Hast", "Deux mains", 11, 0, 30],
@@ -1380,19 +1344,7 @@
         ["Épée courte", 40, "+15", 4, "PER", "TRA", "Arme courte", "Précise", 12, 1, 20],
         ["Épée longue", 50, "+0", 6, "TRA", "", "Épée", "", 13, 3, 25],
         ["Faux", 35, "+0", "5 / 9", "TRA", "CON", "Hast / Deux mains", "Une ou deux mains", 12, 2, 25],
-        [
-          "Filet de gladiateur",
-          5,
-          "+0",
-          4,
-          "CON",
-          "TRA",
-          "Corde",
-          "Lançable, Immobilisation (Force 10), Cf.",
-          13,
-          -4,
-          15
-        ],
+        ["Filet de gladiateur", 5, "+0", 4, "CON", "TRA", "Corde", "Lançable, Immobilisation (Force 10), Cf.", 13, -4, 15],
         ["Fléau", 40, "+0", 6, "CON", "", "Masse / Corde", "Complexe", 13, 4, 15],
         ["Fléau à deux mains", 80, -50, "8 / 10", "CON", "", "Masse / Deux mains", "Complexe", 14, 6, 20],
         ["Fleuret", 35, "+15", 3, "PER", "", "Épée / Arme courte", "Précise", 9, -2, 20],
@@ -1423,19 +1375,7 @@
     {
       "id": 31,
       "title": "Armes exotiques",
-      "headers": [
-        "Arme",
-        "Dégâts",
-        "Vit.",
-        "FOR R.",
-        "Mode 1",
-        "Mode 2",
-        "Catégorie",
-        "Spécial",
-        "Sol.",
-        "Frac.",
-        "Prés."
-      ],
+      "headers": ["Arme", "Dégâts", "Vit.", "FOR R.", "Mode 1", "Mode 2", "Catégorie", "Spécial", "Sol.", "Frac.", "Prés."],
       "rows": [
         ["Bâton à trois sections", 35, "+15", 4, "TRA", "PER", "Hast", "Complexe, Deux mains, Cf.", 12, 2, 25],
         ["Boomerang", 30, "+10", 4, "CON", "TRA", "Arme courte", "Lançable, Cf.", 10, 0, 15],
@@ -1446,19 +1386,7 @@
         ["Katana", 50, "+0", "5 / 6", "TRA", "", "Épée", "Une ou deux mains", 11, 3, 40],
         ["Katana à deux lames", 55, -5, 8, "TRA", "", "Épée", "Cf.", 11, 3, 40],
         ["Katar", 40, "+10", 8, "PER", "TRA", "Arme courte", "Complexe, Cf.", 13, 3, 25],
-        [
-          "Kusari-gama",
-          40,
-          "+5",
-          5,
-          "TRA",
-          "CON",
-          "Arme courte  / Corde",
-          "Deux mains, Immobilisation (Force 8), Cf.",
-          12,
-          4,
-          25
-        ],
+        ["Kusari-gama", 40, "+5", 5, "TRA", "CON", "Arme courte  / Corde", "Deux mains, Immobilisation (Force 8), Cf.", 12, 4, 25],
         ["No-dachi", 80, -35, "8 / 10", "TRA", "", "Deux mains", "Une ou deux mains", 14, 4, 40],
         ["Nunchaku", 30, "+15", 5, "CON", "", "Corde", "", 11, 0, 15],
         ["Saï", 35, "+15", 4, "PER", "TRA", "Arme courte", "Piège-arme, Précise", 12, 0, 25],
@@ -1471,19 +1399,7 @@
     {
       "id": 32,
       "title": "Armes improvisées",
-      "headers": [
-        "Arme",
-        "Dégâts",
-        "Vit.",
-        "FOR R.",
-        "Mode 1",
-        "Mode 2",
-        "Catégorie",
-        "Spécial",
-        "Sol.",
-        "Frac.",
-        "Prés."
-      ],
+      "headers": ["Arme", "Dégâts", "Vit.", "FOR R.", "Mode 1", "Mode 2", "Catégorie", "Spécial", "Sol.", "Frac.", "Prés."],
       "rows": [
         ["Barre métallique", 25, -5, 5, "CON", "", "Masse", "", 12, 2, 15],
         ["Bouteille cassée", 15, "+10", 3, "TRA", "CON", "Arme courte", "", 5, -3, 15],
@@ -1502,19 +1418,7 @@
     {
       "id": 33,
       "title": "Boucliers",
-      "headers": [
-        "Arme",
-        "Dégâts",
-        "Vit.",
-        "FOR R.",
-        "Mode 1",
-        "Mode 2",
-        "Catégorie",
-        "Spécial",
-        "Sol.",
-        "Frac.",
-        "Prés."
-      ],
+      "headers": ["Arme", "Dégâts", "Vit.", "FOR R.", "Mode 1", "Mode 2", "Catégorie", "Spécial", "Sol.", "Frac.", "Prés."],
       "rows": [
         ["Rondache", 15, "-15 spé.", 5, "CON", "", "Bouclier", "+10 parade, +5 esquive, Cf.", 14, 0, 20],
         ["Bouclier", 20, "-25 spé.", 7, "CON", "", "Bouclier", "+20 parade, +10 esquive, Cf.", 16, 0, 25],
@@ -1562,19 +1466,7 @@
     {
       "id": 35,
       "title": "Armes à projectiles",
-      "headers": [
-        "Arme",
-        "Dégâts",
-        "Vit.",
-        "FOR R.",
-        "Mode 1",
-        "Mode 2",
-        "Catégorie",
-        "Spécial",
-        "Sol.",
-        "Frac.",
-        "Prés."
-      ],
+      "headers": ["Arme", "Dégâts", "Vit.", "FOR R.", "Mode 1", "Mode 2", "Catégorie", "Spécial", "Sol.", "Frac.", "Prés."],
       "rows": [
         ["Arbalète", "", "+0", "4 / 8", "", "", "Tir", "Force 8, Une ou deux mains, Cf.", 8, -2, 20],
         ["Arbalète à répétition", "", "+0", "5 / 8", "", "", "Tir", "Force 8, Une ou deux mains, Cf.", 6, -2, 20],
@@ -1606,19 +1498,7 @@
     {
       "id": 36,
       "title": "Armes de siège",
-      "headers": [
-        "Arme",
-        "Dégâts",
-        "Vit.",
-        "FOR R.",
-        "Mode 1",
-        "Mode 2",
-        "Catégorie",
-        "Spécial",
-        "Sol.",
-        "Frac.",
-        "Prés."
-      ],
+      "headers": ["Arme", "Dégâts", "Vit.", "FOR R.", "Mode 1", "Mode 2", "Catégorie", "Spécial", "Sol.", "Frac.", "Prés."],
       "rows": [
         ["Baliste légère", "", -80, "NA", "", "", "Tir", "Force 12, Cf.", 18, "–", 25],
         ["*Trait léger", 120, "", "", "PER", "", "*Munition", "*Munition pour baliste légère", 16, 8, 15],
@@ -2064,14 +1944,8 @@
       "headers": ["Différence", "Effet"],
       "rows": [
         ["1 à 50", "Les deux sorts s'annulent."],
-        [
-          "51 à 100",
-          "Le sort vainqueur parvient à passer au travers de l'autre, mais ses Dégâts sont réduits de moitié."
-        ],
-        [
-          "101 et +",
-          "L'attaque vaincue est totalement annulée et le sort vainqueur continue sur sa lancée sans aucun malus à ses Dégâts."
-        ]
+        ["51 à 100", "Le sort vainqueur parvient à passer au travers de l'autre, mais ses Dégâts sont réduits de moitié."],
+        ["101 et +", "L'attaque vaincue est totalement annulée et le sort vainqueur continue sur sa lancée sans aucun malus à ses Dégâts."]
       ]
     },
     {
@@ -2231,15 +2105,9 @@
       "title": "Échec à la Convocation",
       "headers": ["Résultat total", "Effet"],
       "rows": [
-        [
-          "Entre -1 et -10",
-          "La convocation ne fonctionne pas, mais le personnage ne perd pas les points de Zéon requis."
-        ],
+        ["Entre -1 et -10", "La convocation ne fonctionne pas, mais le personnage ne perd pas les points de Zéon requis."],
         ["Entre -11 et -25", "La convocation ne fonctionne pas, mais le personnage perd les points de Zéon requis."],
-        [
-          "Entre -26 et -50",
-          "La convocation ne fonctionne pas, mais le personnage perd le double des points de Zéon requis."
-        ],
+        ["Entre -26 et -50", "La convocation ne fonctionne pas, mais le personnage perd le double des points de Zéon requis."],
         [
           "Entre -51 et -75",
           "La convocation fonctionne à l'inverse de ce qui était prévu et, au lieu de la créature que le personnage comptait appeler, il en apparaît une autre de niveau supérieur et de nature opposée. Le personnage n'a pas la capacité de lier ni de dominer cette créarture au moment de son apparition et il perd tous les bonus dont il bénéficiait grâce à un rituel éventuel. Le coût en Zéon est le double de celui de la convocation originelle."
@@ -2259,15 +2127,9 @@
       "title": "Échec à la Domination",
       "headers": ["Résultat Total", "Effet"],
       "rows": [
-        [
-          "Entre -1 et -10",
-          "La domination ne fonctionne pas, mais le personnage ne perd pas les points de Zéon requis."
-        ],
+        ["Entre -1 et -10", "La domination ne fonctionne pas, mais le personnage ne perd pas les points de Zéon requis."],
         ["Entre -11 et -25", "La domination ne fonctionne pas, mais le personnage perd les points de Zéon requis."],
-        [
-          "Entre -26 et -50",
-          "La domination ne fonctionne pas, mais le personnage perd le double des points de Zéon requis."
-        ],
+        ["Entre -26 et -50", "La domination ne fonctionne pas, mais le personnage perd le double des points de Zéon requis."],
         [
           "Entre -51 et -75",
           "La domination n'a aucun effet, et la créature ciblée devient immunisée à la compétence Dominer du personnage. Il perd aussi le double des points de Zéon requis."
@@ -2309,15 +2171,9 @@
       "title": "Échec à la Révocation",
       "headers": ["Résultat Total", "Effet"],
       "rows": [
-        [
-          "Entre -1 et -10",
-          "La révocation ne fonctionne pas, mais le personnage ne perd pas les points de Zéon requis."
-        ],
+        ["Entre -1 et -10", "La révocation ne fonctionne pas, mais le personnage ne perd pas les points de Zéon requis."],
         ["Entre -11 et -25", "La révocation ne fonctionne pas, mais le personnage perd les points de Zéon requis."],
-        [
-          "Entre -26 et -50",
-          "La révocation ne fonctionne pas, mais le personnage perd le double des points de Zéon requis."
-        ],
+        ["Entre -26 et -50", "La révocation ne fonctionne pas, mais le personnage perd le double des points de Zéon requis."],
         [
           "Entre -51 et -75",
           "La révocation échoue et la créature devient immunisée à la compétence Révoquer du personnage. Il perd le double des points de Zéon requis."
@@ -2424,14 +2280,8 @@
         ["Difficile", "100 m"],
         ["Très Difficile", "250 m"],
         ["Absurde", "500 m"],
-        [
-          "Quasiment Impossible",
-          "1 km. Permet d'utiliser les pouvoirs psy sur des cibles hors de vue mais localisées avec précision."
-        ],
-        [
-          "Impossible",
-          "10 km. Permet d'utiliser les pouvoirs psy sur des cibles hors de vue mais localisées approximativement."
-        ]
+        ["Quasiment Impossible", "1 km. Permet d'utiliser les pouvoirs psy sur des cibles hors de vue mais localisées avec précision."],
+        ["Impossible", "10 km. Permet d'utiliser les pouvoirs psy sur des cibles hors de vue mais localisées approximativement."]
       ]
     },
     {
@@ -2488,22 +2338,8 @@
       "title": "Liste de poisons",
       "headers": ["Nom", "Niveau", "Effets / RPoi", "Activation", "Durée", "Contraction"],
       "rows": [
-        [
-          "Acqua Toffana",
-          40,
-          "Faiblesse (RPoi 80), Malus à toutes les actions (RPoi 60)",
-          "Retardée",
-          "Longue",
-          "Ingestion"
-        ],
-        [
-          "Al-Baladin",
-          60,
-          "Dégâts (RPoi 100), Malus à toutes les actions (RPoi 80)",
-          "Rapide",
-          "Normale",
-          "Par le sang"
-        ],
+        ["Acqua Toffana", 40, "Faiblesse (RPoi 80), Malus à toutes les actions (RPoi 60)", "Retardée", "Longue", "Ingestion"],
+        ["Al-Baladin", 60, "Dégâts (RPoi 100), Malus à toutes les actions (RPoi 80)", "Rapide", "Normale", "Par le sang"],
         ["Arsenic", 50, "Mort (RPoi 80)", "Normale", "Normale", "Ingestion"],
         ["Atropine", 50, "Hallucinations (RPoi 80)", "Normale", "Normale", "Au contact"],
         ["Belladone", 50, "Inconscience (RPoi 80)", "Rapide", "Longue", "Ingestion"],
@@ -2855,412 +2691,35 @@
       "title": "La Table de Combat",
       "headers": ["Marge", "IP 0", "IP 1", "IP 2", "IP 3", "IP 4", "IP 5", "IP 6", "IP 7", "IP 8", "IP 9", "IP 10"],
       "rows": [
-        [
-          -301,
-          "+150 C",
-          "+150 C",
-          "+150 C",
-          "+150 C",
-          "+150 C",
-          "+150 C",
-          "+150 C",
-          "+150 C",
-          "+150 C",
-          "+150 C",
-          "+150 C"
-        ],
-        [
-          "-291 à -300",
-          "+145 C",
-          "+145 C",
-          "+145 C",
-          "+145 C",
-          "+145 C",
-          "+145 C",
-          "+145 C",
-          "+145 C",
-          "+145 C",
-          "+145 C",
-          "+145 C"
-        ],
-        [
-          "-281 à -290",
-          "+140 C",
-          "+140 C",
-          "+140 C",
-          "+140 C",
-          "+140 C",
-          "+140 C",
-          "+140 C",
-          "+140 C",
-          "+140 C",
-          "+140 C",
-          "+140 C"
-        ],
-        [
-          "-271 à -280",
-          "+135 C",
-          "+135 C",
-          "+135 C",
-          "+135 C",
-          "+135 C",
-          "+135 C",
-          "+135 C",
-          "+135 C",
-          "+135 C",
-          "+135 C",
-          "+135 C"
-        ],
-        [
-          "-261 à -270",
-          "+130 C",
-          "+130 C",
-          "+130 C",
-          "+130 C",
-          "+130 C",
-          "+130 C",
-          "+130 C",
-          "+130 C",
-          "+130 C",
-          "+130 C",
-          "+130 C"
-        ],
-        [
-          "-251 à -260",
-          "+125 C",
-          "+125 C",
-          "+125 C",
-          "+125 C",
-          "+125 C",
-          "+125 C",
-          "+125 C",
-          "+125 C",
-          "+125 C",
-          "+125 C",
-          "+125 C"
-        ],
-        [
-          "-241 à -250",
-          "+120 C",
-          "+120 C",
-          "+120 C",
-          "+120 C",
-          "+120 C",
-          "+120 C",
-          "+120 C",
-          "+120 C",
-          "+120 C",
-          "+120 C",
-          "+120 C"
-        ],
-        [
-          "-231 à -240",
-          "+115 C",
-          "+115 C",
-          "+115 C",
-          "+115 C",
-          "+115 C",
-          "+115 C",
-          "+115 C",
-          "+115 C",
-          "+115 C",
-          "+115 C",
-          "+115 C"
-        ],
-        [
-          "-221 à -230",
-          "+110 C",
-          "+110 C",
-          "+110 C",
-          "+110 C",
-          "+110 C",
-          "+110 C",
-          "+110 C",
-          "+110 C",
-          "+110 C",
-          "+110 C",
-          "+110 C"
-        ],
-        [
-          "-211 à -220",
-          "+105 C",
-          "+105 C",
-          "+105 C",
-          "+105 C",
-          "+105 C",
-          "+105 C",
-          "+105 C",
-          "+105 C",
-          "+105 C",
-          "+105 C",
-          "+105 C"
-        ],
-        [
-          "-201 à -210",
-          "+100 C",
-          "+100 C",
-          "+100 C",
-          "+100 C",
-          "+100 C",
-          "+100 C",
-          "+100 C",
-          "+100 C",
-          "+100 C",
-          "+100 C",
-          "+100 C"
-        ],
-        [
-          "-191 à -200",
-          "+95 C",
-          "+95 C",
-          "+95 C",
-          "+95 C",
-          "+95 C",
-          "+95 C",
-          "+95 C",
-          "+95 C",
-          "+95 C",
-          "+95 C",
-          "+95 C"
-        ],
-        [
-          "-181 à -190",
-          "+90 C",
-          "+90 C",
-          "+90 C",
-          "+90 C",
-          "+90 C",
-          "+90 C",
-          "+90 C",
-          "+90 C",
-          "+90 C",
-          "+90 C",
-          "+90 C"
-        ],
-        [
-          "-171 à -180",
-          "+85 C",
-          "+85 C",
-          "+85 C",
-          "+85 C",
-          "+85 C",
-          "+85 C",
-          "+85 C",
-          "+85 C",
-          "+85 C",
-          "+85 C",
-          "+85 C"
-        ],
-        [
-          "-161 à -170",
-          "+80 C",
-          "+80 C",
-          "+80 C",
-          "+80 C",
-          "+80 C",
-          "+80 C",
-          "+80 C",
-          "+80 C",
-          "+80 C",
-          "+80 C",
-          "+80 C"
-        ],
-        [
-          "-151 à -160",
-          "+75 C",
-          "+75 C",
-          "+75 C",
-          "+75 C",
-          "+75 C",
-          "+75 C",
-          "+75 C",
-          "+75 C",
-          "+75 C",
-          "+75 C",
-          "+75 C"
-        ],
-        [
-          "-141 à -150",
-          "+70 C",
-          "+70 C",
-          "+70 C",
-          "+70 C",
-          "+70 C",
-          "+70 C",
-          "+70 C",
-          "+70 C",
-          "+70 C",
-          "+70 C",
-          "+70 C"
-        ],
-        [
-          "-131 à -140",
-          "+65 C",
-          "+65 C",
-          "+65 C",
-          "+65 C",
-          "+65 C",
-          "+65 C",
-          "+65 C",
-          "+65 C",
-          "+65 C",
-          "+65 C",
-          "+65 C"
-        ],
-        [
-          "-121 à -130",
-          "+60 C",
-          "+60 C",
-          "+60 C",
-          "+60 C",
-          "+60 C",
-          "+60 C",
-          "+60 C",
-          "+60 C",
-          "+60 C",
-          "+60 C",
-          "+60 C"
-        ],
-        [
-          "-111 à -120",
-          "+55 C",
-          "+55 C",
-          "+55 C",
-          "+55 C",
-          "+55 C",
-          "+55 C",
-          "+55 C",
-          "+55 C",
-          "+55 C",
-          "+55 C",
-          "+55 C"
-        ],
-        [
-          "-101 à -110",
-          "+50 C",
-          "+50 C",
-          "+50 C",
-          "+50 C",
-          "+50 C",
-          "+50 C",
-          "+50 C",
-          "+50 C",
-          "+50 C",
-          "+50 C",
-          "+50 C"
-        ],
-        [
-          "-91 à -100",
-          "+45 C",
-          "+45 C",
-          "+45 C",
-          "+45 C",
-          "+45 C",
-          "+45 C",
-          "+45 C",
-          "+45 C",
-          "+45 C",
-          "+45 C",
-          "+45 C"
-        ],
-        [
-          "-81 à -90",
-          "+40 C",
-          "+40 C",
-          "+40 C",
-          "+40 C",
-          "+40 C",
-          "+40 C",
-          "+40 C",
-          "+40 C",
-          "+40 C",
-          "+40 C",
-          "+40 C"
-        ],
-        [
-          "-71 à -80",
-          "+35 C",
-          "+35 C",
-          "+35 C",
-          "+35 C",
-          "+35 C",
-          "+35 C",
-          "+35 C",
-          "+35 C",
-          "+35 C",
-          "+35 C",
-          "+35 C"
-        ],
-        [
-          "-61 à -70",
-          "+30 C",
-          "+30 C",
-          "+30 C",
-          "+30 C",
-          "+30 C",
-          "+30 C",
-          "+30 C",
-          "+30 C",
-          "+30 C",
-          "+30 C",
-          "+30 C"
-        ],
-        [
-          "-51 à -60",
-          "+25 C",
-          "+25 C",
-          "+25 C",
-          "+25 C",
-          "+25 C",
-          "+25 C",
-          "+25 C",
-          "+25 C",
-          "+25 C",
-          "+25 C",
-          "+25 C"
-        ],
-        [
-          "-41 à -50",
-          "+20 C",
-          "+20 C",
-          "+20 C",
-          "+20 C",
-          "+20 C",
-          "+20 C",
-          "+20 C",
-          "+20 C",
-          "+20 C",
-          "+20 C",
-          "+20 C"
-        ],
-        [
-          "-31 à -40",
-          "+15 C",
-          "+15 C",
-          "+15 C",
-          "+15 C",
-          "+15 C",
-          "+15 C",
-          "+15 C",
-          "+15 C",
-          "+15 C",
-          "+15 C",
-          "+15 C"
-        ],
-        [
-          "-21 à -30",
-          "+10 C",
-          "+10 C",
-          "+10 C",
-          "+10 C",
-          "+10 C",
-          "+10 C",
-          "+10 C",
-          "+10 C",
-          "+10 C",
-          "+10 C",
-          "+10 C"
-        ],
+        [-301, "+150 C", "+150 C", "+150 C", "+150 C", "+150 C", "+150 C", "+150 C", "+150 C", "+150 C", "+150 C", "+150 C"],
+        ["-291 à -300", "+145 C", "+145 C", "+145 C", "+145 C", "+145 C", "+145 C", "+145 C", "+145 C", "+145 C", "+145 C", "+145 C"],
+        ["-281 à -290", "+140 C", "+140 C", "+140 C", "+140 C", "+140 C", "+140 C", "+140 C", "+140 C", "+140 C", "+140 C", "+140 C"],
+        ["-271 à -280", "+135 C", "+135 C", "+135 C", "+135 C", "+135 C", "+135 C", "+135 C", "+135 C", "+135 C", "+135 C", "+135 C"],
+        ["-261 à -270", "+130 C", "+130 C", "+130 C", "+130 C", "+130 C", "+130 C", "+130 C", "+130 C", "+130 C", "+130 C", "+130 C"],
+        ["-251 à -260", "+125 C", "+125 C", "+125 C", "+125 C", "+125 C", "+125 C", "+125 C", "+125 C", "+125 C", "+125 C", "+125 C"],
+        ["-241 à -250", "+120 C", "+120 C", "+120 C", "+120 C", "+120 C", "+120 C", "+120 C", "+120 C", "+120 C", "+120 C", "+120 C"],
+        ["-231 à -240", "+115 C", "+115 C", "+115 C", "+115 C", "+115 C", "+115 C", "+115 C", "+115 C", "+115 C", "+115 C", "+115 C"],
+        ["-221 à -230", "+110 C", "+110 C", "+110 C", "+110 C", "+110 C", "+110 C", "+110 C", "+110 C", "+110 C", "+110 C", "+110 C"],
+        ["-211 à -220", "+105 C", "+105 C", "+105 C", "+105 C", "+105 C", "+105 C", "+105 C", "+105 C", "+105 C", "+105 C", "+105 C"],
+        ["-201 à -210", "+100 C", "+100 C", "+100 C", "+100 C", "+100 C", "+100 C", "+100 C", "+100 C", "+100 C", "+100 C", "+100 C"],
+        ["-191 à -200", "+95 C", "+95 C", "+95 C", "+95 C", "+95 C", "+95 C", "+95 C", "+95 C", "+95 C", "+95 C", "+95 C"],
+        ["-181 à -190", "+90 C", "+90 C", "+90 C", "+90 C", "+90 C", "+90 C", "+90 C", "+90 C", "+90 C", "+90 C", "+90 C"],
+        ["-171 à -180", "+85 C", "+85 C", "+85 C", "+85 C", "+85 C", "+85 C", "+85 C", "+85 C", "+85 C", "+85 C", "+85 C"],
+        ["-161 à -170", "+80 C", "+80 C", "+80 C", "+80 C", "+80 C", "+80 C", "+80 C", "+80 C", "+80 C", "+80 C", "+80 C"],
+        ["-151 à -160", "+75 C", "+75 C", "+75 C", "+75 C", "+75 C", "+75 C", "+75 C", "+75 C", "+75 C", "+75 C", "+75 C"],
+        ["-141 à -150", "+70 C", "+70 C", "+70 C", "+70 C", "+70 C", "+70 C", "+70 C", "+70 C", "+70 C", "+70 C", "+70 C"],
+        ["-131 à -140", "+65 C", "+65 C", "+65 C", "+65 C", "+65 C", "+65 C", "+65 C", "+65 C", "+65 C", "+65 C", "+65 C"],
+        ["-121 à -130", "+60 C", "+60 C", "+60 C", "+60 C", "+60 C", "+60 C", "+60 C", "+60 C", "+60 C", "+60 C", "+60 C"],
+        ["-111 à -120", "+55 C", "+55 C", "+55 C", "+55 C", "+55 C", "+55 C", "+55 C", "+55 C", "+55 C", "+55 C", "+55 C"],
+        ["-101 à -110", "+50 C", "+50 C", "+50 C", "+50 C", "+50 C", "+50 C", "+50 C", "+50 C", "+50 C", "+50 C", "+50 C"],
+        ["-91 à -100", "+45 C", "+45 C", "+45 C", "+45 C", "+45 C", "+45 C", "+45 C", "+45 C", "+45 C", "+45 C", "+45 C"],
+        ["-81 à -90", "+40 C", "+40 C", "+40 C", "+40 C", "+40 C", "+40 C", "+40 C", "+40 C", "+40 C", "+40 C", "+40 C"],
+        ["-71 à -80", "+35 C", "+35 C", "+35 C", "+35 C", "+35 C", "+35 C", "+35 C", "+35 C", "+35 C", "+35 C", "+35 C"],
+        ["-61 à -70", "+30 C", "+30 C", "+30 C", "+30 C", "+30 C", "+30 C", "+30 C", "+30 C", "+30 C", "+30 C", "+30 C"],
+        ["-51 à -60", "+25 C", "+25 C", "+25 C", "+25 C", "+25 C", "+25 C", "+25 C", "+25 C", "+25 C", "+25 C", "+25 C"],
+        ["-41 à -50", "+20 C", "+20 C", "+20 C", "+20 C", "+20 C", "+20 C", "+20 C", "+20 C", "+20 C", "+20 C", "+20 C"],
+        ["-31 à -40", "+15 C", "+15 C", "+15 C", "+15 C", "+15 C", "+15 C", "+15 C", "+15 C", "+15 C", "+15 C", "+15 C"],
+        ["-21 à -30", "+10 C", "+10 C", "+10 C", "+10 C", "+10 C", "+10 C", "+10 C", "+10 C", "+10 C", "+10 C", "+10 C"],
         ["-11 à -20", "+5 C", "+5 C", "+5 C", "+5 C", "+5 C", "+5 C", "+5 C", "+5 C", "+5 C", "+5 C", "+5 C"],
         ["-1 à -10", "C", "C", "C", "C", "C", "C", "C", "C", "C", "C", "C"],
         ["1 à 9", "", "", "", "", "", "", "", "", "", "", ""],
@@ -3307,7 +2766,7 @@
       ]
     }
   ],
-  "kit-mj": [
+  "kitMj": [
     {
       "id": 1,
       "title": "Limites aux compétences",
@@ -3396,25 +2855,11 @@
     {
       "id": "p.31-FAQ",
       "title": "Arme : Arankar double",
-      "headers": [
-        "Arme",
-        "Dégâts",
-        "Vit.",
-        "FOR R.",
-        "Mode 1",
-        "Mode 2",
-        "Catégorie",
-        "Spécial",
-        "Sol.",
-        "Frac.",
-        "Prés."
-      ],
-      "rows": [
-        ["Arankar double", 60, -15, 7, "TRA", "", "Épée / Deux mains", "Complexe, Cf. Katana à deux lames", 14, 4, 20]
-      ]
+      "headers": ["Arme", "Dégâts", "Vit.", "FOR R.", "Mode 1", "Mode 2", "Catégorie", "Spécial", "Sol.", "Frac.", "Prés."],
+      "rows": [["Arankar double", 60, -15, 7, "TRA", "", "Épée / Deux mains", "Complexe, Cf. Katana à deux lames", 14, 4, 20]]
     }
   ],
-  "dominus-exxet": [
+  "dominusExxet": [
     {
       "id": 1,
       "title": "Modificateurs de situation",
@@ -3435,51 +2880,11 @@
       "headers": ["Échec", "For 6-9", "For 10-12", "For 13-14", "For 15-16", "For 17-18", "For 19-20"],
       "rows": [
         [-1, "1 - 3 m (D1)", "5 - 10 m (D1)", "10 - 15 m (D2)", "15 - 30 m (D2)", "30 - 50 m (D3)", "50 - 100 m (D4)"],
-        [
-          -2,
-          "2 - 4 m (D1)",
-          "7 - 15 m (D1)",
-          "15 - 30 m (D2)",
-          "30 - 50 m (D3)",
-          "50 - 150 m (D4)",
-          "100 - 500 m (D4)"
-        ],
-        [
-          "-3 / -4",
-          "3 - 6 m (D1)",
-          "10 - 20 m (D2)",
-          "30 - 50 m (D3)",
-          "50 - 100 m (D3)",
-          "150 - 500 m (D4)",
-          "500 m - 1 km (D4)"
-        ],
-        [
-          "-5 / -6",
-          "5 - 10 m (D1)",
-          "15 - 25 m (D2)",
-          "50 - 80 m (D3)",
-          "100 - 200 m (D4)",
-          "500 m - 1 km (D4)",
-          "1 - 5 km (D5)"
-        ],
-        [
-          "-7 / -8",
-          "7 - 15 m (D1)",
-          "20 - 35 m (D2)",
-          "80 - 120 m (D3)",
-          "200 - 500 m (D4)",
-          "1 - 5 km (D5)",
-          "5 - 25 km (D5)"
-        ],
-        [
-          "-9 ou plus",
-          "10 - 20 m (D2)",
-          "30 - 50 m (D3)",
-          "120 - 150 m (D4)",
-          "500 m - 1 km (D4)",
-          "5 - 25 km (D5)",
-          "25+ km (D5)"
-        ]
+        [-2, "2 - 4 m (D1)", "7 - 15 m (D1)", "15 - 30 m (D2)", "30 - 50 m (D3)", "50 - 150 m (D4)", "100 - 500 m (D4)"],
+        ["-3 / -4", "3 - 6 m (D1)", "10 - 20 m (D2)", "30 - 50 m (D3)", "50 - 100 m (D3)", "150 - 500 m (D4)", "500 m - 1 km (D4)"],
+        ["-5 / -6", "5 - 10 m (D1)", "15 - 25 m (D2)", "50 - 80 m (D3)", "100 - 200 m (D4)", "500 m - 1 km (D4)", "1 - 5 km (D5)"],
+        ["-7 / -8", "7 - 15 m (D1)", "20 - 35 m (D2)", "80 - 120 m (D3)", "200 - 500 m (D4)", "1 - 5 km (D5)", "5 - 25 km (D5)"],
+        ["-9 ou plus", "10 - 20 m (D2)", "30 - 50 m (D3)", "120 - 150 m (D4)", "500 m - 1 km (D4)", "5 - 25 km (D5)", "25+ km (D5)"]
       ]
     },
     {
@@ -3564,14 +2969,7 @@
     {
       "id": 7,
       "title": "Apprentissage des Arts Martiaux",
-      "headers": [
-        "Rang d'apprentissage",
-        "Compléxité 1",
-        "Compléxité 2",
-        "Compléxité 3",
-        "Compléxité 4",
-        "Compléxité 5"
-      ],
+      "headers": ["Rang d'apprentissage", "Compléxité 1", "Compléxité 2", "Compléxité 3", "Compléxité 4", "Compléxité 5"],
       "rows": [
         ["1 (total 100-199)", "Un an", "Trois ans", "Une décennie", "-", "-"],
         ["2 (total 200-299)", "Trois mois", "Un an", "Trois ans", "Une décennie", "-"],
@@ -3812,19 +3210,7 @@
     {
       "id": "p.95-105",
       "title": "Armes impossibles",
-      "headers": [
-        "Arme",
-        "Dégâts",
-        "Vit.",
-        "FOR R.",
-        "Mode 1",
-        "Mode 2",
-        "Taille",
-        "Spécial",
-        "Sol.",
-        "Frac.",
-        "Prés."
-      ],
+      "headers": ["Arme", "Dégâts", "Vit.", "FOR R.", "Mode 1", "Mode 2", "Taille", "Spécial", "Sol.", "Frac.", "Prés."],
       "rows": [
         ["Aries", 100, -20, "-", "PER", "TRA", "Grande", "Complexe, Immobilisation, Deux mains", 16, 6, 30],
         [
@@ -3910,32 +3296,8 @@
         ],
         ["Libra", 60, "+0", 5, "Variable", "", "Moyenne", "Capacités variables", 15, 2, "Personnage"],
         ["Scorpius (Épée)", 50, "+0", 5, "TRA", "PER", "Moyenne", "", 13, 2, "Variable"],
-        [
-          "Scorpius (Fouet à lames)",
-          40,
-          -10,
-          5,
-          "TRA",
-          "PER",
-          "Moyenne",
-          "Attaque à distance, Immobilisation",
-          13,
-          2,
-          "Variable"
-        ],
-        [
-          "Sagittarius",
-          50,
-          "+10",
-          4,
-          "PER",
-          "CON",
-          "Variable",
-          "Projectiles lancés, Cadence de tir 100, Portée 10m",
-          "NA",
-          0,
-          "Variable"
-        ],
+        ["Scorpius (Fouet à lames)", 40, -10, 5, "TRA", "PER", "Moyenne", "Attaque à distance, Immobilisation", 13, 2, "Variable"],
+        ["Sagittarius", 50, "+10", 4, "PER", "CON", "Variable", "Projectiles lancés, Cadence de tir 100, Portée 10m", "NA", 0, "Variable"],
         [
           "Capricornus",
           "100*",
@@ -3962,19 +3324,7 @@
           5,
           "Variable"
         ],
-        [
-          "Pisces",
-          30,
-          "+20",
-          "NA",
-          "CON",
-          "",
-          "Petite",
-          "Immobilisation, Males, Attaque à distance, Attaque de zone",
-          8,
-          -2,
-          20
-        ],
+        ["Pisces", 30, "+20", "NA", "CON", "", "Petite", "Immobilisation, Males, Attaque à distance, Attaque de zone", 8, -2, 20],
         [
           "Ophicius",
           80,
@@ -4010,10 +3360,7 @@
       "title": "Échec en Convocation",
       "headers": ["Niveau d'échec", "Conséquences"],
       "rows": [
-        [
-          "Entre 0 et -20",
-          "La convocation échoue et le personnage perd les points de Ki investis dans l'activation des Sceaux."
-        ],
+        ["Entre 0 et -20", "La convocation échoue et le personnage perd les points de Ki investis dans l'activation des Sceaux."],
         [
           "Entre -21 et -50",
           "Comme le précédent, sauf qu'en plus le Pacte de Sang avec cette créature en particulier est immédiatemment rompu."
@@ -4033,12 +3380,7 @@
       "title": "Liens et Affinités",
       "headers": ["Sceau", "Élément", "Affinités", "Classe"],
       "rows": [
-        [
-          "Air",
-          "Air",
-          "Êtres très rapides, Créatures volantes, Êtres éthérés",
-          "Voleur, Guerrier Acrobate, Explorateur, Illusionniste"
-        ],
+        ["Air", "Air", "Êtres très rapides, Créatures volantes, Êtres éthérés", "Voleur, Guerrier Acrobate, Explorateur, Illusionniste"],
         [
           "Eau",
           "Eau",
@@ -4091,19 +3433,7 @@
     {
       "id": 28,
       "title": "Nouvelles armes",
-      "headers": [
-        "Arme",
-        "Dégâts",
-        "Vit.",
-        "FOR R.",
-        "Mode 1",
-        "Mode 2",
-        "Catégorie",
-        "Spécial",
-        "Sol.",
-        "Frac.",
-        "Prés."
-      ],
+      "headers": ["Arme", "Dégâts", "Vit.", "FOR R.", "Mode 1", "Mode 2", "Catégorie", "Spécial", "Sol.", "Frac.", "Prés."],
       "rows": [
         ["Atlatl", "", "-5 (cf.)", 5, "", "", "Projectile", "Cf.", 8, -4, 10],
         ["Bardiche", 50, -15, 6, "TRA", "CON", "Hast", "Deux mains", 12, 4, 20],
@@ -4181,19 +3511,7 @@
     {
       "id": 29,
       "title": "Armes orientales",
-      "headers": [
-        "Arme",
-        "Dégâts",
-        "Vit.",
-        "FOR R.",
-        "Mode 1",
-        "Mode 2",
-        "Catégorie",
-        "Spécial",
-        "Sol.",
-        "Frac.",
-        "Prés."
-      ],
+      "headers": ["Arme", "Dégâts", "Vit.", "FOR R.", "Mode 1", "Mode 2", "Catégorie", "Spécial", "Sol.", "Frac.", "Prés."],
       "rows": [
         ["Boku-to", 25, "+0", "5 / 6", "CON", "", "Épée", "Une ou deux mains, Cf.", 8, -1, 15],
         ["Jitte", 20, "+15", 4, "CON", "", "Arme courte", "Piège-arme", 13, 2, 20],
@@ -4241,19 +3559,7 @@
     {
       "id": 30,
       "title": "Armes de tir",
-      "headers": [
-        "Arme",
-        "Dégâts",
-        "Vit.",
-        "FOR R.",
-        "Mode 1",
-        "Mode 2",
-        "Catégorie",
-        "Spécial",
-        "Sol.",
-        "Frac.",
-        "Prés."
-      ],
+      "headers": ["Arme", "Dégâts", "Vit.", "FOR R.", "Mode 1", "Mode 2", "Catégorie", "Spécial", "Sol.", "Frac.", "Prés."],
       "rows": [
         ["Arc à balles", "", -10, 4, "", "", "Tir", "Deux mains, Cf.", 6, -3, 15],
         ["*Pierre", 20, "", "", "CON", "", "*Munition", "", 5, 0, 5],
@@ -4324,7 +3630,7 @@
       ]
     }
   ],
-  "arcana-exxet": [
+  "arcanaExxet": [
     {
       "id": 1,
       "title": "Apprentissage de Sort",
@@ -4342,19 +3648,7 @@
         "Niveau du sort 92-100"
       ],
       "rows": [
-        [
-          "1 (Niveau 2 à 28)",
-          "Quotidien",
-          "Hebdomadaire",
-          "Mensuel",
-          "Trimestriel",
-          "Semestriel",
-          "Annuel",
-          "Décennal",
-          "NA",
-          "NA",
-          "NA"
-        ],
+        ["1 (Niveau 2 à 28)", "Quotidien", "Hebdomadaire", "Mensuel", "Trimestriel", "Semestriel", "Annuel", "Décennal", "NA", "NA", "NA"],
         [
           "2 (Niveau 30 à 48)",
           "Chaque heure",
@@ -4531,15 +3825,9 @@
       "headers": ["Résultat", "Effet"],
       "rows": [
         ["3+", "L'effet est réussi sans aucun tort pour le lanceur du sort."],
-        [
-          "1+",
-          "L'effet est réussi, mais le lanceur du sort perd une quantité de points de Fatigue équivalente au niveau de l'effet."
-        ],
+        ["1+", "L'effet est réussi, mais le lanceur du sort perd une quantité de points de Fatigue équivalente au niveau de l'effet."],
         ["0+", "L'effet est partiellement réussi, mais sa puissance est un peu plus faible que prévu."],
-        [
-          "-1 à -4",
-          "L'effet est raté, le lanceur du sort perd une quantité de points de Fatigue équivalente au niveau de l'effet."
-        ],
+        ["-1 à -4", "L'effet est raté, le lanceur du sort perd une quantité de points de Fatigue équivalente au niveau de l'effet."],
         [
           "-5 à -8",
           "L'effet est un échec, il produit des conséquences négatives inattendues proportionnelles au pouvoir naturel du sorcier. De plus, celui-ci perd la moitié de ses points de Zéon restants et applique un malus à toutes les actions de -80, malus qu'il annulera à un rythme de 10 points par heure."
@@ -4848,7 +4136,7 @@
       ]
     }
   ],
-  "prometheum-exxet": [
+  "prometheumExxet": [
     {
       "id": 1,
       "title": "Avantage Artefact",
@@ -4868,7 +4156,7 @@
       "rows": []
     }
   ],
-  "gaia-1": [
+  "gaia1": [
     {
       "id": 1,
       "title": "Abel",
@@ -5149,7 +4437,7 @@
       ]
     }
   ],
-  "gaia-2": [],
+  "gaia2": [],
   "cqmpn": [
     {
       "id": 1,

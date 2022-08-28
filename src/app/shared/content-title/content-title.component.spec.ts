@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+
 import { ContentTitleComponent } from './content-title.component';
 
 describe('ContentTitleComponent', () => {

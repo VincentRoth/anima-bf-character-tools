@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+
 import { Advantage, Disadvantage } from '../models';
 import { CharacterService } from '../services';
 

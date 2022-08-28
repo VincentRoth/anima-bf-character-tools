@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { ContentPanel } from '../shared/models';
 import { RaceService } from '../shared/services';
 

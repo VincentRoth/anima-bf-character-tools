@@ -1,5 +1,7 @@
+
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
+
 import { ReferenceTableContainer } from '../models/';
 import { ReferenceTableService } from './reference-table.service';
 
@@ -20,14 +22,14 @@ describe('ReferenceTableService', () => {
   });
 
   it('should request only once the tables data', () => {
-    service.getByReference('core-exxet#1').subscribe({ next: (table) => expect(table.id).toEqual(1) });
+    service.getByReference('coreExxet#1').subscribe({ next: (table) => expect(table.id).toEqual(1) });
 
-    service.getByReference('core-exxet#2').subscribe({ next: (table) => expect(table.id).toEqual(2) });
+    service.getByReference('coreExxet#2').subscribe({ next: (table) => expect(table.id).toEqual(2) });
 
     const req = httpMock.expectOne('./assets/data/tables.json');
     expect(req.request.method).toEqual('GET');
     req.flush({
-      'core-exxet': [
+      coreExxet: [
         {
           id: 1,
           title: 'tab1',
@@ -41,12 +43,12 @@ describe('ReferenceTableService', () => {
           rows: []
         }
       ],
-      'kit-mj': [],
-      'dominus-exxet': [],
-      'arcana-exxet': [],
-      'prometheum-exxet': [],
-      'gaia-1': [],
-      'gaia-2': [],
+      kitMj: [],
+      dominusExxet: [],
+      arcanaExxet: [],
+      prometheumExxet: [],
+      gaia1: [],
+      gaia2: [],
       cqmpn: []
     } as ReferenceTableContainer);
 
