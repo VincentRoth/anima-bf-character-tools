@@ -14,6 +14,6 @@ export class AnalyticsService {
   constructor(private http: HttpClient) {}
 
   send(params: AnalyticsData): Observable<void> {
-    return this.http.post<void>(this.url, { params });
+    return this.http.post<void>(this.url, { params: { ...params, app: 'Anima CharTools' } });
   }
 }
