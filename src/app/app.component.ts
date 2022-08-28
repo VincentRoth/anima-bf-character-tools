@@ -7,10 +7,5 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'anima-beyond-fantasy-character-tools';
   version = environment.version;
-
-  isActualHost(): boolean {
-    return location.host.endsWith('github.io')
-  }
 }

@@ -1,6 +1,6 @@
 <header>
   <mat-toolbar color="primary">
-    <button mat-icon-button [matMenuTriggerFor]="rootMenu">
+    <button mat-icon-button [matMenuTriggerFor]="rootMenu" title="Menu">
       <mat-icon>menu</mat-icon>
     </button>
     <h1>Anima Beyond Fantasy - Outils pour les personnages</h1>
@@ -32,11 +32,6 @@
 </mat-menu>
 
 <div class="root">
-  <p class="host-change" *ngIf="!isActualHost()">
-    /!\ En raison d'un changement tarifaire de l'hébergement actuel (Heroku), le site est migré sur un autre hébergment :<br/>
-    <a href="https://vincentroth.github.io/anima-bf-character-tools">https://vincentroth.github.io/anima-bf-character-tools</a><br/>
-    L'hébergement sur Heroku sera arrété au 28 Novembre 2022, date de changement tarifaire. Aucune redirection ne sera fournit après cette date.
-  </p>
   <router-outlet></router-outlet>
 </div>
 

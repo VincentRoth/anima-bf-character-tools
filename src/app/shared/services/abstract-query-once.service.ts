@@ -8,7 +8,7 @@ class ReplaySubjectWithValue<T> extends ReplaySubject<T> {
 
   next(value?: T): void {
     this.value = value;
-    super.next(value)
+    super.next(value);
   }
 }
 
@@ -20,7 +20,7 @@ export abstract class AbstractQueryOnceService<T> {
     return this.data$.value;
   }
 
-  constructor(private http: HttpClient, private url: string) { }
+  constructor(private http: HttpClient, private url: string) {}
 
   get(): Observable<T> {
     if (this.data === undefined && !this.dataSubscription) {

@@ -33,7 +33,6 @@ jobs:
         npm install
         npm run build -- --base-href /anima-bf-character-tools/
     - name: Upload artifact
-        # https://github.com/actions/upload-artifact
       uses: actions/upload-artifact@v2
       with:
         name: build
