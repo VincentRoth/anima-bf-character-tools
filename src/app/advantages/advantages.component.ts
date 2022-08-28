@@ -15,7 +15,7 @@ export class AdvantagesComponent extends AbstractSearchComponent<AdvantagesSearc
   }
   advantages: UnknownAdvantage[];
   filteredAvantages: UnknownAdvantage[];
-  private types: object;
+  types: object;
 
   constructor(private advantageService: AdvantageService, injector: Injector) {
     super(injector);

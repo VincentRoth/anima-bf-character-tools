@@ -60,7 +60,7 @@ export class SpellService extends AbstractQueryOnceService<MagicPath[]> {
     return filteredPaths;
   }
 
-  protected transformData(data: MagicPath[]): MagicPath[] {
+  protected override transformData(data: MagicPath[]): MagicPath[] {
     return data.map((magicPath) => {
       if (magicPath.status === MagicPathStatus.MAJOR || magicPath.status === MagicPathStatus.MINOR) {
         // link non forbidden secondary paths to primary paths

@@ -11,8 +11,8 @@ const italicRegExp = /^\*/;
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss']
 })
-export class TableComponent implements OnInit {
-  get caption(): string {
+export class TableComponent implements OnInit  {
+  get caption(): string | void {
     if (!this.table) {
       return;
     }
@@ -38,7 +38,7 @@ export class TableComponent implements OnInit {
     return value;
   }
 
-  getCellStyle(value: any): string {
+  getCellStyle(value: any): string | void {
     if (typeof value === 'string' && value) {
       if (boldItalicRegExp.test(value)) {
         return 'bold italic';

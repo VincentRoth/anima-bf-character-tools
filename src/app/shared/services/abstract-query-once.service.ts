@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 class ReplaySubjectWithValue<T> extends ReplaySubject<T> {
   value: T;
 
-  next(value?: T): void {
+  override next(value?: T): void {
     this.value = value;
     super.next(value);
   }
