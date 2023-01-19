@@ -1,7 +1,7 @@
 import { Injector } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { SearchParams } from './search-params/search.params';
+import { SearchParams } from './search.params';
 
 export abstract class AbstractSearchComponent<T extends SearchParams> {
   filters: T;
@@ -14,29 +14,29 @@ export abstract class AbstractSearchComponent<T extends SearchParams> {
     this.router = injector.get(Router);
   }
 
-  handleSearch(filters: T, delay = 500): void {
+  handleSearch(params: T, delay = 500): void {
     if (this.timeout) {
       clearTimeout(this.timeout);
     }
     this.timeout = setTimeout(() => {
-      this.search(filters);
-      this.setUrlFilter(filters);
+      this.search(params);
+      this.setUrlFilter(params);
     }, delay);
   }
 
-  protected initFilters(filters: T): void {
-    this.filters = filters;
+  protected initFilters(params: T): void {
+    this.filters = params;
     Object.keys(this.filters).forEach((key) => {
       this.filters[key] = this.activatedRoute.snapshot.queryParamMap.get(key);
     });
   }
 
-  protected abstract search(filters: T): void;
+  protected abstract search(params: T): void;
 
-  protected setUrlFilter(filters: T): void {
+  protected setUrlFilter(params: T): void {
     const keys = Object.keys(this.filters);
-    if (keys.some((key) => this.filters[key] !== filters[key])) {
-      keys.forEach((key) => (this.filters[key] = filters[key] || null));
+    if (keys.some((key) => this.filters[key] !== params[key])) {
+      keys.forEach((key) => (this.filters[key] = params[key] || null));
       this.router.navigate(['.'], {
         queryParams: this.filters,
         relativeTo: this.activatedRoute

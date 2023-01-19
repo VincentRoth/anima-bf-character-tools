@@ -1,8 +1,8 @@
 import { Component, Injector, OnInit } from '@angular/core';
 
-import { AbstractSearchComponent } from '../shared/abstract-search.component';
 import { ReferenceBook, ReferenceTableContainer } from '../shared/models';
-import { SearchParams } from '../shared/search-params/search.params';
+import { AbstractSearchComponent } from '../shared/search/abstract-search.component';
+import { SearchParams } from '../shared/search/search.params';
 import { ReferenceTableService } from '../shared/services';
 
 @Component({
@@ -11,11 +11,10 @@ import { ReferenceTableService } from '../shared/services';
   styleUrls: ['./tables.component.scss']
 })
 export class TablesComponent extends AbstractSearchComponent<SearchParams> implements OnInit {
-  refTables: ReferenceTableContainer;
-
   get books(): ReferenceBook[] {
     return this.referenceTableService.books;
   }
+  refTables: ReferenceTableContainer;
 
   constructor(private referenceTableService: ReferenceTableService, injector: Injector) {
     super(injector);
@@ -35,9 +34,11 @@ export class TablesComponent extends AbstractSearchComponent<SearchParams> imple
     });
   }
 
-  protected search(filters: SearchParams): void {
-    this.referenceTableService.filterByToken(filters.q).subscribe({
-      next: (data) => (this.refTables = data)
+  protected search(params: SearchParams): void {
+    this.referenceTableService.filter(params).subscribe({
+      next: (data) => {
+        this.refTables = data;
+      }
     });
   }
 }

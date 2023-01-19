@@ -101,7 +101,7 @@ export class CharacterService {
     this.character = {
       raceName: null,
       className: null,
-      creationPoints: constant.startingCreationPoints,
+      creationPoints: constant.advantages.startingCreationPoints,
       advantages: [],
       disadvantages: [],
       level: constant.startingLevel,
@@ -110,7 +110,7 @@ export class CharacterService {
   }
 
   private loadCharacter(): void {
-    const savedCharacter = JSON.parse(localStorage.getItem(constant.localCharacterKey));
+    const savedCharacter = JSON.parse(localStorage.getItem(constant.storageKeys.character));
     if (!savedCharacter) {
       this.initCharacter();
       this.saveCharacter();
@@ -125,6 +125,6 @@ export class CharacterService {
   }
 
   private saveCharacter(): void {
-    localStorage.setItem(constant.localCharacterKey, JSON.stringify(this.character));
+    localStorage.setItem(constant.storageKeys.character, JSON.stringify(this.character));
   }
 }

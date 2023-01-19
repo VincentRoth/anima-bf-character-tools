@@ -4,8 +4,8 @@ import { constant } from '../constant';
 import { Advantage, Disadvantage } from '../models';
 import { CharacterService } from './character.service';
 
-const storageKey = constant.localCharacterKey;
-const startingCreationPoints = constant.startingCreationPoints;
+const storageKey = constant.storageKeys.character;
+const startingCreationPoints = constant.advantages.startingCreationPoints;
 const startingLevel = constant.startingLevel;
 
 const advantage: Advantage = {

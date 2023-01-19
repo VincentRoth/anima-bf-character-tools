@@ -1,43 +1,45 @@
 import { HttpClient } from '@angular/common/http';
 
 import cloneDeep from 'lodash-es/cloneDeep';
-import { Observable, ReplaySubject, Subscription } from 'rxjs';
+import { Observable, of, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-class ReplaySubjectWithValue<T> extends ReplaySubject<T> {
-  value: T;
+import { SearchParams } from '../search/search.params';
 
-  override next(value?: T): void {
-    this.value = value;
-    super.next(value);
+export abstract class AbstractQueryOnceService<T, PARAMS extends SearchParams> {
+  protected data: T;
+  protected request: Subject<T>;
+
+  constructor(private http: HttpClient, protected url: string) {
+    this.request = new Subject<T>();
+
+    this.http.get<T>(url).subscribe({
+      next: (data) => {
+        this.data = this.transformData(data);
+        this.request.next(data);
+        this.request.complete();
+      }
+    });
   }
-}
 
-export abstract class AbstractQueryOnceService<T> {
-  protected data$: ReplaySubjectWithValue<T> = new ReplaySubjectWithValue<T>();
-  private dataSubscription: Subscription;
-
-  protected get data(): T {
-    return this.data$.value;
-  }
-
-  constructor(private http: HttpClient, private url: string) {}
+  abstract filter(params: PARAMS): Observable<T>;
 
   get(): Observable<T> {
-    if (this.data === undefined && !this.dataSubscription) {
-      this.fetchData();
+    if (!this.data) {
+      return this.getData().pipe(map(cloneDeep));
     }
-    return this.data$.asObservable().pipe(map(cloneDeep));
+    return of(cloneDeep(this.data));
   }
 
-  protected fetchData(): void {
-    this.dataSubscription = this.http.get<T>(this.url).subscribe((data) => {
-      this.data$.next(this.transformData(data));
-      this.data$.complete();
-    });
+  protected splitSearchToken(params: PARAMS): string[] {
+    return params.q?.toLocaleLowerCase().split(' ');
   }
 
   protected transformData(data: T): T {
     return data;
+  }
+
+  private getData(): Observable<T> {
+    return this.request.asObservable();
   }
 }

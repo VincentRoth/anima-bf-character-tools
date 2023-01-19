@@ -1,8 +1,8 @@
 import { Component, Injector, OnInit } from '@angular/core';
 
-import { AbstractSearchComponent } from '../shared/abstract-search.component';
 import { MagicPath, MagicPathStatus, SpellType } from '../shared/models';
-import { SpellsSearchParams } from '../shared/search-params/spells-search.params';
+import { AbstractSearchComponent } from '../shared/search/abstract-search.component';
+import { SpellsSearchParams } from '../shared/search/spells-search.params';
 import { SpellService } from '../shared/services';
 
 @Component({
@@ -11,10 +11,10 @@ import { SpellService } from '../shared/services';
   styleUrls: ['./spells.component.scss']
 })
 export class SpellsComponent extends AbstractSearchComponent<SpellsSearchParams> implements OnInit {
+  magicPaths: MagicPath[];
   get spellTypes(): SpellType[] {
     return Object.values(SpellType).sort();
   }
-  magicPaths: MagicPath[];
 
   constructor(private spellService: SpellService, injector: Injector) {
     super(injector);
@@ -49,7 +49,11 @@ export class SpellsComponent extends AbstractSearchComponent<SpellsSearchParams>
     this.handleSearch({ ...this.filters, type });
   }
 
-  protected search(filters: SpellsSearchParams): void {
-    this.magicPaths = this.spellService.filter(filters);
+  protected search(params: SpellsSearchParams): void {
+    this.spellService.filter(params).subscribe({
+      next: (data) => {
+        this.magicPaths = data;
+      }
+    });
   }
 }

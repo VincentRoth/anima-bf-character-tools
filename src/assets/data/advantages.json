@@ -485,7 +485,7 @@
     "id": 53,
     "name": "Résistance à la fatigue psychique",
     "description": "L'utilisation des compétences psychiques ne fatigue presque jamais le personnage.",
-    "effect": "Si le psy obtient un échec quand il utilise un de ses pouvoirs, il ne perd pas de fatigue même s'il ne lui rest pas de PPP à dépenser. Cet avantage n'a pas d'effet sur les pouvoirs de niveau 3.",
+    "effect": "Si le psy obtient un échec quand il utilise un de ses pouvoirs, il ne perd pas de fatigue même s'il ne lui reste pas de PPP à dépenser. Cet avantage n'a pas d'effet sur les pouvoirs de niveau 3.",
     "costs": [2],
     "source": "Core p.22",
     "types": ["Avantage Psychique"]
@@ -649,7 +649,7 @@
   {
     "id": 71,
     "name": "Phobie sévère",
-    "description": "Le personnage ressent une peur terrible envers quelque chose, qui l'oblige à se comporter de manière irrationelle en sa présence. Voici qulques bons exemples de phobie : l'hydrophobie (la peur de l'eau), l'hémophobie (la peur du sang), la claustrophobie (la peur des espaces clos). Naturellement, le Meneur de Jeu ne devrait pas accepter la peur d'un élément trop précis ; il décide de son impact exact.",
+    "description": "Le personnage ressent une peur terrible envers quelque chose, qui l'oblige à se comporter de manière irrationelle en sa présence. Voici quelques bons exemples de phobie : l'hydrophobie (la peur de l'eau), l'hémophobie (la peur du sang), la claustrophobie (la peur des espaces clos). Naturellement, le Meneur de Jeu ne devrait pas accepter la peur d'un élément trop précis ; il décide de son impact exact.",
     "effect": "Le personnage subit les malus de l'état de peur chaque fois qu'il se retrouve en présence de l'objet de sa phobie.",
     "benefits": [1],
     "source": "Core p.23",
@@ -1064,7 +1064,7 @@
     "id": 116,
     "name": "Couard",
     "description": "Le personnage est peureux par nature, jusqu'à un point qu'il a du mal à contrôler. À chaque fois qu'il se trouve dans une situation qui présente un certain danger, même s'il ne risque pas sa vie, il essayera de l'éviter de toutes les manières possibles.",
-    "effect": "Dans Anima, il est préférable de laisser chaque joueur interpréter des aspects tel que la couardise d'un personnage. Cependant, ce désavantage signifie que le personnage n'est pas capable de contrôler sa peur du dangerqui court dans ses veines. Donc, à chaque foisque celui-ci sera confronté à un risque réel, il succombera à l'état de peur. S'il réussit un test d'Impassibilité à un niveau Très Difficile, il peut réduire le malus à seulement -20.",
+    "effect": "Dans Anima, il est préférable de laisser chaque joueur interpréter des aspects tel que la couardise d'un personnage. Cependant, ce désavantage signifie que le personnage n'est pas capable de contrôler sa peur du danger qui court dans ses veines. Donc, à chaque fois que celui-ci sera confronté à un risque réel, il succombera à l'état de peur. S'il réussit un test d'Impassibilité à un niveau Très Difficile, il peut réduire le malus à seulement -20.",
     "benefits": [1],
     "source": "KitMJ p.5",
     "types": ["Désavantage Général", "Interprétation"]
